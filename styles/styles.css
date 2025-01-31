@@ -1,0 +1,99 @@
+/* Estilos globais */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f0f0f0; /* Cor de fundo suave */
+}
+
+/* Tema claro */
+body.light-theme {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Tema escuro */
+body.dark-theme {
+  background-color: #1a1a1a;
+  color: #f1f1f1;
+}
+
+/* Estilos de cabeçalho */
+header {
+  text-align: center;
+  padding: 1em;
+  background-color: #3f51b5;
+  color: #ffffff;
+}
+
+/* Estilos do botão de troca de tema */
+.theme-toggle {
+  text-align: right;
+  padding: 1em;
+}
+
+.theme-toggle button {
+  padding: 0.5em 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 1em;
+  border-radius: 5px;
+}
+
+/* Estilos específicos para livros da Bíblia */
+.bible-book {
+  margin: 2em auto;
+  max-width: 800px;
+  padding: 2em;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  text-align: left;
+}
+
+/* Estilos do conteúdo dos capítulos */
+.bible-book h2 {
+  font-size: 2em;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
+.bible-book p {
+  margin-bottom: 1em;
+}
+
+/* Estilos para links e botões */
+a, button {
+  text-decoration: none;
+  color: #4CAF50;
+  margin: 1em;
+  padding: 0.5em 1em;
+  border: 1px solid #4CAF50;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+a:hover, button:hover {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 1.5em;
+  }
+  .theme-toggle {
+      text-align: center;
+  }
+
+  .bible-book {
+      padding: 1em;
+  }
+}
