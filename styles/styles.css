@@ -44,66 +44,32 @@ header {
   border-radius: 5px;
 }
 
-/* Estilos específicos para livros da Bíblia */
-.bible-book {
-  margin: 2em auto;
-  max-width: 800px;
-  padding: 2em;
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  text-align: left;
+/* Estilos para a lista de capítulos */
+.button-container .bible-index {
+  list-style-type: none; /* Remover os pontos das listas */
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px; /* Espaçamento entre os itens da lista */
+  padding: 1em;
 }
 
-/* Estilos do conteúdo dos capítulos */
-.bible-book h2 {
-  font-size: 2em;
-  margin-top: 0.5em;
+/* Estilos dos itens da lista */
+.bible-index li {
+  display: block;
+  padding: 10px;
   text-align: center;
-}
-
-.bible-book p {
-  margin-bottom: 1em;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-.bible-book ul {
-list-style-type: none;
-padding: 0;
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-}
-
-.bible-book li {
-display: inline-block;
-margin: 0.5em;
-}
-
-.bible-book button {
-margin: 0.5em;
-}
-
-.bible-book li:nth-child(4n+1) {
-clear: left;
-}
-
-/* Estilos para links e botões */
-a, button {
-  text-decoration: none;
-  color: #4CAF50;
-  margin: 1em;
-  padding: 0.5em 1em;
-  border: 1px solid #4CAF50;
+  background-color: #e0e0e0;
+  border: 1px solid #ccc;
   border-radius: 5px;
-  background-color: white;
-  cursor: pointer;
 }
 
-a:hover, button:hover {
+.bible-index li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.bible-index li:hover {
   background-color: #4CAF50;
   color: white;
 }
@@ -117,7 +83,8 @@ a:hover, button:hover {
       text-align: center;
   }
 
-  .bible-book {
-      padding: 1em;
+  .button-container {
+      grid-template-columns: repeat(2, 1fr); /* Alterar para duas colunas em telas menores */
+      padding: 0.5em;
   }
 }
