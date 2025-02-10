@@ -75,3 +75,17 @@ header {
 .bible-index li:hover {
   background-color: #d0d0d0; /* Cor de fundo mais escura ao passar o mouse */
 }
+
+.nav-button {
+  background-color: var(--button-bg-color);
+  color: var(--button-text-color);
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: var(--button-hover-bg-color);
+  color: var(--button-hover-text-color);
+}
