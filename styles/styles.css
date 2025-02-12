@@ -54,12 +54,14 @@ header {
   padding: 1em;
 }
 
-.button-container .bible-index {
+.bible-index {
   list-style-type: none; /* Remover os pontos das listas */
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 10px; /* Espaçamento entre os itens da lista */
+  margin-inline: auto;
+  max-width: 1280px;
 }
 
 /* Estilos dos itens da lista */
