@@ -44,6 +44,18 @@
       <p>21 E aconteceu que, como as parteiras temeram a Deus, ele lhes estabeleceu casas.</p>
       <p>22 Então, ordenou Faraó a todo o seu povo, dizendo: A todos os filhos que nascerem lançareis no rio, mas a todas as filhas guardareis com vida.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
       
     </section>
     <div class="button-container">

@@ -44,6 +44,18 @@
       <p>21 E disseram-lhes: "Que o Senhor os veja e julgue, porque vocês nos fizeram repugnantes aos olhos de Faraó e de seus servos, pondo-lhes uma espada na mão para nos matar".</p>
       <p>22 Moisés voltou-se para o Senhor e disse: "Senhor, por que maltrataste este povo? Por que me enviaste?</p>
       <p>23 Desde que me apresentei a Faraó para falar em teu nome, ele tem maltratado este povo, e tu não os livraste".</p>
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
       
     </section>

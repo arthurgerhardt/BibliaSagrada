@@ -46,6 +46,18 @@
       <p>24 E todos os egípcios cavaram ao redor do rio, para beber água; porque não podiam beber da água do rio.</p>
       <p>25 E cumpriram-se sete dias depois que o Senhor feriu o rio.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
 
       
     </section>

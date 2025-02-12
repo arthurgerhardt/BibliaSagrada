@@ -44,7 +44,17 @@
       <p>21 E darei a este povo graça aos olhos dos egípcios; e acontecerá que, quando sairdes, não saireis vazios.</p>
       <p>22 Cada mulher pedirá à sua vizinha e à sua hóspeda objetos de prata, objetos de ouro e vestes, os quais poreis sobre vossos filhos e sobre vossas filhas; e despojareis os egípcios.</p>
       
-
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

@@ -54,6 +54,18 @@
       <p>31 E o Senhor fez o que Moisés pediu. Os enxames de moscas deixaram Faraó, seus conselheiros e seu povo; não ficou uma só mosca.</p>
       <p>32 Mas endureceu Faraó ainda esta vez seu coração e não deixou ir o povo.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
       
     </section>
     <div class="button-container">

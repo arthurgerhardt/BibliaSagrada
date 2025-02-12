@@ -53,6 +53,18 @@
       <p>29 Que o Senhor falou a Moisés, dizendo: Eu sou o Senhor; fala a Faraó, rei do Egito, tudo quanto eu te digo.</p>
       <p>30 Então Moisés respondeu na presença do Senhor: Eis que sou incircunciso de lábios; como, pois, me ouvirá Faraó?</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
       
     </section>
     <div class="button-container">
