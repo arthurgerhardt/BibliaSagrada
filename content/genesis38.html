@@ -50,7 +50,17 @@
       <p>29 E aconteceu que, puxando ele a mão para trás, eis que saiu o seu irmão; e ela disse: Como tens rompido a brecha! Sobre ti seja a brecha; e chamou-lhe Perez.</p>
       <p>30 E depois saiu o seu irmão, em cuja mão estava o fio escarlata; e chamaram-lhe Zerá.</p>
       
-      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script> 
 
     </section>
     <div class="button-container">

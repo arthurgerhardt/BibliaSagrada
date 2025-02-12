@@ -55,7 +55,18 @@
       <p>34 Então, Jacó rasgou as suas vestes, e pôs saco sobre os seus lombos, e lamentou a seu filho muitos dias.</p>
       <p>35 E todos os seus filhos e todas as suas filhas se levantaram para o consolarem; ele, porém, recusou ser consolado e disse: Porque com lágrimas hei de descer ao meu filho até à sepultura. Assim, o chorou seu pai.</p>
       <p>36 E os midianitas o venderam no Egito a Potifar, oficial de Faraó, capitão da guarda.</p>
-      
+     
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
 
     </section>

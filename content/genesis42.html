@@ -58,6 +58,17 @@
       <p>37 Mas Rúben falou a seu pai, dizendo: Mata os meus dois filhos, se to não tornar a trazer; dá-mo em minha mão, e to tornarei a trazer.</p>
       <p>38 E ele disse: Meu filho não descerá convosco, porque seu irmão é morto, e só ele ficou; e se lhe suceder algum desastre no caminho por onde fordes, fareis descer minhas cãs com tristeza à sepultura.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

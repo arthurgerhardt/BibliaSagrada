@@ -87,7 +87,17 @@
             <p>65 E disse ao servo: Quem é aquele homem que vem pelo campo ao nosso encontro? E o servo respondeu: Este é meu senhor. Então ela tomou o véu e se cobriu.</p>
             <p>66 E o servo contou a Isaque todas as coisas que fizera.</p>
             <p>67 Isaque, pois, trouxe-a para a tenda de Sara, sua mãe, e tomou a Rebeca, e ela lhe foi por mulher, e ele a amou. Assim Isaque foi consolado depois da morte de sua mãe.</p>
-
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="navigation">

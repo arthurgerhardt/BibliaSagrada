@@ -56,7 +56,18 @@
             <p>33 E concebeu outra vez, e deu à luz um filho, e disse: Porquanto o Senhor ouviu que eu era desprezada, deu-me também este. E chamou-lhe Simeão.</p>
             <p>34 E concebeu outra vez, e deu à luz um filho, e disse: Agora esta vez se unirá meu marido a mim, porque três filhos lhe tenho dado. Por isso chamou-lhe Levi.</p>
             <p>35 E concebeu outra vez, e deu à luz um filho, e disse: Esta vez louvarei ao Senhor. Por isso chamou-lhe Judá. E cessou de dar à luz.</p>
-            
+           
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
 
 
             

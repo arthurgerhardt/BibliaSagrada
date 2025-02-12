@@ -54,7 +54,18 @@
       <p>31 Ali sepultaram a Abraão e a Sara, sua mulher; ali sepultaram a Isaque e a Rebeca, sua mulher; e ali eu sepultei a Lia.</p>
       <p>32 O campo e a cova que nele está foram comprados aos filhos de Hete.</p>
       <p>33 E acabando Jacó de dar ordens a seus filhos, recolheu os seus pés na cama e expirou e foi congregado ao seu povo.</p>
-      
+     
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
 
     </section>
     <div class="button-container">

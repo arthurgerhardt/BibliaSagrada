@@ -52,6 +52,18 @@
       <p>28 E foram os dias de Isaque cento e oitenta anos.</p>
       <p>29 E Isaque expirou e morreu, e foi recolhido ao seu povo, velho e farto de dias; e seus filhos Esaú e Jacó o sepultaram.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
     </section>
     <div class="button-container">
       <a class="button" href="../content/genesis34.html">Capítulo Anterior</a>

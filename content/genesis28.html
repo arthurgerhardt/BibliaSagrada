@@ -37,6 +37,18 @@
             <p>21 E eu em paz tornar à casa de meu pai, o Senhor me será por Deus;</p>
             <p>22 E esta pedra que tenho posto por coluna será casa de Deus; e de tudo quanto me deres, certamente te darei o dízimo.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
             
         </section>
         <div class="navigation">

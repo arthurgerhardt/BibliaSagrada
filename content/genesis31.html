@@ -78,6 +78,18 @@
       <p>54 E Jacó ofereceu sacrifício na montanha e convidou seus irmãos para comerem pão; e comeram pão e passaram a noite na montanha.</p>
       <p>55 E levantou-se Labão pela manhã, de madrugada, e beijou seus filhos e suas filhas, e abençoou-os; e partiu e voltou Labão ao seu lugar.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
     </section>
     <div class="button-container">
       <a class="button" href="../content/genesis30.html">Capítulo Anterior</a>

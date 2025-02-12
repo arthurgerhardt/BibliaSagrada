@@ -57,7 +57,17 @@
       <p>33 E será que, quando Faraó vos chamar e disser: Qual é o vosso ofício?</p>
       <p>34 Então, direis: Teus servos têm sido homens de gado desde a nossa mocidade até agora, tanto nós como nossos pais; para que habiteis na terra de Gósen, porque todo o pastor de ovelhas é abominação aos egípcios.</p>
       
-
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

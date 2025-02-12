@@ -56,6 +56,18 @@
             <p>32 E disse Esaú: Eis que estou a ponto de morrer; para que me servirá a primogenitura?</p>
             <p>33 Então disse Jacó: Jura-me hoje. E jurou-lhe e vendeu a sua primogenitura a Jacó.</p>
             <p>34 E Jacó deu a Esaú pão e o guisado de lentilhas; e ele comeu, e bebeu, e levantou-se, e saiu. Assim desprezou Esaú a sua primogenitura.</p>
+
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="navigation">

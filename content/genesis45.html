@@ -49,7 +49,17 @@
       <p>27 E eles lhe falaram todas as palavras de José, que ele lhes tinha falado; e vendo Jacó os carros que José enviara para levá-lo, reviveu o espírito de Jacó, seu pai.</p>
       <p>28 E disse Israel: Basta; ainda vive meu filho José; eu irei e o verei antes que eu morra.</p>
       
-      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script> 
     </section>
     <div class="button-container">
       <a class="button" href="../content/genesis44.html">Capítulo Anterior</a>

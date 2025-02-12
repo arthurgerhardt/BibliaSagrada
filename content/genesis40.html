@@ -43,7 +43,17 @@
       <p>22 Mas ao padeiro-mor enforcou, como José lhes tinha interpretado.</p>
       <p>23 Todavia, o copeiro-mor não se lembrou de José, antes se esqueceu dele.</p>
       
-
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
 
     </section>
     <div class="button-container">

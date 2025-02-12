@@ -55,6 +55,17 @@
       <p>33 Agora, pois, fique teu servo, ó meu senhor, em lugar do moço por servo de meu senhor, e que o moço suba com seus irmãos.</p>
       <p>34 Porque como subirei eu a meu pai, se o moço não for comigo? Para que não veja eu o mal que sobrevirá a meu pai.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

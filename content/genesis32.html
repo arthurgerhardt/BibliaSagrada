@@ -53,6 +53,18 @@
       <p>31 E saiu-lhe o sol, quando passou a Peniel; e coxeava de uma perna.</p>
       <p>32 Por isso, os filhos de Israel não comem o nervo encolhido, que está sobre a juntura da coxa, até o dia de hoje, porquanto ele tocara a juntura da coxa de Jacó no nervo encolhido.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
 
     </section>
     <div class="button-container">

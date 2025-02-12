@@ -43,6 +43,17 @@
       <p>22 E o carcereiro entregou na mão de José todos os presos que estavam na casa do cárcere; e ele fazia tudo o que se fazia ali.</p>
       <p>23 E o carcereiro não tinha cuidado de coisa alguma que estava na mão de José, porquanto o Senhor estava com ele; e tudo o que ele fazia, o Senhor prosperava.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
 
     </section>
     <div class="button-container">

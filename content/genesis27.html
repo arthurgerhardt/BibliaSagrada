@@ -67,6 +67,18 @@
             <p>45 Até que se desvie de ti a ira de teu irmão, e se esqueça do que lhe fizeste; então mandarei trazer-te de lá; por que seria eu desfilhada de ambos num mesmo dia?</p>
             <p>46 E disse Rebeca a Isaque: Enfadada estou da minha vida, por causa das filhas de Hete; se Jacó tomar mulher das filhas de Hete, como estas, das filhas desta terra, para que me servirá a vida?</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
 
             
         </section>

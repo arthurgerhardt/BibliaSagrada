@@ -52,6 +52,18 @@
       <p>30 Então, disse Jacó a Simeão e a Levi: Tendes-me perturbado, fazendo-me abominável aos moradores desta terra, aos cananeus e aos ferezeus; e, sendo eu em pequeno número, ajuntar-se-ão contra mim e me ferirão; e serei destruído, eu e minha casa.</p>
       <p>31 E eles disseram: Devia ele tratar a nossa irmã como a uma prostituta?</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
     </section>
     <div class="button-container">
       <a class="button" href="../content/genesis33.html">Capítulo Anterior</a>

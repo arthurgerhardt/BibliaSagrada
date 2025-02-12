@@ -49,6 +49,17 @@
       <p>25 E José fez jurar os filhos de Israel, dizendo: Certamente, vos visitará Deus, e fareis transportar os meus ossos daqui.</p>
       <p>26 Assim, José morreu, sendo da idade de cento e dez anos; e o embalsamaram e o puseram num caixão no Egito.</p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
     </section>
     <div class="button-container">
       <a class="button" href="../content/genesis49.html">Capítulo Anterior</a>

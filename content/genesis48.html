@@ -46,6 +46,18 @@
       <p>20 Assim, os abençoou naquele dia, dizendo: Em ti Israel abençoará, dizendo: Deus te ponha como a Efraim e como a Manassés. E pôs a Efraim diante de Manassés.</p>
       <p>21 Depois, disse Israel a José: Eis que eu morro, mas Deus será convosco e vos fará tornar à terra de vossos pais.</p>
       <p>22 E eu te dou a ti uma porção mais do que a teus irmãos, a qual tomei da mão dos amorreus com a minha espada e com o meu arco.</p>
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

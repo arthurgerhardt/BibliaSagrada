@@ -54,6 +54,17 @@
       <p>31 E disse ele: Jura-me. E ele jurou-lhe; e Israel inclinou-se sobre a cabeceira da cama.
       </p>
 
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
       
     </section>
     <div class="button-container">

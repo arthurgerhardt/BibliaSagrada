@@ -56,7 +56,17 @@
       <p>33 E assentaram-se diante dele, o primogênito conforme a sua primogenitura, e o menor conforme a sua menoridade; e aqueles homens se entreolhavam, atônitos uns para com os outros.</p>
       <p>34 E ele mandou tirar porções de diante dele para todos eles; mas a porção de Benjamim era cinco vezes maior do que a porção de todos eles; e beberam e se alegraram com ele.</p>
       
-      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+    </div>
+    <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script> 
       
     </section>
     <div class="button-container">
