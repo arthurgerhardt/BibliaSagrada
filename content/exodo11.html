@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 11</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 11</h2>
+      <h3>A morte dos primogênitos</h3>
+      <p>1. O Senhor disse a Moisés: "Ainda uma praga trarei sobre o faraó e sobre o Egito. Depois disso ele os deixará sair daqui. Quando ele os deixar sair, será de todo modo expulsos daqui.</p>
+      <p>2. Diga ao povo que os homens e as mulheres peçam aos seus vizinhos objetos de prata e de ouro".</p>
+      <p>3. O Senhor fez com que os egípcios olhassem com favor para o povo, e Moisés era muito respeitado no Egito, tanto pelos conselheiros do faraó como pelo povo.</p>
+      <p>4. Moisés disse: "Assim diz o Senhor: ‘Por volta da meia-noite sairei pelo meio do Egito.</p>
+      <p>5. Todo primogênito no Egito morrerá, desde o primogênito do faraó, que se assenta em seu trono, até o primogênito da escrava que trabalha no moinho, e até o primogênito de todos os animais.</p>
+      <p>6. Haverá grande clamor em todo o Egito, como nunca houve antes, nem jamais haverá.</p>
+      <p>7. Mas entre os israelitas nem mesmo um cachorro rosnará contra homem ou animal’. Então vocês saberão que o Senhor faz distinção entre o Egito e Israel.</p>
+      <p>8. Todos esses seus conselheiros virão a mim, prostrar-se-ão diante de mim e dirão: ‘Saia, você e todo o povo que o segue!’ Depois disso sairei". E, muito irado, Moisés saiu da presença do faraó.</p>
+      <p>9. O Senhor tinha dito a Moisés: "O faraó não os ouvirá, para que os meus sinais miraculosos se multipliquem no Egito".</p>
+      <p>10. Moisés e Arão realizaram todos esses sinais miraculosos diante do faraó, mas o Senhor endureceu o coração do faraó, e ele não deixou os israelitas saírem do seu país.</p>
+      
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+      
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo10.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo12.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

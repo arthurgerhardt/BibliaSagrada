@@ -50,6 +50,18 @@
             <p>31 E foram todos os dias de Lameque setecentos e setenta e sete anos, e morreu.</p>
             <p>32 E era Noé da idade de quinhentos anos, e gerou a Sem, Cam e Jafé.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
             
         </section>
         <div class="theme-toggle-btn">

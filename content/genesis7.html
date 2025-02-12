@@ -42,6 +42,18 @@
             <p>22 Tudo o que tinha fôlego de espírito de vida em suas narinas, tudo o que havia em terra seca, morreu.</p>
             <p>23 Assim foi destruído todo ser que havia sobre a face da terra, desde o homem até ao animal, até ao réptil, e até à ave dos céus; e foram extintos da terra; e ficou somente Noé, e os que com ele estavam na arca.</p>
             <p>24 E prevaleceram as águas sobre a terra cento e cinquenta dias.</p>
+
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="theme-toggle-btn">

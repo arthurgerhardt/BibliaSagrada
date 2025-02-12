@@ -39,6 +39,18 @@
             <p>19 Por que disseste: É minha irmã? De maneira que a tomei por mulher. Agora, pois, eis aqui tua mulher; toma-a e vai-te.</p>
             <p>20 E Faraó deu ordens a respeito dele a alguns, os quais o acompanharam, a ele, e a sua mulher, e a tudo o que possuía.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
 
         </section>
         <div class="navigation">

@@ -42,6 +42,17 @@
             <p>21 E o Senhor cheirou o suave cheiro e disse em seu coração: Não tornarei mais a amaldiçoar a terra por causa do homem; porque a imaginação do coração do homem é má desde a sua mocidade; nem tornarei mais a ferir todo vivente, como fiz.</p>
             <p>22 Enquanto a terra durar, não deixará de haver sementeira e ceifa, e frio e calor, e verão e inverno, e dia e noite.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="navigation">

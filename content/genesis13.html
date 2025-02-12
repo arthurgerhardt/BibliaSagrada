@@ -37,6 +37,18 @@
             <p>17 Levanta-te, percorre essa terra, no seu comprimento e na sua largura; porque a ti a darei.</p>
             <p>18 E Abrão mudou as suas tendas, e foi habitar junto dos carvalhais de Manre, que estão junto a Hebrom; e edificou ali um altar ao Senhor.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
 
         </section>
         <div class="navigation">

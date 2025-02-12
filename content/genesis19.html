@@ -64,6 +64,18 @@
             <p>37 A primogênita deu à luz um filho, e chamou-lhe Moabe; este é o pai dos moabitas de hoje.</p>
             <p>38 A menor também deu à luz um filho, e chamou-lhe Ben-Ami; este é o pai dos amonitas de hoje.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
         </section>
         <div class="navigation">
             <a href="../content/genesis18.html">Capítulo Anterior</a>

@@ -46,6 +46,18 @@
             <p>25 E Ismael, seu filho, tinha treze anos, quando foi circuncidado na carne do seu prepúcio.</p>
             <p>26 Naquele mesmo dia foram circuncidados Abraão e seu filho Ismael.</p>
             <p>27 E todos os homens da sua casa, os nascidos em casa e os comprados por dinheiro ao estrangeiro, foram circuncidados com ele.</p>
+
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
 
         </section>

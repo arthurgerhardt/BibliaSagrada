@@ -41,6 +41,19 @@
             <p>22 E disse o Senhor Deus: Eis que o homem é como um de nós, sabendo o bem e o mal; ora, para que não estenda a sua mão, e tome também da árvore da vida, e coma e viva eternamente,</p>
             <p>23 O Senhor Deus, pois, o lançou fora do jardim do Éden, para lavrar a terra de que fora tomado.</p>
             <p>24 E havendo lançado fora o homem, pôs querubins ao oriente do jardim do Éden, e uma espada inflamada que andava ao redor, para guardar o caminho da árvore da vida.</p>
+
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+            </div>
         </section>
         <div class="theme-toggle-btn">
             <a href="../content/genesis2.html">Capítulo Anterior</a>

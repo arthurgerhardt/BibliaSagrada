@@ -41,6 +41,17 @@
             <p>21 E leva contigo de toda a comida que se come e ajunta-a contigo; e te será para mantimento, a ti e a eles.</p>
             <p>22 Assim fez Noé; conforme a tudo o que Deus lhe mandou, assim o fez.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="theme-toggle-btn">

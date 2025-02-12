@@ -46,6 +46,18 @@
             <p>24 Sete vezes será vingado Caim, mas Lameque setenta vezes sete.</p>
             <p>25 E tornou Adão a conhecer a sua mulher, e ela deu à luz um filho, e chamou o seu nome Sete; porque, disse ela, Deus me deu outro filho em lugar de Abel; porquanto Caim o matou.</p>
             <p>26 E a Sete nasceu-lhe também um filho, e chamou o seu nome Enos; então se começou a invocar o nome do Senhor.</p>
+
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
             
         </section>
         <div class="theme-toggle-btn">

@@ -44,6 +44,18 @@
             <p>23 jurando que desde um fio até à correia de um sapato, não tomarei coisa alguma de tudo o que é teu, para que não digas: Eu enriqueci a Abrão;</p>
             <p>24 salvo tão somente o que os jovens comeram, e a parte dos homens que comigo foram, Aner, Escol e Manre, que tomem a sua parte.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
 
         </section>
         <div class="navigation">

@@ -36,6 +36,17 @@
             <p>17 Assim orou Abraão a Deus; e Deus sarou a Abimeleque, e a sua mulher, e as suas servas, de modo que tiveram filhos;</p>
             <p>18 porque o Senhor havia fechado toda a madre da casa de Abimeleque, por causa de Sara, mulher de Abraão.</p>
             
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
         </section>
         <div class="navigation">
             <a href="../content/genesis19.html">Capítulo Anterior</a>

@@ -54,6 +54,18 @@
             <p>32 Disse ainda Abraão: Ora, não se ire o Senhor, se só mais esta vez falar. Se porventura se acharem ali dez? Respondeu: Não a destruirei por amor dos dez.</p>
             <p>33 E o Senhor retirou-se, logo que acabou de falar com Abraão; e Abraão voltou para o seu lugar.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
         </section>
         <div class="navigation">
             <a href="../content/genesis17.html">Capítulo Anterior</a>

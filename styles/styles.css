@@ -63,7 +63,20 @@ header {
   margin-inline: auto;
   max-width: 1280px;
 }
+/* Estilos para os botões */
+button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
 
+button:hover {
+  background-color: #ddd;
+  color: #333;
+}
 /* Estilos dos itens da lista */
 .bible-index li {
   display: block;

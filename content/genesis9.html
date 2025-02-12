@@ -52,6 +52,18 @@
             <p>28 Depois do dilúvio, Noé viveu mais trezentos e cinquenta anos.</p>
             <p>29 No total, Noé viveu novecentos e cinquenta anos; depois morreu.</p>
 
+            <div class="narrator">
+                <button id="narrate-btn">Ouvir Narração</button>
+              </div>
+              <script>
+                document.getElementById('narrate-btn').addEventListener('click', function() {
+                  const text = document.querySelector('.bible-book').innerText;
+                  const utterance = new SpeechSynthesisUtterance(text);
+                  utterance.lang = 'pt-BR';
+                  speechSynthesis.speak(utterance);
+                });
+              </script>
+
         </section>
         <div class="navigation">
             <a href="../content/genesis8.html">Capítulo Anterior</a>

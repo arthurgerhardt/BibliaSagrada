@@ -48,16 +48,21 @@
         <p>29 E disse Deus: Eis que vos tenho dado toda erva que dá semente, que está sobre a face de toda a terra; e toda árvore, em que há fruto que dê semente, ser-vos-á para mantimento.</p>
         <p>30 E a todo o animal da terra, e a toda a ave dos céus, e a todo réptil da terra, em que há alma vivente, toda a erva verde será para mantimento; e assim foi.</p>
         <p>31 E viu Deus tudo quanto tinha feito, e eis que era muito bom; e foi a tarde e a manhã, o dia sexto.</p>
+
+        <div class="narrator">
+            <button id="narrate-btn">Ouvir Narração</button>
+          </div>
+          <script>
+            document.getElementById('narrate-btn').addEventListener('click', function() {
+              const text = document.querySelector('.container').innerText;
+              const utterance = new SpeechSynthesisUtterance(text);
+              utterance.lang = 'pt-BR';
+              speechSynthesis.speak(utterance);
+            });
+          </script>
     </main>
-    <script>
-        const utterance = new SpeechSynthesisUtterance();
-        utterance.lang = 'pt-BR';
-        utterance.text = document.querySelector('main').innerText;
-        document.addEventListener('DOMContentLoaded', () => {
-            speechSynthesis.speak(utterance);
-        });
-    </script>
-    <div class="nav theme-toggle-btn">
+
+    <div class="nav theme-toggle">
         <a href="../index.html" class="nav-button">Início</a>
         <a href="../content/genesis2.html" class="nav-button">Próximo Capítulo</a>
         <a href="../sumary_index.html" class="nav-button">Sumário</a>
