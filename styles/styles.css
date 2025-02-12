@@ -1,12 +1,16 @@
 /* Estilos globais */
 body {
+  --button-bg-color: #4CAF50;
+  --button-text-color: white;
+  --button-hover-bg-color: #45a049;
+  --button-hover-text-color: white;
   font-family: Arial, sans-serif;
   line-height: 1.6;
   margin: 0;
   padding: 0;
   text-align: center;
   background-color: #f0f0f0; /* Cor de fundo suave */
-}
+} /* End of .theme-toggle button styles */
 
 /* Tema claro */
 body.light-theme {
@@ -95,7 +99,7 @@ button:hover {
   background-color: var(--button-bg-color);
   color: var(--button-text-color);
   border: none;
-  padding: 10px 20px;
+  padding: 5px 10px;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
 }
