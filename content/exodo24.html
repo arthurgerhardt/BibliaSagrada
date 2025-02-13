@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 24</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 24</h2>
+      <h3>Deus manda Moisés e os anciãos subir o monte</h3>
+      <p>1. Então disse a Moisés: "Suba o monte ao Senhor, você, Arão, Nadabe, Abiú e setenta dos líderes de Israel, e adorem de longe. 2. Só Moisés se aproximará do Senhor; os outros não se aproximarão, e o povo não subirá com ele." 3. Quando Moisés foi e contou ao povo todas as palavras e leis do Senhor, eles responderam a uma só voz: "Faremos tudo o que o Senhor ordenou."</p>
+      <p>2 E só Moisés se chegará ao Senhor; mas eles não se cheguem, nem o povo suba com ele.</p>
+      <p>3 E Moisés veio, e contou ao povo todas as palavras do Senhor, e todos os estatutos; então todo o povo respondeu a uma voz, e disse: Todas as palavras que o Senhor tem falado faremos.</p>
+      <p>4 E Moisés escreveu todas as palavras do Senhor, e levantou-se pela manhã de madrugada, e edificou um altar ao pé do monte e doze monumentos, segundo as doze tribos de Israel;</p>
+      <p>5 e enviou certos jovens dos filhos de Israel, os quais ofereceram holocaustos e sacrificaram ao Senhor sacrifícios pacíficos de bezerros.</p>
+      <p>6 E Moisés tomou a metade do sangue, e a pôs em bacias; e a outra metade do sangue espargiu sobre o altar.</p>
+      <p>7 E tomou o livro da aliança, e o leu aos ouvidos do povo, o qual disse: Tudo o que o Senhor tem falado faremos, e obedeceremos.</p>
+      <p>8 Então Moisés tomou o sangue, e espargiu-o sobre o povo, e disse: Eis aqui o sangue da aliança que o Senhor tem feito convosco sobre todas estas palavras.</p>
+      <p>9 E subiram Moisés e Arão, Nadabe e Abiú, e setenta dos anciãos de Israel,</p>
+      <p>10 e viram o Deus de Israel, e debaixo de seus pés havia como uma obra de pedra de safira e como o parecer do céu na sua claridade.</p>
+      <p>11 Porém ele não estendeu a sua mão sobre os escolhidos dos filhos de Israel; mas viram a Deus, e comeram, e beberam.</p>
+      <p>12 Então disse o Senhor a Moisés: Sobe a mim ao monte, e fica lá; e dar-te-ei tábuas de pedra, e a lei, e os mandamentos que tenho escrito, para os ensinares.</p>
+      <p>13 Então Moisés se levantou com Josué, seu servidor, e Moisés subiu ao monte de Deus.</p>
+      <p>14 E disse a anciãos: Esperai-nos aqui até que tornemos a vós; eis que Arão e Hur ficam convosco; quem tiver algum negócio, se chegará a eles.</p>
+      <p>15 E Moisés subiu ao monte, e a nuvem cobriu o monte.</p>
+      <p>16 E a glória do Senhor repousou sobre o monte Sinai, e a nuvem o cobriu por seis dias; e ao sétimo dia chamou a Moisés do meio da nuvem.</p>
+      <p>17 E o parecer da glória do Senhor era como um fogo consumidor no cume do monte, aos olhos dos filhos de Israel.</p>
+      <p>18 E Moisés entrou no meio da nuvem, e subiu ao monte; e Moisés esteve no monte quarenta dias e quarenta noites.</p>
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+      
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo23.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo25.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 20</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 20</h2>
+      <h3>Os Dez Mandamentos</h3>
+      <p>1. Então Deus falou todas estas palavras:</p>
+      <p>2. "Eu sou o Senhor, o seu Deus, que o tirou do Egito, da terra da escravidão.</p>
+      <p>3. "Não terás outros deuses além de mim.</p>
+      <p>4. "Não farás para ti nenhum ídolo, nenhuma imagem de qualquer coisa no céu, na terra, ou nas águas debaixo da terra.</p>
+      <p>5. Não te prostrarás diante deles nem lhes prestarás culto, porque eu, o Senhor, o seu Deus, sou Deus zeloso, que castigo os filhos pelos pecados de seus pais até a terceira e quarta geração daqueles que me desprezam,</p>
+      <p>6. mas trato com bondade até mil gerações aos que me amam e obedecem aos meus mandamentos.</p>
+      <p>7. "Não tomarás em vão o nome do Senhor, o seu Deus, pois o Senhor não deixará impune quem tomar o seu nome em vão.</p>
+      <p>8. "Lembra-te do dia de sábado, para santificá-lo.</p>
+      <p>9. Trabalharás seis dias e neles farás todos os teus trabalhos,</p>
+      <p>10. mas o sétimo dia é o sábado dedicado ao Senhor, o seu Deus. Nesse dia não farás trabalho algum, nem tu, nem teu filho ou filha, nem teu servo ou serva, nem teus animais, nem os estrangeiros que morarem em tuas cidades.</p>
+      <p>11. Pois em seis dias o Senhor fez os céus e a terra, o mar e tudo o que neles existe, mas no sétimo dia descansou. Portanto, o Senhor abençoou o dia de sábado e o santificou.</p>
+      <p>12. "Honra teu pai e tua mãe, a fim de que tenhas vida longa na terra que o Senhor, o teu Deus, te dá.</p>
+      <p>13. "Não matarás.</p>
+      <p>14. "Não adulterarás.</p>
+      <p>15. "Não furtarás.</p>
+      <p>16. "Não darás falso testemunho contra o teu próximo.</p>
+      <p>17. "Não cobiçarás a casa do teu próximo. Não cobiçarás a mulher do teu próximo, nem seus servos ou servas, nem seu boi ou jumento, nem coisa alguma que lhe pertença".</p>
+      <h3>O povo teme a Deus</h3>
+      <p>18. Quando o povo viu os trovões e relâmpagos, o som da trombeta e o monte fumegante, estremeceu e ficou à distância.</p>
+      <p>19. E disseram a Moisés: "Fala tu mesmo conosco, e ouviremos. Mas não permitas que Deus fale conosco, para que não morramos".</p>
+      <p>20. Moisés respondeu ao povo: "Não tenham medo. Deus veio para prová-los, para que o temor de Deus esteja com vocês e os livre de pecar".</p>
+      <p>21. O povo permaneceu à distância, enquanto Moisés aproximou-se da escuridão onde Deus estava.</p>
+      <p>22. Então o Senhor disse a Moisés: "Assim dirás aos israelitas: Vocês mesmos viram que do céu lhes falei.</p>
+      <p>23. Não façam ídolos de prata nem de ouro para me acompanhar, nem sejam tentados a adorá-los.</p>
+      <p>24 Um altar de terra me farás e sobre ele sacrificarás os teus holocaustos, e as tuas ofertas pacíficas, e as tuas ovelhas, e as tuas vacas; em todo lugar onde eu fizer celebrar a memória do meu nome, virei a ti e te abençoarei.</p>
+      <p>25 E se me fizeres um altar de pedras, não o farás de pedras lavradas; pois, levantando a tua ferramenta sobre elas, profaná-las-ias.</p>
+      <p>26 Não subirás por degraus ao meu altar, para que a tua nudez não seja descoberta diante deles.</p>
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+      
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo21.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

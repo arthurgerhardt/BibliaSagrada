@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 22</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 22</h2>
+      <h3>As leis acerca da propriedade</h3>
+      <p>1 Se alguém furtar boi ou ovelha e o degolar ou vender, por um boi pagará cinco bois; e pela ovelha, quatro ovelhas.</p>
+      <p>2 Se o ladrão for achado arrombando uma casa, e for ferido, e morrer, o que o feriu não será culpado do sangue.</p>
+      <p>3 Se o sol houver saído sobre ele, o que o feriu será réu de sangue; o ladrão fará restituição; se não tiver bens, será vendido por seu furto.</p>
+      <p>4 Se o furto for achado vivo em sua mão, seja boi, ou jumento, ou ovelha, pagará o dobro.</p>
+      <p>5 Se alguém fizer pastar o campo ou a vinha, e soltar o seu animal, e este pastar no campo de outrem, do melhor do seu campo e do melhor da sua vinha pagará.</p>
+      <p>6 Se um fogo se acender e pegar nos espinhos, de modo que sejam destruídos os feixes de trigo, ou a seara, ou o campo, aquele que acendeu o fogo pagará a perda.</p>
+      <p>7 Se alguém der ao seu próximo dinheiro ou bens a guardar, e isso for furtado da casa desse homem, se o ladrão for achado, pagará o dobro.</p>
+      <p>8 Se o ladrão não for achado, então o dono da casa será levado diante dos juízes, para que se veja se não pôs a sua mão nos bens do seu próximo.</p>
+      <p>9 Sobre todo negócio de injustiça, sobre boi, sobre jumento, sobre gado miúdo, sobre veste, sobre toda coisa perdida, de que alguém disser que é sua, a causa de ambos virá perante os juízes; aquele a quem condenarem os juízes o pagará em dobro ao seu próximo.</p>
+      <p>10 Se alguém der a seu próximo a guardar um jumento, ou boi, ou ovelha, ou algum animal, e morrer, ou for dilacerado, ou afugentado, ninguém o vendo,</p>
+      <p>11 então haverá juramento do Senhor entre ambos, para ver se não pôs a sua mão nos bens do seu próximo; e o dono aceitará o juramento, e o outro não restituirá.</p>
+      <p>12 Mas, se lhe for furtado, restituirá ao seu dono.</p>
+      <p>13 Porém, se lhe for dilacerado, trá-lo-á em testemunho disso e não pagará o dilacerado.</p>
+      <p>14 E, se alguém pedir emprestado a seu próximo animal, e ele for danificado ou morrer, estando o seu dono ausente, certamente o pagará.</p>
+      <p>15 Mas, se o dono estiver presente, não o pagará; se era alugado, o aluguel bastará.</p>
+      <h3>As leis acerca da imoralidade e da idolatria</h3>
+      <p>16 Se alguém enganar alguma virgem que não for desposada, e se deitar com ela, certamente pagará o dote por ela, para que lhe seja por mulher.</p>
+      <p>17 Se seu pai inteiramente recusar dar-lha, dará dinheiro conforme ao dote das virgens.</p>
+      <p>18 A feiticeira não deixarás viver.</p>
+      <p>19 Qualquer que se deitar com animal certamente morrerá.</p>
+      <p>20 O que sacrificar aos deuses, salvo somente ao Senhor, seja morto.</p>
+      <p>21 Ao estrangeiro não afligirás, nem o oprimirás; pois estrangeiros fostes na terra do Egito.</p>
+      <p>22 A nenhuma viúva nem órfão afligireis.</p>
+      <p>23 Se de alguma maneira os afligires, e eles clamarem a mim, eu certamente ouvirei o seu clamor;</p>
+      <p>24 e a minha ira se acenderá, e vos matarei à espada; e vossas mulheres ficarão viúvas, e vossos filhos, órfãos.</p>
+      <p>25 Se emprestares dinheiro ao meu povo, ao pobre que está contigo, não te haverás com ele como usura.</p>
+      <p>26 Se tomares em penhor a roupa do teu próximo, lha restituirás antes do pôr do sol;</p>
+      <p>27 porque é a única cobertura que tem para a sua pele; em que mais se deitaria ele? Será, pois, que, quando clamar a mim, eu o ouvirei, porque sou misericordioso.</p>
+      <p>28 Aos deuses não farás blasfêmia, nem amaldiçoarás o príncipe do teu povo.</p>
+      <p>29 As tuas primícias e os teus licores não retardarás; o primogênito de teus filhos me darás.</p>
+      <p>30 Assim farás com o teu boi e com a tua ovelha; sete dias ficará com sua mãe; ao oitavo dia ma darás.</p>
+      <p>31 E vós me sereis homens santos; portanto não comereis carne despedaçada no campo; aos cães a lançareis.</p>
+
+      
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function() {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+      
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo21.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo23.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
