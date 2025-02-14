@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 31</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 31</h2>
+      <h3>Os artífices da obra do tabernáculo</h3>
+      <p>1 Disse o Senhor a Moisés:</p>
+      <p>2 "Veja, chamei pelo nome Bezalel, filho de Uri, filho de Hur, da tribo de Judá.</p>
+      <p>3 E o enchi do Espírito de Deus, de habilidade, de conhecimento e de todo tipo de destreza</p>
+      <p>4 para fazer desenhos e trabalhar em ouro, prata e bronze,</p>
+      <p>5 para lapidar e entalhar pedras, para entalhar madeira e executar todo tipo de obra artesanal.</p>
+      <p>6 E a ele, e a Aoliabe, filho de Aisamaque, da tribo de Dã, eu dei habilidade para executar todo tipo de trabalho.</p>
+      <p>7 Fiz também que todos os artífices fossem habilidosos para fazer tudo o que lhe ordenei: </p>
+      <p>8 o tabernáculo, a arca da aliança, o propiciatório que está sobre ela, e todos os utensílios do tabernáculo;</p>
+      <p>9 a mesa e todos os seus utensílios, o candelabro puro com todos os seus utensílios, o altar do incenso;</p>
+      <p>10 e as vestes do ministério, e as vestes santas de Arão, o sacerdote, e as vestes de seus filhos, para administrarem o sacerdócio;</p>
+      <p>11 o óleo da unção, e o incenso aromático para o santuário. Eles farão tudo conforme ordenei".</p>
+      <h3>O sábado santo e as duas tábuas do Testemunho</h3>
+      <p>12 Disse ainda o Senhor a Moisés:</p>
+      <p>13 "Diga aos israelitas: Guardem os meus sábados, pois isso é um sinal entre mim e vocês, geração após geração, a fim de que saibam que eu sou o Senhor, que os santifica.</p>
+      <p>14 Portanto, guardareis o sábado, porque santo é para vós; aquele que o profanar certamente morrerá; porque qualquer que nele fizer alguma obra, aquela alma será extirpada do meio do seu povo.</p>
+      <p>15 Seis dias se trabalhará, mas o sétimo dia é o sábado do descanso, santo ao Senhor; qualquer que no dia do sábado fizer alguma obra, certamente morrerá.</p>
+      <p>16 Guardarão, pois, o sábado os filhos de Israel, celebrando-o nas suas gerações por aliança perpétua.</p>
+      <p>17 Entre mim e os filhos de Israel será um sinal para sempre; porque em seis dias fez o Senhor os céus e a terra, e ao sétimo dia descansou, e restaurou-se.</p>
+      <p>18 E, tendo acabado de falar com ele no monte Sinai, deu a Moisés as duas tábuas do Testemunho, tábuas de pedra, escritas pelo dedo de Deus.</p>
+      
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo30.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo32.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
