@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 37</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 37</h2>
+      <h3>A arca</h3>
+      <p>1 Fez também Bezalel a arca de madeira de acácia; o seu comprimento era de dois côvados e meio, e a sua largura de um côvado e meio, e de um côvado e meio a sua altura.</p>
+      <p>2 E cobriu-a de ouro puro por dentro e por fora, e fez-lhe uma coroa de ouro ao redor.</p>
+      <p>3 Fundiu-lhe quatro argolas de ouro nos seus quatro cantos, duas argolas de um lado, e duas do outro.</p>
+      <p>4 Fez também varais de madeira de acácia, e os cobriu de ouro.</p>
+      <p>5 E meteu os varais nas argolas aos lados da arca, para se levar a arca.</p>
+      <h3>O propiciatório</h3>
+      <p>6 Fez também o propiciatório de ouro puro; o seu comprimento era de dois côvados e meio, e a sua largura de um côvado e meio.</p>
+      <p>7 Fez também dois querubins de ouro; de ouro batido os fez, nas duas extremidades do propiciatório.</p>
+      <p>8 Um querubim de uma extremidade, e o outro querubim da outra extremidade; de uma só peça com o propiciatório fez os querubins nas duas extremidades dele.</p>
+      <p>9 E os querubins tinham as suas asas estendidas por cima, cobrindo com elas o propiciatório; e os seus rostos estavam defronte um do outro; os rostos dos querubins estavam voltados para o propiciatório.</p>
+      <h3>A mesa dos pães da proposição</h3>
+      <p>10 Fez também a mesa de madeira de acácia; o seu comprimento era de dois côvados, e a sua largura de um côvado, e a sua altura de um côvado e meio.</p>
+      <p>11 E cobriu-a de ouro puro, e fez-lhe uma coroa de ouro ao redor.</p>
+      <p>12 Também fez-lhe uma moldura de um palmo menor ao redor; e fez uma coroa de ouro ao redor da sua moldura.</p>
+      <p>13 E fundiu-lhe quatro argolas de ouro, e pôs as argolas aos quatro cantos, que estavam nos seus quatro pés.</p>
+      <p>14 Frontais das argolas estavam as argolas, para lugares dos varais, para se levar a mesa.</p>
+      <p>15 Fez também os varais de madeira de acácia, e os cobriu de ouro, para se levar a mesa.</p>
+      <h3>Os utensílios da mesa</h3>
+      <p>16 Fez mais os utensílios que haviam de estar sobre a mesa, os seus pratos, as suas colheres, as suas taças e as suas tigelas com que se havia de fazer libação; de ouro puro os fez.</p>
+      <h3>O candelabro de ouro</h3>
+      <p>17 Fez também o candelabro de ouro puro; de ouro batido fez o candelabro; o seu pé, e a sua haste, os seus copos, as suas maçãs e as suas flores eram de uma só peça com ele.</p>
+      <p>18 E seis braços saíam dos seus lados, três de um lado do candelabro, e três do outro.</p>
+      <p>19 Num braço havia três copos em forma de amêndoas, uma maçã e uma flor; e, no outro braço, três copos em forma de amêndoas, uma maçã e uma flor; assim era com os seis braços que saíam do candelabro.</p>
+      <p>20 E na haste do candelabro havia quatro copos em forma de amêndoas, as suas maçãs e as suas flores.</p>
+      <p>21 E uma maçã debaixo de dois braços do mesmo, e outra maçã debaixo de outros dois braços do mesmo, e outra maçã debaixo de outros dois braços do mesmo, para os seis braços que saíam do candelabro.</p>
+      <p>22 As suas maçãs e os seus braços eram de uma só peça com ele; tudo era uma obra batida de ouro puro.</p>
+      <p>23 Fez também as suas sete lâmpadas, os seus espevitadores e os seus apagadores de ouro puro.</p>
+      <p>24 De um talento de ouro puro o fez com todos os seus utensílios.</p>
+      <h3>O altar de ouro</h3>
+      <p>25 Fez também o altar do incenso de madeira de acácia; o seu comprimento era de um côvado, e a sua largura de um côvado; era quadrado, e a sua altura de dois côvados; e as suas pontas eram de uma só peça com ele.</p>
+      <p>26 E cobriu-o de ouro puro, a sua chapa, as suas paredes ao redor, e as suas pontas; e fez-lhe uma coroa de ouro ao redor.</p>
+      <p>27 Também lhe fez duas argolas de ouro debaixo da sua coroa, aos dois cantos, de ambos os lados, para lugares dos varais, com que se levaria.</p>
+      <p>28 E fez os varais de madeira de acácia, e os cobriu de ouro.</p>
+      <h3>O azeite da unção e o incenso</h3>
+      <p>29 Fez também o óleo da unção santo e o incenso puro, obra de perfumista.</p>
+      
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo36.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo38.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

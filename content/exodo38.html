@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Êxodo 38</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Êxodo 38</h2>
+      <h3>O altar do holocausto</h3>
+      <p>1 Fez também o altar do holocausto de madeira de acácia; de cinco côvados era o comprimento, e de cinco côvados a largura, era quadrado o altar, e de três côvados a sua altura.</p>
+      <p>2 E fez-lhe as pontas nos seus quatro cantos; as pontas eram do mesmo; e cobriu-o de bronze.</p>
+      <p>3 Também fez todos os seus utensílios, as suas caldeiras, as suas pás, os seus garfos, os seus braseiros, e todos os seus utensílios fez de bronze.</p>
+      <p>4 Fez também para o altar uma grade de bronze, em forma de rede, debaixo da sua borda, chegando até ao meio do altar.</p>
+      <p>5 E fundiu quatro argolas, para os quatro cantos da grade de bronze, como lugares para os varais.</p>
+      <p>6 E fez os varais de madeira de acácia, e os cobriu de bronze.</p>
+      <p>7 E meteu os varais nas argolas aos lados do altar, para o levar com eles o fez oco, de tábuas.</p>
+      <h3>A pia de bronze</h3>
+      <p>8 Fez também a pia de bronze, com a sua base de bronze, dos espelhos das mulheres que se reuniam, para servirem à porta da tenda da congregação.</p>
+      <h3>O pátio</h3>
+      <p>9 Fez também o átrio; para o lado do sul, ao sul, cortinas de linho fino torcido, de cem côvados;</p>
+      <p>10 as suas vinte colunas, e as suas vinte bases, de bronze; os colchetes das colunas e as suas molduras, de prata.</p>
+      <p>11 E assim para o lado do norte, em comprimento, as cortinas de cem côvados, as suas vinte colunas, e as suas vinte bases, de bronze; os colchetes das colunas e as suas molduras, de prata.</p>
+      <p>12 E para o lado do ocidente, cortinas de cinqüenta côvados, as suas dez colunas, e as suas dez bases; os colchetes das colunas e as suas molduras, de prata.</p>
+      <p>13 E para o lado do oriente, do lado do nascente, cinqüenta côvados.</p>
+      <p>14 As cortinas de um lado da porta, de quinze côvados, as suas três colunas, e as suas três bases;</p>
+      <p>15 e do outro lado, quinze côvados, com as suas três colunas, e as suas três bases.</p>
+      <p>16 E à porta do átrio, uma cortina de vinte côvados, de azul, e púrpura, e carmesim, e linho fino torcido, obra de bordador; as suas quatro colunas, e as suas quatro bases.</p>
+      <p>17 Todas as colunas do átrio ao redor, com as suas molduras, de prata; os seus colchetes, de prata, e as suas bases, de bronze.</p>
+      <p>18 O comprimento do átrio era de cem côvados, e a largura de cinqüenta, em altura, de cinco côvados, de linho fino torcido, e as suas bases, de bronze.</p>
+      <p>19 Todos os utensílios do tabernáculo, em todo o seu serviço, e todas as suas estacas, e todas as estacas do átrio, de bronze.</p>
+      <p>20 E toda a obra do tabernáculo da tenda da congregação foi acabada; e os filhos de Israel fizeram conforme a tudo o que o Senhor ordenara a Moisés; assim o fizeram.</p>
+      <h3>A enumeração das coisas do tabernáculo</h3>
+      <p>21 E trouxeram a Moisés o tabernáculo, a tenda, e todos os seus utensílios, os seus colchetes, as suas tábuas, as suas barras, e as suas colunas, e as suas bases;</p>
+      <p>22 e a coberta de peles de carneiros tintas de vermelho, e a coberta de peles de texugos, e o véu da coberta;</p>
+      <p>23 a arca do testemunho, e os seus varais, e o propiciatório;</p>
+      <p>24 a mesa, e todos os seus utensílios, e os pães da proposição;</p>
+      <p>25 o candelabro da luz, com os seus utensílios, e as suas lâmpadas, e o azeite para a luz;</p>
+      <p>26 o altar do ouro, e o óleo da unção, e o incenso aromático; e a cortina da porta à entrada do tabernáculo;</p>
+      <p>27 E houve cem talentos de prata para fundir as bases do santuário e as bases do véu; para cem bases eram cem talentos: um talento para cada base.</p>
+      <p>28 E dos mil setecentos e setenta e cinco siclos fez colchetes para as colunas, e cobriu as suas cabeças, e fez as suas molduras de prata.</p>
+      <p>29 E o bronze da oferta foi setenta talentos, e dois mil e quatrocentos siclos.</p>
+      <p>30 Com ele fez as bases da porta da tenda da congregação, e o altar de bronze, e o crivo de bronze, e todos os utensílios do altar;</p>
+      <p>31 e as bases do átrio ao redor, e as bases da porta do átrio, e todas as estacas do tabernáculo, e todas as estacas do átrio ao redor.</p>
+      
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/exodo37.html">Capítulo Anterior</a>
+      <a class="button" href="../content/exodo39.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
