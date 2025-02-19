@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levítico 5</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Levítico 5</h2>
+      <p>1 E, quando alguma pessoa pecar, ouvindo a voz de adjuração, e for testemunha, visto ou sabendo, se não o denunciar, então levará a sua iniquidade.</p>
+      <p>2 Ou, quando alguém tocar em alguma coisa imunda, seja cadáver de fera imunda, ou cadáver de animal imundo, ou cadáver de réptil imundo, ainda que não o soubesse, será ele imundo e terá culpa.</p>
+      <p>3 Ou, quando tocar na imundícia do homem, seja qual for a sua imundícia, pela qual é imundo, e não o souber, sendo ele ciente, então será culpado.</p>
+      <p>4 Ou, quando alguém jurar, pronunciando com os seus lábios fazer mal ou bem, em tudo o que o homem pronunciar com juramento, e isso lhe for oculto, sendo ele ciente, então será culpado em qualquer destas coisas.</p>
+      <p>5 E será que, quando pecar em alguma destas coisas, confessará aquilo em que pecou;</p>
+      <p>6 E, pelo seu pecado que cometeu, trará ao Senhor a sua expiação, uma cordeira ou uma cabra do rebanho, como oferta pelo pecado; e o sacerdote fará expiação por ele do seu pecado.</p>
+      <p>7 E, se a sua fazenda não alcançar para uma ovelha, então trará ao Senhor, pela sua expiação, para a culpa que cometeu, duas rolas ou dois pombinhos; um para expiação do pecado, e o outro para holocausto.</p>
+      <p>8 E os trará ao sacerdote, o qual oferecerá primeiro aquele que é para expiação do pecado, e lhe torcerá a cabeça junto ao pescoço, mas sem o separar.</p>
+      <p>9 E do sangue da expiação do pecado aspergirá sobre a parede do altar, porém o que sobejar daquele sangue espremer-se-á à base do altar; expiação do pecado é.</p>
+      <p>10 E do outro fará holocausto conforme ao costume; assim o sacerdote por ela fará expiação do seu pecado que cometeu, e ele será perdoado.</p>
+      <p>11 Mas, se a sua fazenda não alcançar para duas rolas, ou dois pombinhos, então aquele que pecou trará pela sua oferta a décima parte de um efa de flor de farinha, para expiação do pecado; não deitará sobre ela azeite, nem lhe porá sobre ela incenso, porquanto é expiação do pecado.</p>
+      <p>12 E trá-la-á ao sacerdote, o qual tomará dela a sua mão cheia, a sua porção para a memória, e a queimará sobre o altar, sobre as ofertas queimadas do Senhor; expiação do pecado é.</p>
+      <p>13 E o sacerdote fará expiação por ele do seu pecado que cometeu em alguma destas coisas, e lhe será perdoado; e o restante será do sacerdote, como a oferta de alimentos.</p>
+      <p>14 E falou o Senhor a Moisés, dizendo:</p>
+      <p>15 Quando alguma pessoa cometer uma transgressão, e pecar por ignorância nas coisas sagradas do Senhor, então trará pela sua culpa ao Senhor um carneiro sem defeito do rebanho, conforme à tua estimação em siclos de prata, segundo o siclo do santuário, em oferta pelo pecado.</p>
+      <p>16 E o que pecou nas coisas sagradas fará restituição, e acrescentará a quinta parte do seu valor, e o dará ao sacerdote; e o sacerdote fará expiação por ele com o carneiro do sacrifício pelo pecado, e ser-lhe-á perdoado.</p>
+      <p>17 E, quando alguma pessoa pecar, e fizer alguma de todas aquelas coisas que por mandamento do Senhor não se devem fazer, ainda que o não soubesse, contudo será ele culpado, e levará a sua iniquidade.</p>
+      <p>18 E trará ao sacerdote um carneiro sem defeito do rebanho, conforme à tua estimação, em oferta de culpa; e o sacerdote fará expiação por ele do erro que cometeu, ainda que o não soubesse, e ser-lhe-á perdoado.</p>
+      <p>19 É oferta de culpa; certamente pecou contra o Senhor.</p>
+      
+      
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/levitico4.html">Capítulo Anterior</a>
+      <a class="button" href="../content/levitico6.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levítico 6</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Levítico 6</h2>
+      <p>1 E falou o Senhor a Moisés, dizendo:</p>
+      <p>2 Se alguém pecar, e cometer uma transgressão contra o Senhor, mentindo ao seu próximo sobre alguma coisa que lhe fora confiada, ou sobre um penhor, ou sobre um roubo, ou tiver defraudado o seu próximo;</p>
+      <p>3 Ou tiver achado alguma coisa perdida, e mentindo a respeito dela, e jurando falsamente; em alguma destas coisas que o homem costuma fazer, pecando nelas;</p>
+      <p>4 E suceder que pecando assim, ele seja culpado, então restituirá aquilo que furtou, ou aquilo em que procedeu defraudador, ou o depósito que lhe foi dado, ou a coisa perdida que achou,</p>
+      <p>5 Ou tudo aquilo sobre que jurou falsamente; restituí-lo-á por inteiro, e ainda lhe acrescentará a quinta parte; a quem pertence restituir, no dia da sua expiação.</p>
+      <p>6 E por sua culpa oferecerá ao Senhor um carneiro sem defeito do rebanho, conforme à tua estimação, em oferta de culpa, ao sacerdote;</p>
+      <p>7 E o sacerdote fará expiação por ele diante do Senhor, e ser-lhe-á perdoado tudo aquilo em que pecou.</p>
+      <p>8 E falou o Senhor a Moisés, dizendo:</p>
+      <p>9 Ordena a Arão e a seus filhos, dizendo: Esta é a lei do holocausto; o holocausto será que imolará
+        sobre o altar toda a noite, até pela manhã; e o fogo do altar arderá nele.</p>
+      <p>10 E o sacerdote vestirá a sua veste de linho, e vestirá as calças de linho sobre a sua carne; e levantará a cinza, quando o fogo houver consumido o holocausto sobre o altar, e a porá junto ao altar.</p>
+      <p>11 E despirá as suas vestes, e vestirá outras vestes, e levará a cinza para fora do arraial, para um lugar limpo.</p>
+      <p>12 E o fogo que está sobre o altar arderá nele, não se apagará; mas o sacerdote acender
+        nele lenha cada manhã, e sobre ele porá em ordem o holocausto, e sobre ele queimará a gordura das ofertas pacíficas.</p>
+      <p>13 O fogo arderá continuamente sobre o altar; não se apagará.</p>
+      <p>14 Esta é a lei da oferta de alimentos: os filhos de Arão a oferecerão perante o Senhor, diante do altar.</p>
+      <p>15 E um deles tomará dela um punhado da flor de farinha da oferta, e do seu azeite, e todo o incenso que está sobre a oferta, e o queimará sobre o altar em cheiro suave, por sua memorial ao Senhor.</p>
+      <p>16 E o que sobejar dela, Arão e seus filhos o comerão; sem fermento se comerá no lugar santo; no átrio da tenda da congregação o comerão.</p>
+      <p>17 Não se cozerá levedado; a sua parte tenho dado das minhas ofertas queimadas; é coisa santíssima, como a oferta pelo pecado, e como a oferta pela culpa.</p>
+      <p>18 Todo o homem entre os filhos de Arão comerá dela; estatuto perpétuo será para as vossas gerações das ofertas queimadas do Senhor; todo o que as tocar será santo.</p>
+      <p>19 E falou o Senhor a Moisés, dizendo:</p>
+      <p>20 Este é o presente de Arão e de seus filhos, que oferecerão ao Senhor no dia em que forem ungidos; a décima parte de um efa de flor de farinha, oferta de alimentos contínua, a metade pela manhã, e a metade à tarde.</p>
+      <p>21 Sobre uma chapa se fará com azeite; fritar-se-á; trarás a oferta cozida em pedaços, e a oferecerás em cheiro suave ao Senhor.</p>
+      <p>22 E o sacerdote, que dentre seus filhos for ungido em seu lugar, a oferecerá; estatuto perpétuo do Senhor; toda a oferta queimada será totalmente queimada.</p>
+      <p>23 E toda a oferta de alimentos do sacerdote será totalmente queimada; não se comerá.</p>
+      <p>24 E falou o Senhor a Moisés, dizendo:</p>
+      <p>25 Fala a Arão e a seus filhos, dizendo: Esta é a lei da expiação do pecado; no lugar onde se degola o holocausto se degolará a expiação do pecado perante o Senhor; coisa santíssima é.</p>
+      <p>26 O sacerdote que a oferecer pelo pecado a comerá; no lugar santo será comida, no átrio da tenda da congregação.</p>
+      <p>27 Tudo o que tocar a carne da oferta será santo; se o seu sangue for aspergido sobre as vestes de alguém, lavarás em lugar santo aquilo sobre o que caiu.</p>
+      <p>28 E o vaso de barro em que for cozida será quebrado; e, se for cozida em vaso de bronze, bem lavarás, e a esfregarás com água.</p>
+      <p>29 Todo o homem entre os sacerdotes dela comerá; coisa santíssima é.</p>
+      <p>30 E nenhuma oferta pelo pecado, cujo sangue se levar à tenda da congregação, para fazer expiação no santuário, se comerá; no fogo será queimada.</p>
+      
+      
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/levitico5.html">Capítulo Anterior</a>
+      <a class="button" href="../content/levitico7.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
