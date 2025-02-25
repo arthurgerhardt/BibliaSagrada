@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levítico 12</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Levítico 12</h2>
+      <p>1 E falou o Senhor a Moisés, dizendo:</p>
+      <p>2 Fala aos filhos de Israel, dizendo: Se uma mulher conceber e der à luz um menino, será imunda sete dias, assim como nos dias da separação da sua enfermidade, será imunda.</p>
+      <p>3 E no oitavo dia se circuncidará a carne do prepúcio do menino.</p>
+      <p>4 Mas ela permanecerá trinta e três dias no sangue de sua purificação; nenhuma coisa santa tocará, nem entrará no santuário, até que se cumpram os dias da sua purificação.</p>
+      <p>5 Mas, se der à luz uma menina será imunda duas semanas, como na sua separação; depois ficará sessenta e seis dias no sangue da sua purificação.</p>
+      <p>6 E, cumpridos os dias da sua purificação por filho ou por filha, trará um cordeiro de um ano por holocausto, e um pombinho ou uma rola para expiação do pecado, diante da porta da tenda da congregação, ao sacerdote;</p>
+      <p>7 O qual o oferecerá perante o Senhor, e fará expiação por ela; e será purificada do fluxo do seu sangue; esta é a lei da que der à luz menino ou menina.</p>
+      <p>8 E, se as suas posses não bastarem para um cordeiro, então tomará duas rolas, ou dois pombinhos, um para o holocausto, e o outro para a expiação do pecado; assim o sacerdote fará expiação por ela, e será limpa.</p>
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/levitico11.html">Capítulo Anterior</a>
+      <a class="button" href="../content/levitico13.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
