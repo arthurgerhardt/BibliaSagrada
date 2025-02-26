@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levítico 20</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Levítico 20</h2>
+      <p>1 Falou mais o Senhor a Moisés, dizendo:</p>
+      <p>2 Também dirás aos filhos de Israel: Qualquer que, dos filhos de Israel, ou dos estrangeiros que peregrinam em Israel, der da sua descendência a Moloque, certamente morrerá; o povo da terra o apedrejará.</p>
+      <p>3 E eu porei a minha face contra esse homem, e o extirparei do meio do seu povo, porquanto deu da sua descendência a Moloque, para contaminar o meu santuário e profanar o meu santo nome.</p>
+      <p>4 E, se o povo da terra de alguma maneira esconder os olhos para não ver esse homem, quando der da sua descendência a Moloque, e não o matar,</p>
+      <p>5 então eu porei a minha face contra aquele homem, e contra a sua família, e o extirparei do meio do seu povo, com todos os que forem prostitutos após ele, prostituindo-se após Moloque.</p>
+      <p>6 Quando alguém se virar para os adivinhadores e encantadores, para se prostituir com eles, eu porei a minha face contra ele, e o extirparei do meio do seu povo.</p>
+      <p>7 Portanto, santificai-vos, e sede santos, pois eu sou o Senhor vosso Deus.</p>
+      <p>8 E guardai os meus estatutos, e cumpri-os. Eu sou o Senhor que vos santifico.</p>
+      <p>9 Porque qualquer que amaldiçoar a seu pai ou a sua mãe, certamente morrerá; amaldiçoou a seu pai ou a sua mãe; o seu sangue será sobre ele.</p>
+      <p>10 E o homem que adulterar com a mulher de outro, sim, aquele que adulterar com a mulher do seu próximo, certamente morrerá o adúltero e a adúltera.</p>
+      <p>11 E o homem que se deitar com a mulher de seu pai descobriu a nudez de seu pai; ambos certamente morrerão; o seu sangue será sobre eles.</p>
+      <p>12 Semelhantemente, quando um homem se deitar com a sua nora, ambos certamente morrerão; fizeram confusão; o seu sangue será sobre eles.</p>
+      <p>13 Quando também um homem se deitar com outro homem, como se fosse mulher, ambos praticaram coisa abominável; certamente morrerão; o seu sangue será sobre eles.</p>
+      <p>14 E, quando um homem tomar uma mulher e a sua mãe, maldade é; a ele e a elas queimarão com fogo, para que não haja maldade no meio de vós.</p>
+      <p>15 E, quando um homem se ajuntar com um animal, certamente morrerá; e matareis o animal.</p>
+      <p>16 Também a mulher que se chegar a algum animal, para ajuntar-se com ele, aquela mulher matarás bem assim como o animal; certamente morrerão; o seu sangue será sobre eles.</p>
+      <p>17 E, quando um homem tomar a sua irmã, filha de seu pai, ou filha de sua mãe, e vir a nudez dela, e ela vir a nudez dele, torpeza é; portanto serão extirpados aos olhos dos filhos do seu povo; descobriu a nudez de sua irmã, levará sobre si a sua iniquidade.</p>
+      <p>18 E, quando um homem se deitar com uma mulher no tempo da sua enfermidade, e descobrir a sua nudez, descobrindo a sua fonte, e ela descobrir a fonte do seu sangue, ambos serão extirpados do meio do seu povo.</p>
+      <p>19 A nudez da irmã de tua mãe, ou de teu pai, não descobrirás; porquanto descobriu a sua parenta, levarão sobre si a sua iniquidade.</p>
+      <p>20 E, quando um homem se deitar com a sua tia, descobriu a nudez de seu
+        tio; ambos levarão sobre si o seu pecado; sem filhos morrerão.</p>
+      <p>21 E, quando um homem tomar a mulher de seu irmão, é impureza; descobriu a nudez de seu
+        irmão; sem filhos serão.</p>
+      <p>22 Guardai, pois, todos os meus estatutos, e todos os meus juízos, e cumpri-os, para que a terra, para onde eu vos levo, não vos vomite.</p>
+      <p>23 E não andeis nos estatutos das nações que eu expulso de diante de vós; porque fizeram todas estas coisas, e eu tive nojo delas.</p>
+      <p>24 Mas a vós vos tenho dito: Vós possuireis a sua terra, e eu vo-la darei para a possuirdes, terra que mana leite e mel. Eu sou o Senhor vosso Deus, que vos separei dos povos.</p>
+      <p>25 Portanto, fazeis diferença entre o animal limpo e o imundo, e entre as aves imundas e as
+        limpas; e não façais as vossas almas abomináveis por causa dos animais, ou das aves, ou de tudo o que se arrasta sobre a terra, que vos tenho separado por imundo.</p>
+      <p>26 E vós me sereis santos, porque eu, o Senhor, sou santo, e separei-vos dos povos, para serdes meus.</p>
+      <p>27 Quando, pois, algum homem ou mulher em si tiver um espírito de necromancia ou espírito de adivinhação, certamente morrerá; serão apedrejados; o seu sangue será sobre eles.</p>
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/levitico19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/levitico21.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

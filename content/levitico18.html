@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Levítico 18</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Levítico 18</h2>
+      <p>1 Falou mais o Senhor a Moisés, dizendo:</p>
+      <p>2 Fala aos filhos de Israel, e dize-lhes: Eu sou o Senhor vosso Deus.</p>
+      <p>3 Não fareis como se faz na terra do Egito, em que habitastes, nem fareis como se faz na terra de Canaã, para onde eu vos levo, nem andareis nos seus estatutos.</p>
+      <p>4 Os meus juízos e os meus estatutos não fareis; porque o homem os cumprirá, vivendo por eles. Eu sou o Senhor vosso Deus.</p>
+      <p>5 Portanto, os meus estatutos e os meus juízos guardareis; os quais, observando-os o homem, viverá por eles. Eu sou o Senhor.</p>
+      <p>6 Nenhum de vós se chegará a qualquer parenta sua para descobrir a sua nudez. Eu sou o Senhor.</p>
+      <p>7 Não descobrirás a nudez de teu pai e de tua mãe; ela é tua mãe; não descobrirás a sua nudez.</p>
+      <p>8 Não descobrirás a nudez da mulher de teu pai; é a nudez de teu pai.</p>
+      <p>9 A nudez de tua irmã, filha de teu pai, ou filha de tua mãe, nascida em casa, ou nascida fora, a sua nudez não descobrirás.</p>
+      <p>10 A nudez da filha do filho de tua mulher, nascida dela, a sua nudez não descobrirás; nudez é.</p>
+      <p>11 A nudez da filha da mulher de teu pai, gerada de teu pai, tua irmã, a sua nudez não descobrirás.</p>
+      <p>12 Não descobrirás a nudez da irmã de teu pai; ela é parenta de teu pai.</p>
+      <p>13 Não descobrirás a nudez da irmã de tua mãe; porque é parenta de tua mãe.</p>
+      <p>14 Não descobrirás a nudez do irmão de teu pai; não te chegarás à sua mulher; ela é tua tia.</p>
+      <p>15 Não descobrirás a nudez de tua nora; ela é mulher de teu filho; não descobrirás a sua nudez.</p>
+      <p>16 Não descobrirás a nudez da mulher de teu irmão; é a nudez de teu irmão.</p>
+      <p>17 Não descobrirás a nudez de uma mulher e de sua filha; não tomarás a filha de seu filho, nem a filha de sua filha, para descobrir a sua nudez; parentas são; maldade é.</p>
+      <p>18 Também não tomarás uma mulher juntamente com sua irmã, para provocares rivalidade, descobrindo a sua nudez, além da outra, durante a sua vida.</p>
+      <p>19 Também não te chegarás a mulher para descobrir a sua nudez, enquanto estiver na impureza da sua separação.</p>
+      <p>20 E com a mulher do teu próximo não te deitarás, contaminando-te com ela.</p>
+      <p>21 E não darás nenhum dos teus filhos para fazeres passar pelo fogo, a fim de te contaminares com ele; eu sou o Senhor.</p>
+      <p>22 Não te deitarás com varão, como se fosse mulher; é abominação.</p>
+      <p>23 Nem te deitarás com um animal, para te contaminares com ele; nem a mulher se porá perante um animal, para ajuntar-se com ele; confusão é.</p>
+      <p>24 Com nenhuma destas coisas vos contaminareis; porque com todas estas coisas se contaminaram as nações que eu expulso de diante de vós.</p>
+      <p>25 E a terra está contaminada; por isso visito a sua iniquidade sobre ela, e a terra vomita os seus moradores.</p>
+      <p>26 Vós, pois, guardareis os meus estatutos e os meus juízos, e não fareis nenhuma destas abominações, nem o natural, nem o estrangeiro que peregrina entre vós;</p>
+      <p>27 (porque todas estas abominações fizeram os homens desta terra, que nela estavam antes de vós, e a terra foi contaminada);</p> 
+      <p>28 para que a terra não vos vomite, havendo vós a contaminado, como vomitou o povo que nela estava antes de vós.</p>
+      <p>29 Porque qualquer que fizer alguma destas abominações, sim, aqueles que as fizerem serão ext
+        irpados do meio do seu povo.</p>
+      <p>30 Portanto guardareis o que eu vos ordeno, para que não façais nenhuma das abominações que se faziam antes de vós, e para que não vos contamineis com elas. Eu sou o Senhor vosso Deus.</p>
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/levitico17.html">Capítulo Anterior</a>
+      <a class="button" href="../content/levitico19.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
