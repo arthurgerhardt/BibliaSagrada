@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 6</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 6</h2>
+      <p>1 E falou o Senhor a Moisés, dizendo:</p>
+      <p>2 Fala aos filhos de Israel, e dize-lhes: Quando um homem ou mulher se tiver separado, fazendo voto de nazireu, para se separar ao Senhor,</p>
+      <p>3 De vinho e de bebida forte se apartará; vinagre de vinho, nem vinagre de bebida forte não beberá; nem beberá alguma bebida feita de uvas; nem comerá uvas frescas nem secas.</p>
+      <p>4 Todos os dias do seu nazireado de tudo o que se faz da videira, desde os caroços até às cascas, não comerá.</p>
+      <p>5 Todos os dias do voto do seu nazireado não passará navalha sobre a sua cabeça; até que se cumpram os dias, que se houver dado ao Senhor, será santo; deixará crescer livremente o cabelo da sua cabeça.</p>
+      <p>6 Todos os dias que se houver separado para o Senhor, não se aproximará de cadáver algum.</p>
+      <p>7 Nem por seu pai, nem por sua mãe, nem por seu irmão, nem por sua irmã, poderá tornar a contaminar-se, quando morrerem; porque o nazireado do seu Deus está sobre a sua cabeça.</p>
+      <p>8 Todos os dias do seu nazireado será santo ao Senhor.</p>
+      <p>9 E se alguém vier a morrer junto a ele por acaso, subitamente, que contamine a cabeça do seu nazireado, então no dia da sua purificação rapará a sua cabeça, ao sétimo dia a rapará.</p>
+      <p>10 E ao oitavo dia trará duas rolas, ou dois pombinhos, ao sacerdote, à porta da tenda da congregação.</p>
+      <p>11 E o sacerdote oferecerá um em expiação do pecado, e o outro em holocausto; e fará expiação por ele, porque pecou no cadáver; assim santificará a sua cabeça na aquele mesmo dia.</p>
+      <p>12 E separará ao Senhor os dias do seu nazireado, e trará um cordeiro de um ano em expiação do pecado; mas os primeiros dias serão perdidos, porquanto a sua santidade foi contaminada.</p>
+      <p>13 Esta é a lei do nazireu: No dia em que se cumprirem os dias do seu nazireado, trar-se-á à porta da tenda da congregação.</p>
+      <p>14 E oferecerá a sua oferta ao Senhor, um cordeiro de um ano, sem defeito, em holocausto; e uma cordeira de um ano, sem defeito, em expiação do pecado; e um carneiro sem defeito, em oferta pacífica;</p>
+      <p>15 E um cesto de pães ázimos, da flor de farinha, amassados com azeite, e coscorões ázimos, untados com azeite, e a sua oferta de alimentos e as suas libações.</p>
+      <p>16 E o sacerdote os oferecerá perante o Senhor, e fará a sua expiação, e o seu holocausto.</p>
+      <p>17 Depois oferecerá o carneiro em sacrifício pacífico ao Senhor, com o cesto dos pães ázimos; e o sacerdote oferecerá também a sua oferta de alimentos e a sua libação.</p>
+      <p>18 Então o nazireu à porta da tenda da congregação rapará a cabeça do seu nazireado, e tomará o cabelo da cabeça do seu nazireado, e o porá sobre o fogo que está debaixo do sacrifício pacífico.</p>
+      <p>19 Depois o sacerdote tomará a espádua cozida do carneiro, e um pão ázimo do cesto, e um coscorão ázimo, e os porá nas mãos do nazireu, depois de haver rapado a cabeça do seu nazireado.
+      </p>
+      <p>20 E o sacerdote os oferecerá por oferta movida perante o Senhor; isto é santo para o sacerdote, além do peito da oferta movida e da coxa da oferta alçada; e depois o nazireu poderá beber vinho.</p>
+      <p>21 Esta é a lei do nazireu que fizer voto da sua oferta ao Senhor pelo seu nazireado, além do que suas posses lhe permitirem; segundo o seu voto, que fizer, assim fará conforme a lei do seu nazireado.</p>
+      <p>22 E falou o Senhor a Moisés, dizendo:</p>
+      <p>23 Fala a Arão e a seus filhos, dizendo: Assim abençoareis os filhos de Israel, dizendo-lhes:</p>
+      <p>24 O Senhor te abençoe e te guarde;</p>
+      <p>25 O Senhor faça resplandecer o seu rosto sobre ti, e tenha misericórdia de ti;</p>
+      <p>26 O Senhor sobre ti levante o seu rosto e te dê a paz.</p>
+      <p>27 Assim porão o meu nome sobre os filhos de Israel, e eu os abençoarei.</p>
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros5.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros7.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
