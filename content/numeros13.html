@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 13</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 13</h2>
+      <h3>Os espias são enviados a Canaã</h3>
+      <p>1 E falou o Senhor a Moisés, dizendo:</p>
+      <p>2 Envia homens que espiem a terra de Canaã, que eu hei de dar aos filhos de Israel; de cada tribo de seus pais enviareis um homem, sendo cada um príncipe entre eles.</p>
+      <p>3 Então Moisés os enviou do deserto de Parã, segundo a ordem do Senhor; todos aqueles homens eram cabeças dos filhos de Israel.</p>
+      <p>4 E estes são os seus nomes: Da tribo de Rúben, Samua, filho de Zacur.</p>
+      <p>5 Da tribo de Simeão, Safate, filho de Hori;</p>
+      <p>6 Da tribo de Judá, Calebe, filho de Jefoné;</p>
+      <p>7 Da tribo de Issacar, Igal, filho de José;</p>
+      <p>8 Da tribo de Efraim, Oséias, filho de Num;</p>
+      <p>9 Da tribo de Benjamim, Palti, filho de Rafu;</p>
+      <p>10 Da tribo de Zebulom, Gadiel, filho de Sodi;</p>
+      <p>11 Da tribo de José, da tribo de Manassés, Gadi, filho de Susi;</p>
+      <p>12 Da tribo de Dã, Amiel, filho de Gemali;</p>
+      <p>13 Da tribo de Aser, Setur, filho de Micael;</p>
+      <p>14 Da tribo de Naftali, Nabai, filho de Vofsi;</p>
+      <p>15 Da tribo de Gade, Geuel, filho de Maqui.</p>
+      <p>16 Estes são os nomes dos homens que Moisés enviou a espiar a terra; e a Oséias, filho de Num, Moisés chamou Josué.</p>
+      <p>17 E Moisés os enviou a espiar a terra de Canaã, e disse-lhes: Subi por aqui para o lado do sul, e subi à montanha.</p>
+      <p>18 E vede a terra, que tal é, e o povo que nela habita, se é forte ou fraco, se pouco ou muito;</p>
+      <p>19 E que tal é a terra em que habita, se boa ou má; e que tais são as cidades em que habita, se em arraiais, ou em fortalezas;</p>
+      <p>20 E que tal é o terreno, se fértil ou estéril, se nela há árvores, ou não; e esforçai-vos, e tomai do fruto da terra. E eram aqueles dias os dias das primícias das uvas.</p>
+      <p>21 E subiram, e espiaram a terra, desde o deserto de Zim até Reobe, à entrada de Hamate.</p>
+      <p>22 E subiram para o lado do sul, e vieram até Hebrom, onde estavam Aimã, Sesai e Talmai, filhos de Anaque. (Ora, Hebrom foi edificada sete anos antes de Zoã, no Egito).</p>
+      <p>23 E vieram até o vale de Escol, e dali cortaram um ramo de vide com um cacho de uvas, o qual trouxeram dois homens, sobre uma vara; como também das romãs e dos figos.</p>
+      <p>24 Chamaram àquele lugar o vale de Escol, por causa do cacho que dali cortaram os filhos de Israel; e o seu nome ficou Escol.</p>
+      <p>25 E ao fim de quarenta dias voltaram de espiar a terra.</p>
+      <p>26 E andaram, e vieram a Moisés e a Arão, e a toda a congregação dos filhos de Israel, no deserto de Parã, a Cades; e deram-lhes conta a eles, e a toda a congregação, e mostraram-lhes o fruto da terra.</p>
+      <p>27 E contaram-lhe, e disseram: Fomos à terra a que nos enviaste; e verdadeiramente mana leite e mel, e este é o seu fruto.</p>
+      <p>28 Contudo o povo que habita nessa terra é poderoso, e as cidades fortificadas e mui grandes; e também vimos ali os filhos de Anaque.</p>
+      <p>29 Os amalequitas habitam na terra do sul; e os heteus, e os jebuseus, e os amorreus habitam na montanha; e os cananeus habitam junto do mar, e pela margem do Jordão.</p>
+      <p>30 Então Calebe fez calar o povo perante Moisés, e disse: Certamente subiremos e a possuiremos em herança; porque seguramente prevaleceremos contra ela.</p>
+      <p>31 Porém os homens que com ele subiram disseram: Não poderemos subir contra aquele povo, porque é mais forte do que nós.</p>
+      <p>32 E infamaram a terra que tinham espiado, dizendo aos filhos de Israel: A terra, pela qual passamos a espiá-la, é terra que consome os seus moradores; e todo o povo que vimos nela são homens de grande estatura.</p>
+      <p>33 Também vimos ali gigantes, filhos de Anaque, descendentes dos gigantes; e éramos aos nossos olhos como gafanhotos, e assim também éramos aos seus olhos.</p>
+      
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros12.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros14.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

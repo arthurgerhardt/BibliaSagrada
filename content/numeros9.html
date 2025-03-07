@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 9</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 9</h2>
+      <h3>A Páscoa</h3>
+      <p>1 Disse mais o Senhor a Moisés no deserto do Sinai, no primeiro mês do segundo ano depois que saíram da terra do Egito, dizendo:</p>
+      <p>2 Celebrem os filhos de Israel a páscoa a seu tempo determinado.</p>
+      <p>3 No dia catorze deste mês, pela tarde, a seu tempo determinado, a celebrareis; segundo todos os seus estatutos, e segundo todas as suas ordenanças a celebrareis.</p>
+      <p>4 Disse, pois, Moisés aos filhos de Israel que celebrassem a páscoa.</p>
+      <p>5 Então celebraram a páscoa no dia catorze do primeiro mês, pela tarde, no deserto do Sinai; conforme a tudo o que o Senhor ordenara a Moisés, assim fizeram os filhos de Israel.</p>
+      <p>6 Houve, porém, alguns homens que estavam imundos por terem tocado o corpo de um homem morto, de maneira que não podiam celebrar a páscoa naquele dia; pelo que, naquele mesmo dia, vieram à presença de Moisés e de Arão;</p>
+      <p>7 E aqueles homens disseram-lhe: Ainda que estejamos imundos por ter tocado o corpo de um homem morto, por que seremos privados de oferecer a oferta do Senhor a seu tempo determinado no meio dos filhos de Israel?</p>
+      <p>8 Moisés, pois, lhes disse: Esperai, e ouvirei o que o Senhor vos ordenará.</p>
+      <p>9 Falou, pois, o Senhor a Moisés, dizendo:</p>
+      <p>10 Fala aos filhos de Israel, dizendo: Quando alguém entre vós, ou entre as vossas gerações, for imundo por tocar corpo morto, ou achar-se em jornada longe de vós, contudo ainda celebrará a páscoa ao Senhor.</p>
+      <p>11 No segundo mês, no dia catorze, pela tarde, a celebrarão; com pães ázimos e ervas amargas a comerão.</p>
+      <p>12 Não deixarão nada dela até pela manhã, nem quebrarão osso algum dela; segundo todos os estatutos da páscoa a celebrarão.</p>
+      <p>13 Porém o homem que estiver limpo, e não estiver em jornada, e, deixando de celebrar a páscoa, essa alma será extirpada do seu povo; porquanto não ofereceu a oferta do Senhor a seu tempo determinado; tal homem levará o seu pecado.</p>
+      <p>14 E quando um estrangeiro peregrinar entre vós, e também celebrar a páscoa ao Senhor, segundo o estatuto da páscoa e segundo o seu rito a celebrará; um mesmo estatuto haverá para vós, tanto para o estrangeiro como para o natural da terra.</p>
+      <p>15 E no dia em que foi levantado o tabernáculo, a nuvem cobriu o tabernáculo sobre a tenda do testemunho; e à tarde havia sobre o tabernáculo, como uma aparência de fogo, até pela manhã.</p>
+      <p>16 Assim era de contínuo: a nuvem o cobria de dia, e a aparência de fogo de noite.</p>
+      <p>17 E sempre que a nuvem se alçava de sobre a tenda, depois os filhos de Israel partiam; e no lugar onde a nuvem parava, ali os filhos de Israel assentavam o seu arraial.</p>
+      <p>18 Segundo a ordem do Senhor os filhos de Israel partiam, e segundo a ordem do Senhor assentavam o arraial; todos os dias em que a nuvem parava sobre o tabernáculo, assentavam o arraial.</p>
+      <p>19 E, quando a nuvem se detinha muitos dias sobre o tabernáculo, então os filhos de Israel cumpriam a ordem do Senhor, e não partiam.</p>
+      <p>20 E, quando a nuvem ficava poucos dias sobre o tabernáculo, segundo a ordem do Senhor se alojavam, e segundo a ordem do Senhor partiam.</p>
+      <p>21 Porém, outras vezes, a nuvem ficava desde a tarde até à manhã; e, quando pela manhã a nuvem se alçava, então partiam; quer de dia quer de noite, alçando-se a nuvem, partiam.</p>
+      <p>22 Quando a nuvem se detinha sobre o tabernáculo dois dias, ou um mês, ou um ano, ficando sobre ele, os filhos de Israel se alojavam, e não partiam; e, alçando-se ela, partiam.</p>
+      <p>23 Segundo a ordem do Senhor se alojavam, e segundo a ordem do Senhor partiam; cumpriam o seu dever para com o Senhor, segundo a ordem do Senhor por intermédio de Moisés.</p>
+
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros8.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros10.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

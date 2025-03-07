@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 10</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 10</h2>
+      <h3>As trombetas de prata</h3>
+      <p>1 Disse mais o Senhor a Moisés:</p>
+      <p>2 Faze duas trombetas de prata; de obra batida as farás, e te serão para convocares a congregação e para a partida dos arraiais.</p>
+      <p>3 E, quando as tocarem, toda a congregação se ajuntará a ti à porta da tenda da congregação.</p>
+      <p>4 Mas, quando tocar uma só, a ti se congregarão os príncipes, os cabeças dos milhares de Israel.</p>
+      <p>5 Quando retinirem, então partirão os arraiais que estão alojados da banda do oriente.</p>
+      <p>6 Mas, quando retinirem a segunda vez, então partirão os arraiais que estão alojados da banda do sul; retinirão por suas partidas.</p>
+      <p>7 Mas, ajuntando a congregação, tocareis, mas não retinireis.</p>
+      <p>8 E os filhos de Arão, os sacerdotes, tocarão as trombetas; e isto vos será por estatuto perpétuo nas vossas gerações.</p>
+      <p>9 E, quando na vossa terra sairdes à peleja contra o inimigo que vos oprime, também tocareis as trombetas retinindo, e perante o Senhor, vosso Deus, haverá memória de vós, e sereis salvos de vossos inimigos.</p>
+      <p>10 Semelhantemente, no dia da vossa alegria, e nas vossas solenidades, e nos princípios dos vossos meses, também tocareis as trombetas sobre os vossos holocaustos, e sobre os sacrifícios pacíficos, e vos serão por memorial perante o vosso Deus. Eu sou o Senhor, vosso Deus.</p>
+      <p>11 E aconteceu no ano segundo, no segundo mês, aos vinte dias do mês, que a nuvem se alçou de sobre o tabernáculo do testemunho.</p>
+      <p>12 E os filhos de Israel, segundo a ordem de marcha, partiram do deserto de Sinai; e a nuvem parou no deserto de Parã.</p>
+      <p>13 Assim partiram pela primeira vez, segundo a ordem do Senhor por intermédio de Moisés.</p>
+      <p>14 E na primeira partida, o estandarte do arraial dos filhos de Judá partiu primeiro, segundo os seus exércitos; e Naassom, filho de Aminadabe, estava sobre o seu exército.</p>
+      <p>15 E sobre o exército da tribo dos filhos de Issacar, Natanael, filho de Zuar.</p>
+      <p>16 E sobre o exército da tribo dos filhos de Zebulom, Eliabe, filho de Helom.</p>
+      <p>17 E o tabernáculo foi desarmado, e os filhos de Gérson e os filhos de Merari partiram, levando o tabernáculo.</p>
+      <p>18 E partiu o estandarte do arraial de Rúben, segundo os seus exércitos; e Elizur, filho de Sedeur, estava sobre o seu exército.</p>
+      <p>19 E sobre o exército da tribo dos filhos de Simeão, Selumiel, filho de Zurisadai.</p>
+      <p>20 E sobre o exército da tribo dos filhos de Gade, Eliasafe, filho de Deuel.</p>
+      <p>21 E os coatitas partiram, levando o santuário; e, quando eles chegavam, armavam o tabernáculo.</p>
+      <p>22 E partiu o estandarte do arraial dos filhos de Efraim, segundo os seus exércitos; e Elisama, filho de Amiúde, estava sobre o seu exército.</p>
+      <p>23 E sobre o exército da tribo dos filhos de Manassés, Gamaliel, filho de Pedazur.</p>
+      <p>24 E sobre o exército da tribo dos filhos de Benjamim, Abidã, filho de Gideoni.</p>
+      <p>25 Então partiu o estandarte do arraial dos filhos de Dã, recolhendo todos os arraiais segundo os seus exércitos; e Aiezer, filho de Amisadai, estava sobre o seu exército.</p>
+      <p>26 E sobre o exército da tribo dos filhos de Aser, Pagiel, filho de Ocrã.</p>
+      <p>27 E sobre o exército da tribo dos filhos de Naftali, Aira, filho de Enã.</p>
+      <p>28 Esta era a ordem das partidas dos filhos de Israel segundo os seus exércitos, quando partiam.</p>
+      <p>29 Disse Moisés a Hobabe, filho de Reuel, o midianita, sogro de Moisés: Nós partimos para o lugar de que o Senhor disse: Vo-lo darei; vem conosco, e te faremos bem, porque o Senhor falou bem sobre Israel.</p>
+      <p>30 Porém ele lhe disse: Não irei; antes irei à minha terra e à minha parentela.</p>
+      <p>31 E ele disse: Ora, não nos deixes; porque tu sabes onde devemos acampar no deserto; nos servirás de guia.</p>
+      <p>32 E será que, vindo tu conosco, e sucedendo o bem que o Senhor nos fizer, também nós te faremos bem.</p>
+      <p>33 Assim partiram do monte do Senhor caminho de três dias; e a arca do concerto do Senhor ia adiante deles caminho de três dias, para lhes buscar lugar de descanso.</p>
+      <p>34 E a nuvem do Senhor ia sobre eles de dia, quando partiam do arraial.</p>
+      <p>35 Acontecia que, partindo a arca, Moisés dizia: Levanta-te, Senhor, e dissipados sejam os teus inimigos, e fujam diante de ti os que te odeiam.</p>
+      <p>36 E, pousando ela, dizia: Volta, ó Senhor, para os muitos milhares de Israel.</p>
+      
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros9.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros11.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
