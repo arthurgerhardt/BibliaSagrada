@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 27</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 27</h2>
+      <p>1 Chegaram as filhas de Zelofeade, filho de Héfer, filho de Gileade, filho de Maquir, filho de Manassés, das famílias de Manassés, filho de José; e estes são os nomes delas: Maalá, Noa, Hogla, Milca e Tirza.</p>
+      <p>2 E puseram-se diante de Moisés, e diante de Eleazar, o sacerdote, e diante dos príncipes e de toda a congregação, à porta da tenda da congregação, dizendo:</p>
+      <p>3 Nosso pai morreu no deserto, e não estava entre a congregação dos que se ajuntaram contra o Senhor no grupo de Coré; mas morreu no seu próprio pecado, e não teve filhos.</p>
+      <p>4 Por que se tirará o nome de nosso pai do meio de sua família, porquanto não teve filho? Dá-nos, pois, possessão entre os irmãos de nosso pai.</p>
+      <p>5 E Moisés levou a causa delas diante do Senhor.</p>
+      <p>6 E falou o Senhor a Moisés, dizendo:</p>
+      <p>7 As filhas de Zelofeade falam o que é justo; certamente lhes darás possessão de herança entre os irmãos de seu pai; e farás passar a herança de seu pai a elas.</p>
+      <p>8 Falarás também aos filhos de Israel, dizendo: Quando alguém morrer e não tiver filho, então fareis passar a sua herança à sua filha.</p>
+      <p>9 E, se não tiver filha, então dareis a sua herança aos irmãos de seu pai.</p>
+      <p>10 Se também seu pai não tiver irmãos, então dareis a sua herança ao parente mais chegado da sua família, e ele a possuirá. E isto será para os filhos de Israel um estatuto de direito, como o Senhor ordenou a Moisés.</p>
+      <p>11 Disse mais o Senhor a Moisés:</p>
+      <p>12 Sobe a este monte de Abarim, e vê a terra que tenho dado aos filhos de Israel.</p>
+      <p>13 E, depois de a haveres visto, serás recolhido ao teu povo, assim como foi recolhido teu irmão Arão;</p>
+      <p>14 porquanto rebeldes fostes contra a minha palavra no deserto de Zim, na congregação, ao me santificar nas águas diante dos seus olhos. (Esta é a água de Meribá, em Cades, no deserto de Zim.)</p>
+      <p>15 Então falou Moisés ao Senhor, dizendo:</p>
+      <p>16 O Senhor, Deus dos espíritos de toda a carne, ponha um homem sobre a congregação,</p>
+      <p>17 o qual saia diante deles, e entre diante deles, e os faça sair, e os faça entrar, para que a congregação do Senhor não seja como ovelhas que não têm pastor.</p>
+      <p>18 Disse o Senhor a Moisés: Toma a Josué, filho de Num, homem em quem há o Espírito, e põe a tua mão sobre ele;</p>
+      <p>19 e apresenta-o diante de Eleazar, o sacerdote, e diante de toda a congregação, e dá-lhe as tuas ordens na presença deles.</p>
+      <p>20 E põe sobre ele da tua glória, para que toda a congregação dos filhos de Israel lhe obedeça.</p>
+      <p>21 E ele estará diante de Eleazar, o sacerdote, o qual perguntará por ele segundo o juízo do Urim, diante do Senhor; segundo a palavra deles sairão, e segundo a palavra deles entrarão, ele e todos os filhos de Israel com ele, e toda a congregação.</p>
+      <p>22 E Moisés fez como o Senhor lhe ordenara; e tomou a Josué, e apresentou-o diante de Eleazar, o sacerdote, e diante de toda a congregação.</p>
+      <p>23 E pôs sobre ele as suas mãos, e lhe deu as suas ordens, como o Senhor falara por Moisés.</p>
+      
+
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros26.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros28.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
