@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 28</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 28</h2>
+      <p>1 Falou mais o Senhor a Moisés, dizendo:</p>
+      <p>2 Dá ordem aos filhos de Israel, e dize-lhes: Da minha oferta, do meu alimento para as minhas ofertas queimadas, do meu cheiro suave, tereis cuidado, para me oferecê-las ao seu tempo determinado.</p>
+      <p>3 E dirás a eles: Esta é a oferta queimada que oferecereis ao Senhor: dois cordeiros de um ano, sem defeito, cada dia, em contínuo holocausto.</p>
+      <p>4 Um cordeiro oferecerás pela manhã, e o outro cordeiro oferecerás à tarde;</p>
+      <p>5 e a décima parte de um efa de flor de farinha, amassada com a quarta parte de um him de azeite batido, em oferta de manjares, em cheiro suave ao Senhor, holocausto contínuo, pelas vossas gerações.</p>
+      <p>6 Isso será oferecido juntamente com o cordeiro da manhã, que é a oferta contínua.</p>
+      <p>7 E a sua libação será a quarta parte de um him para cada cordeiro; no lugar santo a libação de bebida será derramada ao Senhor.</p>
+      <p>8 E o outro cordeiro oferecerás à tarde; como a oferta da manhã, e como a sua libação, a oferecerás; em cheiro suave, oferta queimada ao Senhor.</p>
+      <p>9 Mas no dia de sábado, dois cordeiros de um ano, sem defeito, e duas décimas de flor de farinha, amassada com a quarta parte de um him de azeite, como oferta de manjares, e a sua libação.</p>
+      <p>10 Isso é o holocausto de cada sábado, além do holocausto contínuo, e da sua libação.</p>
+      <p>11 E no princípio dos vossos meses, oferecereis em holocausto ao Senhor dois novilhos, um carneiro, sete cordeiros de um ano, sem defeito;</p>
+      <p>12 e três décimas de flor de farinha, amassada com azeite, em oferta de manjares, para cada novilho; e duas décimas de flor de farinha, amassada com azeite, em oferta de manjares, para o carneiro;</p>
+      <p>13 e uma décima de flor de farinha, amassada com azeite, em oferta de manjares, para cada cordeiro, em holocausto de cheiro suave, oferta queimada ao Senhor.</p>
+      <p>14 E as suas libações serão a metade de um him de vinho para um novilho, e a terça parte de um him para um carneiro, e a quarta parte de um him para um cordeiro; este é o holocausto da lua nova de cada mês, segundo os meses do ano.</p>
+      <p>15 Também um bode para expiação do pecado ao Senhor, além do holocausto contínuo, com a sua libação se oferecerá.</p>
+      <p>16 No mês primeiro, aos catorze dias do mês, será a páscoa do Senhor.</p>
+      <p>17 E aos quinze dias deste mês haverá festa; sete dias se comerão pães ázimos.</p>
+      <p>18 No primeiro dia haverá santa convocação; nenhum trabalho servil fareis.</p>
+      <p>19 Mas oferecereis oferta queimada ao Senhor, em holocausto, dois novilhos, um carneiro, sete cordeiros de um ano, sem defeito;</p>
+      <p>20 E a sua oferta de alimentos será de flor de farinha misturada com azeite; oferecereis três décimas para um novilho, e duas décimas para um carneiro.</p>
+      <p>21 Oferecereis uma décima para cada cordeiro, para os sete cordeiros;</p>
+      <p>22 E um bode para expiação do pecado, para fazer expiação por vós.</p>
+      <p>23 Oferecereis também estes, além do holocausto da manhã, que é o holocausto contínuo.</p>
+      <p>24 Conforme este modo, oferecereis diariamente, por sete dias, a comida do holocausto, de cheiro suave ao Senhor; oferecer-se-á além do holocausto contínuo, com a sua libação.</p>
+      <p>25 E no sétimo dia tereis santa convocação; nenhum trabalho servil fareis.</p>
+      <p>26 Também no dia das primícias, quando oferecerdes um novo presente ao Senhor, conforme a vossa festa das semanas, tereis santa convocação; nenhum trabalho servil fareis.</p>
+      <p>27 Então oferecereis ao Senhor por holocausto, em cheiro suave, dois novilhos, um carneiro e sete cordeiros de um ano;</p>
+      <p>28 E a sua oferta de alimentos, de flor de farinha misturada com azeite, três décimas para um novilho, duas décimas para um carneiro;</p>
+      <p>29 Uma décima para cada cordeiro, para os sete cordeiros;</p>
+      <p>30 Um bode para fazer expiação por vós.</p>
+      <p>31 Além do holocausto contínuo, e da sua oferta de alimentos, oferecê-los-eis; serão sem defeito, com as suas libações.</p>
+      
+
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros27.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros29.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

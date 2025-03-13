@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 30</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 30</h2>
+      <p>1 E falou Moisés aos cabeças das tribos dos filhos de Israel, dizendo: Esta é a palavra que o Senhor ordenou.</p>
+      <p>2 Quando um homem fizer um voto ao Senhor, ou jurar um juramento para obrigar a sua alma com um laço, não violará a sua palavra; conforme tudo o que saiu da sua boca, fará.</p>
+      <p>3 Também quando uma mulher, na sua mocidade, estando ainda na casa de seu pai, fizer um voto ao Senhor, e se obrigar com um laço,</p>
+      <p>4 e seu pai ouvir o seu voto, e o laço com que se obrigou a sua alma, e seu pai se calar para com ela, todos os seus votos estarão firmes, e todo o laço com que se obrigou a sua alma estará firme.</p>
+      <p>5 Mas se seu pai lhe tolher no dia em que ouvir, nenhum dos seus votos, ou dos laços com que obrigou a sua alma, estará firme; e o Senhor lhe perdoará, porque seu pai lho tolheu.</p>
+      <p>6 Porém se ela tiver marido, quando fizer votos, ou se pronunciar dos seus lábios qualquer coisa com que obrigue a sua alma,</p>
+      <p>7 e seu marido o ouvir, e se calar para com ela no dia em que o ouvir, os seus votos estarão firmes, e os laços com que obrigou a sua alma estarão firmes.</p>
+      <p>8 Mas se seu marido lho tolher no dia em que o ouvir, então anulará o seu voto que está sobre ela, e a palavra dos seus lábios, com que obrigou a sua alma; e o Senhor lhe perdoará.</p>
+      <p>9 No tocante ao voto de uma viúva, ou de uma divorciada, tudo com que obrigar a sua alma estará firme sobre ela.</p>
+      <p>10 Porém se fez voto na casa de seu marido, ou obrigou a sua alma com juramento,</p>
+      <p>11 e seu marido o ouviu, e se calou para com ela, e não lho tolheu, todos os seus votos estarão firmes, e tudo com que obrigou a sua alma estará firme.</p>
+      <p>12 Porém se seu marido lhos anulou no dia em que os ouviu, tudo o que saiu dos seus lábios no tocante aos seus votos, ou ao laço da sua alma, não estará firme; seu marido lhos anulou, e o Senhor lhe perdoará.</p>
+      <p>13 Todo voto, e todo juramento obrigatório para afligir a alma, seu marido poderá confirmar, ou seu marido poderá anular.</p>
+      <p>14 Porém se seu marido se calar para com ela de dia em dia, então confirmará todos os seus votos, ou todos os laços que estão sobre ela; confirmou-os, porque se calou para com ela no dia em que os ouviu.</p>
+      <p>15 Porém se lhos anular depois que os ouviu, então levará sobre si a iniqüidade dela.</p>
+      <p>16 Estes são os estatutos que o Senhor ordenou a Moisés, entre o homem e sua mulher, entre o pai e sua filha, na sua mocidade, em casa de seu pai.</p>
+
+
+      <div class="narrator">
+        <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/numeros29.html">Capítulo Anterior</a>
+      <a class="button" href="../content/numeros31.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
