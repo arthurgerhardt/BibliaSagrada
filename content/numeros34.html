@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Números 34</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Números 34</h2>
+      <p>1 Disse mais o Senhor a Moisés:</p>
+      <p>2 Dá ordem aos filhos de Israel, e dize-lhes: Quando entrardes na terra de Canaã, esta há de ser a terra que vos cairá em herança; a terra de Canaã, segundo os seus termos.</p>
+      <p>3 O lado do sul será desde o deserto de Zim, ao longo de Edom; e o lado do sul será desde a extremidade do Mar Salgado para o oriente.</p>
+      <p>4 E a vossa linha sul partirá da subida de Acrabim, passará por Zim, e se estenderá para o sul de Cades-Barnéia; e sairá a Hazar-Adar, e passará por Azmom.</p>
+      <p>5 E a linha partirá de Azmom até ao rio do Egito, e as suas saídas serão para o mar.</p>
+      <p>6 E quanto ao lado do ocidente, o Mar Grande será o termo; este será o vosso termo do lado do ocidente.</p>
+      <p>7 Este será o vosso termo do lado do norte: desde o Mar Grande traçareis a linha até ao monte Hor;</p>
+      <p>8 E do monte Hor traçareis a linha até à entrada de Hamate; e as saídas da linha serão até Zedade.</p>
+      <p>9 E a linha sairá a Zifrom, e as suas saídas serão em Hazar-Enã; este será o vosso termo do lado do norte.</p>
+      <p>10 E traçareis a linha para o oriente desde Hazar-Enã até Sefã;</p>
+      <p>11 E a linha descerá de Sefã até Ribla, ao oriente de Aim; e a linha descerá, e alcançará a ribeira do mar de Quinerete, para o oriente.</p>
+      <p>12 E a linha descerá ao longo do Jordão, e as suas saídas serão no Mar Salgado. Esta vos será a terra segundo os seus termos em redor.</p>
+      <p>13 E Moisés deu ordem aos filhos de Israel, dizendo: Esta é a terra que herdareis por sorte, a qual o Senhor mandou dar às nove tribos e à meia tribo.</p>
+      <p>14 Porque a tribo dos filhos dos rubenitas, segundo as casas de seus pais, e a tribo dos filhos dos gaditas, segundo as casas de seus pais, já receberam a sua herança; como também a meia tribo de Manassés.</p>
+      <p>15 Estas duas tribos e a meia tribo já receberam a sua herança dalém do Jordão, na direção do oriente, para o lado do nascente.</p>
+      <p>16 Disse mais o Senhor a Moisés:</p>
+      <p>17 Estes são os nomes dos homens que vos repartirão a terra: Eleazar, o sacerdote, e Josué, filho de Num.</p>
+      <p>18 Tomareis também um príncipe de cada tribo, para repartir a terra.</p>
+      <p>19 E estes são os nomes dos homens: Da tribo de Judá, Calebe, filho de Jefoné;</p>
+      <p>20 Da tribo dos filhos de Simeão, Samuel, filho de Amiúde;</p>
+      <p>21 Da tribo de Benjamim, Elidade, filho de Quislom;</p>
+      <p>22 Da tribo dos filhos de Dã, o príncipe Buqui, filho de Jogli;</p>
+      <p>23 Dos filhos de José: da tribo dos filhos de Manassés, o príncipe Haniel, filho de Éfode;</p>
+      <p>24 E da tribo dos filhos de Efraim, o príncipe Quemuel, filho de Siftã;</p>
+      <p>25 E da tribo dos filhos de Zebulom, o príncipe Elizafã, filho de Parnaque;</p>
+      <p>26 E da tribo dos filhos de Issacar, o príncipe Paltiel, filho de Azã;</p>
+      <p>27 E da tribo dos filhos de Aser, o príncipe Aiúde, filho de Selomi;</p>
+      <p>28 E da tribo dos filhos de Naftali, o príncipe Pedael, filho de Amiúde.</p>
+      <p>29 Estes são aqueles a quem o Senhor ordenou que repartissem a herança aos filhos de Israel na terra de Canaã.</p>
+      
+
+  <div class="narrator"></div>
+    <button id="narrate-btn">Ouvir Narração</button>
+  </div>
+  <script>
+    document.getElementById('narrate-btn').addEventListener('click', function () {
+      const text = document.querySelector('.bible-book').innerText;
+      const utterance = new SpeechSynthesisUtterance(text);
+      utterance.lang = 'pt-BR';
+      speechSynthesis.speak(utterance);
+    });
+  </script>
+
+    </section>
+    <div class="button-container">
+  <a class="button" href="../content/numeros33.html">Capítulo Anterior</a>
+  <a class="button" href="../content/numeros35.html">Próximo Capítulo</a>
+  <a class="button" href="../sumary_index.html">Sumário</a>
+  <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
