@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 8</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 8</h2>
+      <p>1 Todos os mandamentos que hoje vos ordeno, guardareis para os cumprir, para que vivais, e multipliqueis, e entreis, e possuís a terra que o Senhor jurou a vossos pais.</p>
+      <p>2 E te lembrarás de todo o caminho pelo qual te guiou o Senhor teu Deus estes quarenta anos no deserto, para te humilhar, e te provar, para saber o que havia no teu coração, se haverias de guardar os seus mandamentos ou não.</p>
+      <p>3 E te humilhou, e te deixou ter fome, e te sustentou com maná, que não conheceste, nem teus pais o conheceram; para te dar a entender que não só de pão viverá o homem, mas de tudo o que sai da boca do Senhor viverá o homem.</p>
+      <p>4 A tua vestimenta não se envelheceu sobre ti, e o teu pé não se inchou estes quarenta anos.</p>
+      <p>5 Sabe, pois, que como um homem disciplina a seu filho, assim te disciplina o Senhor teu Deus.</p>
+      <p>6 Guarda os mandamentos do Senhor teu Deus, para andares nos seus caminhos, e para o temeres.</p>
+      <p>7 Porque o Senhor teu Deus te introduz na boa terra, terra de ribeiros, de águas, de fontes e de mananciais, que saem dos vales e das montanhas;</p>
+      <p>8 terra de trigo, e cevada, e vinhas, e figueiras, e romeiras; terra de oliveiras, que dá azeite, e de mel;</p>
+      <p>9 terra em que comerás pão sem escassez, e nada te faltará nela; terra cujas pedras são ferro, e dos seus montes tirarás cobre.</p>
+      <p>10 E comerás, e te fartarás, e louvarás ao Senhor teu Deus pela boa terra que te deu.</p>
+      <p>11 Guarda-te, para que não te esqueças do Senhor teu Deus, não guardando os seus mandamentos, e os seus juízos, e os seus estatutos, que hoje te ordeno;</p>
+      <p>12 para que, comendo e te fartando, e edificando boas casas, as habites;</p>
+      <p>13 e os teus bois, e as tuas ovelhas se multipliquem, e a tua prata, e o teu ouro se multipliquem, e tudo quanto tiveres se multiplique;</p>
+      <p>14 e se eleve o teu coração, e te esqueças do Senhor teu Deus, que te tirou da terra do Egito, da casa de servidão;</p>
+      <p>15 que te guiou por aquele grande e terrível deserto, onde havia serpentes ardentes, e escorpiões, e sede, onde não havia água; mas te deu a beber água da rocha do flint;</p>
+      <p>16 que no deserto te sustentou com maná, que teus pais não conheceram, para te humilhar, e para te provar, e para no fim te fazer bem.</p>
+      <p>17 E dirás no teu coração: A minha força, e a força do meu braço me adquiriram este poder.</p>
+      <p>18 Mas te lembrarás do Senhor teu Deus, porque é ele que te dá força para adquirires poder; para confirmar a sua aliança que jurou a teus pais, como hoje se vê.</p>
+      <p>19 E será que, se de algum modo te esqueceres do Senhor teu Deus, e andares após outros deuses, e os servires, e te inclinares a eles, eu testifico contra vós outros hoje que certamente perecereis; como as nações que o Senhor destrói diante de vós, assim perecereis; porquanto não quisestes obedecer à voz do Senhor vosso Deus.</p>
+      <p>20 Assim como as nações que o Senhor destrói diante de vós, assim perecereis; porquanto não quisestes obedecer à voz do Senhor vosso Deus.</p>
+      
+      
+
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio7.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio9.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 10</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 10</h2>
+      <p>1 Naquele tempo, disse-me o Senhor: Lança-te duas tábuas de pedra, como as primeiras, e sobe a mim ao monte; e faze uma arca de madeira.</p>
+      <p>2 E escreverei nas tábuas as palavras que estavam nas primeiras tábuas, que quebraste; e as porás na arca.</p>
+      <p>3 E fiz uma arca de madeira de acácia, e talhei duas tábuas de pedra, como as primeiras; e subi ao monte, e as duas tábuas estavam na minha mão.</p>
+      <p>4 E escreveu o Senhor nas tábuas, conforme a primeira escritura, os dez mandamentos, que o Senhor vos falara no monte, do meio do fogo, no dia da assembléia; e deu-mas o Senhor.</p>
+      <p>5 E voltei-me, e desci do monte, e pus as tábuas na arca que fiz; e ali estão, como o Senhor me ordenou.</p>
+      <p>6 E os filhos de Levi trouxeram a arca do pacto do Senhor, e a estenderam perante o Senhor, e ministraram perante ele, e abençoaram o povo em seu nome, até o dia de hoje.</p>
+      <p>7 Por isso Levi não tem parte nem herança com seus irmãos; o Senhor é a sua herança, como o Senhor teu Deus lhe disse.</p>
+      <p>8 E eu estive no monte, como nos primeiros dias, quarenta dias e quarenta noites; e o Senhor me ouviu também por esta vez; não quis o Senhor destruir-te.</p>
+      <p>9 E o Senhor me disse: Levanta-te, põe-te a caminho diante do povo, para que entrem e possuam a terra que jurei a seus pais dar-lhes.</p>
+      <p>10 E eu estive no monte, como nos primeiros dias, quarenta dias e quarenta noites; e o Senhor me ouviu ainda por esta vez; não quis o Senhor destruir-te.</p>
+      <p>11 E o Senhor me disse: Levanta-te, vai, põe-te a caminho diante do povo, para que entrem e possuam a terra que jurei a seus pais dar-lhes.</p>
+      <p>12 Agora, pois, ó Israel, que é que o Senhor teu Deus pede de ti, senão que temas o Senhor teu Deus, que andes em todos os seus caminhos, e o ames, e sirvas ao Senhor teu Deus com todo o teu coração e com toda a tua alma,</p>
+      <p>13 e que guardes os mandamentos do Senhor, e os seus estatutos, que hoje te ordeno, para o teu bem?</p>
+      <p>14 Eis que ao Senhor teu Deus pertencem os céus, e os céus dos céus, a terra e tudo o que nela há.</p>
+      <p>15 Tão somente o Senhor se agradou de teus pais para os amar; e a vós, descendência deles, escolheu, depois deles, de todos os povos como neste dia se vê.</p>
+      <p>16 Circuncidai, pois, o prepúcio do vosso coração, e não mais endureçais a vossa cerviz.</p>
+      <p>17 Porque o Senhor vosso Deus é Deus dos deuses, e Senhor dos senhores, Deus grande, poderoso e temível, que não faz acepção de pessoas, nem aceita suborno;</p>
+      <p>18 que faz justiça ao órfão e à viúva, e ama o estrangeiro, dando-lhe pão e vestes.</p>
+      <p>19 Portanto, amarás o estrangeiro; porque estrangeiros fostes na terra do Egito; eu sou o Senhor vosso Deus.</p>
+      <p>20 O Senhor teu Deus temerás, a ele servirás, e por seu nome jurarás.</p>
+      <p>21 Ele é o teu louvor, e ele é o teu Deus, que fez por ti estas grandes e terríveis coisas que teus olhos têm visto.</p>
+      <p>22 Com setenta almas desceram teus pais ao Egito; e agora o Senhor teu Deus te fez como as estrelas do céu em multidão.</p>
+      
+      
+
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio9.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio11.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
