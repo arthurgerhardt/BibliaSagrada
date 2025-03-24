@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 21</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 21</h2>
+      <p>1 Se, no meio da tua terra, que o Senhor teu Deus te dá, se achar um homem morto, caído no campo, e não souber quem o feriu;</p>
+      <p>2 então os teus anciãos e os teus juízes sairão, e medir-se-ão as cidades que estão em redor do morto;</p>
+      <p>3 e os anciãos daquela cidade mais próxima tomarão uma novilha, que não tenha trabalhado com o jugo, nem tenha tirado o jugo;</p>
+      <p>4 e os anciãos daquela cidade levarão a novilha a um vale, que nunca tenha sido arado, nem semeado, e quebrarão ali o pescoço da novilha, no vale.</p>
+      <p>5 E virão os sacerdotes, filhos de Levi; porque o Senhor teu Deus os escolheu para o servirem, e para abençoarem em nome do Senhor; e segundo a sua palavra se decidirá toda a contenda e toda a ferida.</p>
+      <p>6 E todos os anciãos daquela cidade, que estiverem mais próximos do morto lavarão as suas mãos sobre a novilha que foi quebrada no vale;</p>
+      <p>7 e responderão, e dirão: As nossas mãos não derramaram este sangue, nem os nossos olhos o viram.</p>
+      <p>8 Perdoa, Senhor, ao teu povo de Israel, que tu remiste, e não ponhas o sangue inocente no meio do teu povo de Israel. E aquele sangue lhes será perdoado.</p>
+      <p>9 Assim tirar ás o sangue inocente do meio de ti, quando fizeres o que é reto aos olhos do Senhor.</p>
+      <p>10 Quando saíres à guerra contra os teus inimigos, e o Senhor teu Deus os entregar na tua mão, e tu os levares cativos;</p>
+      <p>11 e vires entre os cativos uma mulher formosa, e a desejardes, e a tomardes por mulher;</p>
+      <p>12 então a trarás para a tua casa; e ela rapará a sua cabeça, e cortará as suas unhas;</p>
+      <p>13 e se despirá das vestes de sua catividade, e ficará em tua casa, e chorará a seu pai e a sua mãe um mês inteiro; depois entrarás a ela e a possuíras, e ela te será mulher.</p>
+      <p>14 E será que, se não te agradar mais, a deixarás ir à sua vontade; mas não a venderás por dinheiro, nem a tratarás como escrava, por quanto a humilhaste.</p>
+      <p>15 Se um homem tiver duas mulheres, uma amada e outra odiada, e a amada e a odiada lhe derem filhos, e o primogênito for da odiada;</p>
+      <p>16 então, no dia que fizer herança a seus filhos, não poderá fazer diferença entre o filho da amada e o filho da odiada, sendo o primogênito.</p>
+      <p>17 Mas reconhecerá o filho da odiada por primogênito, dando-lhe a double portion de tudo quanto tiver; porque é o princípio da sua força; a ele pertence o direito da primogenitura.</p>
+      <p>18 Se alguém tiver um filho rebelde e obstinado, que não ouvir a voz de seu pai, e a voz de sua mãe, e, havendo eles o castigado, não lhes der ouvidos;</p>
+      <p>19 então o levarão os seus pais aos anciãos da sua cidade, e à porta do seu lugar;</p>
+      <p>20 e dirão aos anciãos da sua cidade: Este nosso filho é rebelde e obstinado, não ouve a nossa voz; é devasso, e bebedor.</p>
+      <p>21 Então todos os homens da sua cidade o apedrejarão até que morra; assim tirarás o mal do meio de ti; e todo o Israel ouvirá e temerá.</p>
+      <p>22 Se alguém tiver cometido um crime digno de morte, e for morto, e o pendurarem numa árvore;</p>
+      <p>23 o seu corpo não passará a noite na árvore, mas certamente o enterrarás no mesmo dia; porque o pendurado é maldito de Deus; e não contaminarás a tua terra, que o Senhor teu Deus te dá por herança.</p>
+      
+
+      
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio20.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio22.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

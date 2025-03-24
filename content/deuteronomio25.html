@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 25</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 25</h2>
+      <p>1 Se houver contenda entre alguns, e vierem a juízo, e os juízes os julgarem, então, justificarão o justo, e condenarão o ímpio.</p>
+      <p>2 E será que, se o ímpio merecer ser açoitado, o juiz o fará deitar por terra, e o fará açoitar diante dele, segundo a sua culpa, em número de açoites.</p>
+      <p>3 Quarenta açoites lhe dará, não mais; para que, se lhe derem mais, e o teu irmão for aviltado diante de ti.</p>
+      <p>4 Não atarás a boca ao boi, quando debulhar.</p>
+      <p>5 Quando irmãos habitarem juntos, e morrer um deles, e não tiver filho, a mulher do morto não se casará fora com homem estranho; o seu cunhado entrará a ela, e a tomará por mulher, e cumprirá com ela o dever de cunhado.</p>
+      <p>6 E será que o primogênito que ela der à luz, sucederá no nome de seu irmão morto, para que o nome dele não se apague de Israel.</p>
+      <p>7 Mas, se o homem não quiser tomar a sua cunhada, então, a cunhada subirá à porta, aos anciãos, e dirá: Meu cunhado não quer suscitar nome a seu irmão em Israel; não quer cumprir comigo o dever de cunhado.</p>
+      <p>8 Então, os anciãos da sua cidade o chamarão, e falarão com ele; e, se ele persistir, e disser: Não quero tomá-la;</p>
+      <p>9 então, a sua cunhada se chegará a ele à vista dos anciãos, e lhe descalçará o sapato do pé, e cuspirá no seu rosto, e dirá: Assim se faça ao homem que não edificar a casa de seu irmão.</p>
+      <p>10 E será que o seu nome será chamado em Israel, a casa daquele que tem o sapato descalçado.</p>
+      <p>11 Quando homens pelejarem entre si, e a mulher de um deles se chegar para livrar o seu marido da mão do que o fere, e estender a sua mão, e lhe tomar pela genitália;</p>
+      <p>12 então, lhe cortarás a mão; não a terás pena.</p>
+      <p>13 Não terás em tua bolsa peso diverso, um grande e um pequeno.</p>
+      <p>14 Não terás em tua casa medida diversa, uma grande e uma pequena.</p>
+      <p>15 Terás peso justo e medida justa; para que os teus dias se prolonguem na terra que o Senhor teu Deus te dá.</p>
+      <p>16 Porque o Senhor teu Deus abomina todo aquele que faz isto, e todo aquele que comete injustiça.</p>
+      <p>17 Lembra-te do que te fez Amaleque no caminho, quando saíste do Egito;</p>
+      <p>18 como te encontrou no caminho, e feriu os que iam atrás de ti, todos os que estavam cansados, e não temeu a Deus.</p>
+      <p>19 Portanto, quando o Senhor teu Deus te der descanso de todos os teus inimigos em redor, na terra que o Senhor teu Deus te dá por herança, para a possuíres, apagarás a memória de Amaleque de debaixo do céu; não te esqueças.</p>
+      
+     
+     
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio24.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio26.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

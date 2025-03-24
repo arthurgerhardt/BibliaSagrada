@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 13</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 13</h2>
+      <p>1 Se levantar-se entre vós profeta, ou sonhador de sonhos, e te der um sinal, ou prodígio,</p>
+      <p>2 e suceder que venha a cumprir-se o sinal, ou prodígio, de que te falou, dizendo: Vamos após outros deuses, que não conheceste, e a eles serviremos;</p>
+      <p>3 não ouvirás as palavras desse profeta, ou sonhador de sonhos; porque o Senhor vosso Deus vos prova, para saber se amais ao Senhor vosso Deus de todo o vosso coração, e de toda a vossa alma.</p>
+      <p>4 Ao Senhor vosso Deus seguireis, e a ele temereis, e guardareis os seus mandamentos, e ouvireis a sua voz, e a ele servireis, e a ele chegareis.</p>
+      <p>5 E aquele profeta, ou sonhador de sonhos, será morto; porquanto falou rebeldia contra o Senhor vosso Deus, que vos tirou da terra do Egito, e te resgatou da casa da servidão, para te fazer desviar do caminho que o Senhor teu Deus te ordenou que andasses; assim tirarás o mal do meio de ti.</p>
+      <p>6 Se teu irmão, filho de tua mãe, ou teu filho, ou tua filha, ou a mulher de teu peito, ou o teu amigo íntimo, te instigar secretamente, dizendo: Vamos e serviremos a outros deuses, que não conheceste, nem tu, nem teus pais;</p>
+      <p>7 dos deuses dos povos que estão ao redor de vós, perto de ti, ou longe de ti, desde uma extremidade da terra até a outra extremidade da terra;</p>
+      <p>8 não consentirás com ele, nem o ouvirás; e o teu olho não o terá piedade, nem o pouparás, nem o esconderás;</p>
+      <p>9 Mas certamente o matarás; a tua mão será a primeira contra ele, para o matar; e depois a mão de todo o povo.</p>
+      <p>10 E o apedrejarás, até que morra, pois te procurou apartar do Senhor teu Deus, que te tirou da terra do Egito, da casa da servidão;</p>
+      <p>11 Para que todo o Israel o ouça e o tema, e não torne a fazer semelhante maldade no meio de ti.</p>
+      <p>12 Se ouvires dizer, em uma das tuas cidades, que o Senhor teu Deus te dá para habitar nelas,</p>
+      <p>13 Uns homens, filhos de Belial, que saíram do meio de ti, incitaram os moradores da sua cidade, dizendo: Vamos, e sirvamos a outros deuses que não conhecestes;</p>
+      <p>14 então inquirirás, e buscarás, e perguntarás bem; e eis que a coisa é certa, e está feito este abominável no meio de ti;</p>
+      <p>15 então ferirás os moradores daquela cidade a fio de espada, destruindo-a completamente, e tudo o que nela houver, até os animais a fio de espada.</p>
+      <p>16 E ajuntarás todo o seu despojo, e o juntarás no meio da praça daquela cidade; e a queimarás a cidade, e todo o seu despojo, completamente ao Senhor teu Deus; e será um montão perpétuo, que nunca será edificado.</p>
+      <p>17 E nada do anátema se pegará na tua mão, para que o Senhor se desvie do ardor da sua ira, e te dê misericórdia, e tenha compaixão de ti, e te multiplique, como jurou a teus pais;</p>
+      <p>18 quando ouvires a voz do Senhor teu Deus, guardando todos os seus mandamentos que hoje te ordeno, para fazeres o que é reto aos olhos do Senhor teu Deus.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio12.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio14.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

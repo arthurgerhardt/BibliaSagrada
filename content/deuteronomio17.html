@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 17</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 17</h2>
+      <p>1 Não sacrificarás ao Senhor teu Deus, boi ou ovelha, em que haja algum defeito, ou mácula; porque isso é abominação ao Senhor teu Deus.</p>
+      <p>2 Quando se achar entre ti, em alguma das tuas cidades que o Senhor teu Deus te dá, homem ou mulher que fizer mal aos olhos do Senhor teu Deus, transgredindo a sua aliança,</p>
+      <p>3 e for, e servir a outros deuses, e adorar a eles, ou ao sol, ou à lua, ou a todo o exército do céu, que eu não ordenei;</p>
+      <p>4 e for anunciado, e tu o ouvires, e tiveres conhecimento, e o tiveres investigado, e eis que é verdade, e a coisa certa está confirmada que tal abominação se fez em Israel;</p>
+      <p>5 então levarás aquele homem ou aquela mulher que tiver feito este mal à porta daquela cidade e apedrejar ás aquele homem ou aquela mulher até que morra.</p>
+      <p>6 Pela boca de duas ou três testemunhas morrerá o que houver de morrer; não morrerá pela boca de uma só testemunha.</p>
+      <p>7 As mãos das testemunhas serão primeiro contra ele, para matá-lo; e depois as mãos de todo o povo; assim tirarás o mal do meio de ti.</p>
+      <p>8 Se houver entre ti alguma questão de juízo, que seja difícil demais para ti, em causa de homicídio, ou de demanda, ou de ferimento, ou de qualquer questão difícil, então te levantarás e subirás ao lugar que o Senhor teu Deus escolher;</p>
+      <p>9 e virás aos sacerdotes levíticos, e ao juiz que houver naqueles dias, e perguntarás; e eles te darão a sentença do juízo.</p>
+      <p>10 E farás segundo a sentença que eles te derem do lugar que o Senhor escolher; e terás cuidado de fazer segundo tudo quanto te ensinarem;</p>
+      <p>11 segundo a lei que te ensinarem, e segundo o juízo que te disserem, assim farás; não te desviarás da palavra que eles te disserem, nem para a direita, nem para a esquerda.</p>
+      <p>12 E o homem que presunçosamente não ouvir ao sacerdote que estiver ali para ministrar ao Senhor teu Deus, ou ao juiz, aquele homem morrerá; e assim tirarás o mal de Israel.</p>
+      <p>13 E todo o povo ouvirá, e temerá, e não se atreverá a fazer mais presumidamente.</p>
+      <p>14 Quando entrares na terra que o Senhor teu Deus te der, e possuí-la, e habitares nela, e disseres: Porei sobre mim um rei, como todas as nações que estão ao meu redor;</p>
+      <p>15 certamente porás sobre ti um rei que o Senhor teu Deus escolher; de entre os teus irmãos porás rei sobre ti; não poderás pôr sobre ti homem estrangeiro, que não seja teu irmão.</p>
+      <p>16 Mas não multiplicará para si cavalos, nem fará voltar o povo ao Egito, para multiplicar os cavalos; porque o Senhor vos disse: Nunca mais voltareis por este caminho.</p>
+      <p>17 Nem multiplicará para si mulheres, para que seu coração não se desvie; nem multiplicará para si prata e ouro em excesso.</p>
+      <p>18 E quando se assentar sobre o trono do seu reino, então escreverá para si um livro da lei, debaixo da direção dos sacerdotes levíticos;</p>
+      <p>19 e terá com ele, e lerá todos os dias da sua vida, para que aprenda a temer ao Senhor seu Deus, e tenha cuidado de cumprir todas as palavras desta lei, e estes estatutos, para os cumprir;</p>
+      <p>20 para que o seu coração não se eleve sobre os seus irmãos, e não se desvie do mandamento, nem para a direita, nem para a esquerda; para que prolongue os seus dias no seu reino, ele e seus filhos, no meio de Israel.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio17.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio18.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

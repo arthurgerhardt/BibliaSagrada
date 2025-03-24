@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 23</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 23</h2>
+      <p>1 Não entrará o eunuco, nem o que tem a mão cortada, na congregação do Senhor.</p>
+      <p>2 Não entrará o bastardo na congregação do Senhor; nem ainda a sua décima geração entrará na congregação do Senhor.</p>
+      <p>3 Não entrará o amonita, nem o moabita, na congregação do Senhor; nem ainda a sua décima geração entrará na congregação do Senhor para sempre;</p>
+      <p>4 porquanto não vieram ao vosso encontro com pão e água no caminho, quando saíeis do Egito; e porque pagaram a Balaão, filho de Beor, de Petor, da Mesopotâmia, para te amaldiçoar.</p>
+      <p>5 Mas o Senhor teu Deus não quis ouvir a Balaão; antes, o Senhor teu Deus mudou em bênção a maldição, porque o Senhor teu Deus te amava.</p>
+      <p>6 Não buscarás a paz deles, nem o seu bem, todos os teus dias para sempre.</p>
+      <p>7 Não abominarás o edomita, porque é teu irmão; não abominarás o egípcio, porque forasteiro foste na sua terra.</p>
+      <p>8 Os filhos que lhes nascerem, na terceira geração, entrarão na congregação do Senhor.</p>
+      <p>9 Quando saíres a pelejar contra os teus inimigos, guardar-te-ás de toda a coisa má.</p>
+      <p>10 Se houver entre vós algum homem que não for limpo, por causa de algum acidente noturno, sairá fora do arraial; não entrará no arraial.</p>
+      <p>11 Mas, ao cair do sol, se banhar com água, e ao pôr do sol entrar no arraial.</p>
+      <p>12 Terás também um lugar fora do arraial, e para lá sairás.</p>
+      <p>13 E terás um instrumento, com que possas fazer buraco, e com ele cobrirás a tua excreção.</p>
+      <p>14 Porque o Senhor teu Deus anda no meio do teu arraial, para te livrar e entregar os teus inimigos diante de ti; portanto, o teu arraial será santo, para que ele não veja em ti coisa má, e se retire de ti.</p>
+      <p>15 Não entregarás ao seu senhor o servo que se escapar a ti, de seu senhor.</p>
+      <p>16 Estará contigo, no meio de ti, no lugar que escolher, em uma das tuas portas, onde lhe agradar; não o oprimirás.</p>
+      <p>17 Não haverá prostituta entre as filhas de Israel; nem haverá sodomita entre os filhos de Israel.</p>
+      <p>18 Não trarás salário de prostituição nem preço de cão à casa do Senhor teu Deus por qualquer voto; porque ambos são igualmente abominação ao Senhor teu Deus.</p>
+      <p>19 A teu irmão não emprestarás com usura, nem dinheiro, nem comida, nem qualquer coisa que se empresta com usura.</p>
+      <p>20 Ao estrangeiro emprestarás com usura, mas a teu irmão não emprestarás com usura; para que o Senhor teu Deus te abençoe em tudo o que puseres a tua mão, na terra a qual vais a possuir.</p>
+      <p>21 Quando fizeres algum voto ao Senhor teu Deus, não tardarás em pagá-lo; porque o Senhor teu Deus certamente o requererá de ti, e em ti haverá pecado.</p>
+      <p>22 Porém, abstendo-te de fazer voto, não haverá pecado em ti.</p>
+      <p>23 O que saiu da tua boca guardarás, e o farás; mesmo a oferta voluntária, assim como votaste ao Senhor teu Deus, o que falaste pela tua boca.</p>
+      <p>24 Quando entrares na vinha do teu próximo, comerás uvas conforme o teu desejo, até te fartares; porém, não as porás no teu vaso.</p>
+      <p>25 Quando entrares na seara do teu próximo, com a tua mão arrancarás as espigas; porém, não meterás a foice na seara do teu próximo.</p>
+     
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio22.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio24.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

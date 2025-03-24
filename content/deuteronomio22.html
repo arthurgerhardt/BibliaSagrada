@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 22</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 22</h2>
+      <p>1 Não verás o boi do teu irmão, ou a sua ovelha, desgarrados, e deles não te esconderás; certamente os tornarás
+        a trazer ao teu irmão.</p>
+      <p>2 E, se o teu irmão não estiver perto de ti, ou não o conheceres, então o ajuntarás
+        na tua casa, e ficará contigo até que busque o seu irmão, e este lhe pagará; e assim farás com a sua jumenta, e
+        assim farás com a sua vestimenta, e assim farás com toda a coisa perdida de teu irmão, que ele perder, e tu
+        achares; não te esconderás.</p>
+      <p>3 Assim farás com toda a coisa perdida de teu irmão, que ele perder, e tu achares; não te esconderás.</p>
+      <p>4 Não verás o jumento do teu irmão, ou o seu boi, caído no caminho, e deles não te esconderás; certamente os levantarás com ele.</p>
+      <p>5 A mulher não vestirá roupa de homem, nem o homem vestirá roupa de mulher; porque todo aquele que faz isto é abominação ao Senhor teu Deus.</p>
+      <p>6 Se encontrares no caminho um ninho de pássaro, em qualquer árvore, ou sobre a terra, com os filhotes ou com os ovos, e a mãe assentada sobre os filhotes, ou sobre os ovos, não tomarás a mãe com os filhos;</p>
+      <p>7 mas certamente deixarás ir a mãe, e os filhos tomarás para ti; para que te vá bem, e prolongues os teus dias.</p>
+      <p>8 Quando edificares uma nova casa, farás um parapeito ao teu telhado, para que não ponhas sangue na tua casa, se alguém cair dele.</p>
+      <p>9 Não semearás a tua vinha com duas sortes de sementes, para que não se santifique a semente que semeares, e o fruto da vinha.</p>
+      <p>10 Não lavrarás com boi e jumento juntos.</p>
+      <p>11 Não te vestirás de linho e lã juntos.</p>
+      <p>12 Farás franjas nos quatro cantos da tua vestimenta, com que te cobrires.</p>
+      <p>13 Se alguém tomar mulher, e entrar a ela, e aborrecê-la,</p>
+      <p>14 e lhe imputar coisas infames, e lhe lançar o mau nome, dizendo: Esta mulher tomei, e cheguei a ela, e não a achei virgem;</p>
+      <p>15 então o pai da moça, e a sua mãe, tomarão e trarão as vestes da moça diante dos anciãos da cidade, à porta.</p>
+      <p>16 E dirá o pai da moça aos anciãos: Dei minha filha a este homem por mulher, e ele a aborreceu;</p>
+      <p>17 e eis que lhe imputou coisas infames, dizendo: Não a achei virgem; e eis aqui as vestes da minha filha diante dos anciãos da cidade.</p>
+      <p>18 Então os anciãos daquela cidade tomarão aquele homem, e o castigarão;</p>
+      <p>19 e o multarão em cem ciclos de prata, e darão à moça, porque infamou uma virgem de Israel; e ela será sua mulher; não a poderá despedir em todos os seus dias.</p>
+      <p>20 Mas, se for verdade, que a moça não foi achada virgem;</p>
+      <p>21 Então levarão a moça à porta da casa de seu pai, e os homens da sua cidade a apedrejarão, até que morra; pois fez loucura em Israel, prostituindo-se na casa de seu pai; assim tirarás o mal do meio de ti.</p>
+      <p>22 Se alguém for achado deitado com uma mulher casada, morrerão ambos, o homem que se deitou com a mulher, e a mulher; assim tirarás o mal de Israel.</p>
+      <p>23 Se houver uma moça virgem, desposada com um homem, e alguém a achar na cidade, e se deitar com ela;</p>
+      <p>24 então os trareis ambos à porta daquela cidade, e os apedrejarão até que morram; a moça, porque não gritou, sendo na cidade; e o homem, porque humilhou a mulher do seu próximo; assim tirarás o mal do meio de ti.</p>
+      <p>25 Mas, se o homem a achar no campo, e a moça desposada clamar, e não houver quem a livre;</p>
+      <p>26 então o homem que achar a moça, a tomará, e se deitará com ela; e morrerá o homem que se deitou com ela.</p>
+      <p>27 Porque a moça não cometeu pecado digno de morte; porque, como o homem se levanta contra o seu próximo e o mata, assim é este caso.</p>
+      <p>28 Se alguém achar uma moça virgem, que não seja desposada, e a agarrar, e se deitar com ela, e forem achados;</p>
+      <p>29 então dará ao pai da moça cinqüenta ciclos de prata, e ela será sua mulher, porquanto a humilhou; não a poderá despedir em todos os seus dias.</p>
+      <p>30 Não tomará o homem a mulher de seu pai, e não descobrirá a saia de seu pai.</p>
+
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio21.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio23.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

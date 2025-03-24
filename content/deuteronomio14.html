@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 14</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 14</h2>
+      <p>1 Vós sois os filhos do Senhor vosso Deus; não vos fareis corte na vossa cabeça, nem vos raspareis a barba, por causa de um morto.</p>
+      <p>2 Porque és povo santo ao Senhor teu Deus, e o Senhor te escolheu para lhe seres um povo próprio, de todos os povos que estão sobre a terra.</p>
+      <p>3 Não comereis coisa alguma abominável.</p>
+      <p>4 Estes são os animais que comereis: o boi, a ovelha, a cabra,</p>
+      <p>5 o cervo, e a gazela, e a corça, e a cabra montês, e o antílope, e a zebra, e o porco-espinho.</p>
+      <p>6 E todo animal que tem unhas fendidas, e que rumina entre os animais
+      , esse comereis.</p>
+      <p>7 Porém destes não comereis os que rumina, ou os que têm unhas fendidas; o camelo, e a lebre, e o porco-espinho; porque rumina, mas não tem unhas fendidas; imundo vos será.</p>
+      <p>8 E o porco, porque tem unhas fendidas, mas não rumina, imundo vos será; da carne deles não comereis, nem tocareis no seu cadáver.</p>
+      <p>9 Estes comeréis de todos os que estão nas águas: tudo o que tem barbatanas e escamas, comeréis;</p>
+      <p>10 mas tudo o que não tem barbatanas e escamas, não comereis; imundo vos será.</p>
+      <p>11 De todas as aves limpas, comeréis.</p>
+      <p>12 Mas estas são as que não comereis: a águia, e o quebranto, e a culebra,</p>
+      <p>13 e o milhafre, e o abutre, e o gavião segundo a sua espécie;</p>
+      <p>14 e toda ave de rapina, e toda ave limpa.</p>
+      <p>15 E toda ave imunda, e o morcego,</p>
+      <p>16 e o corvo segundo a sua espécie;</p>
+      <p>17 e a avestruz, e a coruja, e o gavião, e o pelicano,</p>
+      <p>18 e o abutre, e a cegonha, e a garça segundo a sua espécie; e a andorinha, e o morcego.</p>
+      <p>19 E toda ave que anda de quatro pés, imunda vos será; não comereis a carne
+      delas, e o seu cadáver não tocareis.</p>
+      <p>20 De todas as coisas limpas, comerás.</p>
+      <p>21 Não comereis nada do que morre de si mesmo; ao estrangeiro que está dentro das tuas portas o darás, para que coma; ou o venderás ao estrangeiro; porque és povo santo ao Senhor teu Deus. Não cozerás o cabrito no leite de sua mãe.</p>
+      <p>22 Certamente darás o dízimo de todo o produto da tua semente, que ano por ano colheres do campo.</p>
+      <p>23 E comerás perante o Senhor teu Deus, no lugar que escolher para ali fazer habitar o seu nome, o dízimo do teu trigo, do teu vinho, e do teu azeite, e as primícias das tuas vacas, e das tuas ovelhas; para que aprendas a temer ao Senhor teu Deus todos os dias.</p>
+      <p>24 E se o caminho for tão longo que não possas levar, por não poderes levar o dízimo, porque está longe de ti o lugar que o Senhor teu Deus escolher para ali fazer habitar o seu nome, quando o Senhor teu Deus te houver abençoado;</p>
+      <p>25 então o venderás, e atarás o dinheiro na tua mão, e virás ao lugar que o Senhor teu Deus escolher;</p>
+      <p>26 e darás o dinheiro por tudo o que a tua alma desejar, por vacas, ou por ovelhas, ou por vinho, ou por bebida forte, ou por tudo o que a tua alma desejar; e ali comerás perante o Senhor teu Deus, e alegrar-te-ás, tu e a tua casa.</p>
+      <p>27 E o levita que está dentro das tuas portas, não o desampararás; porque não tem parte nem herança contigo.</p>
+      <p>28 Ao fim de três anos, tirarás todo o dízimo do teu produto naquele ano, e o guardarás dentro das tuas portas;</p>
+      <p>29 e virá o levita, porque não tem parte nem herança contigo, e o estrangeiro, e o órfão, e a viúva que estão dentro das tuas portas, e comerão, e se fartarão; para que o Senhor teu Deus te abençoe em toda a obra das tuas mãos que fizeres.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio13.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio15.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

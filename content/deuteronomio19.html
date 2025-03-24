@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 19</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 19</h2>
+      <p>1 Quando o Senhor teu Deus tiver desarraigado as nações, cuja terra o Senhor teu Deus te dá, e tu as possuíres, e habitares nas suas cidades e nas suas casas,</p>
+      <p>2 separarás três cidades, no meio da tua terra, que o Senhor teu Deus te dá para possuíres.</p>
+      <p>3 Prepararás o caminho, e dividirás em três partes a terra que o Senhor teu Deus te dá, para que se fuja para lá todo o homicida.</p>
+      <p>4 E este é o caso do homicida que se fugir para lá, para que viva: aquele que feriu ao seu próximo sem querer, e não o aborreceu antes.</p>
+      <p>5 Como aquele que vai com o seu próximo ao bosque, para cortar lenha, e lhe levanta a mão com o machado, para cortar a árvore, e lhe escapa o ferro do cabo, e acha ao seu próximo, e este morre; aquele fugirá para uma destas cidades, e viverá.</p>
+      <p>6 Para que o vingador do sangue não persiga ao homicida, enquanto o seu coração se acirra, e o alcance, porque é longo o caminho para ele, e o mate, não havendo causa de morte para ele, porquanto não o aborreceu antes.</p>
+      <p>7 Portanto, eu te ordeno, dizendo: Separarás três cidades.</p>
+      <p>8 E, se o Senhor teu Deus alargar os teus limites, como jurou a teus pais, e te der toda a terra que prometeu dar a teus pais;</p>
+      <p>9 e guardares todos estes mandamentos, que hoje te ordeno, e fizeres o que é reto aos olhos do Senhor teu Deus, para andares nos seus caminhos, e guardares os seus estatutos, e os seus juízos, então acrescentarás mais três cidades a estas três;</p>
+      <p>10 para que não se derrame o sangue inocente no meio da tua terra, que o Senhor teu Deus te dá por herança, e não haja sobre ti sangue.</p>
+      <p>11 Mas, se alguém aborrecendo ao seu próximo, lhe armar ciladas, e o ferir de morte, e fugir para uma destas cidades;</p>
+      <p>12 então os anciãos da sua cidade enviarão, e o tirarão de lá, e o entregarão na mão do vingador do sangue, para que morra.</p>
+      <p>13 Não o terás compaixão; mas tirarás o sangue inocente de Israel, para que te vá bem.</p>
+      <p>14 Não moverás os marcos do teu próximo, que os antigos puseram na tua herança, que receberás na terra que o Senhor teu Deus te dá para possuíres.</p>
+      <p>15 Não se levantará contra alguém, por causa de qualquer iniqüidade, a boca de uma só testemunha; mas pela boca de duas ou três testemunhas se estabelecerá o negócio.</p>
+      <p>16 Se levantar testemunha falsa contra alguém, para testificar contra ele perversamente,</p>
+      <p>17 então os dois homens, entre os quais houver a contenda, comparecerão perante o Senhor, perante os sacerdotes e juízes que houver naqueles dias;</p>
+      <p>18 e os juízes inquirirão bem; e eis que, se a testemunha for falsa, e tiver dado falso testemunho contra seu irmão,</p>
+      <p>19 então lhe fareis como ele pensou fazer a seu irmão; e assim tirarás o mal do meio de ti.</p>
+      <p>20 E os que restarem ouvirão, e temerão, e nunca mais farão tal maldade no meio de ti.</p>
+      <p>21 E não terás compaixão; vida por vida, olho por olho, dente por dente, mão por mão, pé por pé.</p>
+      
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio20.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

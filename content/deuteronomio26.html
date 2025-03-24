@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 26</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 26</h2>
+      <p>1 Quando entrares na terra que o Senhor teu Deus te der por herança, e a possuíres, e habitares nela;</p>
+      <p>2 então, tomarás das primícias de todos os frutos da terra, que trouxer da tua terra, que o Senhor teu Deus te der, e as porás num cesto, e irás ao lugar que escolher o Senhor teu Deus, para fazer habitar ali o seu nome.</p>
+      <p>3 E virás ao sacerdote que houver naquele tempo, e lhe dirás: Declaro hoje ao Senhor teu Deus que entrei na terra que o Senhor jurou a nossos pais que nos daria.</p>
+      <p>4 E o sacerdote tomará o cesto da tua mão, e o porá diante do altar do Senhor teu Deus.</p>
+      <p>5 E falarás, e dirás perante o Senhor teu Deus: Meu pai era um arameu errante, e desceu ao Egito, e ali peregrinou com poucos homens, e ali se fez uma nação grande, poderosa e numerosa.</p>
+      <p>6 E os egípcios nos maltrataram, e nos afligiram, e impuseram sobre nós dura servidão.</p>
+      <p>7 E clamamos ao Senhor Deus de nossos pais, e o Senhor ouviu a nossa voz, e viu a nossa aflição, e o nosso trabalho, e a nossa opressão;</p>
+      <p>8 e o Senhor nos tirou do Egito com mão poderosa, e com braço estendido, e com grandes terrores, e com sinais, e com maravilhas;</p>
+      <p>9 e nos trouxe a este lugar, e nos deu esta terra, terra que mana leite e mel.</p>
+      <p>10 E agora, eis que trago as primícias dos frutos da terra, que me deste, ó Senhor. E as porás perante o Senhor teu Deus, e adorarás perante o Senhor teu Deus.</p>
+      <p>11 E te alegrarás em toda a boa coisa que o Senhor teu Deus te deu, a ti e à tua casa, tu e o levita, e o estrangeiro que está no meio de ti.</p>
+      <p>12 Quando acabares de separar todos os dízimos da tua colheita no terceiro ano, que é o ano dos dízimos, e tiveres dado ao levita, ao estrangeiro, ao órfão e à viúva, e tiverem comido dentro das tuas portas, e se fartado;</p>
+      <p>13 então dirás perante o Senhor teu Deus: Tirei do que é consagrado da casa, e também dei ao levita, e ao estrangeiro, e ao órfão, e à viúva, conforme a todos os teus mandamentos que me ordenaste; não transgredi os teus mandamentos, nem deles me esqueci.</p>
+      <p>14 Não comi dele, estando de luto, nem dele tirei coisa alguma para imundícia, nem dele dei coisa alguma para os mortos; ouvi a voz do Senhor meu Deus, fiz conforme a tudo o que me ordenaste.</p>
+      <p>15 Olha do lugar da tua habitação, desde o céu, e abençoa o teu povo Israel, e a terra que nos deste, como juraste a nossos pais, terra que mana leite e mel.</p>
+      <p>16 Hoje o Senhor teu Deus te ordena que cumpras estes estatutos e juízos; guarda-os, pois, e cumpre-os de todo o teu coração, e de toda a tua alma.</p>
+      <p>17 Hoje declaraste ao Senhor que ele é o teu Deus, e que andará nos seus caminhos, e guardará os seus estatutos, e os seus mandamentos, e os seus juízos, e ouvirás a sua voz.</p>
+      <p>18 E o Senhor declarou-te hoje que tu és o seu povo peculiar, como te tem prometido, e que guardarás todos os seus mandamentos;</p>
+      <p>19 e que te porá em alto sobre todas as nações que fez, para louvor, e para nome, e para glória; e para que sejas um povo santo ao Senhor teu Deus, como ele tem falado.</p>
+      
+      
+     
+     
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio25.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio27.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

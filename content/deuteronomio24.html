@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 24</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 24</h2>
+      <p>1 Quando alguém tomar mulher, e se chegar a ela, e não lhe agradar, por achar nela alguma coisa indecente, escrever-lhe-á carta de divórcio, e lha dará na sua mão, e a despedirá da sua casa.</p>
+      <p>2 E, saindo ela da sua casa, irá e será outra mulher.</p>
+      <p>3 E, se depois de ter saído da sua casa, for e se casar com outro homem;</p>
+      <p>4 e vier o segundo homem, e a tomar por mulher, e não lhe agradar, e escrever-lhe carta de divórcio, e lha der na sua mão, e a despedir da sua casa; ou se morrer o segundo homem que a tomou por mulher;</p>
+      <p>5 o primeiro marido, que a despediu, não poderá tomá-la outra vez, para que não seja contaminada; porque é abominação perante o Senhor; e não farás pecar a terra, que o Senhor teu Deus te dá por herança.</p>
+      <p>6 Não tomarás em penhor a mó de cima, nem a de baixo, porque é a vida que tomas em penhor.</p>
+      <p>7 Quando alguém for apanhado roubando a um dos seus irmãos, e o tratar como escravo, ou o vender, morrerá aquele ladrão; assim tirarás o mal do meio de ti.</p>
+      <p>8 Acautela-te da praga da lepra, que muito te cuidaras de observar, e farás segundo tudo o que os sacerdotes levitas te ensinarem; como eu lhes ordenei, assim cuidareis de fazer.</p>
+      <p>9 Lembra-te do que fez o Senhor teu Deus a Miriam, no caminho, quando saíste do Egito.</p>
+      <p>10 Quando emprestares alguma coisa ao teu próximo, não entrarás na sua casa para lhe tirar o penhor.</p>
+      <p>11 Fora te esperarás, e o homem a quem emprestares, te trará o penhor fora.</p>
+      <p>12 E, se for homem pobre, não te deitarás com o seu penhor;</p>
+      <p>13 deitar-te-ás com o seu penhor, até que se ponha o sol; porque é a sua coberta, é a única com que se cobre; e com que se deitará? E há de clamar a mim, e eu ouvirei, porque sou misericordioso.</p>
+      <p>14 Não oprimirás o empregado pobre e necessitado, seja ele dos teus irmãos, ou dos teus estrangeiros, que estão na tua terra, nas tuas cidades;</p>
+      <p>15 no seu dia lhe darás o seu salário, e não se porá o sol sobre ele; porque é pobre, e com isso sustenta a sua vida; para que não clame contra ti ao Senhor, e haja em ti pecado.</p>
+      <p>16 Não matarão os pais pelos filhos, nem os filhos matarão pelos pais; cada um morrerá pelo seu pecado.</p>
+      <p>17 Não perverterás o direito do estrangeiro, nem do órfão; e a roupa da viúva não tomarás em penhor;</p>
+      <p>18 mas te lembrarás de que foste servo no Egito, e que o Senhor teu Deus te remiu dali; portanto, te ordeno que faças isto.</p>
+      <p>19 Quando no teu campo colheres a tua colheita, e esqueceres um molho no campo, não tornarás a tomá-lo; para o estrangeiro, para o órfão, e para a viúva será; para que o Senhor teu Deus te abençoe em toda a obra das tuas mãos.</p>
+      <p>20 Quando abrires a azeitona, não tornarás a sacudir o teu olival; para o estrangeiro, para o órfão, e para a viúva será.</p>
+      <p>21 Quando vindimares a tua vinha, não tornarás a rebuscar; para o estrangeiro, para o órfão, e para a viúva será.</p>
+      <p>22 E te lembrarás de que foste servo na terra do Egito; portanto, te ordeno que faças isto.</p>
+     
+     
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio23.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio25.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
