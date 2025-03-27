@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deuteronômio 33</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Deuteronômio 33</h2>
+      <p>1 Esta, porém, é a bênção com que Moisés, homem de Deus, abençoou os filhos de Israel antes da sua morte.</p>
+      <p>2 E disse: O Senhor veio de Sinai, e de Seir lhes raiou; e do monte Parã veio entre dez milhares de santos; à sua direita tinha a lei de fogo.</p>
+      <p>3 Assim amou os povos; todos os seus santos estão na sua mão; e eles se assentaram aos seus pés, e tomaram de suas palavras.</p>
+      <p>4 Moisés nos ordenou a lei, herança da congregação de Jacó.</p>
+      <p>5 E foi rei em Jesurum, quando se congregaram os cabeças do povo com as tribos de Israel.</p>
+      <p>6 Viva Rubem, e não morra; e não sejam poucos os seus homens.</p>
+      <p>7 E a Judá disse: Ouve, Senhor, a voz de Judá, e traz-o ao seu povo; as suas mãos lhe sejam suficientes; e tu lhe sejas em auxílio contra os seus inimigos.</p>
+      <p>8 E a Levi disse: O teu Tumim e o teu Urim sejam para o teu santo, a quem provaste em Massá, e com quem contendeste nas águas de Meribá;</p>
+      <p>9 que disse a seu pai e a sua mãe: Não os vi; e aos seus irmãos não deu conhecimento, e não reconheceu os seus filhos; porque guardaram a tua palavra, e observaram a tua aliança.</p>
+      <p>10 Ensinaram os teus juízos a Jacó, e a tua lei a Israel; puseram incenso no teu nariz, e o holocausto sobre o teu altar.</p>
+      <p>11 Abençoa, Senhor, a sua força, e aceita, Senhor, a obra das suas mãos; fere os lombos dos que se levantam contra ele, e os que o odeiam, para que não se levantem mais.</p>
+      <p>12 E a Benjamim disse: O Senhor amado habitará seguro por ele; todo o dia o cobrirá, e entre os seus ombros habitará.</p>
+      <p>13 E a José disse: Bendita do Senhor seja a sua terra, com as coisas preciosas do céu, com o orvalho e com as profundezas que jazem embaixo;</p>
+      <p>14 e com as preciosidades dos frutos do sol, e com as preciosidades das coisas que produzem a lua;</p>
+      <p>15 e com as primícias dos montes antigos, e com as preciosidades das colinas eternas;</p>
+      <p>16 e com as preciosidades da terra e da sua plenitude, e com a boa vontade daquele que habitou na sarça; venha sobre a cabeça de José, e sobre o topo da cabeça do que é o príncipe entre os seus irmãos.</p>
+      <p>17 Ele tem a glória do primogênito do seu touro, e os seus chifres são chifres de boi selvagem; com eles rechaçará todos os povos até às extremidades da terra; estes pois são os dez milhares de Efraim, e estes são os milhares de Manassés.</p>
+      <p>18 E a Zebulom disse: Alegra-te, Zebulom, na tua saída; e tu, Issacar, nas tuas tendas.</p>
+      <p>19 Eles chamarão os povos ao monte; ali oferecerão sacrifícios de justiça; porque sugarão a abundância dos mares, e os tesouros escondidos da areia.</p>
+      <p>20 E de Gade disse: Bendito aquele que faz dilatar a Gade; habita como a leoa, e despedaça o braço e o alto da cabeça.</p>
+      <p>21 E se proveu da melhor parte, porquanto ali estava escondida a porção do legislador; por isso veio com os chefes do povo, executou a justiça do Senhor e os seus juízos para com Israel.</p>
+      <p>22 E a Dã disse: Dã é um leãozinho, que salta de Basã.</p>
+      <p>23 E a Naftali disse: Ó Naftali, cheio de graça, e cheio da bênção do Senhor; possui o ocidente e o sul.</p>
+      <p>24 E de Aser disse: Bendito seja Aser com seus filhos; agrade a seus irmãos, e banhe em azeite o seu pé.</p>
+      <p>25 As tuas portas sejam de ferro e de bronze; e a tua força dure segundo os teus dias.</p>
+      <p>26 Não há como o Deus de Jesurum, que anda sobre os céus para a tua ajuda, e sobre as nuvens na sua majestade.</p>
+      <p>27 O Deus eterno é a tua habitação, e por baixo estão os braços eternos; e ele lançará fora de diante de ti o inimigo, e dirá: Destrói-o.</p>
+      <p>28 Israel, pois, habitará só, seguro, na terra da fonte de Jacó, na terra de grão e de mosto; e os seus céus gotejarão orvalho.</p>
+      <p>29 Bem-aventurado tu, ó Israel! Quem é como tu? Um povo salvo pelo Senhor, o escudo do teu socorro, e a espada da tua majestade; por isso os teus inimigos te serão sujeitos, e tu pisarás sobre as suas alturas.</p>
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio32.html">Capítulo Anterior</a>
+      <a class="button" href="../content/deuteronomio34.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
