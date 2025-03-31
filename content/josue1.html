@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 1</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 1</h2>
+      <p>1 Depois da morte de Moisés, servo do Senhor, falou o Senhor a Josué, filho de Num, servo de Moisés, dizendo:</p>
+      <p>2 Moisés, meu servo, é morto; levanta-te, pois, agora, passa este Jordão, tu e todo este povo, à terra que eu dou aos filhos de Israel.</p>
+      <p>3 Todo lugar que pisar a planta do vosso pé, vo-lo tenho dado, como eu disse a Moisés.</p>
+      <p>4 Desde o deserto e este Líbano até ao grande rio, o rio Eufrates, toda a terra dos heteus, e até ao grande mar para o poente do sol será o vosso termo.</p>
+      <p>5 Ninguém te poderá resistir todos os dias da tua vida; como fui com Moisés, assim serei contigo; não te deixarei, nem te desampararei.</p>
+      <p>6 Esforça-te, e tem bom ânimo; porque tu farás este povo herdar a terra que, sob juramento, prometi dar a seus pais.</p>
+      <p>7 Somente esforça-te e tem muito bom ânimo, para teres cuidado de fazer segundo toda a lei que meu servo Moisés te ordenou; dela não te desvies, nem para a direita nem para a esquerda, para que prudentemente te conduzas por onde quer que andares.</p>
+      <p>8 Não cesses de falar deste livro da lei; antes, medita nele dia e noite, para que tenhas cuidado de fazer segundo tudo quanto nele está escrito; porque então farás prosperar o teu caminho, e então prudentemente te conduzirás.</p>
+      <p>9 Não te mandei eu? Esforça-te, e tem bom ânimo; não temas, nem te espantes, porque o Senhor teu Deus é contigo por onde quer que andares.</p>
+      <p>10 Então, Josué ordenou aos oficiais do povo, dizendo:</p>
+      <p>11 Passai pelo meio do arraial, e dai ordem ao povo, dizendo: Preparai-vos para comer, porque dentro de três dias passareis este Jordão, para entrar e possuir a terra que o Senhor vosso Deus vos dá.</p>
+      <p>12 E aos rubenitas, e aos gaditas, e à meia tribo de Manassés, Josué disse:</p>
+      <p>13 Lembrai-vos da palavra que vos ordenou Moisés, servo do Senhor, dizendo: O Senhor vosso Deus vos dá descanso, e vos dará esta terra.</p>
+      <p>14 Vós passareis armados, diante de vossos irmãos, todos os valentes, e ajudareis a eles;</p>
+      <p>15 até que o Senhor tenha dado descanso a vossos irmãos, como a vós; e eles também possuam a terra que o Senhor vosso Deus lhes dá; então voltareis à terra da vossa possessão, e possuireis a terra que Moisés, servo do Senhor, vos deu, além do Jordão, para o oriente.</p>
+      <p>16 E eles responderam a Josué, dizendo: Tudo quanto nos ordenaste, faremos; e aonde quer que nos enviares, iremos.</p>
+      <p>17 Como em tudo temos obedecido a Moisés, assim obedeceremos a ti; somente o Senhor teu Deus seja contigo, como foi com Moisés.</p>
+      <p>18 Qualquer que for rebelde à tua boca, e não obedecer a todas as tuas palavras que lhe disseres, morrerá; somente esforça-te e tem bom ânimo.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/deuteronomio34.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue2.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

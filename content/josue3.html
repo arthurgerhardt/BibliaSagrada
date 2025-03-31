@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 3</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 3</h2>
+      <p>1 Levantou-se, pois, Josué de madrugada, e partiram de Sitim, ele e todos os filhos de Israel; e vieram até ao Jordão, e pousaram ali, antes que passassem.</p>
+      <p>2 E ao fim de três dias, os oficiais passaram pelo meio do arraial;</p>
+      <p>3 E deram ordem ao povo, dizendo: Quando virdes a arca do concerto do Senhor vosso Deus, e os levitas sacerdotes que a levam, partireis do lugar onde estais, e seguireis após ela;</p>
+      <p>4 Para que saibais o caminho por onde haveis de ir; porquanto não passastes antes por este caminho; porém, segui-la-eis, para que possais viver.</p>
+      <p>5 E disse Josué ao povo: Santificai-vos, porque amanhã fará o Senhor maravilhas no meio de vós.</p>
+      <p>6 E falou Josué aos sacerdotes, dizendo: Levantai a arca do concerto, e passai diante do povo. E levantaram a arca do concerto, e foram diante do povo.</p>
+      <p>7 E o Senhor disse a Josué: Hoje começarei a engrandecer-te perante os olhos de todo o Israel, para que saibam que, assim como fui com Moisés, assim serei contigo.</p>
+      <p>8 E tu, dá ordem aos sacerdotes que levam a arca do concerto, dizendo: Quando chegardes à borda das águas do Jordão, parareis no Jordão.</p>
+      <p>9 Então disse Josué aos filhos de Israel: Chegai-vos para cá, e ouvi as palavras do Senhor vosso Deus.</p>
+      <p>10 E disse Josué: Nisto conhecereis que o Deus vivo está no meio de vós, e que certamente expulsará de diante de vós os cananeus, e os heteus, e os heveus, e os perizeus, e os girgaseus, e os amorreus, e os jebuseus.</p>
+      <p>11 Eis que a arca do concerto do Senhor de toda a terra passa diante de vós pelo Jordão.</p>
+      <p>12 Tomai, pois, agora doze homens das tribos de Israel, de cada tribo um homem;</p>
+      <p>13 E há de ser que, quando os pés dos sacerdotes que levam a arca do Senhor, Senhor de toda a terra, pousarem nas águas do Jordão, as águas do Jordão se dividirão; porque as águas que vêm de cima pararão num montão.</p>
+      <p>14 E aconteceu que, quando o povo partiu de suas tendas, para passar o Jordão, e os sacerdotes que levavam a arca do concerto estavam diante do povo;</p>
+      <p>15 E quando os que levavam a arca chegaram ao Jordão, e os pés dos sacerdotes que levavam a arca se molharam na beira das águas (porque o Jordão transborda por todas as suas ribanceiras, todos os dias da cevada),</p>
+      <p>16 As águas que vinham de cima pararam-se, e levantaram-se num montão, muito longe da cidade de Adã, que está ao lado de Zaretã; e as que desciam ao mar da campina, ao mar salgado, se acabaram, e foram separadas; e o povo passou em frente de Jericó.</p>
+      <p>17 Porém os sacerdotes, que levavam a arca da aliança do Senhor, pararam firmes, em seco, no meio do Jordão, e todo o Israel passou a seco, até que todo o povo acabou de passar o Jordão.</p>
+
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/josue2.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue4.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
