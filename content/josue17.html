@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 17</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 17</h2>
+      <p>1 Também coube sorte à tribo de Manassés, porquanto era o primogênito de José. Maquir, o primogênito de Manassés, pai de Gileade, porquanto era homem de guerra, teve a Gileade e Basã;</p>
+      <p>2 E coube sorte aos filhos de Manassés, segundo as suas famílias, a saber: aos filhos de Abiezer, e aos filhos de Helec, e aos filhos de Asriel, e aos filhos de Siquém, e aos filhos de Hefer, e aos filhos de Semida; estes são os filhos homens de Manassés, filho de José, segundo as suas famílias.</p>
+      <p>3 Mas Zelofeade, filho de Hefer, filho de Gileade, filho de Maquir, filho de Manassés, não teve filhos, senão filhas; e os nomes das filhas de Zelofeade foram Maala, Noa, Hogla, Milca e Tirza.</p>
+      <p>4 Estas vieram perante Eleazar, o sacerdote, e perante Josué, filho de Num, e perante os príncipes, dizendo: O Senhor ordenou a Moisés que nos desse herança entre os nossos irmãos; e lhes deram herança, segundo a ordem do Senhor, entre os irmãos de seu pai.</p>
+      <p>5 Assim, dez partes caíram a Manassés, além da terra de Gileade e do reino de Ogue, que está em Basã.</p>
+      <p>6 Porque as filhas de Manassés herdaram entre os filhos de seus irmãos; e a terra de Gileade pertenceu aos restantes dos filhos de Manassés.</p>
+      <p>7 E foi o termo de Manassés desde Aser até Micmetá, que está defronte de Siquém; e o termo desce à direita, até os moradores de En-Tapua.</p>
+      <p>8 A terra de Tapua pertenceu a Manassés; porém Tapua, que está à fronte da cidade de Manassés, pertenceu aos filhos de Efraim.</p>
+      <p>9 E desce o termo até ao ribeiro de Caná, ao sul do ribeiro; estas cidades pertencem a Efraim, entre as cidades de Manassés; e o termo de Manassés está ao norte do ribeiro, e termina no mar.</p>
+      <p>10 Ao sul, Efraim, e ao norte, Manassés; e o mar é o seu termo; e ao norte, Manassés, e ao sul, Efraim; e o mar é o seu termo.</p>
+      <p>11 E Manassés teve na Issacar e em Aser, Bet-Seã e as suas aldeias, e Ibleão e as suas aldeias, e os moradores de Dor e as suas aldeias, e os moradores de En-Dor e as suas aldeias, e os moradores de Taanaque e as suas aldeias, e os moradores de Megido e as suas aldeias; três regiões.</p>
+      <p>12 Porém os filhos de Manassés não puderam expulsar os moradores destas cidades; antes os cananeus persistiram em habitar naquela terra.</p>
+      <p>13 E sucedeu que, engrossando em forças os filhos de Israel, fizeram tributários aos cananeus; porém não os expulsaram de todo.</p>
+      <p>14 Então os filhos de José falaram a Josué, dizendo: Por que me deste por herança só uma sorte e um quinhão, sendo eu um tão grande povo, visto que o Senhor até aqui me tem abençoado?</p>
+      <p>15 E disse-lhes Josué: Se tão grande povo és, sobe ao bosque, e ali corta, para ti, lugar na terra dos perizeus e dos refains; pois que as montanhas de Efraim te são tão estreitas.</p>
+      <p>16 E os filhos de José disseram: Não nos bastam as montanhas; e todos os cananeus que habitam na terra do vale têm carros de ferro, tanto os que estão em Bet-Seã e as suas aldeias, como os que estão no vale de Jezreel.</p>
+      <p>17 Então disse Josué à casa de José, a Efraim e a Manassés: Vós sois um povo grande e de muito poder; não tereis só uma sorte;</p>
+      <p>18 mas a montanha será vossa; porque é uma montanha de bosque, e cortá-la-eis; e os seus termos serão vossos, até ao termo do mar.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/josue16.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue18.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

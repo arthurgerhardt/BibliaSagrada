@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 12</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 12</h2>
+      <p>1 Estes, porém, são os reis da terra, os quais os filhos de Israel feriram e possuíram a sua terra, daquém do Jordão para o nascente do sol, desde o ribeiro de Arnom até o monte Hermom, e toda a planície do oriente:</p>
+      <p>2 Seom, rei dos amorreus, que habitava em Hesbom, e dominava desde Aroer, que está à borda do ribeiro de Arnom, e desde o meio do ribeiro, e metade de Gileade, até ao ribeiro de Jaboque, o termo dos filhos de Amom;</p>
+      <p>3 E desde a campina até ao mar de Quinerote para o oriente, e até ao mar da campina, o Mar Salgado, para o oriente, pelo caminho de Bete-Jesimote; e desde o sul, abaixo de Asdote-Pisga.</p>
+      <p>4 Como também o termo de Ogue, rei de Basã, que era do restante dos gigantes, o qual habitava em Astarote e em Edrei,</p>
+      <p>5 E dominava no monte Hermom, e em Salca, e em toda a Basã, até ao termo dos gesuritas e dos maacatitas, e metade de Gileade, termo de Seom, rei de Hesbom.</p>
+      <p>6 A estes Moisés, servo do Senhor, e os filhos de Israel feriram; e Moisés, servo do Senhor, deu aquela terra em possessão aos rubenitas, e aos gaditas, e à meia tribo de Manassés.</p>
+      <p>7 E estes são os reis da terra, que Josué e os filhos de Israel feriram daquém do Jordão para o ocidente, desde Baal-Gade, no vale do Líbano, até ao monte Halaque, que sobe a Seir; e Josué deu-a às tribos de Israel em possessão, conforme às suas divisões;</p>
+      <p>8 Na montanha, e na campina, e na planície, e nas descidas das águas, e no deserto, e no sul; os heteus, os amorreus, e os cananeus, os ferezeus, os heveus, e os jebuseus:</p>
+      <p>9 O rei de Jericó, um; o rei de Ai, que está ao lado de Betel, outro;</p>
+      <p>10 O rei de Jerusalém, outro; o rei de Hebrom, outro;</p>
+      <p>11 O rei de Jarmute, outro; o rei de Laquis, outro;</p>
+      <p>12 O rei de Eglom, outro; o rei de Gezer, outro;</p>
+      <p>13 O rei de Debir, outro; o rei de Geder, outro;</p>
+      <p>14 O rei de Horma, outro; o rei de Arade, outro;</p>
+      <p>15 O rei de Libna, outro; o rei de Adulão, outro;</p>
+      <p>16 O rei de Maquedá, outro; o rei de Betel, outro;</p>
+      <p>17 O rei de Tapua, outro; o rei de Héfer, outro;</p>
+      <p>18 O rei de Afeca, outro; o rei de Lasarom, outro;</p>
+      <p>19 O rei de Madom, outro; o rei de Hazor, outro;</p>
+      <p>20 O rei de Sinrom-Meron, outro; o rei de Acsafe, outro;</p>
+      <p>21 O rei de Taanaque, outro; o rei de Megido, outro;</p>
+      <p>22 O rei de Quedes, outro; o rei de Jocneão do Carmelo, outro;</p>
+      <p>23 O rei de Dor, no outeiro de Dor, outro; o rei de Goim, em Gilgal, outro;</p>
+      <p>24 O rei de Tirza, outro; todos os reis, trinta e um.</p>
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/josue11.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue13.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
