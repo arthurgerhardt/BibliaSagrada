@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 20</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 20</h2>
+      <p>1 Então falou o Senhor a Josué, dizendo:</p>
+      <p>2 Fala aos filhos de Israel, dizendo: Apartai para vós as cidades de refúgio, de que vos falei pelo ministério de Moisés,</p>
+      <p>3 Para que fuja para lá o homicida que matar alguém por descuido, e não com intenção; e elas vos serão por refúgio contra o vingador do sangue.</p>
+      <p>4 E fugindo para alguma daquelas cidades, pôr-se-á à porta da cidade e exporá a sua causa aos ouvidos dos anciãos da tal cidade; então o tomarão consigo na cidade; e lhe darão lugar, para que habite com eles.</p>
+      <p>5 E se o vingador do sangue o seguir, não entregarão na sua mão o homicida, porquanto não feriu a seu próximo com intenção, e não o odiou antes.</p>
+      <p>6 E habitará na mesma cidade, até que compareça em juízo perante a congregação, até que morra o sumo sacerdote que houver naqueles dias; então o homicida voltará, e virá à sua cidade e à sua casa, à cidade de onde fugiu.</p>
+      <p>7 E designaram a Quedes, na Galiléia, e a Siquem, no monte de Efraim, e a Quiriate-Arba (esta é Hebrom), no monte de Judá.</p>
+      <p>8 E, além do Jordão, na direção de Jericó para o oriente, designaram a Bezer, no deserto, na campina da tribo de Rúben, e a Ramote, em Gileade da tribo de Gade, e a Golã, em Basã da tribo de Manassés.</p>
+      <p>9 Estas são as cidades que foram designadas para todos os filhos de Israel, e para o estrangeiro que habitasse entre eles, para que se acolhesse a elas todo aquele que por engano matasse alguma pessoa, para que não morresse às mãos do vingador do sangue, até se apresentar diante da congregação.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/josue19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue21.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
