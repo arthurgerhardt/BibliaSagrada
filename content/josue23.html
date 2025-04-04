@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Josué 23</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Josué 23</h2>
+      <p>1 E sucedeu que, muitos dias depois que o Senhor dera repouso a Israel de todos os seus inimigos em redor, e sendo Josué já velho e entrado em dias,</p>
+      <p>2 Chamou Josué a todo o Israel, aos seus anciãos, e aos seus cabeças, e aos seus juízes, e aos seus oficiais, e disse-lhes: Eu já sou velho e entrado em dias,</p>
+      <p>3 E vós já tendes visto tudo o que fez o Senhor, vosso Deus, a todas estas nações por amor de vós; porque o Senhor, vosso Deus, é quem pelejou por vós.</p>
+      <p>4 Vede que vos reparti por sorte, em herança às vossas tribos, estas nações que restam, bem como as nações que tenho destruído, desde o Jordão até o grande mar para o pôr do sol.</p>   
+      <p>5 E o Senhor, vosso Deus, as lançará de diante de vós, e as lançareis de diante de vós, e possuireis a sua terra, como o Senhor, vosso Deus, vos tem dito.</p>
+      <p>6 Esforçai-vos, pois, muito, em guardar e fazer tudo quanto está escrito no livro da lei de Moisés, para que não vos apartéis dele, nem para a direita nem para a esquerda;</p>
+      <p>7 Para que não entreis no meio destas nações que ainda ficam convosco; e dos nomes de seus deuses não façais menção, nem por eles façais jurar, nem os sirvais, nem a eles vos inclineis,</p>
+      <p>8 Mas ao Senhor, vosso Deus, seguireis, e a ele servireis, e a ele vos achegareis, e por seu nome jurareis.</p>
+      <p>9 E o Senhor tem lançado de diante de vós grandes e fortes nações; e até ao dia de hoje ninguém tem podido resistir diante de vós.</p>
+      <p>10 Um só homem de vós perseguirá a mil, porque o Senhor, vosso Deus, é quem peleja por vós, como ele vos tem dito.</p>
+      <p>11 Guardai-vos, pois, muito em amar ao Senhor, vosso Deus.</p>
+      <p>12 Porque, se de alguma maneira vos apartardes e vos apegardes ao resto destas nações que ficam convosco, e se casardes com elas, e elas convosco,</p>
+      <p>13 Sabei certamente que o Senhor vosso Deus não continuará a expulsar estas nações de diante de vós, mas elas vos serão por laço e rede, e açoite aos vossos lados, e espinhos aos vossos olhos; até que pereçais desta boa terra que vos deu o Senhor vosso Deus.</p> 
+      <p>14 E eis que eu já estou por caminho de toda a terra; e vós sabeis, com todo o vosso coração e com toda a vossa alma, que nenhuma só palavra falhou de todas as boas palavras que o Senhor, vosso Deus, falou de vós; todas vos sobrevieram, e nenhuma só delas falhou.</p>
+      <p>15 E há de ser que, assim como vieram sobre vós todas as boas palavras que o Senhor, vosso Deus, vos falou, assim também trará sobre vós todas as más palavras, até que vos destrua desta boa terra que vos deu o Senhor, vosso Deus.</p> 
+      <p>16 Quando transgredirdes a aliança do Senhor vosso Deus, que vos tem ordenado, e fordes e servirdes a outros deuses, e a eles vos inclinardes, então a ira do Senhor sobre vós se acenderá, e logo perecereis de sobre a boa terra que vos deu.</p> 
+
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/josue22.html">Capítulo Anterior</a>
+      <a class="button" href="../content/josue24.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
