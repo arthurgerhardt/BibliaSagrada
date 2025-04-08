@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juízes 10</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Juízes 10</h2>
+      <p>1 E depois de Abimeleque levantou-se a Tola, filho de Puá, filho de Dodó, homem de Issacar; e habitou em Samir, na montanha de Efraim.</p>
+      <p>2 E julgou a Israel vinte e três anos; e morreu, e foi sepultado em Samir.</p>
+      <p>3 E depois dele se levantou Jair, gileadita, e julgou a Israel vinte e dois anos.</p>
+      <p>4 E tinha trinta filhos, que andavam montados em trinta jumentos; e tinham trinta cidades, as quais se chamam até ao dia de hoje, as aldeias de Jair, que estão na terra de Gileade.</p>
+      <p>5 E morreu Jair, e foi sepultado em Camom.</p>
+      <p>6 Então tornaram os filhos de Israel a fazer o que era mau aos olhos do Senhor, e serviram aos baalins, e a Astarote, e aos deuses da Síria, e aos deuses de Sidom, e aos deuses de Moabe, e aos deuses dos filhos de Amom, e aos deuses dos filisteus; e deixaram ao Senhor, e não o serviram.</p>
+      <p>7 E a ira do Senhor se acendeu contra Israel; e vendeu-os nas mãos dos filisteus, e nas mãos dos filhos de Amom.</p>
+      <p>8 E naquele mesmo ano oprimiram e vexaram aos filhos de Israel; dezoito anos oprimiram a todos os filhos de Israel que estavam além do Jordão, na terra dos amorreus, que está em Gileade.</p>
+      <p>9 Até os filhos de Amom passaram o Jordão, para pelejar também contra Judá, e contra Benjamim, e contra a casa de Efraim; de modo que Israel ficou muito angustiado.</p>
+      <p>10 Então os filhos de Israel clamaram ao Senhor, dizendo: Contra ti havemos pecado, visto que deixamos a nosso Deus, e servimos aos baalins.</p>
+      <p>11 Porém o Senhor disse aos filhos de Israel: Porventura dos egípcios, e dos amorreus, e dos filhos de Amom, e dos filisteus,</p>
+      <p>12 E dos sidônios, e dos amalequitas, e dos maonitas, não vos livrei eu?</p>
+      <p>13 E vós me deixastes, e servistes a outros deuses; portanto não vos livrarei mais.</p>
+      <p>14 Ide, e clamai aos deuses que escolhestes; eles vos livrem no tempo da vossa angústia.</p>
+      <p>15 Mas os filhos de Israel disseram ao Senhor: Pecamos; faze-nos conforme a tudo quanto te parecer bem aos teus olhos; tão somente te rogamos que nos livres nesta vez.</p>
+      <p>16 E tiraram os deuses alheios do meio de si, e serviram ao Senhor; então se angustiou a sua alma por causa da desgraça de Israel.</p>
+      <p>17 E os filhos de Amom se reuniram e se acamparam em Gileade; e também os de Israel se congregaram, e se acamparam em Mizpá.</p>
+      <p>18 E o povo, príncipes de Gileade, disseram uns aos outros: Quem começará a pelejar contra os filhos de Amom? O tal será por cabeça sobre todos os moradores de Gileade.</p>
+      
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/juizes9.html">Capítulo Anterior</a>
+      <a class="button" href="../content/juizes11.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
