@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juízes 17</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Juízes 17</h2>
+      <p>1 Havia um homem da montanha de Efraim, cujo nome era Micaías.</p>
+      <p>2 E disse à sua mãe: As mil e cem peças de prata que te foram tiradas, e que tu pronunciastes a maldição, e também as disseste aos meus ouvidos, eis que eu as tenho comigo; eu as tomei. Então disse sua mãe: Bendito seja o meu filho do Senhor.</p>
+      <p>3 E ele restituíu as mil e cem peças de prata a sua mãe; e disse sua mãe: Eu dedico a prata ao Senhor, da minha mão, por causa de meu filho, para fazer uma imagem de escultura e uma imagem de fundição. Agora, pois, eu to restituo.</p>
+      <p>4 E, tendo ele restituído a prata a sua mãe, tomou duzentas peças de prata, e deu ao ourives, o qual fez dela uma imagem de escultura e uma imagem de fundição; e esteve na casa de Micaías.</p>
+      <p>5 E este homem Micaías tinha uma casa de deuses, e fez um efode e terafins, e consagrou a um de seus filhos, o qual lhe servia de sacerdote.</p>
+      <p>6 Naqueles dias não havia rei em Israel; cada um fazia o que parecia bem aos seus olhos.</p>
+      <p>7 E havia um jovem de Belém de Judá, da tribo de Judá, o qual era levita, e estava ali como peregrino; e este homem saiu da cidade de Belém de Judá, para peregrinar onde quer que pudesse achar lugar; e, chegando à montanha de Efraim, à casa de Micaías, ficou ali.</p>
+      <p>8 E Micaías lhe disse: De onde vens? E ele lhe disse: Sou levita de Belém de Judá, e estou peregrinando onde quer que possa achar lugar.</p>
+      <p>9 E Micaías lhe disse: Fica comigo, e sê-me por pai e sacerdote, e eu te darei dez peças de prata por ano, e vestuário, e o sustento. Assim o levita entrou.</p>
+      <p>10 E Micaías lhe ofereceu, e disse: Fica comigo, e sê-me por pai e sacerdote, e eu te darei dez peças de prata por ano, e vestuário, e o sustento. Assim o levita entrou.</p>
+      <p>11 E o levita consentiu em ficar com aquele homem; e o jovem foi para ele como um dos seus filhos.</p>
+      <p>12 E Micaías consagrou o levita, e o jovem serviu de sacerdote, e esteve na casa de Micaías.</p>
+      <p>13 Então disse Micaías: Agora sei que o Senhor me fará bem, visto que tenho um levita por sacerdote.</p>
+      
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/juizes16.html">Capítulo Anterior</a>
+      <a class="button" href="../content/juizes18.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
