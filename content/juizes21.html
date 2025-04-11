@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juízes 21</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Juízes 21</h2>
+      <p>1 Ora, tinham jurado os homens de Israel em Mizpá, dizendo: Nenhum de nós dará sua filha por mulher aos benjamitas.</p>
+      <p>2 E o povo veio à casa de Deus, e ficou ali até à tarde diante de Deus; e levantaram a sua voz, e choraram amargamente.</p>
+      <p>3 E disseram: Ah! Senhor Deus de Israel, por que sucedeu isto em Israel, que hoje falte uma tribo em Israel?</p>
+      <p>4 E sucedeu que, no dia seguinte, o povo, pela manhã se levantou, e edificou ali um altar; e ofereceu holocaustos e ofertas pacíficas.</p>
+      <p>5 E disseram os filhos de Israel: Quem de todas as tribos de Israel não subiu à assembleia do Senhor? Porque se tinha feito um grande juramento acerca dos que não fossem ao Senhor em Mizpá, dizendo: Morrerá certamente.</p>
+      <p>6 E arrependeram-se os filhos de Israel acerca de Benjamim, seu irmão, e disseram: Cortada é hoje de Israel uma tribo.</p>
+      <p>7 Como havemos de conseguir mulheres para os que restaram deles, pois nós temos jurado pelo Senhor que nenhuma de nossas filhas lhes daríamos por mulher?</p>
+      <p>8 E disseram: Qual é uma das tribos de Israel que não subiu ao Senhor em Mizpá? E eis que ninguém de Jabes-Gileade viera ao arraial, à assembleia.</p>
+      <p>9 Porquanto, quando se contou o povo, eis que nenhum dos moradores de Jabes-Gileade estava ali.</p>
+      <p>10 Então a congregação enviou para lá doze mil homens dos mais valentes, e lhes ordenaram, dizendo: Ide, e feri a fio de espada os moradores de Jabes-Gileade, e as mulheres e os meninos.</p>
+      <p>11 Porém isto é o que haveis de fazer: A todo homem, e a toda mulher que se houver deitado com homem, totalmente destruireis.</p>
+      <p>12 E acharam entre os moradores de Jabes-Gileade quatrocentas moças virgens, que não conheceram homem algum deitando-se com varão; e as trouxeram ao arraial, a Siló, que está na terra de Canaã.</p>
+      <p>13 Então toda a congregação enviou, e falou aos filhos de Benjamim, que estavam na penha de Rimom, e chamaram-nos em paz.</p>
+      <p>14 E voltaram então os benjamitas, e deram-lhes por mulheres as que tinham guardado com vida, das mulheres de Jabes-Gileade; porém estas ainda não lhes bastaram.</p>
+      <p>15 Então o povo se arrependeu por causa de Benjamim, porquanto o Senhor tinha feito brecha nas tribos de Israel.</p>
+      <p>16 E disseram os anciãos da congregação: Como conseguiremos mulheres para os restantes, pois foram destruídas as mulheres de Benjamim?</p>
+      <p>17 Disseram mais: A herança dos que ficaram de resto é de Benjamim, e nenhuma tribo de Israel deve ser destruída.</p>
+      <p>18 Porém nós não lhes poderemos dar mulheres de nossas filhas; porque os filhos de Israel juraram, dizendo: Maldito aquele que der mulher aos benjamitas.</p>
+      <p>19 Então disseram: Eis que de ano em ano há solenidade do Senhor em Siló, que está ao norte de Betel, ao nascente do caminho que sobe de Betel a Siquém, e ao sul de Lebona.</p>
+      <p>20 E mandaram aos filhos de Benjamim, dizendo: Ide, e emboscai-vos nas vinhas.</p>
+      <p>21 E olhai, e eis aí, quando as filhas de Siló saírem a dançar em ranchos, saí vós das vinhas, e arrebatai cada um sua mulher das filhas de Siló, e ide-vos à terra de Benjamim.</p>
+      <p>22 E será que, quando seus pais ou seus irmãos vierem a litigar conosco, nós lhes diremos: Por amor de nós tende compaixão deles; pois nesta guerra não tomamos mulheres para cada um deles, porque não lhas destes vós, para que agora ficásseis culpados.</p>
+      <p>23 E os filhos de Benjamim o fizeram assim, e levaram mulheres conforme ao número deles, das que arrebataram das que dançavam; e foram-se, e voltaram à sua herança, e reedificaram as cidades, e habitaram nelas.</p>
+      <p>24 Também os filhos de Israel partiram dali naquele tempo, cada um para a sua tribo e para a sua família; e saíram dali cada um para a sua herança.</p>
+      <p>25 Naqueles dias não havia rei em Israel; cada um fazia o que parecia bem aos seus olhos.</p>
+
+      
+      
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/juizes20.html">Capítulo Anterior</a>
+      <a class="button" href="../content/rute1.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
