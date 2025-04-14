@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rute 1</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>Rute 1</h2>
+      <p>1 Nos dias em que os juízes governavam, houve fome na terra. E um homem de Belém de Judá foi viver na terra de Moabe, ele e sua mulher e seus dois filhos.</p>
+      <p>2 O nome desse homem era Elimeleque, e o nome de sua mulher era Noemi; e os nomes de seus dois filhos eram Malom e Quiliom, efraimitas de Belém de Judá. Chegaram à terra de Moabe e ficaram ali.</p>
+      <p>3 E morreu Elimeleque, marido de Noemi; e ficou ela com seus dois filhos.</p>
+      <p>4 Estes tomaram para si mulheres moabitas; o nome de uma era Orfa, e o nome da outra, Rute. E habitaram ali cerca de dez anos.</p>
+      <p>5 E morreram também ambos, Malom e Quiliom; e ficou a mulher desamparada de seus dois filhos e de seu marido.</p>
+      <p>6 Então se levantou com suas noras e voltou da terra de Moabe, porque ouviu que o Senhor tinha visitado o seu povo, dando-lhe pão.</p>
+      <p>7 E saiu do lugar onde tinha estado, e as suas noras com ela; e indo pelo caminho de volta à terra de Judá,</p>
+      <p>8 disse Noemi às suas noras: Ide, voltai cada uma à casa de sua mãe; o Senhor use convosco de bondade, como vós usastes com os mortos e comigo.</p>
+      <p>9 O Senhor vos conceda que acheis descanso, cada uma em casa de seu marido. E beijou-as; mas elas levantaram a voz e choraram.</p>
+      <p>10 E disseram-lhe: Certamente voltaremos contigo ao teu povo.</p>
+      <p>11 Porém Noemi disse: Voltai, filhas minhas; para que vindes comigo? Acaso tenho eu ainda filhos no meu ventre, que possam ser por maridos?</p>
+      <p>12 Voltai, filhas minhas, ide-vos; porque já sou velha para ter marido. E ainda que dissesse: Tenho esperança, e ainda esta noite estivesse com meu marido, e também desse à luz filhos;</p>
+      <p>13 haveríeis de esperar por eles até que crescessem? Haveríeis de ficar-vos sem casar? Não, filhas minhas; porque mais amargo é para mim o meu estado do que para vós; pois a mão do Senhor se tem levantado contra mim.</p>
+      <p>14 E elas levantaram a voz e tornaram a chorar. E Orfa beijou a sogra, mas Rute se apegou a ela.</p>
+      <p>15 E disse Noemi: Eis que a tua cunhada voltou ao seu povo e aos seus deuses; volta tu após a tua cunhada.</p>
+      <p>16 Porém Rute disse: Não me instes para que te deixe e me afaste de seguir-te; porque aonde quer que tu fores, irei eu; e onde quer que pousares, ali pousarei eu; o teu povo é o meu povo, e o teu Deus é o meu Deus;</p> 
+      <p>17 Onde quer que morreres morrerei eu, e ali serei sepultada. Faça-me assim o Senhor, e outro tanto, se outra coisa que não seja a morte me separar de ti.</p>
+      <p>18 Vendo, pois, Noemi que estava decidida a ir com ela, deixou de falar-lhe nisso.</p>
+      <p>19 Assim, foram ambas até que chegaram a Belém. E sucedeu que, entrando em Belém, toda a cidade se comoveu por causa delas; e diziam: Não é esta Noemi?</p>
+      <p>20 E ela lhes disse: Não me chamem Noemi, chamem-me Mara; porque grande amargura me tem dado o Todo-Poderoso.</p>
+      <p>21 Cheia parti, e vazia o Senhor me fez tornar. Por que me chamais Noemi, visto que o Senhor testificou contra mim, e o Todo-Poderoso me tem afligido?</p>
+      <p>22 Assim Noemi voltou, e com ela Rute a moabita, sua nora, que veio dos campos de Moabe; e chegaram a Belém no princípio da colheita das cevadas.</p>
+      
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/juizes21.html">Capítulo Anterior</a>
+      <a class="button" href="../content/rute2.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

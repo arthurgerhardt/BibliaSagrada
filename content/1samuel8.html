@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 8</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 8</h2>
+      <p>1 E sucedeu que, tendo Samuel envelhecido, constituiu a seus filhos por juízes sobre Israel.</p>
+      <p>2 E eram os nomes de seus filhos: o primogênito, Joel, e o segundo, Abias; juízes em Berseba.</p>
+      <p>3 Mas os seus filhos não andaram pelos seus caminhos, antes se inclinaram à avareza, e aceitaram suborno, e perverteram o juízo.</p>
+      <p>4 Então todos os anciãos de Israel se congregaram, e vieram a Samuel, a Ramá,</p>
+      <p>5 e lhe disseram: Eis que já envelheceste, e teus filhos não andam pelos teus caminhos; constitui-nos, pois, um rei para que nos julgue, como têm todas as nações.</p>
+      <p>6 Porém Samuel não agradou esta palavra, porque disseram: Dá-nos um rei para que nos julgue. E Samuel orou ao Senhor.</p>
+      <p>7 E disse o Senhor a Samuel: Atende à voz do povo em tudo quanto te disserem; porque não te têm rejeitado a ti, mas a mim me têm rejeitado, para eu não reinar sobre eles.</p>
+      <p>8 Segundo todas as obras que fizeram desde o dia em que os tirei do Egito até ao dia de hoje, deixando-me, e servindo a outros deuses, assim fazem também contigo.</p>
+      <p>9 Agora, pois, atende à sua voz; porém, adverte-os solenemente, e declara-lhes qual será o direito do rei que reinará sobre eles.</p>
+      <p>10 E Samuel falou todas as palavras do Senhor ao povo que lhe tinha pedido rei.</p>
+      <p>11 E disse: Este será o costume do rei que houver de reinar sobre vós; ele tomará os vossos filhos, e os empregará nos seus carros, e como seus cavaleiros, para que corram adiante dos seus carros.</p>
+      <p>12 E os porá por chefes de mil, e chefes sobre cinquenta e para que lavrem a sua lavoura, e façam a sua sega, e fabriquem as suas armas de guerra e os petrechos de seus carros.</p>
+      <p>13 E tomará as vossas filhas para perfumistas, cozinheiras e padeiras.</p>
+      <p>14 E tomará os vossos melhores campos, e as vossas vinhas, e os vossos olivais, e dará a seus servos.</p>
+      <p>15 E tomará o dízimo da vossa semente, e das vossas vinhas, e dará aos seus eunucos e aos seus servos.</p>
+      <p>16 E tomará os vossos servos, e as vossas servas, e os vossos melhores jovens, e os vossos jumentos, e os empregará na sua obra.</p>
+      <p>17 Tomará o dízimo das vossas ovelhas, e vós mesmos lhe sereis por servos.</p>
+      <p>18 E naquele dia clamareis por causa do vosso rei, que vós escolhestes; mas o Senhor não vos ouvirá naquele dia.</p>
+      <p>19 Porém o povo não atendeu à voz de Samuel, e disse: Não; mas haverá sobre nós um rei.</p>
+      <p>20 E seremos também como todas as nações; e o nosso rei nos julgará, e sairá diante de nós, e fará as nossas guerras.</p>
+      <p>21 E ouviu Samuel todas as palavras do povo, e as declarou aos ouvidos do Senhor.</p>
+      <p>22 Então o Senhor disse a Samuel: Dá ouvidos à sua voz, e constitui-lhes rei. Então Samuel disse aos homens de Israel: Volte cada um à sua cidade.</p>
+
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel7.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel9.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

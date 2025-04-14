@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 7</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 7</h2>
+      <p>1 E os homens de Quiriate-Jearim vieram, e levaram a arca do Senhor, e a trouxeram para a casa de Abinadabe, no monte; e santificaram a Eleazar, seu filho, para que guardasse a arca do Senhor.</p>
+      <p>2 E sucedeu que, desde aquele dia, a arca ficou em Quiriate-Jearim, e tantos dias se passaram que até chegaram vinte anos, e lamentava toda a casa de Israel pelo Senhor.</p>
+      <p>3 Então falou Samuel a toda a casa de Israel, dizendo: Se com todo o vosso coração vos converterdes ao Senhor, tirai dentre vós os deuses estranhos e os astarotes, e preparai o vosso coração ao Senhor, e servi a ele só, e vos livrará da mão dos filisteus.</p>
+      <p>4 Então os filhos de Israel tiraram dentre si os baalins e os astarotes, e serviram só ao Senhor.</p>
+      <p>5 Disse mais Samuel: Congregai a todo o Israel em Mizpá; e orarei por vós ao Senhor.</p>
+      <p>6 E congregaram-se em Mizpá, e tiraram água, e a derramaram perante o Senhor; e jejuaram aquele dia, e disseram ali: Pecamos contra o Senhor. E Samuel julgou os filhos de Israel em Mizpá.</p>
+      <p>7 Ouvindo, pois, os filisteus que os filhos de Israel estavam congregados em Mizpá, subiram os príncipes dos filisteus contra Israel; o que ouvindo os filhos de Israel, tiveram medo dos filisteus.</p>
+      <p>8 Por isso disseram os filhos de Israel a Samuel: Não cesses de clamar ao Senhor nosso Deus por nós, para que nos livre da mão dos filisteus.</p>
+      <p>9 Então tomou Samuel um cordeiro que ainda mamava, e sacrificou-o inteiro em holocausto ao Senhor; e clamou Samuel ao Senhor por Israel, e o Senhor o ouviu.</p>
+      <p>10 E sucedeu que, estando Samuel sacrificando o holocausto, os filisteus chegaram à peleja contra Israel; e trovejou o Senhor aquele dia com grande estrondo sobre os filisteus, e os aterrou, e foram derrotados diante de Israel.</p>
+      <p>11 E os homens de Israel saíram de Mizpá, e perseguiram os filisteus, e os feriram até abaixo de Bete-Car.</p>
+      <p>12 Então tomou Samuel uma pedra, e a pôs entre Mizpá e Sem, e chamou o seu nome Ebenézer, e disse: Até aqui nos ajudou o Senhor.</p>
+      <p>13 Assim os filisteus foram abatidos, e nunca mais vieram aos termos de Israel, porquanto foi a mão do Senhor contra os filisteus todos os dias de Samuel.</p>
+      <p>14 E as cidades que os filisteus tinham tomado a Israel foram restituídas a Israel, desde Ecrom até Gate; e até os seus termos Israel livrou da mão dos filisteus; e houve paz entre Israel e os amorreus.</p>
+      <p>15 E Samuel julgou a Israel todos os dias da sua vida.</p>
+      <p>16 E ia de ano em ano, e rodeava a Betel, e a Gilgal, e a Mizpá, e julgava a Israel em todos aqueles lugares.</p>
+      <p>17 Porém voltava a Ramá, porque estava ali a sua casa, e ali julgava a Israel; e edificou ali um altar ao Senhor.</p>
+
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel6.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel8.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

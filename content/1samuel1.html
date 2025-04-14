@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 1</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 1</h2>
+      <p>1 Havia um homem de Ramataim, Zofim, da montanha de Efraim, cujo nome era Elcana, filho de Jeroboão, filho de Eliú, filho de Toú, filho de Zufe, e era efrateu.</p>
+      <p>2 E tinha ele duas mulheres; o nome de uma era Ana, e o nome da outra Penina; e Penina tinha filhos, porém Ana não os tinha.</p>
+      <p>3 E subia este homem todos os anos da sua cidade a adorar e a oferecer sacrifícios ao Senhor dos Exércitos em Siló; e estavam ali os sacerdotes do Senhor, Ofni e Finéias, filhos de Eli.</p>
+      <p>4 E no dia em que Elcana oferecia, dava a Penina, sua mulher, e a todos os seus filhos e a todas as suas filhas, porções.</p>
+      <p>5 Porém a Ana dava uma porção excelente; porque amava a Ana, embora o Senhor lhe tivesse cerrado a madre.</p>
+      <p>6 E a sua rival a irritava, para a enfurecer, porque o Senhor lhe tinha cerrado a madre.</p>
+      <p>7 E assim fazia ano após ano; todas as vezes que Ana subia à casa do Senhor, a outra a irritava; pelo que chorava, e não comia.</p>
+      <p>8 Então Elcana, seu marido, lhe disse: Ana, por que choras? E por que não comes? E por que está mal o teu coração? Não te sou eu melhor do que dez filhos?</p>
+      <p>9 E, havendo ela comido em Siló, e tendo bebido, estando Eli, o sacerdote, assentado numa cadeira junto a um pilar do templo do Senhor,</p>
+      <p>10 Ela, com amargura de alma, orou ao Senhor, e chorou abundantemente.</p>
+      <p>11 E fez um voto, dizendo: Senhor dos Exércitos! Se bem atentares para a aflição da tua serva, e de mim te lembrares, e não te esqueceres da tua serva, mas lhe deres um filho varão, ao Senhor o darei todos os dias da sua vida, e sobre a sua cabeça não passará navalha.</p>
+      <p>12 E sucedeu que, como ela continuasse a orar perante o Senhor, Eli observou a sua boca.</p>
+      <p>13 E Ana falava no seu coração; só os seus lábios se moviam, e a sua voz não se ouvia; por isso Eli a teve por embriagada.</p>
+      <p>14 E disse-lhe Eli: Até quando estarás embriagada? Aparta de ti o vinho.</p>
+      <p>15 E Ana respondeu, e disse: Não, Senhor meu; eu sou uma mulher angustiada de espírito; não bebi vinho nem bebida forte, mas tenho derramado a minha alma perante o Senhor.</p>
+      <p>16 Não tenhas a tua serva por filha de Belial; porque da multidão dos meus cuidados e da minha aflição tenho falado até agora.</p>
+      <p>17 Então respondeu Eli: Vai em paz; e o Deus de Israel te conceda a petição que lhe fizeste.</p>
+      <p>18 E disse ela: Ache a tua serva graça aos teus olhos. Assim a mulher foi o seu caminho, e comeu, e o seu semblante já não era triste.</p>
+      <p>19 E levantaram-se de madrugada, e adoraram perante o Senhor, e voltaram, e vieram à sua casa em Ramá; e Elcana conheceu a Ana, sua mulher, e o Senhor se lembrou dela.</p>
+      <p>20 E aconteceu que, passado algum tempo, Ana concebeu e teve um filho, e chamou o seu nome Samuel, dizendo: Porque do Senhor o pedi.</p>
+      <p>21 E subiu o homem Elcana, e toda a sua casa, para oferecer ao Senhor o sacrifício anual, e o seu voto.</p>
+      <p>22 Porém Ana não subiu; porque disse ao seu marido: Não subirei até que o menino tiver mamado; então o levarei, para que se apresente perante o Senhor, e fique lá para sempre.</p>
+      <p>23 E Elcana, seu marido, lhe disse: Faze o que bem te parecer aos teus olhos; fica até que o desmames; então somente confirme o Senhor a sua palavra. Assim ficou a mulher, e deu leite a seu filho, até que o desmamou.</p>
+      <p>24 E, havendo ela desmamado a Samuel, levou-o consigo, com três bezerros, e um efa de farinha, e um odre de vinho, e trouxe-o à casa do Senhor em Siló; e o menino era ainda muito menino.</p>
+      <p>25 E imolaram um bezerro, e trouxeram o menino a Eli.</p>
+      <p>26 E disse ela: Ah! Senhor meu! Vive a tua alma, Senhor meu! eu sou aquela mulher que estive aqui contigo, orando ao Senhor.</p>
+      <p>27 Por este menino orei, e o Senhor me deu a minha petição que eu lhe fiz.</p>
+      <p>28 Portanto também eu o entrego ao Senhor; por todos os dias que viver, será do Senhor. E adoraram ali ao Senhor.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/rute4.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel2.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

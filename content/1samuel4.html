@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 4</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 4</h2>
+      <p>1 E veio a palavra de Samuel a todo o Israel; e Israel saiu à peleja contra os filisteus e acampou-se junto a Ebenézer; e os filisteus se acamparam junto a Afeque.</p>
+      <p>2 E os filisteus se dispuseram em ordem de batalha, para sair contra Israel; e, estendendo-se a peleja, Israel foi ferido diante dos filisteus, porque feriram na batalha, no campo, uns quatro mil homens.</p>
+      <p>3 E voltando o povo ao arraial, disseram os anciãos de Israel: Por que nos feriu o Senhor hoje diante dos filisteus? Tragamos de Siló a arca da aliança do Senhor, e venha no meio de nós, para que nos livre da mão de nossos inimigos.</p>
+      <p>4 Então enviaram a Siló, e trouxeram de lá a arca da aliança do Senhor dos Exércitos, que habita entre os querubins; e os dois filhos de Eli, Hofni e Finéias, estavam ali com a arca da aliança de Deus.</p>
+      <p>5 E sucedeu que, vindo a arca da aliança do Senhor ao arraial, todo o Israel jubilou com grande júbilo, até que a terra estremeceu.</p>
+      <p>6 E os filisteus, ouvindo a voz do júbilo, disseram: Que voz de grande júbilo é esta no arraial dos hebreus? Então souberam que a arca do Senhor era vinda ao arraial.</p>
+      <p>7 Pelo que os filisteus se atemorizaram, porque diziam: Deus veio ao arraial. E diziam mais: Ai de nós! Que tal nunca jamais sucedeu antes.</p>
+      <p>8 Ai de nós! Quem nos livrará da mão destes grandiosos deuses? Estes são os deuses que feriram os egípcios com toda sorte de pragas no deserto.</p>
+      <p>9 Esforçai-vos e sede homens, ó filisteus, para que não venhais a servir aos hebreus, como eles serviram a vós; sede, pois, homens, e pelejai.</p>
+      <p>10 Então pelejaram os filisteus, e Israel foi ferido, e fugiram cada um para a sua tenda; e foi tão grande o estrago, que caíram de Israel trinta mil homens de pé.</p>
+      <p>11 E foi tomada a arca de Deus, e os dois filhos de Eli, Hofni e Finéias, morreram.</p>
+      <p>12 Então correu um homem de Benjamim, saindo das fileiras, e chegou ao mesmo dia a Siló, com as vestes rotas e com terra sobre a cabeça.</p>
+      <p>13 E, chegando ele, eis que Eli estava sentado numa cadeira, ao pé do caminho, olhando, porque o seu coração estava tremendo pela arca de Deus. Entrando, pois, aquele homem na cidade, e dando as novas, toda a cidade gritou.</p>
+      <p>14 E Eli, ouvindo os gritos, disse: Que alvoroço é este? Então chegou aquele homem a toda pressa, e veio, e o anunciou a Eli.</p>
+      <p>15 E era Eli da idade de noventa e oito anos, e estavam os seus olhos tão escurecidos, que já não podia ver.</p>
+      <p>16 E disse aquele homem a Eli: Eu sou o que saí das fileiras, e hoje escapei das fileiras. E disse ele: Que coisa sucedeu, meu filho?</p>
+      <p>17 Então respondeu o que trazia as novas, e disse: Israel fugiu de diante dos filisteus, e houve também grande mortandade entre o povo; e também os teus dois filhos, Hofni e Finéias, morreram, e a arca de Deus foi tomada.</p>
+      <p>18 E sucedeu que, fazendo ele menção da arca de Deus, Eli caiu da cadeira para trás, da banda da porta, e quebrou-se-lhe o pescoço, e morreu, porque o homem era velho e pesado; e havia ele julgado a Israel quarenta anos.</p>
+      <p>19 E, estando sua nora, a mulher de Finéias, grávida, e próxima ao parto, ouvindo estas novas de que a arca de Deus era tomada, e de que seu sogro e seu marido morreram, encurvou-se e deu à luz, porquanto as dores lhe sobrevieram.</p>
+      <p>20 E, ao tempo em que ia morrendo, disseram as mulheres que estavam com ela: Não temas, pois tiveste um filho. Ela, porém, não respondeu, nem fez caso disso.</p>
+      <p>21 E chamou ao menino Icabode, dizendo: Foi-se a glória de Israel (porquanto a arca de Deus foi tomada, e por causa de seu sogro e de seu marido).</p>
+      <p>22 E disse: Foi-se a glória de Israel, pois é tomada a arca de Deus.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel3.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel5.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

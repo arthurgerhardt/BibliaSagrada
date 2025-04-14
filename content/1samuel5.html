@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 5</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 5</h2>
+      <p>1 E os filisteus tomaram a arca de Deus, e levaram-na de Ebenézer a Asdode.</p>
+      <p>2 E tomaram os filisteus a arca de Deus, e a meteram na casa de Dagom, e a puseram junto à dagom.</p>
+      <p>3 E sucedeu que, levantando-se de madrugada os de Asdode, eis que Dagom estava caído em terra diante da arca do Senhor. E tomaram Dagom, e o puseram no seu lugar.</p>
+      <p>4 E, levantando-se de madrugada, no dia seguinte, pela manhã, eis que Dagom jazia caído com o rosto em terra diante da arca do Senhor; e a cabeça de Dagom e ambas as palmas das suas mãos estavam cortadas sobre o limiar; somente o tronco ficou a Dagom.</p>
+      <p>5 Por isso, os sacerdotes de Dagom, e todos os que entram na casa de Dagom, não pisam no limiar de Dagom em Asdode até ao dia de hoje.</p>
+      <p>6 E a mão do Senhor pesou sobre os de Asdode, e assolou-os, e feriu-os com tumores, em Asdode e em todos os seus termos.</p>
+      <p>7 Vendo então os homens de Asdode que assim foi, disseram: Não fique conosco a arca do Deus de Israel; pois a sua mão é dura sobre nós, e sobre Dagom, nosso deus.</p>
+      <p>8 Por isso enviaram mensageiros e congregaram a si todos os príncipes dos filisteus, e disseram: Que faremos nós da arca do Deus de Israel? E responderam: A arca do Deus de Israel será levada até Gate. Assim levaram para lá a arca do Deus de Israel.</p>
+      <p>9 E sucedeu que, havendo eles levado a arca de Deus, a mão do Senhor foi contra a cidade com grande destruição; e feriu os homens da cidade, desde o menor até ao maior, e apareceram-lhes tumores.</p>
+      <p>10 Então enviaram a arca de Deus a Ecrom. Sucedeu, porém, que, vindo a arca de Deus a Ecrom, os de Ecrom exclamaram, dizendo: Transportaram para nós a arca do Deus de Israel, para nos matarem, a nós e ao nosso povo.</p>
+      <p>11 E enviaram, e congregaram a todos os príncipes dos filisteus, e disseram: Enviai a arca do Deus de Israel, e torne para o seu lugar, para que não mate nem a nós nem ao nosso povo. Porque havia mortal vexame em toda a cidade, e a mão de Deus muito se agravara ali.</p>
+      <p>12 E os homens que não morreram foram feridos com tumores; e o clamor da cidade subiu até ao céu.</p>
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel4.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel6.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
