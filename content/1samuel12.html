@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 12</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 12</h2>
+      <p>1 Então disse Samuel a todo o Israel: Eis que ouvi a vossa voz em tudo quanto me dissestes, e constituí sobre vós um rei.</p>   
+      <p>2 E agora, eis que o rei anda diante de vós; e eu sou velho e cheio de dias; e os meus filhos estão convosco; e andei diante de vós desde a minha mocidade até ao dia de hoje.</p>
+      <p>3 Eis-me aqui; testemunhai contra mim perante o Senhor, e perante o seu ungido: de quem tomei o boi? e de quem tomei o jumento? e a quem defraudei? e a quem oprimi? e de cuja mão recebi suborno, para encobrir com ele os meus olhos? Testificai contra mim, e dar-vos-ei resposta.</p>
+      <p>4 E disseram: Nunca nos defraudaste, nem oprimi, nem tomaste coisa alguma da mão de nenhum homem.</p>
+      <p>5 Então disse-lhes: O Senhor é testemunha contra vós, e o seu ungido é testemunha neste dia, de que não achastes coisa alguma na minha mão. E disseram: É testemunha.</p>
+      <p>6 E disse Samuel ao povo: O Senhor, que levantou a Moisés e a Arão, e que fez subir a vossos pais da terra do Egito, é testemunha.</p>
+      <p>7 Agora, pois, apresentai-vos, para que eu vos julgue perante o Senhor acerca de todas as justiças do Senhor, que fez convosco e com vossos pais.</p>
+      <p>8 Quando Jacó desceu ao Egito, e vossos pais clamaram ao Senhor, então o Senhor enviou a Moisés e a Arão, os quais tiraram a vossos pais do Egito, e os fizeram habitar neste lugar.</p>
+      <p>9 Mas eles se esqueceram do Senhor seu Deus; e ele os vendeu na mão de Sisera, capitão do exército de Hazor, e na mão dos filisteus, e na mão do rei de Moabe; e pelejaram contra eles.</p>
+      <p>10 Então clamaram ao Senhor, e disseram: Pecamos, porque deixamos ao Senhor, e servimos a Baal e a Astarote; agora, pois, livra-nos da mão de nossos inimigos, e te serviremos.</p>
+      <p>11 E o Senhor enviou a Jerubaal, e a Bedã, e a Jefté, e a Samuel; e livrou-vos da mão de vossos inimigos em redor, e habitastes seguros.</p> 
+      <p>12 E, vendo que Naás, rei dos filhos de Amom, vinha contra vós, dissestes-me: Não; mas um rei reinará sobre nós; quando o Senhor vosso Deus era o vosso rei.</p>
+      <p>13 Agora, pois, vede o rei que escolhestes, e que pedistes; eis que o Senhor pôs sobre vós um rei.</p>
+      <p>14 Se temerdes ao Senhor, e o servirdes, e ouvirdes a sua voz, e não endurecerdes a vossa cerviz contra a palavra do Senhor, então tanto vós como o rei que reina sobre vós, sereis seguidores do Senhor vosso Deus.</p>
+      <p>15 Mas, se não ouvirdes a voz do Senhor, e não servirdes ao Senhor, então a mão do Senhor será contra vós, como era contra vossos pais.</p>
+      <p>16 Agora, pois, estai atentos, e vede este grande negócio que o Senhor fará diante de vós.</p>
+      <p>17 Não é hoje a sega do trigo? Eu invocarei ao Senhor, e dará trovões e chuvas; e sabereis e vereis que é grande o mal que fizestes aos olhos do Senhor, pedindo para vós um rei.</p>
+      <p>18 Então Samuel invocou ao Senhor; e deu o Senhor trovões e chuvas naquele dia; e todo o povo temeu muito ao Senhor e a Samuel.</p>
+      <p>19 E todo o povo disse a Samuel: Ora, roga ao Senhor teu Deus, por nós, para que não morramos; porque a todos os nossos pecados acrescentamos este mal, pedindo para nós um rei.</p>
+      <p>20 E disse Samuel ao povo: Não temais; vós fizestes todo este mal; contudo, não vos apartais da seguir o Senhor, mas servi ao Senhor de todo o vosso coração.</p>
+      <p>21 E não vos apartais em seguirdes os ídolos, que não aproveitam, nem livram, porque são vaidade.</p>
+      <p>22 Porque o Senhor não deixará o seu povo, por causa do seu grande nome; porque ao Senhor agradou fazer-vos povo seu.</p>
+      <p>23 Também eu, longe de mim que peque contra o Senhor, deixando de orar por vós; mas ensinarei a vós o caminho bom e direito.</p>
+      <p>24 Temei ao Senhor, e servi-o com todo o vosso coração; porque vede quão grandes coisas fez por vós.</p>
+      <p>25 Mas, se mal fizerdes, perecereis, tanto vós como o vosso rei.</p>  
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel11.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel13.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
