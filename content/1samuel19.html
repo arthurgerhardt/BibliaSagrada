@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 19</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 19</h2>
+      <p>1 E Saul falou a Jônatas, seu filho, e a todos os seus servos, para que matassem a Davi; porém Jônatas, filho de Saul, tinha grande afeição por Davi.</p>
+      <p>2 E Jônatas fez saber a Davi, dizendo: Saul, meu pai, procura matar-te; agora, pois, guarda-te pela manhã, fica num lugar oculto e esconde-te.</p>
+      <p>3 E eu sairei e estarei junto a meu pai no campo onde estiveres; e falarei de ti a meu pai; e, se alguma coisa souber, te farei saber.</p>
+      <p>4 E Jônatas falou bem de Davi a Saul, seu pai, e disse-lhe: Não peque o rei contra o seu servo, contra Davi; porque ele não pecou contra ti, e as suas obras têm sido muito boas para contigo.</p>
+      <p>5 Porque ele arriscou a sua vida, e feriu o filisteu, e o Senhor fez uma grande salvação para todo o Israel; tu o viste e te alegraste; por que, pois, pecarias contra o sangue inocente, matando a Davi sem causa?</p>
+      <p>6 E Saul ouviu a voz de Jônatas, e jurou: Vive o Senhor, que não morrerá.</p>
+      <p>7 Então Jônatas chamou a Davi, e fez-lhe saber todas estas palavras; e Jônatas trouxe a Davi a Saul, e esteve diante dele, como dantes.</p>
+      <p>8 E houve guerra outra vez; e Davi saiu e pelejou contra os filisteus, e feriu-os com grande ferida; e fugiram diante dele.</p>
+      <p>9 E o espírito mau da parte do Senhor veio sobre Saul, e assentou-se em sua casa, e tinha na mão uma lança; e Davi tocava com a sua mão.</p>
+      <p>10 E Saul tentou cravar a lança em Davi, e o pregá-lo à parede; porém Davi se desviou de diante de Saul, e ele feriu a lança na parede; e Davi fugiu, e escapou naquela noite.</p>
+      <p>11 Então Saul enviou mensageiros à casa de Davi, para que o guardassem e o matassem pela manhã. Porém Mical, mulher de Davi, o avisou, dizendo: Se não livrares a tua vida esta noite, amanhã serás morto.</p>
+      <p>12 Então Mical fez descer a Davi pela janela; e ele se foi, e fugiu, e escapou.</p>
+      <p>13 E tomou Mical um ídolo, e o pôs na cama, e pôs uma pele de cabra à sua cabeça, e cobriu-o com as suas vestes.</p>
+      <p>14 E, enviando Saul mensageiros para prenderem a Davi, disse ela: Está doente.</p>
+      <p>15 E Saul enviou os mensageiros para verem a Davi, dizendo: Trazei-mo na cama, para que o mate.</p>
+      <p>16 E, vindo os mensageiros, eis que o ídolo estava na cama, e a pele de cabra à sua cabeça.</p>
+      <p>17 Então disse Saul a Mical: Por que me enganaste assim, fazendo fugir a meu inimigo, para que escapasse? E Mical respondeu a Saul: Ele me disse: Deixa-me ir ; por que te matarei?</p>
+      <p>18 E Davi fugiu, e escapou, e veio a Samuel, a Ramá, e contou-lhe tudo o que Saul lhe tinha feito. E ele e Samuel foram, e habitaram em Naiote.</p>
+      <p>19 E foi dado aviso a Saul, dizendo: Eis que Davi está em Naiote, em Ramá.</p>
+      <p>20 Então Saul enviou mensageiros para prenderem a Davi; e, vendo os mensageiros, o Espírito de Deus veio sobre eles, e profetizaram; e avisaram a Saul, e ele enviou outros mensageiros, e também eles profetizaram.</p>
+      <p>21 E enviou ainda Saul mensageiros pela terceira vez; e também estes profetizaram. Então foi ele mesmo a Ramá, e veio ao grande poço que está em Seque.</p>
+      <p>22 E perguntou: Onde estão Samuel e Davi? E disseram: Eis que estão em Naiote, em Ramá.</p>
+      <p>23 E foi para lá, a Naiote, em Ramá; e o Espírito de Deus veio sobre ele também, e ia, e profetizava, até que chegou a Naiote, em Ramá.</p>
+      <p>24 E despindo ele também as suas vestes, e profetizando, ficou também ele diante de Samuel; e caiu por terra, e esteve nu todo aquele dia e toda aquela noite. Por isso se diz: Está também Saul entre os profetas?</p>
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel18.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel20.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
