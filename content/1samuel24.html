@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 24</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 24</h2>
+      <p>1 E sucedeu que, tendo Saul voltado de seguir os filisteus, lhe foi anunciado, dizendo: Eis que Davi está no deserto de Engedi.</p>
+      <p>2 Então tomou Saul três mil homens escolhidos de todo o Israel, e foi em busca de Davi e dos seus homens, sobre as penhas das cabras monteses.</p>
+      <p>3 E chegou a um curral de ovelhas, que havia ao caminho; e ali havia uma caverna; e entrou Saul a cobrir os pés; e Davi e os seus homens estavam assentados nas extremidades da caverna.</p>
+      <p>4 E disseram os homens de Davi a ele: Eis que este é o dia em que te disse o Senhor: Eis que entregarei o teu inimigo na tua mão, e farás com ele como te parecer bem. Então Davi se levantou, e cortou a orla do manto de Saul, secretamente.</p>
+      <p>5 E sucedeu que, depois disto, o coração de Davi o feriu, por haver cortado a orla do manto de Saul.</p>
+      <p>6 E disse aos seus homens: O Senhor me guarde de que eu faça tal coisa ao meu senhor, ao ungido do Senhor, que eu estenda a minha mão contra ele; porque é o ungido do Senhor.</p>
+      <p>7 E com estas palavras Davi deteve os seus homens, e não lhes permitiu que se levantassem contra Saul. E Saul se levantou da caverna, e seguiu o seu caminho.</p>
+      <p>8 E Davi levantou-se depois, e saiu da caverna, e gritou após Saul, dizendo: Senhor meu rei! E olhou Saul para trás; e Davi inclinou-se com o rosto em terra, e se prostrou.</p>
+      <p>9 E disse Davi a Saul: Por que ouves as palavras dos homens que dizem: Eis que Davi procura o teu mal?</p>
+      <p>10 Eis que hoje os teus olhos viram como o Senhor te entregou hoje na minha mão na caverna; e alguns me instigaram a que te matasse, porém a minha mão te poupou; porque disse: Não estenderei a minha mão contra o meu senhor, pois é o ungido do Senhor.</p>
+      <p>11 E, pai meu, vê, e vê a orla do teu manto na minha mão; porque, porquanto cortei a orla do teu manto, e não te matei, sabe e vê que não há em mim mal nem transgressão, e que eu não pequei contra ti; porém tu andas à minha procura para tirar-me a vida.</p>
+      <p>12 Julgue o Senhor entre mim e ti, e vingue-me o Senhor de ti; porém a minha mão não será contra ti.</p>
+      <p>13 Como diz a antiga provérbio: Dos ímpios procede a impiedade; porém a minha mão não será contra ti.</p>
+      <p>14 Depois de quem saiu o rei de Israel? A quem persegues? A um cão morto? A uma pulga?</p>
+      <p>15 O Senhor, pois, seja juiz, e julgue entre mim e ti, e veja, e pleiteie a minha causa, e me livre da tua mão.</p>
+      <p>16 E sucedeu que, acabando Davi de falar estas palavras a Saul, disse Saul: É esta a tua voz, meu filho Davi? E levantou Saul a sua voz e chorou.</p>
+      <p>17 E disse a Davi: Mais justo és tu do que eu; porque me pagaste o bem, e eu te paguei o mal.</p>
+      <p>18 E hoje me mostraste como me tens feito bem, pois que o Senhor me entregou na tua mão, e não me mataste.</p>
+      <p>19 Porque, se alguém achar o seu inimigo, deixá-lo-á ir em paz? Assim me tem feito o Senhor; pois que hoje me entregou na tua mão, e não me mataste.</p>
+      <p>20 Agora, pois, eu sei que certamente reinarás e que o reino de Israel será firme na tua mão.</p>
+      <p>21 Agora, pois, jura-me pelo Senhor que não exterminarás a minha semente depois de mim, e que não desarraigarás o meu nome da casa de meu pai.</p>
+      <p>22 E Davi lhe jurou; e Saul se foi para a sua casa, e Davi e os seus homens subiram à fortaleza.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel23.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel25.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

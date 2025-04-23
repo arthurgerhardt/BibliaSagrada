@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Samuel 22</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Samuel 22</h2>
+      <p>1 E Davi se foi dali, e escapou para a caverna de Adulão; e, ouvindo seus irmãos e toda a casa de seu pai, desceram ali a ele.</p>
+      <p>2 E ajuntaram-se a ele todos os homens que estavam em aperto, e todos os endividados, e todos os amargurados de espírito; e ele se fez chefe deles; e eram com ele cerca de quatrocentos homens.</p>
+      <p>3 E Davi foi dali a Mispa de Moabe; e disse ao rei de Moabe: Deixa meu pai e minha mãe, peço-te, que fiquem convosco, até que saiba o que Deus me há de fazer.</p>
+      <p>4 E trouxe-os diante do rei de Moabe; e habitaram com ele todo o tempo que Davi esteve no lugar forte.</p>
+      <p>5 E o profeta Gade disse a Davi: Não fiques no lugar forte; vai, e entra na terra de Judá. Então Davi se foi, e entrou na floresta de Herete.</p>
+      <p>6 E, ouvindo Saul que Davi e os homens que estavam com ele se achavam na floresta de Herete, Saul se assentou em Gibeá, debaixo de um tamarindo, em Ramá; e tinha a lança na mão, e todos os seus servos estavam em pé ao seu redor.</p>
+      <p>7 E disse Saul a seus servos que estavam em pé ao seu redor: Ouvi, filhos de Benjamim; acaso me dará também o filho de Jessé campos e vinhas? Acaso todos vós conspirais contra mim, e não há quem me descubra a minha orelha, senão Jônatas, filho de Abiatar, sacerdote?</p>
+      <p>8 Então respondeu Doegue, o edomeu, que estava entre os servos de Saul, e disse: Eu vi o filho de Jessé, que veio a Nobe, a Aimeleque, filho de Aitube.</p>
+      <p>9 E ele consultou ao Senhor por ele, e deu-lhe mantimento, e a espada de Golias, o filisteu.</p>
+      <p>10 Então o rei enviou a chamar a Aimeleque, sacerdote, filho de Aitube, e a toda a casa de seu pai, os sacerdotes que estavam em Nobe; e todos vieram ao rei.</p>
+      <p>11 E disse Saul: Ouvi, filho de Aitube. E ele disse: Aqui estou, Senhor meu.</p>
+      <p>12 E disse Saul: Por que conspirastes contra mim, tu e o filho de Jessé, dando-lhe pão e espada, e consultando a Deus por ele, para que se levantasse contra mim, para me espreitar, como hoje faz?</p>
+      <p>13 Então respondeu Aimeleque ao rei, e disse: E quem há entre todos os teus servos, a quem eu tenha dado mais respeito do que a Davi? Ele é genro do rei, e é o teu conselheiro, e é o mais honrado da tua casa.</p>
+      <p>14 Por que, pois, lhe dei eu hoje pão e espada? Porque consultei a Deus por ele; e o rei não impute coisa alguma ao seu servo, nem a toda a casa de meu pai; porque o teu servo nada sabe de tudo isto, senão um pouco.</p>
+      <p>15 E o rei disse: Certamente morrerás, Aimeleque, tu e toda a casa de teu pai.</p>
+      <p>16 E disse o rei aos guardas que estavam à sua volta: Virai-vos, e matai os sacerdotes do Senhor, porque também a sua mão é com Davi, e porque souberam que fugia, e não mo fizeram saber. Porém os servos do rei não quiseram estender as mãos para ferir os sacerdotes do Senhor.</p>
+      <p>17 Então disse o rei a Doegue: Virai-vos, e mata os sacerdotes. E Doegue, o edomeu, se virou, e feriu os sacerdotes, e matou naquele dia oitenta e cinco homens que usavam o efode de linho.</p>
+      <p>18 E a cidade de Nobe, a espada, feriu-a, desde o homem até a mulher, desde os meninos até os de mau, e os bois, e os jumentos, e as ovelhas, a espada.</p>
+      <p>19 E um filho de Aimeleque, filho de Aitube, chamado Abiatar, escapou, e fugiu após Davi.</p>
+      <p>20 E Abiatar anunciou a Davi que Saul tinha ferido os sacerdotes do Senhor.</p>
+      <p>21 E Davi disse a Abiatar: Eu sabia que naquele dia, estando ali Doegue, o edomeu, ele certamente daria aviso a Saul; eu sou culpado da morte de toda a casa de teu pai.</p>
+      <p>22 Fica comigo; não temas; porque aquele que procura a minha vida, procura também a tua; porque comigo estarás em segurança.</p>
+      <p>23 E Davi se foi dali, e escapou para a caverna de Adulão; e, ouvindo seus irmãos e toda a casa de seu pai, desceram ali a ele.</p>
+     
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel21.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1samuel23.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

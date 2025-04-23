@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 6</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 6</h2>
+      <p>1 E tornou Davi a ajuntar todos os escolhidos de Israel, em número de trinta mil.</p>
+      <p>2 E levantou-se Davi, e foi com todo o povo que tinha consigo a Baalá de Judá, para fazer subir dali a arca de Deus, que é chamada pelo nome do Senhor dos exércitos, que está entre os querubins.</p>
+      <p>3 E puseram a arca de Deus sobre um carro novo, e a levaram da casa de Abinadabe, que estava em Gibeá; e Uzá e Aiô, filhos de Abinadabe, guiavam o carro novo.</p>
+      <p>4 E, levando-a da casa de Abinadabe, que estava em Gibeá, com a arca de Deus, Aiô ia adiante da arca.</p>
+      <p>5 E Davi e toda a casa de Israel alegravam-se perante o Senhor, com toda a sorte de instrumentos de pau de faia, com harpas, e com saltérios, e com tamboris, e com pandeiros, e com címbalos.</p>
+      <p>6 E, chegando à eira de Nacon, Uzá pôs a mão à arca de Deus, e tomou-a, porque os bois tropeçaram.</p>
+      <p>7 E a ira do Senhor se acendeu contra Uzá, e Deus o feriu ali por esta falta; e morreu ali junto à arca de Deus.</p>
+      <p>8 E Davi se indignou, porque o Senhor tinha feito uma abertura em Uzá; e chamou aquele lugar Pérez-Uzá, até ao dia de hoje.</p>
+      <p>9 E Davi teve medo do Senhor naquele dia, e disse: Como virá a mim a arca do Senhor?</p>
+      <p>10 E não quis Davi retirar para si a arca do Senhor, à cidade de Davi; mas fez Davi levar a arca do Senhor à casa de Obede-Edom, o geteu.</p>
+      <p>11 E ficou a arca do Senhor na casa de Obede-Edom, o geteu, três meses; e abençoou o Senhor a Obede-Edom e toda a sua casa.</p>
+      <p>12 E foi dado aviso ao rei Davi, dizendo: O Senhor abençoou a casa de Obede-Edom, e tudo quanto tem; por isso foi Davi, e fez subir a arca de Deus da casa de Obede-Edom à cidade de Davi, com alegria.</p>
+      <p>13 E sucedeu que, indo os que levavam a arca do Senhor, tinham dado seis passos, e sacrificou um boi e um novilho gordo.</p>
+      <p>14 E Davi dançava com todas as suas forças perante o Senhor; e Davi estava vestido com um éfode de linho.</p>
+      <p>15 Assim, Davi e toda a casa de Israel faziam subir a arca do Senhor com júbilo e ao som de trombetas.</p>
+      <p>16 E sucedeu que, entrando a arca do Senhor na cidade de Davi, Mical, filha de Saul, olhou pela janela, e viu ao rei Davi que saltava e dançava perante o Senhor; e o desprezou no seu coração.</p>
+      <p>17 E trouxeram a arca do Senhor, e a puseram no seu lugar, no meio da tenda que Davi lhe tinha armado; e Davi ofereceu holocaustos e ofertas pacíficas perante o Senhor.</p>
+      <p>18 E, acabando Davi de oferecer os holocaustos e as ofertas pacíficas, abençoou ao povo em nome do Senhor dos exércitos.</p>
+      <p>19 E repartiu a todo o povo, a toda a multidão de Israel, desde os homens até as mulheres, a cada um, um bolo de pão, e um bom pedaço de carne, e um frasco de vinho. Então, partiu todo o povo, cada um para sua casa.</p>
+      <p>20 E, voltando Davi para abençoar a sua casa, saiu Mical, filha de Saul, ao encontro de Davi, e disse: Como gloriosamente se tem hoje descoberto o rei de Israel, descobrindo-se hoje aos olhos das servas de seus servos, como sem pejo se descobre qualquer dos vadios.</p>
+      <p>21 Disse, porém, Davi a Mical: Perante o Senhor, que me escolheu a mim antes do que a teu pai e a toda a sua casa, mandando-me que fosse chefe sobre o povo do Senhor, sobre Israel, perante o Senhor me tenho alegrado.</p>
+      <p>22 E ainda mais do que isto me envilecerei, e me humilharei aos meus olhos; e das servas, de quem falaste, delas serei honrado.</p>
+      <p>23 E Mical, filha de Saul, não teve filhos, até o dia da sua morte.</p>
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel5.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel7.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

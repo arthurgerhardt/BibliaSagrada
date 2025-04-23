@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 1</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 1</h2>
+      <p>1 E aconteceu que, depois da morte de Saul, voltando Davi de ferir os amalequitas, ficou dois dias em Ziclague.</p>
+      <p>2 E aconteceu que, ao terceiro dia, veio um homem do arraial de Saul, com as suas vestes rasgadas, e a cabeça coberta de terra; e, vindo ter com Davi, lançou-se em terra, e o adorou.</p>
+      <p>3 E disse Davi: De onde vens? E ele disse: Do arraial de Israel escapei.</p>
+      <p>4 E disse Davi: Que sucedeu? Conta-me agora. E ele disse: O povo fugiu da batalha, e muitos do povo caíram e morreram; e também morreu Saul e Jônatas, seu filho.</p>
+      <p>5 E disse Davi ao jovem que lhe trazia as novas: Como sabes que Saul e Jônatas, seu filho, estão mortos?</p>
+      <p>6 E o jovem que lhe trazia as novas respondeu: Por acaso, eu estava no monte de Gilboa; e vi Saul, e eis que se apoiava na sua lança; e os carros e a cavalaria o apertavam.</p>
+      <p>7 E, olhando para trás, viu-me e chamou-me. E eu disse: Aqui estou.</p>
+      <p>8 E ele me disse: Quem és tu? E eu disse: Sou um amalequita.</p>
+      <p>9 E ele me disse: Peço-te que me ponhas em pé, para que eu morra. Porque me angustia a vida, pois toda a minha vida está em mim.</p>
+      <p>10 Então, eu me aproximei dele, e o matei, porque sabia que ele não viveria depois de ter caído; e tomei a coroa que estava sobre a sua cabeça, e o bracelete que estava no seu braço, e os trouxe aqui ao meu senhor.</p>
+      <p>11 Então, Davi tomou as suas vestes, e rasgou-as; e também rasgaram as suas vestes todos os homens que estavam com ele.</p>
+      <p>12 E prantearam, e choraram, e jejuaram até à tarde por Saul, e por Jônatas, seu filho, e pelo povo do Senhor, e pela casa de Israel; porque tinham caído à espada.</p>
+      <p>13 E disse Davi ao jovem que lhe trazia as novas: De onde és tu? E ele respondeu: Sou filho de um homem estrangeiro, amalequita.</p>
+      <p>14 E disse Davi: Como não temeste estender a tua mão para matares o ungido do Senhor?</p>
+      <p>15 Então, Davi chamou um dos moços, e disse: Chega-te aqui, e lança-o sobre ele. E ele o feriu, e morreu.</p>
+      <p>16 E disse Davi: O sangue de ti cairá sobre a tua cabeça; porque da tua boca veio a tua condenação, quando disseste: Eu matei o ungido do Senhor.</p>
+      <p>17 E Davi fez esta lamentação sobre Saul e sobre Jônatas, seu filho;</p>
+      <p>18 e ordenou que se ensinasse aos filhos de Judá o arco; eis que está escrito no livro do justo.</p>
+      <p>19 A beleza de Israel foi morta sobre os teus altos; como caíram os valentes!</p>
+      <p>20 Não o anuncieis em Gate, não o divulgueis nas ruas de Ascalom; para que não se alegrem as filhas dos filisteus, para que não exultem as filhas dos incircuncisos.</p>
+      <p>21 Montes de Gilboa, nem sobre vós caia orvalho, nem chuva, nem campos de ofertas; porque ali foi lançado o escudo dos valentes, o escudo de Saul, como se não fosse ungido com óleo.</p>
+      <p>22 Do sangue dos mortos, da gordura dos valentes, a espada de Jônatas não voltou vazia.</p>
+      <p>23 Saul e Jônatas, amados e formosos em sua vida, e na morte não se separaram; mais leves foram do que águias, mais fortes do que leões.</p>
+      <p>24 Filhas de Israel, chorai por Saul, que vos vestia de escarlata com delícias, que vos punha adornos de ouro sobre os vossos vestidos.</p>
+      <p>25 Como caíram os valentes na peleja! Jônatas, sobre os teus altos, ferido está!</p>
+      <p>26 Angustiado estou por ti, meu irmão Jônatas; muito me eras agradável; a tua amizade me era mais maravilhosa do que o amor das mulheres.</p>
+      <p>27 Como caíram os valentes, e pereceram as armas de guerra!</p>
+      
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1samuel31.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel2.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
