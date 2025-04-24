@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 11</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 11</h2>
+      <p>1 E aconteceu que, no tempo em que os reis costumam sair à guerra, enviou Davi a Joabe, e com ele os seus servos, e a todo o Israel; e eles destruíram os filhos de Amom, e cercaram a Rabá; porém Davi ficou em Jerusalém.</p>
+      <p>2 E aconteceu que, ao cair da tarde, se levantou Davi da sua cama, e andava passeando pelo terraço da casa real; e viu do terraço uma mulher que se estava lavando; e era esta mulher muito formosa à vista.</p>
+      <p>3 E enviou Davi a perguntar quem era aquela mulher; e disseram: Porventura não é Bate-Seba, filha de Eliã, mulher de Urias, o heteu?</p>
+      <p>4 Então enviou Davi mensageiros, e tomou-a; e ela entrou a ele, e ele se deitou com ela; porque já ela se tinha purificado da sua imundícia. E voltou-se ela para sua casa.</p>
+      <p>5 E concebeu a mulher, e mandou dizer a Davi: Estou grávida.</p>
+      <p>6 Então Davi enviou a Joabe, dizendo: Envia-me Urias, o heteu. E Joabe enviou Urias a Davi.</p>
+      <p>7 E, vindo Urias a ele, perguntou-lhe Davi como ia Joabe, e como ia o povo, e como ia a guerra.</p>
+      <p>8 E disse Davi a Urias: Desce à tua casa, e lava os pés. E saiu Urias da casa do rei, e seguiu-se-lhe um presente da parte do rei.</p>
+      <p>9 Porém Urias dormiu à porta da casa do rei, com todos os servos de seu senhor, e não desceu à sua casa.</p>
+      <p>10 E fizeram saber a Davi, dizendo: Urias não desceu à sua casa. E disse Davi a Urias: Não vens de viagem? Porque não desceste à tua casa?</p>
+      <p>11 E disse Urias a Davi: A arca, e Israel, e Judá ficam em tendas; e Joabe, meu senhor, e os servos de meu senhor estão acampados ao ar livre; e hei de eu entrar na minha casa, para comer e beber, e para me deitar com minha mulher? Pela tua vida, e pela vida da tua alma, não farei tal coisa.</p>
+      <p>12 Então disse Davi a Urias: Fica aqui hoje também, e amanhã te deixarei ir. E ficou Urias em Jerusalém naquele dia e no seguinte.</p>
+      <p>13 E chamou Davi a Urias, e comeu e bebeu diante dele; e embriagou-o; porém à tarde saiu, e se deitou na sua cama com os servos de seu senhor, mas não desceu à sua casa.</p>
+      <p>14 E sucedeu que pela manhã, escreveu Davi uma carta a Joabe, e enviou-a pela mão de Urias.</p>
+      <p>15 E escreveu na carta, dizendo: Ponde Urias na frente da batalha mais forte, e retirai-vos dele, para que seja ferido e morra.</p>
+      <p>16 E aconteceu que, estando Joabe de cerco à cidade, pôs Urias no lugar onde sabia que estavam os homens valentes.</p>
+      <p>17 E saindo os homens da cidade, pelejaram contra Joabe; e caíram alguns do povo, dos servos de Davi, e morreu também Urias, o heteu.</p>
+      <p>18 Então Joabe enviou e fez saber a Davi todas as coisas acerca da peleja.</p>
+      <p>19 E mandou ao mensageiro, dizendo: Quando acabares de contar ao rei todas as coisas acerca da peleja,</p>
+      <p>20 se o rei se irar, e disser: Por que chegastes tão perto da cidade para pelejar? Não soubestes que dariam tiros do muro?</p>
+      <p>21 quem feriu a Abimeleque, filho de Jerubaal? Não lançou uma mulher do alto do muro uma pedra em cima dele, e morreu em Tebes? Por que chegastes tão perto do muro? Então dirás: Também morreu teu servo Urias, o heteu.</p>
+      <p>22 E partiu o mensageiro, e veio, e fez saber a Davi tudo quanto Joabe lhe tinha enviado.</p>
+      <p>23 E disse o mensageiro a Davi: Certamente prevaleceram contra nós os homens, e saíram ao campo contra nós; porém nós os ferimos até à entrada da porta da cidade.</p>
+      <p>24 E os arqueiros dispararam contra os teus servos do alto do muro; e morreram alguns dos servos do rei; e morreu também teu servo Urias, o heteu.</p>
+      <p>25 Então disse Davi ao mensageiro: Assim dirás a Joabe: Não te desanimes por causa disto; porque a espada consome ora este, ora aquele; esforça-te na peleja contra a cidade, e derriba-a; e consola a Joabe.</p>
+      <p>26 E, ouvindo a mulher de Urias que Urias, seu marido, era morto, tomou um luto por seu marido.</p>
+      <p>27 E, passado o luto, enviou Davi, e tomou-a para sua mulher; e ela lhe deu à luz um filho. Porém isto que Davi tinha feito foi mau aos olhos do Senhor.</p>
+      
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel10.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel12.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
