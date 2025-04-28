@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 21</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 21</h2>
+      <p>1 E houve fome nos dias de Davi, três anos, ano após ano; e Davi consultou ao Senhor. E o Senhor disse: É por causa de Saul, e da casa sanguinária, porque matou os gibeonitas.</p>
+      <p>2 Então chamou o rei aos gibeonitas, e lhes falou (ora os gibeonitas não eram dos filhos de Israel, mas do restante dos amorreus, e os filhos de Israel lhes tinham jurado, porém Saul, no seu zelo à causa dos filhos de Israel e de Judá, procurou feri-los).</p>
+      <p>3 E disse Davi aos gibeonitas: Que farei eu por vós? E com que expiação poderei expiar-vos, para que abençoeis a herança do Senhor?</p>
+      <p>4 E os gibeonitas disseram-lhe: Não temos de Saul, nem de sua casa, prata nem ouro; nem temos de matar a alguém em Israel. E disse ele: O que disserdes, isso farei por vós.</p>
+      <p>5 E disseram ao rei: O homem que nos consumiu, e que nos maquinou, para que fôssemos destruídos, de todos os nossos limites, e que nos fez perecer, seja ele o homem que nos mate.</p>
+      <p>6 E o rei disse: Eu vos darei sete homens de seus filhos, e os darei a vós, para que sejam pendurados ao Senhor em Gibeá de Saul, o escolhido do Senhor. E disseram o rei: Está bem; nós o faremos.</p>
+      <p>7 Mas o rei poupou a Mefibosete, filho de Jônatas, filho de Saul, por causa do juramento do Senhor que havia entre eles, entre Davi e Jônatas, filho de Saul.</p>
+      <p>8 E tomou o rei os dois filhos de Rispa, filha de Aia, que ela tinha dado a Saul, Armoni e Mefibosete; e os cinco filhos de Mical, filha de Saul, que ela tinha dado a Adriel, filho de Barzilai, o meolatita;</p>
+      <p>9 E entregou-os nas mãos dos gibeonitas, e penduraram-nos no monte diante do Senhor; e caíram os sete juntos, e foram mortos nos dias da ceifa, no princípio da ceifa das cebadas.</p>
+      <p>10 E tomou Rispa, filha de Aia, um saco de pano, e estendeu-o para si sobre a penha; e não deixou que as aves do céu pousassem sobre eles de dia, nem os animais do campo de noite.</p>
+      <p>11 E foi dado aviso a Davi, o que fez Rispa, filha de Aia, mulher de Saul.</p>
+      <p>12 E Davi foi, e tomou os ossos de Saul, e os ossos de Jônatas, seu filho, dos gibeonitas; e os trouxe de lá, e ajuntou os ossos dos que haviam sido pendurados.</p>
+      <p>13 E fez subir dali os ossos de Saul, e os ossos de Jônatas seu filho; e ajuntaram também os ossos dos enforcados.</p>
+      <p>14 Enterraram os ossos de Saul, e de Jônatas seu filho na terra de Benjamim, em Zela, na sepultura de seu pai Quis, e fizeram tudo o que o rei ordenara; e depois disto Deus se aplacou com a terra.</p>
+      <p>15 Tiveram mais os filisteus uma peleja contra Israel; e desceu Davi, e com ele os seus servos; e tanto pelejaram contra os filisteus, que Davi se cansou.</p>
+      <p>16 E Isbi-Benobe, que era dos filhos dos gigantes, cujo peso da sua lança era trezentos siclos de cobre, e ele estava cingido de uma nova espada, intentou matar a Davi.</p>
+      <p>17 Mas Abisai, filho de Zeruia, o socorreu, e feriu ao filisteu, e o matou. Então os homens de Davi lhe juraram, dizendo: Não sairás mais conosco à batalha, para que não apagues a lâmpada de Israel.</p>
+      <p>18 E sucedeu depois disso, que houve outra peleja contra os filisteus em Gob; então Sibecai, o husatita, feriu a Saf, que era dos filhos dos gigantes.</p>
+      <p>19 E houve outra peleja em Gob contra os filisteus; e Elanã, filho de Jair, feriu a Golias, o geteu, cuja vara da sua lança era como um eixo de tecelão.</p>
+      <p>20 E houve ainda outra peleja em Gate; e havia ali um homem de grande estatura, que tinha seis dedos em cada mão, e seis dedos em cada pé, vinte e quatro em número; e também este tinha nascido dos gigantes.</p>
+      <p>21 E injuriava a Israel; porém Jônatas, filho de Simei, irmão de Davi, o feriu.</p>
+      <p>22 Estes quatro nasceram dos gigantes em Gate; e caíram pela mão de Davi, e pela mão de seus servos.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel20.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel22.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

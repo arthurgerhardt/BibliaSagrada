@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 20</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 20</h2>
+      <p>1 E sucedeu que, estando ali um homem de Belial, o qual se chamava Seba, filho de Bicri, benjamita, tocou a trombeta, e disse: Não temos parte em Davi, nem herança no filho de Jessé; cada um às suas tendas, ó Israel.</p>
+      <p>2 Então todos os homens de Israel se separaram de Davi, e seguiram Seba, filho de Bicri; porém os homens de Judá se apegaram ao seu rei, desde o Jordão até Jerusalém.</p>
+      <p>3 Vindo, pois, Davi à sua casa em Jerusalém, tomou o rei as dez mulheres, concubinas, que deixara para guardarem a casa, e as recolheu em casa de guarda, e as sustentou, porém não entrou a elas; e ficaram encerradas até ao dia da sua morte, vivendo como viúvas.</p>
+      <p>4 Disse mais o rei a Amasa: Convoca-me os homens de Judá para o terceiro dia, e tu aqui comparece.</p>
+      <p>5 Foi, pois, Amasa para convocar a Judá; porém demorou-se além do tempo que lhe fora determinado.</p>
+      <p>6 Então disse Davi a Abisai: Agora nos fará mais mal Seba, filho de Bicri, do que Absalão; toma, pois, os servos do teu senhor, e persegue-o, para que não ache para si cidades fortificadas, e nos escape aos olhos.</p>
+      <p>7 Então saíram após ele os homens de Joabe, e os quereteus, e os peleteus, e todos os valentes; e saíram de Jerusalém para perseguirem Seba, filho de Bicri.</p>
+      <p>8 E estando eles junto à grande pedra que está em Gibeom, saiu-lhes ao encontro Amasa; e Joabe trazia cingido sobre si o seu vestido, e sobre ele um cinto com uma espada na bainha, presa aos seus lombos; e sucedeu que, saindo ele, caiu a espada.</p>
+      <p>9 E disse Joabe a Amasa: Vai bem contigo, meu irmão? E Joabe, com a mão direita, pegou na barba de Amasa, para o beijar.</p>
+      <p>10 E Amasa não reparou na espada que estava na mão de Joabe; assim o feriu com ela no abdômen, e derramou-lhe as entranhas por terra, e não o feriu segunda vez, e morreu. Depois Joabe e Abisai, seu irmão, perseguiram Seba, filho de Bicri.</p>
+      <p>11 Porém um dos moços de Joabe parou junto dele, e disse: Quem ama a Joabe, e quem é por Davi, siga a Joabe.</p>
+      <p>12 E Amasa estava revolvendo-se no sangue no meio do caminho; e, vendo aquele homem que todo o povo parava, tirou a Amasa do caminho para o campo, e lançou sobre ele um vestido, porque via que todo aquele que chegava a ele parava.</p>
+      <p>13 Havendo ele sido tirado do caminho, todo o povo seguiu a Joabe, para perseguirem Seba, filho de Bicri.</p>
+      <p>14 E passou Seba por todas as tribos de Israel até Abel-Bete-Maaca; e todos os beritas se ajuntaram, e também o seguiram.</p>
+      <p>15 Vieram, pois, e o cercaram em Abel-Bete-Maaca, e levantaram contra a cidade um montão, que chegou até ao antemuro; e todo o povo que estava com Joabe batia o muro, para o derrubar.</p>
+      <p>16 Então uma mulher sábia gritou de dentro da cidade: Ouvi, ouvi! Dizei a Joabe: Chega-te cá, para que eu te fale.</p>
+      <p>17 E, chegando-se a ela, disse-lhe Joabe: És tu Joabe? E ela disse: Sou. E ele lhe disse: Ouve as palavras da tua serva. E ela disse: Ouço.</p>
+      <p>18 Então falou ela, dizendo: Antigamente costumava-se dizer: Certamente pedirão conselho em Abel; e assim davam fim à questão.</p>
+      <p>19 Eu sou uma das pacíficas e fiéis em Israel; tu procuras destruir uma cidade e mãe em Israel; por que, pois, devorarias a herança do Senhor?</p>
+      <p>20 Então respondeu Joabe, e disse: Longe, longe de mim que eu tal faça, que eu destrua ou devore!</p>
+      <p>21 A coisa não é assim; porém um homem da região montanhosa de Efraim, chamado Seba, filho de Bicri, levantou a mão contra o rei, contra Davi; entregai só este, e retirar-me-ei da cidade. Então disse a mulher a Joabe: Eis que te será lançada a cabeça dele pelo muro.</p>
+      <p>22 Então a mulher, com a sua sabedoria, foi a todo o povo; e cortaram a cabeça de Seba, filho de Bicri, e a lançaram a Joabe. Então tocou este a trombeta, e retiraram-se da cidade, cada um para a sua tenda. E Joabe voltou para Jerusalém, ao rei.</p>
+      <p>23 Joabe era comandante de todo o exército de Israel; e Benaia, filho de Joiada, sobre os quereteus e peleteus;</p>
+      <p>24 Adorão estava sobre os tributos; e Jeosafá, filho de Ailude, era cronista;</p>
+      <p>25 Seva era escrivão; e Zadoque e Abiatar, sacerdotes;</p>
+      <p>26 E Ira, o jairita, era também sacerdote de Davi.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel21.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

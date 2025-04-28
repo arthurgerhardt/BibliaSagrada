@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 16</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 16</h2>
+      <p>1 E sucedeu que, passando Davi um pouco além do cume do monte, eis que Ziba, servo de Mefibosete, lhe saiu ao encontro, com dois jumentos carregados de duzentos pães, e cem bolos de passas, e cem frutas de verão, e um vaso de vinho.</p>
+      <p>2 E disse o rei a Ziba: Que queres com isso? E disse Ziba: Os jumentos são para a casa do rei, para que monte neles; e o pão e as frutas de verão, para que comam os moços; e o vinho, para que beba quem estiver cansado no deserto.</p>
+      <p>3 E disse o rei: Onde está Mefibosete? E disse Ziba ao rei: Eis que ficou em Jerusalém, porque disse: Hoje me restituirá a casa de Israel o reino de meu pai.</p>
+      <p>4 Então disse o rei a Ziba: Eis que é teu, tudo o que pertence a Mefibosete. E Ziba disse: Eu me prostrar-me-ei, e acharei graça aos teus olhos, ó rei.</p>
+      <p>5 E, vindo o rei Davi a Bahurim, eis que saiu dali um homem da família da casa de Saul, cujo nome era Simei, filho de Gera; e vinha amaldiçoando, e lançando pedras contra Davi, e contra todos os servos do rei Davi; e todo o povo, e todos os valentes estavam à sua direita e à sua esquerda.</p>
+      <p>6 E assim dizia Simei, amaldiçoando: Fora, fora, homem sanguinário e perverso!</p>
+      <p>7 O Senhor te fez voltar toda a maldade de Saul, em cuja casa reinavas; e o Senhor entregou o reino na mão de Absalão, teu filho; e eis que estás em tua maldade, porque és homem sanguinário.</p>
+      <p>8 Então Abisai, filho de Zeruia, disse ao rei: Por que amaldiçoa este cão morto ao rei? Deixa-me passar, peço-te, e tirarei a sua cabeça.</p>
+      <p>9 E disse o rei: Que tenho eu convosco, filhos de Zeruia? Porque hoje me são por adversários. Porventura matará alguém hoje em Israel? Pois não sei eu que hoje sou rei sobre Israel?</p>
+      <p>10 Então disse o rei a Abisai e a todos os seus servos: Eis que meu filho, que saiu das minhas entranhas, procura a minha morte; quanto mais agora este benjamita! Deixai-o, e que amaldiçoe, pois o Senhor lhe ordenou.</p>
+      <p>11 Talvez o Senhor atenda à minha aflição, e o Senhor me pague com bem a sua maldição deste dia.</p>
+      <p>12 Prosseguiram, pois, o seu caminho Davi e os seus homens; e Simei ia pelo lado do monte, defronte dele, e, caminhando, amaldiçoava, e atirava pedras contra ele, e lançava pó.</p>
+      <p>13 E o rei, e todo o povo que ia com ele, chegaram cansados, e ali descansaram.</p>
+      <p>14 E sucedeu que, vindo Absalão a Jerusalém, entrou também Aitofel com ele.</p>
+      <p>15 E sucedeu que, quando Husai, o arquita, amigo de Davi, veio a Absalão, disse-lhe: Viva o rei! Viva o rei!</p>
+      <p>16 E disse Absalão a Husai: É esta a tua bondade para com o teu amigo? Por que não foste com o teu amigo?</p>
+      <p>17 E disse Husai a Absalão: Não; mas a quem o Senhor escolher, e a este povo, e a toda a casa de Israel, dele serei, e com ele ficarei.</p>
+      <p>18 E, mais, a quem servirei eu? Não é diante do filho do rei? Como servi diante de teu pai, assim servirei diante de ti.</p>
+      <p>19 Então disse Absalão a Aitofel: Dá-me conselho sobre o que devemos fazer.</p>
+      <p>20 E Aitofel disse a Absalão: Vai, e entra às concubinas de teu pai, que ele deixou para guardar a casa; e todo o Israel ouvirá que te fizeste abominável para com teu pai; assim se fortalecerão as mãos de todos os que estão contigo.</p>
+      <p>21 Então armou Absalão uma tenda sobre o terraço, e entrou às concubinas de seu pai, à vista de todo o Israel.</p>
+      <p>22 E o conselho de Aitofel, que deu naquele dia, foi como se perguntasse a palavra de Deus; assim era todo o conselho de Aitofel, tanto com Davi como com Absalão.</p>
+      <p>23 E disse Husai a Absalão: Não é bom o conselho que deu Aitofel nesta vez.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel15.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2samuel17.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
