@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Reis 5</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Reis 5</h2>
+      <p>1 E enviou Hirão, rei de Tiro, os seus servos a Salomão (porque ouvira que ungiram a Salomão rei em lugar de seu pai), porquanto Hirão sempre tinha amado a Davi.</p>
+      <p>2 E Salomão enviou a Hirão, dizendo:</p>
+      <p>3 Tu sabes que meu pai Davi não pôde edificar casa ao nome do Senhor seu Deus, por causa das guerras que tinha em redor, até que o Senhor lhe pôs os pés debaixo de toda a planta dos seus pés.</p>
+      <p>4 Porém agora o Senhor meu Deus me tem dado descanso de todos os lados; adversário não há, nem algum mau encontro.</p>
+      <p>5 E eis que eu intento edificar uma casa ao nome do Senhor meu Deus, como falou o Senhor a Davi, meu pai, dizendo: Teu filho, que porei em teu lugar no teu trono, ele edificará uma casa ao meu nome.</p>
+      <p>6 Agora, pois, manda-me que me cortem cedros do Líbano; e os meus servos estarão com os teus servos; e eu te pagarei o salário dos teus servos, segundo tudo o que disseres; porque tu sabes que não há entre nós ninguém que saiba cortar árvores como os sidônios.</p>
+      <p>7 E ouvindo Hirão as palavras de Salomão, alegrou-se muito, e disse: Bendito seja hoje o Senhor, que deu a Davi um filho sábio sobre este grande povo.</p>
+      <p>8 E enviou Hirão a Salomão, dizendo: Ouvi o que me mandaste dizer. Eu farei toda a tua vontade acerca da madeira de cedro e da madeira de cipreste.</p>
+      <p>9 Os meus servos a levarão do Líbano ao mar, e eu a farei em jangadas, por mar, até ao lugar que me disseres; e ali a desfarei; e tu a tomarás; e quanto a mim, darei o que me pedires, para que me forneças alimento para a minha casa.</p>
+      <p>10 Assim deu Hirão a Salomão madeira de cedro e madeira de cipreste, segundo toda a sua vontade.</p>
+      <p>11 E Salomão deu a Hirão vinte mil coros de trigo, para sustento da sua casa, e vinte coros de óleo puro; assim dava Salomão a Hirão, ano por ano.</p>
+      <p>12 Deu, pois, o Senhor a Salomão sabedoria, como lhe tinha falado; e houve paz entre Hirão e Salomão, e ambos fizeram acordo.</p>
+      <p>13 E o rei Salomão fez subir uma leva de gente dentre todo o Israel, e foi a leva de gente trinta mil homens;</p>
+      <p>14 E os enviava ao Líbano, cada mês, dez mil por turno; um mês estavam no Líbano, e dois meses cada um em sua casa; e Adonirão estava sobre a leva de gente.</p>
+      <p>15 Tinha também Salomão setenta mil que levavam as cargas, e oitenta mil que talhavam pedras nas montanhas,</p>
+      <p>16 Afora os chefes dos oficiais de Salomão, que estavam sobre aquela obra, três mil e trezentos, os quais davam as ordens ao povo que fazia aquela obra.</p>
+      <p>17 E mandou o rei que tirassem pedras grandes, pedras preciosas, para fundação da casa.</p>
+      <p>18 E os mestres cortadores de Salomão e os mestres cortadores de Hirão prepararam a pedra e a madeira, para edificar a casa.</p>
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1reis4.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1reis6.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

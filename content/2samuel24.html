@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Samuel 24</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Samuel 24</h2>
+      <p>1 E a ira do Senhor se tornou a acender contra Israel; e incitou a Davi contra eles, dizendo: Vai, numera a Israel e a Judá.</p>
+      <p>2 E disse o rei a Joabe, capitão do exército, que estava com ele: Passa por todas as tribos de Israel, desde Dã até Berseba, e faze o recenseamento do povo, para que eu saiba o número do povo.</p>
+      <p>3 E disse Joabe ao rei: O Senhor, teu Deus, aumente o povo, cem vezes mais do que são; e que os olhos do rei meu senhor vejam isso; mas por que se agrada o rei meu senhor com isso?</p>
+      <p>4 Porém a palavra do rei prevaleceu contra Joabe, e contra os capitães do exército. E saiu Joabe, e os capitães do exército, diante do rei, para numerar o povo de Israel.</p>
+      <p>5 E passaram o Jordão, e acamparam em Aroer, à direita da cidade, que está no meio do vale de Gad, e em Jazer.</p>
+      <p>6 E vieram a Gileade, e à terra de Tahtim-Hodsi; e vieram a Dan-Jaan, e rodearam a cidade de Dã; e vieram a Sidom;</p>
+      <p>7 E vieram à fortaleza de Tiro, e a todas as cidades dos heveus, e dos cananeus; e saíram ao sul de Judá, em Berseba.</p>
+      <p>8 E andaram por toda a terra, e deram o número do povo a Joabe, e vieram a Jerusalém.</p>
+      <p>9 E Joabe deu o número do recenseamento do povo ao rei; e foram em Israel oitocentos mil homens valentes, que puxavam da espada, e em Judá quinhentos mil homens.</p>
+      <p>10 E o coração de Davi feriu-o depois que numerou o povo. E disse Davi ao Senhor: Pequei muito neste meu feito; porém agora, Senhor, tira, peço-te, a iniquidade do teu servo; porque eu procedi muito loucamente.</p>
+      <p>11 E levantou-se de manhã a palavra do Senhor a Gade, o vidente de Davi, dizendo:</p>
+      <p>12 Vai, e diz a Davi: Assim diz o Senhor: Três coisas te proponho; escolhe uma delas, para que eu a faça.</p>
+      <p>13 E veio Gade a Davi, e fez-lhe saber, e disse-lhe: Queres que venham sobre ti sete anos de fome na tua terra? Ou que por três meses fujas diante dos teus inimigos, e eles te persigam? Ou que haja três dias de peste na tua terra? Agora, pois, considera, e vê que resposta darei ao que me enviou.</p>
+      <p>14 E disse Davi a Gade: Estou em grande angústia; caiamos, peço-te, nas mãos do Senhor, porque muitas são as suas misericórdias; mas não caia eu nas mãos dos homens.</p>
+      <p>15 Então o Senhor enviou a peste a Israel, desde a manhã até ao tempo determinado; e desde Dã até Berseba morreram setenta mil homens do povo.</p>
+      <p>16 E estendendo o anjo a sua mão sobre Jerusalém, para a destruir, arrependeu-se o Senhor daquele mal, e disse ao anjo que fazia destruição entre o povo: Basta; retira agora a tua mão. E o anjo do Senhor estava junto à eira de Araúna, o jebuseu.</p>
+      <p>17 E, vendo Davi ao anjo que feria o povo, falou ao Senhor, e disse: Eis que eu pequei, e eu fiz perversamente; porém estas ovelhas, que fizeram? Seja, pois, a tua mão contra mim, e contra a casa de meu pai.</p>
+      <p>18 E Gade veio naquele mesmo dia a Davi, e disse-lhe: Sobe, levanta ao Senhor um altar na eira de Araúna, o jebuseu.</p>
+      <p>19 Subiu, pois, Davi, conforme à palavra de Gade, como o Senhor lhe tinha ordenado.</p>
+      <p>20 E olhou Araúna, e viu ao rei e aos seus servos, que vinham para ele; então saiu Araúna, e inclinou-se diante do rei, com o rosto em terra.</p>
+      <p>21 E disse Araúna: Por que veio o rei, meu senhor, ao seu servo? E disse Davi: Para comprar de ti esta eira, a fim de edificar nela um altar ao Senhor, para que cesse a praga de sobre o povo.</p>
+      <p>22 Então disse Araúna a Davi: Tome e ofereça o rei, meu senhor, o que bem parecer aos seus olhos; eis aí bois para o holocausto, e os trilhos e aparelhos dos bois para a lenha.</p>
+      <p>23 Tudo isto deu Araúna ao rei; disse mais Araúna ao rei: O Senhor teu Deus te seja propício.</p>
+      <p>24 Porém o rei disse a Araúna: Não, mas por certo preço to comprarei; porque não oferecerei ao Senhor meu Deus holocaustos que não me custem nada. Assim Davi comprou a eira e os bois por cinquenta siclos de prata.</p>
+      <p>25 E edificou ali Davi ao Senhor um altar, e ofereceu holocaustos e ofertas pacíficas; assim o Senhor se aplacou para com a terra, e cessou a praga de sobre Israel.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2samuel23.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1reis1.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

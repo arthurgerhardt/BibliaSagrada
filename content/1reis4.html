@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Reis 4</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Reis 4</h2>
+      <p>1 E Salomão reinou sobre todo o Israel.</p>
+      <p>2 E estes eram os príncipes que tinha: Azarias, filho de Zadoque, sacerdote;</p>
+      <p>3 Eliorefe e Aías, filhos de Sisa, secretários; Jeosafá, filho de Ailude, cronista;</p>
+      <p>4 Benaia, filho de Joiada, comandante do exército; Zadoque e Abiatar, sacerdotes;</p>
+      <p>5 Azarias, filho de Natã, sobre os prefeitos; Zabude, filho de Natã, ministro principal e amigo do rei;</p>
+      <p>6 Aisar, mordomo; Adonirão, filho de Abda, sobre o tributo.</p>
+      <p>7 E tinha Salomão doze prefeitos sobre todo o Israel, que proviam de mantimento ao rei e à sua casa; cada um tinha que prover de mantimento por um mês no ano.</p>
+      <p>8 E estes são os seus nomes: Ben-Hur, nas montanhas de Efraim;</p>
+      <p>9 Ben-Dequer, em Macaz, em Saalbim, em Bete-Semes e Elom-Bete-Hanã;</p>
+      <p>10 Ben-Hesede, em Arubote; este tinha também Socó e toda a terra de Héfer;</p>
+      <p>11 Ben-Abinadabe, em todo o termo de Dor; este tinha a Tafate, filha de Salomão, por mulher;</p>
+      <p>12 Baana, filho de Ailude, em Taanaque e Megido, e em toda a Bete-Seã, que está junto a Zaretã, abaixo de Jezreel, desde Bete-Seã até Abel-Meolá, até além de Jocmeão;</p>
+      <p>13 Ben-Geber, em Ramote-Gileade; este tinha as aldeias de Jair, filho de Manassés, que estão em Gileade; tinha também a região de Argobe, que está em Basã, sessenta grandes cidades com muros e ferrolhos de bronze;</p>
+      <p>14 Ainadabe, filho de Ido, em Maanaim;</p>
+      <p>15 Aimaás, em Naftali; também este tomou a Basemate, filha de Salomão, por mulher;</p>
+      <p>16 Baana, filho de Husai, em Aser e em Alote;</p>
+      <p>17 Josafá, filho de Parua, em Issacar;</p>
+      <p>18 Simei, filho de Elá, em Benjamim;</p>
+      <p>19 Geber, filho de Uri, na terra de Gileade, na terra de Seom, rei dos amorreus, e de Ogue, rei de Basã; e havia um só prefeito nesta terra.</p>
+      <p>20 Judá e Israel eram muitos, como a areia que está junto ao mar, em multidão, comendo, bebendo e alegrando-se.</p>
+      <p>21 E dominava Salomão sobre todos os reinos, desde o rio Eufrates até à terra dos filisteus e até ao termo do Egito; estes traziam presentes e serviram a Salomão todos os dias da sua vida.</p>
+      <p>22 Era, pois, o provimento de Salomão para cada dia: trinta coros de flor de farinha, e sessenta coros de farinha;</p>
+      <p>23 Dez bois gordos, vinte bois de pasto e cem carneiros, afora veados, gazelas, corças e aves cevadas.</p>
+      <p>24 Porque dominava sobre tudo o que estava da banda de cá do rio, desde Tifsa até Gaza, sobre todos os reis da banda de cá do rio; e tinha paz de todos os lados em redor dele.</p>
+      <p>25 E Judá e Israel habitavam seguros, cada um debaixo da sua videira e debaixo da sua figueira, desde Dã até Berseba, todos os dias de Salomão.</p>
+      <p>26 Tinha também Salomão quarenta mil estrebarias de cavalos para os seus carros, e doze mil cavaleiros.</p>
+      <p>27 E estes prefeitos proviam de mantimento ao rei Salomão e a todos os que vinham à mesa do rei Salomão, cada um no seu mês; nada deixavam faltar.</p>
+      <p>28 Também traziam cevada e palha para os cavalos e para os corcéis, para o lugar onde estavam, cada um conforme o seu cargo.</p>
+      <p>29 E deu Deus a Salomão sabedoria, grandíssimo entendimento e largueza de coração, como a areia que está na praia do mar.</p>
+      <p>30 E era a sabedoria de Salomão maior do que a de todos os do Oriente e do que toda a sabedoria dos egípcios.</p>
+      <p>31 E era ele ainda mais sábio do que todos os homens, mais do que Etã, ezraíta, e do que Hemã, Calcol e Darda, filhos de Maol; e correu a sua fama por todas as nações em redor.</p>
+      <p>32 E disse três mil provérbios, e foram os seus cânticos mil e cinco.</p>
+      <p>33 Também falou das árvores, desde o cedro que está no Líbano até ao hissopo que nasce na parede; também falou dos animais, das aves, dos répteis e dos peixes.</p>
+      <p>34 E vinham de todos os povos ouvir a sabedoria de Salomão, e de todos os reis da terra que tinham ouvido da sua sabedoria.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1reis3.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1reis5.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

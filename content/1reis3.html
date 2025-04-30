@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Reis 3</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Reis 3</h2>
+      <p>1 E Salomão fez aliança com Faraó, rei do Egito, e tomou por mulher a filha de Faraó; e trouxe-a à cidade de Davi, até que acabasse de edificar a sua casa, e a casa do Senhor, e o muro de Jerusalém em redor.</p>
+      <p>2 Somente o povo sacrificava em altos lugares, porque ainda não tinha sido edificado templo ao nome do Senhor, até aqueles dias.</p>
+      <p>3 E Salomão amava ao Senhor, andando nos estatutos de Davi, seu pai; somente sacrificava e queimava incenso em altos lugares.</p>
+      <p>4 E foi o rei a Gibeão, para sacrificar ali; porque aquele era o alto mais grande; e ofereceu mil holocaustos sobre aquele altar.</p>
+      <p>5 E Gibeão apareceu ao Senhor a Salomão, de noite, em sonhos; e disse Deus: Pede o que quiseres que eu te dê.</p>
+      <p>6 E Salomão disse: Tu usaste de grande misericórdia com teu servo Davi, meu pai, como andou diante de ti em verdade, e em justiça, e em retidão de coração para contigo; e guardaste-lhe esta grande misericórdia, que lhe deste um filho que se assentasse no seu trono, como hoje está.</p>
+      <p>7 Agora, pois, Senhor meu Deus, tu fizeste reinar a teu servo em lugar de Davi, meu pai; e eu sou menino pequeno; não sei sair nem entrar.</p>
+      <p>8 E teu servo está no meio do povo que escolheste, povo grande, que não se pode contar nem numerar, por causa da multidão.</p>
+      <p>9 Dá, pois, a teu servo coração entendido, para julgar o teu povo, e para discernir entre o bem e o mal; porque quem poderá julgar a este tão grande povo?</p>
+      <p>10 E agradou aos olhos do Senhor que Salomão pedisse isto.</p>
+      <p>11 E disse-lhe Deus: Porquanto pediste isto, e não pediste para ti muitos dias, nem riquezas, nem a vida dos teus inimigos, mas pediste para ti sabedoria, para discernir o que é justo;</p>
+      <p>12 Eis que fiz segundo as tuas palavras; eis que te dei coração sábio e entendido, de maneira que antes de ti não houve teu igual, nem depois de ti haverá.</p>
+      <p>13 E também te dei o que não pediste, riquezas e glória, de maneira que entre os reis nenhum há como tu, todos os teus dias.</p>
+      <p>14 E se andares nos meus caminhos, e guardares os meus estatutos e os meus mandamentos, como andou Davi, teu pai, também eu prolongarei os teus dias.</p>
+      <p>15 E Salomão acordou; e eis que era um sonho. E veio a Jerusalém, e pôs-se diante da arca do concerto do Senhor, e ofereceu holocaustos, e fez ofertas pacíficas; e fez um banquete a todos os seus servos.</p>
+      <p>16 Então vieram duas mulheres, prostitutas, ao rei, e se puseram diante dele.</p>
+      <p>17 E disse uma mulher: Ah! Senhor meu, eu e esta mulher habitamos numa casa; e eu dei à luz, estando com ela na casa.</p>
+      <p>18 E aconteceu que, ao terceiro dia depois de eu ter dado à luz, esta mulher também deu à luz; e estávamos juntas; e não havia ninguém conosco na casa, senão nós duas.</p>
+      <p>19 E morreu o filho desta mulher à noite, porque ela se deitou sobre ele.</p>
+      <p>20 E levantou-se à meia-noite, e tomou meu filho do meu lado, enquanto a tua serva dormia, e deitou-o ao seu seio; e deitou o seu filho morto ao meu seio.</p>
+      <p>21 E, levantando-me eu pela manhã, para dar de mamar ao meu filho, eis que estava morto; mas, olhando para ele de manhã, vi que não era meu filho, que eu tinha dado à luz.</p>
+      <p>22 E disse a outra mulher: Não; mas o filho vivo é meu, e o teu filho é o morto. E disse esta: Não; mas o teu filho é o morto, e o meu é o vivo. Assim falavam diante do rei.</p>
+      <p>23 Então disse o rei: Esta diz: Meu filho é o vivo, e o teu é o morto; e aquela diz: Não; mas o teu filho é o morto, e o meu é o vivo.</p>
+      <p>24 E disse o rei: Trazei-me uma espada. E trouxeram ao rei uma espada.</p>
+      <p>25 E disse o rei: Dividi em dois o menino vivo, e dai metade a uma, e metade a outra.</p>
+      <p>26 Então a mulher, a quem era o filho vivo, falou ao rei; porque as suas entranhas se moveram por seu filho; e disse: Ah! Senhor meu, dai-lhe a ela o menino vivo, e não o mateis. Mas a outra disse: Não será nem meu nem teu; dividam-no.</p>
+      <p>27 Então respondeu o rei, e disse: Dai a esta o menino vivo, e não a mateis; ela é sua mãe.</p>
+      <p>28 E todo o Israel ouviu o juízo que havia dado o rei, e temeu ao rei; porque viram que havia nele a sabedoria de Deus, para fazer justiça.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1reis2.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1reis4.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
