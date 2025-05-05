@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Reis 10</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Reis 10</h2>
+      <p>1 E ouvindo a rainha de Sabá a fama de Salomão, veio a Jerusalém para o experimentar com perguntas difíceis, e trouxe consigo uma grande comitiva, e camelos carregados de especiarias, e muito ouro, e pedras preciosas; e, quando chegou a Salomão, falou-lhe tudo o que tinha no seu coração.</p>
+      <p>2 E Salomão lhe respondeu a todas as suas perguntas; nada houve que o rei não lhe pudesse declarar.</p>
+      <p>3 E vendo a rainha de Sabá toda a sabedoria de Salomão, e a casa que edificara, e o manjar da sua mesa, e o assentar dos seus servos, e o estar dos seus criados, e os trajes deles, e os seus copeiros, e o holocausto que oferecia na casa do Senhor, ficou como fora de si.</p>
+      <p>4 E disse ao rei: Verdadeiramente, eu não dei crédito às palavras, até que vim e vi com os meus olhos; e eis que não me contaram a metade; a sabedoria e a prosperidade de Salomão excedem a fama que ouvi.</p>
+      <p>5 Bem-aventurados os teus homens, e bem-aventurados estes teus servos, que estão sempre diante de ti, e ouvem a tua sabedoria.</p>
+      <p>6 Bendito seja o Senhor, teu Deus, que se agradou de ti, para te pôr sobre o trono de Israel; porque o Senhor ama a Israel para sempre, por isso te constituiu rei, para fazeres juízo e justiça.</p>
+      <p>7 E deu à rainha de Sabá, cento e vinte talentos de ouro, e especiarias em grande abundância, e pedras preciosas; nunca vieram tais especiarias como as que deu a rainha de Sabá ao rei Salomão.</p>
+      <p>8 E os navios de Hirão, que traziam ouro de Ofir, traziam também de Ofir madeira de sândalo em grande abundância, e pedras preciosas.</p>
+      <p>9 E fez o rei Salomão escadas de madeira de sândalo para a casa do Senhor, e para a casa do rei; e harpas e alaúdes para os cantores; nunca se viu coisa semelhante na terra de Judá.</p>
+      <p>10 E o rei Salomão deu à rainha de Sabá tudo o que ela quis, e tudo o que pediu, além do que lhe deu segundo a grandeza da sua liberalidade. Assim voltou e partiu para a sua terra, ela e os seus servos.</p>
+      <p>11 E o peso do ouro que veio a Salomão em um ano, foi de seiscentos e sessenta e seis talentos de ouro;</p>
+      <p>12 Sem contar o que os negociantes e os mercadores traziam; e todos os reis da Arábia, e os governadores da terra, trouxeram ouro e prata a Salomão.</p>
+      <p>13 E fez o rei Salomão duzentos escudos grandes de ouro batido; seiscentos siclos de ouro gastou em cada escudo.</p>
+      <p>14 E fez o rei Salomão trezentos escudos pequenos de ouro batido; três minas de ouro gastou em cada escudo; e o rei os pôs na casa da floresta do Líbano.</p>
+      <p>15 E fez o rei Salomão um grande trono de marfim, e o revestiu de ouro puro.</p>
+      <p>16 E o trono tinha seis degraus, e um estrado de ouro, e braços de cada lado do assento; e dois leões estavam junto aos braços.</p>
+      <p>17 E doze leões estavam ali, sobre os seis degraus, de um lado e de outro; nunca houve coisa semelhante em nenhum reino.</p>
+      <p>18 E todos os vasos que usava o rei Salomão, eram de ouro; e toda a casa da floresta do Líbano era de ouro puro; nada havia dela de prata; não era estimada no tempo de Salomão.</p>
+      <p>19 Porque o rei tinha navios que iam a Tarsis, com os servos de Hirão; de três em três anos vinham os navios de Tarsis, trazendo ouro, e prata, e marfim, e macacos, e pavões.</p>
+      <p>20 E assim excedeu o rei Salomão a todos os reis da terra em riqueza e sabedoria.</p>
+      <p>21 E todos os reis da terra buscavam ver a Salomão, para ouvir a sua sabedoria, que Deus tinha posto no seu coração.</p>
+      <p>22 E traziam cada um o seu presente, vasos de prata, e vasos de ouro, e vestes, e armas, e especiarias, e cavalos, e mulas; assim ano por ano.</p>
+      <p>23 E tinha Salomão quatro mil estábulos de cavalos e carros, e doze mil cavaleiros; e os tinha em cidades de carros, e junto ao rei em Jerusalém.</p>
+      <p>24 E era o rei Salomão maior do que todos os reis da terra, em riqueza e em sabedoria.</p>
+      <p>25 E todos os da terra buscavam a presença de Salomão, para ouvir a sua sabedoria, que Deus tinha posto no seu coração.</p>
+      <p>26 E traziam cada um o seu presente, e vestes, e armas, e especiarias, e cavalos, e mulas; assim ano por ano.</p>
+      <p>27 E tinha Salomão quatro mil estábulos de cavalos e carros, e doze mil cavaleiros; e os tinha em cidades de carros, e junto ao rei em Jerusalém.</p>
+      <p>28 E era o rei Salomão maior do que todos os reis da terra, em riqueza e em sabedoria.</p>
+      <p>29 E todos os da terra buscavam a presença de Salomão, para ouvir a sua sabedoria, que Deus tinha posto no seu coração.</p>
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1reis9.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1reis11.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
