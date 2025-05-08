@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 1</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 1</h2>
+      <p>1 E depois da morte de Acabe, revoltou-se Moabe contra Israel.</p>
+      <p>2 E Acazias caiu pela grade do seu quarto, em Samaria, e enfermo; e enviou mensageiros, e disse-lhes: Ide, consultai a Baal-Zebube, deus de Ecrom, se sararei desta minha enfermidade.</p>
+      <p>3 Porém o anjo do Senhor falou a Elias, o tisbita, dizendo: Levanta-te, e sobe ao encontro dos mensageiros do rei de Samaria, e dize-lhes: Porventura não há Deus em Israel, para consultardes a Baal-Zebube, deus de Ecrom?</p>
+      <p>4 Portanto, assim diz o Senhor: Da cama para a qual subiste, não descerás, mas certamente morrerás. E Elias se foi.</p>
+      <p>5 E os mensageiros tornaram-se para junto do rei, e ele lhes disse: Que é isso que voltastes?</p>
+      <p>6 E eles lhe disseram: Um homem veio ao nosso encontro, e disse: Ide, voltai-vos para o rei que vos enviou, e dizei-lhe: Assim diz o Senhor: Porventura não há Deus em Israel, para consultardes a Baal-Zebube, deus de Ecrom?</p>
+      <p>7 Portanto, da cama para a qual subiste, não descerás, mas certamente morrerás.</p>
+      <p>8 E ele lhes disse: Que aspecto tinha o homem que veio ao vosso encontro, e vos falou estas palavras? E eles lhe disseram: Era um homem peludo, e cingido com um cinto de couro sobre os lombos. E ele disse: É Elias, o tisbita.</p>
+      <p>9 Então o rei enviou a ele um capitão de cinquenta com os seus cinquenta. E subiu a ele; e eis que estava assentado no cume do monte. E disse-lhe: Homem de Deus, o rei diz: Desce.</p>
+      <p>10 E Elias respondeu, e disse ao capitão de cinquenta: Se sou homem de Deus, desça fogo do céu, e consuma-te a ti e aos teus cinquenta. E desceu fogo do céu, e consumiu-o a ele e aos seus cinquenta.</p>
+      <p>11 E o rei enviou a ele outro capitão de cinquenta com os seus cinquenta. E ele respondeu, e disse-lhe: Homem de Deus, assim diz o rei: Desce depressa.</p>
+      <p>12 E Elias respondeu, e disse-lhe: Se sou homem de Deus, desça fogo do céu, e consuma-te a ti e aos teus cinquenta. E desceu fogo de Deus do céu, e consumiu-o a ele e aos seus cinquenta.</p>
+      <p>13 E o rei enviou ainda um terceiro capitão de cinquenta com os seus cinquenta. E o terceiro capitão de cinquenta subiu, e veio, e pôs-se de joelhos diante de Elias, e lhe suplicou, e disse: Homem de Deus, peço-te que a minha vida e a vida destes teus cinquenta servos sejam preciosas aos teus olhos.</p>
+      <p>14 Eis que desceu fogo do céu, e consumiu os dois primeiros capitães de cinquenta com os seus cinquenta; mas agora seja preciosa a minha vida aos teus olhos.</p>
+      <p>15 Então o anjo do Senhor disse a Elias: Desce com ele; não temas. E desceu com ele, e pôs-se diante do rei.</p>
+      <p>16 E disse-lhe: Assim diz o Senhor: Porventura não enviaste mensageiros a consultar a Baal-Zebube, deus de Ecrom? Por isso, da cama para a qual subiste, não descerás, mas certamente morrerás.</p>
+      <p>17 E morreu, segundo a palavra do Senhor que Elias tinha falado. E reinou em seu lugar Jorão, no segundo ano de Jorão, filho de Josafá, rei de Judá; porque não tinha filho Acazias.</p>
+      <p>18 Quanto ao mais dos atos de Acazias, que fez, não estão escritos no livro das crônicas dos reis de Israel.</p>
+      
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1reis22.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis2.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
