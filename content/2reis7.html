@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 7</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 7</h2>
+      <p>1 Então disse Eliseu: Ouvi a palavra do Senhor: Assim diz o Senhor: Amanhã, a estas horas, haverá um seá de flor de farinha por um ciclo, e dois seás de cevada por um ciclo, à porta de Samaria.</p>
+      <p>2 E o capitão, em cuja mão o rei se apoiava, respondeu ao homem de Deus, e disse: Se o Senhor fizesse janelas no céu, poderia suceder isso? E ele disse: Eis que verás com os teus olhos, mas não comerás disso.</p>
+      <p>3 E havia quatro leprosos à entrada da porta; e disseram uns aos outros: Para que estamos nós aqui assentados até morrermos?</p>
+      <p>4 Se dissermos: Entraremos na cidade, a fome está na cidade, e morreremos ali; e se ficarmos aqui, também morreremos. Agora, pois, venham, e passemos ao arraial dos sírios; se nos deixarem viver, viveremos; e se nos matarem, morreremos.</p>
+      <p>5 E levantaram-se, à noite, para irem ao arraial dos sírios; e, chegando à entrada do arraial dos sírios, eis que não havia ali ninguém.</p>
+      <p>6 Porque o Senhor fizera ouvir no arraial dos sírios um ruído de carros, e um ruído de cavalos, e um ruído de grande exército; e disseram uns aos outros: Eis que o rei de Israel alugou contra nós os reis dos heteus e os reis dos egípcios, para virem contra nós.</p>
+      <p>7 E levantaram-se, e fugiram à noite, e deixaram as suas tendas, e os seus cavalos, e os seus jumentos; e o arraial, como estava, fugiram para salvar a sua vida.</p>
+      <p>8 E, quando chegaram os leprosos à entrada do arraial, entraram numa tenda, e comeram, e beberam; e tomaram dali prata, e ouro, e vestes, e foram, e esconderam; e voltaram, e entraram em outra tenda, e também dela tomaram, e foram, e esconderam.</p>
+      <p>9 Então disseram uns aos outros: Não fazemos bem; este dia é dia de boas novas, e nós nos calamos; e se esperarmos até a manhã, seremos achados culpados. Agora, pois, venham, e vamos entrar na cidade, e contá-lo à casa do rei.</p>
+      <p>10 E vieram, e chamaram à porta da cidade; e falaram aos homens, dizendo: Viemos ao arraial dos sírios, e eis que não há ali ninguém, nem voz de homem algum, mas só os cavalos atados, e os jumentos atados, e as tendas como estavam.</p>
+      <p>11 E chamaram os porteiros da cidade; e eles disseram, e fizeram saber à casa do rei.</p>
+      <p>12 E o rei se levantou de noite, e disse a seus servos: Agora vos farei saber o que é que os sírios nos fizeram; bem sabem eles que esfaimados estamos, pelo que saíram do arraial, a esconder-se pelo campo, dizendo: Quando saírem da cidade, então os tomaremos vivos, e entraremos na cidade.</p>
+      <p>13 Então um dos seus servos respondeu e disse: Tomem-se, pois, cinco dos cavalos que restam aqui dentro (eis que são como toda a multidão dos israelitas que ficaram aqui; e eis que são como toda a multidão dos israelitas que já pereceram) e enviemo-los, e vejamos.</p>
+      <p>14 E tomaram dois carros de cavalos, e o rei enviou após o arraial dos sírios, dizendo: Ide, e vede.</p>
+      <p>15 E foram após eles até o Jordão; e eis que todo o caminho estava cheio de vestes e utensílios que os sírios tinham lançado, para se apressarem. E tornaram os mensageiros, e disseram ao rei.</p>
+      <p>16 Então o povo saiu, e saqueou o arraial dos sírios; e houve um seá de flor de farinha por um ciclo, e dois seás de cevada por um ciclo, segundo a palavra do Senhor.</p>
+      <p>17 E o rei pôs o capitão, em cuja mão se apoiava, à porta; e o povo pisou-o na porta, e morreu, como dissera o homem de Deus, quando falou ao rei: Assim diz o Senhor: Amanhã, a estas horas, haverá um seá de flor de farinha por um ciclo, e dois seás de cevada por um ciclo, à porta de Samaria.</p>
+      <p>18 E sucedeu que, como o homem de Deus falara ao rei, dizendo: Dois seás de cevada por um ciclo, e um seá de flor de farinha por um ciclo, à porta de Samaria.</p>
+      <p>19 E o capitão, em cuja mão o rei se apoiava, respondeu ao homem de Deus, e disse: Se o Senhor fizesse janelas no céu, poderia suceder isso? E ele disse: Eis que verás com os teus olhos, mas não comerás disso.</p>
+      <p>20 E assim lhe sucedeu; porque o povo pisou-o na porta, e morreu.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis6.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis8.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
