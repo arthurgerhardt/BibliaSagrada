@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 14</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 14</h2>
+      <p>1 No ano segundo de Joás, filho de Joás, rei de Judá, começou a reinar Amazias, filho de Joás, rei de Judá; e reinou vinte e nove anos em Jerusalém. E era o nome de sua mãe Jeoaquim, filha de Jeroboão.</p>
+      <p>2 E fez o que era reto aos olhos do Senhor; não, porém, como Davi, seu pai; fez segundo tudo quanto fizera Joás, seu pai.</p>
+      <p>3 Porém os altos não tirou; ainda o povo sacrificava e queimava incenso nos altos.</p>
+      <p>4 E sucedeu que, como o reino se firmou na sua mão, feriu os seus servos que tinham morto o rei, seu pai.</p>
+      <p>5 E o restante dos atos de Amazias, e tudo quanto fez, não estão escritos no livro das crônicas dos reis de Judá?</p>
+      <p>6 E feriu os filhos dos assassinos; porém não matou os seus filhos, segundo o que está escrito na lei, na lei de Moisés, onde o Senhor ordenou, dizendo: Não morrerão os pais pelos filhos, nem os filhos pelos pais; mas cada um morrerá pelo seu pecado.</p>
+      <p>7 Ele feriu dez mil edomitas no vale do sal, e tomou a cidade de Sela, e chamou-lhe Jocteel, até ao dia de hoje.</p>
+      <p>8 Então Amazias enviou mensageiros a Joás, filho de Joacaz, filho de Jeú, rei de Israel, dizendo: Vinde, enfrentemo-nos em campo.</p>
+      <p>9 E Joás, rei de Israel, respondeu a Amazias, rei de Judá: O espinho que está em Lebano não enviou dizer ao cedro que está em Lebano: Dá a tua filha por mulher a meu filho? E o cedro respondeu: Não, mas o espinho disse: Eu sou rei.</p>
+      <p>10 Tu feriste os edomitas, e o teu coração se exalta; gloriando-te, fica em casa; porque te provocas ao mal, e cairás tu e Judá contigo.</p>
+      <p>11 Porém Amazias não atendeu; e subiu Joás, rei de Israel, e feriu Amazias, rei de Judá, na batalha, e o tomou prisioneiro.</p>
+      <p>12 E o restante dos atos de Joás, e tudo quanto fez, e os seus valentes, não estão escritos no livro das crônicas dos reis de Israel?</p>
+      <p>13 E Joás, filho de Joacaz, filho de Jeú, rei de Israel, tomou Amazias, rei de Judá, e o trouxe para Jerusalém, e o pôs na prisão.</p>
+      <p>14 E tomou toda a prata, e o ouro, e todos os utensílios que se acharam na casa do Senhor, e nos tesouros da casa do rei, e os reféns; e voltou para Samaria.</p>
+      <p>15 E o restante dos atos de Joás, e tudo quanto fez, e os seus valentes, e como pelejou contra Amazias, rei de Judá, não estão escritos no livro das crônicas dos reis de Israel?</p>
+      <p>16 E dormiu Joás com seus pais, e foi sepultado em Samaria, com os reis de Israel.</p>
+      <p>17 E Amazias, filho de Joás, rei de Judá, viveu depois da morte de Joás, filho de Joacaz, rei de Israel, quinze anos.</p>
+      <p>18 E o restante dos atos de Amazias, não estão escritos no livro das crônicas dos reis de Judá?</p>
+      <p>19 E fizeram uma conspiração contra ele em Jerusalém; e ele fugiu para Laís; mas mandaram após ele a Laís, e o mataram ali.</p>
+      <p>20 E trouxeram-no sobre os cavalos, e o sepultaram com seus pais na cidade de Judá.</p>
+      <p>21 E todo o povo de Judá tomou a Ozias, que tinha dezesseis anos, e o fez rei em lugar de Amazias, seu pai.</p>
+      <p>22 Ele edificou a Elate, e a restaurou a Judá, depois que o rei dormiu com seus pais.</p>
+      <p>23 No ano quinze de Amazias, filho de Joás, rei de Judá, começou a reinar Jeroboão, filho de Joás, rei de Israel.</p>
+      <p>24 E fez o que era mau aos olhos do Senhor; não se apartou de todos os pecados de Jeroboão, filho de Nebate, que fez pecar a Israel.</p>
+      <p>25 Ele restaurou os limites de Israel desde a entrada de Hamate até o mar da Arabá, segundo a palavra do Senhor, Deus de Israel, que falara pela mão de seus servos, os profetas.</p>
+      <p>26 Porque o Senhor viu a amargura de Israel, e a sua grande aflição, e não houve quem o ajudasse.</p>
+      <p>27 E o Senhor disse a Jeoás: Porquanto tu pediste a mim, eu te livrarei; e tu ferirás os sírios em Afec, até os consumir.</p>
+      <p>28 E o restante dos atos de Jeroboão, e tudo quanto fez, e os seus valentes, e como pelejou, não estão escritos no livro das crônicas dos reis de Israel?</p>
+      <p>29 E dormiu Jeroboão com seus pais, com os reis de Israel; e Zacarias, seu filho, reinou em seu lugar.</p>
+
+      
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis13.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis15.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
