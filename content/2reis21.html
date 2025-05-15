@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 21</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 21</h2>
+      <p>1 Tinha Manassés doze anos de idade quando começou a reinar, e reinou cinquenta e cinco anos em Jerusalém; e era o nome de sua mãe Hefzibá.</p>
+      <p>2 E fez o que era mau aos olhos do Senhor, conforme as abominações dos gentios que o Senhor lançara fora de diante dos filhos de Israel.</p>
+      <p>3 Porque tornou a edificar os altos que Ezequias, seu pai, havia destruído; e levantou altares a Baal, e fez um bosque, como fizera Acabe, rei de Israel; e se prostrou diante de todo o exército dos céus, e os serviu.</p>
+      <p>4 E edificou altares na casa do Senhor, da qual o Senhor tinha dito: Em Jerusalém porei o meu nome.</p>
+      <p>5 Também edificou altares a todo o exército dos céus em ambos os átrios da casa do Senhor.</p>
+      <p>6 E fez passar seu filho pelo fogo, e praticou adivinhações, e agouros, e constituiu adivinhos e feiticeiros; e prosseguiu em fazer o que era mau aos olhos do Senhor, para o provocar à ira.</p>
+      <p>7 Também pôs uma imagem de escultura do bosque, que tinha feito, na casa da qual o Senhor dissera a Davi e a Salomão, seu filho: Nesta casa e em Jerusalém, que escolhi de todas as tribos de Israel, porei o meu nome para sempre;</p>
+      <p>8 Porém eles não ouviram; e Manassés os fez errar, para fazerem pior do que as nações que o Senhor destruíra de diante dos filhos de Israel.</p>
+      <p>9 E falou o Senhor por intermédio de seus servos, os profetas, dizendo:</p>
+      <p>10 Porquanto Manassés, rei de Judá, fez estas abominações, e fez mais mal do que tudo o que fizeram os amorreus, que foram antes dele, e fez também pecar a Judá com seus ídolos;</p>
+      <p>11 Portanto, assim diz o Senhor, Deus de Israel: Eis que trarei sobre Jerusalém e sobre Judá tal mal que, ao ouvirem, lhe ardão os ouvidos.</p>
+      <p>12 E estenderei sobre Jerusalém o cordel de Samaria, e o nível da casa de Acabe; e limparei a cidade, como se limpa o prato, limpando-o e virando-o ao contrário.</p>
+      <p>13 E lançarei fora o restante da minha herança, e entregá-la-ei nas mãos dos seus inimigos; e serão por presa e por despojo a todos os seus inimigos;</p>
+      <p>14 Porquanto fizeram o que era mau aos meus olhos, e provocaram a ira desde o dia em que seus pais saíram do Egito até ao dia de hoje.</p>
+      <p>15 Também Manassés derramou muito sangue inocente, até encher Jerusalém de um lado a outro; além do pecado que fez pecar a Judá, para provocar ao Senhor a ira.</p>
+      <p>16 E o restante dos atos de Manassés, e tudo o que fez, e o seu pecado que cometeu, não está escrito no livro das crônicas dos reis de Judá?</p>
+      <p>17 E dormiu Manassés com seus pais, e foi sepultado no jardim de sua casa, no jardim de Uzá; e reinou em seu lugar Amom, seu filho.</p>
+      <p>18 Amom tinha vinte e dois anos de idade quando começou a reinar, e reinou dois anos em Jerusalém. E o nome de sua mãe era Mesulemete, filha de Haruz, de Jotba.</p>
+      <p>19 E fez o que era mau aos olhos do Senhor, como fizera Manassés, seu pai; e andou em todos os caminhos em que andara seu pai, e serviu aos ídolos que servira seu pai, e os adorou.</p>
+      <p>20 E deixou ao Senhor Deus de seus pais, e não andou no caminho do Senhor.</p>
+      <p>21 E os servos de Amom conspiraram contra ele, e mataram o rei na sua própria casa.</p>
+      <p>22 Mas o povo da terra feriu a todos os que conspiraram contra o rei Amom; e o povo da terra constituiu rei em seu lugar a Josias.</p>
+      <p>23 O restante dos atos de Amom, que fez, não está escrito no livro das crônicas dos reis de Judá?</p>
+      <p>24 E o que mais aconteceu nos dias de Amom, não está escrito no livro das crônicas dos reis de Judá?</p>
+      <p>25 E dormiu Amom com seus pais, e foi sepultado em seu sepulcro no jardim de Uzá; e reinou em seu lugar Josias, seu filho.</p>
+      <p>26 E Josias tinha oito anos de idade quando começou a reinar, e reinou trinta e um anos em Jerusalém. E o nome de sua mãe era Jedida, filha de Adaías, de Bozcat.</p>
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis20.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis22.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

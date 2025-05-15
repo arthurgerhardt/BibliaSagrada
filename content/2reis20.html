@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 20</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 20</h2>
+      <p>1 Naqueles dias, Ezequias adoeceu de morte. E veio a ele o profeta Isaías, filho de Amós, e disse-lhe: Assim diz o Senhor: Ordena a tua casa, porque morrerás, e não viverás.</p>
+      <p>2 E virou o seu rosto para a parede, e orou ao Senhor, dizendo:</p>
+      <p>3 Ah! Senhor, peço-te que te lembres de mim, de que andei diante de ti em verdade, e com coração perfeito, e fiz o que era bom aos teus olhos. E chorou Ezequias muito.</p>
+      <p>4 E aconteceu que, antes que Isaías saísse ao meio do pátio, veio a palavra do Senhor a ele, dizendo:</p>
+      <p>5 Volta, e diz a Ezequias, príncipe do meu povo: Assim diz o Senhor, Deus de Davi, teu pai: Ouvi a tua oração, e vi as tuas lágrimas; eis que eu te sararei; ao terceiro dia subirás à casa do Senhor.</p>
+      <p>6 E acrescentarei aos teus dias quinze anos; e livrar-te-ei da mão do rei da Assíria, a ti e a esta cidade; e defenderei esta cidade por amor de mim, e por amor do meu servo Davi.</p>
+      <p>7 E disse Isaías: Toma uma pasta de figos. E tomaram uma pasta de figos, e puseram-na sobre a úlcera; e sarou.</p>
+      <p>8 E disse Ezequias a Isaías: Que sinal terei de que o Senhor me sarará, e que subirei à casa do Senhor ao terceiro dia?</p>
+      <p>9 E disse Isaías: Este te será por sinal do Senhor, de que o Senhor fará isto que falou: A sombra adiantará dez graus, ou adiantará dez graus a sombra?</p>
+      <p>10 E respondeu Ezequias: É fácil que a sombra adiante dez graus; não, mas que a sombra recue dez graus.</p>
+      <p>11 Então o profeta Isaías clamou ao Senhor; e fez voltar a sombra dez graus, que já tinha descido na escada de Acaz.</p>
+      <p>12 Naquele tempo, Merodaque-Baladã, filho de Baladã, rei de Babilônia, enviou cartas e um presente a Ezequias; porque ouvira que Ezequias tinha estado doente.</p>
+      <p>13 E Ezequias os escutou, e lhes mostrou toda a casa do seu tesouro, a prata, e o ouro, e as especiarias, e o bom azeite, e toda a casa dos seus utensílios, e tudo o que havia nos seus tesouros; não houve coisa alguma que Ezequias não lhes mostrasse.</p>
+      <p>14 Então veio o profeta Isaías ao rei Ezequias, e disse-lhe: Que disseram estes homens? e de onde vieram a ti? E disse Ezequias: De uma terra remota vieram a mim, de Babilônia.</p>
+      <p>15 E disse Isaías: Que viram na tua casa? E disse Ezequias: Viram tudo o que há na minha casa; não houve coisa alguma que eu não lhes mostrasse nos meus tesouros.</p>
+      <p>16 Então disse Isaías a Ezequias: Ouve a palavra do Senhor.</p>
+      <p>17 Eis que vêm dias em que tudo o que há na tua casa, e o que teus pais têm acumulado até ao dia de hoje, será levado para Babilônia; nada ficará, diz o Senhor.</p>
+      <p>18 E de teus filhos que sairão de ti, que tu gerarás, tomarão, e serão eunucos no palácio do rei da Babilônia.</p>
+      <p>19 Então disse Ezequias a Isaías: Boa é a palavra do Senhor que falaste. E disse mais: Porventura haverá paz e segurança nos meus dias?</p>
+      <p>20 E o resto dos atos de Ezequias, e tudo o que fez, e o poço que fez, e o aqueduto que fez, eis que estão escritos no livro das crônicas dos reis de Judá.</p>
+      <p>21 E dormiu Ezequias com seus pais; e Manassés, seu filho, reinou em seu lugar.</p>
+     
+
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis19.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis21.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>

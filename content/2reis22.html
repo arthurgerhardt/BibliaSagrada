@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 22</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 22</h2>
+      <p>1 Josias tinha oito anos de idade quando começou a reinar, e reinou trinta e um anos em Jerusalém. E o nome de sua mãe era Jedida, filha de Adaías, de Boscate.</p>
+      <p>2 E fez o que era reto aos olhos do Senhor, e andou em todos os caminhos de Davi, seu pai; e não se desviou nem à direita nem à esquerda.</p>
+      <p>3 E sucedeu que, no décimo oitavo ano do rei Josias, enviou o rei Safã, filho de Azalias, filho de Mesulão, o escrivão, à casa do Senhor, dizendo:</p>
+      <p>4 Vai, e ajunta o dinheiro que foi trazido à casa do Senhor, que os porteiros recolheram do povo.</p>
+      <p>5 E entrega-o nas mãos dos que fazem a obra, que têm a cargo a casa do Senhor; e deem-no aos que estão fazendo a obra, que estão na casa do Senhor, para repararem os estragos da casa;</p>
+      <p>6 aos carpinteiros, e aos edificadores, e aos pedreiros; e para comprarem madeira e pedras lavradas, para repararem a casa.</p>
+      <p>7 Porém não lhes façam prestar contas do dinheiro que lhes for entregue, porque eles procedem com fidelidade.</p>
+      <p>8 E disse o escrivão Safã ao rei: O sacerdote Hilquias achou o livro da lei na casa do Senhor. E deu a Safã, e leu-o.</p>
+      <p>9 E veio o escrivão Safã ao rei, e lhe deu conta, dizendo: Teus servos têm ajuntado o dinheiro que se achou na casa, e o entregaram nas mãos dos que têm a cargo a obra, e que têm a seu cargo a casa do Senhor.</p>
+      <p>10 E disse Safã ao rei: O sacerdote Hilquias me deu um livro. E leu-o diante do rei.</p>
+      <p>11 E sucedeu que, ouvindo o rei as palavras do livro da lei, rasgou os seus vestidos.</p>
+      <p>12 E o rei deu ordem ao sacerdote Hilquias, e a Aicam, filho de Safã, e a Acbor, filho de Micaías, e a Safã, o escrivão, e a Asaías, servo do rei, dizendo:</p>
+      <p>13 Ide, e consultai ao Senhor por mim, e pelo povo, e por todo o Judá, acerca das palavras deste livro que se achou; porque grande é a ira do Senhor que se acendeu contra nós, porquanto não ouviram as palavras deste livro, para fazerem segundo tudo quanto está escrito a nosso respeito.</p>
+      <p>14 Então foram o sacerdote Hilquias, e Aicam, e Acbor, e Safã, e Asaías, ao profeta Hulda, mulher de Salum, filho de Tico, filho de Arás, guarda das vestes; ela habitava em Jerusalém, na segunda parte; e falaram-lhe.</p>
+      <p>15 E ela lhes disse: Assim diz o Senhor Deus de Israel: Quanto às palavras que ouvistes,</p>
+      <p>16 eis que trarei sobre este lugar e sobre os seus habitantes todo o mal que está escrito no livro que leu o rei de Judá.</p>  
+      <p>17 Porque me deixaram, e queimaram incenso a outros deuses, para me provocarem à ira com toda a obra das suas mãos; por isso se acendeu a minha ira contra este lugar, e não se apagará.</p>
+      <p>18 Porém ao rei de Judá, que vos enviou para consultardes ao Senhor, assim direis: Assim diz o Senhor Deus de Israel: Quanto às palavras que ouvistes,</p>
+      <p>19 porquanto o teu coração se comoveu, e te humilhaste perante o Senhor, ouvindo o que eu falei contra este lugar, e contra os seus habitantes, que seriam por desolação e por maldição; e rasgaste os teus vestidos, e choraste perante mim, também eu ouvi, diz o Senhor.</p>
+      <p>20 Portanto, eis que eu te ajuntarei a teus pais, e serás recolhido em paz, e não verás todo o mal que trarei sobre este lugar. E trouxeram ao rei a resposta.</p>
+     
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis21.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis23.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
