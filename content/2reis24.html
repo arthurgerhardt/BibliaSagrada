@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>2 Reis 24</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>2 Reis 24</h2>
+      <p>1 Naqueles dias subiu Nabucodonosor, rei da Babilônia, e Jeoaquim se fez seu servo por três anos; depois se tornou a rebelar-se contra ele.</p>
+      <p>2 E o Senhor enviou contra ele bandos de caldeus, e bandos de sírios, e bandos de moabitas, e bandos dos filhos de Amom; e os enviou contra Judá, para o destruírem, segundo a palavra do Senhor, que tinha falado pelo ministério dos seus servos, os profetas.</p>
+      <p>3 Certamente, pelo mandado do Senhor veio isto sobre Judá, para o lançar fora da sua presença, por causa dos pecados de Manassés, segundo tudo quanto fez;</p>
+      <p>4 e também por causa do sangue inocente que ele derramou, porque encheu a Jerusalém de sangue inocente; e o Senhor não quis perdoar.</p>
+      <p>5 Quanto ao mais dos atos de Jeoaquim, e a tudo quanto fez, não está escrito no livro das crônicas dos reis de Judá?</p>
+      <p>6 E dormiu Jeoaquim com seus pais; e reinou em seu lugar Joaquim, seu filho.</p>
+      <p>7 E o rei do Egito não saiu mais da sua terra, porque o rei da Babilônia tinha tomado tudo quanto era do rei do Egito, desde o ribeiro do Egito até o rio Eufrates.</p>
+      <p>8 Joaquim tinha dezoito anos de idade quando começou a reinar, e reinou três meses em Jerusalém. E o nome de sua mãe era Neusta, filha de Elnatã, de Jerusalém.</p>
+      <p>9 E fez o que era mau aos olhos do Senhor, segundo tudo quanto tinha feito seu pai.</p>
+      <p>10 Naquele tempo subiram os servos de Nabucodonosor, rei da Babilônia, a Jerusalém, e a cidade cercaram.</p>
+      <p>11 E veio Nabucodonosor, rei da Babilônia, à cidade, enquanto seus servos a cercavam.</p>
+      <p>12 E Jeoaquim, rei de Judá, saiu a encontrar-se com o rei da Babilônia, ele e sua mãe, e seus servos, e seus príncipes, e seus oficiais; e o rei da Babilônia o tomou prisioneiro no oitavo ano do seu reinado.</p>
+      <p>13 E levou de lá todos os tesouros da casa do Senhor, e os tesouros da casa do rei, e despedaçou todos os utensílios de ouro que Salomão, rei de Israel, tinha feito no templo do Senhor, como o Senhor tinha dito.</p>
+      <p>14 E levou para a Babilônia todos os príncipes, e todos os poderosos, e todos os valentes, e todos os artífices, e todos os ferreiros; eram dez mil cativos. E não ficou senão o povo mais pobre da terra.</p>
+      <p>15 E levou Jeoaquim para a Babilônia; e a mãe do rei, e as mulheres do rei, e os seus oficiais, e os poderosos da terra, levou cativos de Judá para a Babilônia.</p>
+      <p>16 E todos os homens valentes, sete mil, e os artífices e ferreiros, mil, todos os homens valentes, aptos para a guerra, o rei da Babilônia levou cativos para a Babilônia.</p>
+      <p>17 E o rei da Babilônia fez rei em Judá a Matanias, seu tio, e lhe mudou o nome para Zedequias.</p>
+      <p>18 Zedequias tinha vinte e um anos de idade quando começou a reinar, e reinou onze anos em Jerusalém. E o nome de sua mãe era Amital, filha de Jeremias, de Libna.</p>
+      <p>19 E fez o que era mau aos olhos do Senhor, segundo tudo quanto tinha feito Jeoaquim.</p>
+      <p>20 Porque por causa da ira do Senhor se sucedeu em Jerusalém e em Judá, até que os lançou fora da sua presença. E Zedequias se rebelou contra o rei da Babilônia.</p>
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/2reis23.html">Capítulo Anterior</a>
+      <a class="button" href="../content/2reis25.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
