@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1 Crônicas 13</title>
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+  <div class="theme-toggle">
+    <button id="theme-toggle-btn">Trocar Tema</button>
+  </div>
+  <header>
+    <h1>Bíblia Sagrada</h1>
+  </header>
+  <main>
+    <section class="bible-book">
+      <h2>1 Crônicas 13</h2>
+      <p>1 E Davi consultou com os capitães de mil e de cem, e com todos os príncipes.</p>
+      <p>2 E disse Davi a toda a congregação de Israel: Se bem vos parece, e se vem do Senhor nosso Deus, enviemos depressa mensageiros a todos os nossos outros irmãos em todas as terras de Israel, e também aos sacerdotes e levitas nas suas cidades e nos seus arredores, para que se reúnam conosco.</p>
+      <p>3 E tragam a arca do nosso Deus a nós; porque não a temos buscado nos dias de Saul.</p>
+      <p>4 E toda a congregação disse que assim se fizesse; porque isso parecia bem aos olhos de todo o povo.</p>
+      <p>5 Então Davi ajuntou a toda a congregação de Israel, desde o rio até a cidade de Davi, para trazer a arca do Senhor.</p>
+      <p>6 E subiu Davi, e todo o Israel, à cidade de Baalá, que é Quiriate-Jearim, que pertence a Judá, para trazer de lá a arca de Deus, que é chamada pelo nome do Senhor dos Exércitos, que se assenta entre os querubins.</p>
+      <p>7 E puseram a arca de Deus sobre um carro novo, e a levaram da casa de Abinadabe; e Uza e Aiô guiavam o carro.</p>
+      <p>8 E Davi e todo o Israel alegraram-se diante de Deus com todas as suas forças, e com cânticos, e com harpas, e com saltérios, e com tamboris, e com címbalos, e com trombetas.</p>
+      <p>9 E, chegando à eira de Quidon, Uza pôs a mão para segurar a arca, porque os bois tropeçaram.</p>
+      <p>10 E a ira do Senhor se acendeu contra Uza, e feriu-o, porque pôs a mão na arca; e morreu ali diante de Deus.</p>
+      <p>11 E Davi se indignou, porque o Senhor havia quebrantado a Uza; e chamou aquele lugar Pérez-Uza, até o dia de hoje.</p>
+      <p>12 E Davi teve medo de Deus naquele dia, dizendo: Como virá a mim a arca de Deus?</p>
+      <p>13 E não trouxe Davi a arca para si, à cidade de Davi; mas levou-a para a casa de Obede-Edom, o geteu.</p>
+      <p>14 E ficou a arca de Deus na casa de Obede-Edom, o geteu, três meses; e abençoou o Senhor a Obede-Edom e toda a sua casa.</p>
+     
+
+      <div class="narrator"></div>
+      <button id="narrate-btn">Ouvir Narração</button>
+      </div>
+      <script>
+        document.getElementById('narrate-btn').addEventListener('click', function () {
+          const text = document.querySelector('.bible-book').innerText;
+          const utterance = new SpeechSynthesisUtterance(text);
+          utterance.lang = 'pt-BR';
+          speechSynthesis.speak(utterance);
+        });
+      </script>
+
+    </section>
+    <div class="button-container">
+      <a class="button" href="../content/1cronicas12.html">Capítulo Anterior</a>
+      <a class="button" href="../content/1cronicas14.html">Próximo Capítulo</a>
+      <a class="button" href="../sumary_index.html">Sumário</a>
+      <a class="button" href="../index.html">Início</a>
+    </div>
+  </main>
+  <script src="../scripts/script.js"></script>
+</body>
+
+</html>
