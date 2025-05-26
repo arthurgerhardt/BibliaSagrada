@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 20</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 20</h2>
+            <p>1 E sucedeu que, no ano seguinte, no tempo em que os reis costumam sair à guerra, Joabe levou o exército e devastou a terra dos filhos de Amom; e veio e sitiou Rabá. Porém Davi ficou em Jerusalém; e Joabe feriu a Rabá, e a destruiu.</p>
+            <p>2 E Davi tomou a coroa de seu rei da cabeça dele, e achou que o seu peso era de um talento de ouro, e havia nela pedras preciosas; e foi posta sobre a cabeça de Davi; e também tirou muito despojo da cidade.</p>
+            <p>3 E tirou dali o povo que nela havia, e o fez passar por serras, e por trilhos de ferro, e por machados de ferro; e assim fez Davi a todas as cidades dos filhos de Amom. Depois Davi e todo o povo voltaram a Jerusalém.</p>
+            <p>4 E depois disto houve guerra em Gezer, com os filisteus; então Sibecai, husatita, matou a Sipai, que era dos filhos de Rafe; e foram abatidos os filisteus.</p>
+            <p>5 E houve outra guerra com os filisteus; e Elã, filho de Jair, matou a Lami, irmão de Golias, geteu, cuja lança tinha o cabo como um eixo de tecelão.</p>
+            <p>6 E houve ainda outra guerra em Gate; e havia ali um homem de grande estatura, que tinha seis dedos em cada mão, e seis dedos em cada pé, vinte e quatro no total; e também este era descendente dos gigantes.</p>
+            <p>7 E quando ele afrontava a Israel, Jônatas, filho de Simeia, irmão de Davi, o matou.</p>
+            <p>8 Estes nasceram dos gigantes em Gate; e caíram pela mão de Davi e pela mão dos seus servos.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function () {
+                    const text = document.querySelector('.bible-book').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'pt-BR';
+                    speechSynthesis.speak(utterance);
+                });
+            </script>
+
+        </section>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas19.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas21.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

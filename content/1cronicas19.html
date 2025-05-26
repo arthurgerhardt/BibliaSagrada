@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 19</h2>
+            <p>1 Depois disto sucedeu que morreu Naás, rei dos filhos de Amom; e reinou em seu lugar seu filho.</p>
+            <p>2 E disse Davi: Usarei de bondade para com Hanum, filho de Naás, porque seu pai usou de bondade comigo. Assim Davi enviou mensageiros para consolá-lo acerca de seu pai. Porém os servos de Davi chegaram à terra dos filhos de Amom, a Hanum, para o consolarem.</p>
+            <p>3 Mas os príncipes dos filhos de Amom disseram a Hanum: Pensa tu que Davi honra teu pai, porque te enviou consoladores? Não vieram, porventura, seus servos a ti para esquadrinhar, e derrubar, e espiar a terra?</p>
+            <p>4 Então Hanum tomou os servos de Davi, e lhes rapou a metade da barba, e lhes cortou as vestes pelo meio, até as nádegas, e os despediu.</p>
+            <p>5 E foram e o fizeram saber a Davi; então ele enviou mensageiros ao seu encontro, porque os homens estavam muito envergonhados; e o rei disse: Ficai em Jericó até que vossa barba cresça, e depois voltareis.</p>
+            <p>6 E vendo os filhos de Amom que se haviam feito odiosos a Davi, enviaram Hanum e os filhos de Amom mil talentos de prata, para alistar carros e cavaleiros da Síria de Damasco, e da Síria de Maaca, e dos filhos de Tob.</p>
+            <p>7 E alistaram para si trinta e dois mil carros, e o rei de Maaca e seu povo; e vieram, e acamparam diante de Medeba. E os filhos de Amom se reuniram de suas cidades, e vieram à batalha.</p>
+            <p>8 E ouvindo isto, Davi enviou a Joabe, e a todo o exército dos valentes.</p>
+            <p>9 E os filhos de Amom saíram, e ordenaram a batalha à porta da cidade; mas os reis que tinham vindo estavam à parte no campo.</p>
+            <p>10 Vendo, pois, Joabe que a batalha se apresentava contra ele diante e atrás, escolheu dos melhores de Israel, e os formou em linha contra os sírios.</p>
+            <p>11 E o resto do povo entregou nas mãos de Abisai, seu irmão; e eles se puseram em ordem de batalha contra os filhos de Amom.</p>
+            <p>12 E disse: Se os sírios forem mais fortes do que eu, tu virás socorrer-me; e se os filhos de Amom forem mais fortes do que tu, então eu te socorrerei.</p>
+            <p>13 Esforça-te, e esforcemo-nos pelo nosso povo, e pelas cidades do nosso Deus; e faça o Senhor o que bem parecer aos seus olhos.</p>
+            <p>14 Então se chegou Joabe, e o povo que estava com ele, diante dos sírios para a batalha; e fugiram de diante dele.</p>
+            <p>15 Vendo, pois, os filhos de Amom que os sírios fugiram, também eles fugiram de diante de Abisai, irmão de Joabe, e entraram na cidade. Então Joabe voltou para Jerusalém.</p>
+            <p>16 E vendo os sírios que tinham sido derrotados diante de Israel, enviaram mensageiros, e fizeram sair os sírios que estavam dalém do rio; e Sofaque, chefe do exército de Hadarezer, vinha diante deles.</p>
+            <p>17 E avisado Davi, ajuntou a todo o Israel, passou o Jordão, e veio contra eles, e ordenou a batalha contra eles. E tendo Davi ordenado a batalha contra os sírios, pelejaram contra ele.</p>
+            <p>18 Porém os sírios fugiram de diante de Israel; e Davi matou dos sírios sete mil homens de carros, e quarenta mil homens de pé; também matou a Sofaque, chefe do exército.</p>
+            <p>19 E vendo os servos de Hadarezer que foram derrotados diante de Israel, fizeram paz com Davi, e serviram-no; e nunca mais quiseram os sírios socorrer aos filhos de Amom.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function () {
+                    const text = document.querySelector('.bible-book').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'pt-BR';
+                    speechSynthesis.speak(utterance);
+                });
+            </script>
+
+        </section>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas18.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas20.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>

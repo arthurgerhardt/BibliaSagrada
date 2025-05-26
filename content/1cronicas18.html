@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 18</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 18</h2>
+            <p>1 Depois disto sucedeu que Davi feriu os filisteus, e os abateu; e tomou a Gáte e as suas aldeias da mão dos filisteus.</p>
+            <p>2 Também feriu os moabitas; e os moabitas foram servos de Davi, trazendo presentes.</p>
+            <p>3 E Davi feriu a Hadadezer, rei de Zobá, indo este a restabelecer o seu domínio junto ao rio Eufrates.</p>
+            <p>4 E Davi lhe tomou mil carros, e sete mil cavaleiros, e vinte mil homens de pé; e Davi aleijou todos os cavalos dos carros, mas reservou deles cem carros.</p>
+            <p>5 E vieram os sírios de Damasco ajudar a Hadadezer, rei de Zobá; e Davi feriu dos sírios vinte e dois mil homens.</p>
+            <p>6 Então Davi pôs guarnições na Síria de Damasco; e os sírios foram servos de Davi, trazendo presentes; e o Senhor deu vitória a Davi por onde quer que foi.</p>
+            <p>7 E Davi tomou os escudos de ouro que traziam os servos de Hadadezer, e os trouxe a Jerusalém.</p>
+            <p>8 Também de Tibate e de Cun, cidades de Hadadezer, tomou o rei Davi muito bronze, com que Salomão fez o mar de bronze, as colunas e os utensílios de bronze.</p>
+            <p>9 E ouvindo Toi, rei de Hamate, que Davi ferira todo o exército de Hadadezer,</p>
+            <p>10 Enviou a Davi seu filho Hadorão, para o saudar e bendizer por haver pelejado contra Hadadezer, e o ferido; porque Toi tinha guerra com Hadadezer; e em sua mão trazia vasos de prata, e vasos de ouro, e vasos de bronze;</p>
+            <p>11 Os quais também o rei Davi dedicou ao Senhor, juntamente com a prata e o ouro que tinha dedicado de todas as nações que subjugara:</p>
+            <p>12 De Edom, e de Moabe, e dos filhos de Amom, e dos filisteus, e de Amaleque; e também de Hadadezer, filho de Reobe, rei de Zobá.</p>
+            <p>13 E Davi fez nome quando voltou, ferindo os edomitas no vale do Sal, dezoito mil.</p>
+            <p>14 E pôs guarnições em Edom; e todos os edomitas foram servos de Davi; e o Senhor deu vitória a Davi por onde quer que foi.</p>
+            <p>15 Reinou, pois, Davi sobre todo o Israel, e fazia juízo e justiça a todo o seu povo.</p>
+            <p>16 E Joabe, filho de Zeruia, era o general do exército; e Josafá, filho de Ailude, era o cronista;</p>
+            <p>17 E Zadoque, filho de Aitube, e Abimeleque, filho de Abiatar, eram os sacerdotes; e Susa era o escrivão;</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function () {
+                    const text = document.querySelector('.bible-book').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'pt-BR';
+                    speechSynthesis.speak(utterance);
+                });
+            </script>
+
+        </section>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas17.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas19.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
