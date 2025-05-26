@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 17</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 17</h2>
+            <p>1 E aconteceu que, habitando Davi em sua casa, disse Davi ao profeta Natã: Eis que eu habito em casa de
+                cedro, e a arca da aliança do Senhor está debaixo de cortinas.</p>
+            <p>2 Então Natã disse a Davi: Tudo quanto está no teu coração, vai, e faze-o; porque Deus é contigo.</p>
+            <p>3 Porém sucedeu que naquela mesma noite veio a palavra de Deus a Natã, dizendo:</p>
+            <p>4 Vai, e dize a meu servo Davi: Assim diz o Senhor: Tu não me edificarás casa para minha habitação;</p>
+            <p>5 Porque não tenho habitado em casa alguma desde o dia em que fiz subir a Israel até ao dia de hoje; mas
+                fui de tenda em tenda, e de tabernáculo em tabernáculo.</p>
+            <p>6 Em todo o lugar por onde andei com todo o Israel, porventura falei alguma palavra a algum dos juízes de
+                Israel, a quem mandei apascentar o meu povo, dizendo: Por que não me edificais uma casa de cedro?</p>
+            <p>7 Agora, pois, assim dirás a meu servo Davi: Assim diz o Senhor dos Exércitos: Eu te tomei do curral,
+                de detrás do rebanho, para que fosses príncipe sobre o meu povo Israel;
+            </p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+            </div>
+            <script>
+                document.getElementById('narrate-btn').addEventListener('click', function () {
+                    const text = document.querySelector('.bible-book').innerText;
+                    const utterance = new SpeechSynthesisUtterance(text);
+                    utterance.lang = 'pt-BR';
+                    speechSynthesis.speak(utterance);
+                });
+            </script>
+
+        </section>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas18.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+</body>
+
+</html>
