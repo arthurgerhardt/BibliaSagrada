@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 25</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 25</h2>
+            <p>1 E Davi e os chefes do exército separaram para o serviço os filhos de Asafe, de Hemã e de Jedutum, que profetizavam com harpas, com saltérios e com címbalos; e o número dos homens que faziam a obra segundo o seu ministério era:</p>
+            <p>2 Dos filhos de Asafe: Zacur, José, Netanias e Asarela, filhos de Asafe, sob a direção de Asafe, que profetizava segundo a ordem do rei.</p>
+            <p>3 Dos filhos de Jedutum: Gedalias, Zeri, Jesaías, Hasabias e Matitias, seis, sob a direção de seu pai Jedutum, que profetizava com harpa para louvar e para dar graças ao Senhor.</p>
+            <p>4 Dos filhos de Hemã: Buquias, Matanias, Uziel, Sebuel, Jerimote, Hanã, Hanani, Eliatá, Gidalti, Romamti-Ezer, Josbecasa, Maloti, Hotir e Mahaziote.</p>
+            <p>5 Todos estes foram filhos de Hemã, vidente do rei, na palavra de Deus, para exaltar o poder; e Deus deu a Hemã quatorze filhos e três filhas.</p>
+            <p>6 Todos estes estavam sob a direção de seus pais, para cantarem na casa do Senhor, com címbalos, saltérios e harpas, para o serviço da casa de Deus, segundo a ordem do rei Davi.</p>
+            <p>7 E o número deles, com seus irmãos instruídos na música do Senhor, todos os que foram peritos, era duzentos e oitenta e oito.</p>
+            <p>8 E lançaram sortes para o serviço, todos, tanto o pequeno como o grande, mestre como discípulo.</p>
+            <p>9 E saiu a primeira sorte para Asafe, a de José; e a segunda para Gedalias, com seus irmãos e filhos, doze;</p>
+            <p>10 a terceira para Zacur, seus filhos e seus irmãos, doze;</p>
+            <p>11 a quarta para Isri, seus filhos e seus irmãos, doze;</p>
+            <p>12 a quinta para Netanias, seus filhos e seus irmãos, doze;</p>
+            <p>13 a sexta para Buquias, seus filhos e seus irmãos, doze;</p>
+            <p>14 a sétima para Jesarela, seus filhos e seus irmãos, doze;</p>
+            <p>15 a oitava para Jesaías, seus filhos e seus irmãos, doze;</p>
+            <p>16 a nona para Matanias, seus filhos e seus irmãos, doze;</p>
+            <p>17 a décima para Simei, seus filhos e seus irmãos, doze;</p>
+            <p>18 a décima primeira para Azarel, seus filhos e seus irmãos, doze;</p>
+            <p>19 a décima segunda para Hasabias, seus filhos e seus irmãos, doze;</p>
+            <p>20 a décima terceira para Subael, seus filhos e seus irmãos, doze;</p>
+            <p>21 a décima quarta para Matitias, seus filhos e seus irmãos, doze;</p>
+            <p>22 a décima quinta para Jeremote, seus filhos e seus irmãos, doze;</p>
+            <p>23 a décima sexta para Hanã, seus filhos e seus irmãos, doze;</p>
+            <p>24 a décima sétima para Josbecasa, seus filhos e seus irmãos, doze;</p>
+            <p>25 a décima oitava para Hanani, seus filhos e seus irmãos, doze;</p>
+            <p>26 a décima nona para Maloti, seus filhos e seus irmãos, doze;</p>
+            <p>27 a vigésima para Eliatá, seus filhos e seus irmãos, doze;</p>
+            <p>28 a vigésima primeira para Hotir, seus filhos e seus irmãos, doze;</p>
+            <p>29 a vigésima segunda para Gidalti, seus filhos e seus irmãos, doze;</p>
+            <p>30 a vigésima terceira para Mahaziote, seus filhos e seus irmãos, doze;</p>
+            <p>31 a vigésima quarta para Romamti-Ezer, seus filhos e seus irmãos, doze.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas24.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas26.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

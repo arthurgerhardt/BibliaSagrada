@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 24</h2>
+            <p>1 E foram repartidos os turnos dos filhos de Arão. Os filhos de Arão: Nadabe, Abiú, Eleazar e Itamar.</p>
+            <p>2 Mas Nadabe e Abiú morreram antes de seu pai, e não tiveram filhos; por isso Eleazar e Itamar exerceram o sacerdócio.</p>
+            <p>3 E Davi, com Zadoque, dos filhos de Eleazar, e com Aimeleque, dos filhos de Itamar, os repartiu segundo o seu ministério.</p>
+            <p>4 E foram achados mais chefes dos filhos de Eleazar do que dos filhos de Itamar; e assim foram repartidos, os filhos de Eleazar, por chefes de casas paternas, dezesseis; e os filhos de Itamar, por chefes de casas paternas, oito.</p>
+            <p>5 E foram repartidos por sortes, estes com aqueles; porque havia chefes do santuário, e chefes de Deus, tanto dos filhos de Eleazar como dos filhos de Itamar.</p>
+            <p>6 E Semaías, filho de Netanel, o escriba, um levita, escreveu-os perante o rei, e os príncipes, e o sacerdote Zadoque, e Aimeleque, filho de Abiatar, e os chefes dos pais dos sacerdotes e dos levitas; um chefe da casa paterna foi tomado para Eleazar, e outro chefe da casa paterna foi tomado para Itamar.</p>
+            <p>7 Saiu, pois, a primeira sorte para Jeoiaribe, o segundo para Jedaias,</p>
+            <p>8 o terceiro para Harim, o quarto para Seorim,</p>
+            <p>9 o quinto para Malquias, o sexto para Miamim,</p>
+            <p>10 o sétimo para Coz, o oitavo para Abias,</p>
+            <p>11 o nono para Jesua, o décimo para Secanias,</p>
+            <p>12 o undécimo para Eliasibe, o duodécimo para Jacim,</p>
+            <p>13 o décimo terceiro para Hupa, o décimo quarto para Jesebeabe,</p>
+            <p>14 o décimo quinto para Bilga, o décimo sexto para Imer,</p>
+            <p>15 o décimo sétimo para Hezir, o décimo oitavo para Afes,</p>
+            <p>16 o décimo nono para Petaías, o vigésimo para Ezequias,</p>
+            <p>17 o vigésimo primeiro para Jaquim, o vigésimo segundo para Gamul,</p>
+            <p>18 o vigésimo terceiro para Delaías, o vigésimo quarto para Maazias.</p>
+            <p>19 Estes foram os seus turnos, para o seu ministério, quando entravam na casa do Senhor, segundo o estatuto que lhes tinha ordenado seu pai Arão, como o Senhor Deus de Israel lhe tinha mandado.</p>
+            <p>20 E dos filhos de Levi, os restantes dos filhos de Amrão: Subael; dos filhos de Subael: Jediías.</p>
+            <p>21 Quanto a Reabias, dos filhos de Reabias: Isias, o chefe.</p>
+            <p>22 Dos isaritas: Selomite; dos filhos de Selomite: Jaate.</p>
+            <p>23 E dos filhos de Hebrom: Jerias, o chefe; Amarias, o segundo; Jaaziel, o terceiro; e Jecamão, o quarto.</p>
+            <p>24 Dos filhos de Uziel: Mica; dos filhos de Mica: Samir.</p>
+            <p>25 Irmão de Mica: Issias; dos filhos de Issias: Zacarias.</p>
+            <p>26 Dos filhos de Merári: Mali e Musi; dos filhos de Jaazias: Bino.</p>
+            <p>27 Dos filhos de Merári, pelos filhos de Jaazias: Bino, e Soão, e Zacur, e Ibri.</p>
+            <p>28 Dos filhos de Mali: Eleazar, que não teve filhos.</p>
+            <p>29 Dos filhos de Quis: Jerameel.</p>
+            <p>30 E os filhos de Musi: Mali, e Éder, e Jerimote; estes foram os filhos dos levitas, segundo as casas de seus pais.</p>
+            <p>31 Estes também lançaram sortes, como seus irmãos, os filhos de Arão, perante o rei Davi, e Zadoque, e Aimeleque, e os chefes dos pais dos sacerdotes e dos levitas; a casa paterna dos mais jovens foi tomada por sorte.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 Crônicas 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>1 Crônicas 22</h2>
+            <p>1 Então disse Davi: Este é o lugar do templo do Senhor Deus, e este é o altar do holocausto para Israel.</p>
+            <p>2 E ordenou Davi que se ajuntassem os estrangeiros que havia na terra de Israel; e designou pedreiros para prepararem pedras de cantaria para edificar a casa de Deus.</p>
+            <p>3 E Davi preparou ferro em abundância para os pregos das portas, e para as juntas, e bronze em abundância sem peso;</p>
+            <p>4 e também madeira de cedro em abundância; porque os sidônios e os tirios trouxeram a Davi madeira de cedro em abundância.</p>
+            <p>5 E disse Davi: Salomão, meu filho, é ainda jovem e inexperiente, e a casa que se há de edificar ao Senhor deve ser excessivamente magnífica, de renome e de glória em todas as terras; eu, pois, agora a prepararei. Assim Davi preparou abundantemente antes da sua morte.</p>
+            <p>6 E chamou Salomão, seu filho, e lhe ordenou que edificasse uma casa ao Senhor Deus de Israel.</p>
+            <p>7 E disse Davi a Salomão: Meu filho, eu tinha no coração edificar uma casa ao nome do Senhor meu Deus;</p>
+            <p>8 mas a palavra do Senhor veio a mim, dizendo: Tu tens derramado muito sangue, e tens feito grandes guerras; não edificarás casa ao meu nome, porque muito sangue derramaste na terra diante de mim.</p>
+            <p>9 Eis que te nascerá um filho, o qual será homem de descanso; porque eu lhe darei descanso de todos os seus inimigos em redor; por isso o seu nome será Salomão, e eu darei paz
+            <p>10 Ele edificará uma casa ao meu nome, e me será por filho, e eu lhe serei por pai, e confirmarei o trono de seu reino sobre Israel, para sempre. </p>
+            <p>11 Agora, pois, meu filho, o Senhor seja contigo, e tu prosperes, e edifiques a casa do Senhor teu Deus, como ele tem falado de ti.</p>
+            <p>12 Somente o Senhor te dê entendimento e inteligência, e te ponha sobre Israel; e isto para guardares a lei do Senhor teu Deus.</p>
+            <p>13 Então prosperarás, se cuidares de cumprir os estatutos e os juízos que o Senhor ordenou a Moisés acerca de Israel; esforça-te, e tem bom ânimo; não temas, nem te assustes.</p>
+            <p>14 Eis que, com muito trabalho, tenho preparado para a casa do Senhor cem mil talentos de ouro, e um milhão de talentos de prata, e bronze e ferro em abundância, porque é coisa sem peso; também madeira e pedra tenho preparado; tu, porém, acrescenta a isto.</p>
+            <p>15 E tens contigo operários em abundância, cortadores, pedreiros, carpinteiros, e todo homem hábil em toda sorte de obra;</p>
+            <p>16 do ouro, da prata, do bronze e do ferro, não há conta; levanta-te, pois, e trabalha; e o Senhor seja contigo.</p>
+            <p>17 E Davi ordenou a todos os príncipes de Israel que ajudassem a Salomão, seu filho, dizendo:</p>
+            <p>18 Porventura não está convosco o Senhor vosso Deus, e não vos deu repouso em redor? Pois entregou nas minhas mãos os habitantes da terra, e a terra foi sujeita perante o Senhor e perante o seu povo.</p>
+            <p>19 Disponde, pois, agora o vosso coração e a vossa alma para buscardes ao Senhor vosso Deus; levantai-vos, e edificai o santuário do Senhor Deus, para trazerdes a arca do concerto do Senhor, e os utensílios sagrados de Deus, para a casa que se há de edificar ao nome do Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

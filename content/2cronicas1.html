@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 1</h2>
+            <p>1 E Salomão, filho de Davi, fortificou-se em seu reino; e o Senhor seu Deus foi com ele, e engrandeceu-o
+                sobremaneira.</p>
+            <p>2 E falou Salomão a todo o Israel, aos capitães de mil e de cem, aos juízes e a todos os governadores em
+                todo o Israel, chefes das famílias.</p>
+            <p>3 E Salomão, e toda a congregação com ele, foi ao alto que estava em Gibeom; porque ali estava o
+                tabernáculo
+                da congregação de Deus, que Moisés, servo do Senhor, tinha feito no deserto.</p>
+            <p>4 Mas a arca de Deus tinha Davi trazido de Quiriate-Jearim, ao lugar que Davi lhe havia preparado; porque
+                ele tinha estendido uma tenda para ela em Jerusalém.</p>
+            <p>5 E o altar de bronze, que Bezalel, filho de Uri, filho de Hur, tinha feito, estava ali diante do
+                tabernáculo
+                do Senhor; e Salomão e a congregação o buscaram.</p>
+            <p>6 E Salomão subiu ali ao altar de bronze, diante do Senhor, que estava no tabernáculo da congregação, e
+                ofereceu sobre ele mil holocaustos.</p>
+            <p>7 Naquela mesma noite apareceu Deus a Salomão, e disse-lhe: Pede o que quiseres que eu te dê.</p>
+            <p>8 E Salomão disse a Deus: Tu tens usado com Davi, meu pai, grande misericórdia, e a mim me fizeste rei em
+                seu
+                lugar.</p>
+            <p>9 Agora, pois, ó Senhor Deus, confirme-se a tua palavra a Davi, meu pai; porque tu me fizeste rei sobre
+                um
+                povo tão numeroso como o pó da terra.</p>
+            <p>10 Dá-me agora sabedoria e conhecimento, para que eu possa sair e entrar diante deste povo; porque quem
+                pode
+                julgar a este teu tão grande povo?</p>
+            <p>11 E Deus disse a Salomão: Porque foi isto no teu coração, e não pediste riquezas, bens ou honra, nem a
+                morte
+                dos que te odeiam, nem pediste muitos dias de vida, mas pediste para ti sabedoria e conhecimento, para
+                julgares
+                o meu povo sobre o qual te fiz rei;</p>
+            <p>12 sabedoria e conhecimento te são dados; e também te darei riquezas, bens e honra, tais como não tiveram
+                os
+                reis que foram antes de ti, nem terão os que vierem depois de ti.</p>
+            <p>13 Assim Salomão veio a Jerusalém, do alto que estava em Gibeom, de diante da tenda da congregação; e
+                reinou sobre Israel.</p>
+            <p>14 E Salomão ajuntou carros e cavaleiros, e teve mil e quatrocentos carros, e doze mil cavaleiros; os
+                quais pôs nas cidades dos carros, e junto ao rei em Jerusalém.</p>
+            <p>15 E o rei fez que em Jerusalém houvesse prata e ouro como pedras, e cedros como os sicômoros que estão
+                nas planícies em abundância.</p>
+            <p>16 E os cavalos que Salomão tinha eram trazidos do Egito e de Queve; e os mercadores do rei os compravam
+                de Queve, a preço certo.</p>
+            <p>17 E subia e saia um carro do Egito por seiscentos siclos de prata, e um cavalo por cento e cinquenta; e
+                assim, por meio deles, se traziam todos os reis dos heteus e os reis da Síria.</p>
+                
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas29.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

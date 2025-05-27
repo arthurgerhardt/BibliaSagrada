@@ -30,5 +30,71 @@
                 homens que puxavam da espada, e em Judá quatrocentos e setenta mil homens que puxavam da espada.</p>
             <p>6 Mas Levi e Benjamim não contou entre eles, porque a palavra do rei era abominável a Joabe.</p>
             <p>7 E este negócio pareceu mal aos olhos de Deus; pelo que feriu a Israel.</p>
+            <p>8 E disse Davi a Deus: Muito pequei por ter feito isto; porém agora, peço-te, tira a iniqüidade do teu
+                servo, porque procedi muito loucamente.</p>
+            <p>9 E falou o Senhor a Gade, vidente de Davi, dizendo:</p>
+            <p>10 Vai, e fala a Davi, dizendo: Assim diz o Senhor: Três coisas te ofereço; escolhe uma delas, para que
+                eu a faça a ti.</p>
+            <p>11 E veio Gade a Davi, e disse-lhe: Assim diz o Senhor: Escolhe:</p>
+            <p>12 Ou três anos de fome, ou três meses fugindo diante dos teus inimigos, e sendo consumido pela espada
+                dos teus inimigos, ou três dias a espada do Senhor, e a peste na terra, e o anjo do Senhor destruindo em
+                todo o termo de Israel. Vê, pois, que resposta hei de levar ao que me enviou. </p>
+            <p>13 Então disse Davi a Gade: Estou em grande angústia; caiamos, pois, nas mãos do Senhor, porque as suas
+                misericórdias são muitíssimas; mas não caia eu nas mãos dos homens.</p>
+            <p>14 Assim o Senhor enviou a peste sobre Israel, e caíram de Israel setenta mil homens.</p>
+            <p>15 E Deus enviou um anjo a Jerusalém, para destruí-la; e quando ele estava destruindo, o Senhor olhou,
+                e arrependeu-se daquele mal, e disse ao anjo que destruía: Basta; agora retira a tua mão. E o anjo do
+                Senhor estava junto à eira de Ornã, o jebuseu.</p>
+            <p>16 E Davi levantou os olhos, e viu o anjo do Senhor que estava entre a terra e o céu, com a sua espada
+                desembainhada na sua mão, estendida sobre Jerusalém; então Davi e os anciãos, vestidos de saco, caíram
+                sobre o rosto.</p>
+            <p>17 E disse Davi a Deus: Não sou eu que mandei contar o povo? Sou eu que pequei, e fiz mal; mas estas
+                ovelhas, que fizeram? Ó Senhor meu Deus, seja agora a tua mão contra mim, e contra a casa de meu pai;
+                mas não contra o teu povo, para que seja ferido.</p>
+            <p>18 Então o anjo do Senhor ordenou a Gade que dissesse a Davi que subisse, e levantasse um altar ao Senhor
+                na eira de Ornã, o jebuseu.</p>
+            <p>19 E subiu Davi, segundo a palavra de Gade, que falara em nome do Senhor.</p>
+            <p>20 E Ornã voltou-se, e viu o anjo; e seus quatro filhos que estavam com ele esconderam-se; e Ornã estava
+                debulhando trigo.</p>
+            <p>21 E Davi veio a Ornã; e Ornã olhou, e viu a Davi, e saiu da eira, e inclinou-se diante de Davi com o
+                rosto em terra.</p>
+            <p>22 E disse Davi a Ornã: Dá-me este lugar da eira, para que eu edifique nele um altar ao Senhor; dá-mo por
+                preço, para que a praga seja retirada do povo.</p>
+            <p>23 E disse Ornã a Davi: Toma-o para ti, e o rei meu senhor faça o que bem parecer aos seus olhos; eis
+                aqui bois para o holocausto, e trilhos de bois para a lenha, e o trigo da oferta de manjares; tudo isto
+                dou ao rei.</p>
+            <p>24 E disse o rei Davi a Ornã: Não; mas por um preço te comprarei; porque não tomarei o que é teu para o
+                Senhor, nem oferecerei holocausto sem custo.</p>
+            <p>25 Assim Davi deu a Ornã por aquele lugar seiscentos siclos de ouro.</p>
+            <p>26 E edificou ali Davi um altar ao Senhor, e ofereceu holocaustos e ofertas pacíficas; e invocou
+                ao Senhor, o qual lhe respondeu com fogo do céu sobre o altar do holocausto.</p>
+            <p>27 E o Senhor falou ao anjo, e ele pôs a sua espada na bainha.</p>
+            <p>28 Naquele tempo, vendo Davi que o Senhor lhe havia respondido na eira de Ornã, o jebuseu, sacrificou
+                ali.</p>
+            <p>29 Porque o tabernáculo do Senhor, que Moisés fizera no deserto, e o altar do holocausto estavam naquele
+                tempo em Gibeão.</p>
+            <p>30 E Davi não podia ir diante dele, para consultar a Deus; porque estava aterrado por causa da espada do
+                anjo do Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1cronicas20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1cronicas22.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
 
 </html>
