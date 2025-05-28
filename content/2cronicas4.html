@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 4</h2>
+            <p>1 E fez também um altar de bronze, de vinte côvados de comprimento, e de vinte côvados de largura, e de
+                dez côvados de altura.</p>
+            <p>2 E fez o mar de fundição, de dez côvados de da borda até a borda, redondo por toda a sua volta; e tinha
+                cinco côvados de altura, e uma linha de trinta côvados o cercava por toda a sua volta.</p>
+            <p>3 E debaixo dele havia figuras de bois, que o cercavam por toda a sua volta, dez em cada côvado, cercando
+                o mar; e os bois estavam em duas fileiras, fundidos com o mar.</p>
+            <p>4 E estava posto sobre doze bois, três voltados para o norte, e três voltados para o ocidente, e três
+                voltados para o sul, e três voltados para o oriente; e o mar estava sobre eles por cima, e todos os seus
+                traseiros estavam voltados para dentro.</p>
+            <p>5 E a espessura dele era de um palmo, e sua borda era como a borda de um cálice, como a flor de lírio; e
+                cabiam três mil batos.</p>
+            <p>6 Também fez dez pias; e pôs cinco à direita e cinco à esquerda, para lavarem nelas; o que pertencia ao
+                holocausto o lavavam nelas; porém o mar era para que os sacerdotes se lavassem nele.</p>
+            <p>7 E fez dez candeeiros de ouro, conforme o seu modelo, e os pôs no templo, cinco à direita e cinco à esquerda.</p>
+            <p>8 Também fez dez mesas, e pôs as mesas no templo, cinco à direita e cinco à esquerda; e fez cem bacias de
+                ouro.</p>
+            <p>9 E fez o átrio dos sacerdotes, e o grande átrio, e as portas do átrio; e revestiu as portas com bronze.</p>
+            <p>10 E pôs o mar à direita, para o lado do oriente, ao sul.</p>
+            <p>11 E Hirão fez as caldeiras, e as pás, e os bacias; e acabou de fazer toda a obra que ele havia feito para
+                o rei Salomão na casa de Deus.</p>
+            <p>12 As duas colunas, e os dois globos, que estavam sobre as cabeças das colunas, e as duas redes para cobrir
+                os dois globos, que estavam sobre as cabeças das colunas;</p>
+            <p>13 e os quatrocentos romãs para as duas redes, duas fileiras de romãs para cada rede, para cobrir os dois
+                globos, que estavam sobre as cabeças das colunas;</p>
+            <p>14 e as dez bases, e as dez pias sobre as bases;</p>
+            <p>15 e o mar, e os doze bois debaixo dele;</p>
+            <p>16 e os vasos, e as pás, e os garfos, e todos os vasos de bronze que Hirão fez para o rei Salomão na casa
+                do Senhor.</p>
+            <p>17 O rei os fez fundir na planície do Jordão, entre Sucote e Zaretã.</p>
+            <p>18 E Salomão fez em grande número todos estes vasos; de maneira que o peso do bronze não se podia saber.</p>
+            <p>19 E Salomão fez todos os vasos que estavam na casa de Deus: o altar de ouro, e as mesas sobre as quais se
+                punha o pão da proposição;</p>
+            <p>20 e os candeeiros, com as suas lâmpadas, para que se queimassem diante do lugar santíssimo, conforme o
+                mandamento de Davi, seu pai;</p>
+            <p>21 e as flores, e as lâmpadas, e os alicates de ouro, de ouro puro;</p>
+            <p>22 e as tesouras, e os bacias, e os incensários, de ouro puro; e as entradas da casa, as portas do lugar
+                santíssimo, e as portas do templo, eram de ouro.</p>
+    
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
