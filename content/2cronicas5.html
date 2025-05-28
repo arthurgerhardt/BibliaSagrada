@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 5</h2>
+            <p>1 Assim se acabaram todas as obras que Salomão fez para a casa do Senhor; e trouxe Salomão as coisas que
+                seu pai Davi havia santificado, prata, e ouro, e todos os vasos, e os pôs nos tesouros da casa de Deus.
+            </p>
+            <p>2 Então Salomão convocou os anciãos de Israel, e todos os chefes das tribos, os príncipes das famílias
+                dos filhos de Israel, para Jerusalém, para fazerem subir a arca da aliança do Senhor, da Cidade de Davi,
+                que é Sião.</p>
+            <p>3 E se ajuntaram a ele todos os homens de Israel, diante do rei, na festa que se faz no sétimo mês.</p>
+            <p>4 E vieram todos os anciãos de Israel, e os levitas tomaram a arca.</p>
+            <p>5 E trouxeram a arca, e o tabernáculo da congregação, e todos os vasos sagrados que estavam no
+                tabernáculo; os sacerdotes e os levitas os trouxeram.</p>
+            <p>6 E o rei Salomão, e toda a congregação de Israel que se tinha reunido a ele diante da arca, sacrificaram
+                ovelhas e bois, que não se podiam contar nem numerar, por causa da sua multidão.</p>
+            <p>7 E os sacerdotes trouxeram a arca da aliança do Senhor ao seu lugar, ao oráculo da casa, ao Santo dos
+                Santos, até debaixo das asas dos querubins.</p>
+            <p>8 Porque os querubins estendiam ambas as asas sobre o lugar da arca, e os querubins cobriam por cima a
+                arca e os seus varais.</p>
+            <p>9 Então tiraram os varais, para que as pontas dos varais da arca se vissem diante do oráculo, porém não
+                se viam de fora; e ali está até ao dia de hoje.</p>
+            <p>10 Na arca nada havia senão as duas tábuas, que Moisés tinha posto em Horebe, quando o Senhor fez aliança
+                com os filhos de Israel, saindo eles do Egito.</p>
+            <p>11 E sucedeu que, saindo os sacerdotes do santuário (porque todos os sacerdotes que se acharam se
+                santificaram, sem guardarem as suas turmas),</p>
+            <p>12 E os levitas cantores, todos eles, Asafe, Hemã, Jedutum, e seus filhos e seus irmãos, vestidos de
+                linho fino, com címbalos, e com alaúdes, e harpas, estavam em pé para o oriente do altar, e com eles até
+                cento e vinte sacerdotes, que tocavam as trombetas),</p>
+            <p>13 E aconteceu que, quando eles uniformemente tocavam as trombetas e cantavam, para fazerem ouvir uma só
+                voz, louvando e celebrando ao Senhor; e levantando eles a voz com trombetas, e címbalos, e outros
+                instrumentos musicais, e louvando ao Senhor, dizendo: Porque ele é bom, porque a sua benignidade dura
+                para sempre; então a casa se encheu de uma nuvem, a saber, a casa do Senhor;</p>
+            <p>14 E os sacerdotes não podiam permanecer em pé, para ministrar, por causa da nuvem, porque a glória do
+                Senhor encheu a casa de Deus.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
