@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 2</h2>
+            <p>1 E Salomão determinou edificar uma casa ao nome do Senhor, e uma casa para o seu reino.</p>
+            <p>2 E Salomão contou setenta mil homens que levassem as cargas, e oitenta mil cortadores de pedra nos
+                montes, e três mil e seiscentos para porem o trabalho no povo.</p>
+            <p>3 E enviou a Hirão, rei de Tiro, dizendo: Como fizeste com Davi, meu pai, e lhe enviaste cedros para
+                edificar-lhe uma casa em que habitasse, assim faze comigo.</p>
+            <p>4 Eis que eu determino edificar uma casa ao nome do Senhor meu Deus, para lhe consagrar, para queimar
+                diante dele incenso aromático, e para a disposição do pão da proposição continuamente, e para os
+                holocaustos da manhã e da tarde, nos sábados, nas luas novas e nas solenidades do Senhor nosso Deus.
+                Isto é ordenança perpétua para Israel.</p>
+            <p>5 E a casa que eu edificarei será grande; porque o nosso Deus é maior do que todos os deuses.</p>
+            <p>6 Mas quem é capaz de lhe edificar uma casa? Pois o céu e o céu dos céus não o podem conter; quem sou eu,
+                pois, para lhe edificar uma casa, senão para queimar incenso diante dele?</p>
+            <p>7 Agora, pois, envia-me um homem hábil para trabalhar em ouro, em prata, em bronze e em ferro, e em
+                púrpura, em carmesim e em azul, e que saiba gravar com os hábeis que estão comigo em Judá e em
+                Jerusalém, os quais preparou meu pai Davi.</p>
+            <p>8 Envia-me também madeira de cedro, de cipreste e de algum outro tipo de madeira do Líbano; porque sei
+                que os teus servos sabem cortar a madeira do Líbano; e eis que os meus servos estarão com os teus
+                servos,</p>
+            <p>9 para que me preparem muita madeira; porque a casa que eu edificarei será grande e maravilhosa.</p>
+            <p>10 Eis que darei aos teus servos, os cortadores de madeira, vinte mil coros de trigo, e vinte mil coros
+                de cevada, e vinte mil batos de vinho, e vinte mil batos de azeite.</p>
+            <p>11 Então Hirão, rei de Tiro, respondeu por carta, que enviou a Salomão: Porquanto o Senhor ama o seu
+                povo,
+                te fez rei sobre eles.</p>
+            <p>12 Disse mais Hirão: Bendito seja o Senhor Deus de Israel, que fez os céus e a terra, que deu ao rei Davi
+                um filho sábio, dotado de prudência e entendimento, que edifique uma casa ao Senhor, e uma casa para o
+                seu reino.</p>
+            <p>13 Agora, pois, envio-te um homem hábil e entendido, Hirão-Abi,</p>
+            <p>14 filho de uma mulher das filhas de Dã, e seu pai era de Tiro, que sabe trabalhar em ouro, em prata, em
+                bronze, em ferro, em pedra e em madeira, em púrpura, em azul, em linho fino e em carmesim; e que sabe
+                gravar toda sorte de gravuras, e inventar todo o trabalho que lhe for proposto com os hábeis que estão
+                contigo e com os hábeis do meu senhor Davi teu pai.</p>
+            <p>15 Agora, pois, o trigo, a cevada, o azeite e o vinho que meu senhor falou, sejam enviados aos seus
+                servos;</p>
+            <p>16 e nós cortaremos madeira do Líbano, conforme todas as tuas necessidades, e a levaremos em jangadas
+                pelo mar até Jope, e tu a levarás a Jerusalém.</p>
+            <p>17 E Salomão contou todos os homens estrangeiros que havia na terra de Israel, segundo o censo que Davi,
+                seu pai, havia feito; e acharam-se cento e cinquenta e três mil e seiscentos.</p>
+            <p>18 E designou deles setenta mil para levarem as cargas, e oitenta mil para cortarem pedra nos montes, e
+                três mil e seiscentos para dirigirem o trabalho do povo.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
