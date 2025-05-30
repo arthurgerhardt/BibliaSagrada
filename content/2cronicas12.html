@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 12</h2>
+            <p>1 E sucedeu que, havendo Roboão estabelecido o reino, e estando ele forte, deixou a lei do Senhor, e todo
+                o Israel com ele.</p>
+            <p>2 E aconteceu que, no quinto ano do rei Roboão, subiu Sisaque, rei do Egito, contra Jerusal
+                ém, porque se haviam rebelado contra o Senhor;</p>
+            <p>3 com mil e duzentos carros, e sessenta mil cavaleiros; e o povo que subiu com ele do Egito era sem
+                número, os líbios, os suquitas e os etíopes.</p>
+            <p>4 E tomou as cidades fortificadas que pertenciam a Judá, e veio até Jerusalém.</p>
+            <p>5 Então veio o profeta Semaías a Roboão, e aos príncipes de Judá, que se haviam reunido em Jerusalém por
+                causa de Sisaque, e disse-lhes: Assim diz o Senhor: Vós me deixastes, portanto também eu vos deixei na
+                mão de Sisaque.</p>
+            <p>6 Então os príncipes de Israel e o rei se humilharam, e disseram: O Senhor é justo.</p>
+            <p>7 Vendo, pois, o Senhor que se humilharam, veio a palavra do Senhor a Semaías, dizendo: Eles se humilharam; não os destruirei, antes em breve lhes darei algum livramento, e a minha ira não se derramará sobre Jerusalém pela mão de Sisaque.</p>
+            <p>8 Porém serão seus servos, para que conheçam a diferença entre a minha servidão e a servidão dos reinos da terra.</p>
+            <p>9 Subiu, pois, Sisaque, rei do Egito, contra Jerusalém, e tomou os tesouros da casa do Senhor e os tesouros da casa do rei; levou tudo; também tomou os escudos de ouro que Salomão tinha feito.</p>
+            <p>10 E em lugar deles fez o rei Roboão escudos de bronze, e os entregou nas mãos dos capitães da guarda, que guardavam a porta da casa do rei.</p>
+            <p>11 E todas as vezes que o rei entrava na casa do Senhor, vinham os da guarda, e os levavam, e depois tornavam a trazê-los à câmara da guarda.</p>
+            <p>12 E, humilhando-se ele, a ira do Senhor se desviou dele, para que não o destruísse de todo; porque ainda em Judá havia boas coisas.</p>
+            <p>13 Fortificou-se, pois, o rei Roboão em Jerusalém, e reinou; e era Roboão da idade de quarenta e um anos quando começou a reinar, e reinou dezessete anos em Jerusalém, cidade que o Senhor escolheu dentre todas as tribos de Israel, para pôr ali o seu nome; e era o nome de sua mãe Naamá, amonita.</p>
+            <p>14 E fez o que era mau, porquanto não preparou o seu coração para buscar ao Senhor.</p>
+            <p>15 Os atos, pois, de Roboão, tanto os primeiros como os últimos, porventura não estão escritos nos livros do profeta Semaías e do vidente Ido, conforme as genealogias? E houve guerras entre Roboão e Jeroboão em todos os seus dias.</p>
+            <p>16 E Roboão dormiu com seus pais, e foi sepultado na cidade de Davi; e Abias, seu filho, reinou em seu lugar.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
