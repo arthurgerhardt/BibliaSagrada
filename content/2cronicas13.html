@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 13</h2>
+            <p>1 No décimo oitavo ano do rei Jeroboão, começou Abias a reinar sobre Judá.</p>
+            <p>2 E reinou três anos em Jerusalém; era o nome de sua mãe Micaías, filha de Uriel, de Gibeá. E houve
+                guerra entre Abias e Jeroboão.</p>
+            <p>3 E Abias começou a pelejar com um exército de homens valentes, quatrocentos mil escolhidos; e Jeroboão
+                pôs em ordem contra ele oitocentos mil homens escolhidos, valentes para a peleja.</p>
+            <p>4 E Abias se pôs em pé sobre o monte Zemaraim, que está na montanha de Efraim, e disse: Ouvi-me, Jeroboão
+                e todo o Israel!</p>
+            <p>5 Não sabeis vós que o Senhor Deus de Israel deu o reino sobre Israel a Davi para sempre, a ele e a seus
+                filhos, por uma aliança de sal?</p>
+            <p>6 Contudo Jeroboão, filho de Nebate, servo de Salomão, filho de Davi, se levantou e rebelou-se contra seu
+                senhor.</p>
+            <p>7 E ajuntaram-se a ele homens vãos, filhos de Belial, e fortaleceram-se contra Roboão, filho de Salomão;
+                porque Roboão era jovem e terno de coração, e não lhes podia resistir.</p>
+            <p>8 Agora vós pensais resistir ao reino do Senhor, que está na mão dos filhos de Davi; e sois uma grande
+                multidão, e tendes convosco os bezerros de ouro que Jeroboão fez para vos serem por deuses.</p>
+            <p>9 Não lançastes fora os sacerdotes do Senhor, os filhos de Arão, e os levitas, e não fizestes para vós
+                outros sacerdotes, como os povos das terras? Qualquer que vier com um novilho e sete carneiros, para se
+                consagrar, será sacerdote dos que não são deuses.</p>
+            <p>10 Mas quanto a nós, o Senhor é nosso Deus, e não o deixamos; e os sacerdotes que ministram ao Senhor são
+                os filhos de Arão, e os levitas estão no seu ofício;</p>
+            <p>11 e queimam ao Senhor cada manhã e cada tarde holocaustos e incenso aromático; também a cada sábado, e a
+                cada lua nova, e nas solenidades fixas do Senhor nosso Deus; porque isto é ordenança perpétua para
+                Israel.</p>
+            <p>12 E temos conosco a Deus, e os seus sacerdotes com as trombetas para alarido contra vós outros. Ó filhos de Israel, não pelejeis contra o Senhor Deus de vossos pais, porque não prosperareis.</p>
+            <p>13 Mas Jeroboão os tinha cercado com uma emboscada, para vir por detrás deles; de maneira que estavam
+                diante de Judá, e a emboscada por detrás deles.</p>
+            <p>14 E, voltando-se Judá, eis que a peleja estava diante deles e por detrás; então clamaram ao Senhor, e
+                os sacerdotes tocaram as trombetas.</p>
+            <p>15 E os homens de Judá gritaram; e sucedeu que, quando os homens de Judá gritaram, Deus feriu Jeroboão e todo o Israel diante de Abias e de Judá.</p>
+            <p>16 E os filhos de Israel fugiram de diante de Judá; e Deus os entregou na sua mão.</p>
+            <p>17 E Abias e o seu povo os feriram com grande matança; assim caíram feridos de Israel quinhentos mil homens escolhidos.</p>
+            <p>18 Assim os filhos de Israel foram abatidos naquele tempo, e os filhos de Judá prevaleceram, porque confiaram no Senhor Deus de seus pais.</p>
+            <p>19 E Abias perseguiu Jeroboão, e tomou dele cidades: Betel com os seus arrabaldes, Jesana com os seus arrabaldes, e Efrom com os seus arrabaldes.</p>
+            <p>20 E Jeroboão não recobrou mais força nos dias de Abias; e o Senhor o feriu, e morreu.</p>
+            <p>21 Porém Abias se fortificou, e tomou para si catorze mulheres, e gerou vinte e dois filhos e dezesseis filhas.</p>
+            <p>22 O restante dos atos de Abias, e os seus caminhos, e as suas palavras, estão escritos na história do profeta Ido.</p>
+
+                
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

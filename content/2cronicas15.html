@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 15</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 15</h2>
+            <p>1 E veio o Espírito de Deus sobre Azarias, filho de Obede;</p>
+            <p>2 e saiu ao encontro de Asa, e disse-lhe: Ouvi-me, Asa, e todo o Judá e Benjamim: O Senhor é convosco, enquanto vós sois com ele; se o buscardes, o achareis; porém se o deixardes, vos deixará.</p>
+            <p>3 Muitos dias, porém, Israel esteve sem o verdadeiro Deus, sem sacerdote que o ensinasse e sem lei.</p>
+            <p>4 Mas quando na sua angústia se converteram ao Senhor Deus de Israel, e o buscaram, o acharam.</p>
+            <p>5 E naqueles tempos não havia paz para o que saía nem para o que entrava, mas grandes perturbações sobre todos os moradores das terras.</p>
+            <p>6 Porque a palavra do Senhor era contra Israel, até que se convertesse cada um dos seus filhos à lei.</p>
+            <p>7 E o Senhor ouviu a voz daqueles que o invocavam por causa da grande angústia em que estavam.</p>
+            <p>8 Então o Senhor deu uma visão a Ezias, filho de Amasa, dizendo:</p>
+            <p>9 Levanta-te e vai para Jerusalém, onde há rei Asa. Quando chegarás lá, encontrarás o rei Asa e todo o Judá e Benjamim, e todos os que se ajuntaram a eles, porque o Senhor é com eles.</p>
+            <p>10 E Asa, ouvindo estas palavras e a profecia de Azarias, filho de Obede, fortaleceu-se, e tirou os ídolos abomináveis de toda a terra de Judá e Benjamim, e das cidades que tinha tomado na montanha de Efraim; e renovou o altar do Senhor que estava diante do pórtico do Senhor.</p>
+            <p>11 E ajuntou todo o Judá e Benjamim, e os estrangeiros que se achavam com eles, de Efraim, de Manassés e de Simeão; porque muitos de Israel passaram a ele, vendo que o Senhor seu Deus era com ele.</p>
+            <p>12 E fizeram aliança de buscar ao Senhor Deus de seus pais, com todo o seu coração e com toda a sua alma;</p>
+            <p>13 e que todo aquele que não buscasse ao Senhor Deus de Israel morresse, tanto pequeno como grande, tanto homem como mulher.</p>
+            <p>14 E juraram ao Senhor em alta voz, com júbilo, e com trombetas e com buzinas.</p>
+            <p>15 E todo o Judá se alegrou por este juramento; porque de todo o seu coração juraram, e com toda a sua vontade buscaram ao Senhor; e ele foi achado por eles, e lhes deu repouso em redor.</p>
+            <p>16 Também o rei Asa tirou de sua mãe Maacá a rainha mãe, porquanto ela tinha feito um ídolo abominável a Aserá; e Asa cortou o ídolo, e o queimou junto ao ribeiro de Cedrom.</p>
+            <p>17 Mas os altos não foram tirados de Israel; contudo o coração de Asa foi perfeito todos os dias da sua vida.</p>
+            <p>18 E trouxe à casa de Deus as coisas que seu pai tinha consagrado, e as que ele mesmo tinha consagrado, prata, ouro e utensílios.</p>
+            <p>19 E não houve guerra até o trigésimo quinto ano do reinado de Asa.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas14.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas16.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

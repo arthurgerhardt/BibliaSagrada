@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 19</h2>
+            <p>1 E Josafá, rei de Judá, voltou em paz para sua casa em Jerusalém.</p>
+            <p>2 E Jeú, filho de Hanani, o vidente, saiu ao encontro dele, e disse ao rei Josafá: Porventura ajudas tu ao ímpio, e amas os que odeiam o Senhor? Por isso a ira do Senhor está sobre ti.</p>
+            <p>3 Todavia há boas coisas achadas em ti, porque tiraste da terra os postes-ídolos, e preparaste o teu coração para buscar a Deus.</p>
+            <p>4 E habitou Josafá em Jerusalém; e tornou a sair entre o povo, desde Berseba até a região montanhosa de Efraim, e os fez voltar ao Senhor Deus de seus pais.</p>
+            <p>5 E estabeleceu juízes na terra, em todas as cidades fortificadas de Judá, cidade por cidade;</p>
+            <p>6 e disse aos juízes: Vede o que fazeis, porque não julgais para os homens, mas para o Senhor; e ele será convosco quando julgardes.</p>
+            <p>7 Agora, pois, que o temor do Senhor esteja sobre vós; cuidai em fazerdes isso, porque com o Senhor nosso Deus não há injustiça, nem acepção de pessoas, nem aceitação de presentes.</p>
+            <p>8 Também em Jerusalém Josafá estabeleceu alguns dos levitas, e dos sacerdotes, e dos chefes das famílias de Israel, para julgarem quanto ao Senhor, e para decidirem as causas dos moradores de Jerusalém.</p>
+            <p>9 E deu-lhes ordem, dizendo: Assim fareis no temor do Senhor, com fidelidade e com coração íntegro.</p>
+            <p>10 E em toda causa que vier a vós de vossos irmãos que habitam nas suas cidades, entre sangue e sangue, entre lei e mandamento, estatutos e juízos, esclarecei-os, para que não se tornem culpados para com o Senhor, e não venha grande ira sobre vós e sobre vossos irmãos; assim fareis, e não vos tornareis culpados.</p>
+            <p>11 E eis que Amarias, o sumo sacerdote, presidirá sobre vós em todos os negócios do Senhor; e Zebadias, filho de Ismael, príncipe da casa de Judá, em todos os negócios do rei; também os levitas serão oficiais perante vós. Esforçai-vos, pois, e fazei-o, e o Senhor será com os bons.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas18.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas20.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

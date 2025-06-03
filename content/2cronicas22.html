@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 22</h2>
+            <p>1 E os moradores de Jerusalém fizeram a Acazias, seu filho, rei em seu lugar; porque todos os outros
+                filhos de Jeorão tinham morrido na guerra. Assim Acazias, filho de Jeorão, rei de Judá, reinou.</p>
+            <p>2 Acazias tinha quarenta e dois anos de idade quando começou a reinar, e reinou um ano em Jerusalém; era
+                o nome de sua mãe Atalia, filha de Onri.</p>
+            <p>3 Também andou nos caminhos da casa de Acabe, porque sua mãe lhe era conselheira para fazer o que era
+                mau.</p>
+            <p>4 E fez o que era mau aos olhos do Senhor, como a casa de Acabe; porque depois da morte de seu pai, eles
+                lhe foram conselheiros para sua ruína.</p>
+            <p>5 Também andou segundo o conselho deles, e foi com Jeorão, filho de Acabe, à guerra contra Hazael, rei da
+                Síria, em Ramote-Gileade; e os sírios feriram a Jeorão.</p>
+            <p>6 E voltou para curar-se em Jezreel das feridas que os sírios lhe tinham feito em Ramá, quando pelejava
+                contra Hazael, rei da Síria. E Acazias, filho de Jeorão, rei de Judá, desceu a ver Jeorão, filho de
+                Acabe, em Jezreel, porque estava enfermo.</p>
+            <p>7 E foi isto ordenado por Deus contra Acazias, para que viesse a ruína; porque, vindo ele a Jeorão, saiu
+                com ele contra Jeú, filho de Ninsi, ao qual o Senhor tinha ungido para destruir a casa de Acabe.</p>
+            <p>8 E sucedeu que, quando Jeú estava executando o juízo contra a casa de Acabe, achou os príncipes de Judá
+                e os filhos dos irmãos de Acazias, que estavam ao serviço de Acazias, e os matou.</p>
+            <p>9 E, buscando Acazias, o acharam escondido em Samária; e o levaram a Jeú, que o matou, e o sepultou;
+                porque disseram: Ele é filho de Josafá, que buscou ao Senhor de todo o seu coração. E não houve ninguém
+                da casa de Acazias que pudesse reinar.</p>
+            <p>10 E Atalia, mãe de Acazias, vendo que seu filho era morto, levantou-se e destruiu toda a descendência
+                real da casa de Judá.</p>
+            <p>11 Mas Jeoseba, filha do rei, tomou a Joás, filho de Acazias, e o furtou dentre os filhos do rei que
+                matavam, e o pôs com sua ama na câmara dos leitos; e assim o escondeu de Atalia, para que não o matasse.
+            </p>
+            <p>12 E esteve com ela escondido na casa do Senhor seis anos; e Atalia reinou sobre a terra.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
