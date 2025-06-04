@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 26</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 26</h2>
+            <p>1 Então todo o povo de Judá tomou a Uzias, que tinha dezesseis anos de idade, e o fizeram rei em lugar de seu pai Amazias.</p>
+            <p>2 Ele edificou a Elate, e a restituiu a Judá, depois que o rei dormiu com seus pais.</p>
+            <p>3 Tinha Uzias dezesseis anos de idade quando começou a reinar, e reinou cinqüenta e dois anos em Jerusalém; era o nome de sua mãe Jecolias, de Jerusalém.</p>
+            <p>4 E fez o que era reto aos olhos do Senhor, conforme tudo o que fizera Amazias, seu pai.</p>
+            <p>5 E buscou a Deus nos dias de Zacarias, que tinha entendimento nas visões de Deus; e nos dias em que buscou ao Senhor, Deus o fez prosperar.</p>
+            <p>6 E saiu, e pelejou contra os filisteus, e derrubou o muro de Gate, e o muro de Jabne, e o muro de Asdode; e edificou cidades em Asdode, e entre os filisteus.</p>
+            <p>7 E Deus o ajudou contra os filisteus, e contra os árabes que habitavam em Gur-Baal, e contra os meunitas.</p>
+            <p>8 E os amonitas deram presentes a Uzias; e o seu nome se espalhou até à entrada do Egito, porque se tinha fortificado muito.</p>
+            <p>9 E edificou torres em Jerusalém, junto à porta do canto, e junto à porta do vale, e junto à esquina, e as fortificou.</p>
+            <p>10 Também edificou torres no deserto, e cavou muitas cisternas, porque tinha muitos gados, tanto na campina como nas planícies; e lavradores e vinhedos nos montes e nos campos férteis; porque era amante da agricultura.</p>
+            <p>11 E Uzias tinha um exército que saía à guerra, e entrava por esquadrões, segundo o número do seu censo, feito pelo escrivão Jeiel e pelo oficial Maaséias, sob a direção de Hanania, um dos príncipes do rei.</p>
+            <p>12 Todo o número dos chefes dos pais, dos valentes homens de guerra, era de dois mil e seiscentos.</p>
+            <p>13 E sob a sua mão estava o exército de trezentos e sete mil e quinhentos, que faziam guerra com força poderosa, para ajudar o rei contra o inimigo.</p>
+            <p>14 E Uzias preparou para todo o exército escudos, e lanças, e capacetes, e couraças, e arcos, e fundas para atirarem pedras.</p>
+            <p>15 E fez em Jerusalém máquinas inventadas por artífices, para estarem sobre as torres e nos cantos, para lançarem flechas e grandes pedras; e o seu nome se espalhou até muito longe, porque foi maravilhosamente ajudado, até que se fortificou.</p>
+            <p>16 Mas, havendo-se já fortificado, o seu coração se exaltou para sua ruína; porque se rebelou contra o Senhor seu Deus, e entrou no templo do Senhor para queimar incenso sobre o altar do incenso.</p>
+            <p>17 Então o sacerdote Azarias entrou após ele, e com ele oitenta sacerdotes do Senhor, homens valentes;</p>
+            <p>18 e resistiram ao rei Uzias, e lhe disseram: Não te compete, ó Uzias, queimes incenso ao Senhor, mas sim aos sacerdotes, filhos de Arão, que foram santificados para queimar incenso; sai do santuário, porque transgrediste, e não será para honra tua da parte do Senhor Deus.</p>
+            <p>19 Então Uzias se indignou, e tinha na mão um incensário para queimar incenso; e, estando ele indignado com os sacerdotes, a lepra lhe saiu na testa, diante dos sacerdotes, na casa do Senhor, junto ao altar do incenso.</p>
+            <p>20 E quando o sacerdote Azarias e todos os sacerdotes o viram, eis que ele estava leproso na testa; e apressaram-se a lançá-lo dali; sim, ele mesmo também se apressou a sair, porque o Senhor o ferira.</p>
+            <p>21 Assim o rei Uzias foi leproso até o dia da sua morte, e habitou numa casa separada, sendo leproso; porque foi excluído da casa do Senhor; e Jotão, seu filho, tinha o cargo da casa do rei, julgando o povo da terra.</p>
+            <p>22 Quanto ao mais dos atos de Uzias, os primeiros e os últimos, escreveu-os o profeta Isaías, filho de Amoz.</p>
+            <p>23 E Uzias dormiu com seus pais, e o sepultaram com seus pais no campo do sepulcro dos reis; porque diziam: Ele é leproso; e Jotão, seu filho, reinou em seu lugar.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas25.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas27.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
