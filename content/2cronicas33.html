@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 33</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 33</h2>
+            <p>1 Tinha Manassés doze anos de idade quando começou a reinar, e reinou cinqüenta e cinco anos em Jerusalém.</p>
+            <p>2 E fez o que era mau aos olhos do Senhor, conforme as abominações das nações que o Senhor lançara de diante dos filhos de Israel.</p>
+            <p>3 Porque tornou a edificar os altos que Ezequias, seu pai, tinha derribado; e levantou altares a Baal, e fez um bosque, como fizera Acabe, rei de Israel; e se inclinou diante de todo o exército dos céus, e os serviu.</p>
+            <p>4 Também edificou altares na casa do Senhor, da qual o Senhor tinha dito: Em Jerusalém estará o meu nome para sempre.</p>
+            <p>5 E edificou altares a todo o exército dos céus nos dois átrios da casa do Senhor.</p>
+            <p>6 E fez passar seus filhos pelo fogo no vale do filho de Hinom; também praticou adivinhações, e encantamentos, e feiticeirias, e consultou necromantes e adivinhos; fez muitas coisas más aos olhos do Senhor, para o provocar à ira.</p>
+            <p>7 Também pôs a imagem esculpida do ídolo que fizera na casa de Deus, da qual Deus tinha dito a Davi e a Salomão, seu filho: Nesta casa e em Jerusalém, que escolhi dentre todas as tribos de Israel, porei o meu nome para sempre;</p>
+            <p>8 e nunca mais tirarei os pés de Israel da terra que destinei a seus pais, contanto que tenham cuidado de fazer tudo quanto lhes tenho ordenado, conforme toda a lei, estatutos e juízos dados por intermédio de Moisés.</p>
+            <p>9 Assim Manassés fez errar a Judá e aos moradores de Jerusalém, para que fizessem pior do que as nações que o Senhor destruíra de diante dos filhos de Israel.</p>
+            <p>10 E o Senhor falou a Manassés e ao seu povo, mas eles não deram ouvidos.</p>
+            <p>11 Pelo que o Senhor trouxe sobre eles os comandantes do exército do rei da Assíria, os quais prenderam a Manassés com ganchos, e o levaram com cadeias para Babilônia.</p>
+            <p>12 E quando ele estava angustiado, implorou ao Senhor seu Deus, e humilhou-se grandemente diante do Deus de seus pais;</p>
+            <p>13 e orou a ele; e Deus se deixou mover pela sua súplica, e ouviu o seu rogo, e o tornou a trazer a Jerusalém ao seu reino. Então Manassés conheceu que o Senhor era Deus.</p>
+            <p>14 Depois disto edificou o muro exterior da cidade de Davi, para o lado do poço de Gihom, até a porta do peixe, e rodeou a Ofel, e levantou-o muito alto; e pôs chefes de guerra em todas as cidades fortificadas de Judá.</p>
+            <p>15 E tirou os deuses estrangeiros, e o ídolo da casa do Senhor, e todos os altares que tinha edificado no monte da casa do Senhor, e em Jerusalém; e lançou-os fora da cidade.</p>
+            <p>16 E restaurou o altar do Senhor, e sacrificou sobre ele ofertas pacíficas e de ações de graças; e mandou a Judá que servissem ao Senhor Deus de Israel.</p>
+            <p>17 Contudo, o povo ainda sacrificava nos altos, mas somente ao Senhor seu Deus.</p>
+            <p>18 Quanto ao restante dos atos de Manassés, e à sua oração ao seu Deus, e as palavras dos videntes que lhe falaram em nome do Senhor Deus de Israel, eis que estão escritos na história dos reis de Israel.</p>
+            <p>19 A sua oração também, e como Deus se deixou comover por ela, e todo o seu pecado, e a sua transgressão, e os lugares em que edificou altos, e pôs bosques e imagens de escultura, antes que se humilhasse, eis que estão escritos nos livros dos videntes.</p>
+            <p>20 E Manassés dormiu com seus pais, e o sepultaram em sua casa; e Amom, seu filho, reinou em seu lugar.</p>
+            <p>21 Tinha Amom vinte e dois anos de idade quando começou a reinar, e reinou dois anos em Jerusalém.</p>
+            <p>22 E fez o que era mau aos olhos do Senhor, como fizera Manassés, seu pai; porque Amom sacrificou a todas as imagens de escultura que Manassés, seu pai, tinha feito, e as serviu.</p>
+            <p>23 Mas não se humilhou perante o Senhor, como Manassés, seu pai; antes multiplicou Amom os seus delitos.</p>
+            <p>24 E conspiraram contra ele os seus servos, e o mataram em sua casa.</p>
+            <p>25 Porém o povo da terra matou a todos os que conspiraram contra o rei Amom; e o povo da terra fez reinar em seu lugar a Josias, seu filho.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas32.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas34.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

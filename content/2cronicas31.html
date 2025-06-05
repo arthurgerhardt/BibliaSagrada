@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 Crônicas 31</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>2 Crônicas 31</h2>
+            <p>1 E, acabando tudo isto, todos os israelitas que ali se achavam saíram às cidades de Judá, e quebraram as colunas, cortaram os bosques, derribaram os altos e os altares de todo o Judá, Benjamim, Efraim e Manassés, até que tudo destruíram. Então todos os filhos de Israel voltaram para suas cidades, cada um para a sua possessão.</p>
+            <p>2 E Ezequias estabeleceu as turmas dos sacerdotes e dos levitas, segundo as suas turmas, cada um segundo o seu serviço, tanto os sacerdotes como os levitas, para os holocaustos e para os sacrifícios pacíficos, para ministrarem e darem graças e louvarem nas portas dos arraiais do Senhor.</p>
+            <p>3 E o rei deu da sua fazenda para os holocaustos, para a manhã e para a tarde, e para os holocaustos dos sábados, e das luas novas, e das solenidades, como está escrito na lei do Senhor.</p>
+            <p>4 Também ordenou ao povo que habitava em Jerusalém que desse a porção dos sacerdotes e dos levitas, para que se esforçassem na lei do Senhor.</p>
+            <p>5 E, assim que esta ordem se divulgou, os filhos de Israel que ali se achavam, e os profetas, e os sacerdotes, e os levitas, e os guardas da porta, se uniram a Ezequias.</p>
+            <p>6 E ele disse: "Vocês são santos aos Senhores; agora limpe-se e vá para o templo. Limpe-se também vocês, porque não estão limpos." E eles lavaram seus corpos no rio Gihon. Depois disso foram para o templo para oferecer sacrifícios ao Senhor.</p>
+            <p>7 E, no terceiro mês, começaram a oferecer os primeiros frutos ao Senhor; e, no sétimo mês, trouxeram os dízimos.</p>
+            <p>8 E, quando Ezequias e os príncipes vieram e viram os depósitos, louvaram ao Senhor e ao seu povo Israel.</p>
+            <p>9 Então Ezequias perguntou aos sacerdotes e aos levitas sobre os depósitos.</p>
+            <p>10 E Azarias, o sumo sacerdote da casa de Zadoque, respondeu-lhe: Desde que começaram a trazer as ofertas à casa do Senhor, temos comido e nos fartado, e ainda há muito resto; porque o Senhor abençoou ao seu povo, e esta grande quantidade é o resto.</p>
+            <p>11 Então ordenou Ezequias que preparassem depósitos na casa do Senhor; e os prepararam.</p>
+            <p>12 E trouxeram as ofertas, os dízimos e as coisas consagradas fielmente; e o chefe de tudo isto foi Conanias, o levita, e Simei, seu irmão, era o segundo.</p>
+            <p>13 E Jehiel, Azazias, Naate, Asael, Jerimote, Jozabade, Eliel, Ismael, Maate e Benaia eram supervisores sob a mão de Conanias e Simei, seu irmão, segundo o mandado do rei Ezequias e de Azarias, o chefe da casa de Deus.</p>
+            <p>14 E Core, filho de Imna, o levita, porteiro da porta oriental, tinha a cargo as ofertas voluntárias de Deus, para distribuir as ofertas do Senhor e as coisas santificadas.</p>
+            <p>15 E sob a sua supervisão estavam Eden, Miniamim, Jesua, Semaías, Amarias e Sequenias, nas cidades dos sacerdotes, para distribuir fielmente aos seus irmãos, conforme as suas turmas, tanto aos grandes como aos pequenos;</p>
+            <p>16 além disso, aos que estavam registrados por genealogia, de três anos para cima, a todos os que entravam na casa do Senhor, para o seu serviço diário, segundo as suas turmas;</p>
+            <p>17 e aos sacerdotes registrados por suas casas paternas, e aos levitas de vinte anos para cima, segundo as suas turmas;</p>
+            <p>18 e aos que estavam registrados por genealogia, com todas as suas crianças, mulheres, filhos e filhas, toda a congregação; porque eles se santificaram fielmente.</p>
+            <p>19 E, quanto aos sacerdotes, os filhos de Arão, que estavam nos campos das suas cidades, em cada cidade, homens designados por nome, para distribuir as porções a todos os homens registrados por genealogia dos levitas.</p>
+            <p>20 E assim fez Ezequias em todo o Judá; e fez o que era bom, reto e verdadeiro diante do Senhor seu Deus.</p>
+            <p>21 E em todo o trabalho que começou no serviço da casa de Deus, na lei e nos mandamentos, para buscar a seu Deus, fez com todo o seu coração, e prosperou.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2cronicas30.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2cronicas32.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
