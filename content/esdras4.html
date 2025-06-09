@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esdras 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Esdras 4</h2>
+            <p>1 Ouvindo, pois, os adversários de Judá e Benjamim que os filhos do cativeiro edificavam o templo ao Senhor Deus de Israel,</p>
+            <p>2 Chegaram-se a Zorobabel, e aos chefes dos pais, e disseram-lhes: Deixai-nos edificar convosco; porque, como vós, buscamos o vosso Deus, e já lhe sacrificamos desde os dias de Esar-Hadom, rei da Assíria, que nos fez subir aqui.</p>
+            <p>3 Porém Zorobabel, e Jesua, e os outros chefes dos pais de Israel, lhes disseram: Não convém que vós e nós edifiquemos casa ao nosso Deus, mas nós sós a edificaremos ao Senhor Deus de Israel, como nos ordenou o rei Ciro, rei da Pérsia.</p>
+            <p>4 Todavia o povo da terra debilitava as mãos do povo de Judá, e inquietava-os no edificar.</p>
+            <p>5 E alugaram conselheiros contra eles, para frustrar o seu propósito, todos os dias de Ciro, rei da Pérsia, até ao reinado de Dario, rei da Pérsia.</p>
+            <p>6 E no reinado de Assuero, no princípio do seu reinado, escreveram uma acusação contra os habitantes de Judá e de Jerusalém.</p>
+            <p>7 E nos dias de Artaxerxes, escreveu Bislão, Mitredate, Tabeel, e os outros seus companheiros, a Artaxerxes, rei da Pérsia; e a carta estava escrita em caracteres aramaicos, e na língua siríaca.</p>
+            <p>8 Escreveram, pois, Reum, o chanceler, e Sinsai, o escrivão, uma carta contra Jerusalém ao rei Artaxerxes, do teor seguinte:</p>
+            <p>9 Então escreveu Reum, o chanceler, e Sinsai, o escrivão, e os outros seus companheiros, os dinaítas, os afarsaquitas, os tarpelitas, os afarsitas, os arquevitas, os babilônios, os susanquitas, os de Deave, e os de Elão,</p>
+            <p>10 E os outros povos que o grande e ilustre Asnapar transportou, e fez habitar nas cidades de Samaria, e os outros de além do rio, e em tal tempo.</p>
+            <p>11 Este, pois, é o teor da carta que enviaram ao rei Artaxerxes: Teus servos, os homens daquém do rio, em tal tempo.</p>
+            <p>12 Saiba o rei que os judeus, que subiram de ti a nós, vieram a Jerusalém; e edificam aquela rebelde e malvada cidade, e vão restaurando os seus muros, e reparando os seus fundamentos.</p>
+            <p>13 Agora saiba o rei que, se aquela cidade se reedificar, e os muros se restaurarem, eles não pagarão tributo, nem impostos, nem pedágio, e assim se danificará a fazenda dos reis.</p>
+            <p>14 Agora, pois, porque somos assalariados do rei, e não nos convém ver a desonra do rei, por isso mandamos dar aviso ao rei,</p>
+            <p>15 Para que se busque no livro das crônicas de teus pais; e acharás no livro das crônicas, e saberás que aquela cidade é rebelde, e danosa aos reis e às províncias, e que nela se tem feito sedições desde os tempos antigos; por isso foi destruída aquela cidade.</p>
+            <p>16 Nós, pois, fazemos saber ao rei que, se aquela cidade se reedificar, e os seus muros se restaurarem, desta maneira não terás porção alguma deste lado do rio.</p>
+            <p>17 Então enviou o rei resposta a Reum, o chanceler, e a Sinsai, o escrivão, e aos outros seus companheiros, que habitavam em Samaria, e aos outros dalém do rio: Paz, em tal tempo.</p>
+            <p>18 A carta que nos enviastes foi explicitamente lida diante de mim.</p>
+            <p>19 E ordenando eu, buscaram, e acharam que aquela cidade desde os tempos antigos se levantou contra os reis, e nela se tem feito rebelião e sedição.</p>
+            <p>20 Também houve reis poderosos sobre Jerusalém, que dominaram sobre todo o país dalém do rio; e se lhes pagaram tributos, impostos, e pedágios.</p>
+            <p>21 Agora, pois, dai ordem para que aqueles homens parem, e que não se edifique aquela cidade, até que por mim se dê uma ordem.</p>
+            <p>22 E guardai-vos de cometer erro nisto; porque cresceria o dano para prejuízo dos reis.</p>
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/esdras3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/esdras5html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
