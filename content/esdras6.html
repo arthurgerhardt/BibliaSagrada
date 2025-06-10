@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esdras 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Esdras 6</h2>
+            <p>1 Então o rei Dario ordenou que se fizesse uma busca na casa dos tesouros, onde se guardavam os tesouros em Babilônia.</p>
+            <p>2 E num palácio que estava em Susã, achou-se um rolo, no qual estava escrito assim: Memória acerca do primeiro ano de Ciro, rei; o mesmo Ciro, rei, deu ordem para edificar a casa de Deus que está em Jerusalém, e que os fundamentos dela sejam postos, e que se edifique a casa de Deus no seu lugar.</p>
+            <p>3 E a altura desta casa será de sessenta côvados, e a largura de sessenta côvados, com três fileiras de pedras grandes, e uma fileira de madeiramento novo; e o custo será pago da casa do rei.</p>
+            <p>4 E também os vasos de ouro e de prata da casa de Deus, que Nabucodonosor tirou do templo que estava em Jerusalém, e os levou a Babilônia, sejam devolvidos, e levados ao templo que está em Jerusalém, cada um ao seu lugar; e ponham-nos na casa de Deus.</p>
+            <p>5 Agora, pois, Tatenai, governador da província além do rio, e Setar-Bozenai, e os vossos companheiros, afarsaquitas que estais além do rio, afastai-vos de lá.</p>
+            <p>6 Deixai que se edifique a casa de Deus no seu lugar; e Tatenai, governador da província além do rio, e Setar-Bozenai, e os vossos companheiros, afarsaquitas, que estais além do rio, afastai-vos de lá.</p>
+            <p>7 Deixai que se edifique a casa de Deus no seu lugar; porque o governador dos judeus e os anciãos dos judeus edificarão esta casa de Deus no seu lugar.</p>
+            <p>8 Também eu dou ordem acerca do que deveis fazer aos anciãos dos judeus, para que edifiquem esta casa de Deus; que dos bens do rei, dos tributos da província além do rio, se façam com diligência os gastos para estes homens.</p>
+            <p>9 E o que for necessário, tanto de novilhos, como de carneiros, como de cordeiros, para os holocaustos ao Deus do céu, trigo, sal, vinho e azeite, segundo o que os sacerdotes que estão em Jerusalém disserem, se lhes dê dia por dia, sem falta alguma;</p>
+            <p>10 Para que ofereçam sacrifícios de cheiro suave ao Deus do céu, e orem pela vida do rei e de seus filhos.</p>
+            <p>11 Também eu dou ordem que, se alguém alterar este edito, se lhe arranque uma viga da sua casa, e se lhe pregue nela, e seja assim feito com a sua casa.</p>
+            <p>12 E o Deus que fez habitar ali o seu nome destrua a todo rei e povo que estender as suas mãos para alterar isto, ou para destruir esta casa de Deus que está em Jerusalém. Eu, Dario, dei ordem; seja feito com diligência.</p>
+            <p>13 Então Tatenai, governador da província além do rio, Setar-Bozenai, e os seus companheiros, assim fizeram com diligência, conforme o que o rei Dario tinha ordenado.</p>
+            <p>14 E os anciãos dos judeus edificaram, e prosperaram, segundo a profecia de Ageu, o profeta, e de Zacarias, filho de Ido; e edificaram e acabaram por ordem do Deus de Israel, e por ordem de Ciro, e de Dario, e de Artaxerxes, rei da Pérsia.</p>
+            <p>15 E acabou-se esta casa no terceiro dia do mês de Adar, que era o sexto ano do reinado do rei Dario.</p>
+            <p>16 E os filhos de Israel, os sacerdotes, e os levitas, e o resto dos filhos do cativeiro, fizeram a dedicação desta casa de Deus com alegria.</p>
+            <p>17 E ofereceram, para a dedicação desta casa de Deus, cem novilhos, duzentos carneiros, quatrocentos cordeiros; e, para expiação do pecado de todo o Israel, doze bodes, segundo o número das tribos de Israel.</p>
+            <p>18 E puseram os sacerdotes nas suas turmas, e os levitas nas suas divisões, para o serviço de Deus em Jerusalém, conforme está escrito no livro de Moisés.</p>
+            <p>19 E os filhos do cativeiro celebraram a páscoa no dia catorze do primeiro mês.</p>
+            <p>20 Porque os sacerdotes e os levitas se purificaram como se fossem um só homem; todos estavam limpos; e mataram a páscoa para todos os filhos do cativeiro, e para seus irmãos, os sacerdotes, e para si mesmos.</p>
+            <p>21 Assim comeram a páscoa os filhos de Israel, que tinham voltado do cativeiro, e todos os que se tinham separado das imundícias dos gentios da terra para buscarem o Senhor Deus de Israel.</p>
+            <p>22 E celebraram a festa dos pães asmos sete dias com alegria; porque o Senhor os alegrara, e tinha mudado o coração do rei da Assíria a favor deles, para fortalecer as suas mãos na obra da casa de Deus, o Deus de Israel.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/esdras5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/esdras7html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
