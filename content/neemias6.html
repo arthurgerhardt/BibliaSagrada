@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 6</h2>
+            <p>1 Ora, sucedeu que ouvindo Sambalate, Tobias, Gesém, o árabe, e os demais nossos inimigos que eu tinha edificado o muro, e que nele não havia mais brecha, (ainda que até aquele tempo não tinha posto as portas nas portas),</p>
+            <p>2 Sambalate e Gesém me mandaram dizer: Vem, e encontramo-nos juntos nas aldeias do vale de Ono. Porém eles intentavam fazer-me mal.</p>
+            <p>3 E enviei-lhes mensageiros, dizendo: Estou fazendo uma grande obra, de maneira que não posso descer; por que cessaria a obra, enquanto eu a deixasse, e descesse a vós?</p>
+            <p>4 E enviaram-me quatro vezes com o mesmo assunto, e eu lhes respondi da mesma maneira.</p>
+            <p>5 Então Sambalate me enviou o seu servo pela quinta vez com uma carta aberta na mão;</p>
+            <p>6 na qual estava escrito: Entre as gentes se tem espalhado, e Gasmu diz que tu e os judeus intentais rebelar-vos; por isso edificas tu o muro, e segundo estas palavras tu serás o seu rei.</p>
+            <p>7 E também puseste profetas para anunciarem a teu respeito em Jerusalém, dizendo: Há um rei em Judá. Agora, pois, estas palavras serão ouvidas pelo rei; vem, pois, agora, e consultemos juntos.</p>
+            <p>8 Então enviei-lhe dizendo: Não há tal coisa como dizes, mas tu inventas do teu coração.</p>
+            <p>9 Porque todos eles nos temiam, dizendo: As suas mãos se enfraquecerão na obra, e não será feita. Agora, pois, ó Deus, fortalece as minhas mãos.</p>
+            <p>10 E sucedeu que, entrando eu na casa de Semaías, filho de Delaías, filho de Metabel, que estava encerrado, ele me disse: Vinde, e entremos na casa de Deus, dentro do templo, e fechemos as portas do templo; porque eles virão matar-te; sim, virão matar-te esta noite.</p>
+            <p>11 Então disse eu: Um homem como eu fugiria? E quem há que, sendo como eu, entraria no templo para salvar a sua vida? Não entrarei.</p>
+            <p>12 E percebi que Deus não o tinha enviado, mas que ele proferira esta profecia contra mim, porque Tobias e Sambalate o tinham subornado.</p>
+            <p>13 Por isso ele foi subornado, para que eu tivesse medo, e assim procedesse e pecasse, e para que eles tivessem um mau nome, para me infamarem.</p>
+            <p>14 Lembra-te, ó meu Deus, de Tobias e de Sambalate, segundo estas suas obras; e também da profetisa Noadias, e dos demais profetas que procuravam infundir-me medo.</p>
+            <p>15 Assim foi acabado o muro no vigésimo quinto dia do mês de Elul, em cinqüenta e dois dias.</p>
+            <p>16 E sucedeu que, ouvindo todos os nossos inimigos, temeram todos os gentios que estavam ao redor de nós, e caíram muito em seus próprios olhos; porque reconheceram que esta obra fora feita por nosso Deus.</p>
+            <p>17 Também naqueles dias os nobres de Judá enviavam muitas cartas a Tobias, e as de Tobias vinham a eles.</p>
+            <p>18 Porque muitos em Judá estavam ligados com ele por juramento, pois era genro de Sequenias, filho de Ara, e seu filho Jeoanã tinha tomado por mulher a filha de Mesulão, filho de Berequias.</p>
+            <p>19 Também falavam de seus feitos diante de mim, e lhe davam a minha palavra; e Tobias enviava cartas para me infundir medo.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias7html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 4</h2>
+            <p><span class="verse-number">1</span> E os sacerdotes e os levitas que estavam em Jerusalém se levantaram para construir a parede; mas os judeus que habitavam fora da cidade não tinham coragem de fazer isso.</p>
+            <p><span class="verse-number">2</span> E quando Sambalate ouviu que estávamos edificando o muro, ele se indignou e muito se irou, e zombou dos judeus.</p>
+            <p><span class="verse-number">3</span> E falou na presença de seus irmãos e do exército de Samaria, e disse: Que fazem estes fracos judeus? Será que os deixarão fazer sacrifícios? Acabarão eles em um só dia? Renascerão das cinzas as pedras que foram queimadas?</p>
+            <p><span class="verse-number">4</span> E estava com ele Tobias, o amonita, e disse: Se eles edificarem uma raposa, ela derrubará o seu muro de pedra.</p>
+            <p><span class="verse-number">5</span> Ouve, ó nosso Deus, porque somos desprezados; e torna a sua afronta sobre a sua cabeça, e dá-os por despojo na terra do cativeiro.</p>
+            <p><span class="verse-number">6</span> Não cubras a sua iniqüidade, e não se risque diante de ti o seu pecado; porque se irritaram contra os que edificavam.</p>
+            <p><span class="verse-number">7</span> E sucedeu que, ouvindo Sambalate, Tobias, os árabes, os amonitas e os asdodeus que o muro de Jerusalém estava sendo reparado, e que as brechas começavam a ser fechadas, iraram-se muito.</p>
+            <p><span class="verse-number">8</span> E conspiraram todos juntos para virem atacar Jerusalém, e fazerem-lhe dano.</p>
+            <p><span class="verse-number">9</span> Porém nós oramos ao nosso Deus, e pusemos guarda contra eles de dia e de noite, por causa deles.</p>
+            <p><span class="verse-number">10</span> E disse Judá: Já desfaleceram as forças dos carregadores, e o entulho é muito; não podemos edificar o muro.</p>
+            <p><span class="verse-number">11</span> E nossos inimigos disseram: Não saibam, nem vejam, até que entremos no meio deles, e os matemos, e cessemos a obra.</p>
+            <p><span class="verse-number">12</span> E sucedeu que, quando os judeus que habitavam perto deles vieram, disseram-nos dez vezes: De todos os lugares de onde voltardes, eles virão contra nós.</p>
+            <p><span class="verse-number">13</span> Então pus o povo por famílias, com as suas espadas, as suas lanças e os seus arcos, atrás do muro, no lugar mais baixo, e em lugares abertos.</p>
+            <p><span class="verse-number">14</span> E olhei, e me levantei, e disse aos nobres, e aos magistrados, e ao resto do povo: Não os temais; lembrai-vos do Senhor grande e terrível, e pelejai por vossos irmãos, vossos filhos, vossas filhas, vossas mulheres e vossas casas.</p>
+            <p><span class="verse-number">15</span> E sucedeu que, ouvindo nossos inimigos que a sua intenção era conhecida, e que Deus tinha frustrado o seu conselho, voltamos todos nós ao muro, cada um à sua obra.</p>
+            <p><span class="verse-number">16</span> E aconteceu que, desde aquele dia, metade dos meus servos faziam a obra, e a outra metade tinha lanças, escudos, arcos e couraças; e os chefes estavam por detrás de toda a casa de Judá.</p>
+            <p><span class="verse-number">17</span> Os que edificavam o muro, e os que carregavam, e os que carregavam as cargas, com um braço faziam a obra, e com o outro seguravam a arma.</p>
+            <p><span class="verse-number">18</span> Porque os que edificavam, cada um trazia a sua espada cingida aos lombos, e assim edificavam; e o que tocava a trombeta estava junto a mim.</p>
+            <p><span class="verse-number">19</span> E disse eu aos nobres, e aos magistrados, e ao resto do povo: A obra é grande e extensa, e nós estamos separados no muro, longe uns dos outros.</p>
+            <p><span class="verse-number">20</span> Em todo o lugar onde ouvirdes o som da trombeta, ali vos ajuntareis a nós; o nosso Deus pelejará por nós.</p>
+            <p><span class="verse-number">21</span> Assim nós fizemos a obra, e metade deles segurava as lanças desde o nascer do sol até que as estrelas aparecessem.</p>
+            <p><span class="verse-number">22</span> Também naquele tempo disse ao povo: Cada um com seu servo passe a noite dentro de Jerusalém, para que nos sirvam de guarda de noite, e façam a obra de dia.</p>
+            <p><span class="verse-number">23</span> Assim nem eu, nem meus irmãos, nem meus servos, nem os homens da guarda que me seguiam, tirávamos as nossas roupas; cada um tinha as suas armas junto a ele.</p>
+            
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias5html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

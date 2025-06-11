@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 2</h2>
+            <p>1 E aconteceu no mês de Nisã, no ano vigésimo do rei Artaxerxes, que estando eu diante dele, o vinho estava diante de mim; e tomei o vinho, e o dei ao rei. E nunca antes estivera triste diante dele.</p>
+            <p>2 Então o rei me disse: Por que está triste o teu rosto, pois não estás doente? Isto não é senão tristeza de coração. Então temi sobremaneira.</p>
+            <p>3 E disse ao rei: Viva o rei para sempre! Como não estaria triste o meu rosto, quando a cidade, o lugar dos sepulcros de meus pais, está assolada, e as suas portas estão consumidas pelo fogo?</p>
+            <p>4 Então o rei me disse: Que é que pedes? Orei, pois, ao Deus dos céus;</p>
+            <p>5 e disse ao rei: Se bem parecer ao rei, e se o teu servo achar graça diante de ti, envia-me a Judá, à cidade dos sepulcros de meus pais, para que eu a edifique.</p>
+            <p>6 Então o rei me disse, (e a rainha estava sentada junto dele): Quanto tempo durará a tua viagem, e quando voltarás? E pareceu bem ao rei enviar-me, depois que lhe dei prazo.</p>
+            <p>7 Disse mais ao rei: Se bem parecer ao rei, dêem-se-me cartas para os governadores da província além do rio, para que me deixem passar até chegar a Judá;</p>
+            <p>8 e uma carta para Asafe, guarda do bosque do rei, para que me dê madeira, para fazer vigas para as portas da cidadela que está junto à casa, e para o muro da cidade, e para a casa em que eu entrar. E o rei me deu, segundo a boa mão de meu Deus sobre mim.</p>
+            <p>9 Então vim aos governadores da província além do rio, e lhes dei as cartas do rei. E o rei tinha enviado comigo os capitães do exército e a cavalaria.</p>
+            <p>10 E ouvindo Sambalate, o horonita, e Tobias, o servo amonita, isto desagradou-lhes sobremaneira que alguém viesse a procurar o bem dos filhos de Israel.</p>
+            <p>11 Cheguei, pois, a Jerusalém, e estive ali três dias.</p>
+            <p>12 E levantei-me de noite, eu e alguns poucos homens comigo; e não declarei a ninguém o que meu Deus me pusera no coração que fizesse por Jerusalém; e não havia comigo animal algum, senão aquele que eu cavalgava.</p>
+            <p>13 E saí de noite pelo vale da Porta do Dragão, até à fonte do Dragão, e ao muro do monturo; e olhei as portas de Jerusalém, que estavam consumidas pelo fogo, e os seus muros que estavam fendidos.</p>
+            <p>14 Então passei à porta da Fonte, e ao tanque do Rei, mas não havia lugar por onde passasse o animal que eu cavalgava.</p>
+            <p>15 Então subi de noite pelo ribeiro, e olhei o muro; e voltei-me, e entrei pela porta do Vale, e assim voltei.</p>
+            <p>16 E os magistrados não sabiam para onde eu tinha ido, nem o que eu tinha feito; até então eu não tinha declarado aos judeus, nem aos sacerdotes, nem aos nobres, nem aos magistrados, nem aos demais que faziam a obra.</p>
+            <p>17 Então lhes disse: Bem vedes a miséria em que estamos, como Jerusalém está assolada, e as suas portas estão consumidas pelo fogo; vinde, e edifiquemos o muro de Jerusalém, para que não estejamos mais em opróbrio.</p>
+            <p>18 E lhes declarei como a boa mão de meu Deus fora comigo, e também as palavras que o rei me tinha dito. Então disseram: Levantemo-nos, e edifiquemos. E esforçaram as suas mãos para o bem.</p>
+            <p>19 Mas ouvindo Sambalate, o horonita, e Tobias, o servo amonita, e Gesém, o árabe, zombaram de nós, e nos desprezaram, e disseram: Que é isto que fazeis? Revoltais-vos contra o rei?</p>
+            <p>20 Então lhes respondi, e disse-lhes: O Deus dos céus é o que nos fará prosperar; e nós, seus servos, nos levantaremos, e edificaremos; mas vós não tendes parte, nem direito, nem memória em Jerusalém.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias3html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

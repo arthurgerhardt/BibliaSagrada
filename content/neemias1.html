@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 1</h2>
+            <p>1 Palavras de Neemias, filho de Hacalias. E aconteceu no mês de Quisleu, no ano vigésimo, estando eu na cidadela de Susã,</p>
+            <p>2 que veio Hanani, um dos meus irmãos, com alguns homens de Judá; e eu lhes perguntei pelos judeus que escaparam, que restaram do cativeiro, e acerca de Jerusalém.</p>
+            <p>3 E eles me disseram: Os restantes que ficaram do cativeiro ali na província estão em grande miséria e desprezo; o muro de Jerusalém está fendido, e as suas portas estão queimadas a fogo.</p>
+            <p>4 E sucedeu que, ouvindo eu estas palavras, sentei-me e chorei, e lamentei por alguns dias; e estive jejuando e orando perante o Deus dos céus.</p>
+            <p>5 E disse: Ah! Senhor Deus dos céus, Deus grande e terrível, que guardas a aliança e a misericórdia com os que te amam e guardam os teus mandamentos;</p>
+            <p>6 estejam, pois, atentos os teus ouvidos, e abertos os teus olhos, para ouvires a oração do teu servo, que hoje faço perante ti de dia e de noite pelos filhos de Israel, teus servos, e confesso os pecados dos filhos de Israel, que temos cometido contra ti; eu e a casa de meu pai pecamos.</p>
+            <p>7 Temos procedido de todo corruptamente contra ti, e não guardamos os mandamentos, nem os estatutos, nem os juízos que ordenaste a teu servo Moisés.</p>
+            <p>8 Lembra-te, pois, da palavra que ordenaste a teu servo Moisés, dizendo: Se vós transgredirdes, eu vos espalharei entre os povos.</p>
+            <p>9 Mas se vos converterdes a mim, e guardardes os meus mandamentos, e os cumprirdes, então, ainda que os vossos rejeitados estejam no cabo do céu, de lá os ajuntarei e os trarei ao lugar que tenho escolhido para ali fazer habitar o meu nome.</p>
+            <p>10 Estes ainda são teus servos e o teu povo, que resgataste com a tua grande força e com a tua mão poderosa.</p>
+            <p>11 Ah! Senhor, estejam, pois, atentos os teus ouvidos à oração do teu servo e à oração dos teus servos, que desejam temer o teu nome; e faze prosperar hoje o teu servo, e dá-lhe graça perante este homem. Eu era, então, copeiro do rei.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/esdras10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias2html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
