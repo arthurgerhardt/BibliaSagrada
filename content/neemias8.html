@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 8</h2>
+            <p>1 E todo o povo se ajuntou como um só homem na praça que está diante da porta das Águas; e disseram a Esdras, o escriba, que trouxesse o livro da lei de Moisés, que o Senhor tinha dado a Israel.</p>
+            <p>2 E Esdras, o sacerdote, trouxe a lei perante a congregação, tanto de homens como de mulheres, e de todos os que podiam entender, no primeiro dia do sétimo mês.</p>
+            <p>3 E leu dela diante da praça, que está diante da porta das Águas, desde a alva até o meio-dia, perante os homens e as mulheres, e os que podiam entender; e os ouvidos de todo o povo estavam atentos ao livro da lei.</p>
+            <p>4 E Esdras, o escriba, estava sobre um púlpito de madeira, que fizeram para aquele fim; e junto a ele estavam Matatias, Sema, Anaías, Urias, Hilquias e Maaséias, à sua direita; e Pedaías, Misael, Malquias, Hasum, Hasbadana, Zacarias e Mesulão, à sua esquerda.</p>
+            <p>5 E Esdras abriu o livro à vista de todo o povo, porque estava acima de todo o povo; e, abrindo-o, todo o povo se pôs em pé.</p>
+            <p>6 E Esdras bendisse ao Senhor, o grande Deus; e todo o povo respondeu: Amém! Amém! levantando as suas mãos; e inclinaram-se, e adoraram ao Senhor com o rosto em terra.</p>
+            <p>7 E Jesua, Bani, Serebias, Jamin, Acube, Sabetai, Odias, Maaseias, Quelita, Azarias, Josabade, Hanan e Pelaías, levitas, faziam entender ao povo a lei; e o povo estava no seu lugar.</p>
+            <p>8 E leram no livro da lei de Deus distintamente, e deram o sentido, de maneira que se entendesse a leitura.</p>
+            <p>9 E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que faziam entender ao povo, disseram a todo o povo: Este dia é consagrado ao Senhor vosso Deus; não vos lamenteis, nem choreis. Porque todo o povo chorava, ouvindo as palavras da lei.</p>
+            <p>10 E disse-lhes: Ide, comei as gorduras, e bebei as doçuras, e enviai porções aos que não têm nada preparado para si; porque este dia é consagrado ao nosso Senhor; portanto não vos entristeçais, porque a alegria do Senhor é a vossa força.</p>
+            <p>11 E os levitas acalmaram todo o povo, dizendo: Calai-vos, porque este dia é santo; e não vos entristeçais.</p>
+            <p>12 E todo o povo se foi comer, e beber, e enviar porções, e fazer grande regozijo; porque entenderam as palavras que lhes fizeram saber.</p>
+            <p>13 E no segundo dia se ajuntaram os chefes dos pais de todo o povo, os sacerdotes e os levitas, a Esdras, o escriba, para entenderem as palavras da lei.</p>
+            <p>14 E acharam escrito na lei, que o Senhor tinha ordenado por Moisés, que os filhos de Israel habitassem em cabanas na festa do sétimo mês;</p>
+            <p>15 E que publicassem e fizessem passar pregão por todas as suas cidades, e em Jerusalém, dizendo: Saí ao monte, e trazei ramos de oliveiras, e ramos de zambujeiros, e ramos de murta, e ramos de palmeiras, e ramos de árvores frondosas, para fazer cabanas, como está escrito.</p>
+            <p>16 Saiu, pois, o povo, e trouxeram, e fizeram para si cabanas, cada um no seu terraço, e nos seus pátios, e nos pátios da casa de Deus, e na praça da porta das Águas, e na praça da porta de Efraim.</p>
+            <p>17 E toda a congregação dos que voltaram do cativeiro fez cabanas, e habitou nas cabanas; porque nunca fizeram assim os filhos de Israel desde os dias de Jesua, filho de Num, até aquele dia; e houve mui grande alegria.</p>
+            <p>18 E Esdras leu no livro da lei de Deus, cada dia, desde o primeiro dia até ao último; e celebraram a festa por sete dias, e no oitavo dia houve uma assembleia solene, segundo o costume.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias9html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
