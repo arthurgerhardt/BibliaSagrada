@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ester 2</h2>
+            <p>1 Depois disto, quando a ira do rei Assuero se acalmou, lembrou-se de Vasti, e do que ela tinha feito, e do decreto contra ela.</p>
+            <p>2 Então disseram os servos do rei, que o serviam: Busquem-se para o rei moças virgens e formosas;</p>
+            <p>3 E o rei constitua comissários em todas as províncias do seu reino, para ajuntarem todas as moças virgens e formosas à fortaleza de Susã, ao harém, sob a mão de Hegai, eunuco do rei, guarda das mulheres; e lhes dêem os seus cosméticos;</p>
+            <p>4 E a moça que agradar ao rei, reine em lugar de Vasti. E o negócio pareceu bem aos olhos do rei, e assim se fez.</p>
+            <p>5 Havia, pois, em Susã, a capital, um homem judeu, cujo nome era Mardoqueu, filho de Jair, filho de Simei, filho de Quis, homem benjamita;</p>
+            <p>6 O qual fora levado de Jerusalém com os cativos, que foram levados com Jeconias, rei de Judá, o qual Nabucodonosor, rei de Babilônia, tinha levado cativo.</p>
+            <p>7 E criara Hadassa, que é Ester, filha de seu tio; porque ela não tinha pai nem mãe; e a moça era formosa e graciosa; e, morrendo seu pai e sua mãe, Mardoqueu a tomara por sua filha.</p>
+            <p>8 E aconteceu que, quando se divulgou o mandado do rei e o seu decreto, e quando se ajuntaram muitas moças em Susã, a capital, sob a mão de Hegai, também Ester foi trazida à casa do rei, sob a mão de Hegai, guarda das mulheres.</p>
+            <p>9 E a moça agradou aos seus olhos, e alcançou graça diante dele; pelo que se apressou em lhe dar os seus cosméticos e as suas porções, e lhe deu também sete moças escolhidas da casa do rei; e a fez mudar para o melhor lugar do harém.</p>
+            <p>10 Ester não tinha declarado o seu povo nem a sua parentela; porque Mardoqueu lhe tinha ordenado que não o declarasse.</p>
+            <p>11 E Mardoqueu andava todos os dias diante do pátio da casa do harém, para saber como Ester estava, e o que lhe acontecia.</p>
+            <p>12 E, quando se completavam os dias de cada uma das moças, para irem ao rei Assuero, (porque assim se cumpria o tempo de cada uma, segundo a lei acerca das mulheres; doze meses, pois assim se cumpriam os dias dos seus cosméticos; seis meses com óleo de mirra, e seis meses com perfumes e com cosméticos para mulheres),</p>
+            <p>13 Assim, as moças iam ao rei; tudo o que se lhes dava para levar com elas, quando iam do harém à casa do rei.</p>
+            <p>14 À tarde iam, e pela manhã voltavam ao segundo harém, sob a mão de Saasgaz, eunuco do rei, guarda das concubinas; não iam mais ao rei, a não ser se o rei as desejasse, e fossem chamadas pelo nome.</p>
+            <p>15 E, quando chegou o tempo de Ester, filha de Abiail, tio de Mardoqueu, que a tomara por sua filha, para ir ao rei, ela não pediu coisa alguma, senão o que Hegai, eunuco do rei, guarda das mulheres, lhe aconselhou. E Ester alcançou graça aos olhos de todos os que a viam.</p>
+            <p>16 E foi trazida ao rei Assuero, à casa real, no décimo mês, que é o mês de Tebete, no sétimo ano do seu reinado.</p>
+            <p>17 E o rei amou a Ester mais do que a todas as outras mulheres; e ela alcançou graça e misericórdia diante dele, mais do que todas as virgens; pelo que ele pôs a coroa real na sua cabeça, e a fez rainha em lugar de Vasti.</p>
+            <p>18 Então o rei fez um grande banquete a todos os seus príncipes e servos, o banquete de Ester; e fez descanso às províncias, e deu presentes, segundo a generosidade do rei.</p>
+            <p>19 E, quando se ajuntaram as moças segunda vez, Mardoqueu estava assentado à porta do rei.</p>
+            <p>20 Ester ainda não tinha declarado a sua parentela nem o seu povo, como Mardoqueu lhe tinha ordenado; porque Ester fazia o que Mardoqueu lhe dizia, como quando a criava.</p>
+            <p>21 Naqueles dias, estando Mardoqueu assentado à porta do rei, dois eunucos do rei, Bigtã e Teres, dos que guardavam a porta, se indignaram, e procuraram pôr a mão no rei Assuero.</p>
+            <p>22 E Mardoqueu o soube, e o fez saber à rainha Ester; e Ester disse ao rei em nome de Mardoqueu.</p>
+            <p>23 E, fazendo-se inquérito, e achando-se o negócio certo, foram ambos enforcados na forca; e foi escrito no livro das crônicas diante do rei.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ester1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ester3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

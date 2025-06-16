@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neemias 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Neemias 9</h2>
+            <p>1 No dia vinte e quatro deste mês, os filhos de Israel se ajuntaram com jejum, e com pano de saco e traziam terra sobre si.</p>
+            <p>2 E a descendência de Israel se separou dos filhos estranhos, e ficaram em pé, e confessaram os seus pecados e as iniquidades de seus pais.</p>
+            <p>3 E disse o sacerdote Jozacar, filho de Seraiah, filho de Azariah, filho de Maaseeiah, filho de Iddo, filho de Zerahiah, filho de Uzziel, filho de Bukki,</p>
+            <p>4 Filho de Harim, que era do linhagem dos portugueses: "Não temos parte ou herança na casa de nosso Deus; nem nós têmos registro entre os sacerdotes e levitas por meio da genealogia.</p>
+            <p>5 E levantaram-se sobre os seus pés, e leram no livro da lei do Senhor seu Deus, por um quarto do dia; e por outro quarto confessaram, e adoraram ao Senhor seu Deus.</p>
+            <p>6 Então se levantou sobre o seu púlpito de madeira, que fizeram para aquele fim, e disse: Bendito seja o Senhor, o grande Deus; e todo o povo respondeu: Amém! Amém! levantando as suas mãos; e inclinaram-se, e adoraram ao Senhor com o rosto em terra.</p>
+            <p>7 E Jesua, Bani, Serebias, Jamin, Acube, Sabetai, Odias, Maaseias, Quelita, Azarias, Josabade, Hanan e Pelaías, levitas, faziam entender ao povo a lei; e o povo estava no seu lugar.</p>
+            <p>8 E leram no livro da lei de Deus distintamente, e deram o sentido, de maneira que se entendesse a leitura.</p>
+            <p>9 E Neemias, que era o governador, e Esdras, o sacerdote e escriba, e os levitas que faziam entender ao povo, disseram a todo o povo: Este dia é consagrado ao Senhor vosso Deus; não vos lamenteis, nem choreis. Porque todo o povo chorava, ouvindo as palavras da lei.</p>
+            <p>10 E disse-lhes: Ide, comei as gorduras, e bebei as doçuras, e enviai porções aos que não têm nada preparado para si; porque este dia é consagrado ao nosso Senhor; portanto não vos entristeçais, porque a alegria do Senhor é a vossa força.</p>
+            <p>11 E os levitas acalmaram todo o povo, dizendo: Calai-vos, porque este dia é santo; e não vos entristeçais.</p>
+            <p>12 E todo o povo se foi comer, e beber, e enviar porções, e fazer grande regozijo; porque entenderam as palavras que lhes fizeram saber.</p>
+            <p>13 E no segundo dia se ajuntaram os chefes dos pais de todo o povo, os sacerdotes e os levitas, a Esdras, o escriba, para entenderem as palavras da lei.</p>
+            <p>14 E acharam escrito na lei, que o Senhor tinha ordenado por Moisés, que os filhos de Israel habitassem em cabanas durante a festa da colheita, no mês sétimo.</p>
+            <p>15 E saíram, pois, e fizeram passar por toda a cidade, e trouxeram folhas de oliveira, e folhas de zambujeiro, e folhas de palmeira, e folhas de todas as árvores frutíferas, para fazerem cabanas, como está escrito.</p>
+            <p>16 Assim, o povo saiu, e fez para si cabanas, cada um sobre o seu telhado, e nos seus pátios, e nos pátios da casa de Deus, e na praça da porta das águas, e na praça da porta de Efraim.</p>
+            <p>17 E toda a congregação dos que voltaram do cativeiro fez cabanas, e habitou nas cabanas; porque desde os dias de Josué, filho de Num, até aquele dia, não tinham feito assim os filhos de Israel. E houve grande alegria.</p>
+            <p>18 E todos os dias, desde o primeiro dia até o último, leram no livro da lei de Deus. E celebraram a festa por sete dias; e no oitavo dia houve uma assembléia solene, segundo o rito.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/neemias10html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

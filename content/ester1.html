@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ester 1</h2>
+            <p>1 Aconteceu nos dias de Assuero, (este é o Assuero que reinou desde a Índia até a Etiópia, sobre cento e vinte e sete províncias),</p>
+            <p>2 Naqueles dias, quando o rei Assuero se assentou no trono do seu reino, que estava em Susã, a capital,</p>
+            <p>3 No terceiro ano do seu reinado, fez um banquete a todos os seus príncipes e seus servos; o exército da Pérsia e da Média, os nobres e os príncipes das províncias estavam diante dele;</p>
+            <p>4 Quando mostrou as riquezas da glória do seu reino, e o esplendor da sua grandeza por muitos dias, isto é, cento e oitenta dias.</p>    
+            <p>5 E, acabando estes dias, fez o rei um banquete a todo o povo que se achava em Susã, a capital, desde o maior até o menor, por sete dias, no pátio do jardim do palácio real.</p>
+            <p>6 Havia cortinas de linho fino e azul, penduradas com cordas de linho fino e púrpura, em argolas de prata e colunas de mármore; o leito era de ouro e prata sobre um pavimento de alabastro, mármore branco, madre pérola e pedras preciosas.</p>
+            <p>7 E davam a beber em vasos de ouro, e os vasos eram diferentes uns dos outros; e havia vinho real em abundância, segundo a generosidade do rei.</p>
+            <p>8 E a bebida era conforme a lei, sem constrangimento; porque assim tinha ordenado o rei a todos os oficiais da sua casa, que fizessem conforme a vontade de cada um.</p>
+            <p>9 Também a rainha Vasti fez um banquete às mulheres, na casa real do rei Assuero.</p>
+            <p>10 No sétimo dia, quando o coração do rei estava alegre do vinho, mandou a Meumã, Bista, Harbona, Bigta, Abagta, Zetar e Carcas, sete eunucos que serviam diante do rei Assuero,</p>
+            <p>11 Que trouxessem à rainha Vasti a presença do rei, com a coroa real, para mostrar aos povos e aos príncipes a sua beleza; porque era formosa à vista.</p>
+            <p>12 Mas a rainha Vasti recusou vir à ordem do rei, por meio dos eunucos; pelo que o rei muito se enfureceu, e se acendeu nele o seu furor.</p>
+            <p>13 Então o rei disse aos sábios, que sabiam as leis e os costumes, (porque assim se tratava do rei, perante todos os que sabiam a lei e o direito;</p>
+            <p>14 E os mais próximos dele eram Carcena, Setar, Admata, Tarsis, Meres, Marsena e Memucã, sete príncipes da Pérsia e da Média, que viam a face do rei, e se assentavam o primeiro no reino),</p>
+            <p>15 Que se devia fazer à rainha Vasti, segundo a lei, porquanto não cumpriu a ordem do rei Assuero, por meio dos eunucos?</p>
+            <p>16 E Memucã respondeu perante o rei e os príncipes: Não somente contra o rei pecou a rainha Vasti, mas também contra todos os príncipes e contra todos os povos que estão em todas as províncias do rei Assuero.</p>
+            <p>17 Porque esta ação da rainha será conhecida por todas as mulheres, de maneira que desprezarão a seus maridos, dizendo: O rei Assuero mandou trazer à presença da rainha Vasti, mas ela não veio.</p>
+            <p>18 E este dia as princesas da Pérsia e da Média, que ouvirem a ação da rainha, dirão o mesmo a todos os príncipes do rei; e haverá muito desprezo e indignação.</p>
+            <p>19 Se parecer bem ao rei, saia um decreto real da sua parte, e seja escrito entre as leis dos persas e dos medos, que não se revogue; que Vasti não venha mais à presença do rei Assuero; e o rei dê o seu reino a outra que seja melhor do que ela.</p>
+            <p>20 E quando o decreto do rei, que fará, for ouvido por todo o seu reino, (porque é grande), todas as mulheres darão honra a seus maridos, desde o maior até o menor.</p>
+            <p>21 E este conselho pareceu bem ao rei e aos príncipes; e o rei fez conforme o conselho de Memucã;</p>
+            <p>22 E enviou cartas a todas as províncias do rei, a cada província segundo a sua escrita, e a cada povo segundo a sua língua, dizendo que todo homem fosse senhor em sua casa, e que se falasse na língua do seu povo.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/neemias13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ester2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ester 4</h2>
+            <p>1 Quando Mardoqueu soube tudo o que se havia passado, rasgou as suas vestes, e cobriu-se de saco e de cinza, e saiu pela cidade, clamando com grande e amargo clamor.</p>
+            <p>2 E chegou até diante da porta do rei; porque ninguém podia entrar pela porta do rei vestido de saco.</p>
+            <p>3 E em todas as províncias, onde quer que chegava o mandado do rei e o seu decreto, havia grande lamento entre os judeus, e jejum, e choro, e pranto; muitos se deitavam em saco e cinza.</p>
+            <p>4 E vieram as moças e os eunucos de Ester, e lhe contaram isto; então a rainha se perturbou muito, e enviou vestes para vestir a Mardoqueu, e tirar-lhe o saco; mas ele não as aceitou.</p>
+            <p>5 Então Ester chamou a Hataque, um dos eunucos do rei, que ele tinha posto diante dela, e o enviou a Mardoqueu, para saber o que era isto, e por que estava assim.</p>
+            <p>6 E Hataque saiu a Mardoqueu, à praça da cidade, que estava diante da porta do rei.</p>
+            <p>7 E Mardoqueu lhe contou tudo o que lhe tinha acontecido, e a soma do dinheiro que Hamã tinha prometido pagar aos tesouros do rei, para destruir os judeus.</p>
+            <p>8 Também lhe deu a cópia do edital do decreto, que se havia dado em Susã, para destruí-los, para que o mostrasse a Ester, e lho declarasse, e lhe mandasse dizer que fosse ao rei, e lhe suplicasse, e intercedesse por ele diante dele.</p>
+            <p>9 Então Hataque veio, e contou a Ester as palavras de Mardoqueu.</p>
+            <p>10 E Ester falou a Hataque, e mandou-lhe dizer a Mardoqueu:</p>
+            <p>11 Todos os servos do rei, e o povo das províncias do rei, sabem que todo homem ou mulher, que entrar ao rei no pátio interior, sem ser chamado, não há senão uma lei para ele: que seja morto; a não ser aquele a quem o rei estender o cetro de ouro, para que viva; e eu não tenho sido chamada para entrar ao rei há trinta dias.</p>
+            <p>12 E fizeram saber a Mardoqueu as palavras de Ester.</p>
+            <p>13 Então Mardoqueu mandou dizer a Ester: Não imagines que escaparás na casa do rei, mais do que todos os outros judeus.</p>  
+            <p>14 Porque, se de todo te calares agora, de outra parte se levantará alívio e livramento para os judeus; mas tu e a casa de teu pai perecereis; e quem sabe se para tal tempo como este não chegaste a este reino?</p>
+            <p>15 Então Ester mandou responder a Mardoqueu:</p>
+            <p>16 Vai, ajunta todos os judeus que se acham em Susã, e jejuai por mim; e não comais nem bebais por três dias, nem de noite nem de dia; eu também e as minhas moças jejuaremos assim; e assim irei ter com o rei, ainda que não seja segundo a lei; e se perecer, pereci.</p>
+            <p>17 Então Mardoqueu se foi, e fez conforme tudo quanto Ester lhe tinha mandado.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ester3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ester5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
