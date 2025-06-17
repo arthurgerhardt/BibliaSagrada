@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ester 6</h2>
+            <p>1 Naquela noite fugiu o sono do rei; então mandou trazer o livro das crônicas, as memórias, e leram diante do rei.</p>
+            <p>2 E achou-se escrito que Mardoqueu tinha denunciado Bigtã e Teres, dois eunucos do rei, da guarda da porta, que tinham procurado lançar mão do rei Assuero.</p>
+            <p>3 Então disse o rei: Que honra e distinção se deu a Mardoqueu por isso? E disseram os servos do rei, que o serviam: Coisa nenhuma se lhe fez.</p>
+            <p>4 Então disse o rei: Quem está no pátio? Ora, Hamã tinha entrado no pátio exterior da casa do rei, para dizer ao rei que enforcassem a Mardoqueu na forca que lhe tinha preparado.</p>
+            <p>5 E os servos do rei lhe disseram: Eis que Hamã está no pátio. E disse o rei: Entre.</p>
+            <p>6 E Hamã entrou, e o rei lhe disse: Que se fará ao homem de cuja honra o rei se agrada? Então Hamã disse consigo mesmo: De quem se agradaria o rei para lhe fazer honra mais do que a mim?</p>
+            <p>7 Assim disse Hamã ao rei: Para o homem de cuja honra o rei se agrada,</p>
+            <p>8 Tragam-se as vestes reais de que o rei se costuma vestir, e o cavalo em que o rei costuma andar montado, e ponha-se-lhe a coroa real na cabeça;</p>
+            <p>9 E entregue-se a veste e o cavalo nas mãos de um dos príncipes mais nobres do rei, e vistam dele aquele homem de cuja honra o rei se agrada, e levem-no a cavalo pelas ruas da cidade, e apregoem diante dele: Assim se fará ao homem de cuja honra o rei se agrada!</p>
+            <p>10 Então disse o rei a Hamã: Apressa-te, toma a veste e o cavalo, como disseste, e faze assim para Mardoqueu, o judeu, que está assentado à porta do rei; e coisa nenhuma deixes de tudo quanto disseste.</p>
+            <p>11 Então Hamã tomou a veste e o cavalo, e vestiu a Mardoqueu, e o levou a cavalo pelas ruas da cidade, e apregoou diante dele: Assim se fará ao homem de cuja honra o rei se agrada!</p>
+            <p>12 Depois disto Mardoqueu voltou para a porta do rei; porém Hamã se retirou correndo para sua casa, angustiado e coberta a cabeça.</p>
+            <p>13 E contou Hamã a Zeres, sua mulher, e a todos os seus amigos tudo quanto lhe tinha sucedido. Então os seus sábios e Zeres, sua mulher, lhe disseram: Se Mardoqueu, perante o qual já começaste a cair, é da descendência dos judeus, não prevalecerás contra ele, antes certamente cairás diante dele.</p>
+            <p>14 Estando eles ainda falando com ele, chegaram os eunucos do rei, e apressaram Hamã a ir ao banquete que Ester preparara.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ester5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ester7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

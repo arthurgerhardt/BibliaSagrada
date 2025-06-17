@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ester 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ester 7</h2>
+            <p>1 Assim o rei e Hamã vieram ao banquete com a rainha Ester.</p>
+            <p>2 E disse o rei outra vez a Ester no segundo dia, estando eles bebendo vinho: Qual é a tua petição, rainha Ester? E será feita. E qual é o teu desejo? Até metade do reino se te dará.</p>
+            <p>3 Então a rainha Ester respondeu, e disse: Se achei graça aos teus olhos, ó rei, e se bem parecer ao rei, dê-se-me a minha vida por minha petição, e o meu povo por meu desejo.</p>
+            <p>4 Porque fomos vendidos, eu e o meu povo, para nos destruírem, matar e exterminar; se fôssemos vendidos para servos e servas, eu me calaria; porque o adversário não compensaria o mal que o rei sofre.</p>
+            <p>5 Então o rei Assuero falou, e disse à rainha Ester: Quem é, e onde está aquele cujo coração se tem atrevido a fazer assim?</p>
+            <p>6 E Ester disse: O adversário e inimigo é este malvado Hamã. Então Hamã se espantou diante do rei e da rainha.</p>
+            <p>7 E o rei se levantou do banquete do vinho, na sua ira, e entrou no jardim do palácio; e Hamã ficou para implorar a rainha Ester, porque viu que o mal lhe estava determinado pelo rei.</p>
+            <p>8 E voltando o rei do jardim do palácio, para a casa do banquete do vinho, Hamã tinha caído sobre o leito em que estava Ester. Então disse o rei: Porventura quereria ele também forçar a rainha perante mim nesta casa? Saindo esta palavra da boca do rei, cobriram o rosto de Hamã.</p>
+            <p>9 Então disse Harbona, um dos eunucos que estavam diante do rei: Eis que também está preparada a forca de cinquenta côvados de altura, que Hamã fizera para Mardoqueu, que falara para o bem do rei. Então disse o rei: Enforcai-o nela.</p>
+            <p>10 Enforcaram, pois, Hamã na forca que ele tinha preparado para Mardoqueu. Então o furor do rei se aplacou.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ester6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ester8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
