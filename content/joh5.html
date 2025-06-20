@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 5</h2>
+            <p>1 Chama agora; haverá alguém que te responda? E para qual dos santos te voltarás?</p>
+            <p>2 Porque a ira destrói o louco, e o zelo mata o tolo.</p>
+            <p>3 Bem vi eu o louco lançar raízes, mas logo amaldiçoei a sua habitação.</p>
+            <p>4 Seus filhos estão longe da segurança, são esmagados às portas, e não há quem os livre.</p>
+            <p>5 A sua colheita o faminto devora, e até dentre os espinhos a tira, e os sedentos sorvem a sua fazenda.</p>
+            <p>6 Porque a aflição não sai do pó, nem a tribulação brota da terra;</p>
+            <p>7 Mas o homem nasce para a tribulação, como as faíscas se levantam para voar.</p>
+            <p>8 Mas quanto a mim, buscaria a Deus, e a ele entregaria a minha causa.</p>
+            <p>9 Ele faz coisas grandes e inescrutáveis, e maravilhas sem número.</p>
+            <p>10 Ele dá a chuva sobre a terra, e envia águas sobre os campos.</p>
+            <p>11 Ele põe os humildes num lugar alto, e os enlutados são exaltados à prosperidade.</p>
+            <p>12 Ele frustra as maquinações dos astutos, para que as suas mãos não possam levar a efeito os seus planos.</p>
+            <p>13 Ele apanha os sábios na sua própria astúcia, e o conselho dos perversos se precipita.</p>
+            <p>14 De dia encontram as trevas, e ao meio-dia andam às apalpadelas como de noite.</p>
+            <p>15 Mas ao necessitado livra da espada da sua boca, e da mão do forte.</p>
+            <p>16 Assim há esperança para o pobre, e a iniqüidade tapa a sua boca.</p>
+            <p>17 Eis que bem-aventurado é o homem a quem Deus corrige; não desprezes, pois, a disciplina do Todo-Poderoso.</p>
+            <p>18 Porque ele faz a chaga, e ele mesmo a liga; ele fere, e as suas mãos curam.</p>
+            <p>19 Em seis angústias te livrará; e na sétima o mal não te tocará.</p>
+            <p>20 Na fome te livrará da morte, e na guerra do poder da espada.</p>
+            <p>21 Do açoite da língua estarás abrigado, e não temerás a assolação, quando vier.</p>
+            <p>22 Da assolação e da fome te rirás, e das feras da terra não terás medo.</p>
+            <p>23 Porque estarás em aliança com as pedras do campo, e as feras do campo estarão em paz contigo.</p>
+            <p>24 Saberás que a tua tenda está em paz; visitarás a tua morada, e nada te faltará.</p>
+            <p>25 Também saberás que se multiplicará a tua descendência, e a tua posteridade como a erva da terra.</p>
+            <p>26 Virás em velhice à sepultura, como se recolhe o feixe de trigo a seu tempo.</p>
+            <p>27 Eis que isto já o inquirimos, assim é; ouve-o tu, e aplica-o à ti mesmo.</p>
+           
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

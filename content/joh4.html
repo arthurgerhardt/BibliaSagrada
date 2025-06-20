@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 4</h2>
+            <p>1 Então respondeu Elifaz, o temanita, e disse:</p>
+            <p>2 Se intentarmos falar-te, enfadar-te-ás? Mas quem poderá conter as palavras?</p>
+            <p>3 Eis que ensinaste a muitos, e fortaleceste as mãos fracas.</p>
+            <p>4 As tuas palavras levantaram os que tropeçavam, e os joelhos vacilantes fortificaste.</p>
+            <p>5 Mas agora a ti te vem, e te enfadas; e, tocando-te a ti, te perturbas.</p>
+            <p>6 Porventura não é o teu temor de Deus a tua confiança, e a tua esperança a sinceridade dos teus caminhos?</p>
+            <p>7 Lembra-te, peço-te: Quem, sendo inocente, jamais pereceu? E onde foram os retos destruídos?</p>
+            <p>8 Segundo eu tenho visto, os que lavram iniquidade e semeiam o mal, isso mesmo eles segam.</p>
+            <p>9 Com o hálito de Deus perecem, e com o assopro da sua ira se consomem.</p>
+            <p>10 O rugido do leão, e a voz do leão feroz, e os dentes dos leõezinhos são quebrados.</p>
+            <p>11 Perece o leão velho, por falta de presa, e os filhos da leoa andam dispersos.</p>
+            <p>12 Uma palavra se me disse em segredo, e os meus ouvidos perceberam um sussurro dela.</p>
+            <p>13 Entre pensamentos de visões noturnas, quando o sono cai sobre os homens,</p>
+            <p>14 Sobreveio-me o espanto e o tremor, e todos os meus ossos estremeceram.</p>
+            <p>15 Então um espírito passou por diante de mim; fez arrepiar os cabelos da minha carne.</p>
+            <p>16 Parou ele, mas não conheci o seu rosto; uma figura estava diante dos meus olhos; houve silêncio, e ouvi uma voz que dizia:</p>
+            <p>17 Seria, porventura, o homem mais justo do que Deus? Seria o varão mais puro do que o seu Criador?</p>
+            <p>18 Eis que nos seus servos não confia, e aos seus anjos atribui loucura;</p>
+            <p>19 Quanto mais àqueles que habitam em casas de barro, cujo fundamento está no pó, e são esmagados como a traça!</p>
+            <p>20 Desde a manhã até à tarde são despedaçados; perecem para sempre, sem que disso se faça caso.</p>
+            <p>21 Porventura não se lhes corta o cordão da vida? Morrem, e não adquirem sabedoria.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

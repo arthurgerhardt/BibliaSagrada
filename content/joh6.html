@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 6</h2>
+            <p>1 Então respondeu Jó, e disse:</p>
+            <p>2 Oh! se se pesasse o meu lamento, e se se pusesse em balanças o meu sofrimento!</p>
+            <p>3 Porque agora seria mais pesado do que a areia dos mares; por isso as minhas palavras são precipitadas.</p>
+            <p>4 Porque as flechas do Todo-Poderoso estão em mim, cujo veneno bebe o meu espírito; os terrores de Deus se armam contra mim.</p>
+            <p>5 Porventura o jumento selvagem brama junto ao pasto,
+            ou o boi mugirá junto ao seu pasto?</p>
+            <p>6 Porventura se comerá o insípido sem sal? Ou haverá gosto na clara do ovo?</p>
+            <p>7 As coisas que a minha alma não recusaria, são como comida enfadonha.</p>
+            <p>8 Oh! se eu tivesse o que pedir, e Deus me concedesse o que espero!</p>
+            <p>9 E que Deus me quisesse esmagar, e soltasse a sua mão, e me cortasse!</p>
+            <p>10 Então ainda teria eu consolo, e exultaria, apesar da minha dor, porque não neguei as palavras do Santo.</p>
+            <p>11 Que força tenho eu, para esperar? E que é o meu fim, para que eu prolongue a minha vida?</p>
+            <p>12 Porventura a minha força é a força das pedras? Ou é a minha carne de bronze?</p>
+            <p>13 Não tenho eu ajuda em mim mesmo? E não me foi retirada a prudência?</p>
+            <p>14 Ao aflito deve o seu amigo mostrar misericórdia, ainda que tenha deixado o temor do Todo-Poderoso.</p>
+            <p>15 Meus irmãos enganaram como um ribeiro, como o ribeiro dos ribeiros que se vão;</p>
+            <p>16 Que se escurecem por causa do gelo,
+            e a neve os cobre;</p>
+            <p>17 Que, ao aquecerem-se, se secam, e quando se aquecem, desaparecem do seu lugar;</p>
+            <p>18 Que se desviam dos seus caminhos, vão para o deserto, e perecem.</p>
+            <p>19 As caravanas de Tema olham para eles, e os viajantes de Sabá esperam neles.</p>
+            <p>20 Eles se envergonham, porque tinham esperança; quando chegam até eles, ficam confusos.</p>
+            <p>21 Assim agora sois vós, porque vistes o temor, e vos espantastes.</p>
+            <p>22 Porventura vos disse eu: Dai-me alguma coisa? Ou: Fazei por mim algum presente?</p>
+            <p>23 Ou: Livrai-me da mão do adversário? Ou: Resgatai-me da mão dos opressores?</p>
+            <p>24 Ensinai-me, e eu calarei; e fazei-me entender em que tenho errado.</p>
+            <p>25 Como são poderosas as palavras sinceras! Mas que repreensão me pode corrigir?</p>
+            <p>26 Porventura pensais repreender palavras, e as palavras do desesperado são como o vento?</p>
+            <p>27 Certamente vós lançareis sortes sobre o órfão, e negociareis com o vosso amigo.</p>
+            <p>28 Agora, pois, rogai-vos que olheis para mim, porque não direi mentiras diante de vós.</p>
+            <p>29 Volta-vos, peço-vos, não haja iniqüidade;
+            sim, volta-vos ainda, porque a minha justiça está na minha causa.</p>
+            <p>30 Porventura a minha língua não discernirá o mal, e os meus paladares não sentirão o que é nocivo?</p>
+           
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

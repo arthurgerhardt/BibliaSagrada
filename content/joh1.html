@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 1</h2>
+            <p>1 Havia um homem na terra de Uz, cujo nome era Jó; e este homem era íntegro e reto, e temente a Deus, e desviava-se do mal.</p>
+            <p>2 E nasceram-lhe sete filhos e três filhas.</p>
+            <p>3 E possuía sete mil ovelhas, três mil camelos, quinhentas juntas de bois e quinhentas jumentas, e tinha uma grande quantidade de servos; e era aquele homem o mais poderoso de todos os do Oriente.</p> 
+            <p>4 E os seus filhos iam e faziam banquetes, cada um em sua casa, no seu dia; e enviavam chamar as suas três irmãs, para comerem e beberem com eles.</p>
+            <p>5 E sucedia que, havendo passado o turno dos dias de banquete, Jó os enviava chamar, e os santificava; e levantava-se de madrugada, e oferecia holocaustos segundo o número de todos eles; porque dizia Jó: Talvez tenham pecado os meus filhos, e blasfemado contra Deus em seus corações. Assim fazia Jó continuamente.</p>
+            <p>6 Ora, no dia em que os filhos de Deus vieram apresentar-se perante o Senhor, veio também Satanás entre eles.</p>
+            <p>7 E disse o Senhor a Satanás: Donde vens? E Satanás respondeu ao Senhor, e disse: De rodear a terra, e passear por ela.</p>
+            <p>8 E disse o Senhor a Satanás: Notaste tu o meu servo Jó? Porque ninguém há na terra semelhante a ele, homem íntegro e reto, temente a Deus, e desviando-se do mal.</p>   
+            <p>9 Então respondeu Satanás ao Senhor, e disse: Porventura teme Jó a Deus debalde?</p>
+            <p>10 Porventura não o cercaste tu, a ele, e à sua casa, e a tudo quanto tem? A obra de suas mãos tens abençoado, e os seus bens se têm multiplicado na terra.</p>
+            <p>11 Mas estende, porém, a tua mão, e toca em tudo quanto tem, e verás se não blasfema contra ti na tua face.</p>
+            <p>12 E disse o Senhor a Satanás: Eis que tudo quanto ele tem está na tua mão; somente não estendas a tua mão sobre ele. E Satanás saiu da presença do Senhor.</p>
+            <p>13 E sucedeu que, no dia em que os filhos e as filhas de Jó comiam e bebiam vinho na casa de seu irmão primogênito,</p>
+            <p>14 veio um mensageiro a Jó, e disse: Os bois lavravam, e as jumentas pastavam junto a eles;</p>
+            <p>15 e deram sobre eles os sabeus, e os tomaram, e mataram os moços a fio de espada;
+            e só eu escapei para trazer-te a nova.</p>
+            <p>16 Estando ele ainda falando, veio outro, e disse: Fogo de Deus caiu do céu, e queimou as ovelhas e os moços, e os consumiu; e só eu escapei para trazer-te a nova.</p>
+            <p>17 Estando ele ainda falando, veio outro, e disse: Os caldeus fizeram três bandos, e deram sobre os camelos, e os tomaram, e mataram os moços a fio de espada; e só eu escapei para trazer-te a nova.</p>
+            <p>18 Estando ele ainda falando, veio outro, e disse: Os teus filhos e as tuas filhas estavam comendo e bebendo vinho na casa de seu irmão primogênito,</p>
+            <p>19 e eis que um grande vento veio do deserto, e deu nos quatro cantos da casa, a qual caiu sobre os jovens, e morreram;
+            e só eu escapei para trazer-te a nova.</p>
+            <p>20 Então Jó se levantou, e rasgou o seu manto, e rapou a sua cabeça, e lançou-se em terra, e adorou.</p>
+            <p>21 E disse: Nu saí do ventre de minha mãe, e nu voltarei lá. O Senhor o deu, e o Senhor o tomou; bendito seja o nome do Senhor.</p>
+            <p>22 Em tudo isto Jó não pecou, nem atribuiu a Deus falta alguma.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ester10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

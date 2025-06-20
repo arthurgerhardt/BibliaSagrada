@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 2</h2>
+            <p>1 E sucedeu que, no dia em que os filhos de Deus vieram apresentar-se perante o Senhor, veio também Satanás entre eles, para apresentar-se perante o Senhor.</p>
+            <p>2 E disse o Senhor a Satanás: Donde vens? E Satanás respondeu ao Senhor, e disse: De rodear a terra, e passear por ela.</p>
+            <p>3 E disse o Senhor a Satanás: Notaste tu o meu servo Jó? Porque ninguém há na terra semelhante a ele, homem íntegro e reto, temente a Deus, e desviando-se do mal. E ainda retém a sua integridade,
+            embora me haja incitado contra ele, para o consumir sem causa.</p>
+            <p>4 Então respondeu Satanás ao Senhor, e disse: Pele por pele, e tudo quanto o homem tem dará pela sua vida.</p>
+            <p>5 Mas estende, porém, a tua mão, e toca nos seus ossos e na sua carne, e verás se não blasfema contra ti na tua face.</p>
+            <p>6 E disse o Senhor a Satanás: Eis que ele está na tua mão; mas poupa a sua vida.</p>
+            <p>7 Então saiu Satanás da presença do Senhor, e feriu a Jó de chagas malignas desde a planta do pé até ao alto da cabeça.</p>
+            <p>8 E Jó tomou um caco, para com ele se raspar, e estava sentado no meio da cinza.</p>
+            <p>9 Então sua mulher lhe disse: Ainda reténs a tua integridade? Amaldiçoa a Deus, e morre.</p>
+            <p>10 Mas ele lhe disse: Falas como uma louca falaria. Aceitaremos o bem de Deus, e não aceitaremos também o mal? Em tudo isto Jó não pecou com os seus lábios.</p>
+            <p>11 Ora, três amigos de Jó ouviram todo este mal que lhe havia sobrevenido; e cada um deles veio do seu lugar: Elifaz, o temanita, e Bildade, o suita, e Zofar, o naamatita; e combinaram juntos de vir para consolá-lo.</p>
+            <p>12 E, levantando os seus olhos de longe, não o reconheceram; e levantaram a voz, e choraram; e cada um rasgou o seu manto, e lançaram pó sobre as suas cabeças, para o céu.</p>
+            <p>13 E assentaram-se com ele na terra sete dias e sete noites;
+            e nenhum lhe dizia palavra, porque viam que a sua dor era muito grande.</p>
+            
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
