@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 14</h2>
+            <p>1 O homem, nascido da mulher, é de poucos dias e farto de inquietação.</p>
+            <p>2 Sai como a flor, e murcha; foge como a sombra, e não permanece.</p>
+            <p>3 E sobre este tal abres os teus olhos, e me trazes a juízo contigo?</p>
+            <p>4 Quem pode tirar o imundo do limpo? Ninguém.</p>
+            <p>5 Visto está determinado: os seus dias são contados; o número dos seus meses está contigo; tu lhe puseste um termo que não passará.</p>
+            <p>6 Desvia-te dele, para que descanse, até que, como o mercenário, goze o seu dia.</p>
+            <p>7 Porque há esperança para a árvore, se for cortada; que se renovará, e não cessará de produzir ramos.</p>   
+            <p>8 Se envelhecer na terra a sua raiz, e morrer o seu tronco no chão,</p>
+            <p>9 Ao cheiro das águas brotará, e dará ramos como uma planta nova.</p>
+            <p>10 Mas o homem morre, e fica prostrado; sim, o homem expira, e onde está?</p>
+            <p>11 Como as águas se vão do mar, e o rio se esgota, e seca,</p>
+            <p>12 Assim o homem se deita, e não se levantará; até que os céus se acabem, não despertará, nem se levantará da sua dormida.</p>
+            <p>13 Ah! se tu me escondesses na sepultura, e me ocultasses até que a tua ira se passasse, e me pusesses um termo, e me lembrasses de mim!</p>
+            <p>14 Se o homem morre, viverá outra vez? Todos os dias da minha milícia esperarei, até que venha a minha mudança.</p>
+            <p>15 Tu chamarás, e eu te responderei; terás desejo da obra das tuas mãos.</p>
+            <p>16 Pois agora contaste os meus passos; não guardarás a minha transgressão.</p>
+            <p>17 A minha iniqüidade está selada numa bolsa, e tu cobres a minha iniqüidade.</p>
+            <p>18 Mas a montanha, que cai, desmorona-se; e a rocha se retira do seu lugar;</p>
+            <p>19 As águas desgastam as pedras; as suas torrentes lavam a terra; assim tu destróis a esperança do homem.</p>
+            <p>20 Tu o venceste para sempre, e ele se vai; tu o mudas o seu rosto, e o despedes.</p>
+            <p>21 Se os seus filhos são honrados, ele não o sabe; e se são desprezados, ele não o percebe.</p>
+            <p>22 Somente a sua carne sente dor, e o seu espírito se entristece dentro dele.</p>
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 17</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 17</h2>
+            <p>1 O meu espírito está quebrantado, os meus dias se extinguiram, e a sepultura me é preparada.</p>
+            <p>2 Não zombam de mim os escarnecedores? E os meus olhos permanecem na minha ofensa.</p>
+            <p>3 Dá-me, peço-te, penhor; quem será o fiador comigo?</p>
+            <p>4 Porque tu fechaste o seu coração à sabedoria; por isso não o exaltas.</p>  
+            <p>5 O que denuncia os seus amigos por despojo, os olhos dos seus filhos definharão.</p>
+            <p>6 Mas ele me pôs por provérbio do povo; e eu sou como um homem de quem se faz zombaria.</p>
+            <p>7 Os meus olhos se escureceram por causa da tristeza, e todos os meus membros são como sombra.</p>
+            <p>8 Os retos se admirarão disto, e o inocente se levantará contra o ímpio.</p>
+            <p>9 O justo se manterá no seu caminho, e o que tem mãos limpas aumentará a força.</p>
+            <p>10 Mas vós todos, tornai a vir; e não acharei entre vós sábio algum.</p>
+            <p>11 Os meus dias se foram, os meus planos se desfizeram, e os desejos do meu coração.</p>
+            <p>12 Eles mudaram a noite em dia; e a luz está perto, diante das trevas.</p>
+            <p>13 Se espero que se abra a sepultura, e que seja a minha casa na escuridão;</p>
+            <p>14 Se digo ao túmulo: Tu és meu pai; e à podridão: Tu és minha mãe, e minha irmã;</p>
+            <p>15 Onde, pois, está agora a minha esperança? E a minha esperança, quem a verá?</p>
+            <p>16 Ela descerá às portas do inferno; quando juntamente com mim repousarem no pó.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh18.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

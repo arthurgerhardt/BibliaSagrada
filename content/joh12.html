@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 12</h2>
+            <p>1 Então Jó respondeu, e disse:</p>
+            <p>2 Na verdade vós sois o povo, e com vós morrerá a sabedoria.</p>
+            <p>3 Também eu tenho entendimento como vós; não sou inferior a ninguém; e quem não sabe coisas semelhantes a estas?</p>
+            <p>4 Eu sou o escárnio dos meus amigos, eu que invocava a Deus, e ele me respondia; o justo, o perfeito, é escárnio para o ímpio.</p>
+            <p>5 Na prosperidade do homem que anda seguro, o desprezo do calamitoso é como um abismo.</p>
+            <p>6 A tendas dos ladrões está em paz, e os que provocam a Deus estão seguros; aquele a quem Deus traz na sua mão.</p>
+            <p>7 Mas pergunta agora às feras, e elas te ensinarão; e às aves do céu, e elas te o dirão;</p>
+            <p>8 Ou pergunta à terra, e ela te ensinará; e os peixes do mar te contarão.</p>
+            <p>9 Quem não sabe, entre todos estes, que a mão do Senhor fez isto?</p>
+            <p>10 Na sua mão está a alma de todo ser vivente, e o espírito de toda a carne humana.</p>
+            <p>11 Porventura o ouvido não prova as palavras, como o paladar prova a comida?</p>
+            <p>12 Na velhice está a sabedoria, e na multidão de dias a prudência.</p>
+            <p>13 Com Deus está a sabedoria e a força; seu é o conselho e a inteligência.</p>
+            <p>14 Eis que ele despedaça, e não se pode edificar; ele encerra o homem, e não se pode soltar.</p>
+            <p>15 Eis que ele retém as águas, e elas secam; e ele as solta, e devastam a terra.</p>
+            <p>16 Com ele está a força e a sabedoria; seu é o enganador e o enganado.</p>
+            <p>17 Ele faz andar nus os conselheiros, e desfaz o juízo dos juízes.</p>
+            <p>18 Ele solta o cinto dos reis, e cinge os seus lombos com uma corda.</p>
+            <p>19 Ele faz andar nus os sacerdotes, e derruba os poderosos.</p>
+            <p>20 Ele tira a fala aos que são de confiança, e tira o entendimento aos anciãos.</p>
+            <p>21 Ele derrama desprezo sobre os príncipes, e solta o cinto dos fortes.</p>
+            <p>22 Ele revela coisas profundas das trevas, e traz à luz a sombra da morte.</p>
+            <p>23 Ele multiplica as nações, e as destrói; ele espalha as nações, e as torna em nada.</p>
+            <p>24 Ele tira o entendimento aos chefes do povo da terra, e os faz vaguear por um deserto sem caminho.</p>
+            <p>25 Eles apalpam as trevas, sem luz; e ele os faz andar como bêbados.</p>
+        
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

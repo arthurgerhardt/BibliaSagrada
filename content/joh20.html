@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 20</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 20</h2>
+            <p>1 Então Zofar, o naamatita, respondeu, e disse:</p>
+            <p>2 Portanto os meus pensamentos me fazem responder, e por isso me apresso.</p>
+            <p>3 Eu ouvi repreensão que me envergonha, e o espírito do meu entendimento me faz responder.</p>
+            <p>4 Não sabes tu isto desde a antiguidade, desde que o homem foi posto sobre a terra,</p>
+            <p>5 Que a exultação dos ímpios é breve, e a alegria do hipócrita por um momento?</p>
+            <p>6 Ainda que a sua altura chegue aos céus, e a sua cabeça toque nas nuvens,</p>
+            <p>7 Como o seu próprio esterco perecerá para sempre; os que o viram dirão: Onde está ele?</p>
+            <p>8 Como um sonho voará, e não será encontrado; e será expulso como uma visão da noite.</p>
+            <p>9 O olho que o viu não o verá mais; nem o seu lugar o contemplará mais.</p>
+            <p>10 Os seus filhos procurarão o favor dos pobres, e as suas mãos restituirão os seus bens.</p>
+            <p>11 Os seus ossos estão cheios da sua mocidade, mas com ele se deitará no pó.</p>
+            <p>12 Ainda que o mal lhe seja doce na boca, e o esconda debaixo da sua língua,</p>
+            <p>13 Que o guarde, e não o deixe, mas o retenha no seu paladar;</p>
+            <p>14 Contudo a sua comida se tornará em suas entranhas como fel de áspide.</p>
+            <p>15 Ele tragará riquezas, mas as vomitará; Deus as lançará fora do seu ventre.</p>
+            <p>16 Ele sugou veneno de áspides; a língua da víbora o matará.</p>
+            <p>17 Ele não verá ribeiros, nem rios, nem torrentes de mel e de manteiga;</p>
+            <p>18 Ele restituirá o trabalho, e não o engolirá; como o seu ganho, não se alegrará.</p>
+            <p>19 Porque ele esmagou, e deixou os pobres; roubou a casa, e não a edificou.</p>
+            <p>20 Porque não conheceu sossego no seu ventre, por isso nada escapará do que ele deseja.</p>
+            <p>21 Nada restará da sua comida; por isso a sua prosperidade não durará.</p>
+            <p>22 Na sua abundância será angustiado; toda a mão do aflito virá sobre ele.</p>
+            <p>23 Quando estiver cheio, Deus lançará sobre ele a sua ira, e fará chover sobre ele as suas flechas.</p>
+            <p>24 Fugirá da arma de ferro; a flecha de bronze o atravessará.</p>
+            <p>25 Ele arranca a ponta, e sai luzindo; a ponta reluzente da sua lança é uma morte súbita.</p>
+            <p>26 Todas as trevas estão guardadas para os seus tesouros; um fogo que não foi soprado o consumirá; ele será devorado pelo que restou na sua tenda.</p>
+            <p>27 Os céus revelarão a sua iniqüidade, e a terra se levantará contra ele.</p>
+            <p>28 A produção da sua casa será removida, derramada no dia da sua ira.</p>
+            <p>29 Esta é a porção que Deus destina ao ímpio, e a herança que Deus lhe ordena.</p>
+        
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh19.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh21.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

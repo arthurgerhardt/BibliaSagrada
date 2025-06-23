@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 13</h2>
+            <p>1 Eis que os meus olhos viram tudo isto, e os meus ouvidos ouviram e entenderam.</p>
+            <p>2 Como vós sabeis, eu também sei; não vos sou inferior.</p>
+            <p>3 Todavia eu falarei ao Todo-Poderoso, e desejarei discutir com Deus.</p>
+            <p>4 Mas vós sois falsos médicos, todos vós; não há em vós remédio.</p>
+            <p>5 Ah! se vós pudésseis calar, isso vos seria contado como sabedoria.</p>
+            <p>6 Ouvi agora a minha defesa, e escutai toda a minha razão.</p>
+            <p>7 Falareis perversamente por Deus, e falareis por ele com engano?</p>
+            <p>8 Tomareis partido por ele? Contendereis por Deus?</p>
+            <p>9 Será bom para vós que ele vos esquadrinhe? Ou o enganareis como se engana um homem?</p>
+            <p>10 Certamente ele vos repreenderá, se em segredo tomardes partido.</p>
+            <p>11 Não vos espantará a sua excelência? E não cairá sobre vós o seu terror?</p>
+            <p>12 As vossas máximas são provérbios de cinzas;
+            as vossas fortalezas são fortalezas de barro.</p>
+            <p>13 Calai-vos, e deixai-me falar; e venha sobre mim o que vier.</p>
+            <p>14 Por que tomarei a minha carne nas minhas mãos? E por que porei a minha vida em risco?</p>
+            <p>15 Eis que ele me matará; não tenho esperança; contudo, defenderei os meus caminhos diante dele.</p>
+            <p>16 Também isto me será por salvação, porque o ímpio não virá diante dele.</p>
+            <p>17 Ouvi atentamente as minhas palavras, e o meu discurso com os vossos ouvidos.</p>
+            <p>18 Eis que agora tenho ordenado a minha causa; sei que serei justificado.</p>
+            <p>19 Quem é aquele que contendia comigo? Porque agora eu me calaria e expiraria.</p>
+            <p>20 Só não me façais duas coisas, então não me esconderei de ti:</p>
+            <p>21 Afasta de mim a tua mão, e não me assombre o teu terror.</p>
+            <p>22 Então chama-me, e eu responderei; ou eu falarei, e tu me responderás.</p>
+            <p>23 Quantas são as minhas iniqüidades e pecados? Faze-me saber a minha transgressão e o meu pecado.</p>
+            <p>24 Por que escondes o teu rosto, e me consideras como teu inimigo?</p>
+            <p>25 Queres assustar uma folha levada pelo vento? E perseguirás a palha seca?</p>
+            <p>26 Porque escreves contra mim coisas amargas, e me fazes herdar as iniqüidades da minha mocidade;</p>
+            <p>27 Pões os meus pés no tronco, e vigias todos os meus caminhos, e marcas a planta dos meus pés;</p>
+            <p>28 E, contudo, o homem se consome como a podridão, e como a roupa que o traça consome.</p>
+           
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

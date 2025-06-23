@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 10</h2>
+            <p>1 A minha alma aborrece a minha vida; deixarei a minha queixa livremente; falarei na amargura da minha alma.</p>
+            <p>2 Direi a Deus: Não me condenes; faze-me saber por que contendes comigo.</p>
+            <p>3 É bom para ti que me oprimas, que rejeites a obra das tuas mãos, e resplandeças o conselho dos ímpios?</p>
+            <p>4 Tens tu olhos de carne? Ou vêss tu como vê o homem?</p>
+            <p>5 São os teus dias como os dias do homem? Ou são os teus anos como os tempos do homem,</p>
+            <p>6 Para que busques a minha iniqüidade, e procures o meu pecado,</p>
+            <p>7 Embora tu saibas que eu não sou ímpio, e que não há ninguém que possa livrar-me da tua mão?</p>
+            <p>8 As tuas mãos me fizeram e me formaram por todos os lados; e, contudo, agora me desfazes em pó.</p>
+            <p>9 Lembra-te, peço-te, de que me formaste como barro; e tornar-me-ás em pó outra vez?</p>
+            <p>10 Não me derramaste como leite, e não me coalhaste como queijo?</p>
+            <p>11 Não me vestiste de pele e carne, e não me teceste com ossos e nervos?</p>
+            <p>12 Vida e misericórdia me concedeste; e a tua providência guardou o meu espírito.</p>
+            <p>13 Mas estas coisas escondeste no teu coração; sei que isto está contigo.</p>
+            <p>14 Se eu pecar, tu me observas, e não me considerarás inocente do meu pecado.</p>
+            <p>15 Se eu for ímpio, ai de mim! E se for justo, não levantarei a minha cabeça; farto-me de vergonha, e vejo a minha aflição.</p>
+            <p>16 Se a minha cabeça se exaltar, tu me caçarás como um leão; e outra vez mostrarás as tuas maravilhas contra mim.</p>
+            <p>17 Renovas as tuas testemunhas contra mim, e aumentas a tua ira sobre mim; as hostes se ajuntam contra mim.</p>
+            <p>18 Por que, pois, me tiraste do ventre? Ah! se eu tivesse morrido, e não tivesse visto o mal!</p>
+            <p>19 Eu teria sido como se não tivesse sido; eu teria sido levado da madre para o sepulcro.</p>
+            <p>20 Não são poucos os meus dias? Cessa, pois, e deixa-me, para que eu me alegre um pouco,</p>
+            <p>21 Antes que eu vá para o lugar de onde não tornarei mais, para a terra de trevas e sombra de morte,</p>
+            <p>22 Terra de trevas, como a escuridão, e sombra de morte, sem ordem, e onde a luz é como a escuridão.</p>
+            
+            
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

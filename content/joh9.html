@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 9</h2>
+            <p>1 Então Jó respondeu, e disse:</p>
+            <p>2 Na verdade sei que é assim; e como pode o homem ser justo diante de Deus?</p>
+            <p>3 Se alguém quisesse contender com ele,
+                não lhe poderia responder a uma de mil.</p>
+            <p>4 Ele é sábio de coração, e poderoso em força; quem endureceu contra ele, e teve paz?</p>
+            <p>5 Ele remove os montes, e eles não o sabem; derruba-os na sua ira.</p>
+            <p>6 Ele move a terra do seu lugar, e as suas colunas estremecem.</p>
+            <p>7 Ele manda ao sol, e ele não nasce; e sobre as estrelas
+                põe o seu selo.</p>
+            <p>8 Ele estende os céus sozinho, e anda sobre as ondas do mar.</p>
+            <p>9 Ele faz a Ursa, o Orion, e as Plêiades, e os recintos do sul.</p>
+            <p>10 Ele faz coisas grandes e insondáveis, e maravilhas sem número.</p>
+            <p>11 Eis que ele passa por mim, e não o vejo; e vai adiante, e não o percebo.</p>
+            <p>12 Eis que ele arrebata; quem o impedirá? Quem lhe dirá: Que fazes?</p>
+            <p>13 Deus não retirará a sua ira; os que ajudam os soberbos, prostram-se debaixo dele.</p> 
+            <p>14 Como, pois, lhe responderei? E escolheria as minhas palavras com ele?</p>
+            <p>15 Porque ainda que eu fosse justo, não lhe responderia; antes, pediria o juízo ao meu juiz.</p> 
+            <p>16 Se eu o chamasse, e ele me respondesse, ainda assim não creria que tivesse ouvido a minha voz.</p>
+            <p>17 Porque me quebranta com tempestade, e multiplica as minhas feridas sem causa.</p>
+            <p>18 Ele não me permite respirar, mas enche a minha vida de amargura.</p>
+            <p>19 Se é questão de força, eis que ele é forte; e se é questão de juízo, quem me fará ver?</p>
+            <p>20 Ainda que eu fosse justo, a minha boca me condenaria; ainda que eu fosse íntegro, ele me perverteria.</p>
+            <p>21 Eu sou íntegro; não me importo com a minha vida; desprezo a minha alma.</p>
+            <p>22 É tudo uma coisa; por isso digo: Ele destrói o íntegro e o ímpio.</p>
+            <p>23 Se a flagelação mata de repente, ele ri da calamidade dos inocentes.</p>
+            <p>24 A terra é entregue na mão dos ímpios; ele cobre o rosto dos seus juízes; se não é ele, quem é?</p>
+            <p>25 Ora, os meus dias são mais velozes do que um corredor; fogem, e não vêem o bem.</p>
+            <p>26 Passam como navios de junco, como águia que se apressa a devorar a presa.</p>
+            <p>27 Se eu disser: Farei esquecer a minha queixa, mudarei o meu semblante, e me esforçarei;</p>
+            <p>28 Ainda assim estou cheio de temor de todas as minhas dores; sei que não me considerarás inocente.</p>
+            <p>29 Se sou ímpio, por que me esforçaria em vão?</p>
+            <p>30 Se eu me lavar com água de neve, e purificar as minhas mãos com sabão,</p>
+            <p>31 Ainda assim me mergulharás no fosso, e as minhas próprias roupas me abominarão.</p>
+            <p>32 Porque ele não é homem como eu, para que eu lhe possa responder, e para que possamos ir juntos a juízo.</p>
+            <p>33 Não há entre nós árbitro, que ponha a sua mão sobre nós ambos.</p>
+            <p>34 Tire ele de mim a sua vara, e não me espante o seu terror;</p>
+            <p>35 Então falarei, e não temerei; porque na minha própria presença não estou livre de temor.</p>
+            
+            
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

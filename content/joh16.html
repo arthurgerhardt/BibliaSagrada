@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 16</h2>
+            <p>1 Então respondeu Jó, dizendo:</p>
+            <p>2 Tenho ouvido muitas coisas como estas; todos vós sois consoladores molestos.</p>
+            <p>3 Porventura não terão fim as palavras vãs? Ou o que te irrita, para que assim respondas?</p>
+            <p>4 Falaria eu também como vós falais, se a vossa alma estivesse em lugar da minha; eu poderia amontoar palavras contra vós, e menear contra vós a minha cabeça.</p>
+            <p>5 Mas eu fortaleceria com a minha boca, e a consolação dos meus lábios abrandaria a vossa dor.</p>
+            <p>6 Se eu falar, a minha dor não cessa; e, calando-me eu, qual é o meu alívio?</p>
+            <p>7 Mas agora me cansou; tu assolaste toda a minha companhia.</p>
+            <p>8 Testemunhou contra mim; e o meu emagrecimento se levantou contra mim, e no meu rosto testifica contra mim.</p>
+            <p>9 Na sua ira me despedaçou, e me perseguiu; rangeu os dentes contra mim; o meu adversário aguça contra mim os seus olhos.</p>
+            <p>10 Abrem contra mim a sua boca; com desprezo me feriram nas faces; juntos se ajuntam contra mim.</p>
+            <p>11 Deus me entregou ao ímpio, e nas mãos dos perversos me fez cair.</p>
+            <p>12 Descansado estava eu, porém ele me quebrantou; e pegou-me pela cerviz, e me despedaçou, e me pôs por seu alvo.</p>
+            <p>13 Os seus flecheiros me cercaram; atravessou-me os rins, e não poupou; o meu fel derramou na terra.</p>
+            <p>14 Quebrou-me com quebradura sobre quebradura; arremeteu contra mim como um valente.</p>
+            <p>15 Cosi sobre a minha pele o cilício, e revolvi o meu orgulho no pó.</p>
+            <p>16 O meu rosto está todo inflamado de chorar, e sobre as minhas pálpebras está a sombra da morte;</p>
+            <p>17 Apesar de não haver violência nas minhas mãos, e de ser pura a minha oração.</p>
+            <p>18 Ó terra! não cubras o meu sangue, e não haja lugar para ocultar o meu clamor.</p>
+            <p>19 Eis que também agora a minha testemunha está no céu, e nas alturas o meu testemunhante.</p>
+            <p>20 Os meus amigos são os que zombam de mim; os meus olhos se desfazem em lágrimas diante de Deus.</p>
+            <p>21 Ah! se alguém pudesse contender com Deus pelo homem, como o homem pelo seu próximo!</p>
+            <p>22 Porque decorrem os meus anos em poucos, e eu me vou pelo caminho de onde não voltarei.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh17.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
