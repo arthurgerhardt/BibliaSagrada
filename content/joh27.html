@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 27</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 27</h2>
+            <p>1 Então Jó continuou o seu discurso, e disse:</p>
+            <p>2 Vive Deus, que tirou o meu direito, e o Todo-Poderoso, que amargurou a minha alma;</p>
+            <p>3 Porque enquanto houver vida em mim, e o sopro de Deus nas minhas narinas,</p>
+            <p>4 Os meus lábios não falarão iniqüidade, nem a minha língua pronunciará engano.</p>
+            <p>5 Longe de mim que eu vos justifique; até que eu morra, não apartarei de mim a minha integridade.</p>
+            <p>6 A minha justiça eu a segurarei, e não a largarei; a minha consciência não me reprovará por nenhum dos meus dias.</p>
+            <p>7 Que os meus inimigos sejam como os ímpios, e o que se levantar contra mim, como o perverso.</p>
+            <p>8 Pois qual é a esperança do ímpio, quando Deus o cortar, quando Deus lhe tirar a vida?</p>
+            <p>9 Porventura Deus ouvirá o seu clamor, quando vier sobre ele a angústia?</p>
+            <p>10 Porventura ele se deleitará no Todo-Poderoso? Chamará a Deus em todo o tempo?</p>
+            <p>11 Eu vos ensinarei acerca do poder de Deus; não me esconderia o que é do Todo-Poderoso.</p>
+            <p>12 Eis que todos vós o vistes; por que, pois, vós falais vãs coisas contra ele?</p>
+            <p>13 Esta é a porção do homem perverso com Deus, e a herança dos violentos, que receberão do Todo-Poderoso:</p>
+            <p>14 Se os seus filhos se multiplicarem, será para a espada; e os seus descendentes não se fartarão de pão.</p>
+            <p>15 Os que restarem dele serão sepultados na morte, e as suas viúvas não prantearão.</p>
+            <p>16 Ainda que ele acumule prata como pó, e ajunte roupas como barro;</p>
+            <p>17   O que ele ajuntou, o justo o vestirá, e o inocente repartirá a sua prata.</p>
+            <p>18 Ele edificará a sua casa como a traça, e como a cabana que o vigia faz.</p>
+            <p>19 Rico, ele dormirá, mas não se levantará; abrirá os seus olhos, e não existirá mais.</p>
+            <p>20 O pavor o surpreenderá como as águas; à noite o arrebatará um turbilhão.</p>
+            <p>21 O vento oriental o carregará, e ele se irá; e o arrebatará do seu lugar.</p>
+            <p>22 E Deus lançará sobre ele, e não poupará; fugirá da sua mão.</p>
+            <p>23 Baterão nele com as palmas das mãos, e assobiarão sobre ele do seu lugar.</p>
+        
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh26.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh28.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 23</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 23</h2>
+            <p>1 Então Jó respondeu, e disse:</p>
+            <p>2 Até hoje é a minha queixa; a minha mão está pesada por causa do meu gemido.</p>
+            <p>3 Ah! Quem me dera saber onde eu o encontraria, e onde pudesse chegar ao seu tribunal!</p>
+            <p>4 Eu apresentaria a minha causa diante dele, e encheria a minha boca de argumentos.</p>
+            <p>5 Eu saberia as palavras que ele me responderia, e entenderia o que ele me diria.</p>
+            <p>6 Porventura contendia ele comigo com grande poder? Não; mas ele atentaria para mim.</p>
+            <p>7 Ali o justo poderia discutir com ele, e eu seria livre para sempre do meu juiz.</p>
+            <p>8 Eis que eu vou para o oriente, mas ele não está lá; e para o ocidente, mas não o percebo.</p>
+            <p>9 Ao norte, quando ele está trabalhando, não o vejo; e ao sul, mas não o percebo.</p>
+            <p>10 Mas ele conhece o meu caminho; se ele me provar, eu sairei como o ouro.</p>
+            <p>11 O meu pé se firmou nos seus passos; guardei o seu caminho, e não me desviei.</p>
+            <p>12 Não me aparto dos mandamentos dos seus lábios; guardei as palavras da sua boca mais do que a minha porção.</p>
+            <p>13 Mas ele é uma só coisa; quem o pode fazer mudar? O que a sua alma deseja, isso ele o faz.</p>
+            <p>14 Pois ele cumprirá o que está determinado para mim; e muitas coisas semelhantes a estas estão com ele.</p>
+            <p>15 Por isso eu me assombro diante dele; quando o vejo, tenho medo dele.</p>
+            <p>16 Deus amoleceu o meu coração, e o Todo-Poderoso me perturbou.</p>
+            <p>17 Porque não fui consumido pela escuridão, nem a escuridão me cobriu o rosto.</p>
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh22.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh24.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 22</h2>
+            <p>1 Então Elifaz, o temanita, respondeu, e disse:</p>
+            <p>2 Porventura pode um homem ser de algum proveito a Deus? Ou o sábio será proveitoso a si mesmo?</p>
+            <p>3 Porventura o Todo-Poderoso se agradará de ti? Ou lhe será mais aceitável que tu sejas justo?</p>
+            <p>4 Porventura te repreenderá por causa do teu temor? Entrará em juízo contigo?</p>
+            <p>5 Não é grande a tua iniqüidade, e sem fim as tuas maldades?</p>
+            <p>6 Porque tomaste em penhor o teu irmão sem causa, e despojaste as vestes dos nus.</p>
+            <p>7 Não deste água ao cansado, e não deste pão ao faminto.</p>
+            <p>8 Mas o homem poderoso possuía a terra, e o homem de honra habitava nela.</p>
+            <p>9 As viúvas despediste vazias, e os braços dos órfãos foram quebrados.</p>
+            <p>10 Por isso estão ao redor de ti laços, e o pavor repentino te perturba;</p>
+            <p>11 Ou a escuridão que não podes ver, e a abundância de águas que te cobre.</p>
+            <p>12 Porventura não está Deus nas alturas do céu? E vê como são altos os astros, como são elevados!</p>
+            <p>13 E tu dizes: Que sabe Deus? Pode julgar através das trevas?</p>
+            <p>14 As nuvens são o seu esconderijo, e não vê; e anda no círculo do céu.</p>
+            <p>15 Queres tu seguir o caminho antigo, que os homens perversos trilharam,</p>
+            <p>16 Os quais foram arrebatados antes do seu tempo, e cujo fundamento foi derramado como um rio?</p>
+            <p>17 Os quais disseram a Deus: Retira-te de nós; e: Que nos pode fazer o Todo-Poderoso?</p>
+            <p>18 Contudo ele encheu as casas deles de bens; mas o conselho dos ímpios está longe de mim.</p>
+            <p>19 Os justos o verão, e se alegrarão; e o inocente zombará dele,</p>
+            <p>20 Dizendo: Certamente os nossos adversários foram destruídos, e o fogo consumiu os seus bens.</p>
+            <p>21 Considera, peço-te, a Deus, e faze paz; assim te virá o bem.</p>
+            <p>22 Recebe, peço-te, a lei da sua boca, e põe as suas palavras no teu coração.</p>
+            <p>23 Se te converteres ao Todo-Poderoso, serás edificado; afastarás a iniqüidade da tua tenda.</p>
+            <p>24 Lançarás o teu tesouro no pó, e o ouro de Ofir entre as pedras dos ribeiros;</p>
+            <p>25 E o Todo-Poderoso será o teu tesouro, e a tua prata para o teu despojo.</p>
+            <p>26 Então te deleitarás no Todo-Poderoso, e levantarás o teu rosto para Deus.</p>
+            <p>27 Orarás a ele, e ele te ouvirá; e pagarás os teus votos.</p>
+            <p>28 Determinarás alguma coisa, e ser-te-á firme; e a luz brilhará nos teus caminhos.</p>
+            <p>29 Quando os homens forem abatidos, então dirás: Haja exaltação; e ele salvará o humilde.</p>
+            <p>30 Ele livrará até o que não é inocente; sim, ele será livrado pela pureza das tuas mãos.</p>
+        
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 21</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 21</h2>
+            <p>1 Então Jó respondeu, e disse:</p>
+            <p>2 Ouvi atentamente as minhas palavras, e isto me será contado por vós por sabedoria.</p>
+            <p>3 Suportai-me, e eu falarei; e depois que eu tiver falado, escarnecei.</p>
+            <p>4 Porventura a minha queixa é contra o homem? E por que não me cansaria de me aborrecer?</p>
+            <p>5 Olhai para mim, e estarecei-vos; e ponde a vossa mão sobre a boca.</p>
+            <p>6 Quando me lembro, me assombro, e o meu corpo se estremece de horror.</p>
+            <p>7 Por que vivem os ímpios, e chegam a velhice, e também se tornam poderosos em riqueza?</p>
+            <p>8 A sua descendência está estabelecida diante deles, e os seus renovos perante os seus olhos.</p>
+            <p>9 As suas casas estão em paz, sem temor; e a vara de Deus não está sobre eles.</p>
+            <p>10 O seu touro fecunda, e não falha; a sua vaca cria, e não aborta.</p>
+            <p>11 Eles enviam os seus meninos como ovelhas, e os seus filhos dançam.</p>
+            <p>12 Tomam a harpa e o alaud, e se alegram ao som do órgão.</p>
+            <p>13 Passam os seus dias na prosperidade, e em um momento descem à sepultura.</p>
+            <p>14 E dizem a Deus: Retira-te de nós, porque não desejamos conhecer os teus caminhos.</p>
+            <p>15 Quem é o Todo-Poderoso, para que o sirvamos? E que nos aproveita que o invoquemos?</p>
+            <p>16 Eis que a prosperidade deles não está em suas mãos; o conselho dos ímpios está longe de mim.</p>
+            <p>17 Como muitas vezes se apaga a lâmpada dos ímpios, e vem sobre eles a sua destruição!</p>
+            <p>18 Como a palha diante do vento, e como a resta que o turbilhão arrebata!</p>
+            <p>19 Deus reserva para os seus filhos a sua iniqüidade; ele lhe pagará, para que o conheçam.</p>
+            <p>20 Os seus próprios olhos verão a sua destruição, e ele beberá da ira do Todo-Poderoso.</p>
+            <p>21 Pois que se importa com a sua casa depois de si, quando o número dos seus meses se acabar?</p>
+            <p>22 Porventura se ensinará a Deus conhecimento, a ele que julga os altos?</p>
+            <p>23 Um morre na sua plena força, inteiramente tranqüilo e sossegado.</p>
+            <p>24 Os seus peitos estão cheios de leite, e os seus ossos estão bem nutridos.</p>
+            <p>25 Outro morre na amargura da sua alma, e nunca comeu com prazer.</p>
+            <p>26 Juntos se deitam no pó, e os vermes os cobrem.</p>
+            <p>27 Eis que eu conheço os vossos pensamentos, e os intentos que tendes contra mim.</p>
+            <p>28 Porque dizeis: Onde está a casa do príncipe? E onde está a tenda em que moravam os ímpios?</p>
+            <p>29 Não tendes perguntado aos que passam pelo caminho, e não tendes reconhecido os seus sinais,</p>
+            <p>30 Que o dia da destruição dos ímpios é reservado, e que o dia da sua ruína está determinado?</p>
+            <p>31 Quem o repreenderá por andar no caminho de sua iniqüidade? E quem lhe pagará pelo que fez?</p>
+            <p>32 Ele será levado à sepultura, e vigiarão sobre o seu túmulo.</p>
+            <p>33 Os montes lhe serão doces, e todos os homens o seguirão, e antes dele se derramarão sem número.</p>
+            <p>34 Como, pois, me consolais vãs coisas? E as respostas que me dais são de nada proveito.</p>
+        
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh22.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

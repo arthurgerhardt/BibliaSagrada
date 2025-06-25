@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 24</h2>
+            <p>1 Por que não são determinados os tempos do Todo-Poderoso, e por que os que o conhecem não vêem os seus dias?</p>
+            <p>2 Alguns removem os marcos; roubam os rebanhos, e os apascentam.</p>
+            <p>3 Tomam o jumento do órfão, e penhoram a vaca da viúva.</p>
+            <p>4 Eles fazem desviar os pobres do caminho; todos os pobres da terra se escondem.</p>
+            <p>5 Eis que como jumentos monteses no deserto, vão ao seu trabalho, procurando o alimento para os seus filhos.</p>
+            <p>6 Eles colhem o seu pasto no campo, e apanham a sua vinha na impiedade.</p>
+            <p>7 Eles passam a noite nus, sem roupa, e sem coberta nos frios.</p>
+            <p>8 Eles se molham com as chuvas dos montes, e abraçam as rochas, porque não têm abrigo.</p>
+            <p>9 Arrancam o órfão do peito, e penhoram as vestes do pobre.</p>
+            <p>10 Eles andam nus, sem roupa; e com fome carregam ossos.</p>
+            <p>11 Eles fazem o azeite dentro dos muros deles, e pisam as adegas, e têm sede.</p>
+            <p>12 Na cidade gemem os feridos, e a alma dos mortos clama; mas Deus não considera isso como iniqüidade.</p>
+            <p>13 Outros são rebeldes à luz; não conhecem os seus caminhos, nem permanecem nas suas veredas.</p>
+            <p>14 O assasssino se levanta com a luz; mata o pobre e o necessitado, e de noite é como um ladrão.</p>
+            <p>15 O olho do adúltero espera a sombra; dizendo: Não me verá ninguém; e cobre o seu rosto.</p>
+            <p>16 Na escuridão eles abrem as casas; como de dia, não conhecem a luz.</p>
+            <p>17 Porque a manhã é para todos eles como a sombra da morte; se alguém os conhece, eles se apressam em conhecer a sombra da morte.</p>
+            <p>18 Eles são leves sobre a face das águas; a sua porção é amaldiçoada na terra; não se voltarão para o caminho das vinhas.</p>
+            <p>19 A seca e o calor consomem as águas da neve; assim a sepultura os consome aos pecadores.</p>
+            <p>20 A mãe se esquecerá deles; os vermes os adorarão; não serão mais lembrados; e a iniqüidade se quebrará como uma árvore.</p>
+            <p>21 Eles comem a esterilidade da mulher estéril, e não fazem o bem à viúva.</p>
+            <p>22 Mas Deus arranca os poderosos com a sua força; levantam-se, e não têm segurança.</p>
+            <p>23 Ele lhes dá segurança, e eles confiam nela; mas os seus olhos estão nos seus caminhos.</p>
+            <p>24 Eles são exaltados por um pouco, e depois não são vistos; são abatidos, e são tirados como todos os outros; e são cortados como as pontas das espigas.</p>
+            <p>25 E se não for assim, quem me desmentirá? E quem me provará que tenho falado falsamente?</p>
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
