@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 29</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 29</h2>
+            <p>1 Então Jó continuou o seu discurso, e disse:</p>
+            <p>2 Ah! quem me dera ser como nos meses passados, como nos dias em que Deus me guardava,</p>
+            <p>3 Quando a sua lâmpada brilhava sobre a minha cabeça, e eu andava na sua luz pela escuridão;</p>
+            <p>4 Como eu era nos dias da minha mocidade, quando o segredo de Deus estava sobre a minha tenda;</p>
+            <p>5 Quando o Todo-Poderoso ainda era comigo, e os meus filhos estavam ao redor de mim;</p>
+            <p>6 Quando os meus passos se banhavam na manteiga, e da rocha me escorria ribeiros de azeite;</p>
+            <p>7 Quando eu saía para a porta da cidade, e na praça me preparava um assento;</p>
+            <p>8 Quando os jovens me viam, e se escondiam; e os velhos se levantavam e permaneciam de pé;</p>
+            <p>9 Os príncipes cessavam de falar, e punham a mão sobre a boca;</p>
+            <p>10 A voz dos nobres se calava, e a sua língua se apegava ao céu da boca.</p>
+            <p>11 Quando os ouvidos me ouviam, me chamavam bem-aventurado; e quando os olhos me viam, davam testemunho de mim;</p>
+            <p>12 Porque eu livrava o pobre que clamava, e o órfão que não tinha quem o ajudasse.</p>   
+            <p>13 A bênção do que ia perecendo vinha sobre mim; e eu fazia regozijar o coração da viúva.</p>
+            <p>14 Eu me vestia de justiça, e ela me cobria; como manto e diadema era a minha equidade.</p>
+            <p>15 Eu era olhos para o cego, e pés para o coxo.</p>
+            <p>16 Eu era pai dos necessitados; e a causa que não conhecia, eu a examinava.</p>
+            <p>17 E quebrava os maxilares do perverso, e arrancava o despojo do seu dente.</p>
+            <p>18 Então eu dizia: Morrerei na minha casa, e multiplicarei os meus dias como a areia.</p>
+            <p>19 A minha raiz está aberta junto às águas, e o orvalho pousa de noite no meu ramo.</p>
+            <p>20 A minha honra se renovará continuamente, e o meu arco se reforçará na minha mão.</p>
+            <p>21 Me ouviam, e esperavam; e calavam a sua boca para ouvir o meu conselho.</p>
+            <p>22 Depois que eu falava, não replicavam; e a minha palavra destilava sobre eles.</p>
+            <p>23 Esperavam-me como a chuva; e abriam a sua boca como para a chuva tardia.</p>  
+            <p>24 Se eu lhes sorriam, não o podiam crer; e a luz do meu rosto não se apagava.</p>
+            <p>25 Se eu escolhia o seu caminho, sentava-me como chefe, e habitava como rei no meio do exército, como aquele que consola os que choram.</p>
+        
+        
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh28.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh30.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
