@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 33</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 33</h2>
+            <p>1 Ouve, pois, agora, Jó, as minhas palavras, e dá ouvidos a tudo o que eu disser.</p>
+            <p>2 Eis que agora abro a minha boca, e a minha língua fala na minha garganta.</p>
+            <p>3 As minhas palavras serão sinceras no meu coração, e os meus lábios falarão com sinceridade o que eu sei.</p>
+            <p>4 O Espírito de Deus me fez, e o sopro do Todo-Poderoso me dá vida.</p>
+            <p>5 Se tu podes, responde-me; prepara-te, e apresenta-te diante de mim.</p>
+            <p>6 Eis que eu sou como tu diante de Deus; também eu fui formado do barro.</p>
+            <p>7 Eis que o meu terror não te espantará, e a minha mão não será pesada sobre ti.</p>
+            <p>8 Certamente tu disseste aos meus ouvidos, e eu ouvi a voz das tuas palavras:</p>
+            <p>9 Eu sou limpo, sem transgressão; eu sou inocente, e não há iniqüidade em mim.</p>
+            <p>10 Eis que ele procura ocasiões contra mim; ele me considera por seu inimigo.</p>
+            <p>11 Põe os meus pés no tronco, e vigia todos os meus caminhos.</p>
+            <p>12 Eis que, em isto, tu não tens razão; eu te responderei, porque maior é Deus do que o homem.</p>
+            <p>13 Por que contendes com ele, porque não responde a nenhuma das suas palavras?</p>
+            <p>14 Porque Deus fala uma vez, e duas vezes, porém ninguém atenta.</p>
+            <p>15 Em sonho, em visão de noite, quando o sono cai sobre os homens, quando eles dormem na cama;</p>
+            <p>16 Então ele abre os ouvidos dos homens, e lhes sela a sua instrução;</p>
+            <p>17 Para apartar o homem da sua obra, e esconder do homem asoberba;</p>
+            <p>18 Para livrá-lo da cova, e para que não passe pela espada.</p>
+            <p>19 Também é castigado com dores sobre a sua cama, e com contínuas dores nos seus ossos;</p>
+            <p>20 De maneira que a sua vida aborrece o pão, e a sua alma a comida deliciosa.</p>
+            <p>21 A sua carne se consome, de modo que não se vê; e os seus ossos, que não se viam, aparecem.</p>
+            <p>22 E a sua alma se aproxima da cova, e a sua vida dos que trazem a morte.</p>
+            <p>23 Se houver para ele um anjo, um intérprete, um entre mil, para declarar ao homem o que é direito para ele;</p>
+            <p>24 Então Deus se compadecerá dele, e dirá: Livra-o de descer à cova; achei redenção.</p>
+            <p>25 A sua carne se tornará mais fresca do que na infância; ele voltará aos dias da sua mocidade.</p>
+            <p>26 Ele orará a Deus, e ele lhe será favorável; e verá o seu rosto com júbilo, e Deus lhe restituirá a sua justiça.</p>
+            <p>27 Ele olhará para os homens, e dirá: Pequei, e perverti o que era direito, e não me foi recompensado.</p>
+            <p>28 Ele livrou a minha alma de ir à cova, e a minha vida verá a luz.</p>
+            <p>29 Eis que todas estas coisas Deus opera duas ou três vezes com o homem,</p>
+            <p>30 Para apartar a sua alma da cova, e para que ele seja iluminado com a luz dos viventes.</p>
+            <p>31 Presta, Jó, ouvidos às minhas palavras, e dá ouvidos a tudo o que eu disser.</p>
+            <p>32 Se tens algo a dizer, responde-me; fala, porque eu quero que sejas justificado.</p>
+            <p>33 Se não, ouve-me tu; cala-te, e eu te ensinarei a sabedoria.</p>
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh32.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh34.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
