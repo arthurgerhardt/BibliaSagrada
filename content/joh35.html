@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 35</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 35</h2>
+            <p>1 Então prosseguiu Eliú, dizendo:</p>
+            <p>2 Tens por direito dizeres: Maior é a minha justiça do que a de Deus?</p>
+            <p>3 Porque disseste: Que me aproveita? Que ganho mais do que se houvera pecado?</p>
+            <p>4 Eu te darei respostas, a ti e aos teus amigos contigo.</p>
+            <p>5 Olha para os céus, e vê; e contempla o firmamento, que é mais alto do que tu.</p>
+            <p>6 Se pecares, que mal lhe farás? E se as tuas transgressões se multiplicarem, que lhe farás tu?</p>
+            <p>7 Se fores justo, que lhe darás, ou que receberá ele da tua mão?</p>
+            <p>8 A tua impiedade faria mal a outro como tu, e a tua justiça aproveitaria a um filho do homem.</p>
+            <p>9 Por causa da multidão das opressões clamam; clamam por causa do braço dos grandes.</p>
+            <p>10 Mas ninguém diz: Onde está Deus, o meu Criador, que dá salmos durante a noite;</p>
+            <p>11 Que nos ensina mais do que aos animais da terra, e nos faz mais sábios do que as aves dos céus?</p>
+            <p>12 Ali clamam, porém ele não responde, por causa da arrogância dos maus.</p>
+            <p>13 Certamente que Deus não ouvirá a vaidade, nem atentará para ela o Todo-Poderoso.</p>
+            <p>14 Ainda que dizes que não o vês, a tua causa está diante dele; por isso espera nele.</p>
+            <p>15 Mas agora, porque a sua ira ainda não exerce castigo, nem grandemente considera a arrogância,</p>
+            <p>16 Por isso Jó de boca vã abre a sua boca, e sem conhecimento multiplica palavras.</p>
+        
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh34.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh36.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 36</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 36</h2>
+            <p>1 Prosseguiu ainda Eliú, e disse:</p>
+            <p>2 Espera-me um pouco, e mostrar-te-ei que ainda há razões a favor de Deus.</p>
+            <p>3 Desde longe trarei o meu conhecimento, e ao meu Criador atribuirei justiça.</p>
+            <p>4 Porque, na verdade, as minhas palavras não são falsas; contigo está um que é sincero na sua opinião.</p>
+            <p>5 Eis que Deus é muito grande, contudo a ninguém despreza; grande é em força de coração.</p>
+            <p>6 Ele não preserva a vida do ímpio, e faz justiça aos aflitos.</p>
+            <p>7 Dos justos não tira os olhos, mas com os reis os põe no trono para sempre, e eles são exaltados.</p>
+            <p>8 E, se estão presos em grilhões, amarrados com cordas de aflição,</p>
+            <p>9 então lhes faz saber a obra deles, e as suas transgressões, porquanto prevaleceram nelas.</p>
+            <p>10 Abre-lhes também os ouvidos para a disciplina, e ordena que se convertam da iniquidade.</p>
+            <p>11 Se o ouvirem, e o servirem, acabarão seus dias em bem, e os seus anos em delícias.</p>
+            <p>12 Porém, se não ouvirem, à espada serão passados, e expirarão sem conhecimento.</p>
+            <p>13 Mas os hipócritas de coração amontoam para si a ira; não clamam quando ele os prende.</p>
+            <p>14 Morram na mocidade as suas almas, e a sua vida entre os sodomitas!</p>
+            <p>15 Ao aflito livra da sua aflição, e, na opressão, se revela aos seus ouvidos.</p>
+            <p>16 Assim também te tiraria da angústia para um lugar espaçoso, onde não há aperto, e a mesa do teu repouso seria cheia de gordura.</p>
+            <p>17 Mas tu estás cheio do juízo do ímpio; o juízo e a justiça te alcançam.</p>
+            <p>18 Guarda-te, pois, para que a ira não te induza a escárnio; e não te desvie a grandeza do resgate.</p>
+            <p>19 Estimaria ele as tuas riquezas? Não, nem o ouro, nem todas as forças do poder.</p>
+            <p>20 Não suspires pela noite, em que povos sejam tomados do seu lugar.</p>
+            <p>21 Guarda-te, não te inclines para a iniquidade; pois isso escolheste antes que a aflição.</p>
+            <p>22 Eis que Deus é excelso em seu poder; quem ensina como ele?</p>
+            <p>23 Quem lhe prescreveu o seu caminho? Ou quem pode dizer: Praticaste a injustiça?</p>
+            <p>24 Lembra-te de engrandecer a sua obra, que os homens contemplam.</p>
+            <p>25 Todos os homens a vêem; cada um a contempla de longe.</p>
+            <p>26 Eis que Deus é grande, e nós não o compreendemos, e o número dos seus anos não se pode calcular.</p>
+            <p>27 Porque ele atrai as gotas das águas, que de seu vapor destilam em chuva,</p>
+            <p>28 a qual as nuvens derramam e gotejam sobre o homem abundantemente.</p>
+            <p>29 Porventura pode alguém entender o estender das nuvens, e o trovão do seu pavilhão?</p>
+            <p>30 Eis que estende sobre elas a sua luz, e encobre as profundezas do mar.</p>
+            <p>31 Porque por estas coisas julga os povos e lhes dá mantimento em abundância.</p>
+            <p>32 Com as mãos encobre a luz, e a ordena que não brilhe sobre o homem.</p>
+            <p>33 O trovão declara a sua indignação, e o gado anuncia a subida da tempestade.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh35.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh37.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 39</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 39</h2>
+            <p>1 Sabes tu o tempo em que as cabras monteses dão à luz? Ou observaste tu as corças quando pariram?</p>
+            <p>2 Podes contar os meses que elas cumprem? Ou sabes tu o tempo em que elas dão à luz?</p>
+            <p>3 Elas se encurvam, dão à luz as suas crias, e se desfazem das suas dores.</p>
+            <p>4 As suas crias se fortalecem, crescem no campo; depois vão-se, e nunca mais voltam.</p>
+            <p>5 Quem deu à jumenta a liberdade, e quem soltou os grilhões da girafa,</p>
+            <p>6 cuja casa eu pus no deserto, e a sua morada na solidão?</p>
+            <p>7 Ela ri-se da agitação da cidade, e não ouve o grito do condutor.</p>
+            <p>8 Ela anda pelos montes, e pastoreia em todo o campo verde; e busca o seu pasto na solidão.</p>
+            <p>9 Porventura a búfala consentirá servir-te?</p>
+            <p>10 Atarás tu a búfala com cordas ao sulco, ou puxarás a sua canga ao redor do teu arado?</p>
+            <p>11 Confiarás nela, porque é grande a sua força? Ou confiarás nela, para que te traga a colheita?</p>
+            <p>12 Confiarás nela, para que a guarde na tua eira?</p>
+            <p>13 As asas da avestruz se alegram com a sua plumagem e com as suas penas;</p>
+            <p>14 porque deixa os seus ovos na terra, e os aquece no pó;</p>
+            <p>15 e esquece que um pé pode esmagá-los, e que a fera do campo os pode pisar.</p>
+            <p>16 Ela endurece para com os seus filhos, como se não fossem seus; de modo que, sem temor, trabalha em vão.</p>
+            <p>17 Porque Deus lhe retirou a sabedoria, e não lhe deu entendimento.</p>
+            <p>18 Quando, com asas, se levanta para fugir, ri-se do cavalo e do seu cavaleiro.</p>
+            <p>19 Porventura tu deste força ao cavalo?</p>
+            <p>20 Ou vestiste o seu pescoço com crinas espessas?</p>
+            <p>21 Faze-o saltar como a gafanhoto? O seu resfolegar é terrível.</p>
+            <p>22 Ele escarnece do medo, e não se assusta; e não foge da espada.</p>
+            <p>23 Sobre ele ressoam o arco, a lança e o dardo.</p>
+            <p>24 Com ímpeto e fúria ele devora a terra; e não se detém quando soa a trombeta.</p>
+            <p>25 Ao soar da trombeta diz: Ah! Ah! E de longe fareja a batalha, o grito dos capitães e o brado de guerra.</p>
+            <p>26 Porventura o gavião voa por teu entendimento, e estende as suas asas para o sul?</p>
+            <p>27 Porventura se levanta por teu mandado a águia, e põe o seu ninho nas alturas?</p>
+            <p>28 Ela habita e passa a noite na rocha, sobre o penhasco e a crista da penha.</p>
+            <p>29 Dali perscruta a presa; os seus olhos a avistam de longe.</p>
+            <p>30 As suas crias sugam o sangue; e onde houver cadáver, ali estará ela.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh38.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh40.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

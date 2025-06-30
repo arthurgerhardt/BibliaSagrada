@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 37</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 37</h2>
+            <p>1 Por isso também o meu coração treme, e salta do seu lugar.</p>
+            <p>2 Ouvi atentamente o movimento da sua voz, e o sonido que sai da sua boca.</p>
+            <p>3 Ele o envia por debaixo de todo o céu, e a sua luz até aos confins da terra.</p>
+            <p>4 Depois disso brama o leão; ele troveja com a voz da sua majestade; e não retém os relâmpagos quando a sua voz se faz ouvir.</p>
+            <p>5 Com a sua voz troveja Deus maravilhosamente; faz grandes coisas, que nós não compreendemos.</p>
+            <p>6 Porque à neve diz: Cai sobre a terra; como também à chuva e ao aguaceiro da sua força.</p>
+            <p>7 Ele sela as mãos de todo o homem, para que conheçam todos os homens a sua obra.</p>
+            <p>8 E as feras entram nos seus esconderijos e ficam nas suas cavernas.</p>
+            <p>9 Das recâmaras do sul sai o tufão, e do norte o frio.</p>
+            <p>10 Pelo sopro de Deus se dá a geada, e as largas águas se endurecem.</p>
+            <p>11 Também com a umidade carrega as grossas nuvens, esparge as nuvens da sua luz.</p>
+            <p>12 Então ele, segundo o seu prudente conselho, as faz girar, para que façam tudo quanto lhes ordena sobre a superfície do mundo habitável;</p>
+            <p>13 Seja para correção, ou para a sua terra, ou para misericórdia, as faz vir.</p>
+            <p>14 Escuta isto, ó Jó; pára e considera as maravilhas de Deus.</p>
+            <p>15 Porventura sabes tu como Deus as opera, e faz resplandecer a luz da sua nuvem?</p>
+            <p>16 Sabes tu como se equilibram as nuvens, as maravilhas daquele que é perfeito em conhecimento?</p>
+            <p>17 Ou de que modo se aquecem as tuas vestes, quando do sul há calma sobre a terra?</p>
+            <p>18 Ou estendeste com ele o firmamento, que é sólido como espelho fundido?</p>
+            <p>19 Ensina-nos o que lhe diremos; porque nós nada poderemos pôr em boa ordem por causa das trevas.</p>
+            <p>20 Contar-lhe-ia alguém o que tenho falado? Ou desejaria um homem ser devorado?</p>
+            <p>21 Agora, pois, não se pode olhar para a luz, quando resplandece no céu, e passa o vento e o purifica.</p>
+            <p>22 Do norte vem o ouro; pois sobre Deus está uma tremenda majestade.</p>
+            <p>23 Ao Todo-Poderoso não o podemos alcançar; grande é em poder; porém a ninguém oprime em juízo e grandeza de justiça.</p>
+            <p>24 Por isso os homens o temem; ele não respeita os que se julgam sábios de coração.</p>
+        
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh36.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh38.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
