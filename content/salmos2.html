@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 2</h2>
+            <p>1 Por que se amotinam os gentios, e os povos imaginam coisas vãs?</p>
+            <p>2 Os reis da terra se levantam, e os príncipes conspiram juntamente contra o Senhor, e contra o seu Ungido, dizendo:</p>
+            <p>3 Rompamos as suas ataduras, e lancemos de nós as suas cordas.</p>
+            <p>4 Aquele que habita nos céus rirá; o Senhor zombará deles.</p>
+            <p>5 Então lhes falará na sua ira, e os atormentará no seu furor.</p>
+            <p>6 Mas eu ungi o meu Rei sobre o meu santo monte Sião.</p>
+            <p>7 Proclamarei o decreto do Senhor; ele me disse: Tu és meu Filho, eu hoje te gerei.</p>
+            <p>8 Pede-me, e eu te darei as nações por herança, e os confins da terra por tua possessão.</p>
+            <p>9 Tu as quebrantarás com vara de ferro; tu as despedaçarás como a um vaso de oleiro.</p>
+            <p>10 Agora, pois, ó reis, sede prudentes; deixai-vos instruir, juízes da terra.</p>
+            <p>11 Servi ao Senhor com temor, e alegrai-vos com tremor.</p>  
+            <p>12 Beijai o Filho, para que se não ire, e pereçais no caminho; porque a sua ira se acende de repente. Bem-aventurados todos os que nele confiam.</p>
+          
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jó 41</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jó 41</h2>
+            <p>1 Poderás tu pescar com anzol o leviatã, ou ligarás a sua língua com uma corda?</p>
+            <p>2 Podes pôr um anzol no seu nariz, ou com um gancho furar-lhe a queixada?</p>
+            <p>3 Porventura multiplicará súplicas a ti, ou brandamente te falará?</p>
+            <p>4 Fará ele aliança contigo, ou o tomarás tu por servo para sempre?</p>
+            <p>5 Brincarás com ele, como se brinca com um passarinho, ou atá-lo-ás para tuas meninas?</p>
+            <p>6 Os teus companheiros farão dele um banquete, ou o repartirás entre os negociantes?</p>
+            <p>7 Encherás a sua pele de ganchos, ou a sua cabeça de arpões de pescadores?</p>
+            <p>8 Põe a tua mão sobre ele; lembra-te da peleja, e nunca mais tornarás a fazê-lo.</p>
+            <p>9 Eis que a sua esperança será frustrada; acaso não será derrubado só ao vê-lo?</p>
+            <p>10 Ninguém há tão ousado, que se atreva a despertá-lo; quem, pois, poderá subsistir diante de mim?</p>
+            <p>11 Quem primeiro me deu a mim, para que eu haja de retribuir-lhe? Tudo quanto há debaixo de todo o céu me pertence.</p>
+            <p>12 Não me calarei a respeito dos seus membros, nem da sua grande força, nem da graça da sua compostura.</p>
+            <p>13 Quem descobriria a face da sua roupa? Quem entraria entre as suas queixadas dobradas?</p>
+            <p>14 Quem abriria as portas do seu rosto? Pois em roda dos seus dentes está o terror.</p>
+            <p>15 As suas fortes escamas são o seu orgulho, cada uma fechada como por um selo apertado.</p>
+            <p>16 Uma à outra se chega tão perto, que nem o ar passa por entre elas.</p>
+            <p>17 Umas às outras se ligam; tanto aderem entre si, que não se podem separar.</p>
+            <p>18 Cada um dos seus espirros faz resplandecer a luz, e os seus olhos são como as pestanas da alva.</p>
+            <p>19 Da sua boca saem tochas; faíscas de fogo saltam dela.</p>
+            <p>20 Das suas narinas procede fumaça, como de uma panela fervente, ou de caldeira.</p>
+            <p>21 O seu hálito faz acender os carvões, e da sua boca sai chama.</p>
+            <p>22 No seu pescoço reside a força; diante dele até a tristeza salta de prazer.</p>
+            <p>23 As dobras da sua carne estão bem unidas; são firmes sobre ele, e não se movem.</p>
+            <p>24 O seu coração é firme como uma pedra, firme como a mó de baixo.</p>
+            <p>25 Levantando-se ele, tremem os valentes; em razão dos seus abalos ficam fora de si.</p>
+            <p>26 Se alguém lhe tocar com a espada, essa não poderá penetrar, nem lança, dardo ou flecha.</p>
+            <p>27 Ele considera o ferro como palha, e o cobre como pau podre.</p>
+            <p>28 A seta o não fará fugir; as pedras das fundas se lhe tornam em restolho.</p>
+            <p>29 Os porretes são para ele como palha, e ri-se do brandir da lança.</p>
+            <p>30 Debaixo de si tem conchas pontiagudas; estende-se como debulhador sobre o lodo.</p>
+            <p>31 As profundezas faz ferver como uma panela; torna o mar como caldeira de ungüento.</p>
+            <p>32 Após si deixa uma vereda luminosa; parece o abismo tornado em cãs.</p>
+            <p>33 Na terra não há coisa que se lhe possa comparar, pois foi feito para estar sem pavor.</p>
+            <p>34 Ele vê tudo que é alto; é rei sobre todos os filhos da soberba.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joh40.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joh42.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

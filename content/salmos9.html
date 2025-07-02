@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 9</h2>
+            <p>1 Louvarei ao Senhor de todo o meu coração; contarei todas as tuas maravilhas.</p>
+            <p>2 Alegrarei-me e exultarei em ti; cantarei louvores ao teu nome, ó Altíssimo.</p>
+            <p>3 Quando os meus inimigos retrocederem, tropeçarão e perecerão diante da tua face.</p>
+            <p>4 Pois sustentaste o meu direito e a minha causa; assentaste-te no trono, julgando com justiça.</p>
+            <p>5 Repreendeste os gentios, destruíste o ímpio; apagaste o seu nome para sempre e eternamente.</p>
+            <p>6 O inimigo está arruinado; são assolados para sempre; e tu destruíste as cidades deles; a memória deles pereceu com eles.</p>
+            <p>7 Mas o Senhor está assentado para sempre; ele preparou o seu trono para o juízo.</p>
+            <p>8 E ele mesmo julgará o mundo com justiça; julgará os povos com retidão.</p>
+            <p>9 O Senhor também será um alto refúgio para o oprimido, um alto refúgio em tempos de angústia.</p>
+            <p>10 E os que conhecem o teu nome confiarão em ti; pois tu, Senhor, nunca desamparaste os que te buscam.</p>
+            <p>11 Cantai louvores ao Senhor, que habita em Sião; anunciai entre os povos os seus feitos.</p>
+            <p>12 Pois ele se lembra do sangue deles; não se esquece do clamor dos aflitos.</p>
+            <p>13 Tem misericórdia de mim, Senhor; vê a aflição que me causam os que me odeiam; tu que me levantas das portas da morte,</p>
+            <p>14 para que eu conte todos os teus louvores nas portas da filha de Sião; para que eu me alegre na tua salvação.</p>
+            <p>15 Os gentios se afundaram na cova que fizeram; na rede que esconderam, foi apanhado o seu pé.</p>
+            <p>16 O Senhor se fez conhecido; executou o juízo; o ímpio é enredado na obra das suas próprias mãos. (Selá)</p>
+            <p>17 Os ímpios serão lançados no inferno, e todas as nações que se esquecem de Deus.</p>
+            <p>18 Pois o necessitado não será esquecido para sempre; a esperança dos pobres não perecerá eternamente.</p>
+            <p>19 Levanta-te, Senhor; não prevaleça o homem; sejam julgados os gentios diante de ti.</p>
+            <p>20 Põe-os com temor, Senhor; que os gentios saibam que não são mais do que homens. (Selá)</p>
+            
+            
+       
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

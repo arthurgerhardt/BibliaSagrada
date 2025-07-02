@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 6</h2>
+            <p>1 Senhor, não me repreendas na tua ira, nem me castigues no teu furor.</p>
+            <p>2 Tem misericórdia de mim, Senhor, porque sou fraco; sara-me, Senhor, porque os meus ossos estão perturbados.</p>
+            <p>3 Até a minha alma está perturbada; mas tu, Senhor, até quando?</p>
+            <p>4 Volta-te, Senhor, livra a minha alma; salva-me por tua benignidade.</p>
+            <p>5 Porque na morte não há lembrança de ti; no sepulcro, quem te louvará?</p>
+            <p>6 Já estou cansado do meu gemido; toda noite faço nadar a minha cama; molho o meu leito com as minhas lágrimas,</p>
+            <p>7 Já os meus olhos estão consumidos pela mágoa, e têm-se envelhecido por causa de todos os meus inimigos.</p>
+            <p>8 Apartai-vos de mim, todos os que praticais a iniquidade; porque o Senhor já ouviu a voz do meu pranto.</p>
+            <p>9 O Senhor já ouviu a minha súplica; o Senhor aceitará a minha oração.</p>
+            <p>10 Envergonhem-se e perturbem-se todos os meus inimigos; tornem atrás e envergonhem-se num momento.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
