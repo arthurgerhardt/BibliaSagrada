@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 10</h2>
+            <p>1 Por que estás tão longe, Senhor? Por que te escondes nos tempos de angústia?</p>
+            <p>2 O ímpio, na sua soberba, persegue o pobre; sejam apanhados nas armadilhas que fizeram.</p>
+            <p>3 Pois o ímpio se gloria do desejo da sua alma; bendiz o avarento e despreza o Senhor.</p>
+            <p>4 O ímpio, na sua soberba, não o busca; não há Deus em nenhum dos seus pensamentos.</p>
+            <p>5 Os seus caminhos são sempre prósperos; os teus juízos estão longe da sua vista; ele assopra sobre todos os seus adversários.</p>
+            <p>6 Ele diz no seu coração: Não serei abalado; nunca me atingirá o mal.</p>
+            <p>7 A sua boca está cheia de maldição, engano e opressão; debaixo da sua língua há maldade e iniqüidade.</p>
+            <p>8 Ele se senta de emboscada junto às aldeias; espreita nos lugares ocultos; mata o inocente; os seus olhos estão espreitando o pobre.</p>
+            <p>9 Ele se esconde em lugares ocultos, como um leão na sua toca; espreita para arrebatar o pobre; arrebata-o, puxando-o para a sua rede.</p>
+            <p>10 Ele se encurva, ele se abaixa, e os pobres caem nas suas forças.</p>
+            <p>11 Ele diz no seu coração: Deus se esqueceu; escondeu o seu rosto; nunca verá.</p>
+            <p>12 Levanta-te, Senhor; ó Deus, levanta a tua mão; não te esqueças dos humildes.</p>
+            <p>13 Por que o ímpio despreza a Deus? Ele diz no seu coração: Tu não o buscarás.</p>
+            <p>14 Tu o viste, pois tu olhaste a opressão e a mágoa, para tomares em tuas mãos; o pobre se entrega a ti; tu és o ajudador do órfão.</p>
+            <p>15 Quebras o braço do ímpio e do malvado; busca a sua maldade até que não a encontres mais.</p>
+            <p>16 O Senhor é Rei para sempre; as nações perecerão da sua terra.</p>
+            <p>17 Senhor, tu ouviste o desejo dos humildes; tu fortalecerás os seus corações; tu inclinarás o teu ouvido,</p>
+            <p>18 para fazeres justiça ao órfão e ao oprimido, a fim de que o homem da terra não continue a ser mais terrorizado.</p>
+            
+            
+       
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

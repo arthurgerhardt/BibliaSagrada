@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 14</h2>
+            <p>1 Disse o néscio no seu coração: Não há Deus. Têm-se corrompido, fazem-se abomináveis em suas obras, não há ninguém que faça o bem.</p>
+            <p>2 O Senhor olhou desde os céus para os filhos dos homens, para ver se havia alguém que tivesse entendimento, que buscasse a Deus.</p>
+            <p>3 Todos se extraviaram, juntamente se fizeram imundos; não há ninguém que faça o bem, não há sequer um.</p>
+            <p>4 Não têm conhecimento todos os que praticam a iniqüidade, que comem o meu povo como se comessem pão, e não invocam o Senhor?</p>
+            <p>5 Ali se acharam tomados de grande pavor, porque Deus está na geração dos justos.</p>
+            <p>6 Vós envergonhais o conselho do pobre, porque o Senhor é o seu refúgio.</p>
+            <p>7 Ah! Quem derá de Sião a salvação de Israel? Quando o Senhor restaurar a sorte do seu povo, exultará Jacó e se alegrará Israel.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
