@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 19</h2>
+            <p>1 Os céus proclamam a glória de Deus, e o firmamento anuncia as obras das suas mãos.</p>
+            <p>2 Um dia faz declaração a outro dia, e uma noite mostra sabedoria a outra noite.</p>
+            <p>3 Não há linguagem, nem fala, onde não se ouça a sua voz.</p>
+            <p>4 A sua linha saiu por toda a terra, e as suas palavras até ao fim do mundo. Nele pôs uma tenda para o sol,</p>
+            <p>5 o qual, como um noivo que sai do seu tálamo, se alegra, como um herói, a correr o seu caminho.</p>
+            <p>6 O seu nascimento é desde uma extremidade dos céus, e o seu percurso até à outra extremidade deles; e nada se esconde ao seu calor.</p>
+            <p>7 A lei do Senhor é perfeita, e refrigera a alma; o testemunho do Senhor é fiel, e dá sabedoria ao simples.</p>
+            <p>8 Os preceitos do Senhor são retos, e alegram o coração; o mandamento do Senhor é puro, e ilumina os olhos.</p>
+            <p>9 O temor do Senhor é limpo, e permanece para sempre; os juízos do Senhor são verdadeiros e justos juntamente.</p>
+            <p>10 Mais desejáveis do que o ouro, do que muito ouro fino; e mais doces do que o mel, e o favo do mel.</p>
+            <p>11 Também por eles é admoestado o teu servo; e em os guardar há grande recompensa.</p>
+            <p>12 Quem há que possa entender os seus próprios erros? Absolve-me tu dos que me são ocultos.</p>
+            <p>13 Também guarda o teu servo dos pecados de soberba; não sem senhor sobre mim; então serei íntegro, e ficarei limpo da grande transgressão.</p>
+            <p>14 Sejam agradáveis as palavras da minha boca, e a meditação do meu coração diante de ti, Senhor, rocha minha e redentor meu.</p>
+           
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos18.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos20.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

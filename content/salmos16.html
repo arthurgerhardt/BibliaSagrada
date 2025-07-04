@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 16</h2>
+            <p>1 Guarda-me, ó Deus, porque em ti confio.</p>
+            <p>2 Digo ao Senhor: Tu és o meu Senhor; não tenho bem nenhum além de ti.</p>
+            <p>3 Quanto aos santos que estão na terra,
+                são eles os ilustres, em quem está todo o meu prazer.</p>
+            <p>4 Multiplicam-se os que trocam a sua dor por outro deus; não oferecerei as suas libações de sangue, nem tomarei os seus nomes nos meus lábios.</p>
+            <p>5 O Senhor é a porção da minha herança e do meu cálice; tu sustentas a minha sorte.</p>
+            <p>6 As cordas caíram-me em lugares agradáveis; sim, coube-me uma formosa herança.</p>
+            <p>7 Bendirei ao Senhor, que me aconselha;
+                até de noite o meu coração me ensina.</p>
+            <p>8 Tenho posto o Senhor continuamente diante de mim; por isso que ele está à minha mão direita, não serei abalado.</p>
+            <p>9 Portanto, o meu coração está alegre, e a minha glória exulta; também a minha carne repousará segura.</p>
+            <p>10 Pois não deixarás a minha alma na sepultura,
+                nem permitirás que o teu Santo veja corrupção.</p>
+            <p>11 Tu me farás conhecer a vereda da vida; na tua presença há plenitude de alegria; à tua mão direita há delícias perpetuamente.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos17.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 15</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 15</h2>
+            <p>1 Senhor, quem habitará no teu tabernáculo? Quem morará no teu santo monte?</p>
+            <p>2 Aquele que anda em integridade, e pratica a justiça, e fala a verdade no seu coração;</p>
+            <p>3 aquele que não difama com a sua língua, nem faz mal ao seu próximo, nem aceita nenhuma afronta contra o seu próximo;</p>
+            <p>4 aquele a cujos olhos o réprobo é desprezado, mas honra os que temem ao Senhor; aquele que jura com dano seu, e não muda;</p>
+            <p>5 aquele que não empresta o seu dinheiro com usura, nem aceita suborno contra o inocente. Quem fizer estas coisas não será jamais abalado.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos14.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos16.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
