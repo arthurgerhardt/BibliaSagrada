@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 35</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 35</h2>
+            <p>1 Pleiteia, Senhor, com aqueles que pleiteiam comigo; peleja contra os que pelejam contra mim.</p>
+            <p>2 Pega do escudo e do pavês, e levanta-te em minha ajuda.</p>
+            <p>3 Tira da lança e do dardo contra os que me perseguem; dize à minha alma: Eu sou a tua salvação.</p>
+            <p>4 Sejam envergonhados e confundidos os que buscam a minha vida; voltem atrás e confundam-se os que contra mim intentam o mal.</p>
+            <p>5 Sejam como a moinha diante do vento, e o anjo do Senhor os faça fugir.</p>
+            <p>6 Seja o seu caminho tenebroso e escorregadio, e o anjo do Senhor os persiga.</p>
+            <p>7 Pois sem causa esconderam de mim a rede na cova, sem causa cavaram uma cova para a minha alma.</p>
+            <p>8 Sobrevenha-lhes destruição sem que o saibam, e prenda-os a rede que ocultaram; caiam eles nessa mesma destruição.</p>
+            <p>9 Então a minha alma se alegrará no Senhor; exultará na sua salvação.</p>
+            <p>10 Todos os meus ossos dirão: Senhor, quem é como tu, que livras o aflito daquele que é mais forte do que ele, sim, o aflito e o necessitado daquele que o rouba?</p>
+            <p>11 Falsas testemunhas se levantam; depõem contra mim coisas que eu não sei.</p>
+            <p>12 Tornam-me o mal pelo bem, causando-me luto na alma.</p>
+            <p>13 Mas, quanto a mim, estando eles enfermos, vestia-me de saco; humilhava a minha alma com jejum, e orava de cabeça sobre o peito.</p>
+            <p>14 Portava-me como se ele fora meu amigo ou meu irmão; andava encurvado e levantando-me, como quem chora por sua mãe.</p>
+            <p>15 Mas, quando eu tropeçava, eles se alegravam e se congregavam; congregavam-se contra mim homens miseráveis, e eu não o sabia; rasgavam-me e não cessavam.</p>
+            <p>16 Com hipócritas zombadores nas festas, rangiam os dentes contra mim.</p>
+            <p>17 Senhor, até quando verás isto? Livra a minha alma das violências deles, a minha predileta dos leões.</p>
+            <p>18 Louvar-te-ei na grande congregação; entre muitíssimo povo te celebrarei.</p>
+            <p>19 Não se alegrem de mim os que são meus inimigos sem razão, nem pisquem os olhos aqueles que me odeiam sem causa.</p>
+            <p>20 Pois não falam de paz; antes intentam enganar os quietos da terra.</p>
+            <p>21 E escancaram contra mim a sua boca, e dizem: Ah! Ah! os nossos olhos o viram.</p>
+            <p>22 Tu, Senhor, o viste; não te cales; Senhor, não te alongues de mim.</p>
+            <p>23 Acorda e desperta para o meu julgamento, para a minha causa, Deus meu e Senhor meu.</p>
+            <p>24 Julga-me segundo a tua justiça, Senhor Deus meu, e não se alegrem de mim.</p>
+            <p>25 Não digam em seu coração: Ah! alma nossa! Não digam: Nós o havemos devorado.</p>
+            <p>26 Envergonhem-se e confundam-se à uma os que se alegram com o meu mal; vistam-se de vergonha e de confusão os que se engrandecem contra mim.</p>
+            <p>27 Cantem e alegrem-se os que amam a minha justiça, e digam continuamente: O Senhor seja engrandecido, que se deleita na prosperidade do seu servo.</p>
+            <p>28 Então a minha língua falará da tua justiça e do teu louvor todo o dia.</p>
+        
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos34.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos36.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

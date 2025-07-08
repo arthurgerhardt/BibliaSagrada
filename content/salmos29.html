@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 29</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 29</h2>
+            <p>1 Dai ao Senhor, ó filhos dos poderosos, dai ao Senhor glória e força.</p>
+            <p>2 Dai ao Senhor a glória devida ao seu nome, adorai o Senhor na beleza da santidade.</p>
+            <p>3 A voz do Senhor ouve-se sobre as águas; o Deus da glória troveja; o Senhor está sobre as muitas águas.</p>
+            <p>4 A voz do Senhor é poderosa; a voz do Senhor é cheia de majestade.</p>
+            <p>5 A voz do Senhor quebra os cedros; sim, o Senhor quebra os cedros do Líbano.</p>
+            <p>6 Ele os faz saltar como um bezerro; ao Líbano e Siriom como filhote de boi selvagem.</p>
+            <p>7 A voz do Senhor separa as labaredas do fogo.</p>
+            <p>8 A voz do Senhor faz tremer o deserto; o Senhor faz tremer o deserto de Cades.</p>
+            <p>9 A voz do Senhor faz parir as cervas e descobre as brenhas; e no seu templo cada um diz: Glória!</p>
+            <p>10 O Senhor se assentou sobre o dilúvio; o Senhor se assenta como Rei, perpetuamente.</p>
+            <p>11 O Senhor dará força ao seu povo; o Senhor abençoará o seu povo com paz.</p>
+                
+           
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos28.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos30.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

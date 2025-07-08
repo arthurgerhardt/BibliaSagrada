@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 36</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 36</h2>
+            <p>1 A transgressão do ímpio diz no íntimo do meu coração: Não há temor de Deus perante os seus olhos.</p>
+            <p>2 Porque em seus olhos se lisonjeia, até que a sua iniqüidade se descubra ser detestável.</p>
+            <p>3 As palavras da sua boca são malícia e engano; deixou de entender e de fazer o bem.</p>
+            <p>4 Maquina o mal na sua cama; põe-se em caminho que não é bom; não aborrece o mal.</p>
+            <p>5 A tua misericórdia, Senhor, está nos céus, e a tua fidelidade chega até às mais excelsas nuvens.</p>
+            <p>6 A tua justiça é como as grandes montanhas; os teus juízos são um grande abismo. Senhor, tu conservas os homens e os animais.</p>
+            <p>7 Quão preciosa é, ó Deus, a tua benignidade! Por isso os filhos dos homens se abrigam à sombra das tuas asas.</p>
+            <p>8 Eles se fartarão da gordura da tua casa, e os farás beber da corrente das tuas delícias.</p>
+            <p>9 Porque em ti está o manancial da vida; na tua luz veremos a luz.</p>
+            <p>10 Estende a tua benignidade sobre os que te conhecem, e a tua justiça sobre os retos de coração.</p>
+            <p>11 Não venha sobre mim o pé dos soberbos, e não me mova a mão dos ímpios.</p>
+            <p>12 Ali caem os que praticam a iniqüidade; cairão, e não se poderão levantar.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos35.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos37.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

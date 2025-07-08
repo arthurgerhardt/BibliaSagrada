@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 27</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 27</h2>
+            <p>1 O Senhor é a minha luz e a minha salvação; a quem temerei? O Senhor é a força da minha vida; de quem me recearei?</p>
+            <p>2 Quando os malfeitores, meus adversários e meus inimigos,
+            se chegaram contra mim para comerem as minhas carnes, tropeçaram e caíram.</p>
+            <p>3 Ainda que um exército se acampe contra mim, o meu coração não temerá; ainda que se levante guerra contra mim, nisto confiarei.</p>
+            <p>4 Uma coisa pedi ao Senhor, e a buscarei:
+            que eu possa morar na casa do Senhor todos os dias da minha vida, para contemplar a formosura do Senhor, e inquirir no seu templo.</p>
+            <p>5 Porque no dia da adversidade ele me esconderá no seu pavilhão; no recôndito do seu tabernáculo me esconderá; por-me-á sobre uma rocha.</p>
+            <p>6 E agora será exaltada a minha cabeça sobre os meus inimigos que estão ao meu redor; e, no seu tabernáculo, oferecerei sacrifícios de júbilo; cantarei e salmodiarei ao Senhor.</p>
+            <p>7 Ouve, Senhor, a minha voz quando clamo; tem também piedade de mim e responde-me.</p>
+            <p>8 Quando tu disseste: Buscai o meu rosto, o meu coração te disse a ti: O teu rosto, Senhor, buscarei.</p>
+            <p>9 Não escondas de mim o teu rosto; não rejeites com ira o teu servo; tu foste a minha ajuda; não me deixes, nem me desampares, ó Deus da minha salvação.</p>
+            <p>10 Quando meu pai e minha mãe me desampararem, o Senhor me recolherá.</p>
+            <p>11 Ensina-me, Senhor, o teu caminho, e guia-me por uma vereda direita, por causa dos meus inimigos.</p>
+            <p>12 Não me entregues à vontade dos meus adversários; pois se levantaram contra mim falsas testemunhas,
+            e os que respiram crueldade.</p>
+            <p>13 Creio que verei a bondade do Senhor na terra dos viventes.</p>
+            <p>14 Espera no Senhor; anima-te, e ele fortalecerá o teu coração; espera, pois, no Senhor.</p>
+        
+           
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos26.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos28.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

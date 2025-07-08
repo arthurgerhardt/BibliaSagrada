@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 26</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 26</h2>
+            <p>1 Julga-me, Senhor, porque tenho andado na minha integridade; confiei também no Senhor; não vacilarei.</p>
+            <p>2 Esquadrinha-me, Senhor, e prova-me; sonda os meus rins e o meu coração.</p>
+            <p>3 Pois a tua benignidade está diante dos meus olhos, e tenho andado na tua verdade.</p>
+            <p>4 Não me tenho assentado com homens falsos, nem me ajunto com os que praticam a hipocrisia.</p>
+            <p>5 Aborreço a congregação dos malfeitores, e não me assento com os ímpios.</p>
+            <p>6 Lavo as minhas mãos na inocência, e assim andarei ao redor do teu altar, Senhor,</p>
+            <p>7 para publicar com voz de ação de graças, e para contar todas as tuas maravilhas.</p>
+            <p>8 Senhor, eu amo a habitação da tua casa, e o lugar onde habita a tua glória.</p>
+            <p>9 Não colhas a minha alma com os pecadores, nem a minha vida com os homens sanguinários,</p>
+            <p>10 em cujas mãos há maldade, e cuja mão direita está cheia de subornos.</p>
+            <p>11 Quanto a mim, andarei na minha integridade; redime-me e tem misericórdia de mim.</p>
+            <p>12 O meu pé está firme em terreno plano; nas congregações bendirei ao Senhor.</p>
+           
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos25.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos27.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

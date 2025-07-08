@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 33</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 33</h2>
+            <p>1 Exultai, ó justos, no Senhor; aos retos convém o louvor.</p>
+            <p>2 Louvai ao Senhor com harpa; cantai-lhe com saltério de dez cordas.</p>
+            <p>3 Cantai-lhe um cântico novo; tocai bem e com júbilo.</p>
+            <p>4 Porque a palavra do Senhor é reta, e todas as suas obras são fiéis.</p>
+            <p>5 Ele ama a justiça e o juízo; a terra está cheia da bondade do Senhor.</p>
+            <p>6 Pela palavra do Senhor foram feitos os céus, e todo o exército deles, pelo sopro da sua boca.</p>
+            <p>7 Ele ajunta como um montão as águas do mar; ele põe em depósitos os abismos.</p>
+            <p>8 Tema toda a terra ao Senhor; temam-no todos os moradores do mundo.</p>
+            <p>9 Porque ele falou, e tudo se fez; ele mandou, e tudo apareceu.</p>
+            <p>10 O Senhor desfaz o conselho das nações; frustra os intentos dos povos.</p>
+            <p>11 O conselho do Senhor permanece para sempre; os intentos do seu coração, de geração em geração.</p>
+            <p>12 Bem-aventurada é a nação cujo Deus é o Senhor,
+            e o povo que ele escolheu para sua herança.</p>
+            <p>13 O Senhor olha desde os céus; vê todos os filhos dos homens.</p>
+            <p>14 Desde o lugar da sua habitação contempla todos os moradores da terra.</p>
+            <p>15 Ele é que forma o coração de todos eles, que
+            considera todas as suas obras.</p>
+            <p>16 O rei não se salva pela multidão do exército; o homem forte não se livra pela muita força.</p>
+            <p>17 O cavalo é vão para a segurança; nem com a sua grande força pode livrar ninguém.</p>
+            <p>18 Eis que os olhos do Senhor estão sobre os que o temem, sobre os que esperam na sua misericórdia;</p>
+            <p>19 para livrar a sua alma da morte, e para os conservar vivos na fome.</p>
+            <p>20 A nossa alma espera no Senhor; ele é o nosso auxílio e o nosso escudo.</p>
+            <p>21 Pois nele se alegra o nosso coração, porquanto temos confiado no seu santo nome.</p>
+            <p>22 Seja a tua misericórdia, Senhor, sobre nós, como em ti esperamos.</p>
+        
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos32.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos34.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

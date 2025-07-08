@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 34</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 34</h2>
+            <p>1 Bendirei ao Senhor em todo o tempo; o seu louvor estará continuamente na minha boca.</p>
+            <p>2 A minha alma se gloriará no Senhor; os mansos o ouvirão e se alegrarão.</p>
+            <p>3 Engrandecei ao Senhor comigo; e juntos exaltemos o seu nome.</p>
+            <p>4 Busquei ao Senhor, e ele me respondeu; livrou-me de todos os meus temores.</p>
+            <p>5 Olharam para ele, e foram iluminados; e os seus rostos não ficaram confundidos.</p>
+            <p>6 Clamou este pobre, e o Senhor o ouviu, e o salvou de todas as suas angústias.</p>
+            <p>7 O anjo do Senhor acampa-se ao redor dos que o temem, e os livra.</p>
+            <p>8 Provai, e vede que o Senhor é bom; bem-aventurado o homem que nele confia.</p>
+            <p>9 Temei ao Senhor, vós, os seus santos, pois nada falta aos que o temem.</p>
+            <p>10 Os filhos dos leões necessitam e sofrem fome, mas aqueles que buscam ao Senhor de nada têm falta.</p>
+            <p>11 Vinde, filhos, ouvi-me; eu vos ensinarei o temor do Senhor.</p>
+            <p>12 Quem é o homem que deseja a vida, que quer largos dias para ver o bem?</p>
+            <p>13 Guarda a tua língua do mal, e os teus lábios de falarem engano.</p>
+            <p>14 Aparta-te do mal, e faze o bem; procura a paz, e segue-a.</p>
+            <p>15 Os olhos do Senhor estão sobre os justos, e os seus ouvidos atentos ao seu clamor.</p>
+            <p>16 A face do Senhor está contra os que fazem o mal, para desarraigar da terra a memória deles.</p>
+            <p>17 Os justos clamam, e o Senhor os ouve, e os livra de todas as suas angústias.</p>
+            <p>18 Perto está o Senhor dos que têm o coração quebrantado, e salva os contritos de espírito.</p>
+            <p>19 Muitas são as aflições do justo, mas o Senhor o livra de todas.</p>
+            <p>20 Ele lhe guarda todos os seus ossos; nem sequer um deles se quebra.</p>
+            <p>21 A malícia matará o ímpio, e os que odeiam o justo serão punidos.</p>
+            <p>22 O Senhor resgata a alma dos seus servos, e nenhum dos que nele confiam será condenado.</p>
+        
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos33.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos35.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

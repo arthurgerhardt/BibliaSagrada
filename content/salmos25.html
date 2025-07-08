@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 25</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 25</h2>
+            <p>1 A ti, Senhor, levanto a minha alma.</p>
+            <p>2 Em ti confio, ó meu Deus; não me deixes confundido, nem permitas que os meus inimigos triunfem sobre mim.</p>
+            <p>3 Na verdade, nenhum dos que esperam em ti será confundido; confundidos serão aqueles que transgridem sem causa.</p>
+            <p>4 Faze-me conhecer os teus caminhos, Senhor; ensina-me as tuas veredas.</p>
+            <p>5 Guia-me na tua verdade, e ensina-me, pois tu és o Deus da minha salvação; por ti espero todo o dia.</p>
+            <p>6 Lembra-te, Senhor, das tuas misericórdias e das tuas benignidades, pois elas são desde a eternidade.</p>
+            <p>7 Não te lembres dos pecados da minha mocidade, nem das minhas transgressões; lembra-te de mim segundo a tua misericórdia,
+            por causa da tua bondade, Senhor.</p>
+            <p>8 Bom e reto é o Senhor; por isso ensinará o caminho aos pecadores.</p>
+            <p>9 Guiará os mansos na justiça, e ensinará aos mansos o seu caminho.</p>
+            <p>10 Todas as veredas do Senhor são misericórdia e verdade para aqueles que guardam a sua aliança e os seus testemunhos.</p>
+            <p>11 Por amor do teu nome, Senhor, perdoa a minha iniqüidade, pois é grande.</p>
+            <p>12 Qual é o homem que teme ao Senhor? Ele o ensinará no caminho que deve escolher.</p>   
+            <p>13 A sua alma descansará no bem, e a sua descendência herdará a terra.</p>
+            <p>14 O segredo do Senhor é com aqueles que o temem, e ele lhes fará saber a sua aliança.</p>
+            <p>15 Os meus olhos estão continuamente no Senhor, pois ele tirará os meus pés da rede.</p>
+            <p>16 Volta-te para mim, e tem misericórdia de mim, pois estou desolado e aflito.</p>
+            <p>17 As angústias do meu coração se têm multiplicado; tira-me das minhas angústias.</p>
+            <p>18 Olha para a minha aflição e a minha dor, e perdoa todos os meus pecados.</p>
+            <p>19 Olha para os meus inimigos, pois são muitos; e eles me odeiam com ódio cruel.</p>
+            <p>20 Guarda a minha alma, e livra-me; não me deixes confundido, pois em ti me refugio.</p>
+            <p>21 A integridade e a retidão me preservem, pois em ti espero.</p>
+            <p>22 Redime, Senhor, a Israel de todas as suas angústias.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos24.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos26.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
