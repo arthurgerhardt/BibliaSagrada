@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 41</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 41</h2>
+            <p>1 Bem-aventurado aquele que considera o pobre; o Senhor o livrará no dia do mal.</p>
+            <p>2 O Senhor o guardará e lhe dará vida; será bem-aventurado na terra, e não o entregarás à vontade dos seus inimigos.</p>
+            <p>3 O Senhor o sustentará sobre o leito da enfermidade; tu o restaurarás da sua cama de dor.</p>
+            <p>4 Eu disse: Senhor, tem misericórdia de mim; sara a minha alma, porque pequei contra ti.</p>
+            <p>5 Meus inimigos falam mal de mim, dizendo: Quando morrerá, e perecerá o seu nome?</p>
+            <p>6 E, se alguém vem ver-me, fala falsamente; o seu coração ajunta iniqüidade para si;
+            <p>e, quando sai, fala disso.</p>
+            <p>7 Todos os que me odeiam murmuram contra mim; contra mim maquinam o mal, dizendo:</p>
+            <p>8 Uma enfermidade má se lhe apegou; e, estando deitado, não tornará a levantar-se.</p>
+            <p>9 Até o homem em quem eu confiava, que comia do meu pão, levantou contra mim o seu calcanhar.</p>
+            <p>10 Mas tu, Senhor, tem misericórdia de mim, e levanta-me, para que eu lhes dê o pagamento.</p>
+            <p>11 Nisto conheço que tu me agradas, que o meu inimigo não triunfará sobre mim.</p>
+            <p>12 Quanto a mim, tu me susténs na minha integridade, e me fazes estar diante de ti para sempre.</p>
+            <p>13 Bendito seja o Senhor, o Deus de Israel, de eternidade a eternidade. Amém e Amém.</p>
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos40.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos42.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
