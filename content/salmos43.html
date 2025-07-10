@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 43</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 43</h2>
+            <p>1 Julga-me, ó Deus, e pleiteia a minha causa contra uma nação ímpia; livra-me do homem enganador e injusto.</p>
+            <p>2 Pois tu és o Deus da minha fortaleza; por que me rejeitaste? Por que ando lamentando por causa da opressão do inimigo?</p>
+            <p>3 Envia a tua luz e a tua verdade, para que elas me guiem; conduzam-me ao teu santo monte, e aos teus tabernáculos.</p>
+            <p>4 Então irei ao altar de Deus, a Deus, que é a alegria da minha alegria; e com a harpa te louvarei, ó Deus, meu Deus.</p>
+            <p>5 Por que estás abatida, ó minha alma, e por que te perturbas em mim? Espera em Deus, pois ainda o louvarei, ele é a salvação da minha face e o meu Deus.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos42.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos44.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

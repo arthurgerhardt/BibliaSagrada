@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 46</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 46</h2>
+            <p>1 Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia.</p>
+            <p>2 Portanto não temeremos, ainda que a terra se mude,
+                e ainda que os montes se transportem para o meio dos mares;</p>
+            <p>3 ainda que as águas rugam e se perturbem, ainda que os montes se abalem pela sua braveza. (Selá)</p>
+            <p>4 Há um rio cujos canais alegram a cidade de Deus, o santuário das moradas do Altíssimo.</p>
+            <p>5 Deus está no meio dela; não será abalada; Deus a ajudará desde o romper da manhã.</p>
+            <p>6 As nações se embraveceram, os reinos se moveram; ele levantou a sua voz, a terra se derreteu.</p>
+            <p>7 O Senhor dos exércitos está conosco; o Deus de Jacó é o nosso alto refúgio. (Selá)</p>
+            <p>8 Vinde, contemplai as obras do Senhor, que desolações tem feito na terra.</p>
+            <p>9 Ele faz cessar as guerras até o fim da terra; quebra o arco, corta a lança, e queima os carros no fogo.</p>
+            <p>10 Aquietai-vos, e sabei que eu sou Deus; serei exaltado entre as nações, serei exaltado sobre a terra.</p>
+            <p>11 O Senhor dos exércitos está conosco; o Deus de Jacó é o nosso alto refúgio. (Selá)</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos45.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos47.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
