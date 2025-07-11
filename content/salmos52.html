@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 52</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 52</h2>
+            <p>1 Por que te glorias na maldade, ó homem poderoso? A bondade de Deus dura continuamente.</p>
+            <p>2 A tua língua maquina destruição, como navalha afiada, ó enganador.</p>
+            <p>3 Tu amas mais o mal do que o bem, e mais a mentira do que falar a justiça. (Selá)</p>
+            <p>4 Tu amas todas as palavras devoradoras, ó língua enganadora.</p>
+            <p>5 Deus, porém, te destruirá para sempre; ele te agarrará e te arrancará da tenda, e te desarraigará da terra dos viventes. (Selá)</p>
+            <p>6 Os justos também o verão, e temerão; e rir-se-ão dele, dizendo:</p>
+            <p>7 Eis aqui o homem que não fez de Deus a sua fortaleza, mas confiou na abundância das suas riquezas,
+                e fortaleceu-se na sua maldade.</p> 
+            <p>8 Mas eu sou como uma oliveira verde na casa de Deus; confio na benignidade de Deus para sempre e eternamente.</p>
+            <p>9 Eu te louvarei para sempre, porque o fizeste; e esperarei no teu nome, porque é bom, diante dos teus santos.</p>
+            
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos51.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos53.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

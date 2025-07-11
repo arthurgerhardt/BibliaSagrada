@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 49</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 49</h2>
+            <p>1 Ouvi isto, todos os povos; inclinai os ouvidos, todos os habitantes do mundo,</p>
+            <p>2 tanto baixos como altos, tanto ricos como pobres.</p>
+            <p>3 A minha boca falará de sabedoria, e o meditar do meu coração será de entendimento.</p>
+            <p>4 Inclinarei os meus ouvidos a uma parábola; declararei o meu enigma na harpa.</p>
+            <p>5 Por que temeria eu nos dias da adversidade, quando me cercar a iniqüidade dos que me perseguem?</p>
+            <p>6 Aqueles que confiam na sua fazenda, e se gloriam na multidão das suas riquezas,</p>
+            <p>7 nenhum deles de modo algum pode remir a seu irmão, nem dar a Deus o resgate dele</p>
+            <p>8 (Pois a redenção da sua alma é caríssima, e cessará para sempre),</p>
+            <p>9 para que viva para sempre, e não veja corrupção.</p>
+            <p>10 Porque vê-se que os sábios morrem, perecem igualmente o insensato e o tolo, e deixam a outros os seus bens.</p>
+            <p>11 O seu pensamento íntimo é que as suas casas serão perpétuas, e as suas habitações de geração em geração; dão os seus nomes às suas terras.</p>
+            <p>12 Todavia o homem que está em honra não permanece; antes é como os animais, que perecem.</p>
+            <p>13 Este caminho deles é loucura; contudo a sua posteridade aprova as suas palavras. (Selá)</p>
+            <p>14 Como ovelhas são postos na sepultura; a morte os pastoreará; e os retos dominarão sobre eles pela manhã; e a sua formosura se consumirá na sepultura, a habitação deles.</p>
+            <p>15 Mas Deus remirá a minha alma do poder da sepultura, pois me receberá. (Selá)</p>
+            <p>16 Não temas quando alguém se enriquecer, quando a glória da sua casa se aumentar;</p>
+            <p>17 Porque, quando morrer, nada levará consigo, nem a sua glória o acompanhará.</p>
+            <p>18 Ainda que durante a vida ele se congratule, e os homens o louvem quando faz o bem a si mesmo,</p>
+            <p>19 irá para a geração de seus pais; eles nunca verão a luz.</p>
+            <p>20 O homem que está em honra, e não tem entendimento, é semelhante aos animais, que perecem.</p>
+            
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos48.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos50.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

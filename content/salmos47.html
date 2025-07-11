@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 47</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 47</h2>
+            <p>1 Batei palmas, todos os povos; aclamai a Deus com voz de júbilo.</p>
+            <p>2 Porque o Senhor Altíssimo é tremendo, é o grande Rei sobre toda a terra.</p>
+            <p>3 Ele sujeitou os povos a nós, e as nações debaixo dos nossos pés.</p>
+            <p>4 Ele escolheu para nós a nossa herança, a glória de Jacó, a quem ele ama. (Selá)</p>
+            <p>5 Deus subiu com júbilo; o Senhor subiu ao som da trombeta.</p>
+            <p>6 Cantai louvores a Deus, cantai louvores; cantai louvores ao nosso Rei, cantai louvores.</p>
+            <p>7 Porque Deus é o Rei de toda a terra; cantai louvores com entendimento.</p>
+            <p>8 Deus reina sobre as nações; Deus se assenta no seu santo trono.</p>
+            <p>9 Os príncipes dos povos se ajuntam ao povo do Deus de Abraão; porque os escudos da terra são de Deus; ele é muito exaltado.</p>
+            
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos46.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos48.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 51</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 51</h2>
+            <p>1 Tem misericórdia de mim, ó Deus, segundo a tua benignidade; apaga as minhas transgressões, segundo a multidão das tuas misericórdias.</p>
+            <p>2 Lava-me completamente da minha iniqüidade, e purifica-me do meu pecado.</p>
+            <p>3 Porque eu conheço as minhas transgressões, e o meu pecado está sempre diante de mim.</p>
+            <p>4 Contra ti, contra ti somente pequei, e fiz o que é mal à tua vista, para que sejas justificado quando falares, e puro quando julgares.</p>
+            <p>5 Eis que em iniqüidade fui formado, e em pecado me concebeu minha mãe.</p>
+            <p>6 Eis que amas a verdade no íntimo, e no oculto me fazes conhecer a sabedoria.</p>
+            <p>7 Purifica-me com hissopo, e ficarei limpo; lava-me, e ficarei mais alvo do que a neve.</p>
+            <p>8 Faze-me ouvir júbilo e alegria, para que gozem os ossos que tu quebraste.</p>
+            <p>9 Esconde o teu rosto dos meus pecados, e apaga todas as minhas iniqüidades.</p>
+            <p>10 Cria em mim, ó Deus, um coração puro, e renova em mim um espírito reto.</p>
+            <p>11 Não me lances fora da tua presença, e não retires de mim o teu Espírito Santo.</p>
+            <p>12 Torna a dar-me a alegria da tua salvação, e sustém-me com um espírito voluntário.</p>
+            <p>13 Então ensinarei aos transgressores os teus caminhos, e os pecadores a ti se converterão.</p>
+            <p>14 Livra-me dos crimes de sangue, ó Deus, Deus da minha salvação, e a minha língua louvará altamente a tua justiça.</p>
+            <p>15 Abre, Senhor, os meus lábios, e a minha boca entoará o teu louvor.</p>
+            <p>16 Pois não te comprazes em sacrifícios, senão eu os daria; tu não te deleitas em holocaustos.</p>
+            <p>17 Os sacrifícios para Deus são o espírito quebrantado; a um coração quebrantado e contrito não desprezarás, ó Deus.</p>
+            <p>18 Faze bem a Sião segundo a tua boa vontade; edifica os muros de Jerusalém.</p>
+            <p>19 Então te agradarás de sacrifícios de justiça, dos holocaustos e das ofertas queimadas; então se oferecerão novilhos sobre o teu altar.</p>
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos50.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos52.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
