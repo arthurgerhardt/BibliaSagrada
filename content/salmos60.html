@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 60</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 60</h2>
+            <p>1 Ó Deus, tu nos rejeitaste, tu nos dispersaste, tens estado indignado; volta-te para nós.</p>
+            <p>2 Abalaste a terra, e a fendeste; sara as suas fendas, pois ela treme.</p>
+            <p>3 Fizeste ver ao teu povo coisas duras; deste-nos a beber vinho de atordoamento.</p>
+            <p>4 Deste um estandarte aos que te temem, para o arvorarem no alto por causa da verdade. (Selá)</p>
+            <p>5 Para que os teus amados sejam livres, salva-nos com a tua destra, e ouve-nos.</p>
+            <p>6 Deus falou na sua santidade: Eu me regozijarei, dividirei Siquém, e medirei o vale de Sucote.</p>
+            <p>7 Meu é Gileade, e meu é Manassés; Efraim é a força da minha cabeça, Judá é o meu legislador.</p>
+            <p>8 Moabe é a minha bacia de lavar; sobre Edom lançarei o meu sapato; sobre a Filístia jubilarei.</p>
+            <p>9 Quem me conduzirá à cidade fortificada? Quem me guiará até Edom?</p>
+            <p>10 Não serás tu, ó Deus, que nos rejeitaste? E não sairás, ó Deus, com os nossos exércitos?</p>
+            <p>11 Dá-nos auxílio na angústia, porque vão é o socorro do homem.</p>
+            <p>12 Em Deus faremos proezas; porque ele é que pisará os nossos inimigos.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos59.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos61.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

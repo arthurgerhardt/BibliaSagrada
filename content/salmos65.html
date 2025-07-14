@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 65</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 65</h2>
+            <p>1 Louvado seja Deus em Sião; a ti se pagará o voto.</p>
+            <p>2 Ó tu que ouves a oração, a ti virão todos os homens.</p>
+            <p>3 As iniquidades prevalecem contra mim; mas tu perdoas as nossas transgressões.</p>
+            <p>4 Bem-aventurado aquele a quem tu escolhes e fazes chegar a ti, para que habite nos teus átrios; nós seremos fartos do bem da tua casa, do teu santo templo.</p>
+            <p>5 Com coisas terríveis nos responderás na tua justiça, ó Deus da nossa salvação; tu, que és a esperança de todos os confins da terra, e do longe do mar;</p>
+            <p>6 que confirmas os montes pela tua força, cingido de poder;</p>
+            <p>7 que acalmas o bramido do mar, o bramido das suas ondas, e o tumulto dos povos;</p>
+            <p>8 e os que habitam nos confins se espantam com os teus sinais; fazes alegrar-se os lugares onde nasceste, e os lugares onde te pões.</p>
+            <p>9 Tu visitas a terra, e a regas; tu a enriqueces grandemente; o ribeiro de Deus está cheio de água; tu preparas o trigo deles, pois assim a preparas.</p>
+            <p>10 Regas os seus sulcos, aplainas os seus torrões; com chuvas as amoleces, e abençoas o seu crescimento.</p>
+            <p>11 Coroas o ano com a tua bondade, e as tuas veredas destilam gordura.</p>
+            <p>12 Destilam sobre os pastos do deserto, e os outeiros se cingem de alegria.</p>
+            <p>13 Os pastos se vestem de rebanhos, e os vales se cobrem de trigo; eles exultam e cantam de alegria.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos64.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos66.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

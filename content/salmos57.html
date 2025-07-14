@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 57</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 57</h2>
+            <p>1 Tem misericórdia de mim, ó Deus, tem misericórdia de mim, porque a minha alma confia em ti; e à sombra das tuas asas me abrigo, até que passem as calamidades.</p>
+            <p>2 Clamarei ao Deus Altíssimo, ao Deus que por mim tudo executa.</p>
+            <p>3 Ele enviará desde os céus e me salvará; envergonhará aquele que me persegue; (Selá) Deus enviará a sua benignidade e a sua verdade.</p>
+            <p>4 A minha alma está entre leões;
+                estou deitado entre os que vomitam fogo, entre os filhos dos homens, cujos dentes são lanças e flechas, e a sua língua é espada afiada.</p>
+            <p>5 Exalta-te acima dos céus, ó Deus; seja a tua glória sobre toda a terra.</p>
+            <p>6 Eles prepararam uma rede aos meus passos; a minha alma está abatida; cavaram uma cova diante de mim, mas eles mesmos caíram nela. (Selá)</p>
+            <p>7 O meu coração está firme, ó Deus, o meu coração está firme; cantarei e louvarei.</p>
+            <p>8 Desperta, minha glória; despertai, saltério e harpa; eu despertarei ao romper da alva.</p>
+            <p>9 Louvarei a ti, ó Senhor, entre os povos; cantarei louvores a ti entre as nações.</p>
+            <p>10 Pois a tua benignidade é grande até os céus, e a tua verdade até as nuvens.</p>
+            <p>11 Exalta-te acima dos céus, ó Deus; seja a tua glória sobre toda a terra.</p>        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos56.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos58.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 56</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 56</h2>
+            <p>1 Tem misericórdia de mim, ó Deus, pois o homem me quer devorar; todo o dia me oprime e me atormenta.</p>
+            <p>2 Os meus inimigos me querem devorar todo o dia; pois são muitos os que me combatem, ó Altíssimo.</p>
+            <p>3 No dia que eu temer, hei de confiar em ti.</p>
+            <p>4 Em Deus cuja palavra eu louvo, em Deus ponho a minha confiança; não temerei o que me pode fazer a carne.</p>
+            <p>5 Todo o dia eles distorcem as minhas palavras; todos os seus pensamentos são contra mim para o mal.</p>
+            <p>6 Reúnem-se, escondem-se, observam os meus passos, como aqueles que esperam a minha vida.</p>
+            <p>7 Por causa da maldade deles, livra-me, ó Deus; e em tua ira derruba os povos.</p>
+            <p>8 Tu contaste as minhas vagueações; põe as minhas lágrimas no teu odre; não estão elas no teu livro?</p>
+            <p>9 Então os meus inimigos recuarão no dia em que eu clamar; isto sei, que Deus é por mim.</p>
+            <p>10 Em Deus cuja palavra eu louvo, no Senhor cuja palavra eu louvo,</p>
+            <p>11 em Deus ponho a minha confiança; não temerei o que me pode fazer o homem.</p>
+            <p>12 Os meus votos estão sobre ti, ó Deus; eu te rendero louvores.</p>
+            <p>13 Pois tu livraste a minha alma da morte; não livrarás tu os meus pés da queda, para que eu ande diante de Deus na luz dos que vivem?</p>
+           
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos55.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos57.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

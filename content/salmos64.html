@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 64</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 64</h2>
+            <p>1 Ouve, ó Deus, a minha voz na minha oração; preserva a minha vida do medo do inimigo.</p>
+            <p>2 Esconde-me do conselho secreto dos maus, e do tumulto dos que praticam a iniqüidade;</p>
+            <p>3 os quais afiam a língua como espada, e apontam palavras amargas como flechas,</p>
+            <p>4 para de repente atirarem sobre o inocente; atiram sobre ele sem temor.</p>
+            <p>5 Fortificam-se no mal; falam de esconderijos; falam de como esconder armadilhas, dizendo: Quem as verá?</p>
+            <p>6 Eles maquinam iniquidades; dizem: Nós os aperfeiçoamos bem; o íntimo e o coração do homem são profundos.</p>
+            <p>7 Mas Deus os atingirá com flechas; de repente serão feridos.</p>
+            <p>8 Assim farão com que a sua própria língua os faça cair; todos os que os virem fugirão deles.</p>
+            <p>9 E todos os homens temerão, e anunciarão a obra de Deus, e ponderarão sobre o que ele fez.</p>
+            <p>10 O justo se alegrará no Senhor, e nele confiará; e todos os retos de coração se gloriarão.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos63.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos65.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

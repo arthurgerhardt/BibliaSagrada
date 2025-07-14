@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 59</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 59</h2>
+            <p>1 Livra-me dos meus inimigos, ó Deus meu; põe-me acima dos que se levantam contra mim.</p>
+            <p>2 Livra-me dos que praticam a iniqüidade, e salva-me dos homens sanguinários.</p>
+            <p>3 Pois eis que armam ciladas à minha alma; os fortes se ajuntam contra mim, não por transgressão minha, nem por pecado meu, ó Senhor.</p>
+            <p>4 Eles correm e se preparam, sem culpa minha; desperta para me ajudar, e vê.</p>
+            <p>5 Tu, pois, Senhor Deus dos Exércitos, Deus de Israel, acorda para visitar todas as nações; não tenhas misericórdia de nenhum dos ímpios traiçoeiros.</p>
+            <p>6 Eles voltam à tarde, uivam como cães, e rodeiam a cidade.</p>
+            <p>7 Eis que eles vomitam com a boca; espadas estão nos seus lábios, pois dizem: Quem ouve?</p>
+            <p>8 Mas tu, Senhor, te rirás deles; zombarás de todas as nações.</p>
+            <p>9 Por causa da sua força, eu te aguardarei; porque Deus é a minha defesa.</p>
+            <p>10 O Deus da minha misericórdia virá ao meu encontro; Deus me fará ver o meu desejo sobre os meus inimigos.</p>
+            <p>11 Não os mates, para que o meu povo se não esqueça; dispersa-os pelo teu poder, e abate-os, ó Senhor, nosso escudo.</p>
+            <p>12 Pelo pecado da sua boca, e pelas palavras dos seus lábios, fiquem presos na sua soberba; e pelas maldições e mentiras que falam.</p>
+            <p>13 Consome-os na tua indignação, consome-os, para que não existam mais; e saibam que Deus reina em Jacó até aos confins da terra.</p>
+            <p>14 E tornem a voltar à tarde, uivem como cães, e rodeiem a cidade.</p>
+            <p>15 Vaguem para cima e para baixo por mantimento, e passem a noite sem se saciarem.</p>
+            <p>16 Mas eu cantarei a tua força; pela manhã louvarei com alegria a tua misericórdia, pois tu foste o meu alto refúgio e proteção no dia da minha angústia.</p>
+            <p>17 A ti, ó fortaleza minha, cantarei salmos; porque Deus é o meu alto refúgio, o Deus da minha misericórdia.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos58.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos60.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

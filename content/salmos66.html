@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 66</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 66</h2>
+            <p>1 Celebrai com júbilo a Deus, toda a terra;</p>
+            <p>2 cantai a glória do seu nome; dai glória ao seu louvor.</p>
+            <p>3 Dizei a Deus: Quão terríveis são as tuas obras! Pela grandeza do teu poder, os teus inimigos te bajulam.</p>
+            <p>4 Toda a terra te adorará, e cantará louvores a ti; cantarão louvores ao teu nome. (Selá)</p>
+            <p>5 Vinde, e vede as obras de Deus; quão terríveis são os seus feitos para com os filhos dos homens!</p>
+            <p>6 Ele converteu o mar em terra seca; passaram o rio a pé; ali nos alegramos nele.</p>
+            <p>7 Eles cantaram louvores ao Senhor por causa da sua grande obra que ele realizou; eles lançaram-se sobre as águas em cima das ondas.</p>
+            <p>8 Ele conduziu-os pelo meio delas como por uma estrada plana; mas os mares foram abalados.</p>
+            <p>9 Agradecem-lhe, ó Israel, a quem ele salvou; e Judá dizem: Ele é nosso Deus,</p>
+            <p>10 porque ele é o nosso Deus e faz maravilhas.</p>
+            <p>11 O Senhor é o Deus que faz maravilhas; o nosso Deus é ele mesmo.</p>
+            <p>12 Ele dá aos reis poderes, e aos príncipes dá sabedoria.</p>
+            <p>13 Ele abre os olhos aos cegos, e cura os feridos dos ossos.</p>
+            <p>14 Ele cura os quebrantados do coração, para que sejam como novos.</p>
+            <p>15 Ele salva de morte aqueles que estão na prisão, e os que estão presos ele os solta.</p>
+            <p>16 Ele é o Deus que salva os aflitos, e dá esperança aos desesperados.</p>
+            <p>17 Ele é o Deus que dá força aos fracos, e poder aos que não têm vigor.</p>
+            <p>18 Ele é o Deus que dá alegria aos tristes, e paz aos perturbados.</p>
+            <p>19 Ele é o Deus que dá vida aos mortos, e ressurreição aos que estão perdidos.</p>
+            <p>20 Ele é o Deus que dá vitória aos que lutam, e livramento aos que estão em perigo.</p>
+            
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos65.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos67.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
