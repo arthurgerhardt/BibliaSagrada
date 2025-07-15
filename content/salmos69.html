@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 69</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 69</h2>
+            <p>1 Salva-me, ó Deus, porque as águas entraram até à minha alma.</p>
+            <p>2 Estou atolado num profundo lamaçal, onde não posso estar em pé; entrei na profundeza das águas, onde a corrente me leva.</p>
+            <p>3 Estou cansado de clamar, secou-se a minha garganta; os meus olhos desfalecem esperando por meu Deus.</p>
+            <p>4 Aqueles que me odeiam sem causa são mais do que os cabelos da minha cabeça; os que procuram destruir-me, sendo meus inimigos falsos, são poderosos; então restituí o que não furtei.</p>
+            <p>5 Tu, ó Deus, bem conheces a minha estultícia; e os meus pecados não te são encobertos.</p>
+            <p>6 Não sejam envergonhados por minha causa aqueles que esperam em ti, ó Senhor Deus dos Exércitos; não sejam confundidos por minha causa aqueles que te buscam, ó Deus de Israel.</p>
+            <p>7 Porque por amor de ti tenho suportado afronta; a confusão cobriu o meu rosto.</p>
+            <p>8 Tornei-me estranho aos meus irmãos, e desconhecido aos filhos de minha mãe.</p>
+            <p>9 Pois o zelo da tua casa me devorou, e as afrontas dos que te afrontam caíram sobre mim.</p>
+            <p>10 Quando chorei, e castiguei com jejum a minha alma, isso me foi por afronta.</p>
+            <p>11 Pus por vestido um saco, e me fiz objeto de escárnio para eles.</p>
+            <p>12 Aqueles que se assentam à porta falam contra mim; e sou a canção dos bebedores de bebida forte.</p>
+            <p>13 Eu, porém, faço a minha oração a ti, Senhor, num tempo aceitável; ó Deus, ouve-me segundo a grandeza da tua misericórdia, segundo a verdade da tua salvação.</p>
+            <p>14 Livra-me do lamaçal, e não me deixes atolar; seja eu livre dos que me odeiam, e das profundezas das águas.</p>
+            <p>15 Não me leve a corrente das águas, e não me absorva o abismo, nem a cova feche a sua boca sobre mim.</p>
+            <p>16 Ouve-me, Senhor, porque boa é a tua misericórdia; olha para mim segundo a tua muitíssima piedade.</p>
+            <p>17 E não escondas o teu rosto do teu servo, porque estou angustiado; ouve-me depressa.</p>
+            <p>18 Aproxima-te da minha alma, e resgata-a; livra-me por causa dos meus inimigos.</p>
+            <p>19 Tu sabes como fui afrontado, envergonhado e confundido; todos os meus adversários estão diante de ti.</p>
+            <p>20 O opróbrio quebrou o meu coração, e estou fraquejando; esperei por alguém que tivesse compaixão, mas não houve nenhum; e por consoladores, mas não os achei.</p>
+            <p>21 Deram-me fel por mantimento, e na minha sede me deram a beber vinagre.</p>
+            <p>22 Torne-se a sua mesa diante deles em laço, e a prosperidade em armadilha.</p>
+            <p>23 Escureçam-se-lhes os olhos, para que não vejam; e faze que os seus lombos tremam continuamente.</p>
+            <p>24 Derrama sobre eles a tua indignação, e prenda-os o ardor da tua ira.</p>
+            <p>25 Fique desolado o seu palácio; e não haja quem habite nas suas tendas.</p>
+            <p>26 Porque perseguem aquele a quem feriste, e conversam sobre a dor daqueles a quem golpeaste.</p>
+            <p>27 Acrescenta iniqüidade à iniqüidade deles, e não entrem na tua justiça.</p>
+            <p>28 Sejam riscados do livro dos vivos, e não sejam inscritos com os justos.</p>
+            <p>29 Eu, porém, estou aflito e triste; ponha-me a tua salvação, ó Deus, num alto retiro.</p>
+            <p>30 Louvarei o nome de Deus com cântico, e engrandecê-lo-ei com ação de graças.</p>
+            <p>31 Isto será mais agradável ao Senhor do que o boi, ou bezerro que tem chifres e unhas.</p>
+            <p>32 Os mansos verão isto, e se agradarão; o vosso coração viverá, pois que buscais a Deus.</p>
+            <p>33 Porque o Senhor ouve os necessitados, e não despreza os seus cativos.</p>
+            <p>34 Louvem-no os céus e a terra, os mares e tudo quanto neles se move.</p>
+            <p>35 Porque Deus salvará a Sião, e edificará as cidades de Judá, para que habitem ali e a possuam.</p>
+            <p>36 E a descendência dos seus servos a herdará, e os que amam o seu nome habitarão nela.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos68.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos70.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

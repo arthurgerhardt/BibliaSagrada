@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 70</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 70</h2>
+            <p>1 Apressa-te, ó Deus, em me livrar; Senhor, apressa-te em ajudar-me.</p>
+            <p>2 Sejam envergonhados e confundidos os que procuram a minha vida; voltem atrás e sejam humilhados os que desejam o meu mal.</p>
+            <p>3 Retrocedam por causa da sua vergonha os que dizem: Ah!, ah!</p>
+            <p>4 Alegrem-se e exultem em ti todos os que te buscam; e digam continuamente: Deus é grande! os que amam a tua salvação.</p>
+            <p>5 Mas eu sou pobre e necessitado; apressa-te para mim, ó Deus; tu és o meu auxílio e o meu libertador; Senhor, não te detenhas.</p>
+           
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos69.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos71.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
