@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 72</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 72</h2>
+            <p>1 Ó Deus, dá ao rei os teus juízos, e a tua justiça ao filho do rei.</p>
+            <p>2 Ele julgará o teu povo com justiça, e os teus aflitos com equidade.</p>
+            <p>3 Os montes trarão paz ao povo, e os outeiros, pela justiça.</p>
+            <p>4 Ele fará justiça aos aflitos do povo; salvará os filhos dos necessitados, e quebrantará o opressor.</p>
+            <p>5 Eles te temerão enquanto durar o sol, e enquanto durar a lua, de geração em geração.</p>
+            <p>6 Ele descerá como a chuva sobre a erva cortada, como chuvas que regam a terra.</p>
+            <p>7 Nos seus dias florescerá o justo, e abundância de paz, até que não haja lua.</p>
+            <p>8 Ele dominará de mar a mar, e desde o rio até os confins da terra.</p>
+            <p>9 Os que habitam no deserto se inclinarão diante dele, e os seus inimigos lamberão o pó.</p>
+            <p>10 Os reis de Társis e das ilhas trarão presentes; os reis de Sabá e de Seba oferecerão presentes.</p>
+            <p>11 E todos os reis se prostrarão diante dele; todas as nações o servirão.</p>
+            <p>12 Pois ele livrará o necessitado quando clamar, e também o aflito, e aquele que não tem quem o ajude.</p>
+            <p>13 Ele se compadecerá do pobre e do necessitado, e salvará a vida dos necessitados.</p>
+            <p>14 Ele remirá a sua vida da opressão e da violência, e precioso será o seu sangue aos seus olhos.</p>
+            <p>15 Ele viverá, e lhe darão do ouro de Sabá; e orarão por ele continuamente; todos os dias o louvarão.</p>
+            <p>16 Haverá abundância de cereal na terra, no cume dos montes; o seu fruto balouçará como o Líbano, e os da cidade florescerão como a erva da terra.</p>
+            <p>17 O seu nome permanecerá para sempre; o seu nome se perpetuará enquanto durar o sol; e nele se abençoarão todos os povos; todas as nações o chamarão bem-aventurado.</p>
+            <p>18 Bendito seja o Senhor Deus, o Deus de Israel, que só ele faz maravilhas.</p>
+            <p>19 Bendito seja para sempre o seu nome glorioso, e encha-se a sua glória de toda a terra. Amém e amém.</p>
+            <p>20 As orações de Davi, filho de Jessé, são acabadas.</p>         
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos71.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos73.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
