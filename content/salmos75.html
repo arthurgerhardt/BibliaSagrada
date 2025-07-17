@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 75</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 75</h2>
+            <p>1 A ti, ó Deus, damos graças, damos graças, pois o teu nome está perto; os homens falam dos teus feitos maravilhosos.</p>
+            <p>2 Quando eu ocupar o lugar determinado, julgarei retamente.</p>
+            <p>3 A terra e todos os seus moradores estão dissolvidos, mas eu firmei as suas colunas. (Selá)</p>
+            <p>4 Disse eu aos soberbos: Não sejais soberbos; e aos ímpios: Não levanteis a vossa força;</p>
+            <p>5 Não levanteis a vossa força altivamente, nem faleis com cerviz dura.</p>
+            <p>6 Porque nem do oriente, nem do ocidente, nem do deserto vem a exaltação.</p>
+            <p>7 Mas Deus é o juiz: a um abate, e a outro exalta.</p>
+            <p>8 Porque na mão do Senhor há um cálice, cujo vinho é vermelho; está cheio de mistura, e ele o derrama; certamente todos os ímpios da terra sorverão e beberão as suas fezes.</p>
+            <p>9 Porém eu o anunciarei para sempre; cantarei louvores ao Deus de Jacó.</p>
+            <p>10 E todos os poderes dos ímpios destruirei, mas o poder dos justos será exaltado.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos74.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos76.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

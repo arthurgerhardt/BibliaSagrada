@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 79</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 79</h2>
+            <p>1 Ó Deus, as nações entraram na tua herança; contaminaram o teu santo templo; reduziram Jerusalém a montões de pedras.</p>
+            <p>2 Deram os corpos dos teus servos por comida às aves dos céus, e a carne dos teus santos às feras da terra.</p>
+            <p>3 Derramaram o sangue deles como água ao redor de Jerusalém, e não houve quem os sepultasse.</p>
+            <p>4 Somos feitos o opróbrio dos nossos vizinhos, escárnio e zombaria para os que estão à roda de nós.</p>
+            <p>5 Até quando, Senhor? Estarás irado para sempre? Arderá o teu zelo como fogo?</p>
+            <p>6 Derrama o teu furor sobre as nações que te não conhecem, e sobre os reinos que não invocam o teu nome.</p>
+            <p>7 Porque devoraram a Jacó, e assolaram as suas moradas.</p>
+            <p>8 Não te lembres das iniquidades dos nossos antepassados; apressa-te, e venha ao nosso encontro a tua misericórdia, pois estamos muito abatidos.</p>
+            <p>9 Ajuda-nos, ó Deus da nossa salvação, pela glória do teu nome; livra-nos, e perdoa os nossos pecados, por amor do teu nome.</p>
+            <p>10 Por que diriam os gentios: Onde está o seu Deus? Mostre-se entre as nações, aos nossos olhos, a vingança do sangue derramado dos teus servos.</p>
+            <p>11 Chegue à tua presença o gemido dos cativos; segundo a grandeza do teu braço, preserva os condenados à morte.</p>
+            <p>12 E torna sete vezes sobre a cabeça dos nossos vizinhos o seu opróbrio, com que te afrontaram, Senhor.</p>
+            <p>13 Assim nós, o teu povo e ovelhas do teu pasto, te louvaremos para sempre; de geração em geração louvaremos o teu louvor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos78.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos80.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
