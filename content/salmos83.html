@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 83</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 83</h2>
+            <p>1. Ó Deus, não te cales; não te aquietes, ó Deus, e não te estejas em silêncio.</p>
+            <p>2. Porque eis que os teus inimigos se alvoroçam, e os que te odeiam levantam a cabeça.</p>
+            <p>3. Eles astutamente consultam contra o teu povo, e conspiram contra os teus protegidos.</p>
+            <p>4. Eles dizem: Vinde, e destruamos a nação, para que o nome de Israel não seja mais lembrado.</p>
+            <p>5. Pois consultaram juntos e unânimes; eles fazem aliança contra ti:</p>
+            <p>6. As tendas de Edom e os ismaelitas, Moabe e os hagarenos,</p>
+            <p>7. Gebal, Amom e Amaleque, a Filístia com os habitantes de Tiro;</p>
+            <p>8. Também a Assíria se ajuntou com eles; eles servem de braço aos filhos de Ló. (Selá)</p>
+            <p>9. Faze-lhes como a Midiã, como a Sísera, como a Jabim junto ao ribeiro de Quisom,</p>
+            <p>10. Os quais pereceram em En-Dor; tornaram-se esterco para a terra.</p>
+            <p>11. Faze aos seus nobres como a Orebe e a Zeebe, e a todos os seus príncipes como a Zeba e a Zalmuna,</p>
+            <p>12. Que disseram: Tomemos para nós, em possessão, as moradas de Deus.</p>
+            <p>13. Deus meu, faze-os como a folha impelida pelo redemoinho, como a palha diante do vento.</p>
+            <p>14. Como o fogo que queima o bosque, e como a chama que incendeia os montes,</p>
+            <p>15. Assim os persegue com a tua tempestade, e os assombre com o teu tufão.</p>
+            <p>16. Cobre-lhes o rosto de vergonha, para que busquem o teu nome, Senhor.</p>
+            <p>17. Sejam envergonhados e confundidos para sempre; sejam desonrados, e pereçam.</p>
+            <p>18. Para que saibam que tu, cujo nome é Senhor, és o Altíssimo sobre toda a terra.</p>
+           
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos82.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos84.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
