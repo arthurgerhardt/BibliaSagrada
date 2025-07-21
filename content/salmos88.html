@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 88</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 88</h2>
+            <p>1. Ó Senhor, Deus da minha salvação, diante de ti tenho clamado de dia e de noite.</p>
+            <p>2. Chegue diante de ti a minha oração, inclina os teus ouvidos ao meu clamor;</p>
+            <p>3. Porque a minha alma está cheia de angústias, e a minha vida se aproxima da sepultura.</p>
+            <p>4. Já estou contado com os que descem à cova; estou como homem sem força,</p>
+            <p>5. Posto entre os mortos livres, como os feridos de morte que jazem na sepultura, dos quais já não te lembras, e que foram separados da tua mão.</p>
+            <p>6. Puseste-me na cova mais profunda, em lugares escuros, nas profundezas.</p>
+            <p>7. Sobre mim pesa a tua ira, e me afliges com todas as tuas ondas. (Selá.)</p>
+            <p>8. Afastaste de mim os meus conhecidos, puseste-me por abominação perante eles; estou encerrado, e não posso sair.</p>
+            <p>9. Os meus olhos desfalecem de aflição; clamo a ti, Senhor, todo o dia; estendo para ti as minhas mãos.</p>
+            <p>10. Mostrarás tu maravilhas aos mortos? Ou levantar-se-ão os mortos para te louvar? (Selá.)</p>
+            <p>11. Será contada a tua benignidade na sepultura, ou a tua fidelidade na perdição?</p>
+            <p>12. Serão conhecidas nas trevas as tuas maravilhas, e a tua justiça na terra do esquecimento?</p>
+            <p>13. Mas eu, Senhor, clamo a ti; e de manhã a minha oração te previne.</p>
+            <p>14. Senhor, por que rejeitas a minha alma? Por que escondes de mim o teu rosto?</p>
+            <p>15. Estou aflito e prestes a morrer desde a minha mocidade; tenho sofrido os teus terrores, estou desfalecido.</p>
+            <p>16. Sobre mim passou a tua ardente ira; os teus terrores me destruíram.</p>
+            <p>17. Eles me cercam como água todo o dia; juntos me rodeiam.</p>
+            <p>18. Afastaste de mim amigos e companheiros; os meus conhecidos estão nas trevas.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos87.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos89.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

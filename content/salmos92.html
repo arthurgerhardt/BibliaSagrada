@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 92</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 92</h2>
+            <p>1. Bom é render graças ao Senhor, e cantar louvores ao teu nome, ó Altíssimo;</p>
+            <p>2. anunciar de manhã a tua benignidade, e de noite a tua fidelidade,</p>
+            <p>3. com instrumento de dez cordas, com saltério, com som de harpa.</p>
+            <p>4. Pois tu, Senhor, me alegraste com os teus feitos; exultarei nas obras das tuas mãos.</p>
+            <p>5. Quão grandes são, Senhor, as tuas obras!
+            Quão profundos são os teus pensamentos!</p>
+            <p>6. O homem insensato não sabe, e o tolo não entende isto.</p>
+            <p>7. Quando os ímpios brotam como a erva, e florescem todos os que praticam a iniqüidade, é para serem destruídos para sempre.</p>
+            <p>8. Mas tu, Senhor, és o Altíssimo para sempre.</p>
+            <p>9. Pois eis que os teus inimigos, Senhor, eis que os teus inimigos perecerão; serão dispersos todos os que praticam a iniqüidade.</p>
+            <p>10. Mas tu exaltaste o meu poder como o do unicórnio; fui ungido com óleo fresco.</p>
+            <p>11. E os meus olhos olharão sobre os meus inimigos; os meus ouvidos ouvirão sobre os que se levantam contra mim, os que praticam a iniqüidade.</p>
+            <p>12. O justo florescerá como a palmeira; crescerá como o cedro no Líbano.</p>
+            <p>13. Plantados na casa do Senhor, florescerão nos átrios do nosso Deus.</p>
+            <p>14. Na velhice ainda darão fruto; serão viçosos e florescentes,</p>
+            <p>15. para anunciarem que o Senhor é reto; ele é a minha rocha, e nele não há injustiça.</p>
+            
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos91.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos93.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 91</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 91</h2>
+            <p>1. Aquele que habita no esconderijo do Altíssimo, à sombra do Onipotente descansará.</p>
+            <p>2. Direi do Senhor: Ele é o meu refúgio e a minha fortaleza, o meu Deus, em quem confio.</p>
+            <p>3. Pois ele te livrará do laço do passarinheiro e da peste perniciosa.</p>
+            <p>4. Ele te cobrirá com as suas penas, e debaixo das suas asas encontrarás refúgio; a sua fidelidade será o teu escudo e broquel.</p>
+            <p>5. Não temerás o terror da noite, nem a flecha que voa de dia,</p>
+            <p>6. nem a peste que anda na escuridão, nem a mortandade que assola ao meio-dia.</p>
+            <p>7. Mil cairão ao teu lado, e dez mil à tua direita, mas não chegará a ti.</p>
+            <p>8. Somente com os teus olhos contemplarás, e verás a recompensa dos ímpios.</p>
+            <p>9. Pois tu, ó Senhor, és o meu refúgio!
+            O Altíssimo é a tua habitação.</p>
+            <p>10. Nenhum mal te sucederá, nem praga alguma chegará à tua tenda.</p>
+            <p>11. Pois aos seus anjos dará ordens a teu respeito, para te guardarem em todos os teus caminhos.</p> 
+            <p>12. Eles te segurarão pelo braço direito, para te manterem em todas as tuas viagens.</p>
+            <p>13. Eu dir-lhes-ei: "Quais são os caminhos do Senhor?" Responder-lhes-ei: "É bondade e justiça até sempre."</p>
+            <p>14. Por isso, o Senhor quererá abençoar-te com paz, e fazer-te prosperar por causa da tua justiça.</p>
+            <p>15. Assim, o Senhor te abençoará com a sua bondade, e te dará a alegria de ver os teus filhos prosperarem.</p>
+            <p>16. Com longos dias te satisfarei, e te mostrarei a minha salvação.</p>
+            
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos90.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos92.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

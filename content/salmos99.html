@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 99</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 99</h2>
+            <p>1. O Senhor reina; tremam os povos; ele está assentado entre os querubins; seja a terra abalada.</p>
+            <p>2. O Senhor é grande em Sião, e é exaltado sobre todos os povos.</p>
+            <p>3. Louvem o teu nome grande e tremendo; ele é santo.</p>
+            <p>4. E a força do rei ama a justiça; tu estabeleceste a eqüidade; tu executas o juízo e a justiça em Jacó.</p>
+            <p>5. Exaltai ao Senhor nosso Deus, e prostrai-vos ao estrado dos seus pés; ele é santo.</p>
+            <p>6. Moisés e Arão entre os seus sacerdotes, e Samuel entre os que invocam o seu nome; eles clamaram ao Senhor, e ele os ouviu.</p>
+            <p>7. Falou-lhes na coluna de nuvem; guardaram os seus testemunhos e os estatutos que lhes deu.</p>
+            <p>8. Ó Senhor nosso Deus, tu os ouviste; tu eras um Deus que lhes perdoava, embora vingador das suas obras.</p>
+            <p>9. Exaltai ao Senhor nosso Deus, e prostrai-vos diante do seu santo monte; porque o Senhor nosso Deus é santo.</p>
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos98.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos100.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

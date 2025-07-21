@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 100</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 100</h2>
+            <p>1. Celebrai com júbilo ao Senhor, todos os moradores da terra.</p>
+            <p>2. Servi ao Senhor com alegria; apresentai-vos diante dele com cântico.</p>
+            <p>3. Sabei que o Senhor é Deus; ele nos fez, e dele somos; somos o seu povo e ovelhas do seu pasto.</p>
+            <p>4. Entrai pelas suas portas com ações de graças, e em seus átrios com louvor; rendei-lhe graças, e bendizei o seu nome.</p>
+            <p>5. Porque o Senhor é bom; a sua misericórdia é eterna, e a sua fidelidade estende-se de geração em geração.</p>
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos99.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos101.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

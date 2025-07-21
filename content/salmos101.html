@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 101</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 101</h2>
+            <p>1. Cantarei a benignidade e o juízo; a ti, Senhor, cantarei.</p>
+            <p>2. Andarei em minha casa com coração sincero; porei diante de mim um assunto de sabedoria.</p>
+            <p>3. Não porei coisa má diante dos meus olhos; aborreço a obra dos que se desviam; isso não se pegará a mim.</p>
+            <p>4. O coração perverso se apartará de mim; não conhecerei o homem mau.</p>
+            <p>5. Aquele que difama o seu próximo às escondidas, a esse eu destruirei; não tolerarei o olhar altivo e o coração soberbo.</p>
+            <p>6. Meus olhos estarão sobre os fiéis da terra, para que habitem comigo; o que anda em caminho reto, esse me servirá.</p>
+            <p>7. O malandro não habitará na terra; o justo é o fundamento do meu povo.</p>
+            <p>8. Os pensamentos do justo são justos; mas os desejos dos ímpios são pecados.</p>
+            <p>9. Melhor é morar no canto da caverna do rochedo, que habitar nas casas de príncipes.</p>
+            <p>10. Porque o Senhor ama quem está firme no seu amor, para sempre guardá-lo como uma árvore plantada junto a ribeiros de águas.</p>
+            <p>11. O Senhor é bom para com todos, e as suas misericórdias estão sobre todas as suas obras.</p>
+            <p>12. Todas as tuas obras te louvarão, Senhor, e os teus santos te bendirão.</p>
+            <p>13. O Senhor constrói para sempre o seu trono; ele governa por eternidade sobre a sua realeza.</p>
+            <p>14. Eles observam o teu decreto, Senhor, e guardam a tua palavra.</p>
+            <p>15. Tu amaste a honra do teu nome, e conservaste até hoje o tesouro da tua misericórdia.</p>
+            <p>16. Bendito seja o Senhor Deus, que faz maravilhas! Bem-aventurado seja o Senhor, que é fiel para com os seus servos!</p>
+            <p>17. Louvado seja o Senhor, que é justo em todos os seus caminhos, e santo em todas as suas obras!</p>
+            <p>18. O Senhor é perto de todos os que o invocam, de todos os que o invocam em verdade.</p>
+            <p>19. Ele cumprirá o desejo dos que o tememem; ouvirá o seu clamor, e os salvará.</p>
+            <p>20. O Senhor guarda a todos os que o amam, mas destruirá todos os ímpios.</p>
+            <p>21. A minha boca falará o louvor do Senhor; e toda a carne bendiga o seu santo nome para sempre e eternamente.</p>
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos100.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos102.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 94</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 94</h2>
+            <p>1. Ó Senhor Deus, a quem pertence a vingança, ó Deus, a quem pertence a vingança, mostra-te.</p>
+            <p>2. Exalta-te, ó juiz da terra; dá a paga aos soberbos.</p>
+            <p>3. Até quando os ímpios, Senhor, até quando os ímpios exultarão?</p>
+            <p>4. Até quando proferirão, e falarão coisas duras, e se gloriarão todos os que praticam a iniquidade?</p>
+            <p>5. Eles esmagam o teu povo, ó Senhor, e afligem a tua herança.</p>
+            <p>6. Matam a viúva e o estrangeiro, e aos órfãos tiram a vida.</p>
+            <p>7. E dizem: O Senhor não o verá; nem para isso atentará o Deus de Jacó.</p>
+            <p>8. Atendei, ó brutais dentre o povo; e vós, loucos, quando sereis sábios?</p>
+            <p>9. Aquele que fez o ouvido, não ouvirá? E o que formou o olho, não verá?</p>
+            <p>10. Aquele que repreende as nações, não castigará? E o que ensina ao homem o conhecimento, não saberá?</p>
+            <p>11. O Senhor conhece os pensamentos do homem, que são vaidade.</p>
+            <p>12. Bem-aventurado o homem a quem tu repreendes, ó Senhor, e ensinas a tua lei;</p>
+            <p>13. Para lhe dares descanso dos dias maus, até que se abra a cova para o ímpio.</p>
+            <p>14. Pois o Senhor não rejeitará o seu povo, nem desamparará a sua herança.</p>
+            <p>15. Mas o juízo voltará à justiça, e seguirão todos os retos de coração.</p>
+            <p>16. Quem se levantará por mim contra os malfeitores? Ou quem se colocará por mim contra os que praticam a iniquidade?</p>
+            <p>17. Se o Senhor não tivesse sido o meu auxílio, já a minha alma estaria habitando no lugar do silêncio.</p>
+            <p>18. Quando eu dizia: O meu pé vacila; a tua benignidade, Senhor, me sustinha.</p>
+            <p>19. Na multidão dos meus pensamentos dentro de mim, as tuas consolações recrearam a minha alma.</p>
+            <p>20. Porventura o trono da iniquidade te acompanha, o qual forja o mal por uma lei?</p>
+            <p>21. Ajuntam-se contra a alma do justo, e condenam o sangue inocente.</p>
+            <p>22. Mas o Senhor é o meu alto retiro; e o meu Deus é a rocha do meu refúgio.</p>
+            <p>23. E sobre eles fará recair a sua própria iniquidade, e os destruirá na sua malícia; o Senhor nosso Deus os exterminará.</p>
+           
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos93.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos95.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
