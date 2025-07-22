@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 105</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 105</h2>
+            <p>1. Louvai ao Senhor, invocai o seu nome, fazei conhecidos os seus feitos entre os povos.</p>
+            <p>2. Cantai-lhe, cantai-lhe salmos; falai de todas as suas maravilhas.</p>
+            <p>3. Gloriai-vos no seu santo nome; alegre-se o coração daqueles que buscam ao Senhor.</p>
+            <p>4. Buscai ao Senhor e a sua força; buscai a sua face continuamente.</p>
+            <p>5. Lembrai-vos das maravilhas que fez, dos seus prodígios e dos juízos da sua boca,</p>
+            <p>6. Vós, descendência de Abraão, seu servo, vós, filhos de Jacó, seus escolhidos.</p>
+            <p>7. Ele é o Senhor nosso Deus; os seus juízos estão em toda a terra.</p>
+            <p>8. Lembra-se perpetuamente da sua aliança, da palavra que ordenou para mil gerações.</p>
+            <p>9. Da aliança que fez com Abraão, e do seu juramento a Isaque.</p>
+            <p>10. O qual confirmou a Jacó por estatuto, e a Israel por aliança eterna,</p>
+            <p>11. Dizendo: A ti darei a terra de Canaã, por quinhão da vossa herança.</p>
+            <p>12. Sendo eles poucos homens em número, sim, muito poucos, e estrangeiros nela.</p>
+            <p>13. Quando andavam de nação em nação, e de um reino para outro povo,</p>
+            <p>14. Não permitiu a ninguém que os oprimisse, e por amor deles repreendeu reis,</p>
+            <p>15. Dizendo: Não toqueis nos meus ungidos, e não maltrateis os meus profetas.</p>
+            <p>16. E chamou a fome sobre a terra, e cortou todo o sustento do pão.</p>
+            <p>17. Enviou perante eles um homem, José, que foi vendido por escravo.</p>
+            <p>18. Cujos pés apertaram com grilhões; foi posto em ferro;</p>
+            <p>19. Até ao tempo em que chegou a sua palavra; a palavra do Senhor o provou.</p>
+            <p>20. O rei mandou soltá-lo; o dominador dos povos o libertou.</p>
+            <p>21. Fê-lo senhor da sua casa, e governador de toda a sua fazenda;</p>
+            <p>22. Para, a seu gosto, prender os seus príncipes, e instruir os seus anciãos.</p>
+            <p>23. Então Israel entrou no Egito, e Jacó peregrinou na terra de Cam.</p>
+            <p>24. E multiplicou o seu povo grandemente, e o fez mais forte do que os seus inimigos.</p>
+            <p>25. Mudou o coração deles para que odiassem o seu povo, para que tratassem com astúcia os seus servos.</p>
+            <p>26. Enviou Moisés, seu servo, e Arão, a quem escolhera.</p>
+            <p>27. Fizeram entre eles os seus sinais, e prodígios na terra de Cam.</p>
+            <p>28. Mandou trevas, e a fez escura; e não foram rebeldes à sua palavra.</p>
+            <p>29. Converteu as suas águas em sangue, e matou os seus peixes.</p>
+            <p>30. A sua terra produziu rãs em abundância, até nos quartos dos seus reis.</p>
+            <p>31. Falou, e vieram enxames de moscas, e piolhos em todo o seu território.</p>
+            <p>32. Converteu as suas chuvas em saraiva, e fogo ardente na sua terra.</p>
+            <p>33. Feriu as suas vinhas e figueiras, e quebrou as árvores do seu território.</p>
+            <p>34. Falou, e vieram gafanhotos, e pulgão em quantidade incontável,</p>
+            <p>35. E comeram toda a erva da sua terra, e devoraram o fruto dos seus campos.</p>
+            <p>36. Feriu também todos os primogênitos da sua terra, as primícias de toda a sua força.</p>
+            <p>37. E tirou-os com prata e ouro; e entre as suas tribos não houve um só enfermo.</p>
+            <p>38. O Egito alegrou-se quando eles saíram, porque o seu temor caíra sobre eles.</p>
+            <p>39. Estendeu uma nuvem por cobertura, e fogo para iluminar de noite.</p>
+            <p>40. Pediram, e ele trouxe codornizes, e os saciou com pão do céu.</p>
+            <p>41. Abriu a rocha, e dela correram águas; correram pelos lugares secos como um rio.</p>
+            <p>42. Porque se lembrou da sua santa palavra, e de Abraão, seu servo.</p>
+            <p>43. E tirou o seu povo com alegria, e os seus escolhidos com regozijo.</p>
+            <p>44. E deu-lhes as terras das nações, e herdaram o trabalho dos povos.</p>
+            <p>45. Para que guardassem os seus preceitos, e observassem as suas leis. Louvai ao Senhor.</p>
+            
+
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos104.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos106.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

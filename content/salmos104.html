@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 104</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 104</h2>
+            <p>1. Bendize, ó minha alma, ao Senhor. Senhor meu Deus, tu és muito grande; estás vestido de glória e majestade.</p>
+            <p>2. Ele se cobre de luz como de uma veste; estende os céus como uma cortina.</p>
+            <p>3. Ele edifica as suas câmaras nas águas; faz das nuvens o seu carro, e anda sobre as asas do vento.</p>
+            <p>4. Faz dos ventos os seus mensageiros, e dos labaredas de fogo os seus ministros.</p>
+            <p>5. Ele fundou a terra sobre os seus fundamentos, de maneira que nunca jamais será abalada.</p>
+            <p>6. Tu a cobriste com o abismo, como com uma veste; as águas estavam sobre os montes.</p>
+            <p>7. À tua repreensão fugiram, à voz do teu trovão se apressaram.</p>
+            <p>8. Subiram os montes, desceram os vales, ao lugar que tu lhes fundaste.</p>
+            <p>9. Puseste um termo que não passarão, para que não tornem a cobrir a terra.</p>
+            <p>10. Tu fazes brotar fontes nos vales, que correm entre os montes.</p>
+            <p>11. Elas dão de beber a todas as feras do campo; os jumentos monteses matam a sua sede.</p>
+            <p>12. Junto delas habitam as aves do céu; cantam entre os ramos.</p>
+            <p>13. Ele rega os montes desde as suas câmaras; a terra se farta do fruto das tuas obras.</p>
+            <p>14. Ele dá aos animais da terra, e aos filhos dos homens.</p>
+            <p>15. Ele satisfaz o seu povo com todo o bem; ele alimenta os pobres sem falta.</p>
+            <p>16. Os ceifadores trabalham no tempo certo; eles cantam enquanto se ocupam em suas tarefas.</p>
+            <p>17. Eles guardam os seus troncos até o verão, e recolhem as suas folhas durante a primavera.</p>
+            <p>18. As árvores do Senhor são fartas; os cedros do Líbano, que ele plantou.</p>
+            <p>19. Ali as aves fazem os seus ninhos; a cegonha tem a sua casa nos ciprestes.</p>
+            <p>20. As altas montanhas são para as cabras monteses; os rochedos são refúgio para os coelhos.</p>
+            <p>21. Ele fez a lua para marcar as estações; o sol conhece o seu ocaso.</p>
+            <p>22. Tu fazes trevas, e é noite; em que andam todos os animais da floresta.</p>
+            <p>23. A luz brilha na sua volta, e a lua e as estrelas também emitem a sua luz.</p>
+            <p>24. Eles executam a tua ordem fielmente; tudo o que tu fizeste está cheio de sabedoria.</p>
+            <p>25. Quando saís, conduzes os seus carros; quando os despertas, eles se movem.</p>
+            <p>26. Então levantas o céu, e eles se enchem de água;</p>
+            <p>27. Eles se movem para cumprir a tua vontade; eles obedecem à tua voz.</p>
+            <p>28. Eles se alegram com a tua bondade; eles se regozijam com a tua misericórdia.</p>
+            <p>29. Eles se alimentam de tudo o que tu lhes dás; eles se fartam com o fruto das tuas obras.</p>
+            <p>30. Eles se alegram com a tua bondade; eles se regozijam com a tua misericórdia.</p>
+            <p>31. A glória do Senhor é eterna; o Senhor se alegra com as suas obras.</p>
+            <p>32. Ele olha para a terra, e ela treme; ele toca os montes, e eles fumegam.</p>
+            <p>33. Cantarei ao Senhor enquanto viver; cantarei louvores ao meu Deus enquanto existir.</p>
+            <p>34. Que a minha meditação seja agradável a ele; eu me alegrarei no Senhor.</p>
+            <p>35. Que os pecadores desapareçam da terra, e que os ímpios não existam mais. Bendize, ó minha alma, ao Senhor. Louvai ao Senhor!</p>
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos103.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos105.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

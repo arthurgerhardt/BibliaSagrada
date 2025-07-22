@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 103</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 103</h2>
+            <p>1. Bendize, ó minha alma, ao Senhor, e tudo o que há em mim bendiga o seu santo nome.</p>
+            <p>2. Bendize, ó minha alma, ao Senhor, e não te esqueças de nenhum dos seus benefícios.</p>
+            <p>3. Ele é quem perecerão os teus pecados, e cura todas as tuas enfermidades;</p>
+            <p>4. Ele é quem redime a tua vida da perdição, e te coroa de benignidade e de misericórdia;</p>
+            <p>5. Ele é quem farta de bens a tua velhice, de sorte que a tua mocidade se renova como a da águia.</p>
+            <p>6. O Senhor faz justiça e juízo a todos os oprimidos.</p>
+            <p>7. Ele fez notórios os seus caminhos a Moisés, e os seus feitos aos filhos de Israel.</p>
+            <p>8. Misericordioso e piedoso é o Senhor; longânimo e grande em benignidade.</p>
+            <p>9. Não contenderá perpetuamente, nem para sempre guardará a sua ira.</p>
+            <p>10. Não nos tratou segundo os nossos pecados, nem nos retribuiu segundo as nossas iniqüidades.</p>
+            <p>11. Porque, assim como o céu está elevado acima da terra, assim é grande a sua misericórdia para com os que o temem.</p>
+            <p>12. Assim como o oriente está longe do ocidente, assim afasta de nós as nossas transgressões.</p>
+            <p>13. Como o pai se compadece dos seus filhos, assim o Senhor se compadece dos que o temem.</p>
+            <p>14. Porque ele conhece a nossa estrutura; lembra-se de que somos pó.</p>
+            <p>15. Quanto ao homem, os seus dias são como a relva; como a flor do campo, assim floresce.</p>
+            <p>16. Porque o vento passa por ela, e já não está; e o seu lugar não a conhece mais.</p>
+            <p>17. Mas a misericórdia do Senhor é de eternidade a eternidade sobre os que o temem,
+            e a sua justiça sobre os filhos dos filhos;</p>
+            <p>18. Sobre os que guardam a sua aliança, e sobre os que se lembram dos seus mandamentos para os cumprir.</p>
+            <p>19. O Senhor estabeleceu o seu trono nos céus, e o seu reino domina sobre tudo.</p>
+            <p>20. Bendizei ao Senhor, vós, seus anjos, poderosos em força, que executais as suas ordens, obedecendo à voz da sua palavra.</p>
+            <p>21. Bendizei ao Senhor, todos os seus exércitos, vós, ministros seus, que fazeis a sua vontade.</p>
+            <p>22. Bendizei ao Senhor, todas as suas obras, em todos os lugares do seu domínio. Bendize, ó minha alma, ao Senhor.</p>
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos102.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos104.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
