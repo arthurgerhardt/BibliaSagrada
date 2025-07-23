@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 112</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 112</h2>
+            <p>1. Louvai ao Senhor. Bem-aventurado o homem que teme ao Senhor, e em seus mandamentos se compraz muito.</p>
+            <p>2. A sua descendência será poderosa na terra; a geração dos retos será abençoada.</p>
+            <p>3. Prosperidade e riquezas haverá na sua casa, e a sua justiça permanece para sempre.</p>
+            <p>4. A luz resplandece nas trevas para o justo; ele é piedoso, misericordioso e justo.</p>
+            <p>5. Bem-aventurado o homem que se compadece e empresta; ele manterá as suas causas com juízo.</p>
+            <p>6. O justo nunca cairá; mas os ímpios serão destruídos e desaparecerão como a nuvem.</p>
+            <p>7. Os justos herdarão a terra, e vivereis entre os santos.</p>
+            <p>8. O Senhor ama o justo; o justo viverá para sempre.</p>
+            <p>9. Ele orará contra os ímpios, e eles não existirão mais; são consumidos pelo fogo do Senhor.</p>
+            <p>10. O ímpio vê isso e se enfurece; range os dentes e se consome; o desejo dos ímpios perecerá.</p>
+            
+
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos111.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos113.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

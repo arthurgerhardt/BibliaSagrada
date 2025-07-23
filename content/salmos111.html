@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 111</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 111</h2>
+            <p>1. Louvarei ao Senhor de todo o meu coração, na companhia dos retos e na congregação.</p>
+            <p>2. Grandes são as obras do Senhor, procuradas por todos os que nelas se comprazem.</p>
+            <p>3. A sua obra é gloriosa e majestosa, e a sua justiça permanece para sempre.</p>
+            <p>4. Ele fez memoráveis as suas maravilhas; o Senhor é cheio de misericórdia e compaixão.</p>
+            <p>5. Ele dá mantimento aos que o tememem; ele se lembra da sua aliança para sempre.</p>
+            <p>6. Mostrou ao seu povo o poder das suas obras, dando-lhes a herança das nações.</p>
+            <p>7. As obras das suas mãos são verdade e justiça; fiéis são todos os seus preceitos.</p>
+            <p>8. Eles são firmes para todo o sempre, feitos em verdade e retidão.</p>
+            <p>9. Enviou redenção ao seu povo; ordenou para sempre a sua aliança; santo e terrível é o seu nome.</p>
+            <p>10. O temor do Senhor é o princípio da sabedoria; bom entendimento têm todos os que praticam os seus preceitos; o seu louvor permanece para sempre.</p>
+
+
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos110.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos112.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

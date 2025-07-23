@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 109</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 109</h2>
+            <p>1. Ó Deus, do meu louvor, não te cales;</p>
+            <p>2. Pois a boca do ímpio e a boca do enganador se abriram contra mim; falam-me com língua mentirosa.</p>
+            <p>3. Com palavras odiosas me cercaram, e me atacaram sem causa.</p>
+            <p>4. Em troca do meu amor, são meus adversários; mas eu, em oração, me entrego a ti.</p>
+            <p>5. Assim me dão mal por bem, e ódio por amor.</p>
+            <p>6. Põe sobre ele o ímpio, e Satanás esteja à sua direita.</p>
+            <p>7. Quando for julgado, saia condenado, e a sua oração seja para pecado.</p>
+            <p>8. Sejam poucos os seus dias, e outro tome o seu ofício.</p>
+            <p>9. Fiquem órfãos os seus filhos, e viúva a sua mulher.</p>
+            <p>10. Andem os seus filhos vagando e mendigando, e busquem o sustento longe das suas habitações assoladas.</p>
+            <p>11. Tome o credor tudo o que ele tem, e os estranhos saquearão o fruto do seu trabalho.</p>
+            <p>12. Não haja quem lhe faça misericórdia, nem quem se compadeça dos seus órfãos.</p>
+            <p>13. Sejam destruídos os seus descendentes, e na geração seguinte seja apagado o seu nome.</p>
+            <p>14. Venha à memória a iniqüidade de seus pais perante o Senhor, e o pecado de sua mãe não seja apagado.</p>
+            <p>15. Estejam sempre diante do Senhor, para que ele faça desaparecer da terra a sua memória;</p>
+            <p>16. Porquanto não se lembrou de fazer misericórdia, mas perseguiu o homem aflito e necessitado, e o quebrantado de coração, para o matar.</p>
+            <p>17. Amou a maldição, e esta lhe sobreveio; não quis a bênção, e ela se afastou dele.</p>
+            <p>18. Vestiu-se de maldição como de sua roupa, e entrou como água em seu interior, e como azeite em seus ossos.</p>
+            <p>19. Seja-lhe como a roupa com que se cobre, e como o cinto com que se cinge perpetuamente.</p>
+            <p>20. Seja este o salário do Senhor para os que me acusam, e para os que falam mal contra a minha alma.</p>
+            <p>21. Mas tu, ó Senhor Deus, age com bondade para comigo, por amor do teu nome; livra-me, porque a tua benignidade é boa.</p>
+            <p>22. Porque estou aflito e necessitado, e o meu coração está ferido dentro de mim.</p>
+            <p>23. Passo como a sombra que declina; sou sacudido como o gafanhoto.</p>
+            <p>24. Os meus joelhos estão fracos pela fome, e a minha carne está magra, sem gordura.</p>
+            <p>25. Sou objeto de opróbrio para eles; quando me vêem, meneiam a cabeça.</p>
+            <p>26. Ajuda-me, ó Senhor meu Deus; salva-me segundo a tua benignidade.</p>
+            <p>27. Para que saibam que esta é a tua mão, e que tu, Senhor, o fizeste.</p>
+            <p>28. Eles amaldiçoam, mas tu abençoas; levantem-se, mas sejam envergonhados; mas o teu servo se alegrará.</p>
+            <p>29. Sejam os meus acusadores cobertos de vergonha, e sejam envoltos na sua própria confusão como num manto.</p>
+            <p>30. Com a minha boca louvarei grandemente ao Senhor, e no meio da multidão o louvarei.</p>
+            <p>31. Porque ele se põe à direita do pobre, para o livrar dos que o condenam à morte.</p>
+
+
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos108.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos110.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
