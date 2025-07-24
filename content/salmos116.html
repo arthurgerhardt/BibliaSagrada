@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 116</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 116</h2>
+            <p>1. Amo ao SENHOR, porque ele ouviu a minha voz e a minha súplica.</p>
+            <p>2. Porque inclinou a mim os seus ouvidos; portanto, o invocarei enquanto viver.</p>
+            <p>3. Os cordéis da morte me cercaram, e angústias do inferno se apoderaram de mim; encontrei aperto e tristeza.</p>
+            <p>4. Então invoquei o nome do SENHOR, dizendo: Ó SENHOR, livra a minha alma.</p>
+            <p>5. Piedoso é o SENHOR e justo; o nosso Deus tem misericórdia.</p>
+            <p>6. O SENHOR guarda aos simples; fui abatido, mas ele me livrou.</p>
+            <p>7. Volta, ó minha alma, para o teu repouso, pois o SENHOR te fez bem.</p>
+            <p>8. Porque tu livraste a minha alma da morte, os meus olhos das lágrimas, e os meus pés da queda.</p>
+            <p>9. Andarei perante a face do SENHOR na terra dos viventes.</p>
+            <p>10. Cri, por isso falei: Estive muito aflito.</p>
+            <p>11. Eu dizia na minha pressa: Todos os homens são mentirosos.</p>
+            <p>12. Que darei eu ao SENHOR, por todos os benefícios que me tem feito?</p>
+            <p>13. Tomarei o cálice da salvação, e invocarei o nome do SENHOR.</p>
+            <p>14. Pagarei os meus votos ao SENHOR, agora, na presença de todo o seu povo.</p>
+            <p>15. Preciosa é à vista do SENHOR a morte dos seus santos.</p>
+            <p>16. Ó SENHOR, deveras sou teu servo; sou teu servo, filho da tua serva; soltaste as minhas prisões.</p>
+            <p>17. Oferecer-te-ei sacrifícios de louvor, e invocarei o nome do SENHOR.</p>
+            <p>18. Pagarei os meus votos ao SENHOR, agora, na presença de todo o seu povo,</p>
+            <p>19. Nos átrios da casa do SENHOR, no meio de ti, ó Jerusalém. Louvai ao SENHOR.</p>
+           
+
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos115.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos117.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

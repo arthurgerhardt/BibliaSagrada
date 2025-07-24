@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 120</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 120</h2>
+            <p>1. Na minha angústia clamei ao SENHOR, e ele me ouviu.</p>
+            <p>2. SENHOR, livra a minha alma dos lábios mentirosos e da língua enganadora.</p>
+            <p>3. Que te será dado, ou que te será acrescentado, ó língua enganadora?</p>
+            <p>4. Flechas agudas do valente, com brasas de zimbro.</p>
+            <p>5. Ai de mim, que peregrino sou em Meseque, que habito entre as tendas de Quedar!</p>
+            <p>6. Muito tempo habitou a minha alma com os que odeiam a paz.</p>
+            <p>7. Eu sou pela paz; mas quando falo, eles são pela guerra.</p>
+            
+
+            
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos119.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos121.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
