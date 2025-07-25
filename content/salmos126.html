@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 126</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 126</h2>
+            <p>1. Quando o Senhor trouxe do cativeiro os que voltaram a Sião, estávamos como os que sonham.</p>
+            <p>2. Então a nossa boca se encheu de riso, e nossas línguas se enchiam de cantigas; então dizemos: "Pois o Senhor fez maravilhas para nós, e temos paz, pois não houve quem nos fizesse mal."</p>
+            <p>3. O Senhor fez maravilhas para nós; quem é como o nosso Deus? Ele é o Deus que faz estufar as nuvens da sua terra, ele prepara luzs para a noite,</p>
+            <p>4. quebrando os ventos com seu poder, e cobrindo-os com seus braços.</p>
+            <p>5. Os que semeiam com lágrimas, com alegria ceifarão.</p>
+            <p>6. Aquele que leva a preciosa semente, andando e chorando, voltará com alegria, trazendo os seus feixes.</p>
+           
+            
+        
+
+            
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos125.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos127.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

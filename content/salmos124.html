@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 124</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 124</h2>
+            <p>1 Se não fora o Senhor, que esteve ao nosso lado, ora diga Israel;</p>
+            <p>2 se não fora o Senhor, que esteve ao nosso lado, quando os homens se levantaram contra nós;</p>
+            <p>3 então nos teriam tragado vivos, quando a sua ira se acendeu contra nós;</p>
+            <p>4 então as águas nos teriam submergido, a torrente teria passado sobre a nossa alma;</p>
+            <p>5 então as águas soberbas teriam passado sobre a nossa alma.</p>
+            <p>6 Bendito seja o Senhor, que não nos deu por presa aos dentes deles.</p>
+            <p>7 A nossa alma escapou como um pássaro do laço dos passarinheiros; o laço quebrou-se, e nós escapamos.</p>
+            <p>8 O nosso socorro está no nome do Senhor, que fez o céu e a terra.</p>
+            
+        
+
+            
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos123.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos125.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
