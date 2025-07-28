@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 140</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 140</h2>
+            <p>1. Livra-me, ó Senhor, do homem mau; guarda-me do homem violento.</p>
+            <p>2. Os quais pensam o mal no coração; continuamente se ajuntam para a guerra.</p>
+            <p>3. Aguçaram as línguas como a serpente; o veneno das víboras está debaixo dos seus lábios. (Selá)</p>
+            <p>4. Guarda-me, ó Senhor, das mãos do ímpio; guarda-me do homem violento, os quais pensam transtornar os meus passos.</p>
+            <p>5. Os soberbos armaram laços e cordas para mim; estenderam uma rede à beira do caminho; armaram-me ciladas. (Selá)</p>
+            <p>6. Eu disse ao Senhor: Tu és o meu Deus; ouve a voz das minhas súplicas, ó Senhor.</p>
+            <p>7. Ó Deus, Senhor, fortaleza da minha salvação, tu cobriste a minha cabeça no dia da batalha.</p>
+            <p>8. Não concedas, ó Senhor, ao ímpio os seus desejos; não prosperes o seu mau propósito, para que não se exaltem. (Selá)</p>
+            <p>9. Quanto à cabeça dos que me cercam, cubra-os a maldade dos seus lábios.</p>
+            <p>10. Caiam sobre eles brasas vivas; sejam lançados no fogo, em covas profundas, para que não se tornem a levantar.</p>
+            <p>11. O homem de língua falsa não será estabelecido na terra; o mal perseguirá o homem violento até que seja lançado fora.</p>
+            <p>12. Sei que o Senhor sustentará a causa do oprimido, e o direito do necessitado.</p>
+            <p>13. Certamente os justos louvarão o teu nome; os retos habitarão na tua presença.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos139.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos141.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

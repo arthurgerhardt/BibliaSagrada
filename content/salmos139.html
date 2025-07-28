@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 139</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 139</h2>
+            <p>1. Senhor, tu me sondaste, e me conheces.</p>
+            <p>2. Tu sabes o meu assentar e o meu levantar; de longe entendes o meu pensamento.</p>
+            <p>3. Cercas o meu andar e o meu deitar; e conheces todos os meus caminhos.</p>
+            <p>4. Não havendo ainda palavra alguma na minha língua, eis que logo, ó Senhor, tudo conheces.</p>
+            <p>5. Tu me cercaste por detrás e por diante, e puseste sobre mim a tua mão.</p>
+            <p>6. Tal conhecimento é maravilhoso demais para mim; elevado é, não o posso atingir.</p>
+            <p>7. Para onde me irei do teu espírito, ou para onde fugirei da tua face?</p>
+            <p>8. Se subir ao céu, tu aí estás; se fizer no inferno a minha cama, eis que tu ali estás também.</p>
+            <p>9. Se tomar as asas da alva, se habitar nas extremidades do mar,</p>
+            <p>10. Até ali a tua mão me guiará e a tua destra me susterá.</p>
+            <p>11. Se disser: Decerto que as trevas me encobrirão; então a noite será luz à roda de mim.</p>
+            <p>12. Nem ainda as trevas me escondem de ti; mas a noite resplandece como o dia; as trevas e a luz são para ti a mesma coisa.</p>
+            <p>13. Pois possuíste o meu interior; entreteceste-me no ventre de minha mãe.</p>
+            <p>14. Eu te louvarei, porque de um modo terrível e tão maravilhoso fui formado; maravilhosas são as tuas obras, e a minha alma o sabe muito bem.</p>
+            <p>15. Os meus ossos não te foram encobertos, quando no oculto fui formado, e entretecido como nas profundezas da terra.</p>
+            <p>16. Os teus olhos viram o meu corpo ainda informe; e no teu livro todas estas coisas foram escritas; as quais em continuação foram formadas, quando nem ainda uma delas havia.</p>
+            <p>17. E quão preciosos me são, ó Deus, os teus pensamentos! Quão grande é a soma deles!</p>
+            <p>18. Se os contasse, seriam em maior número do que a areia; quando acordo ainda estou contigo.</p>
+            <p>19. Ó Deus, tu matarás de certo o ímpio; apartai-vos de mim, homens de sangue.</p>
+            <p>20. Pois falam malvadamente contra ti; e os teus inimigos tomam o teu nome em vão.</p>
+            <p>21. Não odeio eu, ó Senhor, aqueles que te odeiam? E não me aflijo por causa dos que se levantam contra ti?</p>
+            <p>22. Odeio-os com ódio perfeito; tenho-os por inimigos.</p>
+            <p>23. Sonda-me, ó Deus, e conhece o meu coração; prova-me, e conhece os meus pensamentos.</p>
+            <p>24. E vê se há em mim algum caminho mau, e guia-me pelo caminho eterno.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos138.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos140.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

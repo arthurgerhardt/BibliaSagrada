@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 141</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 141</h2>
+            <p>1. Senhor, eu clamo a ti; ouve-me; inclina os teus ouvidos à minha voz, quando clamar a ti.</p>
+            <p>2. Suba a minha oração perante a tua face como incenso, e o levantar das minhas mãos como oferta da tarde.</p>
+            <p>3. Põe, ó Senhor, uma guarda à minha boca; vigia a porta dos meus lábios.</p>
+            <p>4. Não inclines o meu coração para o mal, para praticar obras perversas com os homens que praticam a iniqüidade; e não coma eu dos seus prazeres.</p>
+            <p>5. Fere-me o justo, será uma bondade; repreende-me, será um precioso óleo, que não ferirá a minha cabeça; ainda que a minha oração seja contra os seus maus feitos.</p>
+            <p>6. Quando os seus juízes forem derrubados pelas penhas, ouvirá que as minhas palavras são suaves.</p>
+            <p>7. Como quando um lavrador quebra e espalha a terra na cabeça da terra, assim os nossos ossos estão espalhados à boca do inferno.</p>
+            <p>8. Mas, ó Senhor, meus olhos estão postos em ti; em ti confio; não deixes a minha alma desamparada.</p>
+            <p>9. Guarda-me dos laços que me puseram, e dos laços dos que praticam a iniqüidade.</p>
+            <p>10. Caiam os ímpios nas suas próprias redes, enquanto eu passo adiante.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos140.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos142.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

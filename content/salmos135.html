@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 135</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 135</h2>
+            <p>1 Louvai ao Senhor. Louvai o nome do Senhor; louvai-o, servos do Senhor.</p>
+            <p>2 Vós que estais na casa do Senhor, nos átrios da casa do nosso Deus, louvai ao Senhor.</p>
+            <p>3 Louvai ao Senhor, porque o Senhor é bom; cantai louvores ao seu nome, porque é agradável.</p>
+            <p>4 Porque o Senhor constrói Jerusalém e reúne os filhos de Judá em si mesmo.</p>
+            <p>5 Ele escolheu David para ser seu servo e fez dele herdeiro de toda a terra.</p>
+            <p>6 Ouvei, ó Israel! És tu quem está no meio dos meus povo; não te esqueças das obras do Senhor!</p>
+            <p>7 Ele é o nosso Deus, ele faz tudo por nós; ele leva nossas almas à segurança.</p>
+            <p>8 Ele leva nossas almas à segurança, pois ele é o nosso Deus, e nada podemos fazer contra ele.</p>
+            <p>9 Foi ele quem fez as maravilhas em Egipto, cuja força foi mostrada em terras de Zafarim;</p>
+            <p>10 Quem fez grandes coisas por Israel quando saiu da terra de Egito,</p>
+            <p>11 Mostra-se poderoso contra os egípcios, que foram seus inimigos.</p>
+            <p>12 Dividiu o mar como um rio, e todos os seus inimigos afundaram nele.</p>
+            <p>13 Fez o céu com suas mãos, estendeu as profundezas sobre a água;</p>
+            <p>14 Fazendo luzes nas nuvens, fazendo chuvas sobre a terra,</p>
+            <p>15 Para dar aos animais do campo sua comida e aos homens, para que eles possam comer frutos de seu trabalho,</p>
+            <p>16 Para que traga a manhã ao dia e a noite ao seu descanso.</p>
+            <p>17 Ele fez o sol para governar o dia e a lua para governar a noite, quando dá luz às estrelas.</p>
+            <p>18 Ele fez todas as coisas maravilhosamente, dando-lhes um lugar cada uma em seu tempo.</p>
+            <p>19 Ele mandou ao homem ser semeado, e ele lhe deu frutas para sua alimentação,</p>
+            <p>20 Frutas para satisfazer o coração, vinho que alegra o espírito e óleo que faz brilhar o rosto.</p>
+            <p>21 Ele dá a cada um o que lhe é necessário, e a cada um o que lhe é suficiente.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos134.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos136.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

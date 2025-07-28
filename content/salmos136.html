@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 136</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 136</h2>
+            <p>1. Louvai ao Senhor, porque ele é bom; porque a sua benignidade dura para sempre.</p>
+            <p>2. Louvai ao Deus dos deuses; porque a sua benignidade dura para sempre.</p>
+            <p>3. Louvai ao Senhor dos senhores; porque a sua benignidade dura para sempre.</p>
+            <p>4. Àquele que só faz maravilhas; porque a sua benignidade dura para sempre.</p>
+            <p>5. Àquele que com entendimento fez os céus; porque a sua benignidade dura para sempre.</p>
+            <p>6. Àquele que estendeu a terra sobre as águas; porque a sua benignidade dura para sempre.</p>
+            <p>7. Àquele que fez os grandes luminares; porque a sua benignidade dura para sempre.</p>
+            <p>8. O sol para governar o dia; porque a sua benignidade dura para sempre.</p>
+            <p>9. A lua e as estrelas para presidirem a noite; porque a sua benignidade dura para sempre.</p>
+            <p>10. Àquele que feriu o Egito nos seus primogênitos; porque a sua benignidade dura para sempre.</p>
+            <p>11. E tirou a Israel do meio deles; porque a sua benignidade dura para sempre.</p>
+            <p>12. Com mão forte, e com braço estendido; porque a sua benignidade dura para sempre.</p>
+            <p>13. Àquele que dividiu o Mar Vermelho em duas partes; porque a sua benignidade dura para sempre.</p>
+            <p>14. E fez passar Israel pelo meio dele; porque a sua benignidade dura para sempre.</p>
+            <p>15. Mas derrubou a Faraó e ao seu exército no Mar Vermelho; porque a sua benignidade dura para sempre.</p>
+            <p>16. Àquele que guiou o seu povo pelo deserto; porque a sua benignidade dura para sempre.</p>
+            <p>17. Àquele que feriu grandes reis; porque a sua benignidade dura para sempre.</p>
+            <p>18. E matou reis famosos; porque a sua benignidade dura para sempre.</p>
+            <p>19. Siom, rei dos amorreus; porque a sua benignidade dura para sempre.</p>
+            <p>20. E Ogue, rei de Basã; porque a sua benignidade dura para sempre.</p>
+            <p>21. E deu a terra deles em herança; porque a sua benignidade dura para sempre.</p>
+            <p>22. Em herança a Israel, seu servo; porque a sua benignidade dura para sempre.</p>
+            <p>23. Que se lembrou da nossa baixeza; porque a sua benignidade dura para sempre.</p>
+            <p>24. E nos remiu dos nossos inimigos; porque a sua benignidade dura para sempre.</p>
+            <p>25. O que dá alimento a toda carne; porque a sua benignidade dura para sempre.</p>
+            <p>26. Louvai ao Deus dos céus; porque a sua benignidade dura para sempre.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos135.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos137.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

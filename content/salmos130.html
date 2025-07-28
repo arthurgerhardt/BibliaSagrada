@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 130</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 130</h2>
+            <p>1. Das profundezas a ti clamo, ó Senhor.</p>
+            <p>2. Senhor, escuta a minha voz; sejam os teus ouvidos atentos à voz das minhas súplicas.</p>
+            <p>3. Se tu, Senhor, observares as iniqüidades, Senhor, quem subsistirá?</p>
+            <p>4. Mas contigo está o perdão, para que sejas temido.</p>
+            <p>5. Aguardo o Senhor, a minha alma o aguarda, e espero na sua palavra.</p>
+            <p>6. A minha alma anseia pelo Senhor mais do que os guardas pelo romper da manhã, sim, mais do que aqueles que esperam pela manhã.</p>
+            <p>7. Espere Israel no Senhor, porque no Senhor há misericórdia, e nele há abundante redenção.</p>
+            <p>8. E ele remirá a Israel de todas as suas iniqüidades.</p>
+
+            
+            <div class="narrator"></div>  
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos129.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos131.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
