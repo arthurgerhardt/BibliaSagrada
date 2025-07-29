@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 145</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 145</h2>
+            <p>1. Exaltarei-te, ó Deus meu, ó Rei; bendirei o teu nome eternamente e para sempre.</p>
+            <p>2. Todos os dias te bendirei e louvarei o teu nome eternamente e para sempre.</p>
+            <p>3. Grande é o Senhor, e digno de ser louvado; a sua grandeza é insondável.</p>
+            <p>4. Uma geração louvará as tuas obras à outra geração, e anunciará as tuas proezas.</p>
+            <p>5. Meditarei no glorioso esplendor da tua majestade e nas tuas maravilhas.</p>
+            <p>6. Falarão do poder dos teus feitos terríveis, e eu contarei a tua grandeza.</p>
+            <p>7. Publicarão a memória da tua grande bondade, e cantarão com júbilo a tua justiça.</p>
+            <p>8. Misericordioso e compassivo é o Senhor; tardio em irar-se e grande em benignidade.</p>
+            <p>9. O Senhor é bom para todos, e as suas misericórdias estão sobre todas as suas obras.</p>
+            <p>10. Todas as coisas se deliciam na tua justiça; elas amam e louvam o teu nome.</p>
+            <p>11. A tua bondade é maior que a vida, e os teus olhos são bem-vindos aos homens.</p>
+            <p>12. Livras os que têm necessidade e fazes o mal ficar como um fogo.</p>
+            <p>13. Os teus testemunhos são verdadeiros; eles são firmes e justos sempre.</p>
+            <p>14. O Senhor sustenta todos os que caem e levanta todos os abatidos.</p>
+            <p>15. Os olhos de todos esperam em ti, e tu lhes dás o seu mantimento a seu tempo.</p>
+            <p>16. Abres a tua mão e satisfazes o desejo de todos os seres vivos.</p>
+            <p>17. Desfaz o coração de toda a iniqüidade e fortalece os corações das nossas almas.</p>
+            <p>18. Dá uma casa segura aos que andam na tua lei, e pões fim às mãos dos pecadores.</p>
+            <p>19. As luzes do Senhor são justiça e alegrança; as suas recompensas são felicidade eterna.</p>
+            <p>20. Pecadores caminham por terra torta, mas os seus passos são firmes e seguros.</p>
+            <p>21. A minha boca falará o louvor do Senhor, e toda carne bendirá o seu santo nome eternamente e para sempre.</p>
+          
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos144.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos146.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
