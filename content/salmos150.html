@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 150</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 150</h2>
+            <p>1. Louvai ao Senhor! Louvai a Deus na sua santidade; louvai-o no firmamento do seu poder.</p>
+            <p>2. Louvai-o pelos seus atos poderosos; louvai-o conforme a excelência da sua grandeza.</p>
+            <p>3. Louvai-o com o som da trombeta; louvai-o com saltério e harpa.</p>
+            <p>4. Louvai-o com adufes e danças; louvai-o com instrumentos de cordas e com flautas.</p>
+            <p>5. Louvai-o com címbalos sonoros; louvai-o com címbalos altisonantes.</p>
+            <p>6. Tudo o que tem fôlego louve ao Senhor. Louvai ao Senhor!</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos149.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

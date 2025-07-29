@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 149</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 149</h2>
+            <p>1. Louvai ao Senhor! Cantai ao Senhor um cântico novo, e o seu louvor na congregação dos santos.</p>
+            <p>2. Alegre-se Israel naquele que o fez; regozijem-se os filhos de Sião no seu Rei.</p>
+            <p>3. Louvem o seu nome com danças; cantem-lhe o seu louvor com tamborim e harpa.</p>
+            <p>4. Porque o Senhor se agrada do seu povo; ornará os mansos com a salvação.</p>
+            <p>5. Exultem os santos na glória; alegrem-se nas suas camas.</p>
+            <p>6. Estejam na sua garganta os altos louvores de Deus, e espada de dois fios nas suas mãos,</p>
+            <p>7. Para tomarem vingança das nações, e darem repreensões aos povos;</p>
+            <p>8. Para prenderem os seus reis com cadeias, e os seus nobres com grilhões de ferro;</p>
+            <p>9. Para executarem neles o juízo escrito; esta honra será para todos os seus santos. Louvai ao Senhor!</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/salmos148.html">Capítulo Anterior</a>
+            <a class="button" href="../content/salmos150.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
