@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 7</h2>
+            <p>1 Filho meu, guarda as minhas palavras, e esconde contigo os meus mandamentos.</p>
+            <p>2 Guarda os meus mandamentos, e vive; e a minha lei, como a menina dos teus olhos.</p>
+            <p>3 Ata-os aos teus dedos, escreve-os na tábua do teu coração.</p>
+            <p>4 Dize à sabedoria: Tu és minha irmã; e à prudência chama tua parenta;</p>
+            <p>5 Para que te guardem da mulher estranha, da alheia que lisonjeia com as suas palavras.</p>
+            <p>6 Porque da janela da minha casa olhei eu pelas minhas frestas,</p>
+            <p>7 E vi entre os simples, e observei entre os jovens um rapaz falto de juízo,</p>
+            <p>8 Que passava pela rua junto à esquina, e ia seguindo o caminho da sua casa,</p>
+            <p>9 Ao crepúsculo, à tarde do dia, no meio da noite e na escuridão.</p>
+            <p> 10 E eis que uma mulher lhe sai ao encontro, com vestes de prostituta, e astuta de coração.</p>
+            <p>11 É alvoroçada e rebelde; os seus pés não podem ficar em casa;</p>
+            <p>12 Agora está ela nas ruas, agora está nas praças, e espreita por todos os cantos.</p>
+            <p>13 Então ela o pegou, e o beijou; e com rosto impudente lhe disse:</p>
+            <p>14 Sacrifícios pacíficos tenho comigo; hoje paguei os meus votos.</p>
+            <p>15 Por isso saí ao teu encontro, para te encontrar diligentemente, e te achei.</p>
+            <p>16 Já cobri a minha cama com cobertas, com colchas bordadas de linho do Egito.</p>
+            <p>17 Já perfumei a minha cama com mirra, aloés e canela.</p>
+            <p>18 Vem, saciemo-nos de amores até à manhã; alegremo-nos com amores.</p>
+            <p>19 Porque o marido não está em casa; foi fazer uma longa viagem.</p>
+            <p>20 Levou consigo o saco do dinheiro; voltará para casa no dia determinado.</p>
+            <p>21 Com a muita persuasão o persuadiu; com a lisonja dos seus lábios o arrastou.</p>
+            <p>22 Ele a segue logo, como o boi que vai ao matadouro, e como o tolo que vai à prisão,</p>
+            <p>23 Até que a flecha lhe atravessa o fígado; como o pássaro que se apressa para o laço, e não sabe que é contra a sua vida.</p>
+            <p>24 Agora, pois, filhos, dai-me ouvidos, e estai atentos às palavras da minha boca.</p>
+            <p>25 Não se desvie o teu coração para os seus caminhos; não andes perdido nas suas veredas.</p>
+            <p>26 Porque muitos feridos ela derrubou, e são muitíssimos os que por ela foram mortos.</p>
+            <p>27 A sua casa é caminho para o inferno,
+            
+            
+            
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

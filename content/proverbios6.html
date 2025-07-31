@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 6</h2>
+            <p>1 Filho meu, se ficaste por fiador do teu companheiro, se deste a tua mão ao estranho, </p>
+            <p>2 Ficaste enredado com as palavras da tua boca, e preso com as palavras da tua boca.</p>
+            <p>3 Faze, pois, isto agora, filho meu, e livra-te, porque caíste na mão do teu próximo: vai, humilha-te, e importuna ao teu próximo.</p>
+            <p>4 Não dês sono aos teus olhos, nem repouso às tuas pálpebras.</p>
+            <p>5 Livra-te como a gazela da mão do caçador, e como a ave da mão do passarinheiro.</p>
+            <p>6 Vai ter com a formiga, ó preguiçoso; considera os seus caminhos, e sê sábio.</p>
+            <p>7 A qual não tendo chefe, nem oficial, nem dominador,</p>
+            <p>8 Prepara no verão o seu pão; na sega ajunta o seu mantimento.</p>
+            <p>9 Ó preguiçoso, até quando ficarás deitado? Quando te levantarás do teu sono?</p>
+            <p>10 Um pouco para dormir, um pouco para tosquenear, um pouco para encruzar as mãos em repouso;</p>
+            <p>11 Assim te sobrevirá a tua pobreza como um ladrão, e a tua necessidade como um homem armado.</p>
+            <p>12 O homem perverso, o homem vil, anda com a perversidade na boca;</p>
+            <p>13 Pisca os olhos, fala com os pés, e faz sinais com os dedos.</p>
+            <p>14 Perversidade há no seu coração; anda pensando o mal em todo o tempo, e semeia a discórdia.</p>
+            <p>15 Portanto, a sua destruição virá repentinamente; subitamente será quebrantado, e não haverá cura.</p>
+            <p>16 Estes seis coisas abomina o Senhor, sim, sete são as suas paixões:</p>
+            <p>17 Os olhos arrogantes, a boca mentirosa, os mãos violentas,</p>
+            <p>18 O coração que planeja traições, os testemunhas falsos,</p>
+            <p>19 E quem dá ouvido à língua mentirosa.</p>
+            <p>20 Quem odeia o seu pai e desobedece à mãe materna,</p>
+            <p>21 Será quebrantado, e não haverá cura.</p>
+            <p>22 Filho meu, guarda o mandamento de teu pai, e não deixes a lei de tua mãe.</p>
+            <p>23 Ata-os continuamente ao teu coração, e pendura-os ao teu pescoço.</p>
+            <p>24 Quando caminares, te guiarão; quando te deitares, te guardarão; e quando acordares, falarão contigo.</p>
+            <p>25 Porque o mandamento é lâmpada, e a lei é luz; e as repreensões da disciplina são o caminho da vida;</p>
+            <p>26 Para te guardarem da mulher má, e da lisonjeira da língua da mulher estranha.</p>
+            <p>27 Não cobices no teu coração a sua formosura, nem te prendas com os seus olhos.</p>
+            <p>28 Porque a prostituta reduz a um bocado de pão, e a adúltera caça a preciosa alma do homem.</p>
+            <p>29 Pode alguém andar sobre brasas, e os seus pés não se queimar?</p>
+            <p>30 Ou pode alguém andar sobre brasas, e os seus pés não se queimar?</p>
+            <p>31 Assim é o que se chega à mulher do seu próximo; não ficará inocente todo aquele que a tocar.</p>
+            <p>32 Mas o homem que adultera com uma mulher é falto de entendimento; destrói a sua alma o que assim procede.</p>
+            <p>33 Ele receberá feridas e ignomínia, e o seu opróbrio nunca se apagará.</p>
+            <p>34 Porque o ciúme é o furor do homem, e não perdoará no dia da vingança.</p>
+            <p>35 Não aceitará nenhum resgate, nem se compadecerá, ainda que multipliques as dádivas.</p>
+            
+            
+            
+            
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 4</h2>
+            <p>1 Ouvi, filhos, a instrução do pai, e estai atentos para conhecerdes o entendimento.</p>
+            <p>2 Porque vos dou boa doutrina; não deixeis a minha lei.</p>
+            <p>3 Porque eu era filho tenro em companhia de meu pai, e único diante de minha mãe.</p>
+            <p>4 E ele me ensinava, e me dizia: Retenha o teu coração as minhas palavras; guarda os meus mandamentos, e viverás.</p>
+            <p>5 Adquire sabedoria, adquire inteligência; não te esqueças, nem te apartes das palavras da minha boca.</p>
+            <p>6 Não a desampares, e ela te guardará; ama-a, e ela te conservará.</p>
+            <p>7 A sabedoria é a principal coisa; adquire, pois, a sabedoria; e com todos os teus bens adquire inteligência.</p>
+            <p>8 Exalta-a, e ela te exaltará; e, abraçando-a, ela te honrará.</p>
+            <p>9 Dará à tua cabeça um diadema de graça, e uma coroa de glória te entregará.</p>
+            <p>10 Ouve, filho meu, e recebe as minhas palavras, e se multiplicarão os anos da tua vida.</p>
+            <p>11 No caminho da sabedoria te ensinei, e pelas veredas da retidão te fiz andar.</p>
+            <p>12 Quando caminares, não se embaraçarão os teus passos; e se correres, não tropeçarás.</p>
+            <p>13 Retém a instrução, não a largues; guarda-a, porque ela é a tua vida.</p>
+            <p>14 Não entres na vereda dos ímpios, nem andes no caminho dos maus.</p>
+            <p>15 Evita-o, não passes por ele; desvia-te dele, e passa de largo.</p>
+            <p>16 Porque não dormem, se não fizerem o mal; e foge deles o sono, se não fizerem tropeçar alguém.</p>
+            <p>17 Porque comem o pão da impiedade, e bebem o vinho da violência.</p>
+            <p>18 Mas a vereda dos justos é como a luz da aurora, que vai brilhando mais e mais até ser dia perfeito.</p>
+            <p>19 O caminho dos ímpios é como a escuridão; não sabem em que tropeçam.</p>
+            <p>20 Filho meu, atenta para as minhas palavras;
+            <p>20 Inclina o teu ouvido às minhas falas.</p>
+            <p>21 Não as deixes apartar-se dos teus olhos; guarda-as no meio do teu coração.</p>
+            <p>22 Porque são vida para os que as acham, e saúde para todo o seu corpo.</p>
+            <p>23 Sobre tudo o que se deve guardar, guarda o teu coração, porque dele procedem as fontes da vida.</p>
+            <p>24 Desvia de ti a falsidade da boca, e afasta de ti a perversidade dos lábios.</p>
+            <p>25 Olhem os teus olhos para a frente, e as tuas pálpebras olhem diretamente diante de ti.</p>
+            <p>26 Pondera a vereda de teus pés, e todos os teus caminhos sejam bem ordenados.</p>
+            <p>27 Não declines nem para a direita nem para a esquerda; retira o teu pé do mal.</p>
+            
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
