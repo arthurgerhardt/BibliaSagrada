@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 8</h2>
+            <p>1 Porventura não clama a sabedoria, e a inteligência não faz ouvir a sua voz?</p>
+            <p>2 No cume das alturas, junto ao caminho, nas encruzilhadas, ela se coloca;</p>
+            <p>3 Ao lado das portas, à entrada da cidade, à entrada das portas, ela clama:</p>
+            <p>4 A vós, ó homens, clamo; e a minha voz se dirige aos filhos dos homens.</p>
+            <p>5 Entendei, ó simples, a prudência; e vós, loucos, entendei a sabedoria.</p>
+            <p>6 Ouvi, porque falarei coisas excelentes; e os meus lábios se abrirão para coisas retas.</p>
+            <p>7 Porque a minha boca falará a verdade; e os meus lábios abominam a impiedade.</p>
+            <p>8 Todas as palavras da minha boca são justas; não há nelas coisa torta nem perversa.</p>
+            <p>9 Elas são todas retas para o que as entende, e justas para os que acham o conhecimento.</p>
+            <p>10 Recebei a minha instrução, e não a prata; e o conhecimento, mais do que o ouro escolhido.</p> 
+            <p>11 Porque melhor é a sabedoria do que joias preciosas; e de tudo o que se deseja nada se pode comparar a ela.</p>
+            <p>12 Eu, a sabedoria, habito com a prudência, e acho o conhecimento dos conselhos.</p>
+            <p>13 O temor do Senhor é odiar o mal; a soberba, e a arrogância, e o mau caminho, e a boca perversa, eu odeio.</p>
+            <p>14 Meu é o conselho e a verdadeira sabedoria; eu sou o entendimento, minha é a fortaleza.</p>
+            <p>15 O temor do Senhor é o princípio da sabedoria; todos os que guardarem a sua lei gozam dele.</p>
+            <p>16 Para receberem a compreensão, dá-se-lhes a prudência; para obterem o conhecimento, dá-se-lhes a inteligência.</p>
+            <p>17 Porque o temor do Senhor é o ensino da sabedoria; e antes de todo caminho há o conhecimento.</p>
+            <p>18 Mas os que rejeitarem a   sabedoria e a instrução, são tolos; e os que ouvirem a sabedoria, serão sábios.</p>
+            <p>19 O temor do Senhor é o princípio da sabedoria; e o conhecimento    do Santo é entendimento.</p>
+            <p>20 Porque por mim se multiplicam os teus dias, e anos de vida se te acrescentarão.</p>
+            <p>21 Se fores sábio, serás sábio para ti; mas se fores zombador, só tu o suportarás.</p>
+            <p>22 A mulher tola é alvoroçada, é ignorante, e nada sabe.</p>
+            <p>23 Ela se assenta à porta de sua casa, numa cadeira, no alto da cidade,</p>
+            <p>24 Para chamar os que passam, que vão pelo caminho,</p>
+            <p>25 Dizer-lhes: Quem é simples, volte-se para cá; e aos faltos de juízo diz:</p>
+            <p>26 Eu tenho águas roubadas, e pão comido às ocultas é doce.</p>  
+            <p>27 Mas ele não sabe que ali estão os mortos, e que os seus convidados estão nas profundezas do inferno.</p>
+            <p>28 Agora, pois, filhos, dai-me ouvidos, e estai atentos às palavras da minha boca.</p>
+            <p>29 Não se desvie o teu coração para os seus caminhos; não andes perdido nas suas veredas.</p>
+            <p>30 Porque muitos feridos ela derrubou, e são muitíssimos os que por ela foram mortos.</p>
+            <p>31 A sua casa é caminho para o inferno,
+            <p>32 e os seus caminhos conduzem aos mortos.</p>
+            <p>33 Todos os que a acharem, não tornarão a entrar; e não alcançarão os caminhos da vida.</p>
+            <p>34 Para que andes no caminho do bem, e guardes as veredas dos justos.</p>
+            <p>35 Porque os retos habitarão a terra, e os íntegros permanecerão nela.</p>
+            <p>36 Mas os ímpios serão exterminados da terra, e os ímpios morrerão na sua iniquidade.</p>
+            
+            
+            
+        
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
