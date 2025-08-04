@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 13</h2>
+            <p>1 O filho sábio ouve a instrução do pai, mas o escarnecedor não ouve a repreensão.</p>
+            <p>2 Do fruto da boca cada um comerá o bem, mas a alma dos prevaricadores comerá a violência.</p>
+            <p>3 O que guarda a sua boca conserva a sua alma, mas o que muito abre os lábios tem perturbação.</p>
+            <p>4 A alma do preguiçoso deseja, e coisa nenhuma alcança, mas a alma dos diligentes se farta.</p>
+            <p>5 O justo aborrece a palavra de mentira, mas o ímpio faz vergonha e se confunde.</p>
+            <p>6 A justiça guarda ao que é de caminho íntegro, mas a impiedade transtorna o pecador.</p>
+            <p>7 Há quem se faça rico, não tendo coisa nenhuma, e quem se faça pobre, tendo grande riqueza.</p>
+            <p>8 O resgate da vida de cada um são as suas riquezas, mas o pobre não ouve ameaças.</p>
+            <p>9 A luz dos justos alegra, mas a lâmpada dos ímpios se apagará.</p>
+            <p>10 Da soberba só provém a contenda, mas com os que se aconselham se acha a sabedoria.</p>
+            <p>11 A fazenda que procede da vaidade diminuirá, mas quem a ajunta pelo trabalho terá aumento.</p>
+            <p>12 A esperança demorada enfraquece o coração, mas o desejo chegado é árvore de vida.</p>
+            <p>13 O que despreza a palavra perecerá, mas o que teme o mandamento será galardoado.</p>
+            <p>14 A doutrina do sábio é uma fonte de vida para desviar dos laços da morte.</p>
+            <p>15 O bom entendimento dá graça, mas o caminho dos prevaricadores é áspero.</p>
+            <p>16 Todo prudente age com conhecimento, mas o tolo espraia a sua loucura.</p>
+            <p>17 O mau mensageiro cai no mal, mas o embaixador fiel é saúde.</p>
+            <p>18 Pobreza e afronta virão ao que rejeita a instrução, mas o que guarda a repreensão será honrado.</p>
+            <p>19 O desejo que se cumpre deleita a alma, mas apartar-se do mal é abominação para os tolos.</p>
+            <p>20 O que anda com os sábios ficará sábio, mas o companheiro dos tolos será destruído.</p>
+            <p>21 O mal perseguirá os pecadores, mas os justos serão galardoados com o bem.</p>
+            <p>22 O homem de bem deixa uma herança aos filhos de seus filhos, mas a riqueza do pecador é depositada para o justo.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

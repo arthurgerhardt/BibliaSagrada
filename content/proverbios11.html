@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 11</h2>
+            <p>1 Balança enganosa é abominação ao Senhor; mas o peso justo é o seu deleite.</p>
+            <p>2 Quando vem a soberba, então vem a desonra; mas com os humildes está a sabedoria.</p>
+            <p>3 A integridade dos justos os guiará; mas a perversidade dos transgressores os destruirá.</p>
+            <p>4 As riquezas não aproveitam em dia de ira; mas a justiça livra da morte.</p>
+            <p>5 A justiça do perfeito endireitará o seu caminho; mas o ímpio cairá pela sua impiedade.</p>
+            <p>6 A justiça dos justos os livrará; mas os transgressores serão presos na sua perversidade.</p>
+            <p>7 Quando o ímpio morre, perece a sua esperança; e a expectativa dos perversos perecerá.</p>
+            <p>8 O justo é livre da angústia, mas o ímpio vem em seu lugar.</p>
+            <p>9 O hipócrita com a boca destrói o seu próximo; mas os justos são libertados pelo conhecimento.</p>
+            <p>10 Quando os justos prosperam, a cidade se alegra; e quando os ímpios perecem, há júbilo.</p>
+            <p>11 Pela bênção dos retos a cidade se exalta; mas pela boca dos ímpios é derrubada.</p>
+            <p>12 O que despreza o seu próximo é falto de coração; mas o homem de entendimento se cala.</p>
+            <p>13 O que anda difamando revela o segredo; mas o fiel de espírito o encobre.</p>
+            <p>14 Onde não há conselho, o povo cai; mas na multidão de conselheiros há segurança.</p>
+            <p>15 O que fica por fiador do estranho sofrerá mal; mas o que odeia ficar por fiador está seguro.</p>
+            <p>16 A mulher graciosa alcança honra; e os violentos alcançam riquezas.</p>
+            <p>17 O homem bondoso faz bem a si mesmo; mas o cruel faz mal a si mesmo.</p>
+            <p>18 O ímpio recebe um salário enganoso; mas o que semeia justiça terá galardão seguro.</p>
+            <p>19 Assim como a justiça conduz à vida, assim o que persegue o mal o persegue para a morte.</p>
+            <p>20 Abominação ao Senhor são os perversos de coração; mas os que andam sinceramente são o seu deleite.</p>
+            <p>21 Certamente o perverso não ficará impune; mas a descendência dos justos será livre.</p>
+            <p>22 Como anel de ouro em focinho de porca, assim é a mulher formosa que se aparta da razão.</p>
+            <p>23 O desejo dos justos é somente o bem; mas a expectativa dos ímpios é a ira.</p>
+            <p>24 Há os que distribuem, e contudo lhe é acrescentado mais; e há os que retêm mais do que é justo, mas vêm à pobreza.</p>
+            <p>25 Os que atuam bem são amados pelos seus irmãos; mas aqueles que praticam o mal são separados entre si.</p>
+            <p>26 Quem esconde o furto detesta-se aos seus próprios olhos; mas quem procura a justiça ama-o.</p>
+            <p>27 O temor do Senhor prolonga as dias; mas a vida dos ímpios é cortada abruptamente.</p>
+            <p>28 Os homens falsos não permanecem sem castigo; mas os justos serão libertados da angústia.</p>
+            <p>29 O homem perverso traz aflição à sua casa; mas o que odeia a suborno viverá.</p>
+            <p>30 O fruto do justo é árvore de vida; e o que ganha almas é sábio.</p>
+            <p>31 Eis que o justo será recompensado na terra; quanto mais o ímpio e o pecador!</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

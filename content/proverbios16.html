@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 16</h2>
+            <p>1 Do homem são as preparações do coração, mas do Senhor a resposta da boca.</p>
+            <p>2 Todos os caminhos do homem são puros aos seus olhos, mas o Senhor pesa o espírito.</p>
+            <p>3 Confia ao Senhor as tuas obras, e teus pensamentos serão estabelecidos.</p>
+            <p>4 O Senhor fez todas as coisas para os seus próprios fins, e até o ímpio para o dia do mal.</p>
+            <p>5 Abominável é ao Senhor todo o altivo de coração; não ficará impune mesmo de mãos postas.</p>
+            <p>6 Pela misericórdia e pela verdade se expia a iniquidade; e pelo temor do Senhor os homens se desviam do mal.</p>
+            <p>7 Sendo os caminhos do homem agradáveis ao Senhor, até a seus inimigos faz que tenham paz com ele.</p>
+            <p>8 Melhor é o pouco com justiça, do que grandes rendimentos com injustiça.</p>
+            <p>9 O coração do homem planeja o seu caminho, mas o Senhor lhe dirige os passos.</p>
+            <p>10 Nos lábios do rei se acha o oráculo divino; em juízo não prevaricará a sua boca.</p>
+            <p>11 O peso e a balança justos são do Senhor; obra sua são todos os pesos da bolsa.</p>
+            <p>12 Abominação é para os reis praticarem impiedade, porque com justiça se estabelece o trono.</p>
+            <p>13 Os lábios justos são o contentamento dos reis, e eles amarão o que fala coisas retas.</p>
+            <p>14 O furor do rei é mensageiro da morte, mas o homem sábio o apaziguará.</p>
+            <p>15 No semblante iluminado do rei está a vida, e a sua benevolência é como a nuvem de chuva serôdia.</p>
+            <p>16 Quanto melhor é adquirir a sabedoria do que o ouro! E quanto mais excelente é adquirir a prudência do que a prata!</p>
+            <p>17 O caminho dos retos é desviar-se do mal; o que guarda o seu caminho preserva a sua alma.</p>
+            <p>18 A soberba precede a ruína, e a altivez do espírito precede a queda.</p>
+            <p>19 Melhor é ser humilde de espírito com os mansos do que repartir o despojo com os soberbos.</p>
+            <p>20 O que atenta para a palavra achará o bem, e o que confia no Senhor é bem-aventurado.</p>
+            <p>21 O sábio de coração será chamado prudente, e a doçura dos lábios aumentará o ensino.</p>
+            <p>22 O entendimento, para aqueles que o possuem, é uma fonte de vida, mas a instrução dos tolos é a sua estultícia.</p>
+            <p>23 O coração do sábio instrui a sua boca, e aumenta o ensino aos seus lábios.</p>
+            <p>24 Favo de mel são as palavras suaves: doces para a alma, e saúde para os ossos.</p>
+            <p>25 Há caminho que parece direito ao homem, mas o seu fim são os caminhos da morte.</p>
+            <p>26 O trabalhador trabalha para si mesmo, porque a sua boca o incita.</p>
+            <p>27 O homem ímpio cava o mal, e nos seus lábios há como que um fogo ardente.</p>
+            <p>28 O homem perverso espalha contendas, e o difamador separa os maiores amigos.</p>
+            <p>29 O homem violento persuade o seu companheiro, e guia-o por caminho não bom.</p>
+            <p>30 Fecha os olhos para imaginar coisas ruins; mordendo os lábios, efetua o mal.</p>
+            <p>31 Coroa de honra são as cãs, quando elas estão no caminho da justiça.</p>
+            <p>32 Melhor é o que tarda em irar-se do que o poderoso, e o que controla o seu ânimo do que aquele que toma uma cidade.</p>
+            <p>33 A sorte se lança no regaço, mas do Senhor procede toda a determinação.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios17.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

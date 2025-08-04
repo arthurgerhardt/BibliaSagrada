@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 17</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 17</h2>
+            <p>1 Melhor é um bocado seco e sossegado do que a casa farta de carnes com contenda.</p>
+            <p>2 O servo prudente dominará sobre o filho que faz vergonha, e com os irmãos repartirá a herança.</p>
+            <p>3 O crisol é para a prata, e o forno para o ouro, mas o Senhor prova os corações.</p>
+            <p>4 O que faz o mal dá ouvidos a lábios iníquos, e o mentiroso inclina a sua língua para o mal.</p>
+            <p>5 O que escarnece do pobre insulta ao seu Criador; o que se alegra com a calamidade não ficará impune.</p>
+            <p>6 Coroa dos velhos são os filhos dos filhos, e a glória dos filhos são seus pais.</p>    
+            <p>7 Não faça amigo com o ímpio, nem entres em companhia dele;</p>
+            <p>8 por que ele fará algo mau, e você não saberá, depois de ter feito como ele disse.</p>
+            <p>9 Aquele que se entrega à ira é louco; quem se afasta da repreensão será ignorante.</p>
+            <p>10 Se alguém não tem espírito de entendimento, ele gosta de fazer brigas.</p>
+            <p>11 Ele que ama a contenda ama o pecado; quem faz da sua boca um laço, ele se tornará prisioneiro.</p>
+            <p>12 Melhor é encontrar-se com uma ursa roubada de seus filhos do que com um tolo na sua insensatez.</p>
+            <p>13 O que paga o bem com o mal, o mal não se apartará da sua casa.</p>
+            <p>14 Começar uma contenda é como abrir uma represa; antes que haja briga, desiste.</p>
+            <p>15 O Senhor abomina o perverso e o justo, e o ímpio e o que justifica o ímpio.</p>
+            <p>16 De que serve o dinheiro na mão do tolo, visto que não tem sabedoria para comprá-lo?</p>
+            <p>17 O amigo ama em todo o tempo, e para a angústia nasce o irmão.</p>
+            <p>18 O homem falto de entendimento compromete-se, e se torna fiador na presença do seu próximo.</p>
+            <p>19 O que ama a transgressão ama a contenda; o que exalta a sua porta busca a ruína.</p>
+            <p>20 O perverso de coração nunca achará o bem, e o que tem língua enganosa cairá na maldição.</p>
+            <p>21 O que gera o tolo para si gera tristeza, e o pai do insensato não se alegrará.</p>
+            <p>22 O coração alegre é bom remédio, mas o espírito abatido seca os ossos.</p>
+            <p>23 O ímpio aceita suborno em secreto para perverter os caminhos da justiça.</p>
+            <p>24 A sabedoria está diante dos olhos do que tem entendimento, mas os olhos do tolo vagueiam pelas extremidades da terra.</p>
+            <p>25 O filho insensato é tristeza para o pai, e amargura para a mãe que o deu à luz.</p>
+            <p>26 Certamente não é bom castigar o justo, nem ferir os príncipes por causa da retidão.</p>
+            <p>27 O que retém as suas palavras tem o conhecimento, e o homem de entendimento é de espírito sereno.</p>
+            <p>28 Até o tolo, quando se cala, é tido por sábio; e o que fecha os seus lábios é tido por entendido.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios18.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

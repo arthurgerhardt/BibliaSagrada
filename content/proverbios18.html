@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 18</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 18</h2>
+            <p>1 Busca satisfazer seu próprio desejo aquele que se isola; ele se insurge contra toda sabedoria.</p>
+            <p>2 O tolo não tem prazer na inteligência, senão em que se descubra o seu coração.</p>
+            <p>3 Vindo o ímpio, vem também o desprezo, e com a ignomínia a afronta.</p>
+            <p>4 Águas profundas são as palavras da boca do homem, e ribeiro transbordante é a fonte da sabedoria.</p>
+            <p>5 Não é bom favorecer o ímpio, para derribar o justo em juízo.</p>
+            <p>6 Os lábios do tolo entram na contenda, e a sua boca brada por açoites.</p>
+            <p>7 A boca do tolo é a sua própria destruição, e os seus lábios um laço para a sua alma.</p>
+            <p>8 As palavras do mexeriqueiro são como doces bocados, e elas descem ao íntimo do ventre.</p>
+            <p>9 Também o negligente na sua obra é irmão do desperdiçador.</p>
+            <p>10 Torre forte é o nome do Senhor; para ela correrá o justo, e estará em alto retiro.</p>
+            <p>11 A fazenda do rico é a sua cidade forte, e como um muro alto na sua imaginação.</p>
+            <p>12 Antes de ser quebrantado, eleva-se o coração do homem; e, diante da honra, vai a humildade.</p>
+            <p>13 O que responde antes de ouvir comete estultícia que é para vergonha sua.</p>
+            <p>14 O espírito do homem susterá a sua enfermidade, mas ao espírito abatido, quem o levantará?</p>
+            <p>15 O coração do entendido adquire o conhecimento, e o ouvido dos sábios busca a ciência.</p>
+            <p>16 O presente do homem alarga-lhe o caminho e leva-o à presença dos grandes.</p>
+            <p>17 O que primeiro começa o seu pleito justo parece, mas vem o seu companheiro e o examina.</p>
+            <p>18 A sorte faz cessar os pleitos, e faz separação entre os poderosos.</p>
+            <p>19 O irmão ofendido é mais difícil de conquistar do que uma cidade forte; e as contendas são como ferrolhos de um palácio.</p>
+            <p>20 Do fruto da boca de cada um se fartará o seu ventre; dos renovos dos seus lábios se fartará.</p>
+            <p>21 A morte e a vida estão no poder da língua; e aquele que a ama comerá do seu fruto.</p>
+            <p>22 O que acha uma esposa acha o bem, e alcança a benevolência do Senhor.</p>
+            <p>23 O pobre fala com rogos, mas o rico responde com dureza.</p>
+            <p>24 O homem que tem muitos amigos pode congratular-se, mas há amigo mais chegado do que um irmão.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios17.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios19.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

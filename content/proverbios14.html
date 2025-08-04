@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 14</h2>
+            <p>1 Toda mulher sábia edifica a sua casa, mas a tola a derruba com as próprias mãos.</p>
+            <p>2 O que anda na retidão teme ao Senhor, mas o que se desvia de seus caminhos o despreza.</p>
+            <p>3 Na boca do tolo está a vara da soberba, mas os lábios dos sábios os guardarão.</p>
+            <p>4 Não havendo bois, o celeiro fica limpo, mas pela força do boi há abundância de colheita.</p>
+            <p>5 A testemunha verdadeira não mentirá, mas a testemunha falsa se desboca em mentiras.</p>
+            <p>6 O escarnecedor busca sabedoria e não a acha, mas para o prudente o conhecimento é fácil.</p>
+            <p>7 Vai-te da presença do homem insensato, quando em seus lábios não perceberes conhecimento.</p>
+            <p>8 A sabedoria do prudente é entender o seu caminho, mas a estultícia dos tolos é engano.</p>
+            <p>9 Os loucos zombam do pecado, mas entre os retos há boa vontade.</p>
+            <p>10 O coração conhece a sua própria amargura, e o estranho não se intermeterá no seu gozo.</p>
+            <p>11 A casa dos ímpios será destruída, mas a tenda dos retos florescerá.</p>
+            <p>12 Há caminho que ao homem parece direito, mas o fim dele são os caminhos da morte.</p>
+            <p>13 Até no riso terá dor o coração, e o fim da alegria é tristeza.</p>
+            <p>14 O coração que se desvia dos seus caminhos se fartará de si mesmo, como também o homem de bem se fartará dos seus.</p>
+            <p>15 O simples dá crédito a toda palavra, mas o prudente atenta para os seus passos.</p>
+            <p>16 O sábio teme e desvia-se do mal, mas o tolo é arrogante e confiante.</p>
+            <p>17 O que se indigna à toa fará doidices, e o homem de maus intentos será odiado.</p>
+            <p>18 Os simples herdarão a estultícia, mas os prudentes serão coroados de conhecimento.</p>
+            <p>19 Os maus inclinam-se perante a face dos bons, e os ímpios às portas do justo.</p>
+            <p>20 O pobre é odiado até do seu vizinho, mas o rico tem muitos amigos.</p>
+            <p>21 O que despreza ao seu próximo peca, mas o que se compadece dos pobres é bem-aventurado.</p>
+            <p>22 Porventura não erram os que maquinam o mal? Mas misericórdia e verdade haverá para os que maquinam o bem.</p>
+            <p>23 Em todo trabalho há proveito, mas a palavra dos lábios só encaminha para a pobreza.</p>
+            <p>24 A coroa dos sábios é a sua riqueza, mas a estultícia dos tolos é só estultícia.</p>
+            <p>25 A testemunha verdadeira livra as almas, mas o que se desboca em mentiras é enganador.</p>
+            <p>26 No temor do Senhor há firme confiança e ele será um refúgio para seus filhos.</p>
+            <p>27 O temor do Senhor é uma fonte de vida, para desviar dos laços da morte.</p>
+            <p>28 Na multidão do povo está a glória do rei, mas na falta de povo a ruína do príncipe.</p>
+            <p>29 O longânimo é grande em entendimento, mas o de ânimo precipitado exalta a loucura.</p>
+            <p>30 O coração com saúde é a vida da carne, mas a inveja é a podridão dos ossos.</p>
+            <p>31 O que oprime o pobre insulta aquele que o criou, mas o que se compadece do necessitado honra-o.</p>
+            <p>32 Pela sua malícia é lançado fora o ímpio, mas o justo até na morte tem esperança.</p>
+            <p>33 No coração do prudente repousa a sabedoria, mas o que existe dentro dos tolos se faz conhecido.</p>
+            <p>34 A justiça exalta as nações, mas o pecado é o opróbrio dos povos.</p>
+            <p>35 O favor do rei é para o servo prudente, mas a sua indignação é para o que o envergonha.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
