@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 19</h2>
+            <p>1 Melhor é o pobre que anda na sua integridade do que o perverso de lábios e tolo.</p>
+            <p>2 Assim como não é bom ficar a alma sem conhecimento, peca aquele que se apressa com seus pés.</p>
+            <p>3 A estultícia do homem perverterá o seu caminho, e o seu coração se irará contra o Senhor.</p>
+            <p>4 As riquezas granjeiam muitos amigos, mas ao pobre o seu próprio amigo o deixa.</p>
+            <p>5 A falsa testemunha não ficará impune, e o que profere mentiras não escapará.</p>
+            <p>6 Muitos se deixam acomodar pelos favores do príncipe, e cada um é amigo daquele que dá presentes.</p>
+            <p>7 Todos os irmãos do pobre o aborrecem; quanto mais se afastarão dele os seus amigos! Corre após eles com palavras, mas não os alcança.</p>
+            <p>8 O que adquire entendimento ama a sua alma; o que conserva a inteligência achará o bem.</p>
+            <p>9 A falsa testemunha não ficará impune; e o que profere mentiras perecerá.</p>
+            <p>10 Ao tolo não convém o luxo; quanto menos ao servo dominar sobre os príncipes!</p>
+            <p>11 A prudência do homem faz reter a sua ira, e é glória sua o passar por cima da transgressão.</p>
+            <p>12 Como o rugido do leão jovem é a indignação do rei, mas como orvalho sobre a erva é a sua benevolência.</p>
+            <p>13 O filho insensato é a desgraça do pai, e um gotejar contínuo as contendas da mulher.</p>
+            <p>14 A casa e os bens são herança dos pais; mas do Senhor vem a mulher prudente.</p>
+            <p>15 A preguiça faz cair em profundo sono, e a alma indolente padecerá fome.</p>
+            <p>16 O que guarda o mandamento guarda a sua alma; mas o que despreza os seus caminhos morrerá.</p>
+            <p>17 Ao Senhor empresta o que se compadece do pobre, ele lhe pagará o seu benefício.</p>
+            <p>18 Castiga a teu filho enquanto há esperança, mas não te excedas a ponto de matá-lo.</p>
+            <p>19 O homem de grande ira deve sofrer o dano; porque se tu o livrares ainda terás de tornar a fazê-lo.</p>
+            <p>20 Ouve o conselho, e recebe a correção, para que no fim sejas sábio.</p>
+            <p>21 Muitos propósitos há no coração do homem, porém o conselho do Senhor permanecerá.</p>
+            <p>22 O que faz agradável ao homem é a sua misericórdia; e o pobre é melhor do que o mentiroso.</p>
+            <p>23 O temor do Senhor encaminha para a vida; aquele que o tem ficará satisfeito, e não o visitará mal nenhum.</p>
+            <p>24 O preguiçoso esconde a mão no prato, e nem ao menos a leva à boca.</p>
+            <p>25 Fere o escarnecedor, e o simples tomará aviso; repreende ao entendido, e aprenderá conhecimento.</p>
+            <p>26 O que aflige a seu pai, ou manda embora sua mãe, filho é que envergonha e desonra.</p>
+            <p>27 Cessa, filho meu, ouvindo a instrução, de te desviares das palavras do conhecimento.</p>
+            <p>28 A testemunha de Belial escarnece do juízo, e a boca dos ímpios devora a iniqüidade.</p>
+            <p>29 Preparados estão juízos para os escarnecedores, e açoites para as costas dos tolos.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios18.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios20.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

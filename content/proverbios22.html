@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 22</h2>
+            <p>1 Mais digno de ser escolhido é o bom nome do que as muitas riquezas; e a graça é melhor do que a riqueza e o ouro.</p>
+            <p>2 O rico e o pobre se encontram; a todos o Senhor os fez.</p>
+            <p>3 O prudente vê o mal e esconde-se; mas os simples passam e sofrem a pena.</p>
+            <p>4 O galardão da humildade e o temor do Senhor são riquezas, honra e vida.</p>
+            <p>5 Espinhos e laços há no caminho do perverso; o que guarda a sua alma retira-se para longe deles.</p>
+            <p>6 Instrui o menino no caminho em que deve andar, e até quando envelhecer não se desviará dele.</p>
+            <p>7 O rico domina sobre os pobres, e o que toma emprestado é servo do que empresta.</p>
+            <p>8 O que semeia a injustiça segará males; e a vara da sua indignação falhará.</p>
+            <p>9 O que vê com bons olhos será abençoado, porque dá do seu pão ao pobre.</p>
+            <p>10 Lança fora o escarnecedor, e se irá a contenda; e cessará a questão e a vergonha.</p>
+            <p>11 O que ama a pureza de coração, e é amável de lábios, será amigo do rei.</p>
+            <p>12 Os olhos do Senhor conservam o conhecimento, mas as palavras do iníquo ele transtornará.</p>
+            <p>13 Diz o preguiçoso: Um leão está lá fora; serei morto no meio das ruas.</p>
+            <p>14 Cova profunda é a boca das mulheres estranhas; aquele contra quem o Senhor se irar cairá nela.</p>
+            <p>15 A estultícia está ligada ao coração da criança, mas a vara da correção a afugentará dela.</p>
+            <p>16 O que oprime o pobre para enriquecer a si, ou o que dá ao rico, certamente empobrecerá.</p>
+            <p>17 Inclina o teu ouvido e ouve as palavras dos sábios, e aplica o teu coração ao meu conhecimento.</p>
+            <p>18 Porque te será agradável se as guardares no teu íntimo, se aplicares todas elas aos teus lábios.</p>
+            <p>19 Para que a tua confiança esteja no Senhor, faço-te sabê-las hoje, a ti mesmo.</p>
+            <p>20 Porventura não te escrevi excelentes coisas acerca de conselhos e conhecimento,</p>
+            <p>21 Para fazer-te saber a certeza das palavras da verdade, para que possas responder palavras de verdade aos que te enviarem?</p>
+            <p>22 Não roubes ao pobre, porque é pobre, nem oprimas na porta o aflito;</p>
+            <p>23 Porque o Senhor defenderá a sua causa em juízo, e aos que os roubam ele lhes tirará a vida.</p>
+            <p>24 Não sejas companheiro do homem colérico, nem andes com o homem iracundo;</p>
+            <p>25 Para que não aprendas as suas veredas, e tomes um laço para a tua alma.</p>
+            <p>26 Não estejas entre os que se comprometem, e entre os que ficam por fiadores de dívidas;</p>
+            <p>27 Se não tens com que pagar, por que tirariam a tua cama de debaixo de ti?</p>
+            <p>28 Não removas os antigos limites que teus pais fizeram.</p>
+            <p>29 Viste o homem diligente na sua obra? Perante reis será posto; não será posto perante os de posição inferior.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
