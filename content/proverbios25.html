@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 25</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 25</h2>
+            <p>1 Também estes são provérbios de Salomão, os quais copiaram os homens de Ezequias, rei de Judá.</p>
+            <p>2 A glória de Deus é encobrir as coisas; mas a glória dos reis é esquadrinhar as coisas.</p>
+            <p>3 Quanto mais altos os céus, e mais profundas as profundezas, assim são as profundezas do coração dos reis.</p>
+            <p>4 Tira as escórias da prata, e sairá um vaso para o fundidor.</p>
+            <p>5 Tira o ímpio da presença do rei, e o seu trono se firmará na justiça.</p>
+            <p>6 Não te glories na presença do rei, e não te ponhas no lugar dos grandes;</p>
+            <p>7 Porque melhor é que se te diga: Sobe para cá, do que seres humilhado diante do príncipe, a quem os teus olhos viram.</p>
+            <p>8 Não te precipites a pleitear, para que não saibas o que fazer no fim, quando o teu próximo te envergonhar.</p>
+            <p>9 Pleiteia a tua causa com o teu próximo, e não descubras o segredo de outrem;</p>
+            <p>10 Para que não te envergonhes, quando te descobrirem, e não se retire de ti o que ouve.</p>
+            <p>11 Maçãs de ouro com figuras de prata é a palavra falada a seu tempo.</p>
+            <p>12 Como brinco de ouro e ornamento de ouro fino, assim é o sábio repreensor ao ouvido atento.</p>
+            <p>13 Como o orvalho da neve no tempo da sega, assim é o fiel mensageiro para os que o enviam; porque refrigera a alma do seu senhor.</p>
+            <p>14 Como nuvens e vento sem chuva, assim é o homem que se gloria falsamente de dádivas.</p>
+            <p>15 Com longanimidade se persuade o príncipe, e a língua branda quebranta os ossos.</p>
+            <p>16 Achaste mel? Come o que te basta, para que não te fartes dele, e o venhas a vomitar.</p>
+            <p>17 Retira o teu pé da casa do teu próximo, para que não se enfade de ti, e te odeie.</p>
+            <p>18 Qualquer que dá testemunho contra o seu próximo é um martelo, uma espada e uma flecha aguda.</p>
+            <p>19 Confiança no desleal no tempo da angústia é como dente quebrado e pé cambaleante.</p>
+            <p>20 Como o que tira a roupa no dia do frio, e como vinagre sobre soda, assim é o que canta canções ao coração triste.</p>
+            <p>21 Se o teu inimigo tiver fome, dá-lhe pão para comer; e se tiver sede, dá-lhe água para beber;</p>
+            <p>22 Porque assim amontoarás brasas vivas sobre a sua cabeça, e o Senhor te recompensará.</p>
+            <p>23 O vento do norte traz chuva, e a língua maldizente, o rosto irado.</p>
+            <p>24 Melhor é morar num canto de telhado do que ter casa junto com mulher briguenta.</p>
+            <p>25 Como águas frias para a alma sedenta, assim são as boas novas de uma terra distante.</p>
+            <p>26 Como fonte turvada e manancial poluído, assim é o justo que cede diante do ímpio.</p>
+            
+
+
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios24.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios26.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

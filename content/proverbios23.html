@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 23</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 23</h2>
+            <p>1 Quando te assentares a comer com um governador, atenta bem para o que é posto diante de ti,</p>
+            <p>2 E põe uma faca à tua garganta, se és homem glutão.</p>
+            <p>3 Não cobices os seus delicados manjares, porque são comidas enganosas.</p>
+            <p>4 Não te fatigues para enriqueceres; e não apliques nisso a tua sabedoria.</p>
+            <p>5 Porventura fitarás os olhos naquilo que não é nada? Pois certamente criará asas e voará ao céu como a águia.</p>
+            <p>6 Não comas o pão daquele que tem o olhar maligno, nem cobices os seus delicados manjares.</p>
+            <p>7 Porque, como imaginou no seu coração, assim é ele; ele te diz: Come e bebe; mas o seu coração não está contigo.</p>
+            <p>8 Vomitarás o bocado que comeste, e perderás as tuas suaves palavras.</p>
+            <p>9 Não fales aos ouvidos do tolo, porque desprezará a sabedoria das tuas palavras.</p>
+            <p>10 Não removas os antigos limites, nem entres nos campos dos órfãos,</p>
+            <p>11 Porque o seu Redentor é poderoso; e pleiteará a causa deles contra ti.</p>
+            <p>12 Aplica o teu coração à instrução e os teus ouvidos às palavras do conhecimento.</p>
+            <p>13 Não retires a disciplina da criança; pois se a fustigares com a vara, nem por isso morrerá.</p>
+            <p>14 Tu a fustigarás com a vara, e livrarás a sua alma do inferno.</p>
+            <p>15 Filho meu, se o teu coração for sábio, alegrar-se-á o meu coração, sim, o meu próprio.</p>
+            <p>16 E exultarão os meus rins, quando os teus lábios falarem coisas retas.</p>
+            <p>17 O teu coração não inveje os pecadores; antes permanece no temor do Senhor todo dia.</p>
+            <p>18 Porque certamente haverá bom futuro; não será frustrada a tua esperança.</p>
+            <p>19 Ouve tu, filho meu, e sê sábio, e dirige no caminho o teu coração.</p>
+            <p>20 Não estejas entre os beberrões de vinho, nem entre os comilões de carne.</p>
+            <p>21 Porque o beberrão e o comilão acabarão na pobreza; e a sonolência faz vestir-se de trapos.</p>
+            <p>22 Ouve teu pai, que te gerou, e não desprezes tua mãe quando envelhecer.</p>
+            <p>23 Compra a verdade, e não a vendas; e também a sabedoria, a instrução e o entendimento.</p>
+            <p>24 Grandemente se regozijará o pai do justo, e o que gerar um sábio se alegrará nele.</p>
+            <p>25 Alegrem-se teu pai e tua mãe, e regozije-se a que te deu à luz.</p>
+            <p>26 Dá-me, filho meu, o teu coração, e os teus olhos observem os meus caminhos.</p>
+            <p>27 Porque cova profunda é a prostituta, e poço estreito a estranha.</p>
+            <p>28 Também ela, como salteador, se põe a espreitar, e multiplica entre os homens os infiéis.</p>
+            <p>29 Para quem são os ais? Para quem os pesares? Para quem as rixas? Para quem as queixas? Para quem as feridas sem causa? E para quem os olhos vermelhos?</p>
+            <p>30 Para os que se demoram perto do vinho, para os que andam buscando bebida misturada.</p>
+            <p>31 Não olhes para o vinho quando se mostra vermelho, quando resplandece no copo e se escoa suavemente.</p>
+            <p>32 No fim, picará como a cobra, e como o basilisco morderá.</p>
+            <p>33 Os teus olhos olharão para as mulheres estranhas, e o teu coração falará perversidades.</p>
+            <p>34 E serás como o que dorme no meio do mar, e como o que dorme no topo do mastro.</p>
+            <p>35 E dirás: Espancaram-me, e não me doeu; bateram-me, e não senti; quando despertarei? Ainda tornarei a buscá-lo outra vez.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios22.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios24.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

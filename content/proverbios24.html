@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 24</h2>
+            <p>1 Não tenhas inveja dos homens malignos, nem desejes estar com eles.</p>
+            <p>2 Porque o seu coração medita a destruição, e os seus lábios falam maliciosamente.</p>
+            <p>3 Com a sabedoria se edifica a casa, e com o entendimento ela se estabelece;</p>
+            <p>4 E pelo conhecimento se encherão as câmaras com todos os bens preciosos e agradáveis.</p>
+            <p>5 O homem sábio é forte, e o homem de conhecimento consolida a força.</p>
+            <p>6 Com conselhos prudentes tu farás a guerra; e há vitória na multidão dos conselheiros.</p>
+            <p>7 A sabedoria é demasiadamente alta para o tolo; no portão não abrirá a sua boca.</p>
+            <p>8 O que cuida em fazer o mal, mestre de intrigas o chamarão.</p>
+            <p>9 O pensamento do tolo é pecado, e o escarnecedor é abominável aos homens.</p>
+            <p>10 Se te mostrares fraco no dia da angústia, é que a tua força é pequena.</p>
+            <p>11 Livra os que estão sendo levados à morte, e salva os que cambaleiam indo para a matança.</p>
+            <p>12 Se disseres: Eis que não o soubemos; porventura aquele que pondera os corações não o considerará? E aquele que guarda a tua alma, não o saberá? E não pagará ele ao homem segundo as suas obras?</p>
+            <p>13 Come mel, meu filho, porque é bom; e o favo de mel é doce ao teu paladar.</p>
+            <p>14 Assim será para a tua alma o conhecimento da sabedoria; se a achares haverá recompensa, e não será malograda a tua esperança.</p>
+            <p>15 Não armes ciladas, ó ímpio, contra a habitação do justo, nem assoles o seu repouso;</p>
+            <p>16 Porque sete vezes cairá o justo, e se levantará; mas os ímpios tropeçarão no mal.</p>
+            <p>17 Quando cair o teu inimigo, não te alegres, nem se regozije o teu coração quando ele tropeçar;</p>
+            <p>18 Para que, vendo-o o Senhor, seja isso mau aos seus olhos, e desvie dele a sua ira.</p>
+            <p>19 Não te indignes por causa dos malfeitores, nem tenhas inveja dos ímpios;</p>
+            <p>20 Porque o maligno não terá galardão, e a lâmpada dos ímpios se apagará.</p>
+            <p>21 Teme ao Senhor, filho meu, e ao rei; e não te entremetas com os que buscam mudanças.</p>
+            <p>22 Porque de repente levantar-se-á a sua destruição, e a ruína deles virá de ambos, quem o sabe?</p>
+            <p>23 Também estes são provérbios dos sábios: Ter respeito às pessoas no julgamento não é bom.</p>
+            <p>24 O que disser ao ímpio: Tu és justo; os povos o amaldiçoarão, as nações o detestarão.</p>
+            <p>25 Mas para os que o repreenderem haverá delícias, e sobre eles virá a bênção do bem.</p>
+            <p>26 Beijados serão os lábios do que responde com palavras retas.</p>
+            <p>27 Prepara de fora a tua obra, apronta-a no campo, e depois edifica a tua casa.</p>
+            <p>28 Não sejas testemunha sem causa contra o teu próximo; e não enganes com os teus lábios.</p>
+            <p>29 Não digas: Como ele me fez a mim, assim lhe farei a ele; pagarei a cada um segundo a sua obra.</p>
+            <p>30 Passei pelo campo do preguiçoso, e junto à vinha do homem falto de entendimento;</p>
+            <p>31 Eis que estava toda cheia de espinhos, a sua superfície coberta de urtigas, e o seu muro de pedra estava derrubado.</p>
+            <p>32 O que tendo eu visto, considerei; e, vendo-o, recebi instrução.</p>
+            <p>33 Um pouco a dormir, um pouco a tosquenejar; um pouco a repousar de braços cruzados,</p>
+            <p>34 Assim sobrevirá a tua pobreza como um ladrão, e a tua necessidade como um homem armado.</p>
+            
+
+
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
