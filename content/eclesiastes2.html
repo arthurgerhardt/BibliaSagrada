@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 2</h2>
+            <p>1 Disse eu no meu coração: Ora vem, eu te provarei com alegria; portanto goza o prazer; mas eis que também isso era vaidade.</p>
+            <p>2 Ao riso disse: Está doido; e da alegria: De que serve esta?</p>
+            <p>3 Busquei no meu coração a alegria, e eis que também isso era vaidade.</p>
+            <p>4 Fui grande em obras; edifiquei para mim casas; plantei para mim vinhas;</p>
+            <p>5 Fiz para mim hortas e jardins, e plantei árvores de toda a espécie de frutas;</p>
+            <p>6 Fiz para mim açudes de águas, para regar com eles o bosque onde cresciam as árvores.</p>
+            <p>7 Foi assim que comecei a buscar e procurar por tudo o que se fazia sob o sol; e vejo que todo trabalho é vaidade e vexame.</p>
+            <p>8 Porque quem sabe se há alguém que tenha sabedoria? E quanto ao homem, ele não pode saber nada depois do seu tempo.</p>
+            <p>9 Não há ninguém que possa ter poder sobre a vida ou sobre a morte, nem pode manter-se na mão de Deus.</p>
+            <p>10 Todo caminho do homem está diante dele; mas o que falta não se pode contar.</p>
+            <p>11 Eu, o Pregador, fui rei sobre Israel em Jerusalém.</p>
+            <p>12 E apliquei meu coração a buscar e a explorar com sabedoria tudo o que se faz debaixo do céu; este fardo Deus deu aos filhos dos homens para que se ocupem nele.</p>
+            <p>13 Eu vi tudo o que se faz debaixo do sol, e eis que tudo era vaidade e aflição de espírito.</p>
+            <p>14 O que é torto não se pode endireitar, e o que falta não se pode contar.</p>
+            <p>15 Eu disse comigo mesmo: Eis que eu me engrandeci e aumentei em sabedoria mais do que todos os que foram antes de mim em Jerusalém; e o meu coração viu muito mais sabedoria e ciência.</p>
+            <p>16 E apliquei meu coração a conhecer a sabedoria e a conhecer a loucura e a insensatez; e eu percebi que também isto era aflição de espírito.</p>
+            <p>17 Porque, na muita sabedoria há muito desgosto; e o que aumenta em conhecimento, aumenta em dor.</p>
+            <p>18 Disse eu no meu coração: Vem, eu te provarei com alegria; portanto goza o prazer; mas eis que também isso era vaidade.</p>
+            <p>19 E quem sabe se será sábio ou tolo? Todavia, se assenhoreará de todo o meu trabalho que realizei e em que me houve sabiamente debaixo do sol; também isto é vaidade.</p>
+            <p>20 Pelo que eu me voltei para contemplar o trabalho que fizeram as minhas mãos, e para o trabalho que eu trabalhei, e eis que tudo era vaidade e aflição de espírito, e nenhum proveito havia debaixo do sol.</p>
+            <p>21 Porque há homem cujo trabalho é feito com sabedoria, ciência e destreza; contudo, deixará o seu trabalho como herança a outro que nada trabalhou nele; também isto é vaidade e grande mal.</p>
+            <p>22 Pois, que tem o homem de todo o seu trabalho, e da fadiga do seu coração, em que ele anda trabalhando debaixo do sol?</p>
+            <p>23 Porque todos os seus dias são dores, e o seu trabalho desgosto; até de noite não descansa o seu coração; também isto é vaidade.</p>
+            <p>24 Não há nada melhor para o homem do que comer, e beber, e fazer que a sua alma goze o bem do seu trabalho. Também isto eu vi que vem da mão de Deus.</p>
+            <p>25 Pois quem pode comer, ou quem pode gozar melhor do que eu?</p>
+            <p>26 Porque Deus dá sabedoria, conhecimento e alegria ao homem que lhe agrada; mas ao pecador dá trabalho, para que ele ajunte e amontoe, a fim de dar àquele que agrada a Deus; também isto é vaidade e aflição de espírito.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

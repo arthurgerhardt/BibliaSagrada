@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 30</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 30</h2>
+            <p>1 Palavras de Agur, filho de Jaque, o masaíta, que proferiu este homem a Itiel, a Itiel e a Ucal:</p>
+            <p>2 Na verdade eu sou o mais bruto dos homens, nem mesmo tenho o conhecimento de homem.</p>
+            <p>3 Não aprendi sabedoria, nem tenho o conhecimento do Santo.</p>
+            <p>4 Quem subiu ao céu e desceu? Quem encerrou o vento em suas mãos? Quem amarrou as águas em um pano? Quem estabeleceu todos os limites da terra? Qual é o seu nome, e qual é o nome de seu filho, se é que o sabes?</p>
+            <p>5 Toda palavra de Deus é pura; ele é um escudo para os que nele confiam.</p>
+            <p>6 Não acrescentes à sua palavra, para que não te repreenda, e sejas achado mentiroso.</p>
+            <p>7 Duas coisas te tenho pedido; não mas negues antes que eu morra:</p>
+            <p>8 Afasta de mim a vaidade e a palavra mentirosa; não me dês nem a pobreza nem a riqueza; mantém-me do pão da minha porção de costume;</p>
+            <p>9 Para que, porventura, estando farto não te negue, e venha a dizer: Quem é o Senhor? Ou que, empobrecendo, não venha a furtar, e tome o nome de Deus em vão.</p>
+            <p>10 Não acuses o servo diante de seu senhor, para que não te amaldiçoe, e tu fiques culpado.</p>
+            <p>11 Há uma geração que amaldiçoa a seu pai, e que não bendiz a sua mãe.</p>
+            <p>12 Há uma geração que é pura aos seus próprios olhos, mas que nunca foi lavada da sua imundícia.</p>
+            <p>13 Há uma geração cujos olhos são altivos, e cujas pálpebras são levantadas para cima.</p>
+            <p>14 Há uma geração cujos dentes são espadas, e cujos queixos são facas, para consumirem da terra os aflitos, e os necessitados dentre os homens.</p>
+            <p>15 A sanguessuga tem duas filhas: Dá, Dá. Estas três coisas nunca se fartam; e quatro nunca dizem: Basta!</p>
+            <p>16 A sepultura, e a madre estéril, a terra que não se farta de água, e o fogo que nunca diz: Basta!</p>
+            <p>17 Os olhos que zombam do pai, ou desprezam a obediência à mãe, os corvos do ribeiro os arrancarão, e os filhos da águia os comerão.</p>
+            <p>18 Estas três coisas me maravilham, e quatro há que não conheço:</p>
+            <p>19 O caminho da águia no céu, o caminho da cobra sobre a penha, o caminho do navio no meio do mar, e o caminho do homem com uma virgem.</p>
+            <p>20 Tal é o caminho da mulher adúltera: ela come, e limpa a sua boca, e diz: Não cometi maldade.</p>
+            <p>21 Por três coisas se alvoroça a terra, e por quatro que não pode suportar:</p>
+            <p>22 Pelo servo quando reina; e pelo tolo quando vive em abundância;</p>
+            <p>23 Pela mulher aborrecida quando se casa; e pela serva quando herda da sua senhora.</p>
+            <p>24 Quatro coisas são pequenas na terra, mas são mais sábias do que os sábios:</p>
+            <p>25 As formigas são um povo não forte, todavia no verão preparam a sua comida;</p>
+            <p>26 Os coelhos são um povo débil, e contudo fazem suas casas nas rochas;</p>
+            <p>27 Os gafanhotos não têm rei, e contudo todos saem, e se repartem em bandos;</p>
+            <p>28 A aranha se pendura com as mãos, e está nos palácios dos reis.</p>
+            <p>29 Estes três têm um bom andar, e quatro passeiam airosamente:</p>
+            <p>30 O leão, o mais forte entre os animais, que por ninguém torna atrás;</p>
+            <p>31 O galo forte, ou o bode, e o rei, contra quem ninguém se levanta.</p>
+            <p>32 Se procedeste loucamente, exaltando-te, ou se pensaste mal, põe a mão na boca.</p>
+            <p>33 Porque o mexer do leite produz manteiga, e o espremer do nariz produz sangue; assim o forçar da ira produz contenda.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios29.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios31.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

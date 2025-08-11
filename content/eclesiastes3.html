@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 3</h2>
+            <p>1 Tudo tem o seu tempo determinado, e há tempo para todo o propósito debaixo do céu.</p>
+            <p>2 Há tempo de nascer, e tempo de morrer; tempo de plantar, e tempo de arrancar o que se plantou;</p>
+            <p>3 Tempo de matar, e tempo de curar; tempo de derribar, e tempo de edificar;</p>
+            <p>4 Tempo de chorar, e tempo de rir; tempo de prantear, e tempo de saltar de alegria;</p>
+            <p>5 Tempo de espalhar pedras, e tempo de ajuntar pedras; tempo de abraçar, e tempo de afastar-se de abraçar;</p>
+            <p>6 Tempo de buscar, e tempo de perder; tempo de guardar, e tempo de deitar fora;</p>
+            <p>7 Tempo de rasgar, e tempo de coser; tempo de estar calado, e tempo de falar;</p>
+            <p>8 Tempo de amar, e tempo de aborrecer; tempo de guerra, e tempo de paz.</p>
+            <p>9 Que proveito tem o trabalhador naquilo em que trabalha?</p>
+            <p>10 Tenho visto o trabalho que Deus deu aos filhos dos homens para que nele trabalhem.</p>
+            <p>11 Ele fez tudo formoso em seu tempo; também pôs o mundo no coração deles, para que nunca possam descobrir a obra que Deus fez desde o princípio até o fim.</p>
+            <p>12 Tenho entendido que não há coisa melhor para eles do que se alegrarem e fazerem bem na sua vida;</p>
+            <p>13 E também que todo o homem coma e beba, e goze do bem de todo o seu trabalho, isso é um dom de Deus.</p>
+            <p>14 Eu sei que tudo quanto Deus faz durará eternamente; nada se lhe deve acrescentar, e nada se lhe deve tirar; e isso faz Deus para que haja temor diante dele.</p>
+            <p>15 O que é já foi; e o que há de ser também já foi; e Deus pede conta do que passou.</p>
+            <p>16 Vi ainda debaixo do sol que no lugar do juízo havia impiedade; e no lugar da justiça, iniqüidade.</p>
+            <p>17 Eu disse no meu coração: Deus julgará o justo e o ímpio; porque há um tempo para todo o propósito e para toda a obra.</p>
+            <p>18 Disse eu no meu coração, quanto aos filhos dos homens, que Deus os provaria, e eles veriam que são em si mesmos como os animais.</p>
+            <p>19 Porque o que sucede aos filhos dos homens, isso mesmo também sucede aos animais; como morre um, morre o outro; e todos têm o mesmo fôlego, e a vantagem dos homens sobre os animais não é nenhuma, porque todos são vaidade.</p>
+            <p>20 Todos vão para um lugar; todos foram feitos do pó, e todos voltarão ao pó.</p>
+            <p>21 Quem sabe se o fôlego do homem vai para cima, e se o fôlego dos animais vai para baixo da terra?</p>
+            <p>22 Assim que tenho visto que não há coisa melhor do que alegrar-se o homem nas suas obras, porque isso é a sua porção; pois quem o fará voltar para ver o que será depois dele?</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

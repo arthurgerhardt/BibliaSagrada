@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 27</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 27</h2>
+            <p>1 Não te glories do dia de amanhã, porque não sabes o que produzirá o dia.</p>
+            <p>2 Louvado seja o homem que sempre teme a Deus, mas o que endurece o coração cairá na desgraça.</p>
+            <p>3 Como o ferro afia o ferro, assim o homem afia o seu companheiro.</p>
+            <p>4 A ira é cruel, e a indignação é como um torrente, mas quem poderá resistir à inveja?</p>
+            <p>5 Melhor é a repreensão franca do que o amor encoberto.</p>
+            <p>6 Fiel são as feridas feitas pelo amigo, mas os beijos do inimigo são enganosos.</p>
+            <p>7 O homem farto pisa o favo de mel, mas para o faminto até o amargo é doce.</p>
+            <p>8 Como um pássaro que foge do seu ninho, assim é o homem que foge do seu lugar.</p>
+            <p>9 O óleo e o perfume alegram o coração, e a doçura do amigo vem do seu conselho cordial.</p>
+            <p>10 Não deixes o teu amigo, nem o amigo do teu pai, e não entres na casa do teu irmão no dia da tua calamidade; melhor é o vizinho perto do que o irmão longe.</p>
+            <p>11 Sê sábio, filho meu, e alegra o meu coração, para que eu tenha que responder ao que me ultrajar.</p>
+            <p>12 O prudente vê o mal e esconde-se; mas os simples passam e recebem a pena.</p>
+            <p>13 Tomarás a sua roupa, porque se fez penhor; e, por causa das estranhas, ficarás por ela.</p>
+            <p>14 Abençoar o seu amigo em alta voz de manhã cedo, será considerado uma maldição.</p>
+            <p>15 A contenda da mulher é como goteira contínua na chuva.</p>
+            <p>16 Quem a retém, retém o vento, e a sua mão direita a óleo.</p>
+            <p>17 Como o ferro afia o ferro, assim o homem afia o seu companheiro.</p>
+            <p>18 O que cuida da figueira comerá o seu fruto; e o que atenta para o seu senhor terá honra.</p>
+            <p>19 Como na água o rosto corresponde ao rosto, assim o coração do homem ao homem.</p>
+            <p>20 O inferno e a perdição nunca se fartam; assim são os olhos do homem insaciáveis.</p>
+            <p>21 O crisol é para a prata, e o forno para o ouro; mas o homem é provado pelo louvor.</p>
+            <p>22 Ainda que moas o tolo entre grãos de trigo, com o pilão, a sua estultícia não se apartará dele.</p>
+            <p>23 Atenta para a condição dos teus rebanhos, e cuida dos teus gados;</p>
+            <p>24 Porque a riqueza não dura para sempre; e, porventura, a coroa não é para sempre?</p>
+            <p>25 Quando se remove a erva, aparece a nova relva; e as ervas das montanhas são colhidas.</p>
+            <p>26 Os cordeiros são para a tua vestimenta, e os bodes são o preço do campo.</p>
+            <p>27 E haverá bastante leite de cabras para o teu sustento, para o sustento da tua casa, e para o sustento das tuas servas.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios26.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios28.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

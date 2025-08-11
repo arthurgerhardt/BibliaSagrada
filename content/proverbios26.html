@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Provérbios 26</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Provérbios 26</h2>
+            <p>1 Como a neve no verão, e como a chuva na sega, assim não convém ao tolo a honra.</p>
+            <p>2 Como o pássaro no seu vaguear, e como a andorinha no seu voo, assim a maldição sem causa não virá.</p>
+            <p>3 O açoite é para o cavalo, o freio para o jumento, e a vara para as costas do tolo.</p>
+            <p>4 Não respondas ao tolo segundo a sua estultícia, para que também não te faças semelhante a ele.</p>
+            <p>5 Responde ao tolo segundo a sua estultícia, para que não seja sábio aos seus próprios olhos.</p>
+            <p>6 Os pés corta, e o dano sorve, aquele que manda mensagem pela mão de um tolo.</p>
+            <p>7 Como as pernas do coxo, que pendem flácidas, assim é o provérbio na boca dos tolos.</p>
+            <p>8 Como o que arma a funda com pedra preciosa, assim é aquele que concede honra ao tolo.</p>
+            <p>9 Como o espinho que entra na mão do bêbado, assim é o provérbio na boca dos tolos.</p>
+            <p>10 O grande cria a todos, mas recompensa ao tolo, e recompensa aos transgressores.</p>
+            <p>11 Como o cão que torna ao seu vômito, assim é o tolo que repete a sua estultícia.</p>
+            <p>12 Vês um homem que é sábio aos seus próprios olhos? Maior esperança há para o tolo do que para ele.</p>
+            <p>13 Diz o preguiçoso: Um leão está no caminho; um leão está nas ruas.</p>
+            <p>14 Como a porta se revolve nos seus gonzos, assim o preguiçoso na sua cama.</p>
+            <p>15 O preguiçoso esconde a mão no seio; enfada-se de a levar à boca.</p>
+            <p>16 Mais sábio é o preguiçoso aos seus próprios olhos do que sete homens que sabem responder bem.</p>
+            <p>17 O que, passando, se mete em questão alheia, é como aquele que toma um cão pelas orelhas.</p>
+            <p>18 Como o louco que lança faíscas, flechas e morte,</p>
+            <p>19 Assim é o homem que engana o seu próximo, e diz: Fiz isso por brincadeira.</p>
+            <p>20 Onde não há lenha, o fogo se apaga; e não havendo intrigante, cessa a contenda.</p>
+            <p>21 Como o carvão para as brasas, e a lenha para o fogo, assim é o homem contencioso para acender rixas.</p>
+            <p>22 As palavras do intrigante são como doces bocados, e descem ao íntimo do ventre.</p>
+            <p>23 Como escória de prata que se lança sobre o vaso de barro, assim são os lábios ardentes com o coração maligno.</p>
+            <p>24 Aquele que odeia dissimula com os lábios, mas no seu íntimo encobre o engano.</p>
+            <p>25 Quando te falar suavemente, não te fies nele, porque sete abominações há no seu coração.</p>
+            <p>26 Ainda que o ódio se encubra com dissimulação, a sua maldade se descobrirá perante a congregação.</p>
+            <p>27 O que cava uma cova nela cairá; e o que revolve a pedra, esta sobre ele voltará.</p>
+            <p>28 A língua falsa odeia aqueles a quem ela fere, e a boca lisonjeira opera a ruína.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/proverbios25.html">Capítulo Anterior</a>
+            <a class="button" href="../content/proverbios27.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

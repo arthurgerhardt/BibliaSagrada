@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 6</h2>
+            <p>1 Há um mal que vi debaixo do sol, e muito comum entre os homens:</p>
+            <p>2 um homem a quem Deus deu riquezas, bens e honra, e nada lhe falta de tudo o que o seu coração deseja; mas Deus não lhe dá poder para disso comer, porque um estrangeiro come isso; isso também é vaidade e aflição de espírito.</p>
+            <p>3 Se um homem gerar cem filhos e viver muitos anos, e os dias dos seus anos forem muitos, e a sua alma não se fartar do bem, e também não tiver sepultura, digo que mais feliz é o abortivo do que ele.</p>
+            <p>4 Porque em vão veio, e em trevas se vai, e o seu nome é coberto de trevas.</p>
+            <p>5 Não viu o sol, nem conheceu o que é o bem; por isso, mais descanso tem este do que aquele.</p>
+            <p>6 E ainda que viva dois mil anos, em toda a sua vida não gozará do bem; não vão todos para um só lugar?</p>
+            <p>7 Todo o trabalho do homem é para a sua boca, e, todavia, a sua alma não se farta.</p>
+            <p>8 Pois que mais tem o sábio do que o tolo? E que tem o pobre que sabe andar diante dos vivos?</p>
+            <p>9 Melhor é ver com os olhos do que andar à procura de coisas que não se podem ver; isso também é vaidade e aflição de espírito.</p>
+            <p>10 O que já foi, é o que já foi; e o que há de ser, já foi; e Deus pede conta do que passou.</p>
+            <p>11 Na verdade que há muitas coisas que multiplicam a vaidade; que mais tem o homem de melhor?</p>
+            <p>12 Pois, quem sabe o que é bom nesta vida para o homem, por todos os dias da sua vida de vaidade, os quais gasta como sombra? Quem declarará ao homem o que será depois dele debaixo do sol?</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
