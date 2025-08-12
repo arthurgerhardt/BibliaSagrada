@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 9</h2>
+            <p>1 Deveras, considerei todas estas coisas no meu coração, para declarar tudo isto: que os justos, e os sábios, e as suas obras estão nas mãos de Deus; e que o homem não conhece nem o amor nem o ódio; tudo passa perante ele.</p>
+            <p>2 Tudo sucede igualmente a todos; o mesmo sucede ao justo e ao ímpio, ao bom e ao puro, como ao impuro; assim ao que sacrifica como ao que não sacrifica; ao bom como ao pecador; ao que jura como ao que teme o juramento.</p>
+            <p>3 Este é o mal que há entre tudo quanto se faz debaixo do sol: que a todos sucede o mesmo; também o coração dos filhos dos homens está cheio de maldade, e há desvarios no seu coração durante a sua vida, e depois vão para os mortos.</p>
+            <p>4 Para aquele que está entre os vivos há esperança; porque melhor é um cão vivo do que um leão morto.</p>
+            <p>5 Porque os vivos sabem que hão de morrer, mas os mortos não sabem coisa nenhuma, nem tão pouco têm eles recompensa, mas a sua memória ficou entregue ao esquecimento.</p>
+            <p>6 Até o seu amor, o seu ódio e a sua inveja já pereceram; e já não têm parte alguma para sempre, em coisa alguma do que se faz debaixo do sol.</p>
+            <p>7 Vai, pois, come com alegria o teu pão, e bebe com coração contente o teu vinho, pois já Deus se agradou das tuas obras.</p>
+            <p>8 Em todo o tempo sejam alvas as tuas vestes, e nunca falte o óleo sobre a tua cabeça.</p>
+            <p>9 Goza a vida com a mulher que amas, todos os dias da vida da tua vaidade, os quais Deus te deu debaixo do sol, todos os dias da tua vaidade; porque esta é a tua porção nesta vida, e no teu trabalho, que tu fazes debaixo do sol.</p>
+            <p>10 Tudo quanto te vier à mão para fazer, faze-o conforme as tuas forças, porque no além, para onde tu vais, não há obra, nem projeto, nem conhecimento, nem sabedoria alguma.</p>
+            <p>11 Voltei-me, e vi debaixo do sol que não é dos ligeiros a carreira, nem dos fortes a batalha, nem tampouco dos sábios o pão, nem tampouco dos prudentes as riquezas, nem tampouco dos entendidos o favor; mas que o tempo e a oportunidade ocorrem a todos.</p>
+            <p>12 Que também o homem não conhece o seu tempo; como os peixes que são apanhados na rede maligna, e como as aves que são apanhadas na armadilha, assim são enredados os filhos dos homens no tempo do mal, quando cai de repente sobre eles.</p>
+            <p>13 Também vi esta sabedoria debaixo do sol, que foi para mim grande:</p>
+            <p>14 Houve uma pequena cidade, em que havia poucos homens; e veio contra ela um grande rei, e a cercou, e levantou contra ela grandes tranqueiras.</p>
+            <p>15 E encontrou-se nela um homem pobre, sábio, que livrou aquela cidade pela sua sabedoria; e ninguém se lembrava daquele pobre homem.</p>
+            <p>16 Então disse eu: Melhor é a sabedoria do que a força, ainda que a sabedoria do pobre é desprezada, e as suas palavras não são ouvidas.</p>
+            <p>17 As palavras dos sábios, ouvidas em silêncio, valem mais do que o clamor do que governa entre os tolos.</p>
+            <p>18 Melhor é a sabedoria do que as armas de guerra, mas um só pecador destrói muitos bens.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

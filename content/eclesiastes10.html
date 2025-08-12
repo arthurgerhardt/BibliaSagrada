@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 10</h2>
+            <p>1 Morto é o coração do sábio, mas o coração do tolo está na casa da alegria.</p>
+            <p>2 É melhor a sabedoria do que as armas de guerra, mas um só pecador destrói muitos bens.</p>
+            <p>3 Também vi esta sabedoria debaixo do sol, que foi para mim grande:</p>
+            <p>4 Houve uma pequena cidade, em que havia poucos homens; e veio contra ela um grande rei, e a cercou, e levantou contra ela grandes tranqueiras.</p>
+            <p>5 E encontrou-se nela um homem pobre, sábio, que livrou aquela cidade pela sua sabedoria; e ninguém se lembrava daquele pobre homem.</p>
+            <p>6 Então disse eu: Melhor é a sabedoria do que a força, ainda que a sabedoria do pobre é desprezada, e as suas palavras não são ouvidas.</p>
+            <p>7 As palavras dos sábios, ouvidas em silêncio, valem mais do que o clamor do que governa entre os tolos.</p>
+            <p>8 Melhor é a sabedoria do que as armas de guerra, mas um só pecador destrói muitos bens.</p>
+            <p>9 O coração do sábio está à sua direita, mas o coração do tolo à sua esquerda.</p>
+            <p>10 E até no caminho, quando o tolo anda, falta-lhe o juízo; e diz a todos que é tolo.</p>
+            <p>11 Se a ofensa do príncipe subir contra ti, não deixes o teu lugar; porque a suavidade faz cessar grandes ofensas.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

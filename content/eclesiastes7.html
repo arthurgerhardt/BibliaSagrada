@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 7</h2>
+            <p>1 Melhor é a boa fama do que o melhor unguento, e o dia da morte do que o dia do nascimento de alguém.</p>
+            <p>2 Melhor é ir à casa onde há luto do que ir à casa onde há banquete; porque ali se vê o fim de todos os homens, e os vivos o aplicam ao seu coração.</p>
+            <p>3 Melhor é a tristeza do que a riso; porque com a tristeza do rosto se faz melhor o coração.</p>
+            <p>4 O coração dos sábios está na casa do luto; mas o coração dos tolos na casa da alegria.</p>
+            <p>5 Melhor é ouvir a repreensão do sábio do que ouvir a canção dos tolos.</p>
+            <p>6 Porque como o espinho que entra na mão do bêbado, assim é a canção dos tolos.</p>
+            <p>7 A opressão faz o sábio enlouquecer; e o suborno corrompe o coração.</p>
+            <p>8 Melhor é o fim das coisas do que o princípio delas; melhor é o paciente do que o altivo.</p>
+            <p>9 Não te apresses em teu espírito a irar-te; porque a ira abriga-se no seio dos tolos.</p>
+            <p>10 Não digas: Por que foram os dias passados melhores do que estes? Porque não é sábio perguntar assim.</p>
+            <p>11 A sabedoria é tão boa como uma herança; e mais excelente é para os que vêem o sol.</p>
+            <p>12 Porque a sabedoria é proteção, assim como o dinheiro é proteção; mas a excelência do conhecimento é que a sabedoria dá vida ao seu possuidor.</p>
+            <p>13 Considera a obra de Deus; porque quem poderá endireitar o que ele fez torto?</p>
+            <p>14 No dia da prosperidade goza do bem; e no dia da adversidade considera: também isto vem de Deus; assim como o dia da prosperidade, assim também o dia da adversidade; e Deus não dará conta de nenhuma destas coisas.</p>
+            <p>15 Tudo isto vi nos dias da minha vaidade: há justos que perecem na sua justiça, e há ímpios que prolongam os seus dias na sua maldade.</p>
+            <p>16 Não sejas demasiadamente justo, nem demasiadamente sábio; porque te destruirias a ti mesmo.</p>
+            <p>17 Não sejas demasiadamente ímpio, nem seja louco; porque morrerias antes do tempo.</p>
+            <p>18 Melhor é que te agarres a isto, e também daquilo não retires a mão; porque o que teme a Deus sairá de tudo.</p>
+            <p>19 A sabedoria fortalece ao sábio mais do que dez poderosos que haja na cidade.</p>
+            <p>20 Na verdade, não há homem justo sobre a terra, que faça o bem e nunca peque.</p>
+            <p>21 Também não atentes para tudo o que se diz, para que não ouças o teu servo falar mal de ti; porque também tu sabes que muitas vezes já maldizeste a outros.</p>
+            <p>22 Tudo isto provei com a sabedoria; e disse: Eu serei sábio; mas a sabedoria afastou-se de mim.</p>
+            <p>23 Longe está o que é; e muito profundo, quem o achará?</p>
+            <p>24 Eu voltei-me, e inclinei o meu coração a saber, e a investigar, e a buscar a sabedoria, e a razão das coisas; e a saber que a maldade é a insensatez, e que a loucura é a futilidade.</p>
+            <p>25 E achei mais amarga do que a morte a mulher cujo coração é laço e rede, e cujas mãos são cadeias; o que agrada a Deus escapará dela; mas o pecador ficará preso por ela.</p>
+            <p>26 Eis que isto achei, diz o pregador, considerando uma coisa após a outra, para achar a razão.</p>
+            <p>27 O que ainda busco, mas não achei; achei um homem entre mil, mas uma mulher entre todas estas não achei.</p>
+            <p>28 Eis que somente isto achei: que Deus fez ao homem reto; mas eles buscaram muitas astúcias.</p>
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/eclesiastes8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
