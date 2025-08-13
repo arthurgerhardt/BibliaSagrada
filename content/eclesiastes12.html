@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eclesiastes 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Eclesiastes 12</h2>
+            <p>1 Lembra-te do teu Criador nos dias da tua mocidade, antes que venham os maus dias e cheguem os anos dos quais dirás: Não tenho neles contentamento;</p>
+            <p>2 antes que se escureçam o sol e a luz, e a lua e as estrelas, e tornem a vir as nuvens depois da chuva;</p>
+            <p>3 no dia em que tremerem os guardas da casa, e se curvarem os homens fortes, e as moças que estiverem a trabalhar se apagarem;</p>
+            <p>4 e as portas se fecharem na praça, e se escurecer o som da moenda, e se levantarem as vozes dos que cantam;</p>
+            <p>5 e se temerem os altos e se atemorizarem os caminhos, e a amendoeira florescer, e a cigarra se arrastar, e se extinguir o desejo;</p>
+            <p>6 antes que o cordão de prata se rompa, e a taça de ouro se despedaçe, e se quebre o cântaro junto à fonte, e se despedace a roda junto ao poço;</p>
+            <p>7 e o pó volte à terra, como era, e o espírito volte a Deus, que o deu.</p>
+            <p>8 Vaidade de vaidades, diz o Pregador, tudo é vaidade.</p>
+            <p>9 E, quanto mais sábio foi o Pregador, tanto mais ensinou o povo; e ouviu, e buscou, e compôs muitos provérbios.</p>
+            <p>10 O Pregador procurou achar palavras agradáveis, e escreveu com retidão palavras de verdade.</p>
+            <p>11 As palavras dos sábios são como aguilhões, e como pregos bem fixos as coletâneas dos mestres; dadas pelo único Pastor.</p>
+            <p>12 E, quanto mais a isso, filho meu, atenta: não há fim de fazer muitos livros; e o muito estudar enfraquece o corpo.</p>
+            <p>13 De tudo o que se tem ouvido, o fim é: Teme a Deus, e guarda os seus mandamentos; porque este é o dever de todo homem.</p>
+            <p>14 Porque Deus há de trazer a juízo toda a obra, até mesmo tudo o que está encoberto, quer seja bom, quer seja mau.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/eclesiastes11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/canticosdoscanticos1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
