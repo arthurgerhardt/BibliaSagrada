@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cânticos dos Cânticos 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Cânticos dos Cânticos 7</h2>
+            <h3>A Beleza da Amada</h3>
+            <p>1 Quão formosos são os teus pés, ó príncipe das filhas! Os teus quadris são como colares, obra das mãos de um artista.</p>
+            <p>2 O teu umbigo é como um cálice redondo, que nunca falta bebida; a tua cintura é como um monte de trigo, cercado de lírios.</p>
+            <p>3 Os teus dois seios são como dois filhos gêmeos da gazela.</p>
+            <p>4 O teu pescoço é como a torre de marfim; os teus olhos são como os tanques de Hesbom, junto à porta de Bate-Rabe; o teu nariz é como a torre do Líbano, que olha para Damasco.</p>
+            <p>5 A tua cabeça sobre ti é como o Carmelo, e a coroa sobre a tua cabeça é como a púrpura real; o rei está preso com as tuas tranças.</p>
+            <p>6 Quão formosa e quão aprazível és, ó amor, em delícias!</p>
+            <p>7 A tua estatura é semelhante à palmeira, e os teus seios aos cachos.</p>
+            <p>8 Dizia eu: Subirei à palmeira, e apanharei os seus cachos; agora sejam os teus seios como os cachos da videira, e o cheiro da tua respiração como o das maçãs;</p>
+            <p>9 e a tua boca como o bom vinho, que corre suavemente para o meu amado, que faz falar os lábios dos que dormem.</p>
+            <p>10 Eu sou do meu amado, e ele tem saudades de mim.</p>
+            <p>11 Vem, ó meu amado, saiamos ao campo; passemos a noite nas aldeias.</p>
+            <p>12 Levantemo-nos de madrugada para ir às vinhas; vejamos se a videira já brotou, se as suas flores já se abriram, se as romeiras estão em flor; ali te darei o meu amor.</p>
+            <p>13 As mandrágoras exalam o seu perfume, e às nossas portas há toda sorte de frutos excelentes, novos e velhos, que eu guarde
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/canticosdoscanticos6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/canticosdoscanticos8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

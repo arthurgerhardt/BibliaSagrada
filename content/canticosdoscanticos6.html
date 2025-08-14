@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cânticos dos Cânticos 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Cânticos dos Cânticos 6</h2>
+            <h3>A Beleza da Amada</h3>
+            <p>1 Para onde foi o teu amado, ó formosa entre as mulheres? Para onde se voltou o teu amado, que o buscaremos contigo?</p>
+            <p>2 O meu amado desceu ao seu jardim, ao canteiro de especiarias, para apascentar no jardim, e colher os lírios.</p>
+            <p>3 Eu sou do meu amado, e o meu amado é meu; ele apascenta entre os lírios.</p>
+            <p>4 Tu és formosa, ó minha amiga, como Tirza, formosa como Jerusalém, terrível como exército com bandeiras.</p>
+            <p>5 Desvia de mim os teus olhos, porque eles me têm vencido; o teu cabelo é como um rebanho de cabras que pastam no monte de Gileade.</p>
+            <p>6 Os teus dentes são como um rebanho de ovelhas que sobem do lavadouro, e que todas produzem gêmeos, e nenhuma há estéril entre elas.</p>
+            <p>7 Como um pedaço de romã é a tua fronte, por entre as tuas tranças.</p>
+            <p>8 Há sessenta rainhas, e oitenta concubinas, e moças sem número;</p>
+            <p>9 mas a minha pomba, a minha perfeita, é única; ela é a única de sua mãe, a preferida daquela que a gerou. As filhas a viram, e chamaram-na bem-aventurada; as rainhas e as concubinas também a louvaram.</p>
+            <p>10 Quem é esta que aparece como o alvorecer, formosa como a lua, clara como o sol, terrível como exército com bandeiras?</p>
+            <p>11 Desci ao jardim das nozes, para ver os renovos do vale, para ver se a videira florescia, se as romeiras brotavam.</p>
+            <p>12 Não sabia, mas a minha alma me pôs entre os carros do meu povo-príncipe.</p>
+            <p>13 Volta, volta, ó Sulamita; volta, volta, para que te vejamos. Por que olhais a Sulamita, como se olhásseis o baile de dois exércitos?</p>
+            
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/canticosdoscanticos5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/canticosdoscanticos7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
