@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 1</h2>
+            <h3>Visão de Isaías</h3>
+            <p>1 Visão de Isaías, filho de Amós, que ele viu acerca de Judá e Jerusalém, nos dias de Uzias, Jotão, Acaz e Ezequias, reis de Judá.</p>
+            <p>2 Ouvi, ó céus, e dá ouvidos, ó terra; porque o Senhor falou: Criei filhos e os fiz crescer, mas eles se rebelaram contra mim.</p>
+            <p>3 O boi conhece o seu possuidor, e o jumento a manjedoura do seu senhor; mas Israel não tem conhecimento, o meu povo não entende.</p>
+            <p>4 Ah! Pecadores, nação carregada de iniqüidade, raça de malfeitores, filhos corruptores! Abandonaram o Senhor, desprezaram o Santo de Israel, e voltaram para trás.</p>
+            <p>5 Por que seríeis ainda castigados, se mais vos rebelaríeis? Toda a cabeça está enferma e todo o coração fraco.</p>
+            <p>6 Desde a planta do pé até a cabeça não há nele coisa sã, senão feridas, inchaços e chagas podres, não espremidas, nem ligadas, nem amolecidas com óleo.</p>
+            <p>7 A vossa terra está assolada, as vossas cidades queimadas a fogo; a vossa terra os estranhos a devoram em vossa presença, e está assolada, como a ruína de estranhos.</p>
+            <p>8 E a filha de Sião ficou como a cabana na vinha, como a choupana no pepinal, como cidade sitiada.</p>
+            <p>9 Se o Senhor dos Exércitos não nos tivesse deixado um pequeno remanescente, já como Sodoma seríamos, e semelhantes a Gomorra.</p>
+            <p>10 Ouvi a palavra do Senhor, ó príncipes de Sodoma; dai ouvidos à lei do nosso Deus, ó povo de Gomorra.</p>
+            <p>11 De que me serve a mim a multidão dos vossos sacrifícios, diz o Senhor? Já estou farto dos holocaustos de carneiros, e da gordura de animais cevados; nem me agrado do sangue de bezerros, nem de cordeiros, nem de bodes.</p>
+            <p>12 Quando vindes para comparecer perante mim, quem requereu de vossas mãos, que pisásseis os meus átrios?</p>
+            <p>13 Não continueis a trazer ofertas vãs; o incenso é para mim abominação, e as luas novas, e os sábados, e a convocação das assembléias; não posso suportar a iniqüidade, nem mesmo a assembléia solene.</p>
+            <p>14 As vossas luas novas, e as vossas festas fixas, a minha alma as aborrece; já me são pesadas; estou cansado de as sofrer.</p>
+            <p>15 Por isso, quando estendeis as mãos, escondo de vós os meus olhos; sim, quando multiplicais as orações, não as ouço; porque as vossas mãos estão cheias de sangue.</p>
+            <p>16 Lavai-vos, purificai-vos, tirai a maldade de vossos atos de diante dos meus olhos; cessai de fazer o mal.</p>
+            <p>17 Aprendei a fazer o bem; procurai a justiça, livrai o oprimido, fazei justiça ao órfão, defendei a causa da viúva.</p>
+            <p>18 Vinde, pois, e arrazoemos, diz o Senhor; ainda que os vossos pecados sejam como a escarlate, eles se tornarão brancos como a neve; ainda que sejam vermelhos como o carmesim, se tornarão como a lã.</p>
+            <p>19 Se quiserdes, e me ouvirdes, comereis o bem desta terra.</p>
+            <p>20 Mas se recusardes, e fordes rebeldes, sereis devorados à espada; porque a boca do Senhor o disse.</p>
+            <p>21 Como se tornou prostituta a cidade fiel! Cheia de justiça, habitava nela a retidão; mas agora, homicidas.</p>
+            <p>22 A tua prata se tornou escória, o teu vinho se misturou com água.</p>
+            <p>23 Os teus príncipes são rebeldes e companheiros de ladrões; cada um deles ama subornos, e anda atrás de recompensas; não fazem justiça ao órfão, nem a causa da viúva chega até eles.</p>
+            <p>24 Portanto, diz o Senhor, o Senhor dos Exércitos, o Poderoso de Israel: Ah! livrar-me-ei dos meus adversários, e vingar-me-ei dos meus inimigos.</p>
+            <p>25 E voltarei a minha mão contra ti, e purificarei inteiramente as tuas escórias, e tirarei de ti todo o teu estanho.</p>
+            <p>26 E te restituirei os teus juízes, como eram dantes, e os teus conselheiros, como no princípio; depois de ti, te chamarão cidade de justiça, cidade fiel.</p>
+            <p>27 Sião será remida com juízo, e os seus convertidos com justiça.</p>
+            <p>28 Mas os transgressores e os pecadores serão juntamente destruídos; e os que deixarem o Senhor serão consumidos.</p>
+            <p>29 Porque vos envergonhareis dos carvalhos que cobiçastes, e sereis confundidos pelos jardins que escolhestes.</p>
+            <p>30 Porque sereis como o carvalho, ao qual caem as folhas, e como o jardim que não tem água.</p>
+            <p>31 E o forte se tornará em estopa, e a sua obra em faísca; e ambos arderão juntamente, e não haverá quem os apague.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/canticosdoscanticos8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

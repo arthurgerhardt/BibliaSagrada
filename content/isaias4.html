@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 4</h2>
+            <h3>A Restauração de Sião</h3>
+            <p>1 E sete mulheres naquele dia lançarão mão de um homem, dizendo: Nós comeremos o nosso próprio pão, e nos vestiremos de nossas próprias vestes; tão-somente queremos ser chamadas pelo teu nome; tira o nosso opróbrio.</p>
+            <p>2 Naquele dia o Renovo do Senhor será para ornamento e glória, e o fruto da terra para excelência e formosura aos que escaparem de Israel.</p>
+            <p>3 E será que aquele que ficar em Sião, e o que permanecer em Jerusalém, será chamado santo, todo aquele que estiver inscrito entre os vivos em Jerusalém;</p>
+            <p>4 Quando o Senhor lavar a imundícia das filhas de Sião, e limpar Jerusalém da culpa do sangue do meio dela, com o espírito de justiça e com o espírito de ardor.</p>
+            <p>5 E criará o Senhor sobre todo o lugar do monte Sião, e sobre as suas congregações, uma nuvem de dia, e fumaça, e um resplendor de fogo chamejante de noite; porque sobre toda a glória haverá proteção.</p>
+            <p>6 E haverá um tabernáculo para sombra contra o calor do dia, e para refúgio e esconderijo contra a tempestade e a chuva.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
