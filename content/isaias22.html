@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 22</h2>
+            <h3>Oráculo contra Jerusalém</h3>
+            <p>1 Oráculo sobre o vale da visão: O que tens agora? Que subiste a todos os telhados?</p>
+            <p>2 Tu, cheia de alvoroço, cidade barulhenta, alegre cidade! Os teus mortos não foram mortos à espada, nem morreram na batalha.</p>
+            <p>3 Todos os teus príncipes fugiram juntos, sem serem presos; todos foram presos com flechas.</p>
+            <p>4 Por isso digo: Longe de mim, chorarei amargamente; não tenteis consolar-me por causa da destruição da filha do meu povo.</p>
+            <p>5 Porque o Senhor, o Senhor dos Exércitos, tem um dia de tumulto, de pisoteio e de confusão no vale da visão; derrubará os muros, e clamará ao monte.</p>
+            <p>6 E Elão tomou o arco, e os carros de homens de guerra; e Quedar cobriu o escudo.</p>
+            <p>7 E aconteceu que as tuas mais belas valas se encheram de carros, e os cavaleiros se posicionaram às portas.</p>
+            <p>8 E ele removeu a cobertura de Judá; e naquele dia olhaste para as armas da casa do bosque.</p>
+            <p>9 E vistes as brechas da cidade de Davi, que foram muitas; e ajuntastes as águas do tanque inferior.</p>
+            <p>10 E contastes as casas de Jerusalém, e as derrubastes para fortificar o muro.</p>
+            <p>11 E fizestes um tanque entre os dois muros para as águas do tanque antigo; mas não olhastes para aquele que fez isso, nem considerastes aquele que há muito tempo o formou.</p>
+            <p>12 E naquele dia o Senhor, o Senhor dos Exércitos,
+            chamou a chorar e a lamentar, a rapar o cabelo e a vestir-se de saco.</p>
+            <p>13 Mas eis que há alegria e gozo, matando bois e matando ovelhas, comendo carne e bebendo vinho; dizendo: Comamos e bebamos, porque amanhã morreremos.</p>
+            <p>14 E o Senhor dos Exércitos revelou isso aos meus ouvidos: Certamente esta iniqüidade não será expiada até que morrais, diz o Senhor, o Senhor dos Exércitos.</p>
+            <p>15 Assim diz o Senhor, o Senhor dos Exércitos: Vai, entra no tesoureiro, a Sebna, que é mordomo da casa, e dize-lhe:</p>
+            <p>16 Que tens tu aqui? E quem tens tu aqui, que cavas aqui uma sepultura? Cavas-te uma sepultura na rocha, para ti mesmo?</p>
+            <p>17 Eis que o Senhor te lançará com força, ó homem poderoso, e te apertará com força.</p>
+            <p>18 Ele te envolverá como uma bola, numa terra espaçosa; ali morrerás, e ali estarão os carros da tua glória, ó vergonha da casa de teu senhor.</p>
+            <p>19 E eu te lançarei fora do teu ofício, e te destituirei do teu cargo.</p>
+            <p>20 E acontecerá naquele dia que chamarei o meu servo Eliacim, filho de Hilquias;</p>
+            <p>21 e o vestirei com a tua túnica, e o fortalecerei com o teu cinto, e entregarei o teu governo em sua mão; e ele será como pai para os habitantes de Jerusalém,
+            e para a casa de Judá.</p>
+            <p>22 E eu lhe porei a chave da casa de Davi sobre o seu ombro; e ele abrirá, e ninguém fechará; e fechará, e ninguém abrirá.</p>
+            <p>23 E eu o firmarei como uma estaca num lugar firme; e ele será um trono de glória para a casa de seu pai.</p>
+            <p>24 E todas as glórias da casa de seu pai estarão penduradas nele, tanto os filhos e filhas, como todos os pequenos vasos, desde os copos até os jarros.</p>
+            <p>25 Naquele dia, diz o Senhor dos Exércitos, a estaca firme que foi firmada será removida, e será cortada, e cairá; e a carga que estava sobre ela será destruída; porque o Senhor falou isso.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

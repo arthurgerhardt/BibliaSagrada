@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 8</h2>
+            <h3>Advertência Contra a Assíria</h3>
+            <p>1 Disse-me também o Senhor: Toma uma grande folha, e escreve nela com caracteres comuns: Apressa-te a saquear, corre a pilhar.</p>
+            <p>2 E tomei comigo fiéis testemunhas, a saber, Urias, o sacerdote, e Zacarias, filho de Jeberequias.</p>
+            <p>3 Fui ter com a profetisa, e ela concebeu e deu à luz um filho. Então me disse o Senhor: Põe-lhe o nome de Maer-Salal-Has-Baz.</p>
+            <p>4 Porque antes que o menino saiba dizer: Meu pai, e minha mãe, se levarão as riquezas de Damasco e os despojos de Samaria diante do rei da Assíria.</p>
+            <p>5 E continuou o Senhor a falar comigo, dizendo:</p>
+            <p>6 Porquanto este povo desprezou as águas de Siloé, que correm brandamente, e se alegrou com Rezim e com o filho de Remalias;</p>
+            <p>7 Eis que o Senhor fará vir sobre eles as águas do rio, fortes e impetuosas, isto é, o rei da Assíria com toda a sua glória; e subirá sobre todos os seus leitos, e transbordará por todas as suas ribanceiras;</p>
+            <p>8 E passará por Judá, inundará, e transbordará, até chegar ao pescoço; e a extensão das suas asas encherá a largura da tua terra, ó Emanuel.</p>
+            <p>9 Ajuntai-vos, ó povos, e sereis quebrantados; e ouvi, todos os que sois de terras longínquas; cingi-vos, e sereis quebrantados; cingi-vos, e sereis quebrantados.</p>
+            <p>10 Tomai conselho, e ele será dissipado; dai ordens, e elas não subsistirão; porque Deus é conosco.</p>
+            <p>11 Porque assim me falou o Senhor, com mão forte, e me instruiu a não andar pelo caminho deste povo, dizendo:</p>
+            <p>12 Não chameis conjuração a tudo quanto este povo chama conjuração; não temais o que eles temem, nem vos assombreis.</p>
+            <p>13 Ao Senhor dos Exércitos, a ele santificai; e seja ele o vosso temor, e seja ele o vosso assombro.</p>
+            <p>14 Então ele vos será por santuário; mas será pedra de tropeço e rocha de escândalo às duas casas de Israel; laço e armadilha aos moradores de Jerusalém.</p>
+            <p>15 E muitos dentre eles tropeçarão, e cairão, e serão quebrantados, enlaçados e presos.</p>
+            <p>16 Liga o testemunho, sela a lei entre os meus discípulos.</p>
+            <p>17 E esperarei ao Senhor, que esconde o seu rosto da casa de Jacó, e a ele aguardarei.</p>
+            <p>18 Eis-me aqui, com os filhos que o Senhor me deu, para sinais e maravilhas em Israel da parte do Senhor dos Exércitos, que habita no monte Sião.</p>
+            <p>19 Quando vos disserem: Consultai os que têm espíritos familiares e os adivinhos, que chilreiam e murmuram; porventura não consultará o povo ao seu Deus? A favor dos vivos consultar-se-á aos mortos?</p>
+            <p>20 À lei e ao testemunho! Se eles não falarem segundo esta palavra, nunca verão a alva.</p>
+            <p>21 E passarão por ela duramente oprimidos e famintos; e será que, tendo fome, enfurecer-se-ão, e amaldiçoarão ao seu rei e ao seu Deus, olhando para cima.</p>
+            <p>22 E olharão para a terra, e eis que haverá angústia, escuridão e trevas de aflição; e serão empurrados para as trevas.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

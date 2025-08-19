@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 11</h2>
+            <h3>O Ramo de Jessé</h3>
+            <p>1 E brotará um rebento do tronco de Jessé, e das suas raízes um renovo frutificará.</p>
+            <p>2 E repousará sobre ele o Espírito do Senhor, o Espírito de sabedoria e de entendimento, o Espírito de conselho e de fortaleza, o Espírito de conhecimento e de temor do Senhor.</p>
+            <p>3 E deleitar-se-á no temor do Senhor; não julgará segundo a vista dos seus olhos, nem decidirá segundo o ouvir dos seus ouvidos;</p>
+            <p>4 Mas julgará com justiça os pobres, e decidirá com equidade a favor dos mansos da terra; ferirá a terra com a vara da sua boca, e com o sopro dos seus lábios matará o ímpio.</p>
+            <p>5 A justiça será o cinto dos seus lombos, e a fidelidade o cinto dos seus rins.</p>
+            <p>6 O lobo habitará com o cordeiro, e o leopardo se deitará com o cabrito; o bezerro, o leão novo e a ovelha viverão juntos, e um menino os guiará.</p>
+            <p>7 A vaca e a ursa pastarão juntas; as suas crias se deitarão juntas, e o leão comerá palha como o boi.</p>
+            <p>8 E a criança de peito brincará sobre a toca da áspide, e o desmamada meterá a mão na cova do basilisco.</p>
+            <p>9 Não farão mal nem destruirão em todo o meu santo monte; porque a terra se encherá do conhecimento do Senhor, como as águas cobrem o mar.</p>
+            <p>10 E acontecerá naquele dia que a raiz de Jessé, que está posta por estandarte dos povos, os gentios a buscarão, e o seu repouso será glorioso.</p>
+            <p>11 E acontecerá naquele dia que o Senhor tornará a estender a sua mão para resgatar o restante do seu povo, que restar da Assíria, e do Egito, e de Patros, e de Cuxe, e de Elão, e de Sinar, e de Hamate, e das ilhas do mar.</p>
+            <p>12 E levantará um estandarte para os povos, e ajuntará os desterrados de Israel, e congregará os dispersos de Judá desde os quatro cantos da terra.</p>
+            <p>13 E desaparecerá a inveja de Efraim, e os adversários de Judá serão exterminados; Efraim não invejará a Judá, e Judá não oprimirá a Efraim.</p>
+            <p>14 Antes, voarão sobre os ombros dos filisteus ao ocidente; juntos despojarão os filhos do oriente; sobre Edom e Moabe lançarão as mãos, e os filhos de Amom lhes obedecerão.</p>
+            <p>15 E o Senhor destruirá totalmente a língua do mar do Egito; e com o seu forte vento moverá a mão sobre o rio, e o ferirá nas suas sete correntes, e fará que passem por ele com os pés secos.</p>
+            <p>16 E haverá caminho plano para o restante do seu povo, que for deixado da Assíria, como houve para Israel no dia em que subiu da terra do Egito.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

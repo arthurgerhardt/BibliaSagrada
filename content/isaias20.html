@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 20</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 20</h2>
+            <h3>Profecia contra o Egito e a Etiópia</h3>
+            <p>1 No ano em que o comandante do exército, que veio a Asdode, derrotou-o, e o Egito tomou Asdode, (este foi o ano em que o rei Acaz morreu),</p>
+            <p>2 naquele tempo falou o Senhor por meio de Isaías, filho de Amós, dizendo: Vai, e tira o pano de saco dos teus lombos, e descalça os teus pés. E ele assim fez, andando nu e descalço.</p>
+            <p>3 E o Senhor disse: Assim como meu servo Isaías andou nu e descalço por três anos, como sinal e presságio contra o Egito e a Etiópia,</p>
+            <p>4 assim o rei da Assíria levará o Egito e os exilados da Etiópia, jovens e velhos, nus e descalços, com as nádegas descobertas, para a vergonha do Egito.</p>
+            <p>5 E eles se envergonharão e se encolherão por causa da Etiópia, sua esperança, e do Egito, sua glória.</p>
+            <p>6 E naquele dia os habitantes desta costa dirão: Eis que assim está aquele que confiava na Etiópia, e na grande multidão dos seus exércitos; e como dissemos, onde está agora a nossa esperança?</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias19.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias21.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 6</h2>
+            <h3>A Visão de Isaías no Templo</h3>
+            <p>1 No ano em que morreu o rei Uzias, eu vi ao Senhor assentado sobre um alto e sublime trono, e o seu séquito enchia o templo.</p>
+            <p>2 Os serafins estavam acima dele; cada um tinha seis asas: com duas cobriam o rosto, com duas cobriam os pés, e com duas voavam.</p>
+            <p>3 E clamavam uns para os outros, dizendo: Santo, Santo, Santo é o Senhor dos Exércitos; toda a terra está cheia da sua glória.</p>
+            <p>4 E as bases das portas se moveram à voz do que clamava, e a casa se encheu de fumaça.</p>
+            <p>5 Então disse eu: Ai de mim! Pois estou perdido; porque sou um homem de lábios impuros, e habito no meio de um povo de lábios impuros; os meus olhos viram o Rei, o Senhor dos Exércitos.</p>
+            <p>6 Mas um dos serafins voou para mim, trazendo na mão uma brasa viva, que tirara do altar com uma tenaz;</p>
+            <p>7 E com a brasa tocou a minha boca, e disse: Eis que isto tocou os teus lábios; e a tua iniquidade foi tirada, e purificado o teu pecado.</p>
+            <p>8 Depois disto ouvi a voz do Senhor, que dizia: A quem enviarei, e quem há de ir por nós? Então disse eu: Eis-me aqui, envia-me a mim.</p>
+            <p>9 Disse ele então: Vai, e dize a este povo: Ouvi, de fato, e não entendeis; vede, de fato, mas não percebeis.</p>
+            <p>10 Engorda o coração deste povo, endurece-lhe os ouvidos, e fecha-lhe os olhos; para que não veja com os olhos, nem ouça com os ouvidos, nem entenda com o coração, nem se converta, e seja sarado.</p>
+            <p>11 Então disse eu: Até quando, Senhor? E respondeu: Até que sejam desoladas as cidades, e fiquem sem habitantes, e as casas fiquem sem gente, e a terra seja totalmente desolada.</p>
+            <p>12 E o Senhor afaste dela os homens, e no meio da terra seja grande o desamparo.</p>
+            <p>13 Mas, se ainda ficar nela uma décima parte, tornará a ser destruída; como o terebinto e como o carvalho, dos quais, depois de derrubados, ainda fica o tronco, assim a santa semente será o seu tronco.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

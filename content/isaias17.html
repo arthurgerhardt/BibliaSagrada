@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 17</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 17</h2>
+            <h3>Oráculo contra Damasco</h3>
+            <p>1 Oráculo contra Damasco: Eis que Damasco deixará de ser cidade, e será um amontoado de ruínas.</p>
+            <p>2 As cidades de Aroer serão abandonadas; servirão de rebanho, e ninguém as assustará.</p>
+            <p>3 E cessará a fortaleza de Efraim, e o reino de Damasco, e o restante da Síria; será como a glória dos filhos de Israel.</p>
+            <p>4 E acontecerá naquele dia que a glória de Jacó se enfraquecerá, e a gordura da sua carne se enfraquecerá.</p>
+            <p>5 E será como quando o ceifeiro colhe a seara, e com o braço colhe as espigas; e será como quando se colhem as espigas no vale de Refaim.</p>
+            <p>6 E restará nele uma colheita, como quando se sacode a oliveira; duas ou três azeitonas no c topo do ramo, quatro ou cinco nos seus ramos frutíferos, diz o Senhor dos Exércitos.</p>
+            <p>7 Naquele dia o homem olhará para o seu Criador, e os seus olhos contemplarão o Santo.</p>
+            <p>8 E não olhará para os altares, obra das suas mãos, nem contemplará o que fizeram os seus dedos, nem os bosques, nem as colinas.</p>
+            <p>9 Naquele dia as suas cidades fortes serão como os lugares abandonados pelos amorreus e pelos heveus, que foram abandonados por causa dos filhos de Israel.</p>
+            <p>10 Porque te esqueceste do Deus da tua salvação, e não te lembraste da rocha da tua fortaleza; por isso plantarás plantas agradáveis, e as semearás com sementes estrangeiras.</p>
+            <p>11 No dia em que as plantares, as farás crescer; e no dia em que florescerem, as farás florescer; mas a colheita será um amontoado de ruínas no dia da enfermidade e da dor desesperada.</p> 
+            <p>12 Ai da multidão de muitos povos, que fazem alvoroço como o estrondo dos mares! E ai do clamor de nações, que fazem alvoroço como o estrondo de águas poderosas!</p>
+            <p>13 As nações farão alvoroço como o estrondo de muitas águas; mas ele as repreenderá, e fugirão para longe, e serão perseguidas como a palha dos montes diante do vento, e como o redemoinho diante da tempestade.</p>
+            <p>14 Ao entardecer eis que há terror; antes da manhã já não existirão; este é o quinhão daqueles que nos despojam, e a sorte daqueles que nos saqueiam.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias18.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 21</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 21</h2>
+            <h3>Oráculo contra o deserto do mar</h3>
+            <p>1 Oráculo contra o deserto do mar: Como tempestades de vento do sul, que vêm do deserto, de uma terra terrível, assim vem de parte do Senhor uma visão dura contra Damasco.</p>
+            <p>2 Uma visão dura me foi revelada: O traidor trai, e o destruidor destrói. Sobe, Elão; sitia, Média; eu farei cessar todo o gemido dela.</p>
+            <p>3 Por isso os meus lombos estão cheios de dor; dores me tomaram, como as dores de uma mulher que está de parto; estou angustiado, ouvindo o que ouço, e vendo o que vejo.</p>
+            <p>4 Meu coração está perturbado; a noite de prazer me foi transformada em temor. Preparai a mesa, vigiai a sentinela, comei, bebei; levantai-vos, príncipes, ungido o escudo.</p>
+            <p>5 Porque assim me disse o Senhor: Vai, põe a sentinela, e deixe que ela anuncie o que vê.</p>
+            <p>6 E ela viu um carro com dois cavaleiros, um cavalo e um jumento; e ele disse: Caiu, caiu Babilônia, e todas as imagens dos seus deuses foram quebradas por terra.</p>
+            <p>7 Ó meu povo, que estás no deserto, subiste ao monte, e vistes o que se passa; e a sentinela clamou: Senhor, estou de pé continuamente de dia, e estou de pé continuamente de noite.</p>
+            <p>8 todas as noites sobre a minha guarda.</p>
+            <p>9 Eis que vem um carro de homens com dois cavaleiros; e ele respondeu, dizendo: Caiu, caiu Babilônia; e todas as imagens dos seus deuses foram quebradas por terra.</p>
+            <p>10 Ó meu povo, que estás no deserto, debulha o trigo, e pisa as uvas; porque assim diz o Senhor: Eu farei cessar todo o gemido dela.</p>
+            <p>11 Oráculo contra Dumá: Alguém me grita de Seir: Vigia, que horas são da noite? Vigia, que horas são da noite?</p>
+            <p>12 A sentinela disse: Vem a manhã, e também a noite; se quiserdes perguntar, perguntai; voltai-vos, e vinde.</p>
+            <p>13 Oráculo contra Araábia: No deserto, em Araábia, passais a noite, ó caravanas de Dedã.</p>
+            <p>14 Trazei água ao sedento, ó habitantes da terra de Tema; encontrai pão aos fugitivos.</p>
+            <p>15 Porque eles fogem da espada, da espada desembainhada, e do arco armado, e da opressão de guerra.</p>
+            <p>16 Porque assim me disse o Senhor: Dentro de um ano, como os anos de um jornaleiro, toda a glória de Quedar será consumida.</p>
+            <p>17 E os restantes dos flecheiros, os poderosos filhos de Quedar, serão poucos; porque o Senhor, o Deus de Deus, disse: Eu sou o Deus de Deus.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias22.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
