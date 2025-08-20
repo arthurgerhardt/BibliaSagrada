@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 25</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 25</h2>
+            <h3>O Louvor ao Senhor por Suas Maravilhas</h3>
+            <p>1 Senhor, tu és o meu Deus; eu te exaltarei, louvor-te-ei ao teu nome; porque tens feito maravilhas, os teus conselhos antigos são verdade e fidelidade.</p>
+            <p>2 Porque tu fizeste da cidade um montão, da cidade fortificada uma ruína; o palácio dos estrangeiros nunca mais será reconstruído.</p>
+            <p>3 Por isso um povo forte te glorificará; as cidades das nações opressoras te temerão.</p>
+            <p>4 Porque foste uma fortaleza para o pobre, uma fortaleza para o necessitado na sua angústia, um refúgio contra a tempestade, sombra contra o calor; porque o vento da opressão é como uma tempestade contra o muro.</p>
+            <p>5 Como o calor no deserto, assim tu amainarás o alvoroço dos estrangeeiros; como o calor com a sombra de uma nuvem, assim a canção dos opressores será silenciada.</p>
+            <p>6 E o Senhor dos Exércitos fará neste monte a todos os povos um banquete de manjares suculentos, um banquete de vinhos envelhecidos, de manjares suculentos cheios de tutano, de vinhos envelhecidos bem refinados.</p>
+            <p>7 E destruirá neste monte a face do véu que cobre todos os povos, e o manto que está lançado sobre todas as nações.</p>
+            <p>8 Destruirá a morte para sempre; e o Senhor Deus enxugará as lágrimas de todos os rostos, e tirará a afronta do seu povo de toda a terra;
+            porque o Senhor falou.</p>
+            <p>9 E naquele dia se dirá: Eis que este é o nosso Deus; nós esperávamos nele, e ele nos salvará; este é o Senhor, a quem aguardávamos; regozijemo-nos e alegremo-nos na sua salvação.</p>      
+            <p>10 Porque a mão do Senhor repousará neste monte; mas Moabe será pisado no seu lugar, como o palhaço é pisado no montão de esterco.</p>
+            <p>11 E estenderá as suas mãos no meio dele, como o nadador estende as suas mãos para nadar; mas ele fará baixar a sua soberba juntamente com o estrondo das suas mãos.</p>
+            <p>12 E a fortaleza das tuas altas muralhas será derrubada, será rebaixada e será lançada por terra, até ao pó.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias24.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias26.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

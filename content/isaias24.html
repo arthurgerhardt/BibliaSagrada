@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 24</h2>
+            <h3>O Juízo Universal sobre a Terra</h3>
+            <p>1 Eis que o Senhor esvazia a terra e a torna deserta, e transtorna a sua superfície, e dispersa os seus habitantes.</p>
+            <p>2 E será o mesmo com o povo, como com o sacerdote; com o servo, como com o seu senhor; com a criada, como com a sua senhora; com o comprador, como com o vendedor; com o que empresta, como com o que toma emprestado; com o credor, como com o devedor.</p>
+            <p>3 De todo será esvaziada a terra, e totalmente saqueada, porque o Senhor pronunciou esta palavra.</p>
+            <p>4 A terra pranteia e se murcha; o mundo enfraquece e se murcha; enfraquecem os mais altos do povo da terra.</p>
+            <p>5 Na verdade a terra está contaminada por causa dos seus moradores; porque transgridem as leis, mudam os estatutos, quebram a aliança eterna.</p>
+            <p>6 Por isso a maldição consome a terra, e os que habitam nela se tornam culpados; por isso são queimados os moradores da terra, e poucos homens restam.</p>
+            <p>7 O vinho novo pranteia, a vide murcha, suspiram todos os que eram alegres de coração.</p>
+            <p>8 Cessou o folguedo dos tamboris, acabou o ruído dos que exultam, e cessou a alegria da harpa.</p>
+            <p>9 Já não bebem vinho entre canções; a bebida forte é amarga para os que a bebem.</p>
+            <p>10 A cidade vazia está em ruínas; todas as casas estão fechadas, ninguém pode entrar.</p>
+            <p>11 Há clamores por vinho nas ruas; toda a alegria se escureceu, foi banida a alegria da terra.</p>
+            <p>12 Na cidade só resta a desolação, e a porta está reduzida a ruínas.</p>
+            <p>13 Porque assim será no meio da terra, entre os povos, como o varejar das oliveiras, e como os rabiscos quando está acabada a vindima.</p>
+            <p>14 Estes levantarão a sua voz, e cantarão de alegria pela majestade do Senhor; do mar aclamarão.</p>
+            <p>15 Por isso glorificai ao Senhor no Oriente, e nas regiões do mar, ao nome do Senhor Deus de Israel.</p>
+            <p>16 Dos confins da terra ouvimos cantar: Glória ao justo! Mas eu digo: Definho, definho, ai de mim! Os pérfidos tratam perfidamente; sim, os pérfidos tratam perfidamente.</p>
+            <p>17 O terror, a cova e o laço vêm sobre ti, ó morador da terra.</p>
+            <p>18 E será que aquele que fugir do clamor do terror cairá na cova; e o que sair do meio da cova será apanhado no laço; porque as janelas do alto se abrem, e os fundamentos da terra tremem.</p>
+            <p>19 A terra está de todo quebrantada, totalmente se fende, violentamente se agita.</p>
+            <p>20 A terra cambaleia como um bêbado, e balanceia como rede de dormir; e a sua transgressão pesa sobre ela; ela cairá, e nunca mais se levantará.</p>
+            <p>21 E acontecerá naquele dia que o Senhor castigará no céu a hoste do alto, e os reis da terra sobre a terra.</p>
+            <p>22 E serão ajuntados como presos em masmorra, e serão encerrados na prisão; e depois de muitos dias serão visitados.</p>
+            <p>23 Então a lua se envergonhará, e o sol se confundirá, quando o Senhor dos Exércitos reinar no monte Sião e em Jerusalém, e perante os seus anciãos haverá glória.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

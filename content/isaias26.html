@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 26</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 26</h2>
+            <h3>O Cântico de Louvor à Salvação do Senhor</h3>
+            <p>1 Naquele dia se cantará este cântico na terra de Judá: Temos uma cidade forte; Deus a pôs para salvação, muros e baluartes.</p>
+            <p>2 Abri as portas, para que entre a nação justa, que guarda a fidelidade.</p>
+            <p>3 Tu conservarás em paz aquele cuja mente está firme em ti; porque ele confia em ti.</p>
+            <p>4 Confiai no Senhor perpetuamente; porque o Senhor Deus é uma rocha eterna.</p>
+            <p>5 Porque ele derrubou os que habitavam nas alturas, a cidade exaltada; ele a derrubou, a derrubou até ao chão; ele a fez tocar o pó.</p>
+            <p>6 Os pés a pisarão, os pés dos pobres, os passos dos necessitados.</p>
+            <p>7 O caminho do justo é nivelado; tu, que és reto, fazes o caminho do justo plano.</p>
+            <p>8 Sim, no caminho dos teus juízos, ó Senhor, nós te esperamos; o desejo da nossa alma é o teu nome e a lembrança de ti.</p>
+            <p>9 Com a minha alma te desejo de noite; sim, com o meu espírito dentro de mim eu te busco diligentemente; porque quando os teus juízos estão na terra, os moradores do mundo aprendem justiça.</p>
+            <p>10 Ainda que o ímpio seja favorecido, não aprende justiça; na terra da retidão ele age perversamente, e não vê a majestade do Senhor.</p>
+            <p>11 Senhor, a tua mão está levantada, mas eles não a vêem; mas verão e se envergonharão, sim, o fogo do teu zelo consumirá os teus adversários.</p>
+            <p>12 Senhor, tu nos darás paz; porque também fizeste todas as nossas obras por nós.</p>
+            <p>13 Senhor nosso Deus, outros senhores além de ti dominaram sobre nós; mas somente em ti nos lembramos do teu nome.</p>
+            <p>14 Eles estão mortos, não viverão; são sombras, não ressuscitarão; por isso os visitaste e os destruíste, e fizeste perecer toda a sua memória.</p>
+            <p>15 Tu aumentaste a nação, ó Senhor; aumentaste a nação, tu foste glorificado; estendeste todos os confins da terra.</p>  
+            <p>16 Senhor, na angústia eles te buscaram; quando a tua disciplina estava sobre eles, derramaram uma oração silenciosa.</p>
+            <p>17 Como a mulher grávida, que se aproxima do tempo de dar à luz, se contorce e grita em suas dores, assim fomos nós diante de ti, ó Senhor.</p>
+            <p>18 Nós concebemos, sim, nós nos contorcemos, como se fôssemos dar à luz; mas não fizemos nascer a salvação na terra, nem caíram os habitantes do mundo.</p>
+            <p>19 Os teus mortos viverão; os meus cadáveres ressuscitarão; despertai e cantai, vós que habitais no pó; porque o teu orvalho é como o orvalho das ervas, e a terra dará à luz os seus mortos.</p>
+            <p>20 Vai, povo meu, entra nos teus quartos, e fecha as tuas portas atrás de ti; esconde-te por um momento, até que passe a indignação.</p>
+            <p>21 Porque eis que o Senhor sai do seu lugar, para castigar a iniqüidade dos moradores da terra; e a terra descobrirá o sangue derramado sobre ela, e não mais cobrirá os seus            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias25.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias27.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
