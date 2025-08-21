@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 31</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 31</h2>
+            <h3>Advertência contra a Aliança com o Egito</h3>
+            <p>1 Ai dos que descem ao Egito em busca de ajuda, e confiam em cavalos, e põem sua esperança nos carros, porque são muitos, e nos cavaleiros, porque são poderosos; mas não atentam para o Santo.</p>
+            <p>2 Contudo, ele também é sábio, e trará o mal, e não retirará as suas palavras; mas se levantará contra a casa dos perversos, e contra a ajuda dos que praticam iniqüidade.</p>
+            <p>3 Ora, os egípcios são homens, e não Deus; e os seus cavalos são carne, e não espírito; quando o Senhor estender a sua mão, o ajudador tropeçará, e cairá, e todos eles juntamente perecerão.</p>
+            <p>4 Porque assim me disse o Senhor: Como o leão e o leão velho rugem sobre a sua presa, ainda que se ajunte contra ele um grande bando de pastores, não se assusta com a sua voz, nem se abate por causa do seu clamor; assim o Senhor dos Exércitos descerá para pelejar sobre o monte Sião e sobre o seu outeiro.</p>
+            <p>5 Como as aves voam, assim o Senhor dos Exércitos protegerá a Jerusalém; protegerá e livrará, passará e salvará.</p>
+            <p>6 Voltai para aquele contra quem os filhos de Israel se rebelaram tão profundamente.</p>
+            <p>7 Porque naquele dia cada um rejeitará os seus ídolos de prata e os seus ídolos de ouro, que as vossas mãos fizeram para pecar.</p>
+            <p>8 Então o assírio cairá pela espada, não de homem; e a espada, não de homem, o devorará; e fugirá da espada, e os seus jovens serão sujeitos a trabalhos forçados.</p>
+            <p>9 E ele passará por sua fortaleza de terror, e os seus príncipes se espantarão pela bandeira, diz o Senhor, cujo fogo está em Sião, e cuja fornalha está em Jerusalém.</p>
+
+
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias30.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias32.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 28</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 28</h2>
+            <h3>O Julgamento de Efraim e Judá</h3>
+            <p>1 Ai da coroa de soberba dos bêbados de Efraim, e da flor esplêndida que está no cume do vale fértil dos que se encontram vencidos pelo vinho!</p>
+            <p>2 Eis que o Senhor tem um homem forte e poderoso, como uma tempestade de granizo, como um redemoinho destruidor; como uma tempestade de águas violentas que transbordam; ele lançará a terra com força ao chão.</p>
+            <p>3 A coroa de soberba dos bêbados de Efraim será pisada aos pés.</p>
+            <p>4 E a flor esplêndida que está no cume do vale fértil será como a figueira precoce, antes do verão; a qual, vendo alguém, logo a apanha na mão e a come.</p>
+            <p>5 Naquele dia o Senhor dos Exércitos será uma coroa de glória e um diadema de beleza para o remanescente do seu povo;</p>
+            <p>6 e um espírito de justiça para o que julga, e força para os que afastam a batalha até às portas.</p>
+            <p>7 Mas também estes cambaleiam por causa do vinho, e vacilam por causa da bebida fermentada; o sacerdote e o profeta cambaleiam por causa da bebida fermentada, estão confusos por causa do vinho, vacilam por causa da bebida fermentada; tropeçam no ver, e cambaleiam no julgar.</p>
+            <p>8 Porque todas as mesas estão cheias de vômito e imundícia, de modo que não há lugar limpo.</p>
+            <p>9 A quem ele ensinará conhecimento? E a quem dará entendimento? Aos desmamados, aos recém-desmamados?</p>
+            <p>10 Porque é mandamento sobre mandamento, mandamento sobre mandamento; regra sobre regra, regra sobre regra; um pouco aqui, um pouco ali.</p>
+            <p>11 Mas com lábios gaguejantes e em língua estranha falará a este povo;</p>
+            <p>12 ao qual ele disse: Este é o repouso, dai descanso ao cansado; e este é o refrigério; mas não quiseram ouvir.</p>
+            <p>13 Portanto, a palavra do Senhor lhes será: mandamento sobre mandamento, mandamento sobre mandamento; regra sobre regra, regra sobre regra; um pouco aqui, um pouco ali; para que vão e caiam para trás, e sejam quebrantados, presos e apanhados.</p>
+            <p>14 Portanto, ouvi a palavra do Senhor, ó escarnecedores, que dominam este povo que está em Jerusalém.</p>
+            <p>15 Porque vós dizeis: Fizemos uma aliança com a morte, e com o Sheol fizemos um acordo; quando passar a inundação castigadora, não chegará a nós; porque fizemos da mentira o nosso refúgio, e na falsidade nos escondemos.</p>
+            <p>16 Portanto, assim diz o Senhor Deus: Eis que eu ponho em Sião uma pedra, uma pedra provada, uma pedra preciosa de esquina, um fundamento bem firme; aquele que crer não se apressará.</p>
+            <p>17 Também farei do juízo uma linha, e da justiça um prumo; e o granizo varrerá o refúgio da mentira, e as águas inundarão o esconderijo.</p>
+            <p>18 E a vossa aliança com a morte será anulada, e o vosso acordo com o Sheol não subsistirá; quando passar a inundação castigadora, sereis pisados por ela.</p>
+            <p>19 Desde que passar, vos levará; porque de manhã, de manhã passará; de dia e de noite passará; e será que só haverá terror para entender a mensagem.</p>
+            <p>20 Porque a cama é curta demais para se esticar, e a coberta é estreita demais para se cobrir.</p>
+            <p>21 Porque o Senhor se levantará como no monte Perazim, e se indignará como no vale de Gibeom, para fazer a sua obra, sua obra estranha; e para realizar a sua obra, sua obra incomum.</p>        
+            <p>22 Agora, pois, não vos torneis zombadores, para que as vossas prisões não se tornem mais fortes; porque ouvi uma destruição e uma decisão de destruição vinda do Senhor Deus dos Exércitos sobre toda a terra.</p>
+            <p>23 Inclinai os ouvidos, e ouvi a minha voz; prestai atenção, e ouvi o meu discurso.</p>
+            <p>24 Por acaso lavra o lavrador para semear? Não lavra continuamente, e não areja a sua terra?</p>
+            <p>25 Quando já a tem nivelada, não espalha o endro, e não semeia o cominho, e não planta o trigo, a cevada e o centeio no seu lugar?</p>
+            <p>26 Porque o seu Deus o instrui corretamente, e o ensina.</p>
+            <p>27 Porque o endro não se debulha com a debulhadora, nem se roda a roda do carro sobre o cominho; mas o endro se bate com a vara, e o cominho com o bastão.</p>
+            <p>28 O pão é moído, mas não se debulha para sempre; porque não se trata de debulhar, nem de pisar os pés; mas o seu grão é moído, e não se quebra.</p>
+            <p>29 Também isso vem do Senhor dos Exércitos; maravilhoso é o seu conselho, e grande é a sua sabedoria.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias27.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias29.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
