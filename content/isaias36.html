@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 36</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 36</h2>
+            <h3>Senaqueribe invade Judá</h3>
+            <p>1 E aconteceu, pois, que no ano décimo quarto do rei Ezequias, subiu Senaqueribe, rei da Assíria, contra todas as cidades fortificadas de Judá, e as tomou.</p>
+            <p>2 Então o rei da Assíria enviou Rabsaqué desde Laquis a Jerusalém, ao rei Ezequias, com um grande exército; e ele parou junto ao aqueduto do tanque superior, no caminho do campo do lavadeiro.</p>
+            <p>3 Então saíram a ele Eliaquim, filho de Hilquias, o mordomo, e Sebna, o escrivão, e Joá, filho de Asafe, o registrador.</p>
+            <p>4 E Rabsaqué lhes disse: Dizei agora a Ezequias: Assim diz o grande rei, o rei da Assíria: Que confiança é esta em que confias?</p>
+            <p>5 Eu digo que teu conselho e poder para a guerra são apenas palavras vãs; em quem, pois, agora confias, que contra mim te rebelas?</p>
+            <p>6 Eis que confias naquele bordão de cana quebrada, no Egito, em que, se alguém se apoiar, lhe entrará pela mão e a traspassará; assim é Faraó, rei do Egito, para todos os que nele confiam.</p>
+            <p>7 Mas, se me disseres: No Senhor nosso Deus confiamos; porventura não é esse cujos altos e altares Ezequias tirou, dizendo a Judá e a Jerusalém: Perante este altar adorareis?</p>
+            <p>8 Ora, pois, faze um trato com o meu senhor, o rei da Assíria, e dar-te-ei dois mil cavalos, se tu puderes dar cavaleiros para eles.</p>
+            <p>9 Como, pois, poderias repelir um só príncipe dos menores servos do meu senhor, confiando no Egito por carros e cavaleiros?</p>
+            <p>10 E agora, subi eu sem o Senhor contra esta terra, para destruí-la? O Senhor mesmo me disse: Sobe contra esta terra, e destrói-a.</p>
+            <p>11 Então disseram Eliaquim, Sebna e Joá a Rabsaqué: Pedimos-te que fales aos teus servos em aramaico, porque o entendemos; e não nos fales em judaico, aos ouvidos do povo que está sobre o muro.</p>
+            <p>12 Mas Rabsaqué disse: Porventura enviou-me o meu senhor só ao teu senhor e a ti, para falar estas palavras? Não me enviou também aos homens que estão assentados sobre o muro, para que comam o seu esterco e bebam a sua urina convosco?</p>
+            <p>13 Então Rabsaqué se pôs em pé, e clamou em alta voz em judaico, e falou, dizendo: Ouvi as palavras do grande rei, do rei da Assíria.</p>
+            <p>14 Assim diz o rei: Não vos engane Ezequias, porque não poderá livrar-vos.</p>
+            <p>15 Nem tampouco Ezequias vos faça confiar no Senhor, dizendo: Com certeza o Senhor nos livrará; esta cidade não será entregue nas mãos do rei da Assíria.</p>
+            <p>16 Não deis ouvidos a Ezequias; porque assim diz o rei da Assíria: Fazei acordo comigo, e saí a mim; e comei cada um da sua vide, e cada um da sua figueira, e bebei cada um da água da sua cisterna;</p>
+            <p>17 Até que eu venha, e vos leve para uma terra como a vossa terra, terra de cereal e de vinho, terra de pão e de vinhas.</p>
+            <p>18 Para que Ezequias não vos engane, dizendo: O Senhor nos livrará. Porventura os deuses das nações livraram cada um a sua terra das mãos do rei da Assíria?</p>
+            <p>19 Onde estão os deuses de Hamate e de Arpade? Onde estão os deuses de Sefarvaim? Porventura livraram Samaria da minha mão?</p>
+            <p>20 Quem dentre todos os deuses destas terras livrou a sua terra da minha mão, para que o Senhor livrasse Jerusalém da minha mão?</p>
+            <p>21 Mas eles se calaram, e não lhe responderam palavra; porque o rei havia ordenado, dizendo: Não lhe respondais.</p>
+            <p>22 Então Eliaquim, filho de Hilquias, o mordomo, e Sebna, o escrivão, e Joá, filho de Asafe, o registrador, vieram a Ezequias com as vestes rasgadas, e lhe contaram as palavras de Rabsaqué.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias35.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias37.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

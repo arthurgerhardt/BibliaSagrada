@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 39</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 39</h2>
+            <h3>Embaixadores da Babilônia visitam Ezequias</h3>
+            <p>1 Naquele tempo, Merodaque-Baladã, filho de Baladã, rei da Babilônia, enviou cartas e um presente a Ezequias; porque tinha ouvido dizer que estivera doente e que já tinha convalescido.</p>
+            <p>2 Ezequias se alegrou com eles, e mostrou-lhes a casa do seu tesouro, a prata, o ouro, as especiarias, os melhores ungüentos, todo o seu arsenal, e tudo quanto se achava nos seus tesouros; coisa nenhuma houve, nem em sua casa nem em todo o seu domínio, que Ezequias não lhes mostrasse.</p>
+            <p>3 Então o profeta Isaías veio ao rei Ezequias, e lhe disse: Que disseram aqueles homens, e de onde vieram a ti? E disse Ezequias: De uma terra remota vieram a mim, da Babilônia.</p>
+            <p>4 E disse ele: Que viram em tua casa? E disse Ezequias: Viram tudo quanto há em minha casa; coisa nenhuma há nos meus tesouros que eu não lhes mostrasse.</p>
+            <p>5 Então disse Isaías a Ezequias: Ouve a palavra do Senhor dos Exércitos:</p>
+            <p>6 Eis que virão dias em que tudo quanto houver em tua casa, com o que entesouraram teus pais até ao dia de hoje, será levado à Babilônia; coisa nenhuma ficará, diz o Senhor.</p>
+            <p>7 E até de teus filhos, que procederem de ti, e que tu gerares, eles tomarão, para que sejam eunucos no palácio do rei da Babilônia.</p>
+            <p>8 Então disse Ezequias a Isaías: Boa é a palavra do Senhor que disseste. Disse mais: Pois haja paz e verdade em meus dias.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias38.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias40.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

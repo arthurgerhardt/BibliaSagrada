@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 34</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 34</h2>
+            <h3>O Juízo de Deus sobre as Nações</h3>
+            <p>1 Chegai-vos, nações, para ouvir; e vós povos, prestai ouvidos; ouça a terra e a sua plenitude, o mundo e tudo o que nele nasce.</p>
+            <p>2 Porque a indignação do Senhor está sobre todas as nações, e o seu furor sobre todo o exército delas; ele as destruiu, as entregou ao matadouro.</p>
+            <p>3 E os seus mortos serão lançados fora, e o cheiro dos seus cadáveres subirá; e os montes se derreterão com o seu sangue.</p>
+            <p>4 E todo o exército dos céus se desvanecerá, e os céus serão enrolados como um pergaminho; e todo o seu exército cairá, como cai a folha da videira e como cai a folha da figueira.</p>
+            <p>5 Porque na minha espada está embebida no céu; eis que descerá sobre Edom, e sobre o povo que eu tenho dedicado à destruição, para juízo.</p>
+            <p>6 A espada do Senhor está cheia de sangue, está engordurada com a gordura dos cordeiros e dos bodes, com a gordura dos rins dos carneiros; porque o Senhor tem um sacrifício em Bosra, e uma grande matança na terra de Edom.</p>
+            <p>7 E os búfalos cairão com eles, e os novilhos com os touros; e a sua terra será embebida com sangue, e o seu pó se engordará com gordura.</p>
+            <p>8 Porque o dia da vingança do Senhor está no coração, e o ano dos seus redimidos é chegado.</p>
+            <p>9 E as suas torrentes se converterão em piche, e a sua terra em enxofre; e a sua terra se tornará em piche ardente.</p>
+            <p>10 Não se apagará de noite nem de dia; a sua fumaça subirá para sempre; de geração em geração será assolada; ninguém passará por ela eternamente.</p>    
+            <p>11 Mas o pelicano e o ouriço a possuirão; e a coruja e o corvo habitarão nela; e ele medirá sobre ela a linha de confusão, e as pedras de vazio.</p>
+            <p>12 E os seus nobres não terão mais nome; e todos os seus príncipes serão como nada.</p>
+            <p>13 E nos seus palácios crescerão espinheiros, e nos seus castelos urtigas e cardos; e será uma habitação de chacais, e um aprisco para avestruzes.</p>
+            <p>14 E os animais do deserto se encontrarão com os animais selvagens, e o sátiro clamará para o seu companheiro; também a coruja se alojará ali, e encontrará para si um lugar de descanso.</p>
+            <p>15 Ali se fará o ninho da víbora, e por láá porá os seus ovos, e os chocarão, e ajuntará sob a sua sombra os seus filhotes; ali também se ajuntará a águia, e por láá porá os seus filhotes.</p>
+            <p>16 Buscai no livro do Senhor, e lede; nenhuma destas coisas faltará, nenhuma delas faltará ao seu companheiro; porque a sua boca ordenou isto, e o seu Espírito as ajuntou.</p>
+            <p>17 E ele lhes lançou sortes, e a sua mão lhes repartiu a terra com cordel; para sempre a possuirão, de geração em geração habitarão nela.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias33.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias35.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

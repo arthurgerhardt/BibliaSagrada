@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 33</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 33</h2>
+            <h3>O Juízo de Deus sobre os Inimigos</h3>
+            <p>1 Ai de ti, que destróis, mas não foste destruído; e que trai, mas não foste traído! Quando cessares de destruir, serás destruído; e quando cessares de trair, serás traído.</p> 
+            <p>2 Senhor, tem misericórdia de nós; porque em ti esperamos. Sejam o teu braço de manhã a nossa salvação, e a nossa força no tempo da angústia.</p>
+            <p>3 Ao ruído tumultuoso dos povos, os povos fogem; e ao teu exército disperso, as nações se espalham.</p>
+            <p>4 E vós sereis arrebatados como a relva, e como o capim verde, e como a erva dos telhados, que seca antes de crescer.</p>
+            <p>5 O Senhor é exaltado, porque habita nas alturas; encherá a Sião de juízo e de justiça.</p>
+            <p>6 E haverá estabilidade nos teus tempos, abundância de salvação, sabedoria e conhecimento; o temor do Senhor será o seu tesouro.</p>
+            <p>7 Eis que os seus mensageiros clamam em ruas; os mensageiros de paz choram amargamente.</p>
+            <p>8 As estradas estão desertas, não há que passe; ele quebrou a aliança, desprezou as cidades, não tem respeito pelos homens.</p>
+            <p>9 A terra está de luto e enfraquecida; o Líbano se envergonha e murcha; Sarom é como um deserto, e Basã e Carmelo são sacudidos.</p>
+            <p>10 Agora me levantarei, diz o Senhor; agora serei exaltado, agora me levantarei.</p>
+            <p>11 Conceberam palha, darão à luz palha; o seu sopro será um fogo que os consumirá.</p>
+            <p>12 E os povos serão como o cal, como espuma queimarão; como espinhos cortados, serão queimados no fogo.</p>
+            <p>13 Ouvi, vós que estais longe, o que fiz; e vós que estais perto, reconhecei o meu poder.</p>
+            <p>14 Os pecadores em Sião estão aterrorizados; o temor se apoderou dos ímpios: Quem dentre nós habitará com o fogo consumidor? Quem dentre nós habitará com as chamas eternas?</p>
+            <p>15 O que anda em justiça, e fala o que é reto, que rejeita o ganho de opressão, que sacode as suas mãos de receber suborno, que tapa os seus ouvidos para não ouvir falar de sangue, e fecha os seus olhos para não ver o mal;</p>
+            <p>16 esse habitará nas alturas; as fortalezas das rochas serão o seu alto refúgio; o seu pão lhe será dado, as suas águas serão certas.</p>
+            <p>17 Os teus olhos verão o rei na sua formosura; eles verão a terra que está longe.</p>
+            <p>18 O teu coração meditará no terror: Onde está aquele que pesava? Onde está aquele que contava? Onde está aquele que pesava as torres?</p>
+            <p>19 O povo que tu não verás mais, o povo de fala diferente, de língua estranha, que não entenderás.</p>
+            <p>20 Olha para Sião, a cidade das nossas solenidades; os teus olhos verão Jerusalém, uma habitação tranquila, uma tenda que não será removida; as suas estacas nunca serão arrancadas, nem um dos seus cordões será rompido.</p>
+            <p>21 Mas ali o Senhor será conosco em majestade; será um lugar de rios largos e correntes, onde não passará galera com remos, nem navio grande passará por ele.</p>
+            <p>22 Porque o Senhor é o nosso juiz, o Senhor é o nosso legislador, o Senhor é o nosso rei; ele nos salvará.</p>
+            <p>23 As tuas cordas estão soltas; não podem firmar o mastro, nem esticar a vela; então, será repartido o despojo de grande riqueza; os aleijados tomarão o despojo.</p>
+            <p>24 E o habitante não dirá: Estou doente; o povo que habita nela será perdoado da sua iniqüidade.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias32.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias34.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

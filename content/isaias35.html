@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 35</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 35</h2>
+            <h3>A Glória Futura de Sião</h3>
+            <p>1 Alegrai-vos, ó deserto, e exultai, e florescei como a rosa;</p>
+            <p>2 Florescei abundantemente, e exultai com júbilo, vós que habitais na terra; porque a glória do Senhor se manifestou sobre vós.</p>
+            <p>3 Fortalecei as mãos fracas, e firmai os joelhos trêmulos.</p>
+            <p>4 Dizei aos que têm coração apavorado: Sede fortes, não temais; eis que o vosso Deus virá com vingança, com retribuição; ele virá e vos salvará.</p>
+            <p>5 Então, os olhos dos cegos serão abertos, e os ouvidos dos surdos se abrirão.</p>
+            <p>6 Então, o coxo saltará como um cervo, e a língua do mudo cantará de alegria; porque águas arrebentarão no deserto, e ribeiros na terra seca.</p>
+            <p>7 E a terra ardente se tornará em lago, e a terra sedenta em fontes de águas; na habitação do chacal, onde jazia, será um lugar de canteiros de junco e de papiro.</p>
+            <p>8 E ali haverá uma estrada, e um caminho, que se chamará o Caminho Santo; o imundo não passará por ele; mas será para aqueles; os que andarem por ele, ainda que sejam tolos, não errarão.</p>
+            <p>9 Nem os loucos errarão; ali não haverá leão, nem fera feroz subirá por ele; ali não se achará, mas os remidos andarão por ele.</p>
+            <p>10 E os remidos do Senhor voltarão, e virão a Sião com júbilo; e alegria eterna será sobre as suas cabeças; regozijar-se-ão, e exultarão; a tristeza e o gemido fugirão.</p> 
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias34.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias36.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

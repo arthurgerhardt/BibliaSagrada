@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 38</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 38</h2>
+            <h3>Ezequias é Curado</h3>
+            <p>1 Naqueles dias Ezequias adoeceu de uma enfermidade mortal; e veio a ele o profeta Isaías, filho de Amós, e lhe disse: Assim diz o Senhor: Põe em ordem a tua casa, porque morrerás, e não viverás.</p>
+            <p>2 Então, virou Ezequias o rosto para a parede, e orou ao Senhor,</p>
+            <p>3 E disse: Lembra-te agora, Senhor, peço-te, de que tenho andado perante ti em verdade, e com um coração íntegro, e fiz o que é reto aos teus olhos. E chorou Ezequias muito.</p>
+            <p>4 Então, veio a palavra do Senhor a Isaías, dizendo:</p>
+            <p>5 Vai, e dize a Ezequias: Assim diz o Senhor, o Deus de teu pai Davi: Ouvi a tua oração, vi as tuas lágrimas; eis que eu te curarei; ao terceiro dia subirás à casa do Senhor.</p>
+            <p>6 E acrescentarei aos teus dias quinze anos; e livrarei a ti e a esta cidade da mão do rei da Assíria; e defenderei esta cidade.</p>
+            <p>7 E disse Ezequias a Isaías: Qual será o sinal de que o Senhor me curará, e que ao terceiro dia subirei à casa do Senhor?</p>
+            <p>8 Então, disse Isaías: Esta será a tua sinal do Senhor, que o Senhor fará isto que falou:</p>
+            <p>9 Eis que eu farei voltar atrás a sombra que já desceu sobre os degraus de Acaz, dez graus; assim a sombra descerá sobre os degraus de Acaz, quinze graus.</p>
+            <p>10 E Ezequias pediu a Isaías, dizendo: Qual é o sinal de que o Senhor me curará, e que ao terceiro dia subirei à casa do Senhor?</p>
+            <p>11 Então, Isaías clamou ao Senhor; e ele fez voltar atrás a sombra dez graus, que já havia descido sobre os degraus de Acaz.</p>
+            <h3>Ezequias Louva a Deus pela Cura</h3>
+            <p>12 E disse Ezequias: Bom é o Senhor, que me deu descanso, pois a minha alma se elevou da cova da corrupção; pois me lançou no meio dos que descem à cova.</p>
+            <p>13 Ó Senhor, por estas coisas os vivos, os vivos te louvarão, como eu hoje te louvo; o pai fará saber aos filhos a tua verdade.</p>
+            <p>14 O Senhor me livrou de toda a angústia; e os meus olhos viram a minha prosperidade.</p>
+            <p>15 Bom é o Senhor para com todos, e as suas misericórdias são sobre todas as suas obras.</p>
+            <p>16 Ó Senhor, a tua misericórdia é para sempre; não abandones as obras das tuas mãos.</p>
+            <h3>Ezequias Compone um Cântico de Louvor</h3>
+            <p>17 Depois disto Ezequias adoeceu de uma enfermidade mortal; e veio a ele o profeta Isaías, filho de Amós, e lhe disse: Assim diz o Senhor: Põe em ordem a tua casa, porque morrerás, e não viverás.</p>
+            <p>18 E disse Ezequias: Qual será o sinal de que o Senhor me curará, e que ao terceiro dia subirei à casa do Senhor?</p>
+            <p>19 Então, disse Isaías: Esta será a tua sinal do Senhor, que o Senhor fará isto que falou:</p>
+            <p>20 Eis que eu farei voltar atrás a sombra que já desceu sobre os degraus de Acaz, dez graus; assim a sombra descerá sobre os degraus de Acaz, quinze graus.</p>
+            <p>21 E Ezequias pediu a Isaías, dizendo: Qual é o sinal de que o Senhor me curará, e que ao terceiro dia subirei à casa do Senhor?</p>
+            <p>22 Então, Isaías clamou ao Senhor; e ele fez voltar atrás a sombra dez graus, que já havia descido sobre os degraus de Acaz.</p> 
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias37.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias39.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
