@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 43</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 43</h2>
+            <h3>Deus é o Salvador e Redentor de Israel</h3>
+            <p>1 Mas agora, assim diz o Senhor que te criou, ó Jacó, e que te formou, ó Israel: Não temas, porque eu te remi; chamei-te pelo teu nome, tu és meu.</p>
+            <p>2 Quando passares pelas águas, eu serei contigo; e quando pelos rios, eles não te submergirão; quando passares pelo fogo, não te queimarás, nem a chama arderá em ti.</p>
+            <p>3 Porque eu sou o Senhor teu Deus, o Santo de Israel, o teu Salvador; dei o Egito por teu resgate, a Etiópia e Sebá por ti.</p>
+            <p>4 Visto que foste precioso aos meus olhos, digno de honra, e eu te amei, darei homens por ti, e povos pela tua vida.</p>
+            <p>5 Não temas, pois eu sou contigo; trarei a tua descendência desde o oriente, e te ajuntarei desde o ocidente.</p>
+            <p>6 Direi ao norte: Dá; e ao sul: Não retenhas; trazei meus filhos de longe, e minhas filhas das extremidades da terra.</p>
+            <p>7 A todos os que são chamados pelo meu nome, e que criei para minha glória, e que formei e fiz.</p>
+            <p>8 Traze o povo que tem olhos, mas é cego, e tem ouvidos, mas é surdo.</p>
+            <p>9 Todas as nações se congreguem, e os povos se reúnam; quem dentre eles pode anunciar isto, e fazer-nos ouvir as coisas passadas? Apresentem as suas testemunhas, para que se justifiquem; ouçam e digam: Verdade é.</p>
+            <p>10 Vós sois minhas testemunhas, diz o Senhor, e meu servo, a quem escolhi; para que o saibais, e me creiais, e entendais que eu sou o mesmo, e que antes de mim deus nenhum se formou, e depois de mim nenhum haverá.</p>
+            <p>11 Eu, eu sou o Senhor, e fora de mim não há Salvador.</p>
+            <p>12 Eu anunciei, e salvei, e fiz ouvir, e Deus estranho não houve entre vós; vós, pois, sois minhas testemunhas, diz o Senhor, que eu sou Deus.</p>
+            <p>13 Ainda antes que houvesse dia, eu sou; e ninguém há que possa livrar alguém das minhas mãos; agindo eu, quem o impedirá?</p>
+            <p>14 Assim diz o Senhor, o vosso Redentor, o Santo de Israel: Por amor de vós enviei a Babilônia, e fiz descer todos eles como fugitivos, mesmo os caldeus, nos navios com que se vangloriavam.</p>
+            <p>15 Eu sou o Senhor, o vosso Santo, o Criador de Israel, o vosso Rei.</p>
+            <p>16 Assim diz o Senhor, o que abre o caminho no mar, e uma vereda nas águas impetuosas;</p>
+            <p>17 O que faz sair o carro e o cavalo, o exército e a força; eles jazem juntamente, nunca se levantarão; estão extintos, apagados como uma torcida.</p>
+            <p>18 Não vos lembreis das coisas passadas, nem considereis as antigas.</p>
+            <p>19 Eis que faço uma coisa nova, agora sairá à luz; porventura não a percebeis? Eis que porei um caminho no deserto, e rios no ermo.</p>
+            <p>20 Os animais do campo me honrarão, os chacais e os avestruzes, porque porei águas no deserto, e rios no ermo, para dar de beber ao meu povo, ao meu escolhido.</p>
+            <p>21 Esse povo que formei para mim, para que publicasse o meu louvor.</p>
+            <p>22 Contudo, tu não me invocaste, ó Jacó, mas te cansaste de mim, ó Israel.</p>
+            <p>23 Não me trouxeste o gado de teus holocaustos, nem me honraste com teus sacrifícios; não te fiz servir com ofertas, nem te cansei com incenso.</p>
+            <p>24 Não me compraste por dinheiro cana aromática, nem me saciaste com a gordura de teus sacrifícios; mas me deste trabalho com teus pecados, e me cansaste com tuas iniquidades.</p>
+            <p>25 Eu, eu mesmo, sou o que apago as tuas transgressões por amor de mim, e dos teus pecados não me lembro.</p>
+            <p>26 Desperta a memória, entremos juntos em juízo; apresenta as tuas razões, para que te justifiques.</p>
+            <p>27 Teu primeiro pai pecou, e os teus intérpretes prevaricaram contra mim.</p>
+            <p>28 Pelo que profanei os príncipes do santuário, e entreguei Jacó à maldição, e Israel aos opróbrios.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias42.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias44.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 41</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 41</h2>
+            <h3>Deus é o Protetor de Israel</h3>
+            <p>1 Levantai-vos, ó nações, e chegai-vos, e ouvi; escutai todos os moradores do mundo, e o que há de acontecer.</p>
+            <p>2 Quem levantou desde o oriente aquele que em justiça chama por seu nome? Ele avança em força, por causa da sua força; eu mesmo o levei adiante, e o conduzi; e ninguém há que o detenha; e com a minha mão o sustentei.</p>
+            <p>3 Eu o chamei em justiça, e o farei prosperar; eu o farei forte, e o porei por aliança do povo.</p>
+            <p>4 Para que rompais a terra, e a torneis a cultivar; rompais as suas pedras com arado; semeie o pobre na sua justiça, e oáspero semeie em benignidade.</p>
+            <p>5 Assim diz o Senhor, o Santo de Israel: Eu sou o teu Deus, que te fortalece; não temas, porque eu sou contigo.</p>
+            <p>6 Eu te ajudarei, e te sustentarei com a destra da minha justiça.</p>
+            <p>7 Eis que todos os que se enfurecem contra ti serão envergonhados e confundidos; os que contendem contigo perecerão, e serão como nada, e os que pelejam contigo não subsistirão.</p>
+            <p>8 Porque eu, o Senhor teu Deus, te tomo pela tua mão direita, e te digo: Não temas, eu te ajudarei.</p>
+            <p>9 Não temas, ó verme de Jacó, ó povozinho de Israel; eu te ajudo, diz o Senhor, e o teu Redentor é o Santo de Israel.</p>
+            <p>10 Eis que farei de ti um trilho novo, cheio de dentes; trilharás os montes e os moerás, e tornarás os outeiros como a palha.</p>
+            <p>11 Tu os padejarás, e o vento os levará, e o redemoinho os espalhará; mas tu te alegrarás no Senhor, e te gloriarás no Santo de Israel.</p>
+            <p>12 Os aflitos e necessitados buscam águas, e não há; a sua língua se seca de sede; eu, o Senhor, os ouvirei, eu, o Deus de Israel, não os desampararei.</p>
+            <p>13 Abrirei rios em lugares altos, e fontes no meio dos vales; tornarei o deserto em tanques de águas, e a terra seca em mananciais.</p>
+            <p>14 Plantarei no deserto o cedro, a acácia, a murta e a oliveira; porei juntamente no ermo o cipreste, o olmeiro e o buxo;</p>
+            <p>15 Para que vejam, e saibam, e considerem, e juntamente entendam que a mão do Senhor fez isto, e o Santo de Israel o criou.</p>
+            <p>16 Apresentai a vossa causa, diz o Senhor; apresentai as vossas razões, diz o Rei de Jacó.</p>
+            <p>17 Tragam e anunciem-nos as coisas que hão de acontecer; anunciai-nos as profecias anteriores, para que atentemos para elas, e saibamos o seu fim; ou fazei-nos ouvir as coisas futuras.</p>
+            <p>18 Anunciai-nos as coisas que hão de vir depois, para que saibamos que sois deuses; ou fazei bem, ou fazei mal, para que nos maravilhemos e juntamente o vejamos.</p>
+            <p>19 Eis que sois menos do que nada, e a vossa obra menos do que coisa alguma; abominação é quem vos escolhe.</p>
+            <p>20 Do norte suscitei um, e ele virá; do nascimento do sol invocará o meu nome; e virá aos príncipes como ao barro, e os pisará como o oleiro pisa o barro.</p>
+            <p>21 Quem anunciou isto desde o princípio, para que o saibamos? Ou desde tempos antigos, para que digamos: É verdade? Ninguém há que o anuncie, ninguém há que o faça ouvir, ninguém há que ouça as vossas palavras.</p>
+            <p>22 Eu sou o primeiro que disse a Sião: Eis que estão aqui; e a Jerusalém darei um mensageiro de boas novas.</p>
+            <p>23 Porque olhei, e não havia homem algum; e dentre eles não havia conselheiro algum, que, perguntando-lhe, me respondesse.</p>
+            <p>24 Eis que todos são vaidade; as suas obras são nada; as suas imagens de fundição são vento e confusão.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias40.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias42.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

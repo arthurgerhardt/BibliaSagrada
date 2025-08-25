@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 46</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 46</h2>
+            <h3>Deus é o Deus Vivo, e não os ídolos</h3>
+            <p>1 Bel e Nebo, os seus ídolos, estão caídos; os seus feitos são coisa de vento; são vaidade, obra de engano; no tempo da sua visitação, eles perecerão.</p>
+            <p>2 Ouvi-me, ó casa de Jacó, e todo o resto da casa de Israel, vós que sois levados por mim desde o ventre, levados desde a madre.</p>
+            <p>3 E até à velhice eu sou o mesmo, e ainda até às cãs eu vos carregarei; eu o fiz, e eu vos levarei, e eu vos carregarei, e vos salvarei.</p>
+            <p>4 A quem me comparareis, e me fareis igual? E a quem me assemelhareis, para que sejamos semelhantes?</p>
+            <p>5 Gastam ouro da bolsa, e pesam prata nas balanças; assalariam um ourives, para que faça um deus; diante dele se prostram e se inclinam.</p>
+            <p>6 Eles o tomam aos ombros, o levam, e o põem no seu lugar; ali está, do seu lugar não se move; ainda que alguém clame a ele, não responde, nem salva da sua tribulação.</p>
+            <p>7 Lembrai-vos disto, e sede homens; tomai-o novamente à mente, ó transgressores.</p>
+            <p>8 Lembrai-vos das coisas passadas desde a antiguidade; porque eu sou Deus, e não há outro Deus, não há outro semelhante a mim.</p>
+            <p>9 Que anuncio o fim desde o princípio, e desde a antiguidade as coisas que ainda não sucederam; que digo: O meu conselho permanecerá de pé, e farei toda a minha vontade;</p>
+            <p>10 Que chamo a ave de rapina desde o oriente, e o homem do meu conselho de uma terra remota; assim o disse, assim o farei vir; eu o formei, assim o executarei.</p>
+            <p>11 Ouvi-me, ó duros de coração, vós que estais longe da justiça.</p>
+            <p>12 Faço chegar a minha justiça; ela não está longe, e a minha salvação não tardará; e estabelecerei em Sião a salvação, para Israel, o meu esplendor.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias45.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias47.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
