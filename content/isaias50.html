@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 50</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 50</h2>
+            <h3>O Servo Sofredor</h3>
+            <p>1 Assim diz o Senhor: Onde está a carta de divórcio de vossa mãe, pela qual eu a despedi? Ou quem é dos meus credores a quem eu vos vendi? Eis que por vossas iniqüidades fostes vendidos, e por causa das vossas transgressões vossa mãe foi despedia.</p>
+            <p>2 Por que razão vim eu, e ninguém apareceu? Chamei, e ninguém respondeu? Acaso está encurtada a minha mão, para que não possa remir? Ou não há em mim poder para livrar? Eis que com a minha repreensão faço secar o mar, torno os rios em deserto; seus peixes cheiram mal, por falta de água, e morrem de sede.</p>
+            <p>3 Visto que visto que eu visto os céus de negridão, e lhes ponho um saco por cobertura.</p>
+            <p>4 O Senhor Deus me deu língua de eruditos, para que eu saiba dizer uma boa palavra ao cansado; ele desperta-me todas as manhãs, desperta-me o ouvido para que ouça como os eruditos.</p>
+            <p>5 O Senhor Deus abriu-me os ouvidos, e eu não fui rebelde, nem me retirei para trás.</p>
+            <p>6 As costas dei aos que me feriam, e o rosto aos que me arrancavam a barba; não escondi o rosto dos que me afrontavam e me cuspiam.</p>
+            <p>7 Porque o Senhor Deus me ajuda, pelo que não me confundo; por isso pus o meu rosto como um seixo, e sei que não serei envergonhado.</p>
+            <p>8 Perto está o que me justifica; quem contenderá comigo? Apresentemo-nos juntos; quem é o meu adversário? Chegue-se para mim.</p>
+            <p>9 Eis que o Senhor Deus me ajuda; quem há que me condene? Eis que todos eles como roupas se envelhecerão, a traça os comerá.</p>
+            <p>10 Quem há entre vós que tema ao Senhor e ouça a voz do seu servo? Aquele que anda em trevas e não tem luz, confie no nome do Senhor e firme-se sobre o seu Deus.</p>
+            <p>11 Eis que todos vós que acendeis fogo, que vos cingis com faíscas, andai entre as chamas do vosso fogo e entre as faíscas que acendestes. Isto vos sobrevirá da minha mão; em tormentos jazereis.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias49.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias51.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

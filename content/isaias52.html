@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 52</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 52</h2>
+            <h3>A Redenção de Sião</h3>
+            <p>1 Desperta, desperta, reveste-te da tua fortaleza, ó Sião; veste-te das tuas roupas formosas, ó Jerusalém, cidade santa; porque nunca mais entrará em ti o incircunciso nem o imundo.</p>
+            <p>2 Sacode-te do pó, levanta-te, assenta-te, ó Jerusalém; solta-te das cadeias do teu pescoço, ó cativa filha de Sião.</p>
+            <p>3 Porque assim diz o Senhor: Por nada fostes vendidos; e sem dinheiro sereis resgatados.</p>
+            <p>4 Porque assim diz o Senhor Deus: O meu povo desceu ao Egito, há tempos, para lá peregrinar; e a Assíria, sem razão, o oprimiu.</p>
+            <p>5 E agora, que tenho eu aqui, diz o Senhor, visto que o meu povo foi levado por nada? Os que dominam sobre ele dão uivos, diz o Senhor, e o meu nome é blasfemado continuamente todo o dia.</p>
+            <p>6 Por isso o meu povo saberá o meu nome; por isso, naquele dia, saberá que sou eu o que fala: Eis-me aqui.</p>
+            <p>7 Quão formosos são sobre os montes os pés do que anuncia as boas-novas, que faz ouvir a paz, do que anuncia o bem, que faz ouvir a salvação, do que diz a Sião: O teu Deus reina!</p>
+            <p>8 Eis o teu vigia! Eles levantam a voz, juntamente exultam; porque verão, olho a olho, quando o Senhor fizer voltar Sião.</p>
+            <p>9 Clamai, cantai juntos de júbilo, ó ruínas de Jerusalém; porque o Senhor consolou o seu povo, remiu a Jerusalém.</p>
+            <p>10 O Senhor desnudou o seu santo braço perante os olhos de todas as nações; e todos os confins da terra verão a salvação do nosso Deus.</p>
+            <p>11 Retirai-vos, retirai-vos, saí daí; não toqueis coisa imunda; saí do meio dela, purificai-vos, vós que levais os utensílios do Senhor.</p>
+            <p>12 Porque não saireis apressadamente, nem vos ireis fugindo; porque o Senhor irá diante de vós, e o Deus de Israel será a vossa retaguarda.</p>
+            <p>13 Eis que o meu servo procederá com prudência; será exaltado, e elevado, e muito sublime.</p>
+            <p>14 Como pasmaram muitos à vista dele, pois o seu parecer estava tão desfigurado, mais do que o de outro qualquer, e a sua figura mais do que a dos outros filhos dos homens.</p>
+            <p>15 Assim aspergirá muitas nações, e os reis fecharão a boca diante dele; porque aquilo que não lhes foi anunciado verão, e aquilo que não ouviram entenderão.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias51.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias53.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

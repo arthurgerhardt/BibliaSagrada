@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 49</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 49</h2>
+            <h3>O Servo do Senhor</h3>
+            <p>1 Ouvi-me, ilhas, e escutai, povos de longe: o Senhor me chamou desde o ventre, desde as entranhas de minha mãe fez menção do meu nome.</p>
+            <p>2 E fez a minha boca como uma espada aguda, com a sombra da sua mão me cobriu; e me pôs por sua flecha limpa, e me escondeu na sua aljava.</p>
+            <p>3 E me disse: Tu és o meu servo, Israel, aquele por quem hei de ser glorificado.</p>
+            <p>4 E eu disse: Debalde tenho trabalhado, inutilmente e em vão gastei as minhas forças; todavia o meu direito está perante o Senhor, e o meu galardão perante o meu Deus.</p>
+            <p>5 E agora diz o Senhor, que me formou desde o ventre para ser seu servo, para tornar a trazer Jacó a ele; porém Israel não se ajuntará; contudo serei glorificado aos olhos do Senhor, e o meu Deus será a minha força.</p>
+            <p>6 E diz: Pouco é que sejas o meu servo, para restaurares as tribos de Jacó, e tornares a trazer os preservados de Israel; também te dei para luz dos gentios, para seres a minha salvação até à extremidade da terra.</p>
+            <p>7 Assim diz o Senhor, o Redentor de Israel, o seu Santo, ao desprezado de alma, ao abominado das nações, ao servo dos dominadores: Os reis verão e se levantarão, os príncipes também se inclinarão, por amor do Senhor, que é fiel, e do Santo de Israel, que te escolheu.</p>
+            <p>8 Assim diz o Senhor: No tempo aceitável te ouvi, e no dia da salvação te ajudei; e te guardarei, e te darei por aliança do povo, para restaurares a terra, e para lhes dares em herança as herdades assoladas;</p>
+            <p>9 Para dizeres aos presos: Saí; e aos que estão em trevas: Aparecei. Eles pastarão nos caminhos, e em todos os lugares altos terão o seu pasto.</p>
+            <p>10 Nunca terão fome nem sede, nem o calor nem o sol os afligirá, porque o que se compadece deles os guiará, e os levará mansamente aos mananciais das águas.</p>
+            <p>11 E farei de todos os meus montes um caminho, e as minhas estradas serão levantadas.</p>
+            <p>12 Eis que estes virão de longe, e eis que aqueles do norte e do ocidente, e aqueles outros da terra de Sinim.</p>
+            <p>13 Cantai, ó céus, e alegra-te, ó terra, e vós, montes, estalai de júbilo, porque o Senhor consolou o seu povo, e dos seus aflitos se compadecerá.</p>
+            <p>14 Mas Sião diz: Já me desamparou o Senhor, e o meu Senhor se esqueceu de mim.</p>
+            <p>15 Pode uma mulher esquecer-se tanto do filho que cria, que não se compadeça dele, do filho do seu ventre? Mas ainda que esta se esquecesse, eu, todavia, não me esquecerei de ti.</p>
+            <p>16 Eis que nas palmas das minhas mãos te gravei; os teus muros estão continuamente perante mim.</p>
+            <p>17 Os teus filhos virão apressadamente; mas os teus destruidores e os teus assoladores sairão do meio de ti.</p>
+            <p>18 Levanta os teus olhos ao redor, e olha: todos estes se ajuntam, e vêm a ti. Vivo eu, diz o Senhor, que de todos estes te vestirás como de um ornamento, e deles te cingirás como uma noiva.</p>
+            <p>19 Porque nos teus lugares desertos e solitários, e na tua terra destruída, agora serás apertada pelo excesso dos habitantes, e os que te devoravam se afastarão para longe.</p>
+            <p>20 Ainda os filhos da tua orfandade dirão aos teus ouvidos: Muito estreito é para mim este lugar; aparta-te para que eu possa habitar.</p>
+            <p>21 Então dirás no teu coração: Quem me gerou estes, pois eu estava privada de filhos, e solitária, desterrada e rejeitada? Quem criou estes? Eis que eu estava só; estes onde estavam?</p>
+            <p>22 Assim diz o Senhor Deus: Eis que levantarei a minha mão para as nações, e ante os povos arvorarei a minha bandeira; então trarão teus filhos nos braços, e tuas filhas serão levadas sobre os ombros.</p>
+            <p>23 E os reis serão teus aios, e suas rainhas tuas amas; diante de ti se inclinarão com o rosto em terra, e lamberão o pó de teus pés; e saberás que eu sou o Senhor, e que os que esperam em mim não serão confundidos.</p>
+            <p>24 Porventura tirar-se-ia a presa ao valente? Ou escapariam os cativos de um tirano?</p>
+            <p>25 Mas assim diz o Senhor: Até os cativos do valente serão tirados, e a presa do tirano escapará; porque eu contenderei com os que contendem contigo, e os teus filhos eu salvarei.</p>
+            <p>26 E alimentarei os teus opressores com a sua própria carne, e com o seu próprio sangue se embriagarão, como com vinho; e toda a carne saberá que eu sou o Senhor, teu Salvador, e o teu Redentor, o Poderoso de Jacó.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias48.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias50.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
