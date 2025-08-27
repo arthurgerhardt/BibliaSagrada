@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 54</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 54</h2>
+            <h3>Promessa de Restauração</h3>
+            <p>1 Canta, ó estéril, que não dás à luz; levanta a tua voz e exclama, tu que não tens dores de parto; porque mais são os filhos da abandonada do que os da que tem marido, diz o Senhor.</p>   
+            <p>2 Alarga o lugar da tua tenda, e estendam-se as cortinas das tuas habitações; não te detenhas; alonga as tuas cordas, e firma as tuas estacas.</p>
+            <p>3 Porque te alargaste para a direita e para a esquerda, e a tua descendência herdará as nações, e habitará nas cidades assoladas.</p>
+            <p>4 Não temas, porque não serás envergonhada; e não te envergonhes, porque não serás confundida; mas te esquecerás da vergonha da tua mocidade, e não te lembrarás mais do opróbrio da tua viuvez.</p>
+            <p>5 Porque o teu marido é o teu criador; o Senhor dos Exércitos é o seu nome; e o teu Redentor é o Santo.</p>
+            <p>6 Porque o Senhor chamou-te como mulher abandonada e de espírito triste, como a mulher da mocidade, quando é repudiada, diz o teu Deus.</p>
+            <p>7 Por um breve momento te deixei, mas com grande misericórdia te recolherei.</p>
+            <p>8 Com um pouco de ira escondi desde mim a minha face por um momento, mas com eterna misericórdia terei compaixão de ti, diz o Senhor, teu Redentor.</p>
+            <p>9 Porque isto é como os dias de Noé para mim; assim jurei que nunca mais as águas de Noé passariam sobre a terra; assim jurei que nunca mais te indignaria, nem te repreenderei.</p>
+            <p>10 Porque os montes se retirarão, e os outeiros serão abalados, mas a minha benignidade não se apartará de ti, nem o meu pacto de paz se abalará, diz o Senhor, que se compadece de ti.</p>  
+            <p>11 Ó tu aflita, assustada e sem consolação, eis que eu porei as tuas pedras com cal, e te fundarei com safiras.</p>
+            <p>12 E farei os teus fundamentos de safiras, e as tuas portas de carbúnculos, e todos os teus muros de pedras preciosas.</p>
+            <p>13 E todos os teus filhos serão ensinados do Senhor; e a paz dos teus filhos será abundante.</p>
+            <p>14 Na justiça serás fundada; longe estará o opressor de ti; mas o que te aflige será destruído.</p>  
+            <p>15 Eis que eles se ajuntarão contra ti, mas não por minha causa; quem se ajuntar contra ti cairá por teu meio.</p>
+            <p>16 Eis que eu criei o ferreiro que assopra as brasas no fogo, e que produz uma arma para a sua obra; e eu criei o destruidor para destruir.</p>
+            <p>17 Toda arma forjada contra ti não prosperará; e toda língua que se levantar contra ti em juízo, tu a condenarás; esta é a herança dos servos do Senhor, e a sua justiça que de mim procede, diz o Senhor.</p>   
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias53.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias55.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

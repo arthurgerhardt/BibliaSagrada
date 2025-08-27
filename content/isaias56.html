@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 56</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 56</h2>
+            <h3>A Salvação para Todos</h3>
+            <p>1 Assim diz o Senhor: Guardai o juízo, e fazeie a justiça; porque a minha salvação está para vir, e a minha justiça para se manifestar.</p>   
+            <p>2 Bem-aventurado o homem que faz isto, e o filho do homem que nele persevera; que guarda o sábado, para não o profanar, e guarda a sua mão de fazer algum mal.</p>
+            <p>3 E não digais no vosso coração: A minha força e a fortaleza da minha mão me adquiriram este poder.</p>
+            <p>4 Porque assim diz o Senhor: Aos eunucos que guardarem os meus sábados, e escolherem o que me agrada, e perseverarem no meu pacto,</p>
+            <p>5 também lhes darei na minha casa e dentro dos meus muros um memorial e um nome melhor do que o de filhos e filhas; um nome eterno lhes darei, que nunca se apagará.</p>
+            <p>6 E aos filhos do estrangeiro, que se unirem ao Senhor, para o servirem, e para amarem o nome do Senhor, para serem seus servos, todos os que guardarem o sábado, para não o profanarem, e perseverarem no meu pacto,</p>
+            <p>7 também os levarei ao meu santo monte, e os alegrarei na minha casa de oração; as suas holocaustos e os seus sacrifícios serão aceitos no meu altar; porque a minha casa será chamada casa de oração para todos os povos.</p>
+            <p>8 O Senhor Deus, que congrega os dispersos de Israel, diz: Ainda congregarei outros aos que já estão congregados.</p>
+            <p>9 Todos os animais do campo virão a mim, os leões e os cordeiros, e os que seguem o caminho do mar, e os que moram nos desertos.</p>
+            <p>10 Todos os que forem chamados pelo meu nome, e que criei para a minha glória, eu os formei; sim, eu os fiz.</p>
+            <p>11 E estes cães são gulosos, não se podem fartar; e eles são pastores que nada compreendem; todos eles se tornam para o seu caminho, cada um para a sua ganância, cada um por sua parte.</p>
+            <p>12 Vinde, pois, e apresentemo-nos juntos; diz o Senhor; ainda que os vossos pecados sejam como a escarlata, eles se tornarão brancos como a neve; ainda que sejam vermelhos como o carmesim, se tornarão como a lã.</p>
+            
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias55.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias57.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

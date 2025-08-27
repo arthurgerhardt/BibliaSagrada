@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 55</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 55</h2>
+            <h3>Convite à Salvação</h3>
+            <p>1 Oh! todos os que tendes sede, vinde às águas, e vós, os que não tendes dinheiro, vinde, comprai e comei; sim, vinde, comprai sem dinheiro e sem preço vinho e leite.</p>   
+            <p>2 Por que gastais o dinheiro naquilo que não é pão? E o vosso trabalho naquilo que não satisfaz? Ouvi-me atentamente, e comei do que é bom, e a vossa alma se deleite com a gordura.</p>
+            <p>3 Inclinai os vossos ouvidos, e vinde a mim; ouvi, e a vossa alma viverá; e farei convosco um pacto eterno, as misericórdias firmes a Davi.</p>
+            <p>4 Eis que o tenho dado por testemunha aos povos, por príncipe e comandante dos povos.</p>    
+            <p>5 Eis que chamarás um povo que não conheceste, e povos que não te conheceram correrão a ti por causa do Senhor teu Deus, e do teu nome.</p>
+            <p>6 Buscai ao Senhor enquanto se pode achar, invocai-o enquanto está perto.</p>
+            <p>7 Deixe o ímpio o seu caminho, e o homem maligno os seus pensamentos; e se converta ao Senhor, que se compadecerá dele; e volte para o nosso Deus, porque grandioso é em perdoar.</p>    
+            <p>8 Porque os meus pensamentos não são os vossos pensamentos, nem os vossos caminhos os meus caminhos, diz o Senhor.</p>
+            <p>9 Porque, assim como os céus são mais altos do que a terra, assim são os meus caminhos mais altos do que os vossos caminhos, e os meus pensamentos mais altos do que os vossos pensamentos.</p>
+            <p>10 Porque, assim como a chuva e a neve descem dos céus, e para lá não tornam, mas regam am a terra, e a fazem produzir e brotar, e dar semente ao semeador, e pão ao que come;</p>
+            <p>11 assim será a minha palavra que sair da minha boca; ela não voltará para mim vazia, mas fará o que me apraz, e prosperará naquilo para que a enviei.</p>
+            <p>12 Porque com alegria saireis, e em paz sereis guiados; os montes e os outeiros romperão em cânticos diante de vós, e todas as árvores do campo baterão palmas.</p>  
+            <p>13 Em lugar do espinheiro crescerá a murta, e em lugar da urtiga crescerá o cipreste; e isto será para o Senhor por nome, por sinal eterno que nunca se apagará.</p> 
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias54.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias56.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

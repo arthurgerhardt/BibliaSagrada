@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 57</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 57</h2>
+            <h3>O Ímpio e o Justo</h3>
+            <p>1 O justo perece, e ninguém o toma a peito; e os homens de piedade são recolhidos, e ninguém entende que o justo é tirado do mal.</p>   
+            <p>2 Ele entrará na paz; descansará nos seus leitos, todos os que andam na sua retidão.</p>
+            <p>3 Mas vós, chegai-vos aqui, filhos da feiticeira, descendência da adúltera e da prostituta.</p>
+            <p>4 Com quem vos divertis? Com quem andais? Com o filho de um estranho, e com o filho de uma mulher adúltera?</p>
+            <p>5 Porque a sabedoria se tornará loucura para vós; e tornareis loucos, e sereis desarraigados,</p>
+            <p>6 e deixareis o Senhor, e desprezareis o Santo de Israel; preparais a vossa mesa para a Fortuna, e encheis o copo para o Destino.</p>
+            <p>7 A vossa maldade vos ensinará coisas novas; os vossos conselheiros são sombras à vossa vista;</p>
+            <p>8 os quais vos conduzem a um caminho tortuoso, e dizem: Não há quem vos veja. </p>
+            <p>9 Vós todos sois vaidades, e as vossas obras são nada; aquele que escolher a vossa parte não o saberá, e ele ficará envergonhado por causa dos vossos caminhos; mas o que se compadece de vós será exaltado.</p>
+            <p>10 Quem entre vós se lembra do Senhor, ou quem atenta para o seu favor, e permanece firme?</p>
+            <p>11 Mas vós vos desviastes para os mortos, e para os que foram feridos; vós vos juntastes a eles, como os que se embriagam de vinho.</p>
+            <p>12 O Senhor, porém, chamou-te desde o fim da terra, e disse: Tu és o meu servo; eu te escolhi, e não te rejeitarei.</p>
+            <p>13 Não temas, porque eu sou contigo; do oriente trarei a tua geração, e do ocidente te ajuntarei.</p>    
+            <p>14 Direi ao norte: Dá aqui; e ao sul: Não retenhas; traz para mim os meus filhos de longe, e as minhas filhas desde os confins da terra;</p>
+            <p>15 todos os que são chamados pelo meu nome, e que criei para a minha glória, eu os formei; sim, eu os fiz.</p>
+            <p>16 Trarei o meu justo, que é fiel, e ele procederá com fidelidade.</p>
+            <p>17 Mas os ímpios são todos como o mar agitado, que não pode sossegar, e cujas águas lançam lama e lodo.</p>
+            <p>18 Não há paz, diz o meu Deus, para os ímpios.</p>
+            <p>19 Os teus caminhos e os teus feitos te castigam, ó tu que habitas entre as pedras; porquanto te esqueceste do Deus da tua salvação, e não te lembraste do rochedo da tua fortaleza; por isso, embora cries, os teus deuses não te responderão; e tu serás angustiado por causa da tua maldade.</p>
+            <p>20 O homem de paz, que anda em retidão, traz paz; mas o perverso, por causa da sua maldade, cairá.</p>
+            <p>21 Vê, pois, que não há paz para os ímpios, diz o meu Deus.</p>
+            
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias56.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias58.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
