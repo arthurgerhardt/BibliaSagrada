@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 61</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 61</h2>
+            <h3>O Espírito do Senhor está sobre Mim</h3>
+            <p>1 O Espírito do Senhor Deus está sobre mim; porque o Senhor me ungiu para pregar boas novas aos mansos; enviou-me a restaurar os contritos de coração, a proclamar liberdade aos cativos, e a abertura de prisão aos presos;</p> 
+            <p>2 a apregoar o ano aceitável do Senhor, e o dia da vingança do nosso Deus; a consolar todos os que choram;</p>
+            <p>3 a pôr sobre os que choram em Sião, para lhes dar glória em vez de cinza, óleo de alegria em vez de pranto, veste de louvor em vez de espírito angustiado; e serão chamados carvalhos de justiça, plantação do Senhor, para a sua glória.</p>
+            <p>4 E reconstruirão as ruínas antigas, e levantarão os fundamentos de muitas gerações; e serás chamado reparador de brechas, e restaurador de veredas para morar.</p>
+            <p>5 E os estrangeiros te edificarão os muros, e os seus reis te servirão; porque no meu furor te feri, mas na minha benevolência tive misericórdia de ti.</p>
+            <p>6 E os teus guardas serão todos justos, e te governarão com salvação; e tu serás chamada cidade do Senhor, cidade do Deus de Jacó.</p>
+            <p>7 Em lugar da tua vergonha, terás dupla honra; e em lugar da afronta, exultarão na sua porção; por isso na sua terra possuirão o dobro, e terão perpétua alegria.</p>
+            <p>8 Porque eu, o Senhor, amo o juízo, e odeio a rapina com injustiça; e lhes darei a sua recompensa em verdade, e farei um pacto eterno com eles.</p>
+            <p>9 E as suas descendências serão conhecidas entre as nações, e os seus filhos no meio dos povos; todos os que os virem os reconhecerão, que são a posteridade que o Senhor abençoou.</p>
+            <p>10 Eu me alegrarei muito no Senhor, a minha alma se regozijará no meu Deus; porque me vestiu com as vestes da salvação, cobriu-me com o manto da justiça, como noivo que se adorna com a sua coroa, e como a noiva que se enfeita com as suas joias.</p>
+            <p>11 Porque, como a terra faz brotar a sua relva, e como o jardim faz germinar a semente, assim o Senhor Deus fará brotar a justiça e o louvor diante de todas as nações.</p>  
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias60.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias62.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

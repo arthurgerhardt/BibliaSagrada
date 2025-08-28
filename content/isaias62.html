@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 62</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 62</h2>
+            <h3>Sião Restaurada e Glorificada</h3>
+            <p>1 Por amor de Sião não me calarei, e por amor de Jerusalém não me aquietarei, até que a sua justiça saia como resplendor, e a sua salvação como uma tocha acesa.</p>
+            <p>2 E as nações verão a tua justiça, e todos os reis a tua glória; e chamar-te-ão por um nome novo, que a boca do Senhor nomeará.</p>
+            <p>3 E serás uma coroa de glória na mão do Senhor, e um diadema real na mão do teu Deus.</p>
+            <p>4 Nunca mais te chamarão desamparada, nem a tua terra se denominará mais assolada; mas chamar-te-ão Hefzibá, e à tua terra Beulá; porque o Senhor se deleita em ti, e a tua terra se casará.</p>
+            <p>5 Porque, como o jovem se casa com a virgem, assim teus filhos se casarão contigo; e, como o noivo se alegra com a noiva, assim se alegrará contigo o teu Deus.</p>
+            <p>6 Ó Jerusalém, sobre os teus muros pus guardas, que todo o dia e toda a noite jamais se calarão; vós, os que fazeis lembrado o Senhor, não haja descanso em vós,</p>
+            <p>7 Nem deis a ele descanso, até que estabeleça, e até que ponha a Jerusalém por louvor na terra.</p>
+            <p>8 O Senhor jurou por sua mão direita e pelo braço da sua força: Nunca mais darei o teu trigo por mantimento aos teus inimigos, nem os filhos de estranhos beberão o vinho que trabalhaste.</p>
+            <p>9 Mas os que o colherem o comerão, e louvarão ao Senhor; e os que o recolherem beberão nos átrios do meu santuário.</p>
+            <p>10 Passai, passai pelas portas; preparai o caminho ao povo; aplainai, aplainai a estrada; tirai as pedras; levantai um estandarte aos povos.</p>
+            <p>11 Eis que o Senhor fez ouvir até a extremidade da terra estas palavras: Dizei à filha de Sião: Eis que vem o teu Salvador; eis que com ele vem o seu galardão, e diante dele, a sua obra.</p>
+            <p>12 E chamar-lhes-ão: O povo santo, os remidos do Senhor; e tu serás chamada: Procurada, cidade não desamparada.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias61.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias63.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
