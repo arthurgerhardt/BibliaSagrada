@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 65</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 65</h2>
+            <h3>Promessas de restauração e bênçãos futuras</h3>
+            <p>1 Fui buscado pelos que não perguntavam por mim; fui achado por aqueles que não me buscavam; a uma nação que não se chamava pelo meu nome, eu disse: Eis-me aqui, eis-me aqui.</p>
+            <p>2 Estendi as minhas mãos todo o dia a um povo rebelde, que anda por caminho que não é bom, após os seus próprios pensamentos;</p>
+            <p>3 Povo que de contínuo me irrita diante da minha face, sacrificando em jardins e queimando incenso sobre altares de tijolos;</p>
+            <p>4 Que habita entre as sepulturas e passa noites em esconderijos; que come carne de porco, e nos seus vasos há caldo de coisas abomináveis;</p>
+            <p>5 Que dizem: Fica onde estás, não te chegues a mim, porque sou mais santo do que tu. Estes são fumaça no meu nariz, um fogo que arde o dia todo.</p>
+            <p>6 Eis que está escrito diante de mim: não me calarei, mas pagarei; sim, pagarei no seu seio,</p>
+            <p>7 As suas iniquidades, e as iniquidades de seus pais juntamente, diz o Senhor, porque queimaram incenso nos montes e me afrontaram nos outeiros; pelo que lhes medirei em primeiro lugar a recompensa de suas obras.</p>
+            <p>8 Assim diz o Senhor: Como quando se acha mosto num cacho de uvas, dizem: Não o destruas, pois há bênção nele; assim farei por amor de meus servos, para que não os destrua a todos.</p>
+            <p>9 E produzirei descendência de Jacó, e de Judá um herdeiro dos meus montes; e os meus escolhidos herdarão a terra, e os meus servos habitarão nela.</p>
+            <p>10 E Sarom servirá de campo de pasto de ovelhas, e o vale de Acor, de lugar de repouso de gado, para o meu povo que me busca.</p>
+            <p>11 Mas vós, os que deixais ao Senhor, que vos esqueceis do meu santo monte, que preparais mesa para a Fortuna, e que encheis taças de vinho misturado para o Destino,</p>
+            <p>12 Também vos destinarei à espada, e todos vos encurvareis à matança; porquanto chamei e não respondestes, falei e não ouvistes, mas fizestes o que é mau aos meus olhos, e escolhestes aquilo em que eu não tinha prazer.</p>
+            <p>13 Pelo que assim diz o Senhor Deus: Eis que os meus servos comerão, mas vós tereis fome; eis que os meus servos beberão, mas vós tereis sede; eis que os meus servos se alegrarão, mas vós vos envergonhareis.</p>
+            <p>14 Eis que os meus servos cantarão por alegria de coração, mas vós clamareis por tristeza de coração, e por quebrantamento de espírito uivareis.</p>
+            <p>15 E deixareis o vosso nome por maldição aos meus escolhidos; e o Senhor Deus vos matará, mas aos seus servos chamará por outro nome.</p>
+            <p>16 De sorte que aquele que se bendizer na terra, se bendirá no Deus da verdade; e aquele que jurar na terra, jurará pelo Deus da verdade; porque já estão esquecidas as angústias passadas, e estão escondidas dos meus olhos.</p>
+            <p>17 Porque eis que eu crio novos céus e nova terra; e não haverá lembrança das coisas passadas, nem mais se recordarão.</p>
+            <p>18 Mas vós folgareis e exultareis perpetuamente no que eu crio; porque eis que crio para Jerusalém alegria, e para o seu povo gozo.</p>
+            <p>19 E exultarei com Jerusalém, e me alegrarei no meu povo; e nunca mais se ouvirá nela voz de choro nem voz de clamor.</p>
+            <p>20 Não haverá mais nela criança de poucos dias, nem velho que não cumpra os seus dias; porque o menino morrerá de cem anos, porém o pecador de cem anos será amaldiçoado.</p>
+            <p>21 E edificarão casas, e as habitarão; e plantarão vinhas, e comerão o seu fruto.</p>
+            <p>22 Não edificarão para que outro habite; não plantarão para que outro coma; porque os dias do meu povo serão como os dias das árvores, e os meus escolhidos desfrutarão das obras das suas mãos.</p>
+            <p>23 Não trabalharão debalde, nem terão filhos para a perturbação; porque são a semente dos benditos do Senhor, e os seus descendentes com eles.</p>
+            <p>24 E será que antes que clamem, eu responderei; estando eles ainda falando, eu os ouvirei.</p>
+            <p>25 O lobo e o cordeiro se alimentarão juntos, e o leão comerá palha como o boi; e pó será a comida da serpente. Não farão mal nem dano algum em todo o meu santo monte, diz o Senhor.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias64.html">Capítulo Anterior</a>
+            <a class="button" href="../content/isaias66.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

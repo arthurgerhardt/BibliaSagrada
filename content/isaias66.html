@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Isaías 66</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Isaías 66</h2>
+            <h3>Isaías 66</h3>
+            <p>1 Assim diz o Senhor: O céu é o meu trono, e a terra o estrado dos meus pés; que casa me edificareis vós? E qual seria o lugar do meu repouso?</p>
+            <p>2 Porque a minha mão fez todas estas coisas, e todas vieram a existir, diz o Senhor; mas para esse olharei, para o humilde e contrito de espírito, que treme diante da minha palavra.</p>
+            <p>3 Quem mata um boi é como o que fere um homem; quem sacrifica um cordeiro, como o que quebra o pescoço a um cão; quem oferece uma oferta de cereais, como o que oferece sangue de porco; quem queima incenso, como o que bendiz um ídolo. Também estes escolheram os seus próprios caminhos, e a sua alma se deleita nas suas abominações.</p>
+            <p>4 Também eu escolherei para eles o que lhes é motivo de escárnio, e trarei sobre eles o que temem; porque quando eu chamei, ninguém respondeu; quando falei, não escutaram; mas fizeram o que era mau aos meus olhos, e escolheram aquilo em que eu não tinha prazer.</p>
+            <p>5 Ouvi a palavra do Senhor, vós que tremeis diante da sua palavra: Vossos irmãos que vos odeiam, e que vos lançam fora por causa do meu nome, dizem: O Senhor seja glorificado, para que vejamos a vossa alegria; mas eles serão confundidos.</p>
+            <p>6 Uma voz de grande tumulto virá da cidade, uma voz do templo, a voz do Senhor, que dá recompensa aos seus inimigos.</p>
+            <p>7 Antes que estivesse de parto, deu à luz; antes que lhe viessem as dores, deu à luz um filho.</p>
+            <p>8 Quem ouviu tal coisa? Quem viu coisas semelhantes? Poder-se-ia fazer nascer uma terra num só dia? Ou nasceria uma nação de uma só vez? Mas Sião esteve de parto e já deu à luz seus filhos.</p>
+            <p>9 Abriria eu a madre, e não faria nascer? diz o Senhor; geraria eu, e impediria o nascimento? diz o teu Deus.</p>
+            <p>10 Alegrai-vos com Jerusalém, e exultai por ela, todos vós que a amais; regozijai-vos com ela, todos vós que por ela pranteastes.</p>
+            <p>11 Para que mameis e vos sacieis com o leite da sua consolação; para que sorvais e vos deleiteis com a abundância da sua glória.</p>
+            <p>12 Porque assim diz o Senhor: Eis que estenderei sobre ela a paz como um rio, e a glória das nações como um fluxo transbordante; então mamareis, ao colo sereis levados, e sobre os joelhos sereis afagados.</p>
+            <p>13 Como alguém a quem sua mãe consola, assim eu vos consolarei; e em Jerusalém sereis consolados.</p>
+            <p>14 E vereis isto, e o vosso coração se alegrará, e os vossos ossos florescerão como a erva; e a mão do Senhor será conhecida aos seus servos, e indignação contra os seus inimigos.</p>
+            <p>15 Porque, eis que o Senhor virá em fogo, e os seus carros como um torvelinho, para descarregar com furor a sua ira, e a sua repreensão com chamas de fogo.</p>
+            <p>16 Porque com fogo e com a sua espada entrará o Senhor em juízo com toda carne; e os mortos do Senhor serão muitos.</p>
+            <p>17 Os que se santificam e se purificam nos jardins, uns após outros, que comem carne de porco, e abominação, e rato, juntamente serão consumidos, diz o Senhor.</p>
+            <p>18 Porque conheço as suas obras e os seus pensamentos; vem o tempo em que ajuntarei todas as nações e línguas; e elas virão, e verão a minha glória.</p>
+            <p>19 E porei entre eles um sinal, e enviarei alguns dos que dentre eles escaparem às nações: a Társis, a Pul, a Lude, aos flecheiros, a Tubal e a Javã, às ilhas de longe, que não ouviram a minha fama, nem viram a minha glória; e anunciarão a minha glória entre as nações.</p>
+            <p>20 E trarão todos os vossos irmãos dentre todas as nações, por oferta ao Senhor, sobre cavalos, e em carros, e em liteiras, e sobre mulas, e sobre dromedários, ao meu santo monte, a Jerusalém, diz o Senhor; como os filhos de Israel trazem a oferta em vaso limpo à casa do Senhor.</p>
+            <p>21 E também deles tomarei para sacerdotes e para levitas, diz o Senhor.</p>
+            <p>22 Porque, como os novos céus e a nova terra, que hei de fazer, estarão diante de mim, diz o Senhor, assim estará a vossa posteridade e o vosso nome.</p>
+            <p>23 E será que, de uma lua nova a outra, e de um sábado a outro, virá toda carne a adorar perante mim, diz o Senhor.</p>
+            <p>24 E sairão, e verão os cadáveres dos homens que prevaricaram contra mim; porque o seu verme nunca morrerá, nem o seu fogo se apagará; e serão um horror para toda carne.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias65.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

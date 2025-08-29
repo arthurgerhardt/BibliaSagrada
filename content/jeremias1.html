@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 1</h2>
+            <h3>Chamado de Jeremias</h3>
+            <p>1 Palavras de Jeremias, filho de Hilquias, um dos sacerdotes que estavam em Anatote, na terra de Benjamim.</p>
+            <p>2 A ele veio a palavra do Senhor nos dias de Josias, filho de Amom, rei de Judá, no décimo terceiro ano do seu reinado.</p>
+            <p>3 E veio também nos dias de Jeoaquim, filho de Josias, rei de Judá, até ao fim do ano undécimo de Zedequias, filho de Josias, rei de Judá, até que Jerusalém foi levada em cativeiro no quinto mês.</p>
+            <p>4 Assim veio a mim a palavra do Senhor, dizendo:</p>
+            <p>5 Antes que te formasse no ventre te conheci, e, antes que saísses da madre, te santifiquei; às nações te dei por profeta.</p>
+            <p>6 Então disse eu: Ah, Senhor Deus! Eis que não sei falar; porque sou uma criança.</p>
+            <p>7 Mas o Senhor me disse: Não digas: Sou uma criança; porque a todos a quem eu te enviar irás; e tudo quanto te mandar falarás.</p>
+            <p>8 Não temas diante deles, porque eu sou contigo para te livrar, diz o Senhor.</p>
+            <p>9 E o Senhor estendeu a sua mão, e tocou-me na boca; e disse-me o Senhor: Eis que ponho as minhas palavras na tua boca.</p>
+            <p>10 Olha, ponho-te neste dia sobre as nações e sobre os reinos, para arrancares, e para derribares, e para destruíres, e para arruinares; e também para edificares e para plantares.</p>
+            <p>11 Ainda veio a mim a palavra do Senhor, dizendo: Que vês tu, Jeremias? E eu disse: Vejo uma vara de amendoeira.</p>
+            <p>12 E disse-me o Senhor: Viste bem; porque eu velo sobre a minha palavra para a cumprir.</p>
+            <p>13 E veio a mim segunda vez a palavra do Senhor, dizendo: Que vês? E eu disse: Vejo uma panela a ferver, cuja boca se encontra voltada do norte.</p>
+            <p>14 E disse-me o Senhor: Do norte se derramará o mal sobre todos os habitantes da terra.</p>
+            <p>15 Porque eis que eu convoco todas as famílias dos reinos do norte, diz o Senhor; e virão, e porão cada um o seu trono à entrada das portas de Jerusalém, e contra todos os seus muros em redor, e contra todas as cidades de Judá.</p>
+            <p>16 E pronunciarei contra eles os meus juízos, por causa de toda a sua malícia; pois me deixaram, e queimaram incenso a deuses estranhos, e adoraram as obras das suas próprias mãos.</p>
+            <p>17 Tu, pois, cinge os teus lombos, e levanta-te, e dize-lhes tudo quanto eu te mandar; não temas diante deles, para que eu não te faça temer diante deles.</p>
+            <p>18 Porque eis que hoje te ponho por cidade fortificada, e por coluna de ferro, e por muros de bronze, contra toda esta terra, contra os reis de Judá, contra os seus príncipes, contra os seus sacerdotes, e contra o povo da terra.</p>
+            <p>19 E pelejarão contra ti, mas não prevalecerão contra ti; porque eu sou contigo, diz o Senhor, para te livrar.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/isaias66.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
