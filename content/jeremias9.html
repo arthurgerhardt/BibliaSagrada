@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 9</h2>
+            <h3>Lamento pela ruína de Jerusalém</h3>
+            <p>1 Oh! se a minha cabeça se tornasse em águas, e os meus olhos numa fonte de lágrimas, para que eu chorasse de dia e de noite os mortos da filha do meu povo!</p>
+            <p>2 Oh! se eu tivesse no deserto uma estalagem de caminhantes, para que deixasse o meu povo, e me apartasse deles! porque todos eles são adúlteros, um bando de aleivosos.</p>
+            <p>3 E encurvam a língua como o seu arco para a mentira; e fortalecem-se na terra, mas não para a verdade; porque avançam de maldade em maldade, e a mim não me conhecem, diz o Senhor.</p>
+            <p>4 Guardai-vos cada um do seu companheiro, e de irmão nenhum vos fieis; porque todo o irmão não faz mais do que enganar, e todo o companheiro anda caluniando.</p>
+            <p>5 E zombam uns dos outros, e não falam a verdade; exercitam a sua língua para mentir; cansam-se de proceder perversamente.</p>
+            <p>6 A tua habitação está no meio do engano; pelo engano recusam conhecer-me, diz o Senhor.</p>
+            <p>7 Portanto assim diz o Senhor dos Exércitos: Eis que os refinarei e os provarei; pois que mais poderia eu fazer pela filha do meu povo?</p>
+            <p>8 A sua língua é uma seta mortífera, fala enganosamente; cada um fala de paz ao seu próximo com a boca, mas no coração arma-lhe ciladas.</p>
+            <p>9 Por estas coisas não os visitaria eu? diz o Senhor; ou não se vingaria a minha alma de tal nação como esta?</p>
+            <p>10 Pelos montes levantarei choro e lamentação, e pelas pastagens do deserto um pranto; porque já estão queimadas, e ninguém passa por elas, nem ouvem mais o bramido do gado; tanto as aves do céu como os animais fugiram, foram-se.</p>
+            <p>11 E farei de Jerusalém um montão de pedras, morada de chacais; e das cidades de Judá uma desolação, sem habitante.</p>
+            <p>12 Quem é o homem sábio, que entenda isto? E a quem falou a boca do Senhor, para que o possa anunciar? Por que razão pereceu a terra e se queimou como o deserto, sem que ninguém passe por ela?</p>
+            <p>13 E disse o Senhor: Porque deixaram a minha lei, que pus perante eles, e não obedeceram à minha voz, nem andaram nela;</p>
+            <p>14 Antes, andaram após o propósito do seu coração, e após os baalins, como lhes ensinaram seus pais.</p>
+            <p>15 Portanto assim diz o Senhor dos Exércitos, o Deus de Israel: Eis que darei a este povo, por alimento, absinto, e lhes darei a beber águas de fel.</p>
+            <p>16 E os espalharei entre as nações, que nem eles nem seus pais conheceram; e enviarei atrás deles a espada, até que eu os consuma.</p>
+            <p>17 Assim diz o Senhor dos Exércitos: Considerai, e chamai as carpideiras, para que venham; e mandai buscar as hábeis, para que venham;</p>
+            <p>18 E se apressam, e levantem sobre nós o pranto, e corram dos nossos olhos as lágrimas, e das nossas pálpebras corra água.</p>
+            <p>19 Porque a voz do pranto se ouve de Sião: Como estamos destruídos! Estamos sobremodo envergonhados, porque deixamos a terra, por terem derrubado as nossas moradas.</p>
+            <p>20 Ouvi, pois, vós, mulheres, a palavra do Senhor, e os vossos ouvidos recebam a palavra da sua boca; e ensinai o pranto a vossas filhas, e cada uma à sua companheira a lamentação.</p>
+            <p>21 Porque a morte subiu pelas nossas janelas, entrou em nossos palácios; exterminou das ruas as crianças, e os jovens das praças.</p>
+            <p>22 Fala: Assim diz o Senhor: Os cadáveres dos homens jazem como esterco sobre a face do campo, como gavela atrás do segador, e não há quem os recolha.</p>
+            <p>23 Assim diz o Senhor: Não se glorie o sábio na sua sabedoria, nem se glorie o forte na sua força, nem o rico se glorie nas suas riquezas;</p>
+            <p>24 Mas o que se gloriar, glorie-se nisto: em me conhecer e saber que eu sou o Senhor, que faço beneficência, juízo e justiça na terra; porque destas coisas me agrado, diz o Senhor.</p>
+            <p>25 Eis que vêm dias, diz o Senhor, em que visitarei a todo o circuncidado com o incircunciso.</p>
+            <p>26 Ao Egito, e a Judá, e a Edom, e aos filhos de Amom, e a Moabe, e a todos os que cortam os cantos do cabelo, que habitam no deserto; porque todas as nações são incircuncisas, e toda a casa de Israel é incircuncisa de coração.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

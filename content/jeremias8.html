@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 8</h2>
+            <h3>O Juízo sobre Judá</h3>
+            <p>1 Naquele tempo, diz o Senhor, tirarão os ossos dos reis de Judá, e os ossos dos seus príncipes, e os ossos dos sacerdotes, e os ossos dos profetas, e os ossos dos habitantes de Jerusalém dos seus sepulcros.</p>
+            <p>2 E expô-los-ão ao sol, e à lua, e a todo o exército dos céus, a quem amaram, e a quem serviram, e após quem andaram, e a quem buscaram, e diante de quem se prostraram; não serão recolhidos nem sepultados; servirão de esterco sobre a face da terra.</p>
+            <p>3 E escolherão antes a morte do que a vida todos os que restarem desta raça maligna, em todos os lugares onde os tiverem lançado, diz o Senhor dos Exércitos.</p>
+            <p>4 Dize-lhes mais: Assim diz o Senhor: Porventura cairão, e não se tornarão a levantar? Ou desviar-se-ão, e não tornarão?</p>
+            <p>5 Por que, pois, este povo de Jerusalém está rebelde com rebeldia contínua? Persiste em engano, não quer voltar.</p>
+            <p>6 Eu escutei e ouvi; não falam o que é reto; ninguém há que se arrependa da sua maldade, dizendo: Que fiz eu? Cada um volta ao seu curso, como o cavalo que arremete com ímpeto na batalha.</p>
+            <p>7 Até a cegonha no céu conhece os seus tempos determinados; e a rola, e o grou, e a andorinha observam o tempo da sua arribação; mas o meu povo não conhece o juízo do Senhor.</p>
+            <p>8 Como dizeis: Somos sábios, e a lei do Senhor está conosco? Eis que em vão a têm trabalhado os escribas; a pena dos escribas é em vão.</p>
+            <p>9 Os sábios são envergonhados, estão espantados e presos; eis que rejeitaram a palavra do Senhor; que sabedoria têm eles?</p>
+            <p>10 Portanto darei suas mulheres a outros, e seus campos a outros possuidores; porque desde o menor até ao maior, cada um se dá à avareza; desde o profeta até ao sacerdote, cada um usa de falsidade.</p>
+            <p>11 E curam a ferida da filha do meu povo levianamente, dizendo: Paz, paz; quando não há paz.</p>
+            <p>12 Porventura envergonhar-se-ão de cometerem abominação? Não, de modo nenhum se envergonham, nem sabem o que é envergonhar-se; portanto cairão entre os que caem; no tempo em que eu os visitar, tropeçarão, diz o Senhor.</p>
+            <p>13 Certamente os consumirei, diz o Senhor; não haverá uvas na vide, nem figos na figueira, e a folha cairá; e lhes darei aqueles que passarão por eles.</p>
+            <p>14 Por que estamos sentados? Ajuntai-vos, e entremos nas cidades fortificadas, e ali pereçamos; porque o Senhor nosso Deus nos fez calar, e nos deu a beber água de fel; porque pecamos contra o Senhor.</p>
+            <p>15 Espera-se a paz, e não há bem; o tempo da cura, e eis o terror.</p>
+            <p>16 Desde Dã se ouve o resfolegar dos seus cavalos; toda a terra treme ao som do relinchar dos seus valentes; e vêm, e devoram a terra e a sua abundância, a cidade e os que habitam nela.</p>
+            <p>17 Porque eis que envio entre vós serpentes, áspides, contra as quais não há encantamento; e vos morderão, diz o Senhor.</p>
+            <p>18 Ó minha força! para ti olharei; porque tu és o Senhor Deus.</p>
+            <p>19 Eis o clamor da filha do meu povo de terra remota: Não está o Senhor em Sião? Não está nela o seu Rei? Por que me provocaram à ira com suas imagens de escultura, com vaidades estranhas?</p>
+            <p>20 Passou a sega, findou o verão, e nós não estamos salvos.</p>
+            <p>21 Estou quebrantado pela ferida da filha do meu povo; estou de luto; o espanto se apoderou de mim.</p>
+            <p>22 Porventura não há bálsamo em Gileade? Ou não há ali médico? Por que, pois, não se realizou a cura da filha do meu povo?</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

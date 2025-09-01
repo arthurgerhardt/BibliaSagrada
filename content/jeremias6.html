@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 6</h2>
+            <h3>A destruição de Jerusalém é anunciada</h3>
+            <p>1 Fugi, filhos de Benjamim, do meio de Jerusalém, e tocai a trombeta em Tecoa, e levantai um sinal sobre Bete-Haquerém; porque do norte está pendendo um mal, e uma grande destruição.</p>
+            <p>2 A formosa e delicada, a filha de Sião, eu destruirei.</p>
+            <p>3 Contra ela virão pastores com os seus rebanhos; armarão tendas ao redor dela, e cada um apascentará no seu lugar.</p>
+            <p>4 Preparai guerra contra ela; levantai-vos, e subamos ao meio-dia. Ai de nós! Que já declina o dia, que já se vão estendendo as sombras da tarde.</p>
+            <p>5 Levantai-vos, e subamos de noite, e destruamos os seus palácios.</p>
+            <p>6 Porque assim diz o Senhor dos Exércitos: Cortai árvores, e levantai tranqueiras contra Jerusalém; esta é a cidade que deve ser castigada; ela está cheia de opressão no meio dela.</p>
+            <p>7 Como a fonte produz as suas águas, assim ela produz a sua maldade; violência e destruição se ouvem nela; enfermidades e feridas há continuamente diante de mim.</p>
+            <p>8 Corrige-te, ó Jerusalém, para que a minha alma não se aparte de ti; para que eu não te faça em desolação, em terra desabitada.</p>
+            <p>9 Assim diz o Senhor dos Exércitos: Diligentemente colherão como a vide todos os restantes de Israel; torna a pôr a tua mão como o vindimador sobre os sarmentos.</p>
+            <p>10 A quem falarei e testemunharei, para que ouçam? Eis que os seus ouvidos estão incircuncisos, e não podem ouvir; eis que a palavra do Senhor é para eles coisa vergonhosa; não gostam dela.</p>
+            <p>11 Por isso estou cheio do furor do Senhor; estou cansado de o conter; derramá-lo-ei sobre as crianças na rua, e sobre a reunião dos jovens; porque até o marido com a mulher serão presos, o velho com o cheio de dias.</p>
+            <p>12 E as suas casas passarão a outros, com os campos e as mulheres igualmente; porque estenderei a minha mão sobre os habitantes desta terra, diz o Senhor.</p>
+            <p>13 Porque desde o menor deles até ao maior, cada um se dá à avareza; e desde o profeta até ao sacerdote, cada um usa de falsidade.</p>
+            <p>14 E curam a ferida da filha do meu povo levianamente, dizendo: Paz, paz; quando não há paz.</p>
+            <p>15 Porventura envergonharam-se de cometer abominação? Não, de modo nenhum se envergonham, nem sabem o que é envergonhar-se; portanto cairão entre os que caem; quando eu os visitar, serão derrubados, diz o Senhor.</p>
+            <p>16 Assim diz o Senhor: Ponde-vos nos caminhos, e vede, e perguntai pelas veredas antigas, qual é o bom caminho, e andai por ele; e achareis descanso para as vossas almas; mas dizem: Não andaremos nele.</p>
+            <p>17 Também pus atalaias sobre vós, dizendo: Estai atentos ao som da trombeta; mas dizem: Não estaremos atentos.</p>
+            <p>18 Portanto ouvi, ó nações, e entende, ó congregação, o que se faz entre eles.</p>
+            <p>19 Ouve tu, ó terra: Eis que eu trarei mal sobre este povo, o fruto dos seus pensamentos; porque não estão atentos às minhas palavras, e rejeitam a minha lei.</p>
+            <p>20 Para que, pois, me vem o incenso de Sabá, e a boa cana de Calá distante? Os vossos holocaustos não são aceitáveis, nem os vossos sacrifícios me agradam.</p>
+            <p>21 Portanto assim diz o Senhor: Eis que eu porei tropeços a este povo, e tropeçarão neles pais e filhos juntamente; o vizinho e o companheiro perecerão.</p>
+            <p>22 Assim diz o Senhor: Eis que um povo vem da terra do norte, e uma grande nação se levantará dos lados da terra.</p>
+            <p>23 Armam-se com arco e com lança; são cruéis, e não terão compaixão; o seu ruído brama como o mar, e montam a cavalo, postos em ordem como homens de guerra contra ti, ó filha de Sião.</p>
+            <p>24 Ouvimos a sua fama, afrouxaram-se as nossas mãos; angústia nos tomou, dores como da que está de parto.</p>
+            <p>25 Não saiais ao campo, nem andeis pelo caminho; porque o inimigo tem espada, e há espanto ao redor.</p>
+            <p>26 Ó filha do meu povo, cinge-te de saco, e revolve-te na cinza; pranteia como por filho único, pranto de amarguras; porque de repente virá sobre nós o destruidor.</p>
+            <p>27 Por torre te pus entre o meu povo, por fortaleza, para que soubesses e examinasses o seu caminho.</p>
+            <p>28 Todos eles são rebeldes, andando de calúnia em calúnia; são bronze e ferro; todos eles são corruptores.</p>
+            <p>29 O fole está queimado, o chumbo está consumido pelo fogo; em vão continua a fundição, porque os maus não são arrancados.</p>
+            <p>30 Prata rejeitada lhes chamarão, porque o Senhor os rejeitou.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
