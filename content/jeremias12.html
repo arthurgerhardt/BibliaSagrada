@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 12</h2>
+            <h3>Queixa de Jeremias e Resposta de Deus</h3>
+            <p>1 Justo és, ó Senhor, quando entro contigo em questão; contudo, falarei contigo dos teus juízos. Por que prospera o caminho dos ímpios? Por que vivem tranquilos todos os que cometem perfídia?</p>
+            <p>2 Plantaste-os, e eles têm raízes, crescem, dão fruto; estás perto da boca deles, mas longe dos seus rins.</p>
+            <p>3 Mas tu, ó Senhor, me conheces, tu me vês, e provas o meu coração para contigo; arranca-os como ovelhas para o matadouro, e prepara-os para o dia da matança.</p>
+            <p>4 Até quando lamentará a terra, e se secará a erva de todo o campo? Pela maldade dos que nela habitam, perecem os animais e as aves, porque dizem: Ele não verá o nosso fim.</p>
+            <p>5 Se te fatigas correndo com homens que vão a pé, como poderás competir com os que vão a cavalo? Se numa terra de paz não te sentes seguro, como farás na floresta do Jordão?</p>
+            <p>6 Porque até os teus irmãos e a casa de teu pai, eles próprios procedem perfidamente contigo, eles mesmos clamam fortemente após ti; não lhes creias, ainda que te falem coisas boas.</p>
+            <p>7 Deixei a minha casa, abandonei a minha herança, entreguei o que amava na mão de seus inimigos.</p>
+            <p>8 A minha herança tornou-se para mim como um leão na floresta; levantou contra mim a sua voz, por isso a aborreci.</p>
+            <p>9 A minha herança é para mim como uma ave de rapina de várias cores; as aves de rapina estão contra ela em redor; vinde, pois, ajuntai todos os animais do campo, trazei-os para devorá-la.</p>
+            <p>10 Muitos pastores destruíram a minha vinha, pisaram o meu campo, tornaram em deserto o meu campo desejado.</p>
+            <p>11 Tornaram-no em desolação, e, diante de mim, está de luto, desolado; toda a terra foi assolada, porque ninguém há que tome isso a peito.</p>
+            <p>12 Sobre todos os altos do deserto vieram destruidores, porque a espada do Senhor devora desde uma extremidade da terra até à outra extremidade da terra; não há paz para ninguém.</p>
+            <p>13 Semearam trigo, mas colheram espinhos; cansaram-se, mas não aproveitam nada; envergonhar-vos-eis dos vossos frutos, por causa do ardor da ira do Senhor.</p>
+            <p>14 Assim diz o Senhor contra todos os meus maus vizinhos, que tocam na herança que fiz herdar ao meu povo de Israel: Eis que os arrancarei da sua terra, e arrancarei a casa de Judá do meio deles.</p>
+            <p>15 E será que, depois de os arrancar, tornarei a compadecer-me deles, e os farei voltar, cada um à sua herança, e cada um à sua terra.</p>
+            <p>16 E será que, se diligentemente aprenderem os caminhos do meu povo, jurando pelo meu nome: Vive o Senhor, como ensinaram ao meu povo a jurar por Baal, então serão edificados no meio do meu povo.</p>
+            <p>17 Mas, se não obedecerem, arrancarei totalmente tal nação, e a destruirei, diz o Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

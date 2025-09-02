@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 13</h2>
+            <h3>O Sinal do Cinto de Linho</h3>
+            <p>1 Assim me disse o Senhor: Vai, e compra um cinto de linho, e põe-no sobre os teus lombos, e não o metas na água.</p>
+            <p>2 E comprei o cinto, conforme a palavra do Senhor, e o pus sobre os meus lombos.</p>
+            <p>3 Então veio a mim a palavra do Senhor segunda vez, dizendo:</p>
+            <p>4 Toma o cinto que compraste, que está sobre os teus lombos, e levanta-te, vai ao Eufrates, e esconde-o ali na fenda de uma rocha.</p>
+            <p>5 E fui, e escondi-o junto ao Eufrates, como o Senhor me havia ordenado.</p>
+            <p>6 Passados muitos dias, disse-me o Senhor: Levanta-te, vai ao Eufrates, e toma dali o cinto que te ordenei que ali escondesses.</p>
+            <p>7 Então fui ao Eufrates, cavei, e tomei o cinto do lugar onde o tinha escondido; e eis que o cinto estava estragado, para nada prestava.</p>
+            <p>8 Então veio a mim a palavra do Senhor, dizendo:</p>
+            <p>9 Assim diz o Senhor: Assim farei apodrecer a soberba de Judá, e a grande soberba de Jerusalém.</p>
+            <p>10 Este povo maligno, que se recusa a ouvir as minhas palavras, que anda segundo a dureza do seu coração, e anda após outros deuses, para os servir e para os adorar, será como este cinto, que para nada presta.</p>
+            <p>11 Porque como o cinto se apega aos lombos do homem, assim fiz apegar-se a mim toda a casa de Israel e toda a casa de Judá, diz o Senhor, para me serem por povo, e por nome, e por louvor, e por glória; mas não deram ouvidos.</p>
+            <p>12 Portanto lhes dirás esta palavra: Assim diz o Senhor Deus de Israel: Todo odre se encherá de vinho. E dirão eles: Porventura não sabemos nós que todo odre se encherá de vinho?</p>
+            <p>13 Então lhes dirás: Assim diz o Senhor: Eis que eu encherei de embriaguez todos os habitantes desta terra, e os reis que se assentam sobre o trono de Davi, e os sacerdotes, e os profetas, e todos os habitantes de Jerusalém.</p>
+            <p>14 E os despedaçarei, uns contra os outros, e os pais contra os filhos juntamente, diz o Senhor; não pouparei, nem terei piedade, nem terei compaixão, para que não os destrua.</p>
+            <p>15 Ouvi, e atentai, não vos ensoberbeçais; porque o Senhor falou.</p>
+            <p>16 Dai glória ao Senhor vosso Deus, antes que faça vir as trevas, e antes que tropecem os vossos pés nos montes tenebrosos; e, enquanto esperais luz, ele a converta em sombra de morte, e a transforme em escuridão.</p>
+            <p>17 Mas, se isto não ouvirdes, a minha alma chorará em segredo por causa da vossa soberba; e chorando amargamente, os meus olhos se desfarão em lágrimas, porque o rebanho do Senhor foi levado cativo.</p>
+            <p>18 Dize ao rei e à rainha: Humilhai-vos, assentai-vos no chão, porque já caiu de vossas cabeças a coroa da vossa glória.</p>
+            <p>19 As cidades do sul estão fechadas, e ninguém há que as abra; todo o Judá foi levado cativo, todo ele foi levado cativo.</p>
+            <p>20 Levanta os teus olhos, e vê os que vêm do norte; onde está o rebanho que te foi dado, o teu lindo rebanho?</p>
+            <p>21 Que dirás quando ele te punir? Porque tu os ensinaste a serem chefes e cabeça sobre ti; não te tomarão as dores como da que está de parto?</p>
+            <p>22 Se disseres no teu coração: Por que me sucederam estas coisas? Pela multidão das tuas iniquidades foram levantadas as abas das tuas vestes, e os teus calcanhares sofrem violência.</p>
+            <p>23 Pode o etíope mudar a sua pele, ou o leopardo as suas manchas? Então podereis fazer o bem, estando acostumados a fazer o mal.</p>
+            <p>24 Por isso os espalharei como a palha que passa com o vento do deserto.</p>
+            <p>25 Esta é a tua sorte, a porção que te tenho medido, diz o Senhor, porque te esqueceste de mim, e confiaste em mentiras.</p>
+            <p>26 Assim também levantarei as abas das tuas vestes sobre o teu rosto, e aparecerá a tua vergonha.</p>
+            <p>27 Os teus adultérios, e os teus relinchos, a maldade da tua prostituição sobre os outeiros, no campo, vi as tuas abominações. Ai de ti, Jerusalém! Até quando não te purificarás?</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
