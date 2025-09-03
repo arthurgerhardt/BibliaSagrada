@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 17</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 17</h2>
+            <h3>O Juízo de Deus sobre Judá</h3>
+            <p>1 A maldição do homem que confia no homem, e faz da carne o seu braço, e aparta o seu coração do Senhor.</p>
+            <p>2 Porque será como o arbusto no deserto, e não verá quando vem o bem; antes habitará nos lugares secos do deserto, na terra salgada e inabitável.</p>
+            <p>3 Bendito o homem que confia no Senhor, e cuja esperança é o Senhor.</p>
+            <p>4 Porque será como a árvore plantada junto às águas, que estende as suas raízes para o ribeiro; não verá quando vem o calor, mas a sua folha será verde; e no ano de sequidão não se fatigará, nem deixará de dar fruto.</p>
+            <p>5 O coração é mais enganoso que todas as coisas, e perverso; quem o conhecerá?</p>
+            <p>6 Eu, o Senhor, esquadrinho o coração, eu provo os rins, e isso para dar a cada um segundo os seus caminhos, segundo o fruto das suas ações.</p>
+            <p>7 Como o pastor apascenta o seu rebanho, assim farei apascentar o meu rebanho; e os farei repousar, diz o Senhor.</p>
+            <p>8 No vale de Ben-Hinom, que está à entrada do Portão do Cavalo, sacrificaram os filhos de Judá a Moloque, e eu não os castiguei por causa dessas coisas, diz o Senhor.</p>
+            <p>9 Eis que dias vêm, diz o Senhor, em que este lugar não se chamará mais Topheth, nem o vale de Ben-Hinom, mas o vale da matança; porque se sepultaráo cadáver, e se cobrirá de cal, e se lançará pó sobre ele.</p>
+            <p>10 E farei cessar de diante de ti o som do gozo e o som do regozijo, o som do esposo e o som da esposa.</p>
+            <p>11 E a cidade será assolada, e o monte de Ben-Hinom, que está à entrada do Portão do Cavalo, será como o bosque de carvalhos, e como o arvoredo, por causa dos cadáveres que ali caíram; porque nunca mais haverá ali um homem que passe.</p>
+            <p>12 E farei que os homens passem ali, cada um pelo seu caminho, e não haverá ali mais um homem que habite.</p>
+            <p>13 Assim diz o Senhor: Se te converteres, eu te restaurarei, e estarás diante de mim; e se apartares o precioso do vil, serás como a minha boca; tornem-se eles para ti, mas tu não te tornes para eles.</p>
+            <p>14 E eu te porei contra este povo como um muro forte de bronze; e pelejarão contra ti, mas não prevalecerão contra ti; porque eu sou contigo para te salvar e para te livrar, diz o Senhor.</p>
+            <p>15 E livrar-te-ei da mão dos malignos, e resgatar-te-ei da mão dos terríveis.</p>
+            <p>16 E me responderam: Se nos esquecermos do nosso Deus, e se não falarmos mais em seu nome, então a nossa carne se consumirá com saudades, e os nossos olhos se escurecerão por causa da nossa iniquidade.</p>
+            <p>17 Porque ouço a blasfêmia de muitos; o terror está por todos os lados; enquanto me consultam, contra mim conspiram.</p>
+            <p>18 Mas o Senhor está comigo como um poderoso guerreiro; por isso os que me perseguem tropeçarão, e não prevalecerão; cairão, e não se levantarão; porque eu o farei prosperar, e terei sucesso.</p>
+            <p>19 Quanto a ti, ó Senhor dos Exércitos, que provas o justo, e vês o coração e os rins, dê a mim ver a tua vingança sobre eles; porque a ti revelei a minha causa.</p>
+            <p>20 Considera, e vê-me, e prova o meu coração, e vê se há em mim algum caminho mau, e guia-me pelo caminho eterno.</p>
+            <p>21 Assim diz o Senhor: Guardai-vos por amor das vossas almas, e não carregueis cargas no dia de sábado, nem as introduzais pelas portas de Jerusalém;</p>
+            <p>22 Nem tireis cargas de vossas casas no dia de sábado, nem façais obra alguma; antes santificai o dia de sábado, como eu ordenei a vossos pais.</p>
+            <p>23 Mas não ouviram, nem inclinaram os seus ouvidos; antes endureceram a sua cerviz, para não ouvirem, e para não receberem disciplina.</p>
+            <p>24 E será que, se diligentemente me ouvirdes, diz o Senhor, não introduzindo cargas pelas portas desta cidade no dia de sábado, e santificando o dia de sábado, não fazendo nele obra alguma,</p>
+            <p>25 Então entrarão pelas portas desta cidade reis e príncipes, que se assentam sobre o trono de Davi, montados em carros e cavalos, eles e os seus príncipes, os homens de Judá e os habitantes de Jerusalém; e esta cidade será habitada para sempre.</p>
+            <p>26 E virão das cidades de Judá, e dos arredores de Jerusalém, e da terra de Benjamim, e das planícies, e das montanhas, e do sul, trazendo holocaustos, e sacrifícios, e ofertas de manjares, e incenso, e trazendo ofertas de louvores à casa do Senhor.</p>
+            <p>27 Mas, se não me ouvirdes para santificar o dia de sábado, e para não trazer carga, nem introduzi-la pelas portas de Jerusalém no dia de sábado, então acenderei fogo nas suas portas, o qual consumirá os palácios de Jerusalém, e não se apagará.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias18.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

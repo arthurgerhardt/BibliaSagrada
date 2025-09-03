@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 14</h2>
+            <h3>A Seca em Judá</h3>
+            <p>1 Palavra do Senhor que veio a Jeremias, a respeito da seca.</p>
+            <p>2 Judá lamenta, e as suas portas estão enfraquecidas; cobrem-se de luto até ao chão, e o clamor de Jerusalém sobe.</p>
+            <p>3 E os seus nobres enviam os seus criados às águas; vêm às cisternas, não acham água, voltam com os vasos vazios; envergonham-se e confundem-se, e cobrem as suas cabeças.</p>
+            <p>4 Porque a terra está rachada, por não ter havido chuva sobre a terra; envergonham-se os lavradores, cobrem as suas cabeças.</p>
+            <p>5 Porque até a corça no campo pare, e abandona a cria, por não haver erva.</p>
+            <p>6 E os jumentos monteses se põem nos altos, aspiram o vento como chacais; os seus olhos desfalecem, porque não há erva.</p>
+            <p>7 Ainda que as nossas iniquidades testificam contra nós, ó Senhor, opera por amor do teu nome; porque as nossas rebeldias se multiplicaram; contra ti pecamos.</p>
+            <p>8 Ó esperança de Israel, seu Salvador no tempo da angústia, por que serias como estrangeiro na terra, e como viajante que se retira para passar a noite?</p>
+            <p>9 Por que serias como homem surpreendido, como valente que não pode livrar? Mas tu, ó Senhor, estás no meio de nós, e somos chamados pelo teu nome; não nos desampares.</p>
+            <p>10 Assim diz o Senhor acerca deste povo: Pois que amaram o desviar-se, não refrearam os pés; por isso o Senhor não se agrada deles, agora se lembrará da iniquidade deles, e visitará os seus pecados.</p>
+            <p>11 Disse-me ainda o Senhor: Não rogues por este povo para o seu bem.</p>
+            <p>12 Quando jejuarem, não ouvirei o seu clamor; e quando oferecerem holocausto e oferta de manjares, não me agradarei deles; antes eu os consumirei pela espada, e pela fome, e pela peste.</p>
+            <p>13 Então disse eu: Ah! Senhor Deus! Eis que os profetas lhes dizem: Não vereis espada, nem tereis fome, mas dar-vos-ei verdadeira paz neste lugar.</p>
+            <p>14 E disse-me o Senhor: Os profetas profetizam falsamente em meu nome; não os enviei, nem lhes dei ordem, nem lhes falei; visão falsa, adivinhação, vaidade e o engano do seu coração eles vos profetizam.</p>
+            <p>15 Portanto assim diz o Senhor acerca dos profetas que profetizam em meu nome, sem que eu os tenha enviado, e dizem: Nem espada nem fome haverá nesta terra: À espada e à fome serão consumidos esses profetas.</p>
+            <p>16 E o povo a quem eles profetizam será lançado nas ruas de Jerusalém, por causa da fome e da espada, e não haverá quem os sepulte, a eles, nem a seus filhos, nem a suas filhas; porque derramarei sobre eles a sua maldade.</p>
+            <p>17 Portanto lhes dirás esta palavra: Os meus olhos derramem lágrimas de noite e de dia, e não cessem; porque a virgem filha do meu povo está gravemente ferida, com ferida mui dolorosa.</p>
+            <p>18 Se eu sair ao campo, eis aí os mortos à espada; e se entrar na cidade, eis aí os enfermos de fome; porque tanto o profeta como o sacerdote vagueiam pela terra, e não sabem nada.</p>
+            <p>19 Porventura terás de todo rejeitado a Judá? Ou aborrece a tua alma a Sião? Por que nos feriste, sem que haja cura para nós? Esperamos a paz, e não há bem; o tempo da cura, e eis o terror.</p>
+            <p>20 Conhecemos, ó Senhor, a nossa impiedade e a iniquidade de nossos pais; porque pecamos contra ti.</p>
+            <p>21 Não nos rejeites por amor do teu nome; não desonres o trono da tua glória; lembra-te, não invalides o teu concerto conosco.</p>
+            <p>22 Acaso há entre os ídolos dos gentios algum que faça chover? Ou podem os céus dar chuvas? Não és tu só, ó Senhor nosso Deus? Portanto em ti esperamos, pois tu fizeste todas estas coisas.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
