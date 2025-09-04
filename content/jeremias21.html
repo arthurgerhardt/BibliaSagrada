@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 21</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 21</h2>
+            <h3>O Julgamento de Deus sobre Judá</h3>
+            <p>1 E aconteceu que, no quinto ano do rei Zedequias, filho de Josias, rei de Judá, veio o profeta Jeremias a ele, dizendo: Assim diz o Senhor, o Deus de Israel: Eis que te entrego esta cidade nas mãos do rei da Babilônia, e ele a tomará.</p>
+            <p>2 E Zedequias, rei de Judá, disse a Jeremias: Peço-te que oremos ao Senhor nosso Deus por nós.</p>
+            <p>3 E Jeremias disse a Zedequias: Assim dirás a eles: Assim diz o Senhor: Eis que os que ficaram na cidade morrerão à espada, à fome e à peste; mas os que saírem e se entregarem ao rei da Babilônia viverão, e terão a sua vida por despojo, e viverão.</p>
+            <p>4 Pois assim diz o Senhor: Eis que farei a esta cidade, como fiz a Tofete, e farei cessar o som do gozo e o som do regozijo, o som do esposo e o som da esposa.</p>
+            <p>5 E acontecerá que, quando lançarem a sua rede sobre os moradores desta cidade, os que forem capturados sairão, e se entregarão ao rei da Babilônia e os que ficarem na terra morrerão à espada, à fome e à peste; e os poucos que ficarem na terra serão entregues nas mãos dos que buscam a sua vida, diz o Senhor.</p>
+            <p>6 Assim diz o Senhor: Maldito o homem que confia no homem, e faz da carne o seu braço, e aparta o seu coração do Senhor.</p>
+            <p>7 Porque será como o arbusto no deserto, e não verá quando vem o bem; antes habitará nos lugares secos do deserto, na terra salgada e inabitável.</p>
+            <p>8 Bendito o homem que confia no Senhor, e cuja esperança é o Senhor.</p>
+            <p>9 Porque será como a árvore plantada junto às águas, que estende as suas raízes para o ribeiro; não verá quando vem o calor, mas a sua folha será verde; e no ano de sequidão não se fatigará, nem deixará de dar fruto.</p>
+            <p>10 E aconteceu que, ouvindo os príncipes estas palavras, ficaram com medo, e temeram muito, dizendo: Nenhum homem pode ficar em pé diante destas palavras; certamente morreremos.</p>
+            <p>11 Mas Jeremias disse: Não morrereis; eis que vos farei prosperar, e não morrereis; e todos os homens deste povo, aos quais falei palavras do Senhor, não morrerão à espada, à fome e à peste.</p>
+            <p>12 Então disseram os príncipes a Jeremias: Que temos nós que falar mais contigo? E tu nos falaste palavras do Senhor, e nos disseste tudo o que o Senhor nosso Deus te mandou; não temos mais que falar contigo; que o Senhor seja por testemunha entre nós, se não cumprirmos todas as palavras que o Senhor nosso Deus te mandou.</p>
+            <p>13 Seja a tua cabeça como a de Hananias, o profeta, que profetizou ao teu lado, e que enganou este povo.</p>
+            <p>14 E disse-lhe a tua mãe: Maldito o homem que não cumprir as palavras deste livro, e que acrescentar às mesmas; e disse o Senhor dos Exércitos: Maldito o homem que tirar da palavra deste livro, e que acrescentar às mesmas.</p>   
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias22.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

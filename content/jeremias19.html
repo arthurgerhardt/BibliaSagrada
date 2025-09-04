@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 19</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 19</h2>
+            <h3>O Julgamento de Deus sobre o Vale de Hinom</h3>
+            <p>1 Assim diz o Senhor: Vai, e compra uma botija de oleiro, e leva contigo alguns dos anciãos do povo, e dos anciãos dos sacerdotes;</p>
+            <p>2 E sai ao vale do filho de Hinom, que está à entrada da Porta do Oleiro, e apregoa ali as palavras que eu te disser.</p>
+            <p>3 E dize: Ouvi a palavra do Senhor, ó reis de Judá, e moradores de Jerusalém: Assim diz o Senhor dos Exércitos, o Deus de Israel: Eis que trarei mal sobre este lugar, de que todo aquele que ouvir, lhe tinirão os ouvidos.</p>
+            <p>4 Porquanto me deixaram, e profanaram este lugar, e nele queimaram incenso a outros deuses, que nunca conheceram, nem eles, nem seus pais, nem os reis de Judá; e encheram este lugar de sangue de inocentes.</p>
+            <p>5 E edificaram altos a Baal, para queimarem seus filhos no fogo em holocaustos a Baal, o que nunca ordenei, nem falei, nem me veio ao pensamento.</p>
+            <p>6 Por isso, eis que vêm dias, diz o Senhor, em que este lugar não se chamará mais Tofete, nem o vale do filho de Hinom, mas o vale da matança.</p>
+            <p>7 E dissiparei o conselho de Judá e de Jerusalém neste lugar; e os farei cair à espada diante de seus inimigos, e pela mão dos que buscam a sua vida; e darei os seus cadáveres por comida às aves dos céus e aos animais da terra.</p>
+            <p>8 E farei esta cidade um espanto e objeto de assobio; todo aquele que passar por ela se espantará e assobiará, por causa de todas as suas pragas.</p>
+            <p>9 E lhes farei comer a carne de seus filhos e a carne de suas filhas, e cada um comerá a carne do seu próximo, na angústia e no aperto com que os apertarão os seus inimigos e os que buscam a sua vida.</p>
+            <p>10 Então quebrarás a botija diante dos homens que forem contigo,</p>
+            <p>11 E lhes dirás: Assim diz o Senhor dos Exércitos: Assim quebrarei este povo e esta cidade, como se quebra o vaso do oleiro, que não pode mais ser restaurado; e enterrarão os mortos em Tofete, por falta de outro lugar para os enterrar.</p>
+            <p>12 Assim farei a este lugar, diz o Senhor, e aos seus habitantes, e farei desta cidade como Tofete.</p>
+            <p>13 E as casas de Jerusalém e as casas dos reis de Judá serão imundas como o lugar de Tofete, por causa de todas as casas sobre cujos telhados queimaram incenso a todo o exército dos céus, e fizeram libações a outros deuses.</p>
+            <p>14 Então veio Jeremias de Tofete, para onde o Senhor o tinha enviado a profetizar; e se pôs em pé no átrio da casa do Senhor, e disse a todo o povo:</p>
+            <p>15 Assim diz o Senhor dos Exércitos, o Deus de Israel: Eis que trarei sobre esta cidade e sobre todas as suas cidades todo o mal que falei contra ela, porque endureceram a sua cerviz para não ouvirem as minhas palavras.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias18.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias20.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
