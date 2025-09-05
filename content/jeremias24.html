@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 24</h2>
+            <h3>As duas cestas de figos</h3>
+            <p>1 O Senhor me mostrou, e eis que estavam dois cestos de figos postos diante do templo do Senhor, depois que Nabucodonosor, rei da Babilônia, levou cativos Jeconias, filho de Jeoaquim, rei de Judá, e os príncipes de Judá, e os artífices, e os ferreiros de Jerusalém, e os trouxe a Babilônia.</p>
+            <p>2 Um cesto tinha figos muito bons, como os figos temporãos; mas o outro cesto tinha figos muito ruins, que não se podiam comer, de tão ruins que eram.</p>
+            <p>3 E disse-me o Senhor: Que vês, Jeremias? E eu disse: Figos; os figos bons são muito bons, e os ruins são muito ruins, que não se podem comer, de tão ruins que são.</p>
+            <p>4 Então veio a mim a palavra do Senhor, dizendo:</p>
+            <p>5 Assim diz o Senhor, Deus de Israel: Como a estes figos bons, assim conhecerei, para o bem, os exilados de Judá, que enviei deste lugar para a terra dos caldeus.</p>
+            <p>6 Porei os meus olhos sobre eles para o bem, e os farei voltar a esta terra; e edificá-los-ei, e não os destruirei; e plantá-los-ei, e não os arrancarei.</p>
+            <p>7 E dar-lhes-ei coração para que me conheçam, que eu sou o Senhor; e eles serão o meu povo, e eu serei o seu Deus, porque se converterão a mim de todo o seu coração.</p>
+            <p>8 E como aos figos ruins, que não se podem comer, de tão ruins que são, assim diz o Senhor: Assim entregarei Zedequias, rei de Judá, e seus príncipes, e o restante de Jerusalém, que ficou nesta terra, e os que habitam na terra do Egito.</p>
+            <p>9 E farei deles um terror, para todo o reino da terra, para opróbrio, provérbio, escárnio e```html
+            <h3>As duas cestas de figos</h3>
+            <p>1 O Senhor me mostrou, e eis que estavam dois cestos de figos postos diante do templo do Senhor, depois que Nabucodonosor, rei da Babilônia, levou cativos Jeconias, filho de Jeoaquim, rei de Judá, e os príncipes de Judá, e os artífices, e os ferreiros de Jerusalém, e os trouxe a Babilônia.</p>
+            <p>2 Um cesto tinha figos muito bons, como os figos temporãos; mas o outro cesto tinha figos muito ruins, que não se podiam comer, de tão ruins que eram.</p>
+            <p>3 E disse-me o Senhor: Que vês, Jeremias? E eu disse: Figos; os figos bons são muito bons, e os ruins são muito ruins, que não se podem comer, de tão ruins que são.</p>
+            <p>4 Então veio a mim a palavra do Senhor, dizendo:</p>
+            <p>5 Assim diz o Senhor, Deus de Israel: Como a estes figos bons, assim conhecerei, para o bem, os exilados de Judá, que enviei deste lugar para a terra dos caldeus.</p>
+            <p>6 Porei os meus olhos sobre eles para o bem, e os farei voltar a esta terra; e edificá-los-ei, e não os destruirei; e plantá-los-ei, e não os arrancarei.</p>
+            <p>7 E dar-lhes-ei coração para que me conheçam, que eu sou o Senhor; e eles serão o meu povo, e eu serei o seu Deus, porque se converterão a mim de todo o seu coração.</p>
+            <p>8 E como aos figos ruins, que não se podem comer, de tão ruins que são, assim diz o Senhor: Assim entregarei Zedequias, rei de Judá, e seus príncipes, e o restante de Jerusalém, que ficou nesta terra, e os que habitam na terra do Egito.</p>
+            <p>9 E farei deles motivo de espanto e de exemplo, para todos os reinos da terra, para vergonha, provérbio e motivo de zombaria, onde quer que eu os lançar.</p>
+            <p>10 E enviarei contra eles a a espada, a fome e a peste, até que sejam consumidos da terra que dei aos seus pais e aos seus filhos.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

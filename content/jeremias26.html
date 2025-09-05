@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 26</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 26</h2>
+            <p>1 No princípio do reinado de Jeoiaquim, filho de Josias, rei de Judá, veio esta palavra do SENHOR, dizendo:</p>
+            <p>2 Assim diz o SENHOR: Fique no pátio do templo e fale a todos de Judá que vêm adorar, dizendo tudo o que eu ordenei, sem deixar nada de fora.</p>
+            <p>3 Talvez eles escutem e mudem suas atitudes, e então eu deixarei de fazer o mal que planejei por causa das ações ruins deles.</p>
+            <p>4 Dir-lhes-ás pois: Assim diz o SENHOR: Se não me derdes ouvidos para andardes na minha lei, que pus diante de vós,</p>
+            <p>5 Para que ouvísseis as palavras dos meus servos, os profetas, que eu vos envio, madrugando e enviando, mas não os escutastes;</p>
+            <p>6 Então farei que esta casa seja como Siló, e farei desta cidade uma maldição para todas as nações da terra.</p>
+            <p>7 E os sacerdotes, e os profetas, e todo o povo, ouviram a Jeremias, falando estas palavras na casa do SENHOR.</p>
+            <p>8 E sucedeu que, acabando Jeremias de dizer tudo quanto o SENHOR lhe havia ordenado que dissesse a todo o povo, pegaram nele os sacerdotes, e os profetas, e todo o povo, dizendo: Certamente morrerás.</p>
+            <p>9 Por que você profetizou em nome do SENHOR, dizendo: Esta casa será como Siló, e esta cidade ficará desolada, sem nenhum habitante? E todo o povo se reuniu contra Jeremias na casa do SENHOR.</p>
+            <p>10 Quando os líderes de Judá ouviram essas palavras, foram da casa do rei ao templo do SENHOR e se sentaram na entrada da porta nova do SENHOR.</p>
+            <p>11 Os sacerdotes e profetas disseram aos líderes e ao povo: Este homem merece morrer, pois falou contra esta cidade, como vocês ouviram.</p>
+            <p>12 E falou Jeremias a todos os príncipes e a todo o povo, dizendo: O SENHOR me enviou a profetizar contra esta casa, e contra esta cidade, todas as palavras que ouvistes.</p>
+            <p>13 Agora, pois, melhorai os vossos caminhos e as vossas ações, e ouvi a voz do SENHOR vosso Deus, e arrepender-se-á o SENHOR do mal que falou contra vós.</p>
+            <p>14 Quanto a mim, eis que estou nas vossas mãos; fazei de mim conforme o que for bom e reto aos vossos olhos.</p>
+            <p>15 Sabei, porém, com certeza que, se me matardes a mim, trareis sangue inocente sobre vós, e sobre esta cidade, e sobre os seus habitantes; porque, na verdade, o SENHOR me enviou a vós, para dizer aos vossos ouvidos todas estas palavras.</p>
+            <p>16 Então disseram os príncipes, e todo o povo, aos sacerdotes e aos profetas: Este homem não é réu de morte, porque em nome do SENHOR, nosso Deus, nos falou.</p>
+            <p>17 Também se levantaram alguns homens dos anciãos da terra, e falaram a toda a congregação do povo, dizendo:</p>
+            <p>18 Miquéias, o morastita, profetizou nos dias de Ezequias, rei de Judá, e falou a todo o povo de Judá, dizendo: Assim disse o SENHOR dos Exércitos: Sião será lavrada como um campo, e Jerusalém se tornará em montões de pedras, e o monte desta casa como os altos de um bosque.</p>
+            <p>19 Mataram-no, porventura, Ezequias, rei de Judá, e todo o Judá? Antes não temeu ao SENHOR, e não suplicou ao SENHOR? E o SENHOR se arrependeu do mal que falara contra eles. Nós, porém, estamos fazendo um grande mal contra as nossas almas.</p>
+            <p>20 Também houve outro homem que profetizava em nome do SENHOR, Urias, filho de Semaías, de Quiriate-Jearim, o qual profetizou contra esta cidade, e contra esta terra, conforme todas as palavras de Jeremias.</p>
+            <p>21 E, ouvindo o rei Jeoiaquim, e todos os seus valentes, e todos os príncipes, as suas palavras, procurou o rei matá-lo; mas ouvindo isto, Urias temeu e fugiu, e foi para o Egito;</p>
+            <p>22 Mas o rei Jeoiaquim enviou homens ao Egito, a saber, Elnatã, filho de Acbor, e outros homens com ele, ao Egito.</p>
+            <p>23 Os quais tiraram a Urias do Egito, e o trouxeram ao rei Jeoiaquim, que o feriu à espada, e lançou o seu cadáver nas sepulturas da gente comum.</p>
+            <p>24 Porém a mão de Aicão, filho de Safã, foi com Jeremias, para que o não entregassem na mão do povo, para ser morto.</p>
+
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias25.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias27.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
