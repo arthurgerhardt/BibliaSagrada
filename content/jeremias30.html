@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 30</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 30</h2>
+            <h3>Promessa de Restauração para Israel e Judá</h3>
+            <p>1 Palavra que veio a Jeremias da parte do Senhor, dizendo:</p>
+            <p>2 Assim fala o Senhor, Deus de Israel: Escreve num livro todas as palavras que te falei.</p>
+            <p>3 Porque eis que vêm dias, diz o Senhor, em que farei voltar do cativeiro o meu povo de Israel e de Judá, diz o Senhor; e torná-los-ei a trazer à terra que dei a seus pais, e a possuirão.</p>
+            <p>4 Estas são as palavras que falou o Senhor acerca de Israel e de Judá:</p>
+            <p>5 Assim diz o Senhor: Ouvimos uma voz de tremor, de temor e não de paz.</p>
+            <p>6 Perguntai, pois, e vede se um homem pode dar à luz; por que, pois, vejo a cada homem com as mãos sobre os lombos, como mulher que está dando à luz? E por que se tornaram todos os rostos em palidez?</p>
+            <p>7 Ah! Porque aquele dia é tão grande, que não houve outro semelhante; é tempo de angústia para Jacó; ele, porém, será livre dela.</p>
+            <p>8 Porque acontecerá, naquele dia, diz o Senhor dos Exércitos, que quebrarei o seu jugo de sobre o teu pescoço, e romperei os teus laços; e nunca mais estrangeiros o servirão.</p>
+            <p>9 Mas servirão ao Senhor, seu Deus, e a Davi, seu rei, que lhes darei.</p>
+            <p>10 Não temas, pois, tu, ó meu servo Jacó, diz o Senhor, nem te espantes, ó Israel; porque eis que te livrarei de longe, e a tua descendência da terra do seu cativeiro; e Jacó voltará, e estará tranquilo, e em repouso, e ninguém o atemorizará.</p>
+            <p>11 Porque eu sou contigo, diz o Senhor, para te salvar; porquanto darei fim a todas as nações entre as quais te espalhei; porém a ti não darei fim, mas castigar-te-ei com justiça, e de todo não te deixarei impune.</p>
+            <p>12 Porque assim diz o Senhor: Teu quebrantamento é incurável, e tua chaga é dolorosa.</p>
+            <p>13 Não há quem defenda a tua causa; para a tua ferida não há remédio, nem cura para ti.</p>
+            <p>14 Todos os teus amantes se esqueceram de ti, não te buscam; porque te feri com ferida de inimigo, com castigo de cruel, por causa da multidão das tuas maldades, porque se multiplicaram os teus pecados.</p>
+            <p>15 Por que gritas por causa do teu quebrantamento? Tua dor é incurável; por causa da multidão das tuas maldades, e porque se multiplicaram os teus pecados, fiz estas coisas contigo.</p>
+            <p>16 Portanto, todos os que te devoram serão devorados; e todos os teus adversários, cada um deles, irão para o cativeiro; e os que te saqueiam serão saqueados, e todos os que te despojam, entregarei ao saque.</p>
+            <p>17 Porque te restaurarei a saúde, e curarei as tuas chagas, diz o Senhor; porque te chamaram de rejeitada, dizendo: Esta é Sião, de quem ninguém pergunta.</p>
+            <p>18 Assim diz o Senhor: Eis que trarei do cativeiro as tendas de Jacó, e me compadecerei das suas moradas; e a cidade será edificada sobre o seu montão, e o palácio permanecerá segundo o seu costume.</p>
+            <p>19 E sairá deles ação de graças e voz de que estão alegres; e multiplicá-los-ei, e não serão diminuídos; e glorificá-los-ei, e não serão desprezados.</p>
+            <p>20 E os seus filhos serão como dantes, e a sua congregação será confirmada diante de mim, e castigarei todos os seus opressores.</p>
+            <p>21 E o seu príncipe será deles, e o seu governador procederá do meio deles; e fá-lo-ei aproximar-se, e ele se chegará a mim; pois quem é este que empenha o seu coração para se chegar a mim? diz o Senhor.</p>
+            <p>22 E ser-me-eis por povo, e eu vos serei por Deus.</p>
+            <p>23 Eis que a tempestade do Senhor, a sua indignação saiu, uma tempestade varredora; cairá cruelmente sobre a cabeça dos ímpios.</p>
+            <p>24 Não voltará atrás o ardor da ira do Senhor, até que tenha executado e cumprido os desígnios do seu coração; nos dias vindouros entendereis isto.</p>
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias29.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias31.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
