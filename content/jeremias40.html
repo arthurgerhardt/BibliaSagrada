@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 40</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 40</h2>
+            <h3>Gedalias é Nomeado Governador da Judeia</h3>
+            <p>1 Palavra que veio a Jeremias da parte do Senhor, depois que Nebuzaradã, capitão da guarda, o deixou ir de Ramá, quando o havia tomado, estando ele atado com cadeias entre todos os que foram levados cativos de Jerusalém e de Judá, os quais iam para Babilônia.</p>
+            <p>2 Tomou o capitão da guarda a Jeremias, e lhe disse: O Senhor teu Deus pronunciou este mal contra este lugar;</p>
+            <p>3 E o Senhor o trouxe, e fez como havia falado; porque pecastes contra o Senhor, e não obedecestes à sua voz, portanto vos sucedeu isto.</p>
+            <p>4 Agora, eis que eu te solto hoje das cadeias que estavam sobre as tuas mãos; se te apraz vir comigo para Babilônia, vem, e eu cuidarei bem de ti; mas se não te apraz vir comigo para Babilônia, fica; vê, toda a terra está diante de ti; para onde parecer bom e conveniente aos teus olhos, vai.</p>
+            <p>5 E, estando ele ainda indeciso, disse-lhe: Volta a Gedalias, filho de Aicão, filho de Safã, a quem o rei da Babilônia constituiu governador sobre as cidades de Judá, e habita com ele entre o povo; ou vai para onde parecer conveniente aos teus olhos ir. Assim o capitão da guarda lhe deu mantimento e um presente, e o deixou ir.</p>
+            <p>6 E veio Jeremias a Gedalias, filho de Aicão, a Mizpá, e habitou com ele entre o povo que restava na terra.</p>
+            <p>7 Quando todos os capitães dos exércitos que estavam no campo, eles e seus homens, ouviram que o rei da Babilônia havia constituído Gedalias, filho de Aicão, governador da terra, e que lhe havia confiado os homens, mulheres e crianças, e os mais pobres da terra, que não foram levados cativos para Babilônia,</p>
+            <p>8 Vieram a Gedalias, a Mizpá, Ismael, filho de Netanias, Joanã e Jônatas, filhos de Careá, Seraías, filho de Tanhumete, os filhos de Efai, de Netofa, e Jazanias, filho de Maacate, eles e seus homens.</p>
+            <p>9 E Gedalias, filho de Aicão, filho de Safã, jurou a eles e aos seus homens, dizendo: Não temais servir aos caldeus; habitai na terra, servi ao rei da Babilônia, e bem vos irá.</p>
+            <p>10 Quanto a mim, eis que habitarei em Mizpá, para estar ao serviço dos caldeus que vierem a nós; vós, porém, colhei vinho, frutos de verão e azeite, e ponde-os em vossos vasos, e habitai nas cidades que tomastes.</p>
+            <p>11 Da mesma maneira, todos os judeus que estavam em Moabe, entre os amonitas, e em Edom, e os que estavam em todas as terras, ouviram que o rei da Babilônia deixara um resto de Judá, e que havia constituído Gedalias, filho de Aicão, filho de Safã, sobre eles;</p>
+            <p>12 Então voltaram todos os judeus de todos os lugares para onde haviam sido lançados, e vieram à terra de Judá, a Gedalias, a Mizpá, e colheram vinho e frutos de verão em grande abundância.</p>
+            <p>13 E Joanã, filho de Careá, e todos os capitães dos exércitos que estavam no campo, vieram a Gedalias, a Mizpá,</p>
+            <p>14 E lhe disseram: Bem sabes que Ismael, filho de Netanias, foi enviado por Baalis, rei dos amonitas, para te matar. Mas Gedalias, filho de Aicão, não lhes deu crédito.</p>
+            <p>15 Todavia Joanã, filho de Careá, falou a Gedalias em segredo, em Mizpá, dizendo: Deixa-me ir, e matarei Ismael, filho de Netanias, e ninguém o saberá; por que razão te tiraria ele a vida, de modo que todos os judeus que se têm congregado a ti fossem
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias39.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias41.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
