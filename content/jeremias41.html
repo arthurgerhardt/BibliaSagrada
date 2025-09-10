@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 41</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 41</h2>
+            <h3>Ismael assassina Gedalias e leva o povo cativo</h3>
+            <p>1 E aconteceu no sétimo mês que Ismael, filho de Netanias, filho de Elisama, da linhagem real, e os grandes do rei, e dez homens com ele, vieram a Gedalias, filho de Aicão, a Mispa; e ali comeram pão juntos em Mispa.</p>
+            <p>2 Levantou-se então Ismael, filho de Netanias, e os dez homens que estavam com ele, e feriram a Gedalias, filho de Aicão, à espada, e mataram aquele a quem o rei de Babilônia havia constituído governador sobre a terra.</p>
+            <p>3 Ismael também feriu a todos os judeus que estavam com Gedalias, em Mispa, e aos caldeus, homens de guerra, que ali se achavam.</p>
+            <p>4 Sucedeu, pois, que no dia seguinte ao que matara a Gedalias, sem que ninguém soubesse,</p>
+            <p>5 vieram homens de Siquém, de Siló e de Samaria, oitenta homens, com as barbas rapadas, e as roupas rasgadas, e com cortes no corpo, trazendo ofertas e incenso para apresentar na casa do Senhor.</p>
+            <p>6 E Ismael, filho de Netanias, saiu de Mispa ao encontro deles, chorando; e sucedeu que, quando os encontrou, disse-lhes: Vinde a Gedalias, filho de Aicão.</p>
+            <p>7 E sucedeu que, quando eles entraram no meio da cidade, Ismael, filho de Netanias, e os homens que estavam com ele, os mataram e lançaram no meio de uma cisterna.</p>
+            <p>8 Mas entre eles se acharam dez homens que disseram a Ismael: Não nos mates, porque temos tesouros escondidos no campo, trigo, cevada, azeite e mel. Então ele desistiu de os matar com os seus companheiros.</p>
+            <p>9 Ora, a cisterna em que Ismael lançou todos os cadáveres dos homens que ele matara por causa de Gedalias, era a mesma que o rei Asa fizera por causa de Baasa, rei de Israel; foi essa que Ismael, filho de Netanias, encheu dos mortos.</p>
+            <p>10 E Ismael levou cativos todo o restante do povo que estava em Mispa, as filhas do rei, e todo o povo que restava em Mispa, que Nebuzaradã, capitão da guarda, havia confiado a Gedalias, filho de Aicão; e Ismael, filho de Netanias, levou-os cativos e partiu para passar aos amonitas.</p>
+            <p>11 Quando, porém, Joanã, filho de Careá, e todos os capitães dos exércitos que estavam com ele, ouviram todo o mal que Ismael, filho de Netanias, havia feito,</p>
+            <p>12 tomaram todos os homens e foram pelejar contra Ismael, filho de Netanias, e acharam-no junto ao grande lago que está em Gibeão.</p>
+            <p>13 E aconteceu que, quando todo o povo que estava com Ismael viu Joanã, filho de Careá, e todos os capitães dos exércitos que estavam com ele, se alegrou.</p>
+            <p>14 E todo o povo que Ismael havia levado cativo de Mispa voltou e passou para Joanã, filho de Careá.</p>
+            <p>15 Mas Ismael, filho de Netanias, escapou de Joanã com oito homens, e foi para os filhos de Amom.</p>
+            <p>16 Então Joanã, filho de Careá, e todos os capitães dos exércitos que estavam com ele, tomaram todo o restante do povo que Ismael, filho de Netanias, havia levado cativo de Mispa, depois de matar a Gedalias, filho de Aicão, a saber, homens valentes de guerra, mulheres, meninos e eunucos, que ele trouxe de Gibeão.</p>
+            <p>17 E partiram, e ficaram em Gerute-Quimã, que está junto a Belém, para irem e entrarem no Egito,</p>
+            <p>18 por causa dos caldeus; porque os temiam, visto que Ismael, filho de Netanias, matara a Gedalias, filho de Aicão, a quem o rei de Babilônia havia constituído governador sobre a terra.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias40.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias42.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
