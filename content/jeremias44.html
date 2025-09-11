@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 44</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 44</h2>
+            <h3>Profecia contra os judeus no Egito</h3>
+            <p>1 A palavra que veio a Jeremias, acerca de todos os judeus, habitantes da terra do Egito, que habitavam em Migdol, Tafnes, Nofe e na terra de Patros, dizendo:</p>
+            <p>2 Assim diz o Senhor dos Exércitos, Deus de Israel: Vós vistes o que aconteceu a Jerusalém e às cidades de Judá; elas estão desoladas e ninguém habita nelas.</p>
+            <p>3 Isso ocorreu por causa das ações que praticaram, servindo a outros deuses, que não conheceram, nem eles, nem vós, nem vossos pais.</p>
+            <p>4 Enviei meus servos, os profetas, para avisar: Não façais esta coisa que não agrada.</p>
+            <p>5 Mas não escutaram, nem inclinaram os ouvidos, para se converterem e deixarem de servir a outros deuses.</p>
+            <p>6 Por isso, minha indignação se acendeu nas cidades de Judá e nas ruas de Jerusalém, tornando-as desertas.</p>
+            <p>7 Agora, assim diz o Senhor: Por que fazeis este mal contra vós mesmos, para vos desarraigar, ao homem e à mulher, à criança e ao que mama, do meio de Judá, a fim de não deixardes remanescente algum?</p>
+            <p>8 Irando-me com as obras de vossas mãos, queimando incenso a outros deuses na terra do Egito, para que sirvais de exemplo entre as nações.</p>
+            <p>9 Esquecestes as ações de vossos pais, dos reis de Judá, de suas mulheres, e as vossas próprias, que praticaram na terra de Judá e em Jerusalém?</p>
+            <p>10 Não se humilharam até hoje, nem temeram, nem andaram na minha lei e nos meus estatutos.</p>
+            <p>11 Portanto, assim diz o Senhor: Eis que eu ponho o meu rosto contra vós para mal, e para desarraigar a todo o Judá.</p>
+            <p>12 Tomarei os que restam de Judá, que foram ao Egito para lá habitar, e todos serão consumidos na terra do Egito; cairão à espada e de fome morrerão; servirão de exemplo entre as nações.</p>
+            <p>13 Castigarei os que habitam na terra do Egito, como castiguei Jerusalém, com a espada, com a fome e com a peste.</p>
+            <p>14 Da parte remanescente de Judá, que entrou no Egito, não haverá quem escape para voltar à terra de Judá, exceto alguns fugitivos.</p>
+            <p>15 Então responderam a Jeremias todos os homens que sabiam que suas mulheres queimavam incenso a outros deuses, e todas as mulheres presentes, como também todo o povo que habitava no Egito, dizendo:</p>
+            <p>16 Quanto à palavra que nos anunciaste em nome do Senhor, não obedeceremos a ti;</p>
+            <p>17 Mas cumpriremos o que prometemos, queimando incenso à rainha dos céus, e oferecendo-lhe libações, como fizemos antes, nas cidades de Judá e em Jerusalém; então tínhamos fartura de pão e não víamos mal algum.</p>
+            <p>18 Mas desde que cessamos de queimar incenso à rainha dos céus, tivemos falta de tudo, e fomos consumidos pela espada e pela fome.</p>
+            <p>19 E quando queimávamos incenso à rainha dos céus, acaso o fizemos sem nossos maridos?</p>
+            <p>20 Então disse Jeremias a todo o povo: </p>
+            <p>21 Porventura não se lembrou o Senhor do incenso que queimastes nas cidades de Judá e nas ruas de Jerusalém?</p>
+            <p>22 O Senhor não podia mais suportar as ações praticadas; por isso a terra se tornou desolada e sem habitantes.</p>
+            <p>23 Porque queimastes incenso e não obedecestes à voz do Senhor, por isso vos sucedeu este mal.</p>
+            <p>24 Disse mais Jeremias: Ouvi a palavra do Senhor, vós, todo o Judá, que estais no Egito.</p>
+            <p>25 Assim fala o Senhor: Vós e vossas mulheres cumpristes o que prometestes, queimando incenso à rainha dos céus; confirmai, pois, os vossos votos.</p>
+            <p>26 Portanto ouvi a palavra do Senhor: Eis que eu juro pelo meu grande nome, que nunca mais será pronunciado o meu nome pela boca de nenhum homem de Judá no Egito.</p>
+            <p>27 Eis que velarei sobre eles para mal, e não para bem; e serão consumidos todos os homens de Judá no Egito, até que se acabem.</p>
+            <p>28 Os que escaparem da espada voltarão do Egito à terra de Judá, poucos em número; e todo o restante saberá se subsistirá a minha palavra ou a sua.</p>
+            <p>29 E isto vos servirá de sinal, diz o Senhor, que eu vos castigarei neste lugar.</p>
+            <p>30 Assim diz o Senhor: Eis que eu darei Faraó-Hofra, rei do Egito, na mão de seus inimigos, como entreguei Zedequias, rei de Judá, na mão de Nabucodonosor, rei da Babilônia.</p>
+           
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias43.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias45.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

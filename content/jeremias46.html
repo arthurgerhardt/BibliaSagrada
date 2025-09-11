@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeremias 46</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jeremias 46</h2>
+            <h3>O Juízo de Deus sobre o Egito</h3>
+            <p>1 Palavra do Senhor que veio a Jeremias, o profeta, contra as nações.</p>
+            <p>2 Contra o Egito. Contra o exército de Faraó Neco, rei do Egito, que estava junto ao rio Eufrates, em Carquemis, o qual Nabucodonosor, rei da Babilônia, feriu no quarto ano de Jeoaquim, filho de Josias, rei de Judá:</p>
+            <p>3 Preparai o escudo e o pavês, e chegai-vos para a peleja.</p>
+            <p>4 Selai os cavalos, e montai, cavaleiros; apresentai-vos com capacetes, alimpai as lanças, vestí-vos de couraças.</p>
+            <p>5 Por que razão os vejo desanimados e voltando atrás? E os seus valentes estão derrotados, e fogem apressadamente, sem olhar para trás; há terror ao redor, diz o Senhor.</p>
+            <p>6 Não fuja o ligeiro, nem escape o valente; ao norte, junto ao rio Eufrates, tropeçaram e caíram.</p>
+            <p>7 Quem é este que vem subindo como o Nilo, cujas águas se movem como os rios?</p>
+            <p>8 O Egito vem subindo como o Nilo, e as suas águas se movem como os rios; e diz: Subirei, cobrirei a terra, destruirei a cidade e os que nela habitam.</p>
+            <p>9 Subi, ó cavalos, e enfurecei-vos, ó carros; e saiam os valentes, os etíopes e os líbios, que manejam o escudo, e os lídios, que manejam e entesam o arco.</p>
+            <p>10 Porque aquele dia será do Senhor Deus dos Exércitos, dia de vingança, para se vingar dos seus inimigos; e a espada devorará, e se fartará, e se embriagará com o sangue deles; porque o Senhor Deus dos Exércitos tem um sacrifício na terra do norte, junto ao rio Eufrates.</p>
+            <p>11 Sobe a Gileade, e toma bálsamo, ó virgem filha do Egito; debalde multiplicas remédios, não há cura para ti.</p>
+            <p>12 As nações ouviram da tua afronta, e a terra está cheia do teu clamor; porque valente tropeça contra valente, e ambos juntos caem.</p>
+            <p>13 Palavra que falou o Senhor a Jeremias, o profeta, sobre a vinda de Nabucodonosor, rei da Babilônia, para ferir a terra do Egito:</p>
+            <p>14 Anunciai no Egito, e fazei ouvir em Migdol, fazei ouvir também em Mênfis e em Tafnes; dizei: Põe-te em ordem e prepara-te, porque a espada devorará ao redor de ti.</p>
+            <p>15 Por que foram derribados os teus valentes? Não puderam ficar em pé, porque o Senhor os empurrou.</p>
+            <p>16 Multiplicou os que tropeçaram; cada um caiu sobre o seu companheiro, e disseram: Levanta-te, voltemos ao nosso povo, à terra do nosso nascimento, por causa da espada destruidora.</p>
+            <p>17 Clamaram ali: Faraó, rei do Egito, é apenas um barulho; já passou o tempo determinado.</p>
+            <p>18 Vivo eu, diz o Rei, cujo nome é o Senhor dos Exércitos, que, como o Tabor entre os montes, e como o Carmelo junto ao mar, assim ele virá.</p>
+            <p>19 Prepara para ti bagagem de cativeiro, ó filha que habitas no Egito; porque Mênfis se tornará em desolação, e será incendiada, sem habitante.</p>
+            <p>20 O Egito é uma novilha mui formosa; mas o destruidor vem do norte, vem chegando.</p>
+            <p>21 Também os seus mercenários no meio dela são como bezerros cevados; mas também eles viraram as costas, fugiram juntos, não puderam ficar em pé; porque veio sobre eles o dia da sua ruína, o tempo da sua visitação.</p>
+            <p>22 O seu ruído será como o de uma serpente que se vai arrastando; porque virão com força os inimigos, e virão contra ela com machados, como cortadores de lenha.</p>
+            <p>23 Cortarão a sua floresta, diz o Senhor, ainda que seja impenetrável; porque são mais numerosos do que gafanhotos, e não se podem contar.</p>
+            <p>24 A filha do Egito será envergonhada; será entregue na mão do povo do norte.</p>
+            <p>25 Diz o Senhor dos Exércitos, o Deus de Israel: Eis que eu castigarei a Amom de Nô, e a Faraó, e ao Egito, e aos seus deuses, e aos seus reis; ao próprio Faraó, e aos que nele confiam.</p>
+            <p>26 E os entregarei na mão dos que procuram a sua morte, na mão de Nabucodonosor, rei da Babilônia, e na mão dos seus servos; mas depois será habitada, como nos dias antigos, diz o Senhor.</p>
+            <p>27 Mas tu não temas, servo meu, Jacó, nem te espantes, ó Israel; porque eis que te livrarei de longe, e a tua descendência da terra do seu cativeiro; e Jacó voltará, descansará, e ficará sossegado, e não haverá quem o atemorize.</p>
+            <p>28 Tu não temas, servo meu, Jacó, diz o Senhor, porque estou contigo; porque farei consumação de todas as nações para onde te lancei; mas de ti não farei consumação, antes te castigarei com justiça, e não te deixarei de todo impune.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jeremias45.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jeremias47.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
