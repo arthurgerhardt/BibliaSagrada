@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 6</h2>
+            <h3>O Julgamento das Colunas</h3>
+            <p>1 Veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2 Filho do homem, profetiza contra os montes de Israel e dize: Montes de Israel, ouvi a palavra do Senhor Deus!</p>
+            <p>3 Assim diz o Senhor Deus: Porquanto os vossos olhos se voltaram para os vossos ídolos, e vos haveis prostituído atrás deles, e as vossas mãos se têm imundado com sangue,</p>
+            <p>4 Por isso, assim diz o Senhor Deus: Eis que eu trarei sobre vós o meu furor, e farei em vós juízo segundo os vossos caminhos, e executarei em vós todas as vossas abominações.</p>
+            <p>5 E conhecereis que eu sou o Senhor, quando eu fizer em vós juízo.</p>
+            <p>6 E farei que os vossos altares sejam assolados, e derribarei as vossas colunas; e farei cair os vossos ídolos, e porei fim às vossas obras.</p>
+            <p>7 E farei que vosso sangue seja derramado no meio de vós; e vosso ídolo vos consumirá, e sabereis que eu sou o Senhor.</p>
+            <p>8 Mas, se o povo da terra se retirar de diante de mim, e não se prostituir mais atrás dos seus ídolos, nem se contaminar mais com todas as suas abominações,</p>
+            <p>9 Então os que de vós escaparem se lembrarão de mim entre as nações para onde forem levados cativos, pois me quebrantei com o seu coração adúltero, que se desviou de mim, e com os seus olhos, que se prostituíram após os seus ídolos; e terão nojo de si mesmos por causa dos males que cometeram em todas as suas abominações.</p>
+            <p>10 E saberão que eu sou o Senhor; não disse eu em vão que lhes faria este mal?</p>
+            <p>11 Assim diz o Senhor Deus: Bate com a tua mão, e bate com o teu pé, e dize: Ai, por causa de todas as abominações das maldades da casa de Israel! Porque cairão à espada, à fome e à peste.</p>
+            <p>12 O que estiver longe morrerá de peste, e o que estiver perto cairá à espada; e o que ficar e for cercado morrerá de fome; assim cumprirei o meu furor sobre eles.</p>
+            <p>13 Então sabereis que eu sou o Senhor, quando estiverem os seus mortos no meio dos seus ídolos, ao redor dos seus altares, sobre todo o outeiro alto, em todos os cumes dos montes, e debaixo de toda árvore verde, e debaixo de todo carvalho espesso, nos lugares onde ofereciam incenso suave a todos os seus ídolos.</p>
+            <p>14 E estenderei a minha mão sobre eles, e farei a terra desolada e assolada, mais do que o deserto de Dibla, em todos os lugares onde habitam; e saberão que eu sou o Senhor.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

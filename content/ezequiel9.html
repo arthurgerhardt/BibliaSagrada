@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 9</h2>
+            <h3>Os Marcados para Salvação e o Juízo dos Iníquos</h3>
+            <p>1 Então me gritou aos ouvidos com grande voz, dizendo: Fazei chegar os intendentes da cidade, cada um com as suas armas na mão.</p>
+            <p>2 E eis que vinham seis homens a caminho da porta superior, que olha para o norte, e cada um com a sua arma na mão, e entre eles um homem vestido de linho, com um tinteiro de escrivão à sua cintura; e entraram, e se puseram junto ao altar de bronze.</p>
+            <p>3 E a glória do Deus de Israel se levantou de sobre o querubim, sobre o qual estava, indo até a entrada da casa; e clamou ao homem vestido de linho, que tinha o tinteiro de escrivão à sua cintura.</p>
+            <p>4 E disse-lhe o Senhor: Passa pelo meio da cidade, pelo meio de Jerusalém, e marca com um sinal as testas dos homens que suspiram e que gemem por causa de todas as abominações que se cometem no meio dela.</p>
+            <p>5 E aos outros disse ele, ouvindo eu: Passai pela cidade após ele, e não poupe o vosso olho, nem vos compadeçais.</p>
+            <p>6 Não vos aproximeis de ninguém que tiver o sinal; e começai pelo meu santuário. E começaram pelos homens mais velhos que estavam diante da casa.</p>
+            <p>7 E disse-lhes: Contaminai a casa e enchei os átrios; saí. E saíram pela cidade.</p>
+            <p>8 Sucedeu, pois, que, havendo-os visto, e ficando eu sozinho, caí sobre a minha face, e clamei, e disse: Ah! Senhor Deus! Dar-se-á caso que destruas todo o restante de Israel, derramando a tua indignação sobre Jerusalém?</p>
+            <p>9 Então me disse: A situação da casa de Israel e de Judá é grandíssima, e a terra se encheu de sangue e a cidade se encheu de injustiça; porque dizem: O Senhor abandonou a terra, e o Senhor não vê.</p>
+            <p>10 Pois, também, quanto a mim, não poupará o meu olho, nem me compadecerei; sobre a cabeça deles farei recair o seu caminho.</p>
+            <p>11 Eis que o homem que estava vestido de linho, a cuja cintura estava o tinteiro, tornou com a resposta, dizendo: Fiz como me mandaste.</p>
+            
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

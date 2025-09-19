@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 7</h2>
+            <h3>O Fim de Todas as Coisas</h3>
+            <p>1 Veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2 Filho do homem, assim diz o Senhor Deus acerca da terra de Israel: Vem o fim, o fim vem sobre os quatro cantos da terra.</p>
+            <p>3 Agora virá o fim sobre ti, e enviarei sobre ti a minha ira, e te julgarei segundo os teus caminhos, e porei sobre ti todas as tuas abominações.</p>
+            <p>4 E não te poupará o meu olho, nem terei piedade; porém porei sobre ti os teus caminhos, e as tuas abominações estarão no meio de ti; e sabereis que eu sou o Senhor.</p>
+            <p>5 Assim diz o Senhor Deus: Um mal, eis que um só mal vem.</p>
+            <p>6 Vem o fim, o fim vem; despertou-se contra ti; eis que vem.</p>
+            <p>7 Vem a tua sentença, ó habitante da terra; vem o tempo, é chegado o dia do tumulto, e não da alegria sobre os montes.</p>
+            <p>8 Agora, em breve, derramarei o meu furor sobre ti, e cumprirei a minha ira contra ti, e te julgarei segundo os teus caminhos, e porei sobre ti todas as tuas abominações.</p>
+            <p>9 E não te poupará o meu olho, nem terei piedade; conforme os teus caminhos porei sobre ti, e as tuas abominações estarão no meio de ti; e sabereis que eu, o Senhor, é que firo.</p>
+            <p>10 Eis aqui o dia, eis que vem; saiu a manhã, floresceu a vara, reverdeceu a soberba.</p>
+            <p>11 A violência se levantou em vara de impiedade; nada restará deles, nem da sua multidão, nem do seu povo, nem haverá entre eles pranto algum.</p>
+            <p>12 Vem o tempo, é chegado o dia; o que compra não se alegre, e o que vende não se entristeça; porque a ira está sobre toda a multidão dela.</p>
+            <p>13 Porque o que vende não tornará ao que vendeu, ainda que estejam entre os vivos; porque a visão sobre toda a sua multidão não tornará atrás, nem ninguém fortalecerá a sua vida pela sua iniquidade.</p>
+            <p>14 Já tocaram a trombeta, e tudo prepararam, mas ninguém vai à peleja, porque o meu furor está sobre toda a sua multidão.</p>
+            <p>15 Fora está a espada, e dentro a peste e a fome; o que estiver no campo morrerá à espada, e o que estiver na cidade, a fome e a peste o consumirão.</p>
+            <p>16 E os que deles escaparem fugirão para os montes, como pombas dos vales, todos gemendo, cada um por causa da sua iniquidade.</p>
+            <p>17 Todas as mãos se enfraquecerão, e todos os joelhos se tornarão em água.</p>
+            <p>18 E cingir-se-ão de sacos, e os pavores os cobrirão; e sobre todos os rostos haverá vergonha, e sobre todas as suas cabeças calva.</p>
+            <p>19 A sua prata lançarão pelas ruas, e o seu ouro será como imundícia; nem a sua prata nem o seu ouro os poderá livrar no dia do furor do Senhor; eles não saciarão a sua alma, nem encherão os seus ventres, porque isso foi o tropeço da sua iniquidade.</p>
+            <p>20 E quanto à glória do seu ornamento, puseram-na em soberba; e dela fizeram imagens abomináveis e detestáveis; por isso eu a fiz para eles como coisa imunda.</p>
+            <p>21 E entregá-la-ei nas mãos dos estrangeiros por presa, e aos ímpios da terra por despojo, e a profanarão.</p>
+            <p>22 E desviarei deles o meu rosto, e profanarão o meu lugar oculto; porque entrarão nele invasores e o profanarão.</p>
+            <p>23 Faze uma cadeia, porque a terra está cheia de crimes de sangue, e a cidade está cheia de violência.</p>
+            <p>24 E farei vir os mais perversos das nações, e possuirão as suas casas; e farei cessar a arrogância dos poderosos, e os seus santuários serão profanados.</p>
+            <p>25 Vem a destruição; eles buscarão paz, mas não haverá paz.</p>
+            <p>26 Miséria sobre miséria virá, e se levantará rumor sobre rumor; então buscarão visão ao profeta, mas do sacerdote perecerá a lei, e dos anciãos o conselho.</p>
+            <p>27 O rei lamentará, e o príncipe se vestirá de horror, e as mãos do povo da terra tremerão; conforme o seu caminho lhes farei, e com os seus juízos os julgarei; e saberão que eu sou o Senhor.</p>
+
+            
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
