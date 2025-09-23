@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 15</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 15</h2>
+            <h3>A Parábola da Videira Inútil</h3>
+            <p>1 E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2 Filho do homem, que é a videira, senão a madeira que está no bosque?</p>
+            <p>3 Eu a tirei do bosque; e a pus no lugar de videira, e a plantei como videira escolhida.</p>
+            <p>4 E ela cresceu, e se fez uma videira frondosa, alta, com ramos longos, e com muita folhagem; e a sua sombra cobriu as árvores do campo.</p>
+            <p>5 E, vendo-a todas as árvores do campo, disseram: Porventura não está a videira no bosque? </p>
+            <p>6 Por isso, assim diz o Senhor Deus: Porquanto a videira do bosque, que tirei do bosque, se fez uma videira frondosa, alta, com ramos longos, e com muita folhagem, de modo que a sua sombra cobriu as árvores do campo;</p>
+            <p>7 Portanto, assim diz o Senhor Deus: Eis que eu virei sobre ela, e a farei consumir; não haverá em cima dela fruto, nem ramos, nem folhas; e as árvores do campo a verão, e saberão que eu sou o Senhor, quando eu a fizer consumir.</p>
+            <p>8 E se a videira não der fruto, então será cortada; e, se não der fruto, será queimada; e, se for queimada, não haverá em cima dela lenha para fogo, nem ramos para se acenderem; e as árvores do campo a verão, e saberão que eu sou o Senhor.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel14.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel16.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
