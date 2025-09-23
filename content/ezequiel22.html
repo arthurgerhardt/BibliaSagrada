@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 22</h2>
+            <h3>O Juízo sobre Jerusalém por Sua Iniquidade</h3>
+            <p>1 E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2 Tu, pois, filho do homem, porventura julgarás, julgarás a cidade sanguinária? Faze-lhe, pois, saber todas as suas abominações.</p>
+            <p>3 E dize: Assim diz o Senhor Deus: A cidade derramadora de sangue no meio de si, para que venha o seu tempo, e que faz ídolos contra si mesma, para se contaminar!</p>
+            <p>4 Pelo teu sangue, que derramaste, te tornaste culpada, e pelos teus ídolos, que fizeste, te contaminaste; e fizeste chegar os teus dias, e vieste aos teus anos; por isso te fiz objeto de opróbrio para as nações, e de escárnio para todas as terras.</p>
+            <p>5 Os que estão perto e os que estão longe de ti zombarão de ti, ó infamada, cheia de inquietação.</p>
+            <p>6 Eis que os príncipes de Israel, cada um conforme o seu poder, estiveram em ti para derramar sangue.</p>
+            <p>7 Ao pai e à mãe desprezaram em ti; para com o estrangeiro usaram de opressão no meio de ti; ao órfão e à viúva oprimiram em ti.</p>
+            <p>8 As minhas coisas santas desprezaste, e os meus sábados profanaste.</p>
+            <p>9 Homens caluniadores se acharam em ti para derramar sangue; e sobre os montes comeram em ti; perversidade cometeram no meio de ti.</p>
+            <p>10 A vergonha do pai descobriram em ti; a que estava impura, pela sua separação, forçaram em ti.</p>
+            <p>11 E um cometeu abominação com a mulher do seu próximo; outro contaminou abominavelmente a sua nora; e outro forçou a sua irmã, filha de seu pai, em ti.</p>
+            <p>12 Presentes se receberam em ti para derramar sangue; usura e aumento tomaste, e avaramente extorquiste o teu próximo; e de mim te esqueceste, diz o Senhor Deus.</p>
+            <p>13 Eis que, pois, bati as minhas mãos contra a tua avareza, que cometeste, e contra o teu sangue, que se achou no meio de ti.</p>
+            <p>14 Estará firme o teu coração? Ou terão força as tuas mãos nos dias em que eu tratar contigo? Eu, o Senhor, o disse, e o farei.</p>
+            <p>15 E espalhar-te-ei entre as nações, e dispersar-te-ei pelas terras, e acabarei com a tua imundícia de ti.</p>
+            <p>16 E tu serás profanada em ti mesma aos olhos das nações, e saberás que eu sou o Senhor.</p>
+            <p>17 E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>18 Filho do homem, a casa de Israel se tornou para mim em escória; todos eles são bronze, estanho, ferro e chumbo no meio do forno; escória de prata se tornaram.</p>
+            <p>19 Portanto assim diz o Senhor Deus: Porquanto todos vós vos tornastes em escória, eis que vos ajuntarei no meio de Jerusalém.</p>
+            <p>20 Como se ajunta prata, bronze, ferro, chumbo e estanho no meio do forno, para assoprar fogo sobre eles, a fim de os fundir, assim vos ajuntarei na minha ira e no meu furor, e ali vos deixarei e vos fundirei.</p>
+            <p>21 E congregar-vos-ei, e assoprarei sobre vós o fogo do meu furor, e sereis fundidos no meio dela.</p>
+            <p>22 Como se funde a prata no meio do forno, assim sereis fundidos no meio dela; e sabereis que eu, o Senhor, derramei o meu furor sobre vós.</p>
+            <p>23 E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>24 Filho do homem, dize-lhe: Tu és uma terra que não está purificada, nem chovida no dia da indignação.</p>
+            <p>25 Conspiração dos seus profetas há no meio dela, como um leão que ruge e arrebata a presa; devoram almas, tomam tesouros e coisas preciosas, multiplicam as suas viúvas no meio dela.</p>
+            <p>26 Os seus sacerdotes violentam a minha lei, e profanam as minhas coisas santas; entre o santo e o profano não fazem diferença, nem discernem entre o imundo e o limpo; e dos meus sábados escondem os seus olhos, e assim sou profanado no meio deles.</p>
+            <p>27 Os seus príncipes no meio dela são como lobos que arrebatam a presa, para derramar sangue, destruindo almas, para obterem lucro injusto.</p>
+            <p>28 E os seus profetas lhes recobrem com argamassa não temperada, vendo vaidade e adivinhando mentiras, dizendo: Assim diz o Senhor Deus, sem que o Senhor tenha falado.</p>
+            <p>29 Ao povo da terra usam de opressão, cometem roubo, afligem o pobre e o necessitado, e ao estrangeiro oprimem injustamente.</p>
+            <p>30 E busquei dentre eles um homem que estivesse tapando o muro e estivesse na brecha perante mim por esta terra, para que eu não a destruísse; porém a ninguém achei.</p>
+            <p>31 Por isso, derramei sobre eles a minha indignação; com o fogo do meu furor os consumi; fiz que o seu caminho recaísse sobre a sua cabeça, diz o Senhor Deus.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
