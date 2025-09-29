@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 35</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 35</h2>
+            <h3>Profecia Contra Edom</h3>
+            <p>1. E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2. Filho do homem, dirige o teu rosto contra o monte Seir, e profetiza contra ele,</p>
+            <p>3. E dize-lhe: Assim diz o Senhor Deus: Eis que eu estou contra ti, ó monte Seir, e estenderei a minha mão contra ti, e te farei desolação e espanto.</p>
+            <p>4. As tuas cidades farei desertas, e tu serás assolado; e saberás que eu sou o Senhor.</p>
+            <p>5. Porquanto guardaste perpétua inimizade, e entregaste os filhos de Israel ao fio da espada, no tempo da calamidade, no tempo final da iniquidade,</p>
+            <p>6. Por isso, vivo eu, diz o Senhor Deus, que te entregarei ao sangue, e o sangue te perseguirá; visto que não odiaste o sangue, o sangue te perseguirá.</p>
+            <p>7. E farei do monte Seir uma desolação e espanto, e exterminarei dele quem passar e quem voltar.</p>
+            <p>8. E encherei os seus montes de mortos; nos teus outeiros, nos teus vales e em todas as tuas correntes cairão os mortos à espada.</p>
+            <p>9. Farei de ti perpétuas desolações, e as tuas cidades nunca mais serão habitadas; e sabereis que eu sou o Senhor.</p>
+            <p>10. Porquanto disseste: Estes dois povos e estas duas terras serão meus, e os possuirei, sendo que o Senhor estava ali,</p>
+            <p>11. Portanto, vivo eu, diz o Senhor Deus, que procederei conforme à tua ira e conforme à tua inveja, que usaste por causa do teu ódio contra eles; e me farei conhecer entre eles, quando te julgar.</p>
+            <p>12. E saberás que eu, o Senhor, ouvi todas as tuas blasfêmias, que proferiste contra os montes de Israel, dizendo: Estão assolados, nos foram dados para devorarmos.</p>
+            <p>13. E vos engrandecestes contra mim com a vossa boca, e multiplicastes as vossas palavras contra mim; eu ouvi.</p>
+            <p>14. Assim diz o Senhor Deus: Quando toda a terra se alegrar, eu te farei desolação.</p>
+            <p>15. Como te alegraste sobre a herança da casa de Israel, porque estava assolada, assim farei contigo; tu serás assolado, ó monte Seir, e todo Edom, sim, todo ele; e saberão que eu sou o Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel34.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel36.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

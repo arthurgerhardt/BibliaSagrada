@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 38</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 38</h2>
+            <h3>A Invasão de Gog</h3>
+            <p>1. E veio a mim a palavra do Senhor, dizendo:</p>
+            <p>2. Filho do homem, dirige o teu rosto contra Gog, da terra de Magogue, príncipe chefe de Meseque e Tubal, e profetiza contra ele.</p>
+            <p>3. E dize: Assim diz o Senhor Deus: Eis que eu sou contra ti, ó Gog, príncipe chefe de Meseque e Tubal.</p>
+            <p>4. E te farei voltar, e porei anzóis nos teus queixos, e te tirarei, a ti e a todo o teu exército, cavalos e cavaleiros, todos vestidos com armaduras, grande multidão com escudos e broquéis, todos manejando espadas.</p>
+            <p>5. Persas, Cuxe e Pute com eles, todos com escudos e capacetes.</p>
+            <p>6. Gômer e todas as suas tropas; a casa de Togarma, do extremo norte, e todas as suas tropas; muitos povos contigo.</p>
+            <p>7. Prepara-te e dispõe-te, tu e toda a tua multidão que se ajuntou a ti, e serve-lhes de guarda.</p>
+            <p>8. Depois de muitos dias serás visitado; no fim dos anos virás à terra que se recuperou da espada, ao povo congregado dentre muitos povos, sobre os montes de Israel, que sempre estiveram desolados; mas foi tirado dentre os povos, e todos eles habitarão seguramente.</p>
+            <p>9. Então subirás, virás como uma tempestade, far-te-ás como uma nuvem que cobre a terra, tu e todas as tuas tropas, e muitos povos contigo.</p>
+            <p>10. Assim diz o Senhor Deus: E acontecerá naquele dia que subirão palavras ao teu coração, e maquinarás um mau desígnio.</p>
+            <p>11. E dirás: Subirei contra a terra das aldeias sem muros; irei contra os que estão em repouso, que habitam seguros, todos eles habitando sem muros, e não têm ferrolhos nem portas;</p>
+            <p>12. Afim de tomar o despojo, e de arrebatar a presa, para tornar a tua mão contra as terras desertas que agora se acham habitadas, e contra o povo que se ajuntou dentre as nações, que tem gado e bens, e habita no meio da terra.</p>
+            <p>13. Sabá, Dedã, e os mercadores de Társis, e todos os seus leõezinhos, te dirão: Vens tu para tomar o despojo? Ajuntaste a tua multidão para arrebatar a presa, para levar prata e ouro, para tomar gado e bens, para saquear grande despojo?</p>
+            <p>14. Portanto, profetiza, ó filho do homem, e dize a Gog: Assim diz o Senhor Deus: Naquele dia, quando o meu povo Israel habitar seguro, acaso não o saberás tu?</p>
+            <p>15. Virás, pois, do teu lugar, do extremo norte, tu e muitos povos contigo, todos montados em cavalos, grande multidão e poderoso exército.</p>
+            <p>16. E subirás contra o meu povo Israel como uma nuvem para cobrir a terra; nos últimos dias eu te trarei contra a minha terra, para que as nações me conheçam, quando eu for santificado em ti, ó Gog, diante dos seus olhos.</p>
+            <p>17. Assim diz o Senhor Deus: Não és tu aquele de quem falei nos dias antigos, por meio dos meus servos, os profetas de Israel, os quais profetizaram naqueles dias, durante muitos anos, que eu te traria contra eles?</p>
+            <p>18. E acontecerá, naquele dia, quando Gog vier contra a terra de Israel, diz o Senhor Deus, que a minha indignação subirá ao meu rosto.</p>
+            <p>19. Porque no meu zelo, no fogo do meu furor, falei que, naquele dia, haverá um grande terremoto na terra de Israel.</p>
+            <p>20. De modo que os peixes do mar, as aves do céu, os animais do campo, todos os répteis que se arrastam sobre a terra, e todos os homens que estão sobre a face da terra, tremerão diante de mim; e os montes serão derrubados, e os precipícios cairão, e todos os muros cairão por terra.</p>
+            <p>21. E chamarei contra Gog a espada em todos os meus montes, diz o Senhor Deus; a espada de cada um será contra o seu irmão.</p>
+            <p>22. E contenderei com ele por meio da peste e do sangue; e uma chuva inundante, e grandes pedras de saraiva, fogo e enxofre farei chover sobre ele, e sobre as suas tropas, e sobre os muitos povos que estão com ele.</p>
+            <p>23. Assim eu me engrandecerei, e me santificarei, e me darei a conhecer aos olhos de muitas nações; e saberão que eu sou o Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel37.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel39.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
