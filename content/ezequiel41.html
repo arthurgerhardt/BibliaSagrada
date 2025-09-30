@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 41</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 41</h2>
+            <h3>O Templo Interior</h3>
+            <p>1. Então me levou ao templo, e mediu os pilares, seis côvados de largura de um lado, e seis côvados de largura do outro lado, que era a largura da tenda.</p>
+            <p>2. E a largura da porta era de dez côvados, e os lados da porta eram de cinco côvados de um lado, e cinco côvados do outro lado; e mediu o seu comprimento, quarenta côvados, e a largura, vinte côvados.</p>
+            <p>3. Depois entrou no interior, e mediu cada pilar da porta, dois côvados, e a porta, seis côvados, e a largura da porta, sete côvados.</p>
+            <p>4. E mediu o seu comprimento, vinte côvados, e a largura, vinte côvados, diante do templo; e disse-me: Este é o lugar santíssimo.</p>
+            <p>5. Então mediu a parede da casa, seis côvados; e a largura das câmaras laterais, quatro côvados ao redor da casa.</p>
+            <p>6. E as câmaras laterais estavam sobrepostas, câmara sobre câmara, trinta ao todo; e entravam na parede da casa, que era para as câmaras laterais ao redor, para que se firmassem, mas não se firmavam na parede da casa.</p>
+            <p>7. E havia uma ampliação e elevação para cima nas câmaras laterais, pois a espiral da casa subia ao redor da casa; por isso a largura da casa era maior para cima; assim, da câmara inferior se subia à superior pelo meio.</p>
+            <p>8. E vi também a altura da casa ao redor; as câmaras laterais tinham uma base cheia de uma vara inteira de seis côvados de altura.</p>
+            <p>9. A largura da parede das câmaras laterais por fora era de cinco côvados; e havia um espaço livre entre as câmaras laterais da casa.</p>
+            <p>10. E entre as câmaras laterais havia uma largura de vinte côvados ao redor da casa por todos os lados.</p>
+            <p>11. E as portas das câmaras laterais davam para o espaço livre, uma porta para o norte, e outra porta para o sul; e a largura do espaço livre era de cinco côvados ao redor.</p>
+            <p>12. E o edifício que estava separado, ao lado do espaço livre, do lado ocidental, tinha setenta côvados de largura; e a parede do edifício tinha cinco côvados de largura ao redor, e o seu comprimento era de noventa côvados.</p>
+            <p>13. E mediu a casa, cem côvados de comprimento; e o edifício separado, com as suas paredes, cem côvados de comprimento.</p>
+            <p>14. E a largura da frente da casa, e do edifício separado, para o oriente, era de cem côvados.</p>
+            <p>15. E mediu o comprimento do edifício separado, que estava atrás da casa, e as suas galerias de ambos os lados, cem côvados; e o templo interior, e os vestíbulos do átrio.</p>
+            <p>16. Os umbrais, e as janelas estreitas, e as galerias ao redor dos três, diante dos umbrais, estavam revestidos de madeira ao redor; desde o chão até as janelas; e as janelas estavam cobertas.</p>
+            <p>17. Até acima da porta, e até a casa interior, e por fora, e por toda a parede ao redor, por dentro e por fora, tudo estava medido.</p>
+            <p>18. E foi feito com querubins e palmeiras, de modo que uma palmeira estava entre querubim e querubim; e cada querubim tinha duas faces.</p>
+            <p>19. A face de um homem olhava para a palmeira de um lado, e a face de um leão olhava para a palmeira do outro lado; assim foi feito por toda a casa ao redor.</p>
+            <p>20. Desde o chão até acima da porta estavam feitos querubins e palmeiras, e também na parede do templo.</p>
+            <p>21. O templo tinha batentes quadrados; e a frente do santuário tinha a mesma aparência.</p>
+            <p>22. O altar de madeira tinha três côvados de altura, e dois côvados de comprimento; e os seus cantos, e o seu suporte, e as suas paredes eram de madeira; e disse-me: Esta é a mesa que está diante do Senhor.</p>
+            <p>23. E o templo e o santuário tinham duas portas.</p>
+            <p>24. E cada porta tinha duas folhas, duas folhas giratórias; duas folhas para uma porta, e duas folhas para a outra porta.</p>
+            <p>25. E nelas, nas portas do templo, estavam feitos querubins e palmeiras, como estavam feitos nas paredes; e havia uma cobertura de madeira na frente do vestíbulo exterior.</p>
+            <p>26. E havia janelas estreitas e palmeiras de um lado e de outro, nos lados do vestíbulo, e nas câmaras da casa, e nas coberturas.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel40.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel42.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
