@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 45</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 45</h2>
+            <h3>Repartição da Terra, Ofertas e Festas Solenes</h3>
+            <p>1. E, quando repartirdes por sortes a terra em herança, oferecereis ao Senhor uma oferta, uma porção santa da terra; o comprimento será de vinte e cinco mil côvados, e a largura de dez mil; esta será santa em toda a sua extensão ao redor.</p>
+            <p>2. Deste espaço se separarão para o santuário quinhentos côvados de comprimento por quinhentos de largura, em quadrado, e cinquenta côvados ao redor para o seu espaço exterior.</p>
+            <p>3. E desta medida medirás vinte e cinco mil côvados de comprimento, e dez mil de largura; ali estará o santuário, o lugar santíssimo.</p>
+            <p>4. Esta será a porção santa da terra para os sacerdotes, ministros do santuário, que se chegam para ministrar ao Senhor; será para eles um lugar para casas, e lugar santo para o santuário.</p>
+            <p>5. E vinte e cinco mil côvados de comprimento, e dez mil de largura, serão para os levitas, ministros da casa, para possessão deles, para cidades para habitarem.</p>
+            <p>6. E como possessão da cidade dareis cinco mil côvados de largura, e vinte e cinco mil de comprimento, ao lado da oferta santa; será para toda a casa de Israel.</p>
+            <p>7. E para o príncipe haverá uma porção de um lado e de outro da oferta santa e da possessão da cidade, diante da oferta santa e diante da possessão da cidade, desde o lado ocidental para o ocidente, e desde o lado oriental para o oriente; e o comprimento será igual a uma das partes, desde o limite ocidental até o limite oriental.</p>
+            <p>8. Esta terra será para ele por possessão em Israel; e os meus príncipes nunca mais oprimirão o meu povo, mas repartirão a terra à casa de Israel, segundo as suas tribos.</p>
+            <p>9. Assim diz o Senhor Deus: Basta, ó príncipes de Israel! Apartai a violência e a destruição, fazei juízo e justiça; tirai as vossas exações do meu povo, diz o Senhor Deus.</p>
+            <p>10. Tereis balanças justas, efa justo, e bato justo.</p>
+            <p>11. O efa e o bato serão de uma mesma medida, para que o bato contenha a décima parte do ômer, e o efa a décima parte do ômer; a medida deles será segundo o ômer.</p>
+            <p>12. E o siclo será de vinte geras; vinte siclos, vinte e cinco siclos, quinze siclos, serão para vós um mane.</p>
+            <p>13. Esta será a oferta que oferecereis: a sexta parte de um efa de cada ômer de trigo, e a sexta parte de um efa de cada ômer de cevada.</p>
+            <p>14. Quanto ao azeite, oferecereis um bato de azeite de cada coro; o coro é de dez batos, ou seja, um ômer, pois dez batos fazem um ômer.</p>
+            <p>15. E um cordeiro de cada rebanho de duzentos, das águas de Israel, para oferta de alimentos, para holocausto, e para ofertas pacíficas, para fazer expiação por eles, diz o Senhor Deus.</p>
+            <p>16. Todo o povo da terra contribuirá para esta oferta, para os príncipes de Israel.</p>
+            <p>17. E será obrigação do príncipe dar os holocaustos, as ofertas de alimentos e as ofertas de bebidas, nas festas, nas luas novas e nos sábados, em todas as solenidades da casa de Israel; ele preparará a oferta pelo pecado, a oferta de alimentos, o holocausto e as ofertas pacíficas, para fazer expiação pela casa de Israel.</p>
+            <p>18. Assim diz o Senhor Deus: No primeiro mês, ao primeiro dia do mês, tomarás um novilho sem defeito, e purificarás o santuário.</p>
+            <p>19. E o sacerdote tomará do sangue da oferta pelo pecado, e o porá nas ombreiras da casa, e nos quatro cantos do rebordo do altar, e nas ombreiras da porta do átrio interior.</p>
+            <p>20. Assim também farás no sétimo dia do mês, por causa dos que pecaram por ignorância ou por engano; assim fareis expiação pela casa.</p>
+            <p>21. No primeiro mês, ao décimo quarto dia do mês, tereis a páscoa, uma festa de sete dias; pães asmos se comerão.</p>
+            <p>22. E naquele dia o príncipe preparará por si e por todo o povo da terra um novilho como oferta pelo pecado.</p>
+            <p>23. E nos sete dias da festa preparará um holocausto ao Senhor, sete novilhos e sete carneiros sem defeito, cada dia durante os sete dias; e um bode como oferta pelo pecado, cada dia.</p>
+            <p>24. E como oferta de alimentos, preparará um efa para cada novilho, e um efa para cada carneiro, e um hin de azeite para cada efa.</p>
+            <p>25. No sétimo mês, ao décimo quinto dia do mês, na festa, preparará da mesma maneira por sete dias, tanto a oferta pelo pecado, como o holocausto, e a oferta de alimentos, e o azeite.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel44.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel46.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ezequiel 43</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ezequiel 43</h2>
+            <h3>A Lei da Casa e a Consagração do Altar</h3>
+            <p>1. Então me levou à porta, à porta que olha para o oriente;</p>
+            <p>2. E eis que a glória do Deus de Israel vinha do caminho do oriente; e a sua voz era como a voz de muitas águas, e a terra resplandeceu com a sua glória.</p>
+            <p>3. E o aspecto que vi era como o aspecto que vi quando vim para destruir a cidade, e eram as mesmas visões que vi junto ao rio Quebar; e me prostrei sobre o meu rosto.</p>
+            <p>4. E a glória do Senhor entrou na casa pelo caminho da porta que olha para o oriente.</p>
+            <p>5. E o Espírito me levantou e me levou ao átrio interior; e eis que a glória do Senhor encheu a casa.</p>
+            <p>6. E ouvi alguém que falava comigo de dentro da casa, e um homem estava em pé junto a mim.</p>
+            <p>7. E me disse: Filho do homem, este é o lugar do meu trono, o lugar das plantas dos meus pés, onde habitarei no meio dos filhos de Israel para sempre; e nunca mais a casa de Israel, nem os seus reis, contaminarão o meu santo nome com as suas prostituições, nem com os cadáveres dos seus reis, nos seus altos.</p>
+            <p>8. Pondo eles o seu limiar junto ao meu limiar, e o seu umbral junto ao meu umbral, de maneira que havia uma só parede entre mim e eles, contaminaram o meu santo nome com as suas abominações que fizeram; por isso os consumi na minha ira.</p>
+            <p>9. Agora lancem para longe de mim as suas prostituições e os cadáveres dos seus reis, e habitarei no meio deles para sempre.</p>
+            <p>10. Tu, filho do homem, mostra à casa de Israel esta casa, para que se envergonhem das suas iniquidades; e meçam o modelo.</p>
+            <p>11. E, envergonhando-se de tudo quanto fizeram, faze-lhes saber a forma desta casa, e o seu modelo, e as suas saídas, e as suas entradas, e todas as suas formas, e todos os seus estatutos, e todas as suas formas, e todas as suas leis; e escreve isto diante dos seus olhos, para que guardem toda a sua forma e todos os seus estatutos, e os cumpram.</p>
+            <p>12. Esta é a lei da casa: sobre o cume do monte, todo o seu contorno será santíssimo. Eis que esta é a lei da casa.</p>
+            <h3>O Altar e Suas Regras</h3>
+            <p>13. E estas são as medidas do altar em côvados (o côvado é de um palmo e quatro dedos): a base terá um côvado de altura e um côvado de largura, e o seu rebordo ao redor será de um palmo; este será o fundo do altar.</p>
+            <p>14. E desde a base até a saliência inferior, dois côvados de altura e um côvado de largura; e desde a saliência menor até a maior, quatro côvados de altura e um côvado de largura.</p>
+            <p>15. E o altar terá quatro côvados; e do altar sairão quatro chifres.</p>
+            <p>16. E o altar terá doze côvados de comprimento por doze de largura, quadrado nos quatro lados.</p>
+            <p>17. E a saliência terá quatorze côvados de comprimento por quatorze de largura, nos quatro lados; e o rebordo ao redor dela será de meio côvado, e a base de um côvado ao redor; e os seus degraus olharão para o oriente.</p>
+            <p>18. E disse-me: Filho do homem, assim diz o Senhor Deus: Estes são os estatutos do altar no dia em que o fizerem, para oferecerem sobre ele holocaustos e para aspergirem sangue sobre ele.</p>
+            <p>19. Aos sacerdotes levitas, que são da descendência de Zadoque, que se chegam a mim, diz o Senhor Deus, darás um novilho para oferta pelo pecado.</p>
+            <p>20. E tomarás do seu sangue, e o porás sobre os quatro chifres do altar, e sobre os quatro cantos da saliência, e sobre o rebordo ao redor; assim o purificarás e farás expiação por ele.</p>
+            <p>21. Então tomarás o novilho da oferta pelo pecado, e o queimarás no lugar designado da casa, fora do santuário.</p>
+            <p>22. No segundo dia oferecerás um bode sem defeito como oferta pelo pecado; e purificarão o altar, como o purificaram com o novilho.</p>
+            <p>23. Quando acabares de purificar, oferecerás um novilho sem defeito e um carneiro do rebanho sem defeito.</p>
+            <p>24. E os oferecerás diante do Senhor, e os sacerdotes lançarão sal sobre eles, e os oferecerão em holocausto ao Senhor.</p>
+            <p>25. Por sete dias prepararás cada dia um bode como oferta pelo pecado; também prepararão um novilho e um carneiro do rebanho, ambos sem defeito.</p>
+            <p>26. Por sete dias farão expiação pelo altar e o purificarão; assim o consagrarão.</p>
+            <p>27. E, cumpridos estes dias, desde o oitavo dia em diante, os sacerdotes prepararão sobre o altar os vossos holocaustos e as vossas ofertas pacíficas; e eu vos aceitarei, diz o Senhor Deus.</p>
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ezequiel42.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ezequiel44.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
