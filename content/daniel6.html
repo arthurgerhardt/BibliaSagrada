@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Daniel 6</h2>
+            <h3>Daniel na Cova dos Leões</h3>
+            <p>1. Dario, o medo, estabeleceu sobre o reino cento e vinte sátrapas, que estivessem sobre todo o reino;</p>
+            <p>2. E sobre estes, três presidentes, dos quais Daniel era um, para que estes sátrapas dessem conta ao rei, e que nenhum negócio fosse pesado para o rei, sem que primeiro fosse trazido a eles.</p>
+            <p>3. Então Daniel se destacou entre os presidentes e sátrapas, porque nele havia um espírito excelente; e o rei pensava em estabelecer-lhe sobre todo o reino.</p>
+            <p>4. Então os presidentes e os sátrapas procuravam ocasião contra Daniel, para acharem algum mal nele, mas não podiam achar nenhum, porque ele era fiel, e nenhuma negligência ou corrupção se achava nele.</p>
+            <p>5. Então estes homens disseram: Nunca acharemos ocasião contra este Daniel, a não ser que a achemos contra ele no tocante à lei do seu Deus.</p>
+            <p>6. Então estes presidentes e sátrapas foram juntos ao rei, e disseram-lhe assim: Ó rei Dario, vive eternamente!</p>
+            <p>7. Todos os presidentes do reino, os prefeitos, os capitães, os conselheiros, os tesoureiros, os oficiais e os sátrapas concordaram em fazer um decreto, para que qualquer que fizere petição a algum deus ou homem, senão a ti, ó rei, durante trinta dias, seja lançado na cova dos leões.</p>
+            <p>8. Agora, ó rei, estabelece o decreto, e assina-o, para que não se possa mudar, segundo a lei dos medos e dos persas, a qual não se pode revogar.</p>
+            <p>9. Então o rei Dario assinou o decreto.</p>
+            <p>10. E, quando Daniel soube que o decreto estava assinado, foi para casa; e, abertas as janelas do seu quarto, que davam para Jerusalém,, ele se punha de joelhos três vezes por dia, e orava, e dava graças diante do seu Deus, como também o costumava fazer antes.</p>
+            <p>11. Então estes homens se ajuntaram, e acharam a Daniel orando e pedindo ao seu Deus.</p>
+            <p>12. Então se aproximaram, e falaram ao rei acerca do decreto: Ó rei, não assinaste um decreto, pelo qual qualquer que fizer petição a algum deus ou homem, senão a ti, durante trinta dias, seja lançado na cova dos leões? O rei respondeu, e disse: A verdade é, conforme o decreto, que é irrevogável, segundo a lei dos medos e dos persas.</p>
+            <p>13. Então responderam, e disseram perante o rei: Daniel, um dos cativos de Judá, não te faz caso, ó rei, nem do decreto que assinaste, mas três vezes por dia faz petição.</p>
+            <p>14. Então o rei, quando ouviu estas palavras, ficou muito contristado, e esforçou-se por livrá-lo; e até a tarde se esforçou por livrá-lo.</p>   
+            <p>15. Então estes homens foram juntos ao rei, e disseram-lhe: Sabe, ó rei, que a lei dos medos e dos persas é que nenhum decreto ou estatuto que o rei estabelecer, se pode mudar.</p>
+            <p>16. Então o rei ordenou que trouxessem a Daniel, e o lançaram na cova dos leões. E o rei disse a Daniel: O teu Deus, a quem tu continuamente serves, ele te livrará.</p>
+            <p>17. E foi trazida uma pedra, e posta sobre a boca da cova; e o rei a selou com o seu anel, e com o anel dos seus grandes, para que nada se mudasse a respeito de Daniel.</p>
+            <p>18. Então o rei se retirou para o seu palácio, e passou a noite sem comer, e não se deixou dormir.</p>
+            <p>19. E, pela manhã, levantando-se de madrugada, foi apressadamente à cova dos leões.</p>
+            <p>20. E, chegando-se à cova, chamou a Daniel com voz triste; e o rei falou, dizendo: Daniel, servo do Deus vivo, acaso o teu Deus, a quem tu continuamente serves, te livrou dos leões?</p>
+            <p>21. Então Daniel falou ao rei: Ó rei, vive eternamente!</p>
+            <p>22. O meu Deus enviou o seu anjo, e fechou a boca dos leões, para que não me fizessem dano, porque fui achado inocente diante dele; e também contra ti, ó rei, não cometi nenhum mal.</p>
+            <p>23. Então o rei se alegrou muito, e ordenou que tirassem a Daniel da cova. Assim Daniel foi tirado da cova, e nenhuma ferida se achou nele, porque confiou no seu Deus.</p>
+            <p>24. E o rei ordenou que trouxessem os homens que tinham acusado a Daniel, e que os lançassem na cova dos leões, eles, os seus filhos e as suas mulheres; e antes que chegassem ao fundo da cova, os leões os dominaram, e despedaçaram todos os seus ossos.</p>
+            <p>25. Então o rei Dario escreveu a todos os povos, nações e línguas, que habitavam em toda a terra: Paz vos seja multiplicada!</p>
+            <p>26. Decreto que em todo o meu domínio se tema e reverencie o Deus de Daniel; porque ele é o Deus vivo, e permanece para sempre; e o seu reino não será destruído, e o seu domínio durará até o fim.</p>
+            <p>27. Ele livra e salva, e faz sinais e maravilhas nos céus e na terra; foi ele quem livrou Daniel da cova dos leões.</p>
+            <p>28. Assim este Daniel prosperou no reinado de Dario, e no reinado de Ciro, o persa.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/daniel5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/daniel7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
