@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oséias 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Oséias 6</h2>
+            <h3>O Valor do Conhecimento e da Misericórdia</h3>
+            <p>1. Vinde, e tornemos para o Senhor, porque ele despedaçou, e nos sarará; feriu, e nos ligará.</p>
+            <p>2. Depois de dois dias nos dará a vida; ao terceiro dia nos ressuscitará, e viveremos diante dele.</p>
+            <p>3. Então conheceremos, e prosseguiremos em conhecer ao Senhor; como a alva, a sua saída é certa; e ele descerá sobre nós como a chuva, como a chuva serôdia que rega a terra.</p>
+            <p>4. Que te farei, ó Efraim? Que te farei, ó Judá? Porque o vosso amor é como a nuvem da manhã, e como o orvalho que cedo passa.</p>
+            <p>5. Por isso os abati pelos profetas, pela palavra da minha boca os matei; e os teus juízos sairão como a luz.</p>
+            <p>6. Porque misericórdia quero, e não sacrifício; e o conhecimento de Deus, mais do que holocaustos.</p>
+            <p>7. Mas eles transgrediram o pacto, como Adão; eles se portaram aleivosamente contra mim.</p>
+            <p>8. Gileade é cidade de malfeitores, cheia de vestígios de sangue.</p>
+            <p>9. Como hordas de salteadores que espreitam um homem, assim é o grupo de sacerdotes; eles matam no caminho para Siquém; sim, cometem abominações.</p>
+            <p>10. Vejo uma coisa horrenda na casa de Israel: ali está a prostituição de Efraim; Israel está contaminado.</p>
+            <p>11. Também para ti, ó Judá, está determinada uma ceifa, quando eu trouxer do cativeiro o meu povo.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/oseias5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/oseias7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
