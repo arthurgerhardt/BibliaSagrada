@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oséias 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Oséias 8</h2>
+            <h3>Israel Colhe as Consequências da Rebeldia</h3>
+            <p>1. Toca a buzina! Como a águia vem contra a casa do Senhor, porque transgrediram o meu pacto e se rebelaram contra a minha lei.</p>
+            <p>2. Eles clamarão a mim: Deus meu, nós, Israel, te conhecemos.</p>
+            <p>3. Israel rejeitou o bem; o inimigo o perseguirá.</p>
+            <p>4. Eles estabeleceram reis, mas não por mim; constituíram príncipes, mas eu não o soube; com sua prata e com seu ouro fizeram ídolos para si, para serem destruídos.</p>
+            <p>5. O teu bezerro, ó Samaria, foi rejeitado; a minha ira se acendeu contra eles; até quando serão incapazes de alcançar a inocência?</p>
+            <p>6. Porque isso vem de Israel; um artífice o fez, e não é Deus; mas o bezerro de Samaria será despedaçado.</p>
+            <p>7. Porque semearam vento, e colherão tormenta; não haverá seara; a erva não dará farinha; e se a der, os estrangeiros a comerão.</p>
+            <p>8. Israel está devorado; agora está entre as nações como um vaso em que ninguém tem prazer.</p>
+            <p>9. Porque subiram à Assíria, como um jumento montês, solitário; Efraim buscou amantes.</p>
+            <p>10. Ainda que tenham feito aliança entre as nações, eu os ajuntarei; e começarão a diminuir por causa da carga do rei dos príncipes.</p>
+            <p>11. Porque Efraim multiplicou altares para pecar, esses altares lhe serão para pecar.</p>
+            <p>12. Escrevi para ele as grandezas da minha lei, mas elas são tidas como coisa estranha.</p>
+            <p>13. Quanto aos sacrifícios das minhas ofertas, sacrificam carne e comem; mas o Senhor não os aceita. Agora se lembrará da sua iniqüidade, e visitará os seus pecados; eles voltarão para o Egito.</p>
+            <p>14. Porque Israel se esqueceu do seu Criador, e edificou palácios; e Judá multiplicou cidades fortificadas; mas eu enviarei fogo às suas cidades, o qual consumirá os seus palácios.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/oseias7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/oseias9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

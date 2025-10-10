@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oséias 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Oséias 11</h2>
+            <h3>O Amor de Deus por Israel</h3>
+            <p>1. Quando Israel era menino, eu o amei; e do Egito chamei a meu filho.</p>
+            <p>2. Mas, como os chamavam, assim se iam deles; sacrificavam aos baalins, e queimavam incenso às imagens de escultura.</p>
+            <p>3. Todavia eu ensinei a andar a Efraim, tomando-os nos meus braços; mas não conheceram que eu os curava.</p>
+            <p>4. Atraí-os com cordas humanas, com laços de amor; e fui para eles como os que tiram o jugo de sobre as suas queixadas, e lhes dei mantimento.</p>
+            <p>5. Não voltarão para a terra do Egito, mas a Assíria será seu rei, porque recusam converter-se.</p>
+            <p>6. E cairá a espada sobre as suas cidades, e consumirá os seus ferrolhos, e os devorará por causa dos seus conselhos.</p>
+            <p>7. Porque o meu povo é inclinado a desviar-se de mim; ainda que chamam ao Altíssimo, nenhum deles o exalta.</p>
+            <p>8. Como te deixaria, ó Efraim? Como te entregaria, ó Israel? Como te faria como Admá? Porventura te poria como Zeboim? O meu coração está comovido dentro de mim, as minhas compaixões a uma se acendem.</p>
+            <p>9. Não executarei o furor da minha ira, não voltarei para destruir a Efraim; porque eu sou Deus, e não homem, o Santo no meio de ti; eu não entrarei na cidade.</p>
+            <p>10. Andarão após o Senhor; ele bramará como leão; bramando ele, os filhos tremendo virão do ocidente.</p>
+            <p>11. Tremendo virão como passarinhos do Egito, e como pombas da terra da Assíria; e os farei habitar em suas casas, diz o Senhor.</p>
+            <p>12. Efraim me cercou com mentiras, e a casa de Israel com engano; mas Judá ainda domina com Deus, e é fiel com os santos.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/oseias10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/oseias12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
