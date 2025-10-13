@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amós 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Amós 3</h2>
+            <h3>O Juízo de Deus sobre Israel</h3>
+            <p>1. Ouvi esta palavra que o Senhor fala contra vós, ó filhos de Israel, contra toda a família que fiz subir da terra do Egito, dizendo:</p>
+            <p>2. De todas as famílias da terra somente a vós tenho conhecido; por isso vos punirei por todas as vossas iniquidades.</p>
+            <p>3. Andarão dois juntos, se não estiverem de acordo?</p>
+            <p>4. Rugirá o leão no bosque, sem que tenha presa? Levantará o leãozinho a sua voz da cova, se nada tiver apanhado?</p>
+            <p>5. Cairá a ave no laço sobre a terra, sem que haja armadilha para ela? Levanta-se o laço da terra, sem que tenha apanhado alguma coisa?</p>
+            <p>6. Tocará a buzina na cidade, e o povo não se alarmará? Sucederá algum mal à cidade, sem que o Senhor o tenha feito?</p>
+            <p>7. Certamente o Senhor Deus não fará coisa alguma, sem ter revelado o seu segredo aos seus servos, os profetas.</p>
+            <p>8. Rugiu o leão, quem não temerá? Falou o Senhor Deus, quem não profetizará?</p>
+            <p>9. Fazei ouvir isto nos palácios de Asdode, e nos palácios da terra do Egito, e dizei: Ajuntai-vos sobre os montes de Samaria, e vede as grandes perturbações no meio dela, e os oprimidos dentro dela.</p>
+            <p>10. Porque não sabem fazer o que é reto, diz o Senhor, entesourando nos seus palácios a violência e a destruição.</p>
+            <p>11. Portanto, assim diz o Senhor Deus: Um adversário cercará a terra, derribará a tua fortaleza, e os teus palácios serão saqueados.</p>
+            <p>12. Assim diz o Senhor: Como o pastor livra da boca do leão duas pernas ou um pedaço de orelha, assim serão livrados os filhos de Israel que habitam em Samaria, com um canto de uma cama e com um pedaço de um leito.</p>
+            <p>13. Ouvi, e protestai contra a casa de Jacó, diz o Senhor Deus, o Deus dos Exércitos:</p>
+            <p>14. No dia em que eu visitar as transgressões de Israel sobre ele, também visitarei os altares de Betel; e os chifres do altar serão cortados e cairão por terra.</p>
+            <p>15. E ferirei a casa de inverno com a casa de verão; e as casas de marfim perecerão, e as grandes casas terão fim, diz o Senhor.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/amos2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/amos4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

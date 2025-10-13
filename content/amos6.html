@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amós 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Amós 6</h2>
+            <h3>O castigo dos que vivem em luxo e ignoram a ruína de Israel</h3>
+            <p>1. Ai dos que estão à vontade em Sião, e dos que confiam no monte de Samaria, os principais dentre a primeira das nações, aos quais vem a casa de Israel!</p>
+            <p>2. Passai a Calné, e vede; e dali ide a Hamate, a grande; depois descei a Gate dos filisteus. Sois melhores do que estes reinos? Ou é maior o seu território do que o vosso território?</p>
+            <p>3. Vós que afastais o dia mau, e fazeis chegar o assento da violência;</p>
+            <p>4. Que dormem em camas de marfim, e se estendem sobre seus leitos, e comem os cordeiros do rebanho, e os bezerros do meio do curral;</p>
+            <p>5. Que cantam ao som da harpa, e inventam para si instrumentos musicais, como Davi;</p>
+            <p>6. Que bebem vinho em taças, e se ungem com os melhores óleos; mas não se afligem pela ruína de José;</p>
+            <p>7. Portanto agora irão em cativeiro entre os primeiros dos que forem levados cativos; e cessará o ajuntamento dos que estão à vontade.</p>
+            <p>8. Jurou o Senhor DEUS por si mesmo, diz o Senhor, o Deus dos Exércitos: Abomino a soberba de Jacó, e odeio os seus palácios; por isso entregarei a cidade e tudo o que nela há.</p>
+            <p>9. E será que, se restarem dez homens numa casa, morrerão.</p>
+            <p>10. E quando um parente, que deve queimar os corpos, pegar cada um para tirar os ossos da casa, e disser ao que estiver nos cantos da casa: Há ainda alguém contigo? E ele disser: Não há ninguém; então dirá: Cala-te, porque não devemos fazer menção do nome do Senhor.</p>
+            <p>11. Porque eis que o Senhor ordena, e será ferida a casa grande em pedaços, e a casa pequena em fendas.</p>
+            <p>12. Porventura correrão cavalos sobre a rocha? Ou lavrar-se-á com bois nela? Pois convertestes o juízo em fel, e o fruto da justiça em alosna;</p>
+            <p>13. Vós que vos alegrais por coisa de nada, vós que dizeis: Não é por nossa força que tomamos para nós cornos?</p>
+            <p>14. Porque eis que levantarei sobre vós, ó casa de Israel, uma nação, diz o Senhor, o Deus dos Exércitos; e eles vos oprimirão desde a entrada de Hamate até ao ribeiro do deserto.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/amos5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/amos7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

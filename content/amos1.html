@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amós 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Amós 1</h2>
+            <h3>Profecias de Amós sobre o julgamento das nações</h3>
+            <p>1. Palavras de Amós, que estava entre os pastores de Tecoa, que viu acerca de Israel nos dias de Uzias, rei de Judá, e nos dias de Jeroboão, filho de Joás, rei de Israel, dois anos antes do terremoto.</p>
+            <p>2. E disse: O Senhor bramará de Sião, e de Jerusalém fará ouvir a sua voz; então os pastos dos pastores prantearão, e o cume do Carmelo secará.</p>
+            <p>3. Assim diz o Senhor: Por três transgressões de Damasco, e por quatro, não retirarei o castigo; porque trilharam a Gileade com trilhos de ferro.</p>
+            <p>4. Por isso enviarei fogo à casa de Hazael, o qual consumirá os palácios de Ben-Hadade.</p>
+            <p>5. E quebrarei o ferrolho de Damasco, e exterminarei o morador do vale de Áven, e o que tem o cetro de Bete-Éden; e o povo da Síria será levado cativo a Quir, diz o Senhor.</p>
+            <p>6. Assim diz o Senhor: Por três transgressões de Gaza, e por quatro, não retirarei o castigo; porque levaram em cativeiro todo um povo, para o entregar a Edom.</p>
+            <p>7. Por isso enviarei fogo aos muros de Gaza, o qual consumirá os seus palácios.</p>
+            <p>8. E exterminarei o morador de Asdode, e o que tem o cetro de Asquelom; e voltarei a minha mão contra Ecrom, e o restante dos filisteus perecerá, diz o Senhor Deus.</p>
+            <p>9. Assim diz o Senhor: Por três transgressões de Tiro, e por quatro, não retirarei o castigo; porque entregaram todo um povo cativo a Edom, e não se lembraram do pacto dos irmãos.</p>
+            <p>10. Por isso enviarei fogo aos muros de Tiro, o qual consumirá os seus palácios.</p>
+            <p>11. Assim diz o Senhor: Por três transgressões de Edom, e por quatro, não retirarei o castigo; porque perseguiu a seu irmão à espada, e sufocou a sua compaixão, e a sua ira despedaçou continuamente, e conservou a sua indignação para sempre.</p>
+            <p>12. Por isso enviarei fogo a Temã, o qual consumirá os palácios de Bozra.</p>
+            <p>13. Assim diz o Senhor: Por três transgressões dos filhos de Amom, e por quatro, não retirarei o castigo; porque fenderam as mulheres grávidas de Gileade, para dilatarem o seu território.</p>
+            <p>14. Por isso acenderei fogo ao muro de Rabá, o qual consumirá os seus palácios, com alarido no dia da batalha, com tempestade no dia do vendaval.</p>
+            <p>15. E o seu rei irá para o cativeiro, ele e os seus príncipes juntamente, diz o Senhor.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joel3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/amos2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joel 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Joel 3</h2>
+            <h3>O Dia do Senhor: Juízo e Restauração em Sião</h3>
+            <p>1. Porque eis que naqueles dias, e naquele tempo, em que eu remover o cativeiro de Judá e de Jerusalém,</p>
+            <p>2. congregarei todas as nações, e as farei descer ao vale de Josafá; e ali entrarei em juízo com elas, por causa do meu povo e da minha herança, Israel, a quem elas espalharam entre as nações, e repartiram a minha terra.</p>
+            <p>3. E lançaram sortes sobre o meu povo; e deram meninos em troca de uma meretriz, e venderam meninas por vinho, para que bebessem.</p>
+            <p>4. E também, que tendes vós comigo, Tiro e Sidom, e todas as regiões da Filístia? Quereis vingar-vos de mim? Se quereis vingar-vos de mim, eu prontamente farei recair a vossa vingança sobre a vossa cabeça.</p>
+            <p>5. Visto como levastes a minha prata e o meu ouro, e os meus bens preciosos e formosos metestes nos vossos templos;</p>
+            <p>6. e vendestes os filhos de Judá e os filhos de Jerusalém aos filhos dos gregos, para os apartardes para longe dos seus limites.</p>
+            <p>7. Eis que eu os levantarei do lugar para onde os vendestes, e farei que torne a vossa vingança sobre a vossa cabeça.</p>
+            <p>8. E venderei vossos filhos e vossas filhas pela mão dos filhos de Judá, e eles os venderão aos sabeus, a uma nação remota, porque o Senhor o disse.</p>
+            <p>9. Proclamai isto entre as nações: preparai guerra, suscitai os valentes, cheguem-se, subam todos os homens de guerra.</p>
+            <p>10. Forjai espadas das vossas enxadas, e lanças das vossas foices; diga o fraco: Eu sou forte.</p>
+            <p>11. Ajuntai-vos e vinde, todos os povos ao redor, e congregai-vos; ó Senhor, faze descer ali os teus valentes.</p>
+            <p>12. Suscitem-se e subam as nações ao vale de Josafá; porque ali me assentarei para julgar todas as nações ao redor.</p>
+            <p>13. Lançai a foice, porque já está madura a seara; vinde, descei, porque o lagar está cheio, os vasos transbordam; porque grande é a maldade deles.</p>
+            <p>14. Multidões, multidões no vale da decisão; porque o dia do Senhor está perto, no vale da decisão.</p>
+            <p>15. O sol e a lua se escurecerão, e as estrelas retirarão o seu resplendor.</p>
+            <p>16. E o Senhor bramará de Sião, e fará ouvir a sua voz de Jerusalém; e os céus e a terra tremerão; mas o Senhor será o refúgio do seu povo, e a fortaleza dos filhos de Israel.</p>
+            <p>17. E vós sabereis que eu sou o Senhor vosso Deus, que habito em Sião, o meu santo monte; e Jerusalém será santa, e estranhos não passarão mais por ela.</p>
+            <p>18. E acontecerá, naquele dia, que os montes destilarão mosto, e os outeiros manarão leite, e todos os rios de Judá estarão cheios de águas; e sairá uma fonte da casa do Senhor, e regará o vale de Sitim.</p>
+            <p>19. O Egito será uma desolação, e Edom será um deserto assolado, por causa da violência contra os filhos de Judá, cujo sangue inocente derramaram na sua terra.</p>
+            <p>20. Mas Judá será habitada para sempre, e Jerusalém de geração em geração.</p>
+            <p>21. E purificarei o sangue dos que eu não tinha purificado; porque o Senhor habita em Sião.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joel2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/amos1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

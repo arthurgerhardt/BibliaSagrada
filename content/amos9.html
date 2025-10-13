@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amós 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Amós 9</h2>
+            <h3>O julgamento de Israel e a promessa de restauração</h3>
+            <p>1. Eis que o Senhor Deus me lançou mão; o Senhor me fez olhar, e ele quebrou a parede, e subiu.</p>
+            <p>2. E eu lhe respondi: Senhor Deus, não sou eu um homem de lábios impuros, e habito no meio de um povo de impuros lábios; e os meus olhos viram o Rei, o Senhor dos Exércitos?</p>
+            <p>3. Então o Senhor me disse: Vai, profetiza ao meu povo Israel.</p>
+            <p>4. E aconteceu que, tendo eu passado, eis que estava o Senhor em pé, e uma prumo na mão.</p>
+            <p>5. E o Senhor me disse: Que vês, Amós? E eu disse: Um prumo. Então disse o Senhor: Eis que eu porei o prumo no meio do meu povo Israel; nunca mais passarei por ele.</p>
+            <p>6. As montanhas se derreterão debaixo dele, e os outeiros se abalarão; e todo o vale se arrebatará, como o rio do Egito.</p>
+            <p>7. E porei a mão sobre a casa de Jacó, e farei que ela se aparte de toda a casa de José; e porei a mão sobre a casa de Judá, e a salvarei pela mão de Davi, meu servo; não mais se apartará dela a casa de José.</p>
+            <p>8. E acontecerá que, quando eu trouxer de volta os cativos do meu povo Israel, edificarei novamente as cidades assoladas, e nelas habitareis; e plantarei vinhas, e bebereis o seu vinho; edificarei também pomares, e comereis o seu fruto.</p>
+            <p>9. E os plantarei sobre a sua terra, e nunca mais serão arrancados da sua terra que lhes dei, diz o Senhor teu Deus.</p>
+            <p>10. Eis que os dias vêm, diz o Senhor, em que o que lavra seguirá ao que debulha, e o que pisa as uvas ao que semeia; e as montanhas destilarão mosto, e todos os outeiros se derreterão.</p>
+            <p>11. Naquele dia, levantarei o tabernáculo caído de Davi, e repararei as suas brechas; e levantarei as suas ruínas, e o edificarei como nos dias antigos;</p>
+            <p>12. Para que possuam o restante de Edom, e todas as nações que são chamadas pelo meu nome, diz o Senhor, que faz estas coisas.</p>
+            <p>13. Eis que vêm dias, diz o Senhor, em que o que lavra seguirá ao que debulha, e o que pisa as uvas ao que semeia; e os montes destilarão mosto, e todos os outeiros se derreterão.</p>
+            <p>14. E trarei do cativeiro o meu povo Israel, e edificarão as cidades assoladas, e nelas habitarão; e plantarão vinhas, e beberão o seu vinho; e farão pomares, e comerão o seu fruto.</p>
+            <p>15. E os plantarei na sua terra, e nunca mais serão arrancados da sua terra que lhes dei, diz o Senhor teu Deus.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/amos8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/obadias1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

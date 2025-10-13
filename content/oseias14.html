@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oséias 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Oséias 14</h2>
+            <h3>O chamado ao arrependimento e a bênção da restauração</h3>
+            <p>1. Converte-te, ó Israel, ao Senhor teu Deus; porque pelos teus pecados tens caído.</p>
+            <p>2. Tomai convosco palavras, e voltai ao Senhor; dizei-lhe: Tira toda a iniqüidade, e recebe-nos graciosamente, para que ofereçamos os sacrifícios dos nossos lábios.</p>
+            <p>3. Assíria não nos salvará; não iremos montados em cavalos, e não diremos mais à obra das nossas mãos: Tu és o nosso Deus; porque por ti o órfão alcança misericórdia.</p>
+            <p>4. Eu sararei a sua rebeldia, eu voluntariamente os amarei; porque a minha ira se apartou deles.</p>
+            <p>5. Serei para Israel como orvalho; ele florescerá como o lírio, e lançará suas raízes como o Líbano.</p>
+            <p>6. Estender-se-ão os seus ramos, e a sua glória será como a da oliveira, e o seu cheiro como o do Líbano.</p>
+            <p>7. Os que habitam de novo à sua sombra voltarão; serão vivificados como o trigo, e florescerão como a vide; o seu renome será como o vinho do Líbano.</p>
+            <p>8. Efraim dirá: Que mais tenho eu com os ídolos? Eu o atenderei, e o guardarei; eu sou como a faia verde; de mim é achado o teu fruto.</p>
+            <p>9. Quem é sábio, para que entenda estas coisas? Prudente, para que as saiba? Porque os caminhos do Senhor são retos, e os justos andarão neles, mas os transgressores neles cairão.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/oseias13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joel1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
