@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jonas 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Jonas 1</h2>
+            <h3>Jonas foge da missão que Deus lhe deu</h3>
+            <p>1. E veio a palavra do SENHOR a Jonas, filho de Amitai, dizendo:</p>
+            <p>2. Levanta-te, vai à grande cidade de Nínive, e clama contra ela, porque a sua malícia subiu até mim.</p>
+            <p>3. Jonas, porém, se levantou para fugir da presença do SENHOR para Társis; e, descendo a Jope, achou um navio que ia para Társis; pagou, pois, a sua passagem, e desceu para dentro dele, para ir com eles para Társis, para longe da presença do SENHOR.</p>
+            <p>4. Mas o SENHOR lançou sobre o mar um grande vento, e fez-se no mar uma grande tempestade, e o navio estava a ponto de quebrar-se.</p>
+            <p>5. Então os marinheiros, cheios de medo, clamavam cada um ao seu deus, e lançavam ao mar a carga que estava no navio, para o aliviarem; Jonas, porém, desceu ao porão do navio, e, tendo-se deitado, dormia profundamente.</p>
+            <p>6. E o mestre do navio chegou-se a ele, e disse-lhe: Que tens, dorminhoco? Levanta-te, clama ao teu Deus; talvez assim Deus se lembre de nós, para que não pereçamos.</p>
+            <p>7. E diziam uns aos outros: Vinde, lancemos sortes, para que saibamos por causa de quem nos sobreveio este mal. E lançaram sortes, e a sorte caiu sobre Jonas.</p>
+            <p>8. Então lhe disseram: Declara-nos tu, agora, por causa de quem nos sobreveio este mal. Que ocupação é a tua? De onde vens? Qual é a tua terra? E de que povo és tu?</p>
+            <p>9. E ele lhes disse: Eu sou hebreu, e temo ao SENHOR, o Deus do céu, que fez o mar e a terra seca.</p>
+            <p>10. Então os homens ficaram possuídos de grande temor, e disseram-lhe: Por que fizeste isto? Pois sabiam os homens que fugia da presença do SENHOR, porque ele lho tinha declarado.</p>
+            <p>11. E disseram-lhe: Que te faremos, para que o mar se acalme? Porque o mar se ia tornando cada vez mais tempestuoso.</p>
+            <p>12. E ele lhes disse: Levantai-me e lançai-me ao mar, e o mar se aquietará; porque eu sei que por minha causa vos sobreveio esta grande tempestade.</p>
+            <p>13. Entretanto, os homens remavam, esforçando-se por alcançar a terra, mas não podiam, porque o mar se ia tornando cada vez mais tempestuoso contra eles.</p>
+            <p>14. Então clamaram ao SENHOR, e disseram: Ah! SENHOR, nós te rogamos que não pereçamos por causa da vida deste homem, e não faças cair sobre nós este sangue inocente; porque tu, SENHOR, fizeste como te aprouve.</p>
+            <p>15. E levantaram a Jonas, e o lançaram ao mar; e cessou o mar da sua fúria.</p>
+            <p>16. Temeram, pois, estes homens ao SENHOR com grande temor; e ofereceram sacrifício ao SENHOR, e fizeram votos.</p>
+            <p>17. E deparou o SENHOR um grande peixe, para que tragasse a Jonas; e esteve Jonas três dias e três noites nas entranhas do peixe.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/obadias1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/jonas2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
