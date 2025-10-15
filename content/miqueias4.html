@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miquéias 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Miquéias 4</h2>
+            <h3>A futura glória de Sião</h3>
+            <p>1. Mas nos últimos dias acontecerá que o monte da casa do SENHOR será estabelecido no cume dos montes, e será exaltado sobre os outeiros; e a ele concorrerão os povos.</p>
+            <p>2. E irão muitas nações, e dirão: Vinde, e subamos ao monte do SENHOR, à casa do Deus de Jacó, para que nos ensine os seus caminhos, e andemos nas suas veredas; porque de Sião sairá a lei, e de Jerusalém a palavra do SENHOR.</p>
+            <p>3. E ele julgará entre muitos povos, e castigará nações poderosas até muito longe; e converterão as suas espadas em enxadões, e as suas lanças em foices; uma nação não levantará espada contra outra nação, nem aprenderão mais a guerra.</p>
+            <p>4. Mas assentar-se-á cada um debaixo da sua videira e debaixo da sua figueira, e não haverá quem os espante, porque a boca do SENHOR dos Exércitos o disse.</p>
+            <p>5. Porque todos os povos andarão, cada um em nome do seu deus; mas nós andaremos em nome do SENHOR nosso Deus, para todo o sempre.</p>
+            <h3>O SENHOR reunirá o seu povo</h3>
+            <p>6. Naquele dia, diz o SENHOR, congregarei a que cocheia, e recolherei a que foi expulsa, e a que eu afligi.</p>
+            <p>7. E farei da que cocheia um restante, e da que foi lançada longe uma nação poderosa; e o SENHOR reinará sobre eles no monte Sião, desde agora e para sempre.</p>
+            <p>8. E tu, ó torre do rebanho, monte da filha de Sião, a ti virá, sim, a ti virá o primeiro domínio, o reino da filha de Jerusalém.</p>
+            <p>9. Agora, por que fazes tão grande pranto? Não há em ti rei? Pereceu o teu conselheiro, para que te apanhasse a dor como da que está de parto?</p>
+            <p>10. Sofre dores, e esforça-te, ó filha de Sião, como a que está de parto; porque agora sairás da cidade, e habitarás no campo, e irás até Babilônia; ali serás livrada, ali te remirá o SENHOR da mão dos teus inimigos.</p>
+            <p>11. Agora se congregaram muitas nações contra ti, que dizem: Seja profanada, e vejam os nossos olhos o seu desejo sobre Sião.</p>
+            <p>12. Mas não sabem os pensamentos do SENHOR, nem entendem o seu conselho; porque os ajuntou como feixes na eira.</p>
+            <p>13. Levanta-te e trilha, ó filha de Sião, porque eu farei o teu ferro como lâminas, e farei as tuas unhas como bronze; e esmiuçarás a muitos povos, e o seu ganho será consagrado ao SENHOR, e a sua fazenda ao Senhor de toda a terra.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/miqueias3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/miqueias5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

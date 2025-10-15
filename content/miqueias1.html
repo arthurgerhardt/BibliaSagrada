@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miquéias 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Miquéias 1</h2>
+            <h3>A advertência de Deus e o castigo das cidades de Israel e Judá</h3>
+            <p>1. Palavra do SENHOR que veio a Miquéias, o morastita, nos dias de Jotão, Acaz e Ezequias, reis de Judá, a qual ele viu sobre Samaria e Jerusalém.</p>
+            <p>2. Ouvi, todos os povos; presta atenção, ó terra, e tudo o que nela há; e seja o Senhor DEUS testemunha contra vós, o Senhor desde o seu santo templo.</p>
+            <p>3. Porque eis que o SENHOR sai do seu lugar, e descerá, e andará sobre os altos da terra.</p>
+            <p>4. E os montes debaixo dele se derreterão, e os vales se fenderão, como a cera diante do fogo, como as águas que se precipitam por uma ribanceira.</p>
+            <p>5. Tudo isso por causa da transgressão de Jacó, e por causa dos pecados da casa de Israel. Qual é a transgressão de Jacó? Não é Samaria? E quais os altos de Judá? Não é Jerusalém?</p>
+            <p>6. Por isso farei de Samaria um montão de pedras no campo, lugar para plantar vinhas; e farei rolar as suas pedras para o vale, e descobrirei os seus fundamentos.</p>
+            <p>7. E todas as suas imagens de escultura serão despedaçadas, e todos os salários de suas prostitutas serão queimados no fogo, e de todos os seus ídolos eu farei uma desolação; porque do salário de prostituta os ajuntou, e em salário de prostituta se tornarão.</p>
+            <p>8. Por isso lamentarei e uivarei; andarei despojado e nu; farei lamentação como de chacais, e pranto como de avestruzes.</p>
+            <p>9. Porque a sua ferida é incurável, porque chegou até Judá; chegou até à porta do meu povo, até Jerusalém.</p>
+            <p>10. Não o anuncieis em Gate, não choreis de modo algum; em Bete-Leafra revolve-te no pó.</p>
+            <p>11. Passa, ó moradora de Safir, com vergonha e despida; a moradora de Zaanã não saiu; o pranto de Bete-Ezel vos tirará o seu apoio.</p>
+            <p>12. Porque a moradora de Marote suspira pelo bem; porém o mal desceu do SENHOR até à porta de Jerusalém.</p>
+            <p>13. Ata os cavalos ao carro, ó moradora de Laquis; esta foi o princípio do pecado para a filha de Sião, porque em ti se acharam as transgressões de Israel.</p>
+            <p>14. Por isso darás presentes a Moresete-Gate; as casas de Aczibe serão uma decepção para os reis de Israel.</p>
+            <p>15. Ainda trarei a ti um herdeiro, ó moradora de Maressa; chegará até Adulão a glória de Israel.</p>
+            <p>16. Faze-te calva, tosquia-te por causa dos filhos das tuas delícias; alarga a tua calva como a águia, porque de ti foram levados para o cativeiro.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/jonas4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/miqueias2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miquéias 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Miquéias 2</h2>
+            <h3>O pecado dos líderes e a promessa de restauração</h3>
+            <p>1. Ai dos que maquinam iniquidade, e tramam o mal sobre as suas camas! Ao romper da manhã o praticam, porque têm o poder em suas mãos.</p>
+            <p>2. E cobiçam campos, e os roubam; e casas, e as tomam; e oprimem a pessoa e a casa do homem, o homem e a sua herança.</p>
+            <p>3. Portanto, assim diz o SENHOR: Eis que eu planejo contra esta família um mal, desde a qual não vos podereis livrar; nem o vosso braço se levantará contra ela, nem o vosso pé se apressará para fugir; porque o mal virá de onde menos os esperais, e a sua mão se levantará contra vós, que estais confiantes.</p>
+            <p>4. E vós, que sois confiantes no monte de Sião, cuja confiança é o monte de Samaria, que pensais que o mal nunca vos alcançará, nem a calamidade vos chegará até à porta;</p>
+            <p>5. nem direis: Fomos nós os que maquinamos o mal contra ela?? Ou: Quem nos fez comer do fruto das nossas maquinações?</p>
+            <p>6. Porventura não vos levantareis, e vos contendeis por causa do vosso povo, e vos queixeis por causa da casa de Jacó?</p>
+            <p>7. Porque é mau o dia, porque estão perto os dias do SENHOR; sim, dia de vingança, para que se vingue da sua inimizade; e o ano da sua redenção está chegando.</p>
+            <p>8. E eu vos anuncio, ó vós que maquináis o mal, que não tereis repouso; nem a vossa vida será longa; porquanto haveis planejado o mal contra o SENHOR, e ele mesmo o trará sobre vós.</p>
+            <p>9. Assim diz o SENHOR: No lugar onde se ouviu dizer: Tu és óvel, ali se levantará um grito de guerra.</p>
+            <p>10. Fazei sair o vosso povo  como ovelhas para o matadouro; e como rebanho que não tem pastor, cada um volte para a sua casa em silêncio.</p>
+            <p>11. Sim, porquanto a tua mão está forte sobre ti, tu também te tornarás fraco; e a tua confiança será em ti mesmo, e cairás, e não haverá quem te ajude.</p>
+            <p>12. Eu, porém, farei reunir o remanescente do meu povo, como ovelhas do rebanho; eles farão muito barulho por causa do número dos que os ajuntam.</p>
+            <p>13. O que passa diante deles os guiará; eles subirão à frente deles; e o SENHOR estará à sua cabeça.</p>
+            
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/miqueias1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/miqueias3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
