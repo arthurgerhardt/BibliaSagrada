@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Miquéias 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Miquéias 7</h2>
+            <h3>O pecado de Israel e a futura restauração</h3>
+            <p>1 Ai de mim! Porque sou como o mês de agosto, como o mês de colheita sem frutos; como o que recolhe as uvas, não havendo uvas; ou como o que pisa as azeitonas, não havendo azeite; nem ainda o que pisa o trigo, não havendo cereal; a minha alma se entristece por causa do povo, porque são todos perversos, cada um segue o seu próprio caminho; não há quem faça o bem, não há nem um só.</p>
+            <p>2 Os seus príncipes estão no meio deles como lobos que roubam; o seu juiz ruge como o leão; eles devoram a sua presa, e a sua vítima desfalece; eles se alimentam de injustiça.</p>
+            <p>3 O seu profeta é perverso, o seu sacerdote profana o que é santo, o seu governante ama o suborno, e segue após os presentes; não se faz justiça ao órfão, nem se defende a causa da viúva.</p>
+            <p>4 Portanto, assim diz o Senhor: Eis que contra este povo farei um mal, desde o qual não poderão livrar-se; e clamarão a mim, mas eu não os ouvirei.</p>  
+            <p>5 Ajuntai-vos, e vinde; todos vós, congregai-vos; ouvi, ó nações todas, e conhecei o que acontecerá com eles.</p>
+            <p>6 O seu furor se acendeu contra mim, e guardaram rancor; ajuntaram-se, e prepararam-se contra mim; armaram ciladas, e não por justiça.</p>
+            <p>7 Acaso, se eu errasse, eu guardaria silêncio? Acaso, se eu fosse perverso, estaria eu firme? Porventura, se eu fosse justo, não me moveria?</p>
+            <p>8 E ainda que eu andasse em meio à angústia, o teu livramento me levantaria; tu me levarias à segurança.</p>
+            <p>9 Com toda a minha alma eu te buscarei; no teu nome e na tua memória são a minha salvação e a minha bandeira; tu não me deixes envergonhado.</p>
+            <p>10 Porquanto sou pobre e necessitado, o meu coração se entristece dentro de mim; por isso me lembrarei de ti desde a terra do Jordão e do Hermom, desde o monte do leão e do cume do Carmelo; desde o deserto me lembrarás.</p>
+            <p>11 Com o que me apresentarás perante o Senhor, e com que me inclinarei perante o Deus altíssimo? Apresentar-me-ei perante ele com holocaustos, com bezerros de um ano?</p>
+            <p>12 Porventura se agradará o Senhor de milhares de carneiros, ou de dez mil ribeiros de azeite? Darei o meu primogênito pela minha transgressão, o fruto do meu ventre pelo pecado da minha alma?</p>
+            <p>13 Ó homem, ele te declarou o que é bom; e que é o que o Senhor pede de ti, senão que pratiques a justiça, e ames a benignidade, e andes humildemente com o teu Deus?</p>
+            <p>14 O Senhor se levantará para te defender; ele se levantará para te favorecer; porque tu pisaste o teu povo, ó filha de Sião.</p>
+            <p>15 O Senhor se manifestará a teus olhos, e a sua ira se mostrará contra os teus inimigos.</p>
+            <p>16 O Senhor virá a ti como o orvalho, como a chuva serôdia que rega a terra.</p>
+            <p>17 E a tua herança será para ti concedida em meio a muitos povos, e a tua glória será como a glória dos filhos de Israel, porque tu beberás o leite dos gentios, e a sua gordura comerás.</p>
+            <p>18 Naquele dia, tu não te envergonharás por todas as tuas más obras, pelas quais me deixaste; porque então te perdoarei por todas as tuas más obras, pelas quais me deixaste.</p>
+            <p>19 Naquele dia, se dirá: Louvai ao Senhor, invocai o seu nome; fazei conhecer entre os povos as suas obras, recordai que o seu nome é exaltado.</p>
+            <p>20 Cantai ao Senhor, porque fez coisas grandiosas; saiba-se isto em toda a terra.</p>
+            
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/miqueias6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/naum1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
