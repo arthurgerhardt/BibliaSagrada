@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Naum 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Naum 2</h2>
+            <h3>A queda de Nínive</h3>
+            <p>1 O destruidor subiu contra ti. Guarda tua fortaleza, vigia o caminho, fortalece os lombos, reforça muito o teu poder.</p>
+            <p>2 Porque o Senhor restaurará a excelência de Jacó como a excelência de Israel; porque os saqueadores os despojaram, e destruíram os seus ramos.</p>
+            <p>3 Os escudos dos seus fortes serão vermelhos, os homens valorosos estarão vestidos de escarlate, os carros como tochas flamejantes no dia da sua preparação, e os ciprestes serão terrivelmente abalados.</p>
+            <p>4 Os carros correrão furiosamente nas ruas, colidirão um contra o outro nos largos caminhos; o seu aspecto será como o de tochas, correrão como relâmpagos.</p>
+            <p>5 Ele se lembrará dos seus valentes; eles, porém, tropeçarão na sua marcha; apressar-se-ão para chegar ao seu muro, quando o amparo for preparado.</p>
+            <p>6 As portas dos rios se abrirão, e o palácio será dissolvido.</p>
+            <p>7 É decretado: ela será levada cativa, conduzida para cima; e as suas servas a acompanharão, gemendo como pombas, batendo em seus peitos.</p>
+            <p>8 Nínive desde que existiu tem sido como um tanque de águas, porém elas agora vazam. Parai, parai, clamar-se-á; mas ninguém olhará para trás.</p>
+            <p>9 Saqueai a prata, saqueai o ouro, porque não têm fim as provisões, riquezas há de todo o gênero de bens desejáveis.</p>
+            <p>10 Vazia, esgotada e devastada está; derrete-se o coração, e tremem os joelhos, e em todos os lombos há dor, e os rostos de todos eles se enegrecem.</p>
+            <p>11 Onde está agora o covil dos leões, e as pastagens dos leõezinhos, onde passeava o leão velho, e o filhote do leão, sem haver ninguém que os espantasse?</p>
+            <p>12 O leão arrebatava o que bastava para os seus filhotes, e estrangulava a presa para as suas leoas, e enchia de presas as suas cavernas, e os seus covis de rapina.</p>
+            <p>13 Eis que eu estou contra ti, diz o Senhor dos Exércitos, e queimarei na fumaça os teus carros, e a espada devorará os teus leõezinhos, e arrancarei da terra a tua presa, e não se ouvirá mais a voz dos teus mensageiros.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/naum1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/naum3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
