@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacarias 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Zacarias 1</h2>
+            <h3>Visão do cavalo vermelho</h3>
+            <p>1 No oitavo mês do segundo ano de Dario veio a palavra do Senhor ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo:</p>
+            <p>2 O Senhor se irou fortemente contra vossos pais.</p>
+            <p>3 Portanto dize-lhes: Assim diz o Senhor dos Exércitos: Tornai-vos para mim, diz o Senhor dos Exércitos, e eu me tornarei para vós, diz o Senhor dos Exércitos.</p>
+            <p>4 E não sejais como vossos pais, aos quais clamavam os primeiros profetas, dizendo: Assim diz o Senhor dos Exércitos: Convertei-vos agora dos vossos maus caminhos e das vossas más obras; mas não ouviram, nem me escutaram, diz o Senhor.</p>
+            <p>5 Vossos pais, onde estão? E os profetas, viverão eles para sempre?</p>
+            <p>6 Contudo as minhas palavras e os meus estatutos, que eu ordenei aos profetas, meus servos, não alcançaram a vossos pais? E eles voltaram, e disseram: Assim como o Senhor dos Exércitos fez tenção de nos tratar, segundo os nossos caminhos, e segundo as nossas obras, assim ele nos tratou.</p>
+            <p>7 Aos vinte e quatro dias do mês undécimo (que é o mês de Sebate), no segundo ano de Dario, veio a palavra do Senhor ao profeta Zacarias, filho de Baraquias, filho de Ido, dizendo:</p>
+            <p>8 Olhei de noite, e vi um homem montado num cavalo vermelho; e ele estava parado entre as murtas que estavam na baixada; e atrás dele estavam cavalos vermelhos, malhados e brancos.</p>
+            <p>9 E eu disse: Senhor meu, quem são estes? E disse-me o anjo que falava comigo: Eu te mostrarei quem são estes.</p>
+            <p>10 Então respondeu o homem que estava entre as murtas, e disse: Estes são os que o Senhor tem enviado para percorrerem a terra.</p>
+            <p>11 E eles responderam ao anjo do Senhor, que estava entre as murtas, e disseram: Nós já percorremos a terra, e eis que toda a terra está tranquila e quieta.</p>
+            <p>12 Então o anjo do Senhor respondeu, e disse: Ó Senhor dos Exércitos, até quando não terás compaixão de Jerusalém, e das cidades de Judá, contra as quais estiveste irado estes setenta anos?</p>
+            <p>13 E respondeu o Senhor ao anjo, que falava comigo, com palavras boas, palavras consoladoras.</p>
+            <p>14 E o anjo que falava comigo disse-me: Clama, dizendo: Assim diz o Senhor dos Exércitos: Com grande zelo estou zelando por Jerusalém e por Sião.</p>
+            <p>15 E com grande indignação estou irado contra os gentios em descanso; porque eu estava pouco indignado, mas eles agravaram o mal.</p>
+            <p>16 Portanto, assim diz o Senhor: Voltei-me para Jerusalém com misericórdia; nela será edificada a minha casa, diz o Senhor dos Exércitos, e o cordel será estendido sobre Jerusalém:</p>
+            <p>17 Clama outra vez, dizendo: Assim diz o Senhor dos Exércitos: As minhas cidades ainda aumentarão e prosperarão; porque o Senhor ainda consolará a Sião e ainda escolherá a Jerusalém.</p>
+            <p>18 E levantei os meus olhos, e vi, e eis quatro chifres.</p>
+            <p>19 E eu disse ao anjo que falava comigo: Que são estes? E ele me disse: Estes são os chifres que dispersaram a Judá, a Israel e a Jerusalém.</p>
+            <p>20 E o Senhor me mostrou quatro carpinteiros.</p>
+            <p>21 Então eu disse: Que vêm estes fazer? E ele falou, dizendo: Estes são os chifres que dispersaram a Judá, de maneira que ninguém pôde levantar a sua cabeça; estes, pois, vieram para os amedrontarem, para derrubarem os chifres dos gentios que levantaram o seu poder contra a terra de Judá, para a espalharem.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/ageu2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/zacarias2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zacarias 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Zacarias 2</h2>
+            <h3>A visão do homem com a corda de medir</h3>
+            <p>1 E voltei-me, e olhei, e eis um homem com uma corda de medir na mão.</p>
+            <p>2 E eu disse: Para onde vais? E ele me disse: Para medir Jerusalém, para ver qual é a sua largura, e qual é o seu comprimento.</p>
+            <p>3 E eis que o anjo que falava comigo saiu, e outro anjo saiu ao seu encontro,</p>
+            <p>4 E disse-lhe: Corre, dize a esse jovem: Jerusalém será habitada como aldeia sem muros, por causa do número de homens e gado no meio dela.</p>
+            <p>5 Porque eu, diz o Senhor, serei para ela uma parede de fogo em redor, e serei a sua glória no meio dela.</p>
+            <p>6 Sai, sai, apressa-te, ó filha de Sião;</p>
+            <p>7 Porque eis que venho, e habitarei no meio de ti, diz o Senhor.</p>
+            <p>8 E muitas nações se unirão ao Senhor naquele dia, e serão para ele por povo; e habitará no meio de tis, e conhecerás que o Senhor dos Exércitos me enviou a ti.</p>
+            <p>9 E o Senhor possuirá a Judá como sua parte na terra santa, e escolherá Jerusalém outra vez.</p>
+            <p>10 Alegra-te muito, ó filha de Sião; exulta, ó filha de Jerusalém; eis que vem ao teu encontro o teu rei; justo e salvador, humilde, e montado sobre um jumento, sobre um jumentinho, filho de jumenta.</p>
+            <p>11 E desfar-se-á da carruagem a guerra, e do cavalo o guerreiro; e o arco de guerra se quebrará; e ele falará paz às nações; e o seu domínio será de mar a mar, e desde o rio até aos confins da terra.</p>
+            <p>12 E tu, ó filha de Sião, habitarás em Jerusalém; e terás a mim por muro de fogo em redor, e por glória no meio de ti.</p>
+            <p>13 Cessa, ó toda a carne, diante do Senhor; porque ele se despertou da sua santa habitação.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/zacarias1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/zacarias3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
