@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habacuque 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Habacuque 3</h2>
+            <h3>O cântico do profeta Habacuque</h3>
+            <p>1 O cântico do profeta Habacuque, segundo a sua oração.</p>
+            <p>2 Senhor, ouvi a minha palavra, e aceitei o meu clamor; atenta para mim e responde-me.</p>
+            <p>3 Nosso Deus vem do sul, e o Santo do monte parnaso.</p>
+            <p>4 A sua glória cobre os céus, e a sua louvor enche a terra.</p>
+            <p>5 E diante dele vai a peste, e foge a a sua sombra;</p>
+            <p>6 Ele se detém, e mede a terra; olha, e faz tremer as nações; os montes se derretem à sua presença, e os outeiros se inclinam.</p>
+            <p>7 As profundezas das águas se levantam, e os fundamentos do mundo se descobrem, pela tua repreensão, Senhor, pela respiração do vento do teu nariz.</p>
+            <p>8 Ele estende a sua mão direita sobre a terra, o sol se detém; e a lua para no seu lugar, até que haja vingado a sua justiça, e feito o juízo seu.</p>
+            <p>9 Ele mesmo feriu as nações, com o seu arco; com as suas flechas os consumiu.</p>
+            <p>10 Tens tu, ó Senhor, indignado o mar, e o rio secaste; o monte de Sião estremeceu diante de ti.</p>
+            <p>11 Os teus caminhos são em mar trombeteante, e nas ondas muitas; e as tuas pegadas não são conhecidas.</p>
+            <p>12 Tu andas por entre as ondas do mar, e pelas suas vagas, e tu és o Deus eterno.</p>
+            <p>13 Quando eu ouvi, meus lombos se estremeceram; os meus lábios tremeram na minha boca; a carcaça se estremeceu toda, e o meu assento se perturbou.</p>
+            <p>14 Pavor e tremor se apoderaram de mim, e repouso algum ficou nos meus ossos, por causa da minha iniquidade; no meu interior me assalataram os medos.</p>
+            <p>15 Pois me lembro, e me comovo; arrependo-me no meu coração; no mais íntimo do meu ser se turba o meu espírito.</p>
+            <p>16 Ao som do gemido do meu povo, dos gritos dos que habitam na terra da destruição, dos quais o fogo se apodera, e a espada devora, e o cavalo e o seu cavaleiro caem.</p>
+            <p>17 Ainda que a figueira não floresça, nem haja fruto na vide; ainda que falhe o produto da oliveira, e os campos não produzam mantimento; ainda que as ovelhas sejam arrebatadas do aprisco, e nos currais não haja gado;</p>
+            <p>18 todavia eu me alegrarei no Senhor, exultarei no Deus da minha salvação.</p>
+            <p>19 O Senhor Deus é a minha força, e faz os meus pés como os das cervas, e me faz andar sobre as minhas alturas.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/habacuque2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/sofonias1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ageu 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Ageu 1</h2>
+            <h3>A reconstrução do templo</h3>
+            <p>1 No segundo ano do rei Dario, no sexto mês, no primeiro dia do mês, veio a palavra do Senhor pelo profeta Ageu, dizendo:</p>
+            <p>2 Assim diz o Senhor dos Exércitos: Este povo diz: Ainda não é chegado o tempo de edificar a casa do Senhor.</p>
+            <p>3 Então veio a palavra do Senhor pelo profeta Ageu, dizendo:</p>
+            <p>4 É tempo de habitardes em casas de cedro, enquanto esta casa está deserta?</p>
+            <p>5 Agora, pois, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.</p>
+            <p>6 Subi ao monte, trazei madeira, e edificai a casa; e eu me agradarei dela, e serei glorificado, diz o Senhor.</p>
+            <p>7 Vocês esperavam muito, e eis que veio a ser pouco; e quando a trouxeram para casa, eu a derramei sobre ela. Por que? diz o Senhor dos Exércitos. Por causa da minha casa que está deserta, enquanto cada um de vós corre para a sua própria casa.</p>
+            <p>8 Portanto, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.</p>
+            <p>9 Subi ao monte, trazei madeira, e edificai a casa; e eu me agradarei dela, e serei glorificado, diz o Senhor.</p>
+            <p>10 Vocês esperavam muito, e eis que veio a ser pouco; e quando a trouxeram para casa, eu a derramei sobre ela. Por que? diz o Senhor dos Exércitos. Por causa da minha casa que está deserta, enquanto cada um de vós corre para a sua própria casa.</p>
+            <p>11 Portanto, assim diz o Senhor dos Exércitos: Considerai os vossos caminhos.</p>
+            <p>12 Então os sacerdotes, os levitas e todo o restante do povo ouviram a voz do Senhor seu Deus, e as palavras do profeta Ageu, conforme o envio do Senhor seu Deus; e o povo teve medo diante do Senhor.</p>
+            <p>13 Então o profeta Ageu, pelo mandado do Senhor dos Exércitos, falou ao povo, dizendo: Eu sou convosco, diz o Senhor.</p>
+            <p>14 E o Senhor despertou o espírito de Zorobabel, filho de Salatiel, governador de Judá, e o espírito de Josué, filho de Jeozadaque, sumo sacerdote, e o espírito de todo o restante do povo; e eles vieram e trabalharam na casa do Senhor dos Exércitos, seu Deus,</p>
+            <p>15 no vigésimo quarto dia do sexto mês, no segundo ano do rei Dario.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/sofonias3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/ageu2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

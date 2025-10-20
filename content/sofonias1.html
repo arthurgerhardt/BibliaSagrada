@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sofonias 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Sofonias 1</h2>
+            <h3>O juízo de Deus sobre Judá e Jerusalém</h3>
+            <p>1 Palavra do Senhor, que veio a Sofonias, filho de Cusi, filho de Gedalias, filho de Amarias, filho de Ezequias, nos dias de Josias, filho de Amom, rei de Judá.</p>
+            <p>2 Hei de consumir por completo tudo de sobre a terra, diz o Senhor.</p>
+            <p>3 Consumirei os homens e os animais, consumirei as aves do céu, e os peixes do mar, e os tropeços juntamente com os ímpios; e exterminarei os homens de sobre a terra, diz o Senhor.</p>
+            <p>4 E estenderei a minha mão contra Judá, e contra todos os habitantes de Jerusalém, e exterminarei deste lugar o restante de Baal, e o nome dos sacerdotes dos ídolos, juntamente com os sacerdotes;</p>
+            <p>5 E os que sobre os telhados adoram o exército do céu; e os que se inclinam jurando ao Senhor, e juram por Milcom;</p>
+            <p>6 E os que deixam de andar em seguimento do Senhor, e os que não buscam ao Senhor, nem perguntam por ele.</p>
+            <p>7 Cala-te diante do Senhor Deus, porque o dia do Senhor está perto; porque o Senhor preparou o sacrifício, e santificou os seus convidados.</p>
+            <p>8 Acontecerá que, no dia do sacrifício do Senhor, castigarei os príncipes, e os filhos do rei, e todos os que se vestem de trajes estrangeiros.</p>
+            <p>9 Castigarei naquele dia todo aquele que salta sobre o limiar, que enche de violência e engano a casa dos seus senhores.</p>
+            <p>10 E naquele dia, diz o Senhor, far-se-á ouvir uma voz de clamor desde a porta do peixe, e um uivo desde a segunda parte, e grande quebrantamento desde os outeiros.</p>
+            <p>11 Uivai vós, moradores de Mactes, porque todo o povo que mercadejava está arruinado, todos os que estavam carregados de dinheiro foram destruídos.</p>
+            <p>12 E há de ser que, naquele tempo, esquadrinharei a Jerusalém com lanternas, e castigarei os homens que se espessam como a borra do vinho, que dizem no seu coração: O Senhor não faz o bem nem faz o mal.</p>
+            <p>13 Por isso serão saqueados os seus bens, e assoladas as suas casas; e edificarão casas, mas não habitarão nelas, e plantarão vinhas, mas não lhes beberão o seu vinho.</p>
+            <p>14 O grande dia do Senhor está perto, sim, está perto, e se apressa muito; amarga é a voz do dia do Senhor; clamará ali o poderoso.</p>
+            <p>15 Aquele dia será um dia de indignação, dia de tribulação e de angústia, dia de alvoroço e de assolação, dia de trevas e de escuridão, dia de nuvens e de densas trevas,</p>
+            <p>16 Dia de trombeta e de alarido contra as cidades fortificadas e contra as torres altas.</p>
+            <p>17 E angustiarei os homens, que andarão como cegos, porque pecaram contra o Senhor; e o seu sangue se derramará como pó, e a sua carne será como esterco.</p>
+            <p>18 Nem a sua prata nem o seu ouro os poderá livrar no dia da indignação do Senhor, mas pelo fogo do seu zelo toda esta terra será consumida, porque certamente fará de todos os moradores da terra uma destruição total e apressada.</p>
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/habacuque3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/sofonias2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
