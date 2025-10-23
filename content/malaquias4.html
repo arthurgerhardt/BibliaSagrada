@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malaquias 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Malaquias 4</h2>
+            <h3>A Vinda de Elias e a Promessa da Restauração</h3>
+            <p>1 Porque eis que vem o dia ardente como um forno; todos os soberbos e todos os que cometem iniquidade serão como palha; e o dia quei vem os abrasará, diz o Senhor dos Exércitos, de sorte que não lhes deixará nem raiz nem ramo.</p>
+            <p>2 Mas para vós que temeis o meu nome nascerá o sol da justiça, e salvação estará nas suas asas; esareis, e saltareis como bezerros da estrebaria.</p>
+            <p>3 E pisareis os ímpios, porque eles serão cinza sob as solas dos vossos pés, no dia em que eu fizer isto, diz o Senhor dos Exércitos.</p>
+            <p>4 Lembrai-vos da lei de meu servo Moisés, a quem prescrevi em Horebe para todoo os filhos de Israel, estatutos e juízos.</p>
+            <p>5 Eis que eu vos enviarei o profeta Elias, antes que venha o grande e terrível dia do Senhor.</p>
+            <p>6 E ele converterá o coração dos pais aos filhos, e o coração dos filhos a seus pais, para que eu não venha e fira a terra com maldição.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/malaquias3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/mateus1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
