@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Mateus 16</h2>
+            <h3>Confissão de Pedro</h3>
+            <p>1 E chegaram-se a ele os fariseus e saduceus, e, tentando-o, pediram-lhe que lhes mostrasse um sinal do céu.</p>
+            <p>2 Ele, porém, respondendo, disse-lhes: Quando anoiteceis, dizeis: Haverá bom tempo, porque o céu está vermelho;</p>
+            <p>3 E, pela manhã: Hoje haverá tempestade, porque o céu está vermelho e carregado. Hipócritas! Sabeis distinguir o aspecto do céu, mas não sabeis distinguir os sinais dos tempos?</p>
+            <p>4 Uma geração má e adultera busca um sinal; e nenhum sinal lhe será dado, senão o sinal do profeta Jonas. E, deixando-os, partiu.</p>
+            <p>5 E, entrando os seus discípulos no barco, esqueceram-se de levar pães.</p>
+            <p>6 E Jesus lhes disse: Acautelai-vos e guardai-vos do fermento dos fariseus e dos saduceus.</p>
+            <p>7 E eles, discutindo entre si, disseram: É porque não temos pães.</p>
+            <p>8 Jesus, porém, conhecendo isso, disse-lhes: Por que discutis entre vós, dizendo: É porque não temos pães?</p>
+            <p>9 Não compreendeis ainda, nem vos lembrais dos cinco pães para os cinco mil homens, e de quantos cestos levantastes?</p>
+            <p>10 Nem dos sete pães para os quatro mil homens, e de quantos cestos levantastes?</p>
+            <p>11 Como não compreendeis que não vos falei acerca de pães, mas do fermento dos fariseus e dos saduceus?</p>
+            <p>12 Então entenderam que não lhes dissera para se acautelarem do fermento do pão, mas da doutrina dos fariseus e dos saduceus.</p>    
+            <h3>Pedro Confessa que Jesus é o Cristo</h3>
+            <p>13 E, quando Jesus chegou à parte de Cesareia de Filipe, perguntou aos seus discípulos, dizendo: Quem dizem os homens ser o Filho do Homem?</p>
+            <p>14 E eles disseram: Uns dizem que és João Batista; outros, Elias; e outros, Jeremias ou um dos profetas.</p>
+            <p>15 Ele lhes disse: E vós, quem dizeis que eu sou?</p>
+            <p>16 Simão Pedro, respondendo, disse: Tu és o Cristo, o Filho do Deus vivo.</p>
+            <p>17 E Jesus, respondendo, disse-lhe: Bem-aventurado és tu, Simão Barjonas, porque não foi carne e sangue que to revelou, mas meu Pai, que está nos céus.</p>
+            <p>18 E eu também te digo que tu és Pedro, e sobre esta pedra edificarei a minha igreja, e as portas do inferno não prevalecerão contra ela.</p>
+            <p>19 E eu te darei as chaves do reino dos céus; e tudo o que ligares na terra será ligado nos céus; e tudo o que desligares na terra será desligado nos céus.</p>
+            <h3>Jesus Prediz a Sua Morte</h3>
+            <p>20 Então, advertiu Jesus os seus discípulos, para que a ninguém dissessem que ele era o Cristo.</p>
+            <p>21 Desde então começou Jesus a declarar aos seus discípulos que lhe era necessário ir a Jerusalém, e padecer muitas coisas dos anciãos, e dos principais sacerdotes, e dos escribas, e ser morto, e ressuscitar ao terceiro dia.</p>
+            <p>22 E Pedro, tomando-o à parte, começou a repreendê-lo, dizendo: Deus te livre, Senhor! Isso nunca te acontecerá.</p>
+            <p>23 Ele, porém, voltando-se, disse a Pedro: Vai-te para trás de mim, Satanás! Tu me és pedra de tropeço, porque não compreendes as coisas que são de Deus, mas as que são dos homens.</p>
+            <h3>Tomando a Sua Cruz</h3>
+            <p>24 Então disse Jesus aos seus discípulos: Se alguém quiser vir após mim, negue-se a si mesmo, e tome a sua cruz, e siga-me.</p>
+            <p>25 Porque qualquer que quiser salvar a sua vida, perdê-la-á; e qualquer que perder a sua vida por minha causa, achá-la-á.</p>
+            <p>26 Porque que aproveita ao homem ganhar o mundo inteiro, se perder a sua alma? Ou que dará o homem em troca da sua alma?</p>
+            <p>27 Porque o Filho do Homem há de vir na glória de seu Pai, com os seus anjos; e então retribuirá a cada um segundo as suas obras.</p>
+            <p>28 Em verdade vos digo que há de haver alguns dos que aqui estão, que não provarão a morte até que vejam o Filho do Homem vindo em seu reino.</p>
+            
+
+
+            <div class="na</div>rrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/mateus15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/mateus17.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
