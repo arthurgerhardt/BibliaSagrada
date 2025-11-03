@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mateus 28</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Mateus 28</h2>
+            <h3>A Ressurreição de Jesus</h3>
+            <p>1 Depois do sábado, ao amanhecer do primeiro dia da semana, Maria Madalena e a outra Maria foram ver o sepulcro.</p>
+            <p>2 E eis que houve um grande terremoto; porque um anjo do Senhor desceu do céu, e, chegando-se, removeu a pedra, e sentou-se sobre ela.</p>
+            <p>3 O seu aspecto era como um relâmpago, e as suas vestes brancas como a neve.</p>
+            <p>4 E os guardas, assustados com ele, ficaram como mortos.</p>
+            <p>5 Mas o anjo, respondendo, disse às mulheres: Não temais vós; porque eu sei que buscais a Jesus, que foi crucificado.</p>
+            <p>6 Ele não está aqui, porque ressuscitou, como tinha dito. Vinde, vede o lugar onde jazia o Senhor.</p>
+            <p>7 E ide depressa, e dizei aos seus discípulos que ele ressuscitou dentre os mortos; e eis que ele vai adiante de vós para a Galiléia; ali o vereis. Eis que eu vo-lo tenho dito.</p>
+            <p>8 E, saindo elas depressa do sepulcro, com medo e grande alegria, correram a anunciá-lo aos seus discípulos.</p>
+            <p>9 E, indo elas avisá-los, eis que Jesus lhes saiu ao encontro, dizendo: Salve! E elas, chegando-se, abraçaram os seus pés, e o adoraram.</p>
+            <p>10 Então Jesus lhes disse: Não temais; ide dizer a meus irmãos que vão para a Galiléia, e ali me verão.</p>
+            <h3>A Aparição de Jesus aos Discípulos</h3>
+            <p>11 Enquanto elas iam, eis que alguns da guarda foram à cidade, e anunciaram aos principais sacerdotes tudo o que havia acontecido.</p>
+            <p>12 E, tendo-se reunido com os anciãos, e havendo deliberado, deram aos soldados uma grande soma de dinheiro,</p>
+            <p>13 Dizendo: Dizei: Seus discípulos vieram de noite, e roubaram-no, estando nós dormindo.</p>
+            <p>14 E, se isto chegar aos ouvidos do governador, nós o persuadiremos, e vos livraremos de qualquer problema.</p>
+            <p>15 E eles, tomando o dinheiro, fizeram como lhes fora ensinado; e esta história se divulgou entre os judeus até o dia de hoje.</p>
+            <p>16 E os onze discípulos foram para a Galiléia, para o monte que Jesus lhes tinha designado.</p>
+            <p>17 E, quando o viram, o adoraram; mas alguns duvidaram.</p>
+            <p>18 E, chegando-se Jesus, falou-lhes, dizendo: Foi-me dado todo o poder no céu e na terra.</p>
+            <p>19 Portanto, ide, fazei discípulos de todas as nações, batizando-os em nome do Pai, e do Filho, e do Espírito Santo;</p>
+            <p>20 Ensinando-os a guardar todas as coisas que eu vos tenho mandado; e eis que eu estou convosco todos os dias, até a consumação dos séculos. Amém.</p>
+            
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/mateus27.html">Capítulo Anterior</a>
+            <a class="button" href="../content/marcos1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
