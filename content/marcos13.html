@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcos 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Marcos 13</h2>
+            <h3>Os Sinais do Fim dos Tempos</h3>
+            <p>1 E, saindo Jesus do templo, disse-lhe um dos seus discípulos: Mestre, vê que pedras e que edifícios!</p>
+            <p>2 E Jesus lhe disse: Vês estes grandes edifícios? Não ficará pedra sobre pedra que não seja derrubada.</p>
+            <p>3 E, estando ele assentado no monte das Oliveiras, defronte do templo, perguntaram-lhe em particular Pedro, Tiago, João e André;</p>
+            <p>4 Dize-nos quando serão essas coisas, e que sinal haverá quando todas essas coisas estiverem para se cumprir?</p>
+            <p>5 E Jesus, respondendo-lhes, disse: Acautelai-vos que ninguém vos engane.</p>
+            <p>6 Porque muitos virão em meu nome, dizendo: Eu sou; e enganarão a muitos.</p>
+            <p>7 E, quando ouvirdes de guerras e de rumores de guerras, não vos assusteis; importa que isso aconteça, mas ainda não é o fim.</p>
+            <p>8 Porque se levantará nação contra nação, e reino contra reino; e haverá terremotos em vários lugares, e haverá fomes e perturbações; estas coisas são o princípio das dores.</p>
+            <p>9 Mas olhai por vós mesmos; porque vos entregarão aos concílios, e nas sinagogas vos açoitarão; e sereis levados perante governadores e reis por minha causa, para testemunho deles.</p>
+            <p>10 E convém que o evangelho seja pregado primeiro a todas as as nações.</p>
+            <p>11 Mas, quando vos conduzirem, não vos inquieteis antecipadamente quanto ao que haveis de dizer; antes, o que vos for dado naquela hora, isso falai; porque não sois vós que falais, mas o Espírito Santo.</p>
+            <p>12 E o irmão entregará à morte o irmão, e o pai o filho; e os filhos se levantarão contra os pais, e os matarão.</p>
+            <p>13 E sereis odiados de todos por causa do meu nome; mas aquele que perseverar até ao fim, esse será salvo.</p>
+            <p>14 Mas, quando virdes a abominação da desolação, de que falou o profeta Daniel, estar onde não deve estar (quem lê, entenda), então os que estiverem na Judeia fujam para os montes;</p>
+            <p>15 E quem estiver no telhado não desça para tirar alguma coisa de sua casa;</p>
+            <p>16 E quem estiver no campo não volte atrás para buscar sua capa.</p>
+            <p>17 Mas ai das que estiverem grávidas e das que amamentarem naqueles dias!</p>
+            <p>18 Orai para que a vossa fuga não aconteça no inverno.</p>
+            <p>19 Porque aqueles dias serão de aflição, como nunca houve desde o princípio da criação que Deus criou até agora, nem jamais haverá.</p>
+            <p>20 E, se o Senhor não tivesse abreviado aqueles dias, nenhuma carne se salvaria; mas por causa dos eleitos, que ele escolheu, abreviou aqueles dias.</p>
+            <p>21 E então, se alguém vos disser: Eis aqui o Cristo! ou: Eis ali! não acrediteis.</p>
+            <p>22 Porque se levantarão falsos cristos e falsos profetas, e farão sinais e prodígios, para enganar, se possível, até os eleitos.</p>
+            <p>23 Mas vós, acautelai-vos; eis que vos tenho predito todas as coisas.</p>
+            <p>24 Mas, naqueles dias, depois daquela aflição, o sol se escurecerá, e a lua não dará a sua luz,</p>
+            <p>25 e as estrelas cairão do céu, e as potências que estão nos céus serão abaladas.</p>
+            <p>26 E então verão vir o Filho do Homem nas nuvens, com grande poder e glória.</p>
+            <p>27 E então enviará os seus anjos, e reunirá os seus escolhidos desde os quatro ventos, da extremidade da terra até a extremidade do céu.</p>
+            <p>28 Aprendei a parábola da figueira: Quando já o seu ramo se torna tenro, e brotam as folhas, sabeis que o verão está próximo.</p>
+            <p>29 Assim também vós, quando virdes acontecer estas coisas, sabei que ele está próximo, às portas.</p>
+            <p>30 Em verdade vos digo que não passará esta geração sem que todas estas coisas aconteçam.</p>
+            <p>31 O céu e a terra passarão, mas as minhas palavras não hão de passar.</p>
+            <p>32 Mas daquele dia e hora ninguém sabe, nem os anjos que estão no céu, nem o Filho, senão o Pai.</p>
+            <p>33 Acautelai-vos, vigiai e orai; porque não sabeis quando será o tempo.</p>
+            <p>34 Pois será como um homem ausente que, deixando a sua casa, deu autoridade aos seus servos, a cada um o seu trabalho, e ordenou ao porteiro que vigiasse.</p>
+            <p>35 Vigiai, pois, porque não sabeis quando virá o senhor da casa, se à tarde, ou à meia-noite, ou ao cantar do galo, ou pela manhã;</p>
+            <p>36 Para que, vindo de repente, não vos ache dormindo.</p>
+            <p>37 E o que vos digo, digo a todos: Vigiai.</p>
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/marcos12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/marcos14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
