@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Lucas 10</h2>
+                <h4>Jesus Envia os Setenta Discípulos</h4>
+                <p>1 Depois disto, o Senhor designou outros setenta também, e os enviou de dois em dois adiante de si, a todas as cidades e lugares para onde ele mesmo havia de ir.</p>
+                <p>2 E dizia-lhes: A seara é grande, mas poucos são os ceifeiros; rogai, pois, ao Senhor da seara que envie ceifeiros à sua seara.</p>
+                <p>3 Ide; eis que eu vos envio como cordeiros no meio de lobos.</p>
+                <p>4 Não leveis bolsa, nem alforje, nem sandálias; e a ninguém saudeis pelo caminho.</p>
+                <p>5 E, entrando na casa, saudai-a.</p>
+                <p>6 E, se ali houver algum filho da paz, sobre ele repousará a vossa paz; se não, voltará para vós.</p>
+                <p>7 E ficai naquela casa, comendo e bebendo do que tiverem; porque o trabalhador é digno do seu salário. Não passeis de casa em casa.</p>
+                <p>8 E, entrando numa cidade onde vos receberem, comei o que vos for posto diante;</p>
+                <p>9 E curai os enfermos que nela houver, e dizei-lhes: Já chegou a vós o reino de Deus.</p>
+                <p>10 Mas, entrando numa cidade onde não vos receberem, saí pelas ruas, dizendo:</p>
+                <p>11 Até o pó desta cidade que se apegou aos nossos pés sacudimo-lo contra vós; contudo sabei isto: que já chegou a vós o reino de Deus.</p>
+                <p>12 Digo-vos que naquele dia haverá menos rigor para Sodoma do que para aquela cidade.</p>
+                <p>13 Ai de ti, Corazim! Ai de ti, Betsaida! Porque se em Tiro e em Sidom tivessem sido feitos os milagres que em vós foram feitos, há muito tempo teriam se arrependido, vestindo-se de saco e de cinza.</p>
+                <p>14 Portanto, Tiro e Sidom serão mais toleráveis no juízo do que vós.</p>
+                <p>15 E tu, Cafarnaum, que até ao céu te exaltaste, até o inferno serás abatida.</p>    
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/lucas9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/lucas11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
