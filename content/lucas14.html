@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucas 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Lucas 14</h2>
+                <h4>Jesus Cura no Sábado</h4>
+                <p>1 E aconteceu que, indo ele a casa de um dos principais fariseus, no sábado, para comer pão, eles o observavam.</p>
+                <p>2 E eis que diante dele estava um homem hidrópico.</p>
+                <p>3 E Jesus, respondendo, disse aos doutores da lei e aos fariseus: É permitido curar no sábado?</p>
+                <p>4 Mas eles ficaram calados. Então, tomando ele o homem, o curou e o despediu.</p>
+                <p>5 E disse-lhes: Qual de vós, tendo um filho ou um boi que caia num poço no sábado, não o tirará logo dali?</p>
+                <p>6 E nada lhes podiam responder a isso.</p>
+
+                <h4>A Parábola dos Lugares de Honra</h4>
+                <p>7 E notando como escolhiam os primeiros lugares nas mesas, disse-lhes uma parábola:</p>
+                <p>8 Quando fores convidado por alguém para uma boda, não te assentes no primeiro lugar, para que não venha outro mais honrado do que tu;</p>
+                <p>9 E vindo aquele que te convidou a ti e a ele diga: Dá lugar a este; então, envergonhado, irás assentar-te no último lugar.</p>
+                <p>10 Mas, quando fores convidado, vai assentar-te no último lugar, para que, vindo aquele que te convidou, te diga: Amigo, sobe mais alto. Então serás honrado diante de todos os que estiverem à mesa contigo.</p>
+                <p>11 Porque qualquer que a si mesmo se exalta será humilhado; e quem a si mesmo se humilha será exaltado.</p>
+                <h4>A Parábola do Banquete</h4>
+                <p>12 E disse também ao que o havia convidado: Quando deres um almoço ou um jantar, não chames teus amigos, nem teus irmãos, nem teus parentes, nem ricos vizinhos, para que não te convidem também eles, e te seja retribuído.</p>
+                <p>13 Mas, quando deres um banquete, convida os pobres, os aleijados, os mancos e os cegos;</p>
+                <p>14 E serás bem-aventurado, porque não te podem retribuir; pois te será retribuído na ressurreição dos justos.</p>    
+                <h4>O Custo do Discipulado</h4>
+                <p>15 E, ouvindo isto, um dos que estavam à mesa com ele disse-lhe: Bem-aventurado aquele que comer pão no reino de Deus.</p>
+                <p>16 Mas ele lhe disse: Certo homem fez um grande banquete e convidou muitos;</p>
+                <p>17 E, à hora do banquete, enviou o seu servo a dizer aos convidados: Vinde, porque já tudo está preparado.</p>
+                <p>18 E todos, à uma, começaram a desculpar-se. O primeiro disse-lhe: Comprei uma herdade, e me é necessário ir vê-la; peço-te que me excuses.</p>
+                <p>19 E outro disse: Comprei cinco juntas de bois, e vou experimentá-las; peço-te que me excuses.</p>
+                <p>20 E outro disse: Casei-me, e por isso não posso ir.</p>
+                <p>21 E, voltando o servo, contou estas coisas ao seu senhor. Então, irado o senhor da casa, disse ao seu servo: Sai depressa pelas ruas e becos da cidade e traze aqui os pobres, os aleijados, os cegos e os mancos.</p>
+                <p>22 E disse o servo: Senhor, feito está como mandaste, e ainda há lugar.</p>
+                <p>23 E disse o senhor ao servo: Sai pelas estradas e valados e obriga-os a entrar, para que se encha a minha casa.</p>
+                <p>24 Porque vos digo que nenhum daqueles homens que foram convidados provará do meu banquete.</p>
+                <h4>O Custo do Discipulado</h4>
+                <p>25 E, indo com ele grande multidão, voltou-se e disse-lhes:</p>
+                <p>26 Se alguém vem a mim e não aborrece a seu pai, e mãe, e mulher, e filhos, e irmãos, e irmãs, e ainda também a sua própria vida, não pode ser meu discípulo.</p>
+                <p>27 E qualquer que não leva a sua cruz e não me segue, não pode ser meu discípulo.</p>
+                <p>28 Pois qual de vós, querendo edificar uma torre, não se assenta primeiro para calcular as despesas, se tem com que a acabar?</p>
+                <p>29 Para que não aconteça que, depois de haver lançado os alicerces e não a podendo acabar, todos os que a virem comecem a escarnecer dele,</p>
+                <p>30 Dizendo: Este homem começou a edificar e não pôde acabar.</p>
+                <p>31 Ou qual é o rei que, indo para fazer guerra contra outro rei, não se assenta primeiro para considerar se com dez mil pode enfrentar o que vem contra ele com vinte mil?</p>
+                <p>32 E, se não o pode,, enquanto o outro ainda está longe, manda-lhe embaixadores e pede-lhe termos de paz.</p>
+                <p>33 Assim, pois, qualquer de vós que não renuncia a todos os seus bens, não pode ser meu discípulo.</p>
+                <h4>Saltar para o Reino de Deus</h4>
+                <p>34 O sal é bom; mas, se o sal se tornar insípido, com que se lhe restaurará o sabor? </p>
+                <p>35 Nem para a terra, nem para o esterco; lançam-no fora. Quem tem ouvidos para ouvir, ouça.</p>
+                
+        </section>
+        <section class="narration-section"> 
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/lucas13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/lucas15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
