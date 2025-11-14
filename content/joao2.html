@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>João 2</h2>
+            <h3>O casamento em Caná da Galileia (1–11)</h3>
+            <p>1 No terceiro dia houve um casamento em Caná da Galileia, e a mãe de Jesus estava ali;</p>
+            <p>2 Jesus também foi convidado com seus discípulos para o casamento.</p>
+            <p>3 E, tendo acabado o vinho, a mãe de Jesus lhe disse: Eles não têm mais vinho.</p>
+            <p>4 Jesus lhe disse: Mulher, que tenho eu contigo? Ainda não é chegada a minha hora.</p>
+            <p>5 Sua mãe disse aos serventes: Fazei tudo o que ele vos disser.</p>
+            <p>6 Estavam ali seis talhas de pedra, postas para as purificações dos judeus, cada uma contendo duas ou três metretas.</p>
+            <p>7 Jesus lhes disse: Enchei de água essas talhas. E eles as encheram até em cima.</p>
+            <p>8 Então lhes disse: Tirai agora, e levai ao mestre-sala. E eles o fizeram.</p>
+            <p>9 E, quando o mestre-sala provou a água transformada em vinho, sem saber de onde era, (mas o sabiam os serventes que tinham tirado a água), chamou o noivo</p>
+            <p>10 e disse-lhe: Todo homem põe primeiro o bom vinho, e, quando já têm bebido bastante, então o inferior; mas tu guardaste o bom vinho até agora.</p>
+            <p>11 Este princípio dos sinais fez Jesus em Caná da Galileia, e manifestou a sua glória, e os seus discípulos creram nele.</p>
+            <h3>A purificação do templo (12–25)</h3>
+            <p>12 Depois disto desceu Jesus para Cafarnaum, ele, sua mãe, seus irmãos e seus discípulos; e ficaram ali poucos dias.</p>
+            <p>13 E estava próxima a Páscoa dos judeus, e Jesus subiu a Jerusalém.</p>
+            <p>14 E achou no templo os que vendiam bois, ovelhas e pombas, e os cambistas assentados;</p>
+            <p>15 e, fazendo um azorrague de cordas, todos os lançou para fora do templo, tanto as ovelhas como os bois; e espalhou o dinheiro dos cambistas, e derrubou as mesas;</p>
+            <p>16 e disse aos que vendiam pombas: Tirai daqui estas coisas, e não façais da casa de meu Pai casa de comércio.</p>
+            <p>17 E os seus discípulos lembraram-se que está escrito: O zelo pela tua casa me consumirá.</p>
+            <p>18 Então os judeus responderam e lhe disseram: Que sinal nos mostras, visto que fazes estas coisas?</p>
+            <p>19 Jesus respondeu-lhes: Derribai este templo, e em três dias eu o levantarei.</p>
+            <p>20 Disseram então os judeus: Quarenta e seis anos foi edificado este templo, e tu o levantarás em três dias?</p>
+            <p>21 Mas ele falava do templo do seu corpo.</p>
+            <p>22 Por isso, quando ressuscitou dos mortos, seus discípulos lembraram-se que ele dissera isto; e creram na Escritura e na palavra que Jesus tinha dito.</p>
+            <p>23 E, estando ele em Jerusalém na festa da Páscoa, muitos creram no seu nome, vendo os sinais que ele fazia.</p>
+            <p>24 Mas Jesus não se confiava a eles, porque os conhecia a todos;</p>
+            <p>25 e não precisava que alguém lhe desse testemunho do homem, pois ele bem sabia o que havia no homem.</p>
+            
+                    </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joao1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joao3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
