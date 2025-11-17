@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>João 14</h2>
+            <h3>Consolo e promessa de lugar</h3>
+            <p>¹ Não se turbe o vosso coração; credes em Deus, crede também em mim.</p>
+            <p>² Na casa de meu Pai há muitas moradas; se não fosse assim, eu vo-lo teria dito. Vou preparar-vos lugar.</p>
+            <p>³ E quando eu for, e vos preparar lugar, virei outra vez, e vos levarei para mim mesmo, para que onde eu estiver estejais vós também.</p>
+            <p>⁴ Mesmo vós sabeis para onde vou, e conheceis o caminho.</p>
+
+            <h3>Jesus, o Caminho, a Verdade e a Vida</h3>
+            <p>⁵ Disse-lhe Tomé: Senhor, nós não sabemos para onde vais; e como podemos saber o caminho?</p>
+            <p>⁶ Disse-lhe Jesus: Eu sou o caminho, e a verdade e a vida; ninguém vem ao Pai, senão por mim.</p>
+            <p>⁷ Se vós me conhecêsseis a mim, também conheceríeis a meu Pai; e já desde agora o conheceis, e o tendes visto.</p>
+            <p>⁸ Disse-lhe Filipe: Senhor, mostra-nos o Pai, o que nos basta.</p>
+            <p>⁹ Disse-lhe Jesus: Estou há tanto tempo convosco, e não me tendes conhecido, Filipe? Quem me vê a mim vê o Pai; e como dizes tu: Mostra-nos o Pai?</p>
+            <p>¹⁰ Não crês tu que eu estou no Pai, e que o Pai está em mim? As palavras que eu vos digo não as digo de mim mesmo, mas o Pai, que está em mim, é quem faz as obras.</p>
+            <p>¹¹ Crede-me que estou no Pai, e o Pai em mim; crede-me, ao menos, por causa das mesmas obras.</p>
+            <p>¹² Na verdade, na verdade vos digo que aquele que crê em mim também fará as obras que eu faço, e as fará maiores do que estas, porque eu vou para meu Pai.</p>
+            <p>¹³ E tudo quanto pedirdes em meu nome eu o farei, para que o Pai seja glorificado no Filho.</p>
+            <p>¹⁴ Se pedirdes alguma coisa em meu nome, eu o farei.</p>
+
+            <h3>Amor, mandamentos e o consolador</h3>
+            <p>¹⁵ Se me amais, guardai os meus mandamentos.</p>
+            <p>¹⁶ E eu rogarei ao Pai, e ele vos dará outro Consolador, para que fique convosco para sempre;</p>
+            <p>¹⁷ O Espírito de verdade, que o mundo não pode receber, porque não o vê nem o conhece; mas vós o conheceis, porque habita convosco, e estará em vós.</p>
+            <p>¹⁸ Não vos deixarei órfãos; voltarei para vós.</p>
+            <p>¹⁹ Ainda um pouco, e o mundo não me verá mais, mas vós me vereis; porque eu vivo, e vós vivereis.</p>
+            <p>²⁰ Naquele dia conhecereis que estou em meu Pai, e vós em mim, e eu em vós.</p>
+            <p>²¹ Aquele que tem os meus mandamentos e os guarda esse é o que me ama; e aquele que me ama será amado de meu Pai, e eu o amarei, e me manifestarei a ele.</p>
+
+            <h3>Manifestação e morada</h3>
+            <p>²² Disse-lhe Judas (não o Iscariotes): Senhor, de onde vem que te hás de manifestar a nós, e não ao mundo?</p>
+            <p>²³ Jesus respondeu, e disse-lhe: Se alguém me ama, guardará a minha palavra, e meu Pai o amará, e viremos para ele, e faremos nele morada.</p>
+            <p>²⁴ Quem não me ama não guarda as minhas palavras; ora, a palavra que ouvistes não é minha, mas do Pai que me enviou.</p>
+            <p>²⁵ Tenho-vos dito isto, estando convosco.</p>
+            <p>²⁶ Mas aquele Consolador, o Espírito Santo, que o Pai enviará em meu nome, esse vos ensinará todas as coisas, e vos fará lembrar de tudo quanto vos tenho dito.</p>
+            <p>²⁷ Deixo-vos a paz, a minha paz vos dou; não vo-la dou como o mundo a dá. Não se turbe o vosso coração, nem se atemorize.</p>
+
+            <h3>A volta de jesus e sua missão</h3>
+            <p>²⁸ Ouvistes que eu vos disse: Vou, e venho para vós. Se me amásseis, certamente exultaríeis porque eu disse: Vou para o Pai; porque meu Pai é maior do que eu.</p>
+            <p>²⁹ Eu vo-lo disse agora antes que aconteça, para que, quando acontecer, vós acrediteis.</p>
+            <p>³⁰ Já não falarei muito convosco, porque se aproxima o príncipe deste mundo, e nada tem em mim;</p>
+            <p>³¹ Mas é para que o mundo saiba que eu amo o Pai, e que faço como o Pai me mandou. Levantai-vos, vamo-nos daqui.</p>
+           
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joao13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/joao15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
