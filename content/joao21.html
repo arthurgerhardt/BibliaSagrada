@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>João 21</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>João 21</h2>
+            <h3>A Aparição de Jesus aos Discípulos no Mar de Tiberíades</h3>
+            <p>¹ Depois disto apareceu Jesus outra vez aos seus discípulos junto do mar de Tiberíades; e apareceu assim:</p>
+            <p>² Estavam juntos Simão Pedro, e Tomé, chamado Dídimo, e Natanael, que era de Caná da Galiléia, e os filhos de Zebedeu, e outros dois dos seus discípulos.</p>
+            <p>³ Disse-lhes Simão Pedro: Vou pescar. Disseram-lhe eles: Iremos contigo. Saíram, e entraram no barco; e naquela noite nada apanharam.</p>
+            <p>⁴ E, já sendo manhã, Jesus estava na praia; mas os discípulos não sabiam que era Jesus.</p>
+            <p>⁵ Disse-lhes, pois, Jesus: Filhos, tendes alguma coisa para comer? Responderam-lhe: Não.</p>
+            <p>⁶ E disse-lhes: Lançai a rede à direita do barco, e achareis. Lançaram-na, pois, e já não a podiam tirar, por causa da grande quantidade de peixes.</p>
+            <p>⁷ Então aquele discípulo a quem Jesus amava disse a Pedro: É o Senhor. Simão Pedro, ouvindo que era o Senhor, cingiu-se com a túnica (porque estava nu), e lançou-se ao mar.</p>
+            <p>⁸ Os outros discípulos, pois, vieram no barco, arrastando a rede cheia de peixes; porque não estavam longe da terra, mas cerca de duzentos côvados.</p>
+            <p>⁹ Quando desceram à terra, viram ali brasas, e um peixe posto sobre elas, e pão.</p>
+            <p>¹⁰ Disse-lhes Jesus: Trazei alguns dos peixes que agora apanhastes.</p>
+            <p>¹¹ Então Simão Pedro subiu ao barco, e puxou a rede para terra, cheia de cento e cinquenta e três peixes grandes; e, embora fossem tantos, a rede não se rompeu.</p> 
+            <p>¹² Disse-lhes Jesus: Vinde, comei. Nenhum dos discípulos ousava perguntar-lhe: Quem és tu? sabendo que era o Senhor.</p>
+            <p>¹³ Veio, pois, Jesus, e tomou o pão, e deu-lhes, e assim também o peixe.</p>
+            <p>¹⁴ Esta foi já a terceira vez que Jesus apareceu aos seus discípulos, depois de ressuscitar dentre os mortos.</p>
+            <h3>Jesus Reinstala Pedro</h3>
+            <p>¹⁵ Depois de terem comido, disse Jesus a Simão Pedro: Simão, filho de João, amas-me mais do que estes? Ele lhe respondeu: Sim, Senhor; tu sabes que te amo. Disse-lhe Jesus: Apascenta os meus cordeiros.</p>
+            <p>¹⁶ Tornou a dizer-lhe pela segunda vez: Simão, filho de João, amas-me? Ele lhe respondeu: Sim, Senhor; tu sabes que te amo. Disse-lhe Jesus: Apascenta as minhas ovelhas.</p>    
+            <p>¹⁷ Disse-lhe pela terceira vez: Simão, filho de João, amas-me? Pedro entristeceu-se por lhe ter dito pela terceira vez: Amas-me? e disse-lhe: Senhor, tu sabes todas as coisas; tu sabes que te amo. Disse-lhe Jesus: Apascenta os meus cordeiros.</p>   
+            <p>¹⁸ Em verdade, em verdade te digo que, quando eras mais moço, cingias-te a ti mesmo, e andavas por onde querias; mas quando fores velho, estenderás as tuas mãos, e outro te cingirá, e te levará para onde não queiras.</p>
+            <p>¹⁹ Disse isto, significando com que morte havia de glorificar a Deus. E, dizendo isto, disse-lhe: Segue-me.</p>
+            <p>²⁰ Voltando-se Pedro, viu que o discípulo a quem Jesus amava seguia; o qual também tinha reclinado sobre o peito de Jesus, e lhe dissera: Senhor, quem é o que te há de entregar?</p>
+            <p>²¹ Vendo, pois, Pedro aquele discípulo, disse a Jesus: Senhor, e deste que será?</p>
+            <p>²² Disse-lhe Jesus: Se eu quero que ele fique até que eu venha, que te importa? Segue-me tu.</p>
+            <p>²³ Assim se espalhou entre os irmãos o rumor de que aquele discípulo não morreria; mas Jesus não lhe dissera que não morreria, mas: Se eu quero que ele fique até que eu venha, que te importa?</p>
+            <h3>Conclusão</h3>
+            <p>²⁴ Este é o discípulo que testifica destas coisas, e as escreveu; e sabemos que o seu testemunho é verdadeiro.</p>
+            <p>²⁵ E há também muitas outras coisas que Jesus fez; as quais, se fossem escritas uma por uma, penso que nem o mundo todo poderia conter os livros que se escreveriam. Amém.</p>
+            
+            
+            
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joao20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
