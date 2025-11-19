@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 1</h2>
+            <h3>A Ascensão de Jesus e a Promessa do Espírito Santo</h3>
+            <p>¹ No primeiro livro, ó Teófilo, tratei de tudo o que Jesus começou a fazer e a ensinar,</p>
+            <p>² até ao dia em que foi elevado ao céu, depois de ter dado mandamentos, por meio do Espírito Santo, aos apóstolos que escolhera.</p>
+            <p>³ A estes também,, depois de ter padecido, se apresentou vivo, com muitas provas incontestáveis, aparecendo-lhes durante quarenta dias e falando das coisas concernentes ao reino de Deus.</p>
+            <p>⁴ E, estando com eles, ordenou-lhes que não se ausentassem de Jerusalém, mas que esperassem a promessa do Pai, a qual, disse ele, ouvistes de mim;</p>
+            <p>⁵ porque João batizou com água, mas vós sereis batizados com o Espírito Santo, dentro de poucos dias.</p>
+            <p>⁶ Então os que estavam reunidos lhe perguntaram: Senhor, é neste tempo que restauras o reino a Israel?</p>
+            <p>⁷ Respondeu-lhes: Não vos compete saber os tempos ou as épocas que o Pai estabeleceu pela sua própria autoridade;</p>
+            <p>⁸ mas recebereis poder, ao descer sobre vós o Espírito Santo, e sereis minhas testemunhas tanto em Jerusalém como em toda a Judeia e Samaria, e até os confins da terra.</p>
+            <p>⁹ E, havendo dito estas coisas, foi elevado às alturas, enquanto eles o contemplavam, e uma nuvem o ocultou aos seus olhos.</p>
+            <p>¹⁰ E, estando eles a olhar fixamente para o céu enquanto ele subia, eis que junto deles se puseram dois homens vestidos de branco,</p>
+            <p>¹¹ os quais lhes disseram: Homens da Galiléia, por que estais a olhar para o céu? Esse Jesus, que dentre vós foi elevado ao céu, virá assim como para o céu o vistes ir.</p>
+            <p>¹² Então voltaram para Jerusalém, do monte chamado das Oliveiras, que está perto de Jerusalém, a uma distância que se pode percorrer em sábado.</p>
+            <p>¹³ E, quando entraram, subiram ao cenáculo onde se hospedavam Pedro, Tiago, João e André, Filipe e Tomé, Bartolomeu e Mateus, Tiago, filho de Alfeu, Simão, o Zelote, e Judas, filho de Tiago.</p>
+            <p>¹⁴ Todos estes perseveravam unanimemente em oração, com as mulheres e Maria, mãe de Jesus, e com os irmãos dele.</p>
+            <h3>A Escolha de Matias</h3>
+            <p>¹⁵ Naqueles dias, levantou-se Pedro no meio dos irmãos (ora estavam juntos cerca de cento e vinte pessoas) e disse:</p>
+            <p>¹⁶ Irmãos, convinha que se cumprisse a Escritura que o Espírito Santo, por boca de Davi, previu acerca de Judas, que foi guia daqueles que prenderam Jesus.</p>
+            <p>¹⁷ Pois ele era contado entre nós e tinha recebido a sua parte neste ministério.</p>
+            <p>¹⁸ (Com efeito, este adquiriu um campo com o preço da sua iniquidade; e, caindo de cabeça, rebentou-se pelo meio, e todas as suas entranhas se derramaram.</p>
+            <p>¹⁹ E tornou-se conhecido por todos os habitantes de Jerusalém, de tal modo que aquele campo foi chamado, em sua língua, Aceldama, isto é, Campo de Sangue.)</p>
+            <p>²⁰ Porque está escrito na Escritura: "Caia o seu campo por herança a outro"; e: "Seja o seu ofício tirado de entre nós."</p>
+            <p>²¹ Convinha, pois, que, dentre os homens que nos acompanharam todo o tempo em que o Senhor Jesus entrou e saiu entre nós,</p>
+            <p>²² desde o batismo de João até ao dia em que dentre nós foi elevado ao céu, um deles se tornasse testemunha da sua ressurreição.</p>
+            <p>²³ E apresentaram dois homens: José, chamado Barsabás, cujo sobrenome era Justo, e Matias.</p>
+            <p>²⁴ E oraram, dizendo: Tu, Senhor, que conheces os corações de todos, mostra qual destes dois tens escolhido</p>
+            <p>²⁵ para ocupar este ministério e apostolado, do qual Judas se desviou, para ir para o seu próprio lugar.</p>
+            <p>²⁶ E lançaram sortes sobre eles, e a sorte caiu sobre Matias; e foi contado com os onze apóstolos.</p>   
+
+            
+            
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/joao21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
