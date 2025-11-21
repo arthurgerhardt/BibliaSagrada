@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 6</h2>
+            <h3>Sete homens escolhidos para servir (1–7)</h3>
+            <p>¹ Ora, naqueles dias, crescendo o número dos discípulos, houve uma murmuração dos gregos contra os hebreus, porque as suas viúvas eram desprezadas no ministério cotidiano.</p>
+            <p>² E os doze, convocando a multidão dos discípulos, disseram: Não é razoável que nós deixemos a palavra de Deus e sirvamos às mesas.</p>
+            <p>³ Escolhei, pois, irmãos, dentre vós, sete homens de boa reputação, cheios do Espírito Santo e de sabedoria, aos quais constituamos sobre esta necessidade.</p>
+            <p>⁴ Mas nós perseveraremos na oração e no ministério da palavra.</p>
+            <p>⁵ E este parecer contentou a toda a multidão, e elegeram Estêvão, homem cheio de fé e do Espírito Santo, e Filipe, e Prócoro, e Nicanor, e Timão, e Parmenas e Nicolau, prosélito de Antioquia;</p>
+            <p>⁶ E os apresentaram ante os apóstolos, e estes, orando, lhes impuseram as mãos.</p>
+            <p>⁷ E crescia a palavra de Deus, e em Jerusalém se multiplicava muito o número dos discípulos, e grande parte dos sacerdotes obedecia à fé.</p>
+
+            <h3>O discurso de Estêvão e sua morte (8–60)</h3>
+            <p>⁸ E Estêvão, cheio de fé e de poder, fazia prodígios e grandes sinais entre o povo.</p>
+            <p>⁹ E levantaram-se alguns que eram da sinagoga chamada dos libertinos, e dos cireneus e dos alexandrinos, e dos que eram da Cilícia e da Ásia, e disputavam com Estêvão.</p>
+            <p>¹⁰ E não podiam resistir à sabedoria, e ao Espírito com que falava.</p>
+            <p>¹¹ Então subornaram uns homens, para que dissessem: Ouvimos-lhe proferir palavras blasfemas contra Moisés e contra Deus.</p>
+            <p>¹² E excitaram o povo, os anciãos e os escribas; e, investindo contra ele, o arrebataram e o levaram ao conselho.</p>
+            <p>¹³ E apresentaram falsas testemunhas, que diziam: Este homem não cessa de proferir palavras blasfemas contra este santo lugar e a lei;</p>
+            <p>¹⁴ Porque nós lhe ouvimos dizer que esse Jesus Nazareno há de destruir este lugar e mudar os costumes que Moisés nos deu.</p>
+            <p>¹⁵ Então todos os que estavam assentados no conselho, fixando os olhos nele, viram o seu rosto como o rosto de um anjo.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
