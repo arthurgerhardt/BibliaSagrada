@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 14</h2>
+            <h3>Ministério em Icônio, Listra e Derbe (1–28)</h3>
+            <p>¹ E aconteceu que em Icônio entraram juntos na sinagoga dos judeus, e falaram de tal modo que creu uma grande multidão, não só de judeus mas de gregos.</p>
+            <p>² Mas os judeus incrédulos incitaram e irritaram, contra os irmãos, os ânimos dos gentios.</p>
+            <p>³ Detiveram-se, pois, muito tempo, falando ousadamente acerca do Senhor, o qual dava testemunho à palavra da sua graça, permitindo que por suas mãos se fizessem sinais e prodígios.</p>
+            <p>⁴ E dividiu-se a multidão da cidade; e uns eram pelos judeus, e outros pelos apóstolos.</p>
+            <p>⁵ E havendo um motim, tanto dos judeus como dos gentios, com os seus principais, para os insultarem e apedrejarem,</p>
+            <p>⁶ Sabendo-o eles, fugiram para Listra e Derbe, cidades de Licaônia, e para a província circunvizinha;</p>
+            <p>⁷ E ali pregavam o evangelho.</p>
+            <p>⁸ E estava assentado em Listra certo homem leso dos pés, coxo desde o ventre de sua mãe, o qual nunca tinha andado.</p>
+            <p>⁹ Este ouviu falar Paulo, que, fixando nele os olhos, e vendo que tinha fé para ser curado,</p>
+            <p>¹⁰ Disse em voz alta: Levanta-te direito sobre teus pés. E ele saltou e andou.</p>
+            <p>¹¹ E as multidões, vendo o que Paulo fizera, levantaram a sua voz, dizendo em língua licaônica: Fizeram-se os deuses semelhantes aos homens, e desceram até nós.</p>
+            <p>¹² E chamavam Júpiter a Barnabé, e Mercúrio a Paulo; porque este era o que falava.</p>
+            <p>¹³ E o sacerdote de Júpiter, cujo templo estava em frente da cidade, trazendo para a entrada da porta touros e grinaldas, queria com a multidão sacrificar-lhes.</p>
+            <p>¹⁴ Ouvindo, porém, isto os apóstolos Barnabé e Paulo, rasgaram as suas vestes, e saltaram para o meio da multidão, clamando,</p>
+            <p>¹⁵ E dizendo: Senhores, por que fazeis essas coisas? Nós também somos homens como vós, sujeitos às mesmas paixões, e vos anunciamos que vos convertais dessas vaidades ao Deus vivo, que fez o céu, e a terra, o mar, e tudo quanto há neles;</p>
+            <p>¹⁶ O qual nos tempos passados deixou andar todas as nações em seus próprios caminhos.</p>
+            <p>¹⁷ E contudo, não se deixou a si mesmo sem testemunho, beneficiando-vos lá do céu, dando-nos chuvas e tempos frutíferos, enchendo de mantimento e de alegria os nossos corações.</p>
+            <p>¹⁸ E, dizendo isto, com dificuldade impediram que as multidões lhes sacrificassem.</p>
+            <p>¹⁹ Sobrevieram, porém, uns judeus de Antioquia e de Icônio que, tendo convencido a multidão, apedrejaram a Paulo e o arrastaram para fora da cidade, cuidando que estava morto.</p>
+            <p>²⁰ Mas, rodeando-o os discípulos, levantou-se, e entrou na cidade, e no dia seguinte saiu com Barnabé para Derbe.</p>
+            <p>²¹ E, tendo anunciado o evangelho naquela cidade e feito muitos discípulos, voltaram para Listra, e Icônio e Antioquia,</p>
+            <p>²² Confirmando os ânimos dos discípulos, exortando-os a permanecer na fé, pois que por muitas tribulações nos importa entrar no reino de Deus.</p>
+            <p>²³ E, havendo-lhes, por comum consentimento, eleito anciãos em cada igreja, orando com jejuns, os encomendaram ao Senhor em quem haviam crido.</p>
+            <p>²⁴ Passando depois por Pisídia, dirigiram-se a Panfília.</p>
+            <p>²⁵ E, tendo anunciado a palavra em Perge, desceram a Atália.</p>
+            <p>²⁶ E dali navegaram para Antioquia, de onde tinham sido encomendados à graça de Deus para a obra que já haviam cumprido.</p>
+            <p>²⁷ E, quando chegaram e reuniram a igreja, relataram quão grandes coisas Deus fizera por eles, e como abrira aos gentios a porta da fé.</p>
+            <p>²⁸ E ficaram ali não pouco tempo com os discípulos.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

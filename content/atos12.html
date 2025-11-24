@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 12</h2>
+            <h3>A prisão de Pedro e o livramento (1–19)</h3>
+            <p>¹ Naquele mesmo tempo, o rei Herodes lançou mão de alguns que pertenciam à igreja, para os maltratar.</p>
+            <p>² E matou à espada Tiago, irmão de João.</p>
+            <p>³ Vendo ele que isso agradava aos judeus, prosseguiu, e, prendendo também a Pedro, era o tempo dos pães ázimos.</p>
+            <p>⁴ E, havendo-o prendido, o entregou a quatro grupos de soldados, para que o guardassem; e queria levá-lo ao povo depois da páscoa.</p>
+            <p>⁵ E Pedro, pois, estava guardado na prisão; mas a igreja fazia incessantemente oração a Deus por ele.</p>
+            <p>⁶ E, quando Herodes o ia levar, na noite anterior, Pedro estava dormindo entre dois soldados, preso com duas cadeias; e os guardas diante da porta guardavam a prisão.</p>
+            <p>⁷ E eis que um anjo do Senhor apareceu, e uma luz resplandeceu na prisão; e, tocando Pedro no lado, o despertou, dizendo: Levanta-te depressa. E as cadeias lhe caíram das mãos.</p>
+            <p>⁸ E o anjo disse-lhe: Cinge-te, e calça as tuas sandálias. E assim o fez. E disse-lhe: Veste a tua capa, e segue-me.</p>
+            <p>⁹ E saindo ele, o seguia; e não sabia que era verdade o que se fazia por meio do anjo, mas pensava estar vendo uma visão.</p>
+            <p>¹⁰ E, passando a primeira e a segunda vigílias da guarda, chegaram à porta da cidade, que se abriu por si mesma para eles; e saindo, passaram uma rua, e logo o anjo o deixou.</p>
+            <p>¹¹ E Pedro, voltando em si, disse: Agora sei verdadeiramente que o Senhor enviou o seu anjo, e me livrou das mãos de Herodes e de todo o povo judeu.</p>
+            <p>¹² E, havendo-se dado conta disso, foi à casa de Maria, mãe de João, por sobrenome Marcos, onde muitos estavam reunidos orando.</p>
+            <p>¹³ E, batendo ele à porta do pátio, saiu uma serva chamada Rode para atender.</p>
+            <p>¹⁴ E, reconhecendo a voz de Pedro, por causa da alegria não abriu a porta, mas foi correndo avisar aos que ali estavam que Pedro estava à porta.</p>
+            <p>¹⁵ E eles disseram-lhe: Tu estás louca. Mas ela insistia que era assim. E eles disseram: Era o seu anjo.</p>
+            <p>¹⁶ Mas Pedro continuava batendo; e, abrindo eles, o viram, e se espantaram.</p>
+            <p>¹⁷ Mas, fazendo sinal com a mão para que se calassem, contou-lhes como o Senhor o tinha tirado da prisão. E disse: Dai notícia destas coisas a Tiago e aos irmãos. E saiu, e foi para outro lugar.</p>
+            <p>¹⁸ E, passando-se manhã, houve grande agitação entre os soldados sobre o que fora de Pedro.</p>
+            <p>¹⁹ E,, havendo-o procurado diligentemente, e não o achando, voltaram para a prisão, e anunciaram tudo a Herodes.</p> 
+            <h3>A morte de Herodes (20–25)</h3>
+            <p>²⁰ E, havendo Herodes ido de Jerusalém para Cesareia, estava ali hospedado.</p>
+            <p>²¹ E no dia determinado, vestido com suas vestes reais, assentou-se no tribunal e fez um discurso ao povo.</p>
+            <p>²² E o povo clamava, dizendo: Voz de Deus, e não de homem!</p>
+            <p>²³ E imediatamente o anjo do Senhor o feriu, porque não deu glória a Deus; e, comido de vermes, expirou.</p>
+            <p>²⁴ Mas a palavra de Deus crescia e se multiplicava.</p>
+            <p>²⁵ E Barnabé e Saulo, tendo cumprido a sua missão, voltaram de Jerusalém, levando consigo João, por sobrenome Marcos.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

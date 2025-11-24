@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 18</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 18</h2>
+            <h3>Paulo em Corinto (1–17)</h3>
+            <p>¹ E depois disto partiu Paulo de Atenas, e chegou a Corinto.</p>
+            <p>² E, achando um certo judeu por nome Áquila, natural do Ponto, que havia pouco tinha vindo da Itália, e Priscila, sua mulher (pois Cláudio tinha mandado que todos os judeus saíssem de Roma), ajuntou-se com eles,</p>
+            <p>³ E, como era do mesmo ofício, ficou com eles, e trabalhava; pois tinham por ofício fazer tendas.</p>
+            <p>⁴ E todos os sábados disputava na sinagoga, e convencia a judeus e gregos.</p>
+            <p>⁵ E, quando Silas e Timóteo desceram da Macedônia, foi Paulo impulsionado no espírito, testificando aos judeus que Jesus era o Cristo.</p>
+            <p>⁶ Mas, resistindo e blasfemando eles, sacudiu as vestes, e disse-lhes: O vosso sangue seja sobre a vossa cabeça; eu estou limpo, e desde agora parto para os gentios.</p>
+            <p>⁷ E, saindo dali, entrou em casa de um homem chamado Justo, que servia a Deus, e cuja casa estava junto da sinagoga.</p>
+            <p>⁸ E Crispo, principal da sinagoga, creu no Senhor com toda a sua casa; e muitos dos coríntios, ouvindo-o, creram e foram batizados.</p>
+            <p>⁹ E disse o Senhor em visão de noite a Paulo: Não temas, mas fala, e não te cales;</p>
+            <p>¹⁰ Porque eu sou contigo, e ninguém lançará mão de ti para te fazer mal, pois tenho muito povo nesta cidade.</p>
+            <p>¹¹ E ficou ali um ano e seis meses, ensinando entre eles a palavra de Deus.</p>
+            <p>¹² Mas, sendo Gálio procônsul da Acaia, levantaram-se os judeus concordemente contra Paulo, e o levaram ao tribunal,</p>
+            <p>¹³ Dizendo: Este persuade os homens a servir a Deus contra a lei.</p>
+            <p>¹⁴ E, querendo Paulo abrir a boca, disse Gálio aos judeus: Se houvesse, ó judeus, algum agravo ou crime enorme, com razão vos sofreria,</p>
+            <p>¹⁵ Mas, se a questão é de palavras, e de nomes, e da lei que entre vós há, vede-o vós mesmos; porque eu não quero ser juiz dessas coisas.</p>
+            <p>¹⁶ E expulsou-os do tribunal.</p>
+            <p>¹⁷ Então todos os gregos agarraram Sóstenes, principal da sinagoga, e o feriram diante do tribunal; e a Gálio nada destas coisas o incomodava.</p>
+
+            <h3>Apolo em Éfeso (18–28)</h3>
+            <p>¹⁸ E Paulo, ficando ainda ali muitos dias, despediu-se dos irmãos, e dali navegou para a Síria, e com ele Priscila e Áquila, tendo rapado a cabeça em Cencreia, porque tinha voto.</p>
+            <p>¹⁹ E chegou a Éfeso, e deixou-os ali; mas ele, entrando na sinagoga, disputava com os judeus.</p>
+            <p>²⁰ E, rogando-lhe eles que ficasse com eles por mais algum tempo, não consentiu nisso.</p>
+            <p>²¹ Antes se despediu deles, dizendo: É-me de todo preciso celebrar a festividade que vem em Jerusalém; mas querendo Deus, outra vez voltarei a vós. E partiu de Éfeso.</p>
+            <p>²² E, chegando a Cesareia, subiu a Jerusalém e, saudando a igreja, desceu a Antioquia.</p>
+            <p>²³ E, estando ali algum tempo, partiu, passando sucessivamente pela província da Galácia e da Frígia, confirmando a todos os discípulos.</p>
+            <p>²⁴ E chegou a Éfeso um certo judeu chamado Apolo, natural de Alexandria, homem eloquente e poderoso nas Escrituras.</p>
+            <p>²⁵ Este era instruído no caminho do Senhor e, fervoroso de espírito, falava e ensinava diligentemente as coisas do Senhor, conhecendo somente o batismo de João.</p>
+            <p>²⁶ Ele começou a falar ousadamente na sinagoga; e, quando o ouviram Priscila e Áquila, o levaram consigo e lhe declararam mais precisamente o caminho de Deus.</p>
+            <p>²⁷ Querendo ele passar à Acaia, o animaram os irmãos, e escreveram aos discípulos que o recebessem; o qual, tendo chegado, aproveitou muito aos que pela graça criam.</p>
+            <p>²⁸ Porque com grande veemência, convencia publicamente os judeus, mostrando pelas Escrituras que Jesus era o Cristo.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos17.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos19.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
