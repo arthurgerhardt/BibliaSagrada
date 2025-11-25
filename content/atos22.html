@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 22</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 22</h2>
+            <h3>Defesa de Paulo perante o povo (1–21)</h3>
+            <p>¹ E Paulo, olhando para o povo, disse: Irmãos e pais, ouvi agora a minha defesa perante vós.</p>
+            <p>² E, ouvindo eles que lhes falava em sua própria língua, calaram-se; e ele disse:</p>
+            <p>³ Eu sou judeu, nascido em Tarso da Cilícia, mas criado nesta cidade; e fui instruído segundo a estrita observância da nossa lei, sendo zeloso de Deus, como vós todos sois hoje.</p>
+            <p>⁴ Eu persegui este Caminho até à morte, prendendo e entregando tanto homens como mulheres às prisões;</p>
+            <p>⁵ Como também o sumo sacerdote e todos os anciãos o podem testemunhar; dos quais também recebi cartas para os irmãos, e fui a Damasco, para trazer presos a Jerusalém os que ali estavam, para serem castigados.</p>
+            <p>⁶ E sucedeu que, indo eu pelo caminho, já perto de Damasco, ao meio-dia, repentinamente brilhou ao meu redor uma luz do céu;</p>
+            <p>⁷ E caí por terra, e ouvi uma voz que me dizia: Saulo, Saulo, por que me persegues?</p>
+            <p>⁸ E eu respondi: Quem és tu, Senhor? E disse-me: Eu sou Jesus Nazareno, a quem tu persegues.</p>
+            <p>⁹ E os que estavam comigo viram a luz, mas não entenderam a voz daquele que me falava.</p>
+            <p>¹⁰ E eu disse: Que farei, Senhor? E o Senhor me disse: Levanta-te, e vai a Damasco, e ali te será dito tudo o que te está ordenado fazer.</p>
+            <p>¹¹ E, como eu não podia ver por causa da luz, sendo guiado pelos que estavam comigo, cheguei a Damasco.</p>
+            <p>¹² E um certo Ananias, homem piedoso, segundo a lei, que era estimado por todos os judeus que ali habitavam,</p>
+            <p>¹³ Veio ter comigo, e, chegando-se, disse-me: Saulo, irmão, recebe a tua vista. E naquele mesmo instante caíram de meus olhos como que umas escamas, e recobrei a vista; e levantando-me, fui batizado.</p>
+            <p>¹⁴ E, havendo tomado alimento, fortalecei-me.</p>
+            <p>¹⁵ E, por muitos dias, estive com os discípulos que estavam em Damasco.</p>
+            <p>¹⁶ E agora, por que tardas? Levanta-te, e batiza-te, e lava os teus pecados, invocando o seu nome.</p>
+            <p>¹⁷ E aconteceu que, depois que voltei a Jerusalém, e orava no templo, fui arrebatado em êxtase,</p>
+            <p>¹⁸ E vi-o dizendo-me: Apressa-te, e sai depressa de Jerusalém, porque não aceitarão o teu testemunho acerca de mim.</p>
+            <p>¹⁹ E eu disse: Senhor, eles bem sabem que eu encarcerava e açoitava na sinagogas aqueles que criam em ti;</p>
+            <p>²⁰ E quando se derramava o sangue de teu testemunho, eu também estava ali, aprovando-o. E ele me disse: Vai, porque eu te enviarei para longe aos gentios.</p>
+            <p>²¹ E eles ouviram isto até ao fim; e levantaram a voz, dizendo: Fora com este da terra; pois que não é digno de viver.</p>
+            <h3>Paulo perante o tribuno (22–30)</h3>
+            <p>²² E, como eles clamassem e lançassem de si as vestes, e atirassem poeira ao ar,</p>
+            <p>²³ O tribuno ordenou que o levassem à fortaleza, e que o interrogassem com açoites, para saber por que causa clamavam assim contra ele.</p>
+            <p>²⁴ E, como lhe tivessem atado as mãos com cordas, Paulo disse ao tribuno: É lícito a vós açoitar um cidadão romano, e não estar condenado?</p>
+            <p>²⁵ O tribuno, ouvindo isto, foi ter com ele, e disse: Dize-me, tu és romano?</p>
+            <p>²⁶ E ele disse: Sim. E o tribuno respondeu: Eu com grande soma de dinheiro me tornei romano. E Paulo disse: Mas eu o sou de nascimento.</p>
+            <p>²⁷ Então, logo que soube que era romano, o tribuno cessou de o ameaçar; e, indo ter com os judeus, disse-lhes:</p>
+            <p>²⁸ Dizei-me, que acusação fazeis contra este homem? </p>
+            <p>²⁹ E eles, tendo-se calado, porque a sua acusação era por causa de questões de sua lei.</p>
+            <p>³⁰ E o tribuno, querendo saber a verdade, o fez desatar; e, interrogando-o palavra por palavra, o perguntou se era judeu, e acerca do seu ensino.</p>    
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos23.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
