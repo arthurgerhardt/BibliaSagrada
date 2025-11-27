@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atos dos Apóstolos 24</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Atos dos Apóstolos 24</h2>
+            <h3>Paulo perante Félix (1–27)</h3>
+            <p>¹ E, cinco dias depois, o sumo sacerdote Ananias desceu com os anciãos, e um certo Tértulo, orador, os quais compareceram perante o presidente contra Paulo.</p>
+            <p>² E, sendo chamado, Tértulo começou a acusá-lo, dizendo: Visto como por ti temos tanta paz e por tua prudência se fazem a este povo muitos e louváveis serviços,</p>
+            <p>³ Sempre e em todo o lugar, ó potentíssimo Félix, com todo o agradecimento o queremos reconhecer.</p>
+            <p>⁴ Mas, para que não te detenha muito, rogo-te que, conforme a tua equidade, nos ouças por pouco tempo.</p>
+            <p>⁵ Temos achado que este homem é uma peste, e promotor de sedições entre todos os judeus, por todo o mundo; e o principal defensor da seita dos nazarenos;</p>
+            <p>⁶ O qual intentou também profanar o templo; e nós o prendemos, e conforme a nossa lei o quisemos julgar.</p>
+            <p>⁷ Mas, sobrevindo o tribuno Lísias, no-lo tirou de entre as mãos com grande violência,</p>
+            <p>⁸ Mandando aos seus acusadores que viessem a ti; e dele tu mesmo, examinando-o, poderás entender tudo o de que o acusamos.</p>
+            <p>⁹ E também os judeus consentiam, dizendo serem estas coisas assim.</p>
+            <p>¹⁰ Paulo, porém, fazendo-lhe o presidente sinal que falasse, respondeu: Porque sei que já vai para muitos anos que desta nação és juiz, com tanto melhor ânimo respondo por mim.</p>
+            <p>¹¹ Pois bem podes saber que não há mais de doze dias que subi a Jerusalém a adorar;</p>
+            <p>¹² E não me acharam no templo falando com alguém, nem amotinando o povo nas sinagogas, nem na cidade.</p>
+            <p>¹³ Nem tampouco podem provar as coisas de que agora me acusam.</p>
+            <p>¹⁴ Mas confesso-te isto que, conforme aquele Caminho que chamam seita, assim sirvo ao Deus de nossos pais, crendo tudo quanto está escrito na lei e nos profetas.</p>
+            <p>¹⁵ Tendo esperança em Deus, como estes mesmos também esperam, de que há de haver ressurreição de mortos, assim dos justos como dos injustos.</p>
+            <p>¹⁶ E por isso procuro sempre ter uma consciência sem ofensa, tanto para com Deus como para com os homens.</p>
+            <p>¹⁷ Ora, muitos anos depois, vim trazer à minha nação esmolas e ofertas.</p>
+            <p>¹⁸ Nisto me acharam já santificado no templo, não em ajuntamentos, nem com alvoroços, uns certos judeus da Ásia,</p>
+            <p>¹⁹ Os quais convinha que estivessem presentes perante ti, e me acusassem, se alguma coisa contra mim tivessem.</p>
+            <p>²⁰ Ou digam estes mesmos, se acharam em mim alguma iniquidade, quando compareci perante o conselho,</p>
+            <p>²¹ A não ser estas palavras que, estando entre eles, clamei: Hoje sou julgado por vós acerca da ressurreição dos mortos.</p>
+            <p>²² Então Félix, havendo ouvido estas coisas, lhes pôs dilação, dizendo: Havendo-me informado melhor deste Caminho, quando o tribuno Lísias tiver descido, então tomarei inteiro conhecimento dos vossos negócios.</p>
+            <p>²³ E mandou ao centurião que o guardasse em prisão, tratando-o com brandura, e que a ninguém dos seus proibisse servi-lo ou vir ter com ele.</p>
+            <p>²⁴ E alguns dias depois, vindo Félix com sua mulher Drusila, que era judia, mandou chamar a Paulo, e ouviu-o acerca da fé em Cristo.</p>
+            <p>²⁵ E, tratando ele da justiça, e da temperança, e do juízo vindouro, Félix, amedrontado, respondeu: Por agora vai-te, e em tendo oportunidade te chamarei.</p>
+            <p>²⁶ Esperando ao mesmo tempo que Paulo lhe desse dinheiro, para que o soltasse; pelo que também muitas vezes o mandava chamar, e falava com ele.</p>
+            <p>²⁷ Mas, passados dois anos, Félix teve por sucessor a Pórcio Festo; e, querendo Félix comprazer aos judeus, deixou a Paulo preso.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/atos23.html">Capítulo Anterior</a>
+            <a class="button" href="../content/atos25.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
