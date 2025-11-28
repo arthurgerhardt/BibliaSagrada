@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 3</h2>
+            <h3>Todos são Pecadores (1–20)</h3>
+            <p>¹ Que vantagem, pois, tem o judeu? Ou qual é a utilidade da circuncisão?</p>
+            <p>² Muito em todas as coisas. Porque primeiramente, certamente, lhes foram confiados os oráculos de Deus.</p>
+            <p>³ Pois que, se alguns deles não creram, a sua incredulidade não anula a fidelidade de Deus.</p>
+            <p>⁴ De maneira nenhuma; antes seja Deus verdadeiro, e todo homem mentiroso; como está escrito: Para que sejas justificado nas tuas palavras, e venças quando fores julgado.</p>
+            <p>⁵ Mas, se a nossa injustiça serve para a justiça de Deus, que diremos? Porventura é injusto Deus, que infere a ira? (Falo segundo o homem.)</p>
+            <p>⁶ De maneira nenhuma; pois como julgará Deus o mundo?</p>
+            <p>⁷ Porque, se pela minha mentira a verdade de Deus abundou para a sua glória, por que sou ainda julgado como pecador?</p>
+            <p>⁸ E por que não dizemos, como alguns outros, que nos convém fazer o mal, para que venha o bem? A cuja condenação é justa.</p>
+            <p>⁹ Que diremos, pois? Temos nós alguma vantagem? De maneira nenhuma; porque já demonstramos que tanto judeus como gregos estão todos debaixo do pecado;</p>
+            <p>¹⁰ Como está escrito: Não há justo, nem um sequer;</p>
+            <p>¹¹ Não há quem entenda; não há quem busque a Deus;</p>
+            <p>¹² Todos se desviaram, juntamente se fizeram inúteis; não há quem faça o bem, não há nem um só;</p>
+            <p>¹³ A sua garganta é um sepulcro aberto; com as suas línguas enganam-se os homens;</p>
+            <p>¹⁴ Veneno de áspides há sob os seus lábios;</p>
+            <p>¹⁵ Cuja boca está cheia de maldição e de amargura;</p>
+            <p>¹⁶ Os seus pés são ligeiros para derramar sangue;</p>
+            <p>¹⁷ Destruição e miséria há nos seus caminhos;</p>
+            <p>¹⁸ E não conheceram o caminho da paz.</p>
+            <p>¹⁹ Não há temor de Deus diante dos seus olhos.</p>
+            <p>²⁰ Ora, sabemos que tudo o que a lei diz, ela o diz aos que estão debaixo da lei; para que toda boca se cale, e todo o mundo seja condenado diante de Deus.</p>  
+            <h3>A Justificação pela Fé em Jesus Cristo (21–31)</h3>
+            <p>²¹ Mas agora, sem lei, se manifestou a justiça de Deus, testemunhada pela lei e pelos profetas;</p>
+            <p>²² A justiça de Deus pela fé em Jesus Cristo, para todos os que crêem. Porque não há diferença;</p>
+            <p>²³ Pois todos pecaram e destituídos estão da glória de Deus;</p>
+            <p>²⁴ Sendo justificados gratuitamente pela sua graça, pela redenção que há em Cristo Jesus;</p>
+            <p>²⁵ Ao qual Deus propôs para propiciação, pela fé no seu sangue, para demonstrar a sua justiça, por haver Deus na sua tolerância deixado impunes os pecados anteriormente cometidos;</p>
+            <p>²⁶ Para demonstração da sua justiça neste tempo presente, para que ele seja justo, e justificador daquele que é da fé de Jesus.</p>
+            <p>²⁷ Onde está, pois, a glória? É excluída. Pela lei? De maneira nenhuma; antes pela fé.</p>
+            <p>²⁸ Porque concluímos que o homem é justificado pela fé, sem as obras da lei.</p>
+            <p>²⁹ Porventura é Deus somente dos judeus? Não é também dos gentios? Sim, também dos gentios;</p>
+            <p>³⁰ Porquanto há um só Deus, que há de justificar os circuncidados pela fé, e os incircuncidados pela mesma fé.</p>
+            <p>³¹ Anulamos, pois, a lei pela fé? De maneira nenhuma, antes confirmamos a lei.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
