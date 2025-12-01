@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 5</h2>
+            <h3>A Paz com Deus (1–11)</h3>
+            <p>¹ Justificados, pois, pela fé, temos paz com Deus por nosso Senhor Jesus Cristo;</p>
+            <p>² Pelo qual também temos acesso, pela fé, a esta graça na qual estamos firmes, e nos gloriamos na esperança da glória de Deus.</p>
+            <p>³ E não somente isso, mas também nos gloriamos nas tribulações, sabendo que a tribulação produz a perseverança;</p>
+            <p>⁴ E a perseverança, a experiência; e a experiência, a esperança.</p>
+            <p>⁵ E a esperança não traz confusão, porquanto o amor de Deus está derramado em nossos corações pelo Espírito Santo que nos foi dado.</p>
+            <p>⁶ Porque Cristo, quando ainda éramos fracos, morreu a seu tempo pelos ímpios.</p>
+            <p>⁷ Porque dificilmente morrerá alguém por um justo; embora, porventura, alguém ouse morrer por um bom.</p>
+            <p>⁸ Mas Deus prova o seu amor para conosco, em que Cristo morreu por nós, sendo nós ainda pecadores.</p>
+            <p>⁹ Logo, muito mais agora, sendo justificados pelo seu sangue, seremos por ele salvos da ira.</p>
+            <p>¹⁰ Porque, se nós, quando inimigos, fomos reconciliiados com Deus pela morte de seu Filho, muito mais, estando reconciliados, seremos salvos pela sua vida.</p>
+            <p>¹¹ E não somente isso, mas também nos gloriamos em Deus por nosso Senhor Jesus Cristo, pelo qual agora recebemos a reconciliação.</p>
+            <h3>Adão e Cristo (12–21)</h3>
+            <p>¹² Portanto, assim como por um só homem entrou o pecado no mundo, e pelo pecado a morte, assim também a morte passou a todos os homens, porquanto todos pecaram.</p>
+            <p>¹³ Porque até à lei estava o pecado no mundo, mas o pecado não é imputado quando não há lei.</p>
+            <p>¹⁴ No entanto, a morte reinou desde Adão até Moisés, mesmo sobre aqueles que não pecaram à semelhança da transgressão de Adão, o qual é figura daquele que havia de vir.</p>
+            <p>¹⁵ Mas a dádiva não é como a ofensa. Porque, se pela ofensa de um só muitos morreram, muito mais a graça de Deus e o dom pela graça de um só homem, Jesus Cristo, abundou para muitos.</p>
+            <p>¹⁶ E o dom não é como a ofensa. Porque, se pela ofensa de um só homem reinou a condenação, muito mais aqueles que recebem a abundância da graça e do dom da justiça reinarão em vida por um só, Jesus Cristo.</p>
+            <p>¹⁷ Portanto, assim como por a ofensa de um só homem veio o juízo sobre todos os homens para condenação, assim também por um só homem veio a justiça sobre todos os homens para justificação de vida.</p>
+            <p>¹⁸ Assim como, portanto, por uma só ofensa veio o juízo sobre todos os homens para condenação, assim também por um só ato de justiça veio a todos os homens a justificação de vida.</p>
+            <p>¹⁹ Porque, assim como pela desobediência de um só homem muitos foram feitos pecadores, assim também pela obediência de um só muitos serão feitos justos.</p>
+            <p>²⁰ E a lei entrou para que a ofensa abundasse; mas onde o pecado abundou, superabundou a graça;</p>
+            <p>²¹ Para que, assim como o pecado reinou na morte, assim também a graça reine pela justiça para a vida eterna, por Jesus Cristo nosso Senhor.</p> 
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

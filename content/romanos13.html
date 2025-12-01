@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 13</h2>
+            <h3>Obediência às Autoridades (1–7)</h3>
+            <p>¹ Toda alma esteja sujeita às autoridades superiores; porque não há autoridade que não venha de Deus; e as autoridades que existem foram ordenadas por Deus.</p>
+            <p>² De modo que aquele que resiste à autoridade resiste à ordenação de Deus; e os que resistem trarão sobre si mesmos a condenação.</p>
+            <p>³ Porque os magistrados não são terror para as boas obras, mas para as más. Queres tu, pois, não temer a autoridade? Faze o bem, e terás loura dela;</p>
+            <p>⁴ Porque é ministro de Deus para teu bem. Mas, se fizeres o mal, teme; porque não é sem razão que ele traz a espada; pois é ministro de Deus, vingador para castigar o que faz o mal.</p>
+            <p>⁵ Portanto, é necessário estar-lhe sujeito, não somente por causa da ira, mas também por causa da consciência.</p>
+            <p>⁶ Porque por isso pagais também os tributos; porque são ministros de Deus, atendendo sempre a isto mesmo.</p>
+            <p>⁷ Dai a cada um o que deveis: a quem tributo, tributo; a quem imposto, imposto; a quem temor, temor; a quem honra, honra.</p>
+            <h3>O Amor é o Cumprimento da Lei (8–10)</h3>
+            <p>⁸ A ninguém devais coisa alguma, a não ser o amor com que vos ameis uns aos outros; porque quem ama aos outros cumpre a lei.</p>
+            <p>⁹ Porque: Não adulterarás, não matarás, não furtarás, não dirás falso testemunho, não cobiçarás; e se há algum outro mandamento, tudo nesta palavra se resume: Amarás ao teu próximo como a ti mesmo.</p>
+            <p>¹⁰ O amor não faz mal ao próximo; de sorte que o amor é o cumprimento da lei.</p>
+            <h3>A Vida em Cristo (11–14)</h3>
+            <p>¹¹ E isto, sabendo o tempo, que já é hora de despertarmos do sono; porque agora está mais perto de nós a nossa salvação do que quando cremos.</p>
+            <p>¹² A noite é passada, e o dia é chegado; rejeitemos, pois, as obras das trevas, e vistamo-nos das armas da luz.</p>
+            <p>¹³ Andemos honestamente, como de dia; não em orgias e bebedeiras, não em imoralidade e lascívia, não em contendas e inveja;</p>
+            <p>¹⁴ Mas revesti-vos do Senhor Jesus Cristo, e não tenhais cuidado da carne em suas concupiscências.</p>
+            
+
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

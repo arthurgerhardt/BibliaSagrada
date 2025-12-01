@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 10</h2>
+            <h3>A Salvação para Todos os que Crêem (1–21)</h3>
+            <p>¹ Irmãos, o desejo do meu coração e a minha oração a Deus pelos israelitas é para a salvação deles.</p>
+            <p>² Porque lhes dou testemunho de que têm zelo por Deus, mas não com entendimento.</p>
+            <p>³ Porque, não conhecendo a justiça de Deus, e procurando estabelecer a sua própria justiça, não se sujeitaram à justiça de Deus.</p>
+            <p>⁴ Porque o fim da lei é Cristo, para justiça de todo aquele que crê.</p>
+            <p>⁵ Porque Moisés escreve acerca da justiça que é pela lei: O homem que fizer estas coisas viverá por elas.</p>
+            <p>⁶ Mas a justiça que é pela fé diz assim: Não digas em teu coração: Quem subirá ao céu? (isto é, para trazer Cristo dentre os mortos);</p>
+            <p>⁷ Ou: Quem descerá ao abismo? (isto é, para fazer subir Cristo dentre os mortos).</p>
+            <p>⁸ Mas que diz? Perto de ti está a palavra, na tua boca e no teu coração; isto é, a palavra da fé que pregamos;</p>
+            <p>⁹ Porque, se com a tua boca confessares Jesus como Senhor, e em teu coração creres que Deus o ressuscitou dentre os mortos, serás salvo.</p>
+            <p>¹⁰ Porque com o coração se crê para justiça, e com a boca se confessa para salvação.</p>
+            <p>¹¹ Porque a escritura diz: Todo aquele que nele crer não será envergonhado.</p>
+            <p>¹² Porque não há distinção entre judeu e grego; pois o mesmo Senhor é de todos, rico para com todos os que o invocam.</p>
+            <p>¹³ Porque: Todo aquele que invocar o nome do Senhor será salvo.</p>
+            <p>¹⁴ Como, pois, invocarão aquele em quem não creram? E como crerão naquele de quem não ouviram? E como ouvirão, se não há quem pregue?</p>
+            <p>¹⁵ E como pregarão, se não forem enviados? Como está escrito: Quão formosos são os pés dos que anunciam coisas boas!</p>
+            <p>¹⁶ Mas nem todos obedeceram ao evangelho; porque Isaías diz: Senhor, quem creu em nossa pregação?</p>
+            <p>¹⁷ De sorte que a fé é pelo ouvir, e o ouvir pela palavra de Cristo.</p>
+            <p>¹⁸ Mas eu pergunto: Não ouviram eles? Antes, certamente: Por toda a terra se espalhou a sua voz, e até os confins do mundo as suas palavras.</p>
+            <p>¹⁹ Mas eu pergunto: Porventura não conheeceram? Primeiro Moisés diz: Farei-vos invejosos por aqueles que não são povo meu; com nação insensata vos despertarei à ira.</p>
+            <p>²⁰ E Isaías é muito ousado, e diz: Eu fui achado por aqueles que não me buscavam; manifestei-me àqueles que não perguntavam por mim.</p>
+            <p>²¹ Mas acerca de Israel ele diz: Todo o dia estendi as minhas mãos para um povo rebelde e contradizente.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

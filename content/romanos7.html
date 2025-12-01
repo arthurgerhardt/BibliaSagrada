@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 7</h2>
+            <h3>A Lei e o Pecado (1–25)</h3>
+            <p>¹ Porventura ignorais, irmãos (porque falo aos que conhecem a lei), que a lei domina sobre o homem enquanto vive?</p>
+            <p>² Porque a mulher casada está ligada pela lei ao marido enquanto ele vive; mas, se o marido morre, ela está livre da lei do marido.</p>
+            <p>³ Assim, pois, se, estando o marido vivo, ela se une a outro homem, será chamada adúltera; mas, se o marido morre, está livre da lei, de modo que não é adúltera, ainda que se una a outro homem.</p>
+            <p>⁴ Assim também vós, meus irmãos, fostes mortos para a lei pelo corpo de Cristo, para que sejais de outro, daquele que ressuscitou dentre os mortos, a fim de que demos fruto para Deus.</p>
+            <p>⁵ Porque, quando estávamos na carne, as paixões pecaminosas, movidas pela lei, operavam em nossos membros, para dar fruto para a morte.</p>
+            <p>⁶ Mas agora estamos livres da lei, tendo morrido para aquilo em que estávamos presos, de modo que sirvamos em novidade de espírito, e não na velhice da letra.</p>
+            <p>⁷ Que diremos, pois? É a lei pecado? De modo nenhum! Mas eu não conheci o pecado, senão pela lei; porque eu não conheceria a concupiscência, se a lei não dissesse: Não cobiçarás.</p>
+            <p>⁸ Mas o pecado, tomando ocasião pela lei, operou em mim todas as concupiscências; porque sem a lei o pecado está morto.</p>
+            <p>⁹ E eu vivia outrora sem a lei; mas, vindo o mandamento, o pecado reviveu, e eu morri.</p>
+            <p>¹⁰ E o mandamento, que era para a vida, achei que para mim era para a morte;</p>
+            <p>¹¹ Porque o pecado, tomando ocasião pelo mandamento, me enganou, e por ele me matou.</p>
+            <p>¹² De sorte que a lei é santa, e o mandamento santo, justo e bom.</p>
+            <p>¹³ Porventura, pois, o que é bom me tornou a morte? De modo nenhum! Mas o pecado, para se mostrar pecado, operou em mim todas as coisas que são más, para que por meio do mandamento fosse manifestado todo o pecado.</p>
+            <p>¹⁴ Porque sabemos que a lei é espiritual; mas eu sou carnal, vendido ao pecado.</p>
+            <p>¹⁵ Porque o que faço não o compreendo; pois não faço o bem que quero, mas o mal que não quero esse faço.</p>
+            <p>¹⁶ E, se faço o que não quero, concordo com a lei, que é boa.</p>
+            <p>¹⁷ De modo que já não sou eu quem o faz, mas o pecado que habita em mim.</p>
+            <p>¹⁸ Porque eu sei que em mim, isto é, na minha carne, não habita o bem; porque o querer o bem está em mim, mas não o realizar.</p>
+            <p>¹⁹ Porque não faço o bem que quero, mas o mal que não quero esse faço.</p>
+            <p>²⁰ Ora, se faço o que não quero, já não sou eu quem o faz, mas o pecado que habita em mim.</p>
+            <p>²¹ Assim, pois, encontro esta lei em mim: que, querendo eu fazer o bem, o mal está comigo.</p>
+            <p>²² Porque, segundo o homem interior, me deleito na lei de Deus;</p>
+            <p>²³ Mas vejo nos meus membros outra lei, que luta contra a lei do meu entendimento, e me leva cativo à lei do pecado que está nos meus membros.</p>
+            <p>²⁴ Miserável homem que eu sou! Quem me livrará do corpo desta morte?</p>
+            <p>²⁵ Graças a Deus por Jesus Cristo nosso Senhor! Assim, pois, eu mesmo com a mente sirvo à lei de Deus, mas com a carne à lei do pecado.</p>  
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
