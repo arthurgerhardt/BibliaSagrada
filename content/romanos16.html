@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 16</h2>
+            <h3>Saudações Finais (1–16)</h3>
+            <p>¹ Recomendo-vos, pois, Febe, nossa irmã, a qual é serva na igreja que está em Cencreia,</p>
+            <p>² Para que a recebais no Senhor, como convém aos santos, e a ajudeis em qualquer coisa que de vós necessitar; porque tem hospedado a muitos, como também a mim mesmo.</p>
+            <p>³ Saudai a Priscila e a Áquila, meus cooperadores em Cristo Jesus,</p>
+            <p>⁴ Os quais pela minha vida expuseram as suas cabeças; o que não só eu lhes agradeço, mas também todas as igrejas dos gentios.</p>
+            <p>⁵ Saudai também a igreja que está em sua casa. Saudai a Epêneto, meu amado, que é as primícias da Acaia em Cristo.</p>
+            <p>⁶ Saudai a Maria, que trabalhou muito por nós.</p>
+            <p>⁷ Saudai a Andrônico e a Júnias, meus parentes e meus companheiros na prisão, os quais se distinguiram entre os apóstolos e que foram antes de mim em Cristo.</p>
+            <p>⁸ Saudai a Amplias, meu amado no Senhor.</p>
+            <p>⁹ Saudai a Urbano, nosso cooperador em Cristo, e a Estáquis, meu amado.</p>
+            <p>¹⁰ Saudai a Apeles, aprovado em Cristo. Saudai aos da família de Aristóbulo.</p>
+            <p>¹¹ Saudai a Herodião, meu parente. Saudai aos da família de Narciso, os que estão no Senhor.</p>
+            <p>¹² Saudai a Trifena e a Trifosa, as quais trabalham no Senhor. Saudai à amada Pérside, a qual muito trabalhou no Senhor.</p>
+            <p>¹³ Saudai a Rufo, eleito no Senhor, e a sua mãe e minha.</p>
+            <p>¹⁴ Saudai a Asíncrito, a Flegonte, a Hermes, a Pátrobas, a Hermas, e aos irmãos que estão com eles.</p>
+            <p>¹⁵ Saudai a Filólogo e a Júlia, a Nereu e a sua irmã, e a Olimpas, e a todos os santos que com eles estão.</p>
+            <p>¹⁶ Saudai-vos uns aos outros com santo ósculo. As igrejas de Cristo vos saúdam.</p>
+            <h3>Advertência contra os Falsos Mestres (17–20)</h3>
+            <p>¹⁷ E rogo-vos, irmãos, que noteis os que promovem dissensões e escândalos contra a doutrina que aprendestes; desviai-vos deles.</p>
+            <p>¹⁸ Porque os tais não servem a nosso Senhor Jesus Cristo, mas ao seu ventre; e com suaves palavras e lisonjas enganam os corações dos simples.</p>
+            <p>¹⁹ Quanto à vossa obediência, é ela conhecida de todos. Comprazo-me, pois, em vós; e quero que sejais sábios no bem, mas simples no mal.</p>
+            <p>²⁰ E o Deus de paz esmagará em breve Satanás debaixo dos vossos pés. A graça de nosso Senhor Jesus Cristo seja convosco. Amém.</p>
+            <h3>Saudações Pessoais e Bênção Final (21–27)</h3>
+            <p>²¹ Saúdam-vos Timóteo, meu cooperador, e Lúcio, Jasom e Sosípatro, meus parentes.</p>
+            <p>²² Eu, Tércio, que esta carta escrevi, vos saúdo no Senhor.</p>
+            <p>²³ Saúda-vos Gaio, meu hospedeiro, e de toda a igreja. Saúda-vos Erasto, procurador da cidade, e também o irmão Quarto.</p>
+            <p>²⁴ A graça de nosso Senhor Jesus Cristo seja com todos vós. Amém.</p>
+            <p>²⁵ Ora, àquele que é poderoso para vos confirmar segundo o meu evangelho e a pregação de Jesus Cristo, conforme a revelação do mistério que desde tempos eternos esteve oculto,</p>
+            <p>²⁶ Mas que se manifestou agora, e se notificou pelas Escrituras dos profetas, segundo o mandamento do Deus eterno, a todas as nações para obediência da fé;</p>
+            <p>²⁷ Ao Deus único, sábio, seja a glória por Jesus Cristo para todo o sempre. Amém.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

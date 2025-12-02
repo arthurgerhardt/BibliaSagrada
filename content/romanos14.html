@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Epístola aos Romanos 14</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Romanos 14</h2>
+            <h3>Não Julgar os Irmãos (1–12)</h3>
+            <p>¹ Aceitai o que é fraco na fé, mas não para discutirmos sobre opiniões.</p>
+            <p>² Porque um crê que se pode comer de tudo; outro, que é fraco, come legumes.</p>
+            <p>³ O que come não despreze o que não come; e o que não come não julgue o que come; porque Deus o acolheu.</p>
+            <p>⁴ Quem és tu que julgas o servo alheio? Para o seu próprio senhor ele está em pé ou cai; mas estará firme, porque poderoso é Deus para o firmar.</p>
+            <p>⁵ Um faz diferença entre dia e dia; outro julga iguais todos os dias. Cada um esteja inteiramente convicto em sua própria mente.</p>
+            <p>⁶ Aquele que faz caso do dia, para o Senhor o faz; e aquele que não faz caso do dia, para o Senhor não o faz. Quem come, come para o Senhor, porque dá graças a Deus; e quem não come, para o Senhor não o come, e dá graças a Deus.</p>
+            <p>⁷ Porque nenhum de nós vive para si mesmo, e nenhum morre para si mesmo.</p>
+            <p>⁸ Porque, se vivemos, para o Senhor vivemos; e, se morremos, para o Senhor morremos. De sorte que, ou vivamos ou morramos, somos do Senhor.</p>
+            <p>⁹ Porque para isto Cristo morreu e voltou a viver, para ser Senhor tanto dos mortos como dos vivos.</p>
+            <p>¹⁰ Mas tu, por que julgas teu irmão? Ou tu também, por que desprezas teu irmão? Porque todos havemos de comparecer ante o tribunal de Cristo.</p>
+            <p>¹¹ Porque está escrito: Vivo eu, diz o Senhor, que todo joelho se dobrará a mim, e toda língua confessará a Deus.</p>
+            <p>¹² De maneira que cada um de nós dará conta de si mesmo a Deus.</p>
+            <h3>Viver para o Senhor (13–23)</h3>
+            <p>¹³ Portanto, não nos julguemos mais uns aos outros; antes, seja o vosso propósito não pôr tropeço ou escândalo ao irmão.</p>
+            <p>¹⁴ Eu sei, e estou bem convicto no Senhor Jesus, que nada é de si mesmo, a não ser para quem o considera como tal;</p>
+            <p>¹⁵ Porque, se por causa de comida teu irmão fica entristecido, já não andas mais segundo o amor. Não destruas por causa da tua comida aquele por quem Cristo morreu.</p>
+            <p>¹⁶ Portanto, não seja abalado o bem que de ti procede.</p>
+            <p>¹⁷ Porque o reino de Deus não é comida nem bebida, mas justiça, e paz, e alegria no Espírito Santo.</p>
+            <p>¹⁸ Porque quem serve a Cristo nessas coisas é agradável a Deus e aprovado pelos homens.</p>
+            <p>¹⁹ Portanto, sigamos o que contribui para a paz e para a edificação mútua.</p>
+            <p>²⁰ Não destruas a obra de Deus por causa da comida. Todas as coisas são puras, mas é mal para o homem aquele que come com escândalo.</p>
+            <p>²¹ É bom não comer carne, nem beber vinho, nem fazer qualquer outra coisa em que teu irmão tropece ou se escandalize.</p>
+            <p>²² Alegro-me naquilo que não faço por dúvida alguma. Mas aquele que tem dúvidas está condenado, se comer, porque não o faz por fé; e tudo o que não provém da fé é pecado.</p>
+            <p>²³ Mas aquele que tem dúvidas está condenado, se comer, porque não o faz por fé; e tudo o que não provém da fé é pecado.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos13.html">Capítulo Anterior</a>
+            <a class="button" href="../content/romanos15.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
