@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 4</h2>
+            <h3>O Ministério da Nova Vida em Cristo (1–12)</h3>
+            <p>1 Portanto, tendo este ministério, segundo a misericórdia que nos é feita, não desfalecemos;</p>
+            <p>2 antes, rejeitamos as coisas ocultas da desonestidade, não andando com astúcia, nem adulterando a palavra de Deus; antes, pela manifestação da verdade, recomendamos-nos à consciência de todo homem diante de Deus.</p>
+            <p>3 E, se o nosso evangelho está ainda encoberto, entre os que se perdem está encoberto;</p>
+            <p>4 nos quais o deus deste século cegou os entendimentos dos incrédulos, para que não lhes resplandeça a luz do evangelho da glória de Cristo, que é a imagem de Deus.</p>
+            <p>5 Porque não nos pregamos a nós mesmos, mas a Jesus Cristo, como Senhor, e a nós mesmos como vossos servos por amor de Jesus.</p>
+            <p>6 Porque Deus, que disse que das trevas resplandecesse a luz, é quem resplandeceu em nossos corações, para iluminação do conhecimento da glória de Deus, na face de Jesus Cristo.</p>
+            <p>7 Mas temos este tesouro em vasos de barro, para que a excelência do poder seja de Deus, e não de nós.</p>
+            <p>8 Em tudo somos atribulados, mas não angustiados; perplexos, mas não desanimados;</p>
+            <p>9 perseguidos, mas não desamparados; abatidos, mas não destruídos;</p>
+            <p>10 levando sempre por toda parte por toda parte a morte de Jesus no corpo, para que também a vida de Jesus se manifeste em nossos corpos.</p>
+            <p>11 Porque nós, que vivemos, somos sempre entregues à morte por amor de Jesus, para que também a vida de Jesus se manifeste em nossa carne mortal.</p>
+            <p>12 De maneira que a morte opera em nós, mas a vida em vós.</p>
+            <h3>A Esperança da Glória Futura (13–18)</h3>
+            <p>13 Mas tendo o mesmo espírito de fé, segundo o que está escrito: Creio, por isso falei; também nós cremos, por isso também falamos;</p>
+            <p>14 sabendo que o que ressuscitou o Senhor Jesus nos ressuscitará também a nós com Jesus, e nos apresentará convosco.</p>
+            <p>15 Porque todas estas coisas são por amor de vós, para que a graça, abundando por meio de muitos, façae aumente a ação de graças para glória de Deus.</p>
+            <p>16 Por isso não desfalecemos; antes, ainda que o nosso homem exterior se corrompa, o interior, contudo, se renova de dia em dia.</p>
+            <p>17 Porque a nossa leve e momentânea tribulação produz para nós um peso eterno de glória muito excelente;</p>
+            <p>18 não atentando nós nas coisas que se veem, mas nas que se não veem; porque as que se veem são temporais, e as que se não veem são eternas.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

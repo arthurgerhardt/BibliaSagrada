@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 5</h2>
+            <h3>Imoralidade na Igreja (1–13)</h3>
+            <p>¹ Ouvi dizer que há entre vós imoralidade, e imoralidade tal que nem mesmo entre os gentios se ouve falar, a saber, que alguém tem a mulher de seu pai.</p>
+            <p>² E vós estais orgulhosos! Não deveria antes terdes ficado entristecidos, para que fosse tirado do meio de vós aquele que cometeu tal ação?</p>
+            <p>³ Pois eu, ainda que ausente em corpo, porém presente em espírito, já julguei como se estivesse presente aquele que assim procedeu,</p>
+            <p>⁴ No nome de nosso Senhor Jesus, quando vos reunis, e o meu espírito, com o poder de nosso Senhor Jesus,</p>
+            <p>⁵ Para que o tal seja entregue a Satanás para destruição da carne, para que o espírito seja salvo no dia do Senhor Jesus.</p>    
+            <p>⁶ Vós, na verdade, estais cheios de soberba! Não sabeis que um pouco de fermento leveda toda a massa?</p>
+            <p>⁷ Portanto, limpei o fermento velho, para que sejais nova massa, assim como sois sem fermento. Porque Cristo, nosso cordeiro pascal, foi sacrificado por nós.</p>
+            <p>⁸ Assim, pois, celebremos a festa, não com o fermento velho, nem com o fermento da maldade e da malícia, mas com os pães ázimos da sinceridade e da verdade.</p>
+            <p>⁹ Escrevi-vos na carta para que não vos associeis com os imorais;</p>
+            <p>¹⁰ Não de todo com os imorais do mundo, ou com os avarentos, ou com os ladrões, ou com os idólatras; porque então necessitaríeis sair do mundo.</p>  
+            <p>¹¹ Mas agora vos escrevo para que não vos associeis com quem, dizendo-se irmão, é imoral, ou avarento, ou idólatra, ou maldizente, ou bêbado, ou ladrão; com esse nem sequer comais.</p>
+            <p>¹² Porque, que tenho eu em julgar os de fora? Não julgais vós os de dentro?</p>
+            <p>¹³ Aos de fora Deus julgará. Tirai dentre vós o malvado.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

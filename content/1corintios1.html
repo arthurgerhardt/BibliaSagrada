@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 1</h2>
+            <h3>Saudações e Ação de Graças (1–9)</h3>
+            <p>¹ Paulo, chamado para ser apóstolo de Jesus Cristo pela vontade de Deus, e o irmão Sóstenes,</p>
+            <p>² À igreja de Deus que está em Corinto, aos santificados em Cristo Jesus, chamados para serem santos, com todos os que em todo o lugar invocam o nome de nosso Senhor Jesus Cristo, Senhor deles e nosso:</p>
+            <p>³ Graça e paz a vós outros, da parte de Deus nosso Pai e do Senhor Jesus Cristo.</p>
+            <p>⁴ Dou graças ao meu Deus sempre que me lembro de vós,</p>
+            <p>⁵ Pela vossa comunhão no evangelho desde o primeiro dia até agora;</p>
+            <p>⁶ Tendo por certo isto, que aquele que em vós começou a boa obra a aperfeiçoará até ao dia de Jesus Cristo;</p>
+            <p>⁷ Como me é também fiel Deus, pelo qual fostes chamados para a comunhão de seu Filho Jesus Cristo nosso Senhor.</p>
+            <p>⁸ O qual também vos confirmará até ao fim, para que sejais irrepreensíveis no dia de nosso Senhor Jesus Cristo.</p>
+            <p>⁹ Fiel é Deus, pelo qual fostes chamados para a comunhão de seu Filho Jesus Cristo nosso Senhor.</p>
+            <h3>Divisões na Igreja de Corinto (10–17)</h3>
+            <p>¹⁰ Rogo-vos, porém, irmãos, pelo nome de nosso Senhor Jesus Cristo, que digais todos uma mesma coisa, e que não haja entre vós divisões; antes sejais unidos em um mesmo pensamento e em um mesmo parecer.</p>
+            <p>¹¹ Porque a mim foi noticiado acerca de vós, meus irmãos, por aqueles da casa de Cloe, que há dissensões entre vós.</p>
+            <p>¹² Quero dizer isto: Que cada um de vós diz: Eu sou de Paulo; e eu de Apolo; e eu de Cefas; e eu de Cristo.</p>
+            <p>¹³ Porventura está Cristo dividido? Foi Paulo crucificado por vós? ou fostes vós batizados em nome de Paulo?</p>
+            <p>¹⁴ Graças a Deus que a mim me batizou a todos vós, mas não nenhum de vós;</p>
+            <p>¹⁵ Para que ninguém diga que fostes batizados em meu nome.</p>
+            <p>¹⁶ Eu batizei também a Crispo e a Gaio; e a ninguém mais batizei.</p>
+            <p>¹⁷ Porque Cristo não me enviou para batizar, mas para evangelizar; não com sabedoria de palavras, para que a cruz de Cristo não se faça vã.</p>
+            <h3>A Sabedoria de Deus e a Loucura da Cruz (18–31)</h3>
+            <p>¹⁸ Porque a palavra da cruz é loucura para os que se perdem; mas para nós, que somos salvos, é o poder de Deus.</p>
+            <p>¹⁹ Pois está escrito: Destruirei a sabedoria dos sábios, e aniquilarei a inteligência dos inteligentes.</p>
+            <p>²⁰ Onde está o sábio? onde está o escriba? onde está o inquiridor deste século? Porventura não tornou Deus louca a sabedoria deste mundo?</p>
+            <p>²¹ Visto que, na sabedoria de Deus, o mundo não conheceu a Deus pela sua sabedoria, agradou a Deus salvar os crentes pela loucura da pregação.</p>
+            <p>²² Porque os judeus pedem sinais, e os gregos buscam sabedoria;</p>
+            <p>²³ Mas nós pregamos Cristo crucificado, para os judeus escândalo, e para os gregos loucura;</p>
+            <p>²⁴ Mas para os que são chamados, tanto judeus como gregos, Cristo poder de Deus, e sabedoria de Deus.</p>
+            <p>²⁵ Porque a loucura de Deus é mais sábia do que os homens; e a fraqueza de Deus é mais forte do que os homens.</p>
+            <p>²⁶ Porque vede a vossa vocação, irmãos: que não há muitos sábios segundo a carne, nem muitos poderosos, nem muitos nobres;</p>
+            <p>²⁷ Mas Deus escolheu as coisas loucas do mundo para confundir as sábias; e Deus escolheu as coisas fracas do mundo para confundir as fortes;</p>
+            <p>²⁸ E Deus escolheu as coisas humildes do mundo, e as desprezadas, e as que não são, para reduzir a nada as que são;</p>
+            <p>²⁹ Para que nenhuma carne se glorie perante Deus.</p>
+            <p>³⁰ Mas vós sois dele, em Cristo Jesus, o qual para nós foi feito por Deus sabedoria, e justiça, e santificação, e redenção;</p>
+            <p>³¹ Para que, como está escrito: Aquele que se gloria, glorie-se no Senhor.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/romanos16.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

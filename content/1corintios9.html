@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 9</h2>
+            <h3>O Direito de Paulo ao Sustento (1–18)</h3>
+            <p>1 Não sou eu apóstolo? Não sou livre? Não vi eu a Jesus Cristo Senhor nosso? Não sois vós a minha obra no Senhor?</p>
+            <p>2 Se eu não sou apóstolo para os outros, ao menos o sou para vós; porque vós sois o selo do meu apostolado no Senhor.</p>    
+            <p>3 Esta é minha defesa para com os que me condenam.</p>
+            <p>4 Não temos nós direito de comer e beber?</p>
+            <p>5 Não temos nós direito de levar conosco uma esposa crente, como também os demais apóstolos, e os irmãos do Senhor, e Cefas?</p>
+            <p>6 Ou só eu e Barnabé não temos direito de deixar de trabalhar?</p>
+            <p>7 Quem jamais milita à sua própria custa? Quem planta a vinha e não come do seu fruto? Ou quem apascenta o gado e não se alimenta do leite do gado?</p>
+            <p>8 Digo eu isto segundo os homens? Ou não diz a lei também o mesmo?</p>
+            <p>9 Porque na lei de Moisés está escrito: Não atarás a boca ao boi que trilha o grão. Porventura tem Deus cuidado dos bois?</p>
+            <p>10 Ou não o diz certamente por nós? Certamente que por nós está escrito; porque o que lavra deve lavrar com esperança e o que debulha deve debulhar com esperança de ser participante.</p>
+            <p>11 Se nós vos semeamos as coisas espirituais, será muito que de vós recolhamos as carnais?</p>
+            <p>12 Se outros participam deste poder sobre vós, por que não, e mais justamente, nós? Mas nós não usamos deste direito; antes suportamos tudo, para não pormos impedimento algum ao evangelho de Cristo.</p>
+            <p>13 Não sabeis vós que os que administram o que é sagrado comem do que é do templo? E que os que de contínuo estão junto ao altar, participam do altar?</p>
+            <p>14 Assim ordenou também o Senhor aos que anunciam o evangelho, que vivam do evangelho.</p>
+            <p>15 Mas eu de nenhuma destas coisas usei, e não escrevi isto para que assim se faça comigo; porque melhor me fora morrer, do que alguém fazer vã esta minha glória.</p>
+            <p>16 Porque, se anuncio o evangelho, não tenho de que me gloriar, pois me é imposta essa obrigação; e ai de mim, se não anunciar o evangelho!</p>
+            <p>17 E por isso, se o faço de boa mente, terei prêmio; mas, se de má vontade, apenas uma dispensação me é confiada.</p>
+            <p>18 Logo, que prêmio tenho? Que, evangelizando, proponha de graça o evangelho de Cristo para não abusar do meu poder no evangelho.</p>
+
+            <h3>Paulo se Faz Tudo para Todos (19–23)</h3>
+            <p>19 Porque, sendo livre para com todos, fiz-me servo de todos para ganhar ainda mais.</p>
+            <p>20 E fiz-me como judeu para os judeus, para ganhar os judeus; para os que estão debaixo da lei, como se estivesse debaixo da lei, para ganhar os que estão debaixo da lei.</p>
+            <p>21 Para os que estão sem lei, como se estivesse sem lei (não estando sem lei para com Deus, mas debaixo da lei de Cristo), para ganhar os que estão sem lei.</p>
+            <p>22 Fiz-me como fraco para os fracos, para ganhar os fracos. Fiz-me tudo para todos, para por todos os meios chegar a salvar alguns.</p>
+            <p>23 E eu faço isto por causa do evangelho, para ser também participante dele.</p>
+            
+            <h3>A Corrida Cristã (24–27)</h3>
+            <p>24 Não sabeis vós que os que correm no estádio, todos, na verdade, correm, mas um só leva o prêmio? Correi de tal maneira que o alcanceis.</p>
+            <p>25 E todo aquele que luta de tudo se abstém; eles o fazem para alcançar uma coroa corruptível; nós, porém, uma incorruptível.</p>
+            <p>26 Pois eu assim corro, não como a coisa incerta; assim combato, não como batendo no ar.</p>
+            <p>27 Antes subjugo o meu corpo, e o reduzo à servidão, para que, pregando aos outros, eu mesmo não venha de alguma maneira a ficar reprovado.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 12</h2>
+            <h3>Dons Espirituais (1–11)</h3>
+            <p>1 Ora, irmãos, não quero que sejais ignorantes acerca dos dons espirituais.</p>
+            <p>2 Vós sabeis que, quando éreis gentios, vos deixáveis levar para os ídolos mudos, conforme éreis guiados.</p>
+            <p>3 Pelo que vos faço saber que ninguém, falando pelo Espírito de Deus, diz: Jesus é anátema; e ninguém pode dizer: Jesus é o Senhor, senão pelo Espírito Santo.</p>
+            <p>4 Ora, há diversidade de dons, mas o Espírito é o mesmo.</p>
+            <p>5 E há diversidade de ministérios, mas o Senhor é o mesmo.</p>
+            <p>6 E há diversidade de operações, mas é o mesmo Deus que opera tudo em todos.</p>
+            <p>7 Mas a cada um é dada a manifestação do Espírito para o proveito comum.</p>
+            <p>8 Porque a um é dada, pelo Espírito, a palavra da sabedoria; e a outro, pelo mesmo Espírito, a palavra do conhecimento;</p>
+            <p>9 a outro, pelo mesmo Espírito, a fé; e a outro, pelo mesmo Espírito, os dons de curar;</p>
+            <p>10 a outro, a operação de milagres; e a outro, a profecia; e a outro, o discernimento de espíritos; a outro, a variedade de línguas; e a outro, a interpretação de línguas.</p>
+            <p>11 Mas um só e o mesmo Espírito opera todas estas coisas, repartindo particularmente a cada um como quer.</p>
+            <h3>O Corpo e os Dons (12–31)</h3>
+            <p>12 Porque, assim como o corpo é um, e tem muitos membros, e todos os membros, sendo muitos, são um só corpo, assim também é Cristo.</p>
+            <p>13 Pois todos nós fomos batizados em um só Espírito, formando um só corpo, quer judeus, quer gregos, quer servos, quer livres; e a todos nós foi dado beber de um só Espírito.</p>
+            <p>14 Porque também o corpo não é um só membro, mas muitos.</p>
+            <p>15 Se o pé disser: Porque não sou mão, não sou do corpo, por isso não é do corpo?</p>
+            <p>16 E se o ouvido disser: Porque não sou olho, não sou do corpo, por isso não é do corpo?</p>
+            <p>17 Se todo o corpo fosse olho, onde estaria o ouvido? Se todo fosse ouvido, onde estaria o olfato?</p>
+            <p>18 Mas agora Deus dispôs os membros cada um deles no corpo, como lhe aprouve.</p>
+            <p>19 E se todos fossem um só membro, onde estaria o corpo?</p>
+            <p>20 Mas agora são muitos os membros, porém o corpo é um só.</p>
+            <p>21 O olho não pode dizer à mão: Não tenho necessidade de ti; nem ainda a cabeça aos pés: Não tenho necessidade de vós.</p>
+            <p>22 Antes, os membros do corpo que parecem ser mais fracos são necessários;</p>
+            <p>23 e aos que nos parecem menos honrosos, a estes damos maior honra; e aos que em nós são menos decentes, a estes vestimos com maior decência;</p>
+            <p>24 porque os nossos membros mais decentes não têm necessidade disso; mas Deus temperou o corpo, dando maior honra ao que tinha falta;</p>
+            <p>25 para que não haja divisão no corpo, mas que os membros tenham igual cuidado uns dos outros.</p>
+            <p>26 E, se um membro sofre, todos os membros se compadecem com ele; ou se um membro é honrado, todos os membros se alegram com ele.</p>
+            <p>27 Ora, vós sois o corpo de Cristo, e seus membros em particular.</p>
+            <p>28 E a uns pôs Deus na igreja: primeiramente apóstolos, em segundo lugar profetas, em terceiro lugar mestres, depois milagres, depois dons de curar, socorros, governos, variedades de línguas.</p>
+            <p>29 Porventura são todos apóstolos? Porventura são todos profetas? Porventura são todos mestres?</p>
+            <p>30 Porventura são todos milagres? Porventura têm todos dons de curar?</p>    
+            <p>31 Mas procurai com zelo os melhores dons. E eu vos mostrarei um caminho ainda mais excelente.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

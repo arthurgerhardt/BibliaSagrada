@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 16</h2>
+            <h3>Coleta para os Santos (1–4)</h3>
+            <p>1 Ora, quanto à coleta para os santos, fazei também vós o mesmo que ordenei às igrejas da Galácia.</p>
+            <p>2 No primeiro dia da semana, cada um de vós ponha de lado o que puder ajuntar, conforme a sua prosperidade, para que não se façam coletas quando eu chegar.</p>
+            <p>3 E, quando eu chegar, enviarei aqueles que vós aprovareis com cartas para levarem o vosso liberalidade a Jerusalém.</p>
+            <p>4 E, se for conveniente que eu vá também, eles irão comigo.</p>
+            <h3>Saudações e Instruções Finais (5–24)</h3>
+            <p>5 Ora, visitarei-vos depois de passar pela Macedônia; porque por esta via hei de passar.</p>
+            <p>6 E, indo eu ter convosco, ficarei por algum tempo, ou até o inverno.</p>
+            <p>7 E procurarei permanecer convosco até a Páscoa.</p>
+            <p>8 Porque não quero ver-vos agora apenas de passagem; porque espero ficar convosco algum tempo, se o Senhor o permitir.</p>
+            <p>9 Porque para mim se abriu uma grande porta e eficaz, e há muitos adversários.</p>
+            <p>10 Ora, quanto a Apolo, o nosso irmão, muito estimado, que é poderoso em palavras e em conhecimento, vos exortei a que o recebêsseis, para que ele estivesse convosco, se porventura viesse a ir para a vossa companhia; e ele muito deseja ir convosco.</p>
+            <p>11 Portanto, recebei-o no Senhor, como também nós o fazemos; e ajudai-o em tudo o que vos ordenar; porque ele tem sido para nós um cooperador no ministério do Senhor, assim como também foi para convossco.</p>
+            <p>12 Agora, quanto a Tito, meu companheiro e cooperador para convosco, vos enviei.</p>
+            <p>13 Vigiai, estai firmes na fé; portai-vos varonilmente, e fortalecei-vos.</p>
+            <p>14 Todas as vossas coisas sejam feitas com amor.</p>
+            <p>15 Ora, irmãos, sabeis que a casa de Estéfanas foi a primeirafruta da Acaia, e que se dedicaram ao serviço dos santos;</p>
+            <p>16 pelo que vos exorto a que também vós vos sujeiteis a tais pessoas, e a todos os que cooperam e trabalham.</p>
+            <p>17 Porque me regozijei grandemente pela vinda de Estéfanas, Fortunato e Acaico; porque eles supriram a vossa falta;</p>
+            <p>18 porque eles refrescaram o meu espírito e o vosso. Portanto, reconhecereis tais homens.</p>
+            <p>19 As igrejas da Ásia vos saúdam. Aquila e Priscila, com a igreja que está em sua casa, vos saúdam muito no Senhor.</p>
+            <p>20 Todos os irmãos vos saúdam. Saudai-vos uns aos outros com ósculo santo.</p>
+            <p>21 Eu, Paulo, vos escrevo esta saudação com a minha própria mão.</p>
+            <p>22 Se alguém não ama o Senhor Jesus Cristo, seja anátema. Maranata.</p>
+            <p>23 A graça do Senhor Jesus Cristo seja com vós.</p>
+            <p>24 O meu amor seja com todos vós em Cristo Jesus. Amém.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

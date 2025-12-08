@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 8</h2>
+            <h3>Comida Oferecida a Ídolos (1–13)</h3>
+            <p>¹ Ora, quanto ao comer das coisas sacrificadas aos ídolos, sabemos que todos temos conhecimento. O conhecimento incha, mas o amor edifica.</p>
+            <p>² Se alguém pensa que sabe alguma coisa, ainda não sabe como convém saber.</p>
+            <p>³ Mas, se alguém ama a Deus, esse é conhecido por ele.</p>
+            <p>⁴ Quanto, pois, ao comer das coisas sacrificadas aos ídolos, sabemos que o ídolo nada é no mundo, e que não há outro Deus senão um só.</p>
+            <p>⁵ Porque, ainda que haja alguns que se chamam deuses, quer no céu, quer na terra (assim como há muitos deuses e muitos senhores),</p>
+            <p>⁶ Todavia, para nós há um só Deus, o Pai, de quem são todas as coisas, e para quem nós vivemos; e um só Senhor, Jesus Cristo, pelo qual são todas as coisas, e nós por ele.</p>
+            <p>⁷ Mas nem todos têm este conhecimento; porém alguns, havendo já comido das coisas sacrificadas aos ídolos, ainda estão na ignorância; porque até agora o ídolo lhes era algo.</p>
+            <p>⁸ Mas a comida não nos aproxima de Deus; porque, se comermos, nada seremos mais; e, se não comermos, nada seremos menos.</p>
+            <p>⁹ Mas vede que esta liberdade não seja de alguma maneira escândalo para os fracos.</p>
+            <p>¹⁰ Porque, se alguém te vir, que tens conhecimento, assentando-se em um ídolo, não será este fraco estimulado a comer das coisas sacrificadas aos ídolos?</p>
+            <p>¹¹ E assim, pela tua ciência, perecerá o irmão fraco, pelo qual Cristo morreu.</p>
+            <p>¹² E assim, pecando contra os irmãos, e ferindo a sua consciência fraca, pecais contra Cristo.</p>
+            <p>¹³ Portanto, se a comida escandaliza o meu irmão, nunca mais comerei carne, para que eu não escandalize o meu irmão.</p>
+            
+
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

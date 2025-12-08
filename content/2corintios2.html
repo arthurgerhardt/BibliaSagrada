@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 2</h2>
+            <h3>Consolo em Cristo (1–4)</h3>
+            <p>1 Mas deliberei isto comigo mesmo: não ir mais ter convosco em tristeza.</p>
+            <p>2 Porque, se eu vos entristeço, quem é que me alegrará, senão aquele que por mim foi contristado?</p>
+            <p>3 E escrevi-vos isto mesmo, para que, quando lá for, não tenha tristeza da parte dos que deveriam alegrar-me; confiando em vós todos, que a minha alegria é a de todos vós.</p>
+            <p>4 Porque em muita tribulação e angústia do coração vos escrevi, com muitas lágrimas, não para que vos entristecêsseis, mas para que conhecêsseis o amor que abundantemente vos tenho.</p>
+            <h3>A Reconciliação (5–11)</h3>
+            <p>5 Porque, se alguém me contristou, não me contristou a mim senão em parte, para vos não sobrecarregar a vós todos.</p>
+            <p>6 Basta-lhe ao tal esta repreensão feita por muitos.</p>
+            <p>7 De maneira que pelo contrário deveis antes perdoar-lhe e consolá-lo, para que o tal não seja de modo algum devorado de demasiada tristeza.</p>
+            <p>8 Por isso vos rogo que confirmeis para com ele o vosso amor.</p>
+            <p>9 E para isso vos escrevi também, para por esta prova saber se sois obedientes em tudo.</p>
+            <p>10 E a quem perdoardes alguma coisa, também eu; porque se eu também perdoei alguma coisa, a quem a perdoei por amor de vós o fiz na presença de Cristo; para que não sejamos sobrepujados por Satanás;</p>
+            <p>11 Porque não ignoramos os seus ardis.</p>
+            <h3>O Ministério da Reconciliação (12–17)</h3>
+            <p>12 Ora, quando cheguei a Trôade para pregar o evangelho de Cristo, e abrindo-se-me uma porta no Senhor,</p>
+            <p>13 Não tive descanso no meu espírito, porque não achei ali meu irmão Tito; mas, despedindo-me deles, parti para a Macedônia.</p>
+            <p>14 E graças a Deus, que sempre nos faz triunfar em Cristo, e por meio de nós manifesta em todo o lugar a fragrância do seu conhecimento.</p>
+            <p>15 Porque para Deus somos o bom perfume de Cristo, nos que se salvam e nos que se perdem.</p>
+            <p>16 Para estes certamente cheiro de morte para morte; mas para aqueles cheiro de vida para vida. E para estas coisas quem é idôneo?</p>
+            <p>17 Porque nós não somos, como muitos, que ganham falsificando a palavra de Deus, antes a falamos em Cristo com sinceridade, antes como de Deus na presença de Deus.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

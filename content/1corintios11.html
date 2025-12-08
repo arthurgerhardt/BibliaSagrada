@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 11</h2>
+            <h3>Instruções sobre o Culto (1–16)</h3>
+            <p>1 Sede meus imitadores, como também eu sou de Cristo.</p>
+            <p>2 Ora, vos louvo porque em tudo vos lembrais de mim, e retendes as tradições, assim como vos as entreguei.</p>
+            <p>3 Quero, porém, que saibais que Cristo é a cabeça de todo homem, e o homem é a cabeça da mulher, e Deus é a cabeça de Cristo.</p>
+            <p>4 Todo homem que ora ou profetiza com a cabeça coberta desonra a sua cabeça.</p>
+            <p>5 Mas toda mulher que ora ou profetiza com a cabeça descoberta desonra a sua cabeça, porque é como se estivesse rapada.</p>
+            <p>6 Pois, se a mulher não se cobre, que se corte também o cabelo; e, se para a mulher é vergonhoso ter o cabelo cortado ou rapado, que se cubra.</p>
+            <p>7 Porque o homem não deve cobrir a cabeça, pois é a imagem e glória de Deus; mas a mulher é a glória do homem.</p>
+            <p>8 Porque o homem não foi feito da mulher, mas a mulher do homem.</p>
+            <p>9 Nem o homem foi criado por causa da mulher, mas a mulher por causa do homem.</p>
+            <p>10 Por isso a mulher deve ter sobre a cabeça um sinal de autoridade, por causa dos anjos.</p>
+            <p>11 Todavia, nem o homem é sem a mulher, nem a mulher sem o homem, em Senhor.</p>
+            <p>12 Porque, assim como a mulher é do homem, assim também o homem é por meio da mulher; mas tudo vem de Deus.</p>
+            <p>13 Julgai vós mesmos: é próprio que a mulher ore a Deus sem se cobrir a cabeça?</p>
+            <p>14 Não vos ensina a própria natureza que, se o homem tem cabelo comprido, é para ele uma desonra?</p>
+            <p>15 Mas, se a mulher tem cabelo comprido, para ela é uma glória; porque o cabelo lhe foi dado em lugar de véu.</p>
+            <p>16 Todavia, se alguém parece querer ser contestador, nós não temos tal costume, nem as igrejas de Deus.</p>
+            <h3>A Ceia do Senhor (17–34)</h3>
+            <p>17 Ora, no que vos congregais, não é para o melhor, antes para o pior.</p>
+            <p>18 Porque, em primeiro lugar, ouço que há entre vós divisões; e em parte o creio.</p>
+            <p>19 Porque é necessário que entre vós haja facções, para que os aprovados se manifestem entre vós.</p>
+            <p>20 Quando, pois, vos congregais em um lugar, não é para comer a ceia do Senhor.</p>
+            <p>21 Porque, ao comerdes, cada um toma antecipadamente a sua própria ceia; e um passa fome, e outro se embriaga.</p>
+            <p>22 Porventura não tendeis casas para comer e beber? Ou desprezais a igreja de Deus, e envergonhais os que nada têm? Que vos direi? Louvar-vos-ei nisso? De modo nenhum.</p>
+            <p>23 Porque eu recebi do Senhor o que também vos entreguei: que o Senhor Jesus, na noite em que foi traído, tomou o pão;</p>
+            <p>24 e, havendo dado graças, o partiu e disse: Isto é o meu corpo, que é dado por vós; fazei isto em memória de mim.</p>
+            <p>25 Semelhantemente, também, depois de cear, tomou o cálice, dizendo: Este cálice é o novo testamento no meu sangue; fazei isto, todas as vezes que o beberdes, em memória de mim.</p>
+            <p>26 Porque todas as vezes que comerdes este pão e beberdes este cálice anunciais a morte do Senhor, até que venha.</p>
+            <p>27 De maneira que qualquer que comer este pão ou beber o cálice do Senhor indignamente será culpado do corpo e do sangue do Senhor.</p>
+            <p>28 Examine-se, pois, o homem a si mesmo, e assim coma deste pão e beba deste cálice.</p>
+            <p>29 Porque o que come e bebe indignamente, come e bebe para sua própria condenação, não discernindo o corpo do Senhor.</p>
+            <p>30 Por isso há entre vós muitos fracos e doentes, e muitos dormem.</p>
+            <p>31 Porque, se nós nos examinássemos a nós mesmos, não seríamos julgados.</p>
+            <p>32 Mas, quando somos julgados, somos repreendidos pelo Senhor, para que não sejamos condenados com o mundo.</p>
+            <p>33 Assim, pois, meus irmãos, quando vos congregais para comer, esperai uns pelos outros.</p>
+            <p>34 E, se alguém tiver fome, coma em casa, para que não vos congregueis para juízo. As outras coisas, porém, eu as ordenarei quando for.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

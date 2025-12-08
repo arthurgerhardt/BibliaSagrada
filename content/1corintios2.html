@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 2</h2>
+            <h3>A Sabedoria Divina Revelada pelo Espírito (1–16)</h3>
+            <p>¹ E eu, irmãos, quando fui ter convosco, não fui com sublimidade de palavras ou de sabedoria, anunciando-vos o testemunho de Deus.</p>
+            <p>² Porque determinei nada saber entre vós, senão a Jesus Cristo, e este crucificado.</p>
+            <p>³ E estive convosco em fraqueza, e em temor, e em grande tremor.</p>
+            <p>⁴ A minha palavra e a minha pregação não consistiram em palavras persuasivas de sabedoria, mas em demonstração do Espírito e de poder,</p>
+            <p>⁵ Para que a vossa fé não se apoiasse em sabedoria dos homens, mas no poder de Deus.</p>
+            <p>⁶ Todavia, falamos sabedoria entre os perfeitos; mas não a sabedoria deste século, nem dos príncipes deste século, que vêm a nada;</p>
+            <p>⁷ Mas falamos a sabedoria de Deus, oculta em mistério, a qual Deus ordenou antes dos séculos para nossa glória;</p>
+            <p>⁸ A qual nenhum dos príncipes deste século conheceu; porque, se a conhecessem, nunca teriam crucificado o Senhor da glória.</p>
+            <p>⁹ Mas, como está escrito: As coisas que o olho não viu, e o ouvido não ouviu, e não subiram ao coração do homem, são as que Deus preparou para os que o amam.</p>
+            <p>¹⁰ Porque Deus no-las revelou pelo seu Espírito; porque o Espírito tudo sonda, até mesmo as profundezas de Deus.</p>
+            <p>¹¹ Porque, qual dos homens sabe as coisas do homem, senão o espírito do homem, que nele está? Assim também ninguém sabe as coisas de Deus, senão o Espírito de Deus.</p>
+            <p>¹² Ora, nós não recebemos o espírito do mundo, mas o Espírito que provém de Deus, para que pudéssemos conhecer as coisas que nos são dadas gratuitamente por Deus.</p>
+            <p>¹³ As quais também falamos, não com palavras ensinadas pela sabedoria humana, mas com as que o Espírito Santo ensina, comparando as coisas espirituais com as espirituais.</p>
+            <p>¹⁴ Ora, o homem natural não compreende as coisas do Espírito de Deus, porque lhe parecem loucura; e não pode entendê-las, porque elas se discernem espiritualmente.</p>
+            <p>¹⁵ Mas o que é espiritual discerne bem tudo, e ele de ninguém é discernido.</p>
+            <p>¹⁶ Porque, quem conheceu a mente do Senhor, que o possa instruir? Mas nós temos a mente de Cristo.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira Epístola aos Coríntios 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola aos Coríntios 13</h2>
+            <h3>O Amor é Supremo (1–13)</h3>
+            <p>1 Ainda que eu falasse as línguas dos homens e dos anjos, se não tivesse amor, seria como o bronze que soa ou como o címbalo que retine.</p>
+            <p>2 E ainda que tivesse o dom de profecia, e conhecesse todos os mistérios e toda a ciência, e ainda que tivesse toda a fé, de maneira tal que transportasse os montes, se não tivesse amor, nada seria.</p>
+            <p>3 E ainda que distribuísse todos os meus bens para sustento dos pobres, e ainda que entregasse o meu corpo para ser queimado, se não tivesse amor, nada disso me aproveitaria.</p>
+            <p>4 O amor é paciente, é benigno; o amor não arde em ciúmes, não se ufana, não se ensoberbece,</p> 
+            <p>5 não se conduz inconvenientemente, não procura os seus interesses, não se exaspera, não se ressente do mal;</p>
+            <p>6 não se alegra com a injustiça, mas regozija-se com a verdade;</p>
+            <p>7 tudo sofre, tudo crê, tudo espera, tudo suporta.</p>
+            <p>8 O amor nunca falha; mas, havendo profecias, desaparecerão; havendo línguas, cessarão; havendo ciência, desaparecerá;</p>
+            <p>9 porque, em parte, conhecemos, e em parte profetizamos;</p>
+            <p>10 mas, quando vier o que é perfeito, então o que é em parte desaparecerá.</p>
+            <p>11 Quando eu era menino, falava como menino, sentia como menino, discorria como menino; mas, logo que cheguei a ser homem, deixei para trás as coisas de menino.</p>
+            <p>12 Porque agora vemos por espelho, em enigma, mas então veremos face a face; agora conheço em parte, mas então conhecerei como também sou conhecido.</p>
+            <p>13 Agora, pois, permanecem a fé, a esperança e o amor, estes três, mas o maior destes é o amor.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1corintios12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1corintios14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
