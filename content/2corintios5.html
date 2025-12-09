@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 5</h2>
+            <h3>A Vida Eterna em Cristo (1–10)</h3>
+            <p>1 Porque sabemos que, se a nossa casa terrestre deste tabernáculo se desfizer, temos de Deus um edifício, uma casa não feita por mãos, eterna, nos céus.</p>
+            <p>2 E por isso também gememos, desejando ser revestidos da nossa habitação que é do céu;</p>
+            <p>3 se é que, estando vestidos, não seremos achados nus.</p>
+            <p>4 Porque também nós, que estamos neste tabernáculo, gememos, oprimidos; não porque queremos ser despidos, mas revestidos, para que o mortal seja absorvido pela vida.</p>    
+            <p>5 Ora, aquele que para isto nos preparou é Deus, o qual nos deu o penhor do Espírito.</p>
+            <p>6 Assim, pois, estamos sempre de bom ânimo, sabendo que, enquanto estamos no corpo, estamos ausentes do Senhor;</p>
+            <p>7 porque andamos por fé, e não por vista.</p>
+            <p>8 Mas estamos de bom ânimo, e antes preferimos estar ausentes do corpo, e presentes ao Senhor.</p>   
+            <p>9 Pelo que também nos esforçamos por lhe ser agradáveis, quer presentes, quer ausentes.</p>
+            <p>10 Porque todos havemos de comparecer perante o tribunal de Cristo, para que cada um receba segundo o que tiver feito por meio do corpo, ou bem, ou mal.</p>
+            <h3>O Ministério da Reconciliação (11–21)</h3>
+            <p>11 Ora, conhecendo o temor do Senhor, persuadimo-nos; e procuramos persuadir os outros. Porque somos manifestos a Deus, e espero que também sejamos manifestos nas vossas consciências.</p>
+            <p>12 Não nos recomendamos a nós mesmos outra vez a vós, mas damos-vos ocasião de vos gloriardes de nós, para que tenhais do que vos orgulhar, como se fôsseis nossos.</p>
+            <p>13 Porque, se somos loucos, é para Deus; e se somos sensatos, é para vós.</p>
+            <p>14 Porque o amor de Cristo nos constrange, julgando nós isto: que, se um morreu por todos, logo todos morreram;</p>
+            <p>15 e que ele morreu por todos, para que os que vivem não vivam mais para si mesmos, mas para aquele que por eles morreu e ressuscitou.</p>
+            <p>16 Assim, pois, nós de agora em diante não conhecemos a ninguém segundo a carne; e, se conhecemos a Cristo segundo a carne, já não o conhecemos assim.</p>
+            <p>17 Pelo que, se alguém está em Cristo, nova criatura é; as coisas velhas já passaram; eis que tudo se fez novo.</p>
+            <p>18 E tudo isto provém de Deus, que nos reconciliou consigo mesmo por Jesus Cristo, e nos deu o ministério da reconciliação;</p>  
+            <p>19 isto é, que Deus estava em Cristo reconciliando consigo o mundo, não imputando aos homens as suas transgressões, e nos confiou a palavra da reconciliação.</p>
+            <p>20 De sorte que somos embaixadores em nome de Cristo, como se Deus exortasse por nosso intermédio; rogamos-vos, pois, em nome de Cristo, que vos reconcilieis com Deus.</p>
+            <p>21 Aquele que não conheceu pecado, ele o fez pecado por nós; para que nele fôssemos feitos justiça de Deus.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
