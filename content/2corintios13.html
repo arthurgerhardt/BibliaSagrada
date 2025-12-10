@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 13</h2>
+            <h3>Exortações Finais (1–14)</h3>
+            <p>1 Esta é a terceira vez que venho ter convosco. Pela boca de duas ou três testemunhas se confirmará toda palavra.</p>
+            <p>2 Eu já vos disse antes, e agora digo pela segunda vez, como estando presente com vocês, assim ausente, que procuro não vos ser pesado;</p>
+            <p>3 porque, se eu ainda vos provo, não sou porventura aprovado por vós? Como, pois, sou eu reprovado, sendo por vós aprovado? Ou como sou eu vosso juiz, se Deus é o vosso juiz?</p>
+            <p>4 Pois ele nos fez capazes de ser ministros de uma nova aliança, não da letra, mas do espírito; porque a letra mata, mas o espírito vivifica.</p>   
+            <p>5 Examinais-vos a vós mesmos se estais na fé; provai-vos a vós mesmos. Ou não conheceis a vós mesmos que Jesus Cristo está em vós? Se não é que já estais reprovados.</p>
+            <p>6 Espero que reconhecereis que nós não somos reprovados.</p>
+            <p>7 Rogamos a Deus que nada façais mau, não para que sejamos aprovados, mas para que vós façais o que é o bem, ainda que sejamos reprovados.</p>
+            <p>8 Porque nada podemos contra a verdade, senão pela verdade.</p>
+            <p>9 Porque nos alegramos quando somos fracos, e vós sois fortes; e isto também oramos, para que sejais aperfeiçoados.</p>
+            <p>10 Por isso escrevo estas coisas estando ausente, para que, estando presente, não use de severidade, segundo o poder que o Senhor me deu para edificação, e não para destruição.</p>
+            <p>11 Finalmente, irmãos, alegrai-vos, sede perfeitos, sede consolados, sede de um mesmo parecer, vivei em paz; e o Deus de amor e de paz estará convos.</p>
+            <p>12 Saudai-vos uns aos outros com ósculo santo.</p>
+            <p>13 Todos os santos vos saúdam.</p>
+            <p>14 A graça do Senhor Jesus Cristo, e o amor de Deus, e a comunhão do Espírito Santo sejam com todos vós.</p> 
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/galatas1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

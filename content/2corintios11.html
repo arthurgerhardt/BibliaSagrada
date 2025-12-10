@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 11</h2>
+            <h3>Alegações de Paulo em Defesa do Seu Apostolado (1–33)</h3>
+            <p>1 Oh! se vocês suportassem um pouco a minha loucura! Sim, suportem-me!</p>
+            <p>2 Porque estou zeloso por vocês com zelo de Deus; pois vos desposei a um marido, para vos apresentar como uma virgem pura a Cristo.</p>
+            <p>3 Mas temo que, assim como a serpente enganou Eva com a sua astúcia, assim também sejam de alguma maneira corrompidas os vossos sentidos, e se apartem da simplicidade que há em Cristo.</p>
+            <p>4 Porque, se alguém vem e prega a Jesus Cristo, diferente daquele que pregamos, ou se vocês recebem outro espírito, ou um evangelho diferente daquele que receberam, vocês o suportam bem.</p>   
+            <p>5 Porque penso que não sou inferior aos mais excelentes apóstolos.</p>
+            <p>6 Ainda que eu seja nada, contudo, não obstante, não sou nada; mas, pela graça de Deus, sou o que sou; e a sua graça em mim não tem sido vã; antes, tenho trabalhado mais do que todos eles; contudo, não eu, mas a graça de Deus que está comigo.</p>
+            <p>7 Portanto, o que faço, isso faço por causa do evangelho, para que eu seja participante dele com vocês.</p>
+            <p>8 Porque, ainda que eu seja livre de todos, fiz-me servo de todos, para ganhar ainda mais pessoas.</p>
+            <p>9 Para os judeus, fiz-me como judeu, para ganhar os judeus; para os que estão sob a lei, como se estivesse sob a lei, para ganhar os que estão sob a lei;</p>
+            <p>10 para os que estão sem lei, como se estivesse sem lei (não estando, porém, sem lei para com Deus, mas sim sob a lei de Cristo), para ganhar os que estão sem lei.</p>
+            <p>11 Para os fracos, fiz-me fraco, para ganhar os fracos; para todos, fiz-me tudo, para de algum modo salvar alguns.</p>
+            <p>12 E tudo faço por causa do evangelho, para ser participante dele com vocês.</p>
+            <p>13 Vocês são testemunhas, e Deus também, de que não minto.</p>
+            <p>14 Porque os falsos apóstolos se disfarçam em apóstolos de Cristo.</p>
+            <p>15 E não é de admirar, porque o próprio Satanás se disfarça em anjo de luz.</p>
+            <p>16 Portanto, não é grande coisa se também os seus ministros se disfarçam em ministros da justiça; o fim deles será conforme as suas obras.</p>
+            <p>17 Ora, tais pessoas são falsos apóstolos, obreiros fraudulentos, disfarçando-se em apóstolos de Cristo.</p>
+            <p>18 E não é de admirar, porque o próprio Satanás se disfarça em anjo de luz.</p>
+            <p>19 Portanto, não é grande coisa se também os seus ministros se disfarçam em ministros da justiça; o fim deles será conforme as suas obras.</p>
+            <p>20 Vocês suportam bem os tolos, sendo sábios.</p>
+            <p>21 Porque, se alguém vos escraviza, ou devora, ou toma algo de vocês, ou se exalta, ou bate em vocês, vocês o suportam bem.</p>
+            <p>22 Eu me refiro aos judeus: são eles os israelitas; são eles a descendência de Abraão; são eles os serviços de Cristo.</p>
+            <p>23 Eu, que mais lhes falo, sou mais perseguido; sou mais açoitado; mais vezes estou em prisões; mais vezes sou exposto a perigos de morte;</p>
+            <p>24 cinco vezes recebi dos judeus quarenta golpes menos um;</p>
+            <p>25 três vezes fui açoitado com varas; uma vez fui apedrejado; três vezes sofri naufrágio; uma noite e um dia passei no abismo;</p>
+            <p>26 muitas vezes estou em perigos de rios, perigos de ladrões, perigos dos meus próprios compatriotas, perigos dos gentios, perigos na cidade, perigos no deserto, perigos no mar, perigos entre falsos irmãos;</p>
+            <p>27 em fadigas e trabalhos, em muitas vigílias, em fome e sede, em jejuns muitas vezes, em frio e nudez;</p>
+            <p>28 além das coisas exteriores, o que me sobreveio diariamente: a preocupação por todas as igrejas.</p>
+            <p>29 Quem é fraco, e eu não sou fraco? Quem é escandalizado, e eu não me queimo?</p>
+            <p>30 Se é necessário gloriar-me, eu me gloriarei nas minhas fraquezas.</p>
+            <p>31 Porque, para que o poder de Cristo repouse em mim, por amor de Cristo, sinto prazer em fraquezas, em insultos, em necessidades, em perseguições, em angústias;</p>
+            <p>32 porque, quando estou fraco, então sou forte.</p>
+            <p>33 Fui levado até Damasco, e lá o governador dos guardas me entregou aos meus inimigos; e, saindo por um alçapão num cesto, escapei das suas mãos.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

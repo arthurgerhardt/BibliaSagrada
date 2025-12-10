@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Segunda Epístola aos Coríntios 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Coríntios 10</h2>
+            <h3>A Defesa do Apóstolo (1–18)</h3>
+            <p>1 Eu, Paulo, vos exorto pela mansidão e benignidade de Cristo, que eu, sendo humilde entre vós, mas estando presente com vocês, ouso ser altivo contra alguns que me consideram como se andasse segundo a carne.</p>
+            <p>2 Porque, embora ande na carne, não milito segundo a carne;</p>  
+            <p>3 porque as armas da nossa milícia não são carnais, mas sim poderosas em Deus para destruição das fortalezas;</p>
+            <p>4 destruindo conselhos e toda altivez que se levanta contra oo conhecimento de Deus, e levando cativo todo pensamento à obediência de Cristo;</p>    
+            <p>5 e estando prontos para punir toda desobediência, quando a vossa obediência for completa.</p>
+            <p>6 Vós, pois, ainda que andeis segundo a carne, estais, contudo, não segundo a carne;</p>
+            <p>7 porque as armas da nossa milícia não são carnais, mas sim poderosas em Deus para destruição das fortalezas;</p>
+            <p>8 destruindo conselhos e toda altivez que se levanta contra o conhecimento de Deus, e levando cativo todo pensamento à obediência de Cristo;</p>    
+            <p>9 e estando prontos para punir toda desobediência, quando a vossa obediência for completa.</p>
+            <p>10 Ora, dizem eles: As suas cartas são duras e fortes, mas, estando presente, ele é freio na sua fala, e desprezível.</p>
+            <p>11 Seja como for, que ele fale isto: Aquele que vos despreza, seja desprezado;</p>
+            <p>12 mas aquele que se gloria, glorie-se no Senhor.</p>
+            <p>13 Porque não nos atrevemos a comparar-nos ou a competir com alguns que se louvam a si mesmos; mas eles, medindo-se a si mesmos por si mesmos, e comparando-se consigo mesmos, não são sábios.</p>
+            <p>14 Mas nós não nos gloriaremos além do devido, mas segundo a medida da esfera que Deus nos deu, para que cheguemos até vós.</p>
+            <p>15 Porque não nos gloriamos além do devido, mas sim na esfera do trabalho de cada um, e esperamos que, assim como a vossa fé cresce, também sejamos engrandecidos entre vós, segundo a nossa esfera;</p>
+            <p>16 para que preguemos o evangelho além de vós, sem nos gloriarmos em coisa alguma, a não ser na vossa esfera de trabalho até chegarmos a vós.</p>
+            <p>17 Aquele, pois, que se gloria, glorie-se no Senhor.</p>
+            <p>18 Porque não é aprovado aquele que se recomenda a si mesmo, mas aquele a quem o Senhor recomenda.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2corintios9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2corintios11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
