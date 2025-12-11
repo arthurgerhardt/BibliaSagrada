@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Gálatas 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Gálatas 3</h2>
+            <h3>A Fé e a Promessa (1–29)</h3>
+            <p>1 Ó insensatos gálatas! Quem vos fascinou, a vós, perante cujos olhos Jesus Cristo foi exposto como crucificado?</p>
+            <p>2 Isto somente quero saber de vós: recebestes o Espírito pelas obras da lei, ou pela pregação da fé?</p>
+            <p>3 Sois tão insensatos que, tendo começado pelo Espírito, agora acabais pela carne?</p>
+            <p>4 Tantas coisas sofrestes em vão? Se é que foi em vão.</p>
+            <p>5 Aquele, pois, que vos dá o Espírito e opera milagres entre vós, fá-lo pelas obras da lei, ou pela pregação da fé?</p>  
+            <p>6 Assim como Abraão creu em Deus, e isso lhe foi imputado para justiça.</p>
+            <p>7 Sabei, pois, que os que são da fé, esses são filhos de Abraão.</p>
+            <p>8 E a Escritura, prevendo que Deus havia de justificar os gentios pela fé, anunciou de antemão a Abraão a boa-nova de que em ti seriam abençoados todos os gentios.</p>
+            <p>9 De sorte que os que são da fé são abençoados com o crente Abraão.</p>
+            <p>10 Porque todos quantos são das obras da lei estão sob maldição; porque está escrito: Maldito todo aquele que não permanecer em todas as coisas escritas no livro da lei, para fazê-las.</p>
+            <p>11 E é evidente que pela lei ninguém se justifica diante de Deus, porque: O justo viverá pela fé.</p>
+            <p>12 Ora, a lei não é da fé, mas: Aquele que fizer estas coisas viverá por elas.</p>
+            <p>13 Cristo nos resgatou da maldição da lei, fazendo-se ele próprio maldição em nosso lugar; porque está escrito: Maldito todo aquele que é pendurado no madeiro;</p>
+            <p>14 Para que a bênção de Abraão chegasse aos gentios em Cristo Jesus, a fim de que pela fé recebêssemos a promessa do Espírito.</p>
+            <p>15 Irmãos, falo segundo o modo humano: Ainda que seja um testamento, ninguém o anula ou lhe acrescenta coisa alguma.</p>
+            <p>16 Ora, as promessas foram feitas a Abraão e à sua descendência. Não diz: E às descendências, como se falasse de muitos; mas como de um só: E à tua descendência, que é Cristo.</p>
+            <p>17 Digo isto: A lei, que veio quatrocentos e trinta anos depois, não anula o testamento previamente confirmado por Deus, de modo que possa invalidar a promessa.</p>
+            <p>18 Porque, se a herança vem da lei, já não vem da promessa; mas Deus a a concedeu a Abraão por meio de uma promessa.</p>
+            <p>19 Por que, então, a lei? Foi acrescentada por causa das transgressões, até que viesse a descendência a quem foi feita a promessa; e foi ordenada por meio de anjos, pela mão de um mediador.</p>
+            <p>20 Ora, o mediador não é de uma só parte; mas Deus é um.</p>
+            <p>21 Porventura, a lei é contra as promessas de Deus? De modo nenhum; porque, se a lei tivesse dado vida, verdadeiramente a justiça viria pela lei.</p>
+            <p>22 Mas a Escritura encerrou tudo debaixo do pecado, para que a promessa fosse dada pela fé em Jesus Cristo aos que creem.</p>
+            <p>23 Antes que viesse a fé, estávamos encerrados sob a guarda da lei, tendo por objetivo a fé que havia de ser revelada.</p>
+            <p>24 De maneira que a lei nos serviu de aio, para nos conduzir a Cristo, a fim de que fôssemos justificados pela fé.</p>
+            <p>25 Mas, vindo a fé, já não estamos mais sob aio.</p>
+            <p>26 Porque todos sois filhos de Deus pela fé em Cristo Jesus.</p>
+            <p>27 Pois todos quantos fostes batizados em Cristo, de Cristo vos revestistes.</p>
+            <p>28 Não há judeu nem grego; não há servo nem livre; não há macho nem fêmea; porque todos vós sois um em Cristo Jesus.</p>
+            <p>29 E, se sois de Cristo, então sois descendência de Abraão, herdeiros segundo a promessa.</p>
+           
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/galatas2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/galatas4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
