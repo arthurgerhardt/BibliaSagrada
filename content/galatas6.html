@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Gálatas 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Gálatas 6</h2>
+            <h3>Instruções Finais (1–18)</h3>
+            <p>1 Irmãos, se alguém for surpreendido nalguma falta, vós, que sois espirituais, restaure-o com espírito de mansidão; olhando por ti mesmo, para que não sejas também tentado.</p>
+            <p>2 Levai as cargas uns dos outros e assim cumprireis a lei de Cristo.</p>
+            <p>3 Porque, se alguém pensa ser alguma coisa, não sendo nada, engana-se a si mesmo.</p>
+            <p>4 Mas cada um examine a sua própria obra, e então terá motivo de glória somente em si mesmo, e não em outro.</p>
+            <p>5 Porque cada um levará o seu próprio fardo.</p>
+            <p>6 Aquele que é instruído na palavra reparta de todos os seus bens com aquele que o instrui.</p>
+            <p>7 Não vos enganeis: de Deus não se zomba; pois tudo o que o homem semear, isso também ceifará.</p>
+            <p>8 Porque o que semeia para a sua carne, da carne colherá corrupção; mas o que semeia para o Espírito, do Espírito colherá vida eterna.</p>
+            <p>9 E não nos cansemos de fazer o bem, porque a seu tempo ceifaremos, se não houvermos desfalecido.</p>
+            <p>10 Assim, pois, enquanto temos oportunidade, façamos o bem a todos, mas principalmente aos da família da fé.</p>
+            <p>11 Vede com quanta grande letra vos escrevo de minha própria mão.</p>
+            <p>12 Todos os que querem agradar à carne, esses vos obrigam a vos circuncidardes, apenas para não serem perseguidos por causa da cruz de Cristo.</p>
+            <p>13 Porque nem mesmo os que se circuncidam guardam a lei; mas querem que vos circuncideis, para glóriaar-se na vossa carne.</p>
+            <p>14 Mas longe esteja de mim gloriar-me, senão na cruz de nosso Senhor Jesus Cristo, pela qual o mundo está crucificado para mim, e eu para o mundo.</p>
+            <p>15 Porque em Cristo Jesus nem a circuncisão nem a incircuncisão têm valor algum, mas sim uma nova criatura.</p>
+            <p>16 E a todos quantos andarem por este princípio, paz e misericórdia sobre eles e sobre o Israel de Deus.</p>
+            <p>17 De agora em diante ninguém me cause transtorno, pois eu trago no meu corpo as marcas do Senhor Jesus.</p>
+            <p>18 A graça de nosso Senhor Jesus Cristo seja com o vosso espírito, irmãos. Amém.</p>
+            
+
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/galatas5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/efesios1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

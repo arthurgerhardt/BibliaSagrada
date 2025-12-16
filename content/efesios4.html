@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Efésios 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Efésios 4</h2>
+            <h3>Unidade e Maturidade em Cristo (1–16)</h3>
+            <p>¹ Rogo-vos, pois, eu, o prisioneiro no Senhor, que andeis de modo digno da vocação com que fostes chamados,</p>
+            <p>² Com toda a humildade e mansidão, com longanimidade, suportando-vos uns aos outros em amor,</p>
+            <p>³ Procurando guardar a unidade do Espírito pelo vínculo da paz.</p>
+            <p>⁴ Há um só corpo e um só Espírito, como também fostes chamados em uma só esperança da vossa vocação;</p>
+            <p>⁵ Um só Senhor, uma só fé, um só batismo;</p>
+            <p>⁶ Um só Deus e Pai de todos, o qual é sobre todos, e por todos e em todos.</p>
+            <p>⁷ Mas a cada um de nós foi dada a graça conforme a medida do dom de Cristo.</p>
+            <p>⁸ Pelo que está escrito: Subindo ao alto, levou cativo o cativeiro, e deu dons aos homens.</p>
+            <p>⁹ Ora, isto: Subindo, que é, senão que também desceu às partes mais baixas da terra?</p>
+            <p>¹⁰ Aquele que desceu é também o mesmo que subiu acima de todos os céus, para encher todas as coisas.</p>
+            <p>¹¹ E ele mesmo deu uns para apóstolos, e outros para profetas, e outros para evangelistas, e outros para pastores e mestres,</p>
+            <p>¹² Com o fim de aperfeiçoar os santos para a obra do ministério, para edificação do corpo de Cristo,</p>
+            <p>¹³ Até que todos cheguemos à unidade da fé e do conhecimento do Filho de Deus, a homem perfeito, à medida da estatura completa de Cristo;</p>    
+            <p>¹⁴ Para que não sejamos mais meninos, inconstantes, levados ao redor por todo vento de doutrina, pelo engano dos homens, pela astúcia com que induzem ao erro;</p>
+            <p>¹⁵ Antes, seguindo a verdade em amor, cresçamos em tudo naquele que é a cabeça, Cristo,</p>
+            <p>¹⁶ Do qual todo o corpo, bem ajustado e consolidado pelo auxílio de todas as juntas, segundo a justa operação de cada parte, efetua o seu crescimento para edificação de si mesmo em amor.</p>
+            <h3>Nova Vida em Cristo (17–32)</h3>
+            <p>¹⁷ Assim que digo isto, e testifico no Senhor, que não andeis mais como também andaram os gentios, na vaidade da sua mente,</p>
+            <p>¹⁸ Escurecidos de entendimento, separados da vida de Deus, por causa da ignorância que há neles, pela dureza do seu coração;</p>
+            <p>¹⁹ Os quais, tendo se tornado insensíveis, se entregaram à dissolução, para cometerem com avidez toda sorte de impureza.</p>
+            <p>²⁰ Mas vós não aprendestes assim a Cristo,</p>
+            <p>²¹ Se é que o ouvistes, e nele fostes ensinados, conforme é a verdade em Jesus,</p>
+            <p>²² A despir-vos do velho homem, que se corrompe pelas concupiscências do engano,</p>
+            <p>²³ E vos renovar no espírito da vossa mente,</p>
+            <p>²⁴ E vos revestir do novo homem, que segundo Deus é criado em verdadeira justiça e santidade.</p>
+            <p>²⁵ Pelo que deixai a mentira, e falai a verdade cada um com o seu próximo; porque somos membros uns dos outros.</p>
+            <p>²⁶ Irai-vos e não pequeis; não se ponha o sol sobre a vossa ira,</p>
+            <p>²⁷ Nem deis lugar ao diabo.</p>
+            <p>²⁸ Aquele que furtava, não furte mais; antes trabalhe, fazendo com as mãos o que é bom, para que tenha o que repartir com o que tiver necessidade.</p>
+            <p>²⁹ Ninguém fale maldizendo; antes, o que é bom para edificação, conforme a necessidade, para que ministre graça aos que ouvem.</p>
+            <p>³⁰ E não contristeis o Espírito Santo de Deus, no qual fostes selados para o dia da redenção.</p>
+            <p>³¹ Toda amargura, e ira, e cólera, e gritaria, e blasfêmia sejam tiradas dentre vós, com toda a malícia.</p>
+            <p>³² Antes, sede uns para com os outros benignos, misericordiosos, perdoando-vos uns aos outros, como também Deus vos perdoou em Cristo.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/efesios3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/efesios5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Gálatas 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Gálatas 4</h2>
+            <h3>Adoção como Filhos (1–31)</h3>
+            <p>1 Ora, digo que, enquanto o herdeiro é menino, em nada difere do escravo, embora seja senhor de tudo;</p>
+            <p>2 mas está sob tutores e administradores até o tempo determinado por seu pai.</p>
+            <p>3 Assim também nós, quando éramos meninos, estávamos escravizados aos rudimentos do mundo.</p>
+            <p>4 Mas, vindo a plenitude dos tempos, Deus enviou seu Filho, nascido de mulher, nascido sob a lei,</p>
+            <p>5 para remir os que estavam sob a lei, a fim de que recebêssemos a adoção de filhos.</p>
+            <p>6 E, porque sois filhos, Deus enviou aos nossos corações o Espírito de seu Filho, que clama: Aba, Pai!</p>
+            <p>7 De sorte que já não és escravo, mas filho; e, se és filho, também és herdeiro por meio de Deus.</p>
+            <p>8 Mas, naqueles dias, não conhecíeis a Deus; antes, servíeeis aos que, por natureza, não são deuses.</p>
+            <p>9 Agora, porém, conhecêeis a Deus, ou melhor, sois conhecidos por Deus. Como é que vos tornastes novamente a um elemento tão fraco e miserável, a que denovo quereis vos sujeitar?</p>
+            <p>10 Guardais dias, meses, tempos e anos!</p>
+            <p>11 Temo que, assim como vos aprestei a mim mesmo anteriormente, assim também agora me seja em vão.</p>
+            <p>12 Rogo-vos, irmãos, sede como eu, porque também eu sou como vós. Não sofrestes coisa alguma de mal;</p>
+            <p>13 e vós sabeis que, por causa de uma enfermidade do corpo, vos anunciei o evangelho a vocês pela primeira vez;</p>
+            <p>14 e que a minha condição física, que era um obstáculo para vós, não me foi motivo de vergonha, antes, fostes bem acolhedos.</p>
+            <p>15 Não estais a favor de mim? Bem sabeis que foi por causa de uma enfermidade do corpo que vos anunciei o evangelho a vocês pela primeira vez.</p>
+            <p>16 Não me trateis, pois, agora, como inimigo; antes, recebei-me como a um mensageiro de Deus, como a Cristo Jesus.</p>
+            <p>17 Por que motivo? Porque estou a trabalhar por vós em favor da vossa salvação; pois, embora esteja sendo perseguido, o evangelho não é por mim perseguido.</p>
+            <p>18 Pois, que importa que eu seja louvado por vós? Isso não me aproveita em nada. A mim, porém, importa que eu seja sempre lembrado por vós, para o bem, e não para o mal; porque eu tenho confiança em vós no Senhor.</p>
+            <p>19 Meus filhos, por quem de novo sinto as dores de parto, até que Cristo seja formado em vós;</p>
+            <p>20 e eu desejaria estar presente convosco agora, e mudar a minha voz, porque estou perplexo convosco.</p>
+            <p>21 Dizei-me, vós que quereis estar sob a lei, não ouvis vós a lei?</p>
+            <p>22 Porque está escrito que Abraão teve dois filhos: um da escrava, e outro da livre.</p>
+            <p>23 Mas aquele da escrava nasceu segundo a carne; porém, o da livre, por promessa.</p>
+            <p>24 O que isto significa é que as coisas alegóricas se referem a estas duas alianças: uma do monte Sinai, que gera para a escravidão, a qual é Agar.</p>
+            <p>25 Porque Agar é o monte Sinai, na Arábia, e corresponde à Jerusalém que agora é, e está em escravidão com seus filhos.</p>
+            <p>26 Mas a Jerusalém que é de cima é livre, a qual é nossa mãe.</p>
+            <p>27 Porque está escrito: Alegra-te, ó estéril, que não dás à luz; rompe em júbilo e clama, tu que não tens dores de parto; porque muitos são os filhos da desamparada, mais do que os da que tem marido.</p>
+            <p>28 Ora, vós, irmãos, sois filhos da promessa, como Isaque.</p>
+            <p>29 Mas, assim como naquele tempo o que nascera segundo a carne perseguia o que nascera segundo o Espírito, assim também é agora.</p>
+            <p>30 Porém, o que diz a Escritura? Lança fora a escrava e seu filho; porque o filho da escrava não será herde com o filho da livre.</p>
+            <p>31 De maneira que, irmãos, não somos filhos da escrava, mas da livre.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/galatas3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/galatas5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

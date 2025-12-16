@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Filipenses 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Filipenses 1</h2>
+            <h3>Saudações e Ação de Graças (1–11)</h3>
+            <p>¹ Paulo e Timóteo, servos de Jesus Cristo, a todos os santos em Cristo Jesus, que estão em Filipos, com os bispos e diáconos:</p>
+            <p>² Graça a vós, e paz da parte de Deus nosso Pai e da do Senhor Jesus Cristo.</p>
+            <p>³ Dou graças ao meu Deus todas as vezes que me lembro de vós,</p>
+            <p>⁴ Fazendo sempre com alegria oração por vós em todas as minhas súplicas,</p>
+            <p>⁵ Pela vossa cooperação no evangelho desde o primeiro dia até agora.</p>
+            <p>⁶ Tendo por certo isto mesmo, que aquele que em vós começou a boa obra a aperfeiçoará até ao dia de Jesus Cristo;</p>
+            <p>⁷ Como tenho por justo sentir isto de vós todos, porque vos retenho em meu coração, pois todos vós fostes participantes da minha graça, tanto nas minhas prisões como na defesa e confirmação do evangelho.</p>
+            <p>⁸ Porque Deus me é testemunha das saudades que de todos vós tenho, em entranhável afeição de Jesus Cristo.</p>
+            <p>⁹ E peço isto: que o vosso amor cresça ainda mais e mais em ciência e em todo o conhecimento,</p>
+            <p>¹⁰ Para que aproveis as coisas excelentes, para que sejais sinceros, e sem escândalo algum até ao dia de Cristo;</p>
+            <p>¹¹ Cheios dos frutos de justiça, que são por Jesus Cristo, para glória e louvor de Deus.</p>
+
+            <h3>O Progresso do Evangelho nas Prisões (12–18)</h3>
+            <p>¹² E quero, irmãos, que saibais que as coisas que me aconteceram contribuíram para maior proveito do evangelho;</p>
+            <p>¹³ De maneira que as minhas prisões em Cristo foram manifestas por toda a guarda pretoriana, e por todos os demais lugares;</p>
+            <p>¹⁴ E muitos dos irmãos no Senhor, tomando ânimo com as minhas prisões, ousam falar a palavra mais confiadamente, sem temor.</p>
+            <p>¹⁵ Verdade é que também alguns pregam a Cristo por inveja e contenda, mas outros de boa vontade;</p>
+            <p>¹⁶ Uns, na verdade, anunciam a Cristo por contenção, não puramente, julgando acrescentar aflição às minhas prisões.</p>
+            <p>¹⁷ Mas outros, por amor, sabendo que fui posto para defesa do evangelho.</p>
+            <p>¹⁸ Mas que importa? Contanto que Cristo seja anunciado de toda a maneira, ou com fingimento ou em verdade, nisto me regozijo, e me regozijarei ainda.</p>
+
+            <h3>Esperança e Exaltação de Cristo (19–26)</h3>
+            <p>¹⁹ Porque sei que disto me resultará salvação, pela vossa oração e pelo socorro do Espírito de Jesus Cristo,</p>
+            <p>²⁰ Segundo a minha intensa expectação e esperança, de que em nada serei confundido; antes, com toda a confiança, Cristo será, tanto agora como sempre, engrandecido no meu corpo, seja pela vida, seja pela morte.</p>
+            <p>²¹ Porque para mim o viver é Cristo, e o morrer é ganho.</p>
+            <p>²² Mas, se o viver na carne me der fruto da minha obra, não sei então o que deva escolher.</p>
+            <p>²³ Mas de ambos os lados estou em aperto, tendo desejo de partir, e estar com Cristo, porque isto é ainda muito melhor.</p>
+            <p>²⁴ Mas julgo mais necessário, por amor de vós, ficar na carne.</p>
+            <p>²⁵ E, tendo esta confiança, sei que ficarei, e permanecerei com todos vós para proveito vosso e gozo da fé,</p>
+            <p>²⁶ Para que a vossa glória cresça por mim em Cristo Jesus, pela minha nova ida a vós.</p>
+
+            <h3>Exortação à Unidade e Perseverança (27–30)</h3>
+            <p>²⁷ Somente deveis portar-vos dignamente conforme o evangelho de Cristo, para que, quer vá e vos veja, quer esteja ausente, ouça acerca de vós que estais num mesmo espírito, combatendo juntamente com o mesmo ânimo pela fé do evangelho.</p>
+            <p>²⁸ E em nada vos espanteis dos que resistem, o que para eles, na verdade, é indício de perdição, mas para vós de salvação, e isto de Deus.</p>
+            <p>²⁹ Porque a vós vos foi concedido, em relação a Cristo, não somente crer nele, como também padecer por ele,</p>
+            <p>³⁰ Tendo o mesmo combate que já em mim tendes visto e agora ouvis estar em mim.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/efesios6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/filipenses2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Gálatas 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Gálatas 5</h2>
+            <h3>A Liberdade em Cristo (1–26)</h3>
+            <p>1 Para a liberdade foi que Cristo nos libertou. Permanecei, pois, firmes e não vos submetais de novo a um jugo de escravidão.</p>
+            <p>2 Eis que eu, Paulo, vos digo que, se vos deixardes circuncidar, Cristo de nada vos aproveitará.</p>
+            <p>3 E outra vez testifico a todo homem que se deixa circuncidar que está obrigado a guardar toda a lei.</p>
+            <p>4 Separados estais de Cristo, vós que vos justificais pela lei; da graça tendes caído.</p>
+            <p>5 Porque nós, pelo Espírito, aguardamos a esperança da justiça pela fé.</p>
+            <p>6 Porque em Cristo Jesus nem a circuncisão nem a incircuncisão têm valor algum, mas sim a fé que atua pelo amor.</p>
+            <p>7 Estais correndo bem; quem vos impediu de obedecer à verdade?</p>
+            <p>8 Essa persuasão não vem daquele que vos chama.</p>
+            <p>9 Um pouco de fermento leveda toda a massa.</p>
+            <p>10 Tenho confiança em vós no Senhor que não pensareis de outro modo; mas quem vos perturba levará o juízo, seja quem for.</p>    
+            <p>11 Quanto a mim, irmãos, se ainda anuncio a circuncisão, por que sou ainda perseguido? Então teria sido eliminado o escândalo da cruz.</p>
+            <p>12 Oxalá se mutilassem os que vos andam perturbando!</p>
+            <p>13 Porque vós, irmãos, fostes chamados à liberdade. Não useis, porém, a liberdade para dar ocasião à carne, mas servi-vos uns aos outros pelo amor.</p>
+            <p>14 Porque toda a lei se cumpre numa só palavra, a saber: "Amarás o teu próximo como a ti mesmo".</p>
+            <p>15 Mas, se vos mordeis e devorais uns aos outros, vede que não vos consumais mutuamente.</p>
+            <p>16 Digo, porém: Andai pelo Espírito e não satisfareis os desejos da carne.</p>
+            <p>17 Porque a carne deseja o que é contrário ao Espírito, e o Espírito, o que é contrário à carne; estes opõem-se entre si, para que não façais o que quereis.</p>
+            <p>18 Mas, se sois guiados pelo Espírito, não estais debaixo da lei.</p>
+            <p>19 Ora, as obras da carne são manifestas, as quais são: prostituição, impureza, lascívia,</p>
+            <p>20 idolatria, feitiçarias, inimizades, porfunidades, ciúmes, iras, discórdias, dissensões, facções,</p>
+            <p>21 invejas, homicídios, bebedices, orgias e coisas semelhantes a estas, contra as quais vos declaro, como já antes vos disse, que os que tais coisas praticam não herdarão o reino de Deus.</p>
+            <p>22 Mas o fruto do Espírito é: amor, alegria, paz, longanimidade, benignidade, bondade, fidelidade,</p>
+            <p>23 mansidão, domínio próprio; contra estas coisas não há lei.</p>
+            <p>24 E os que são de Cristo Jesus crucificaram a carne com as suas paixões e desejos.</p>
+            <p>25 Se vivemos pelo Espírito, andemos também pelo Espírito.</p>
+            <p>26 Não nos tornemos vangloriosos, provocando-nos uns aos outros, invejando-nos uns aos outros.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/galatas4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/galatas6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

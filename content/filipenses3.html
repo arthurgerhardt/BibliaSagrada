@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Filipenses 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Filipenses 3</h2>
+            <h3>Alegria em Cristo (1–11)</h3>
+            <p>¹ Quanto ao mais, irmãos meus, alegrai-vos no Senhor. Para mim não é incômodo o escrever-vos as mesmas coisas, e para vós é seguro.</p>
+            <p>² Cuidado com os cães, cuidado com os maus obreiros, cuidado com a falsificação da circuncisão.</p>
+            <p>³ Porque nós somos a circuncisão, que adoramos em espírito de Deus, e nos gloriamos em Cristo Jesus, e não confiamos na carne;</p>
+            <p>⁴ Embora eu mesmo pudesse confiar na carne. Se alguém pensa que pode confiar na carne, eu muito mais:</p>
+            <p>⁵ Circuncidado ao oitavo dia, da linhagem de Israel, da tribo de Benjamim, hebreu de hebreus; quanto à lei, fariseu;</p>
+            <p>⁶ Quanto ao zelo, perseguidor da igreja; quanto à justiça que há na lei, irrepreensível.</p>
+            <p>⁷ Mas o que para mim era ganho reputei-o perda por Cristo.</p>
+            <p>⁸ E, na verdade, tenho também por perda todas as coisas, pela excelência do conhecimento de Cristo Jesus meu Senhor, por quem perdi todas as coisas, e as considero como esterco, para ganhar a Cristo</p>
+            <p>⁹ E ser achado nele, não tendo a minha própria justiça, que é pela lei, mas a que é pela fé em Cristo, a justiça que é de Deus pela fé;</p>
+            <p>¹⁰ Para o conhecer, e o poder da sua ressurreição, e a comunhão dos seus sofrimentos, conformando-me com ele na sua morte;</p>
+            <p>¹¹ Para ver se de algum modo posso chegar à ressurreição dentre os mortos.</p>
+            <h3>Prosseguindo para o Alvo (12–21)</h3>
+            <p>¹² Não que já a tenha alcançado, ou que já seja perfeito; mas prossigo para alcançar aquilo para o que também fui alcançado por Cristo Jesus.</p>    
+            <p>¹³ Irmãos, quanto a mim, não julgo que o haja alcançado; mas uma coisa faço: esquecendo-me das coisas que para trás ficam, e avançando para as que estão diante de mim,</p>
+            <p>¹⁴ Prossigo para o alvo, pelo prêmio da soberana vocação de Deus em Cristo Jesus.</p>
+            <p>¹⁵ Assim, pois, todos nós que somos perfeitos, tenhamos este mesmo sentimento; e se de algum modo tendes algum outro sentimento, isto vos será revelado também por Deus.</p>
+            <p>¹⁶ Todavia, onde já chegamos, andemos segundo a mesma regra, sigamos a mesma direção.</p>
+            <p>¹⁷ Sede meus imitadores, irmãos, e observai os que assim andam segundo o exemplo que tendes em nós.</p>
+            <p>¹⁸ Porque muitos andam, dos quais muitas vezes vos disse, e agora também digo chorando, que são inimigos da cruz de Cristo;</p>
+            <p>¹⁹ Cujo fim é a perdição, cujo deus é o ventre, e cuja glória está em sua vergonha, que só pensam nas coisas terrenas.</p>
+            <p>²⁰ Porque a nossa pátria está nos céus, de onde também esperamos o Salvador, o Senhor Jesus Cristo;</p>
+            <p>²¹ O qual transformará o nosso corpo abatido, para ser conforme o seu corpo glorioso, segundo o seu eficaz poder de sujeitar também a si todas as coisas.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/filipenses2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/filipenses4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

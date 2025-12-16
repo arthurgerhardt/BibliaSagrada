@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Colossenses 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Colossenses 1</h2>
+            <h3>Saudações e Ação de Graças (1–14)</h3>
+            <p>¹ Paulo, apóstolo de Jesus Cristo, pela vontade de Deus, e o irmão Timóteo,</p>
+            <p>² Aos santos e irmãos fiéis em Cristo, que estão em Colossos: Graça a vós, e paz da parte de Deus nosso Pai e do Senhor Jesus Cristo.</p>
+            <p>³ Graças damos ao Deus e Pai de nosso Senhor Jesus Cristo, orando sempre por vós,</p>
+            <p>⁴ Porquanto ouvimos da vossa fé em Cristo Jesus, e do amor que tendes para com todos os santos;</p>
+            <p>⁵ Por causa da esperança que vos está reservada nos céus, da qual já antes ouvistes pela palavra da verdade do evangelho,</p>
+            <p>⁶ Que já chegou a vós, como também está em todo o mundo; e já vai frutificando, como também entre vós, desde o dia em que ouvistes e conhecestes a graça de Deus em verdade;</p>
+            <p>⁷ Como aprendestes de Epafras, nosso amado conservo, que para vós é um fiel ministro de Cristo,</p>
+            <p>⁸ O qual nos declarou também o vosso amor no Espírito.</p>
+            <p>⁹ Por esta razão, nós também, desde o dia em que o ouvimos, não cessamos de orar por vós, e de pedir que sejais cheios do conhecimento da sua vontade, em toda a sabedoria e inteligência espiritual;</p>
+            <p>¹⁰ Para que possais andar dignamente diante do Senhor, agradando-lhe em tudo, frutificando em toda a boa obra, e crescendo no conhecimento de Deus;</p>
+            <p>¹¹ Fortalecidos em todo o poder, segundo a força da sua glória, em toda a paciência, e longanimidade com gozo;</p>
+            <p>¹² Dando graças ao Pai que nos fez idôneos para participar da herança dos santos na luz;</p>
+            <p>¹³ O qual nos tirou da potestade das trevas, e nos transportou para o reino do Filho do seu amor;</p>
+            <p>¹⁴ Em quem temos a redenção pelo seu sangue, a saber, a remissão dos pecados;</p>
+
+            <h3>A Supremacia de Cristo (15–23)</h3>
+            <p>¹⁵ O qual é imagem do Deus invisível, o primogênito de toda a criação;</p>
+            <p>¹⁶ Porque nele foram criadas todas as coisas que há nos céus e na terra, visíveis e invisíveis, sejam tronos, sejam dominações, sejam principados, sejam potestades. Tudo foi criado por ele e para ele.</p>
+            <p>¹⁷ E ele é antes de todas as coisas, e todas as coisas subsistem por ele.</p>
+            <p>¹⁸ E ele é a cabeça do corpo, da igreja; é o princípio e o primogênito dentre os mortos, para que em tudo tenha a preeminência.</p>
+            <p>¹⁹ Porque foi do agrado do Pai que toda a plenitude nele habitasse,</p>
+            <p>²⁰ E que, havendo por ele feito a paz pelo sangue da sua cruz, por meio dele reconciliasse consigo mesmo todas as coisas, tanto as que estão na terra, como as que estão nos céus.</p>
+            <p>²¹ A vós também, que noutro tempo éreis estranhos, e inimigos no entendimento pelas vossas obras más, agora contudo vos reconciliou</p>
+            <p>²² No corpo da sua carne, pela morte, para perante ele vos apresentar santos, e irrepreensíveis, e inculpáveis,</p>
+            <p>²³ Se, na verdade, permanecerdes fundados e firmes na fé, e não vos moverdes da esperança do evangelho que tendes ouvido, o qual foi pregado a toda criatura que há debaixo do céu, e do qual eu, Paulo, estou feito ministro.</p>
+
+            <h3>O Ministério de Paulo (24–29)</h3>
+            <p>²⁴ Regozijo-me agora no que padeço por vós, e na minha carne cumpro o resto das aflições de Cristo, pelo seu corpo, que é a igreja;</p>
+            <p>²⁵ Da qual eu estou feito ministro segundo a dispensação de Deus, que me foi concedida para convosco, para cumprir a palavra de Deus;</p>
+            <p>²⁶ O mistério que esteve oculto desde todos os séculos, e em todas as gerações, e que agora foi manifesto aos seus santos;</p>
+            <p>²⁷ Aos quais Deus quis fazer conhecer quais são as riquezas da glória deste mistério entre os gentios, que é Cristo em vós, esperança da glória;</p>
+            <p>²⁸ A quem anunciamos, admoestando a todo o homem, e ensinando a todo o homem em toda a sabedoria; para que apresentemos todo o homem perfeito em Cristo Jesus;</p>
+            <p>²⁹ E para isto também trabalho, combatendo segundo a sua eficácia, que opera em mim poderosamente.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/filipenses4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/colossenses2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
