@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos 1 Tessalonicenses 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos 1 Tessalonicenses 4</h2>
+            <h3>A Vida Santa (1–8)</h3>
+            <p>¹ Quanto, pois, a isto, irmãos, rogamo-vos e exortamos no Senhor Jesus, que assim como recebestes de nós como de Deus o que éa verdade, assim andeis nele;</p>
+            <p>² Porque vós sabeis que mandamentos vos temos dado por meio do Senhor Jesus.</p>
+            <p>³ Porque esta é a vontade de Deus, a vossa santificação; que vos abstenhais da prostituição;</p>
+            <p>⁴ Que cada um de vós saiba possuir o seu vaso em santificação e honra;</p>
+            <p>⁵ Não na paixão de concupiscência, como os gentios que não conhecem a Deus;</p>
+            <p>⁶ Para que ninguém ultrapasse e defraude a seu irmão em negócio; porque o Senhor é vingador de todas estas coisas, como já antes vos temos dito e testificado.</p>
+            <p>⁷ Porque Deus não nos chamou para a impureza, mas para a santificação.</p>
+            <p>⁸ Portanto, quem rejeita isto não rejeita ao homem, mas a Deus, que também nos deu o seu Espírito Santo.</p> 
+            <h3>O Amor Fraternal e a Esperança da Vinda de Cristo (9–18)</h3>
+            <p>⁹ Mas, no que diz respeito ao amor fraternal, não necessitais que vos escreva; porque vós mesmos sois ensinados por Deus a amar-vos uns aos outros;</p>
+            <p>¹⁰ E de fato o fazeis para com todos os irmãos que estão em toda a Macedônia. Mas rogamo-vos, irmãos, que abundéis mais e mais,</p>
+            <p>¹¹ E que procureis viver em paz, e cuidar das vossas próprias coisas, e trabalhar com as vossas próprias mãos, como já vos temos mandado;</p>
+            <p>¹² Para que andeis honestamente para com os que estão de fora, e não necessiteis de coisa alguma.</p>
+            <p>¹³ E não queremos, irmãos, que sejais ignorantes acerca dos que já dormem, para que não vos entristeçais como os demais, que não têm esperança.</p>
+            <p>¹⁴ Porque, se cremos que Jesus morreu e ressuscitou, assim também Deus trará, mediante Jesus e com ele, os que dormem.</p>
+            <p>¹⁵ Porque isto vos dizemos pela palavra do Senhor, que nós, os que ficarmos vivos para a vinda do Senhor, de modo algum precederemos os que dormem.</p>
+            <p>¹⁶ Porque o mesmo Senhor descerá do céu com alarido, e com voz de arcanjo, e com a trombeta de Deus; e os que morreram em Cristo ressuscitarão primeiro;</p>
+            <p>¹⁷ Depois nós, os que ficarmos vivos, seremos arrebatados juntamente com eles, entre nuvens, para o encontro do Senhor nos ares; e assim estaremos para sempre com o Senhor.</p>
+            <p>¹⁸ Portanto, consolai-vos uns aos outros com estas palavras.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1tessalonicenses3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1tessalonicenses5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

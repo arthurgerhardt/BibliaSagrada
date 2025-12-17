@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos 1 Tessalonicenses 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos 1 Tessalonicenses 1</h2>
+            <h3>Saudação e Ação de Graças (1–10)</h3>
+            <p>¹ Paulo, e Silvano, e Timóteo, à igreja dos tessalonicenses em Deus, o Pai, e no Senhor Jesus Cristo: Graça e paz tenhais de Deus nosso Pai e do Senhor Jesus Cristo.</p>
+            <p>² Sempre damos graças a Deus por vós todos, fazendo menção de vós em nossas orações,</p>
+            <p>³ Lembrando-nos sem cessar da obra da vossa fé, do trabalho do amor, e da paciência da esperança em nosso Senhor Jesus Cristo, diante de nosso Deus e Pai,</p>
+            <p>⁴ Sabendo, amados irmãos, que a vossa eleição é de Deus;</p>
+            <p>⁵ Porque o nosso evangelho não foi a vós somente em palavras, mas também em poder, e no Espírito Santo, e em muita certeza, como bem sabeis quais fomos entre vós, por amor de vós.</p>
+            <p>⁶ E vós fostes feitos nossos imitadores, e do Senhor, recebendo a palavra em muita tribulação, com gozo do Espírito Santo.</p>
+            <p>⁷ De maneira que fostes exemplo para todos os fiéis na Macedônia e Acaia.</p>
+            <p>⁸ Porque por vós soou a palavra do Senhor, não somente na Macedônia e Acaia, mas também em todos os lugares a vossa fé para com Deus se espalhou, de tal maneira que já dela não temos necessidade de falar coisa alguma;</p>
+            <p>⁹ Porque eles mesmos anunciam de nós qual a entrada que tivemos para convosco, e como dos ídolos vos convertestes a Deus, para servir o Deus vivo e verdadeiro,</p>
+            <p>¹⁰ E esperar dos céus o seu Filho, a quem ressuscitou dentre os mortos, a saber, Jesus, que nos livra da ira futura.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/colossenses4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1tessalonicenses2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
