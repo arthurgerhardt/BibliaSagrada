@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola a Timóteo 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola a Timóteo 6</h2>
+            <h3>Instruções sobre a piedade e o amor ao dinheiro (1–10)</h3>
+            <p>1 Todos os servos que estão sob o jugo considerem seus próprios senhores dignos de toda honra, para que o nome de Deus e a doutrina não sejam blasfemados.</p>
+            <p>2 E os que têm senhores crentes não os desprezem, porquanto irmãos; antes, sirvam-lhes ainda melhor, por serem fiéis e amados, os quais aprendem a beneficiar-se.</p>
+            <p>3 Ora, se algum crente ou crente tiver viúva, e esta estiver em necessidade, e lhe for possível socorrê-la, que não se esqueça disso.</p>
+            <p>4 Que o crente cuide dos seus, e principalmente dos da sua própria casa.</p>
+            <p>5 Mas os que estiverem verdadeiramente sós, e desamparados, esperem em Deus, e perseverem em rogos e orações de noite e de dia.</p>
+            <p>6 Porque a piedade com contentamento é grande fonte de lucro.</p>
+            <p>7 Porque nada trouxemos para este mundo, e manifesto é que nada podemos levar dele.</p>
+            <p>8 Tendo, porém, sustento e com que nos cobrir, estejamos com isso contentes.</p>
+            <p>9 Porque os que querem enriquecer-se caem em tentação, e em laço, e em muitas concupiscências loucas e nocivas, que submergem os homens na ruína e perdição.</p>
+            <p>10 Porque o amor ao dinheiro é a raiz de todos os males; e alguns, nessa cobiça, se desviaram da fé, e se traspassaram a si mesmos com muitas dores.</p>
+            <h3>Instruções finais e bênção (11–21)</h3>
+            <p>11 Mas tu, ó homem de Deus, foge destas coisas, e segue a justiça, a piedade, a fé, o amor, a paciência, a mansidão.</p>
+            <p>12 Peleja a boa peleja da fé, toma posse da vida eterna, para a qual também foste chamado, e fizeste boa confissão diante de muitas testemunhas.</p>
+            <p>13 Tenho por certo isto: que o Senhor Jesus Cristo, na sua vinda, julgará os vivos e os mortos, segundo a sua manifestação e o seu reino;</p>
+            <p>14 Ao qual é necessário que também te empenhes, porquanto foste feito para isto.</p>
+            <p>15 Esta é a palavra fiel: que, se alguém aspira ao episcopado, excelente obra deseja.</p>
+            <p>16 O único Deus, que é Rei dos reis e Senhor dos senhores, o qual só possui a imortalidade, habita em luz inacessível; a quem nenhum dos homens viu, nem pode ver; ao qual seja honra e poder eterno. Amém.</p>
+            <p>17 Manda aos ricos deste mundo que não sejam altivos, nem ponham a sua esperança na incerteza das riquezas, mas em Deus, que abundantemente nos dá todas as coisas para delas gozarmos;</p>
+            <p>18 Que façam o bem, que se enriqueçam em boas obras, que sejam generosos, prontos a repartir;</p>
+            <p>19 Acumulando para si mesmos um bom fundamento para o futuro, para que possam alcançar a verdadeira vida.</p>
+            <p>20 Ó Timóteo, guarda o depósito que te foi confiado, evitando as conversas profanas e vãs, e as oposições daquilo que é erroneamente chamado ciência;</p>
+            <p>21 A qual professando alguns, se desviaram da fé. Graça seja convosco. Amém.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1timoteo5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2timoteo1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 3</h2>
+            <h3>Jesus, superior a Moisés (1–6)</h3>
+            <p>1 Portanto, irmãos santos, participantes da vocação celestial, considerai o Apóstolo e Sumo Sacerdote da nossa confissão, Jesus,</p>
+            <p>2 O qual é fiel ao que o constituiu, como também o foi Moisés em toda a casa de Deus.</p>
+            <p>3 Porque Jesus é tido por digno de maior glória do que Moisés, quanto àquele que edificou a casa tem maior honra do que a casa.</p>
+            <p>4 Porque toda casa é edificada por alguém, mas o que edificou todas as coisas é Deus.</p>
+            <p>5 E Moisés, na verdade, foi fiel em toda a sua casa, como servo, para testemunho das coisas que haviam de ser anunciadas;</p>
+            <p>6 Mas Cristo, como Filho, sobre a sua própria casa; a qual casa somos nós, se retivermos firmes a confiança e a glória da esperança até o fim.</p>
+            <h3>A advertência contra a incredulidade (7–19)</h3>
+            <p>7 Pelo que, como diz o Espírito Santo: Hoje, se ouvirdes a sua voz,</p>
+            <p>8 Não endureçais os vossos corações, como na provocação, no dia da tentação no deserto,</p>
+            <p>9 Onde vos tentaram os vossos pais, provando-me, e vendo as minhas obras quarenta anos.</p>
+            <p>10 Pelo que me indignei contra aquela geração, e disse: Sempre erram no coração; e não conheceram os meus caminhos;</p>
+            <p>11 Assim jurei na minha ira: Nunca entrarão no meu descanso.</p> 
+            <p>12 Vede, irmãos, que não haja em qualquer de vós coração mau de incredulidade, para se apartar do Deus vivo.</p>
+            <p>13 Antes, exortai-vos uns aos outros todos os dias, enquanto se chama Hoje, para que nenhum de vós se endureça pelo engano do pecado.</p>
+            <p>14 Porque já somos feitos participantes de Cristo, se é que retivermos firme até o fim a confiança que desde o princípio tivemos.</p>
+            <p>15 Enquanto se diz: Hoje, se ouvirdes a sua voz, não endureçais os vossos corações, como na provocação.</p>
+            <p>16 Pois, quem foram os que ouviram, e o tentaram? Não foram todos aqueles que saíram do Egito por Moisés?</p>
+            <p>17 E com quem se indignou quarenta anos? Não foi com aqueles que pecaram, cujos corpos caíram no deserto?</p>    
+            <p>18 E a quem jurou que nunca entrariam no seu descanso, senão àqueles que não creram?</p>
+            <p>19 Vemos, pois, que não puderam entrar por causa da incredulidade.</p>
+            
+            
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

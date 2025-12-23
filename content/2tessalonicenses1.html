@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Epístola aos Tessalonicenses 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola aos Tessalonicenses 1</h2>
+            <h3>Saudação e Ação de Graças (1–4)</h3>
+            <p>¹ Paulo, e Silvano, e Timóteo, à igreja dos tessalonicenses, em Deus nosso Pai, e no Senhor Jesus Cristo:</p>
+            <p>² Graça e paz a vós da parte de Deus nosso Pai, e da do Senhor Jesus Cristo.</p>
+            <p>³ Sempre devemos, irmãos, dar graças a Deus por vós, como é justo, porque a vossa fé cresce muitíssimo e o amor de cada um de todos vós aumenta de uns para com os outros,</p>
+            <p>⁴ De maneira que nós mesmos nos gloriamos de vós nas igrejas de Deus por causa da vossa paciência e fé, e em todas as vossas perseguições e aflições que suportais;</p>
+            <h3>O Sofrimento dos Santos e a Vinda de Cristo (5–12)</h3>
+            <p>⁵ Prova clara do justo juízo de Deus, para que sejais havidos por dignos do reino de Deus, pelo qual também padeceis;</p>
+            <p>⁶ Se de fato é justo diante de Deus que dê em paga tribulação aos que vos atribulam,</p>
+            <p>⁷ E a vós, que sois atribulados, descanso conosco, quando se manifestar o Senhor Jesus desde o céu com os anjos do seu poder,</p>
+            <p>⁸ Com labareda de fogo, tomando vingança dos que não conhecem a Deus e dos que não obedecem ao evangelho de nosso Senhor Jesus Cristo;</p>
+            <p>⁹ Os quais, por castigo, padecerão eterna perdição, longe da face do Senhor e da glória do seu poder,</p>
+            <p>¹⁰ Quando vier para ser glorificado nos seus santos, e para se fazer admirável naquele dia em todos os que creem (porquanto o nosso testemunho foi crido entre vós).</p>
+            <p>¹¹ Por isso também rogamos sempre por vós, para que o nosso Deus vos faça dignos da sua vocação, e cumpra todo o desejo da sua bondade, e a obra da fé com poder;</p>
+            <p>¹² Para que o nome de nosso Senhor Jesus Cristo seja em vós glorificado, e vós nele, segundo a graça de nosso Deus e do Senhor Jesus Cristo.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1tessalonicenses5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2tessalonicenses2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

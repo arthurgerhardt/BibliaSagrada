@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 2</h2>
+            <h3>A humanidade de Cristo e sua missão (1–18)</h3>
+            <p>1 Por isso convém que prestemos maior atenção às coisas que ouvimos, para que não nos desviemos delas.</p>
+            <p>2 Porque, se a palavra falada por meio de anjos foi firme, e toda transgressão e desobediência recebeu justa retribuição,</p>
+            <p>3 Como escaparemos nós, se negligenciarmos tão grande salvação; a qual, começando por Cristo, nos foi anunciada por aqueles que o ouviram,</p>
+            <p>4 Deus também testificando juntamente com eles, com sinais, e prodígios, e diversos milagres, e repartições do Espírito Santo, segundo a sua vontade?</p>
+            <p>5 Porque não sujeitou ao anjos o mundo vindouro, do qual falamos.</p>
+            <p>6 Mas alguém em certo lugar testificou, dizendo: Que é o homem, para que te lembres dele? ou o filho do homem, para que o visites?</p>
+            <p>7 Tu o fizeste um pouco menor do que os anjos; de glória e de honra o coroaste, e o constituíste sobre as obras das tuas mãos;</p>
+            <p>8 Tudo puseste debaixo dos seus pés. Porque, sujeitando-lhe todas as coisas, nada deixou que não lhe estivesse sujeito. Ora, visto que lhe sujeitou todas as coisas, claramente não deixou nada que não lhe estivesse sujeito.</p>
+            <p>9 Mas vemos a Jesus, que foi feito um pouco menor do que os anjos, por causa do sofrimento da morte, coroado de glória e de honra, para que pela graça de Deus provasse a morte por todos.</p>
+            <p>10 Porque convinha que aquele, por quem são todas as coisas, e por meio de quem subsistem todas as coisas, conduzisse muitos filhos à glória, aperfeiçoando por meio do sofrimento o Autor da salvação deles.</p>
+            <p>11 Porque tanto aquele que santifica como os que são santificados são todos provenientes de um só. Por isso ele não se envergonha de os chamar irmãos,</p>
+            <p>12 Dizendo: Anunciarei o teu nome aos meus irmãos; na congregação te louvarei.</p>
+            <p>13 E outra vez: Porei a minha confiança nele. E outra vez: Eis-me aqui com os filhos que Deus me deu.</p>
+            <p>14 Visto, pois, que os filhos são participantes de carne e sangue, também ele igualmente participou das mesmas coisas, para que, por sua morte, destruísse aquele que tinha o poder da morte, isto é, o diabo,</p>
+            <p>15 E livrasse todos aqueles que, pelo medo da morte, estavam por toda a vida sujeitos à servidão.</p>
+            <p>16 Porque certamente não socorre aos anjos, mas socorre a descendência de Abraão.</p>
+            <p>17 Pelo que convinha que em tudo fosse semelhante aos seus irmãos, para se tornar misericordioso e fiel sumo sacerdote nas coisas referentes a Deus, para fazer propiciação pelos pecados do povo.</p>
+            <p>18 Porque, naquilo em que ele mesmo sofreu, sendo tentado, é poderoso para socorrer os que são tentados.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola a Timóteo 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola a Timóteo 5</h2>
+            <h3>Instruções sobre viúvas (1–16)</h3>
+            <p>1 Não repreendas asperamente o ancião, mas admoesta-o como a pai; aos moços como a irmãos;</p>
+            <p>2 As mulheres idosas, como a mães, às moças, como a irmãs, em toda a pureza.</p>
+            <p>3 Honra as viúvas que verdadeiramente são viúvas.</p>
+            <p>4 Mas, se alguma viúva tiver filhos, ou netos, aprendam primeiro a exercer piedade para com a sua própria família, e a recompensar seus pais; porque isto é bom e agradável diante de Deus.</p>
+            <p>5 Ora, a que é verdadeiramente viúva e desamparada espera em Deus, e persevera de noite e de dia em rogos e orações;</p>
+            <p>6 Mas a que vive em deleites, vivendo está morta.</p>
+            <p>7 Manda, pois, estas coisas, para que elas sejam irrepreensíveis.</p>
+            <p>8 Mas, se alguém não tem cuidado dos seus, e principalmente dos da sua família, negou a fé, e é pior do que o infiel.</p>
+            <p>9 Nunca seja inscrita viúva com menos de sessenta anos, e só a que tenha sido mulher de um só marido;</p>
+            <p>10 Tendo testemunho de boas obras: Se criou os filhos, se exercitou hospitalidade, se lavou os pés aos santos, se socorreu os aflitos, se praticou toda a boa obra.</p>
+            <p>11 Mas não admitas as viúvas mais novas, porque, quando se tornam levianas contra Cristo, querem casar-se;</p>
+            <p>12 Tendo já a sua condenação por haverem aniquilado a primeira fé.</p>
+            <p>13 E, além disto, aprendem também a andar ociosas de casa em casa; e não só ociosas, mas também tagarelas e curiosas, falando o que não convém.</p>
+            <p>14 Quero, pois, que as que são moças se casem, gerem filhos, governem a casa, e não deem ocasião ao adversário de maldizer;</p>
+            <p>15 Porque já algumas se desviaram, indo após Satanás.</p>
+            <p>16 Se algum crente ou alguma crente tem viúvas, socorra-as, e não se sobrecarregue a igreja, para que possa sustentar as que deveras são viúvas.</p>
+
+            <h3>Instruções sobre presbíteros e disciplina (17–25)</h3>
+            <p>17 Os presbíteros que governam bem sejam estimados por dignos de duplicada honra, principalmente os que trabalham na palavra e na doutrina;</p>
+            <p>18 Porque diz a Escritura: Não ligarás a boca ao boi que debulha. E: Digno é o obreiro do seu salário.</p>
+            <p>19 Não aceites acusação contra o presbítero, senão com duas ou três testemunhas.</p>
+            <p>20 Aos que pecarem, repreende-os na presença de todos, para que também os outros tenham temor.</p>
+            <p>21 Conjuro-te diante de Deus, e do Senhor Jesus Cristo, e dos anjos eleitos, que sem prevenção guardes estas coisas, nada fazendo por parcialidade.</p>
+            <p>22 A ninguém imponhas precipitadamente as mãos, nem participes dos pecados alheios; conserva-te a ti mesmo puro.</p>
+            <p>23 Não bebas mais água só, mas usa de um pouco de vinho, por causa do teu estômago e das tuas frequentes enfermidades.</p>
+            <p>24 Os pecados de alguns homens são manifestos, precedendo o juízo; e em alguns manifestam-se depois.</p>
+            <p>25 Assim mesmo também as boas obras são manifestas, e as que são de outra maneira não podem ocultar-se.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1timoteo4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1timoteo6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

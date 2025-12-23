@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 1</h2>
+            <h3>A supremacia de Cristo (1–14)</h3>
+            <p>1 Deus, havendo antigamente falado muitas vezes, e de muitas maneiras, aos pais, pelos profetas,</p>
+            <p>2 Nestes últimos dias, nos falou pelo Filho, a quem constituiu herdeiro de todas as coisas, por quem fez também o mundo;</p>
+            <p>3 O qual, sendo o resplendor da sua glória, e a expressa imagem da sua pessoa, e sustentando todas as coisas pela palavra do seu poder, havendo feito por si mesmo a purificação dos nossos pecados, assentou-se à destra da Majestade nas alturas;</p>
+            <p>4 Feito tanto superior aos anjos quanto herdou mais excelente nome do que eles.</p>
+            <p>5 Porque a qual dos anjos disse jamais: Tu és meu Filho, eu hoje te gerei? E outra vez: Eu lhe serei por Pai, e ele me será por Filho?</p>
+            <p>6 E outra vez, quando introduz o Primogênito no mundo, diz: E todos os anjos de Deus o adorem.</p>
+            <p>7 E aos anjos diz: Que é o homem, para que te lembres dele? ou o filho do homem, para que o visites?</p>
+            <p>8 Tu, porém, Senhor, permaneces para sempre; o teu trono é de geração em geração.</p>
+            <p>9 Tu amas a justiça, e odeias a iniquidade; por isso Deus, o teu Deus, te ungiu com óleo de alegria mais do que a teus companheiros.</p>
+            <p>10 E: Tu, Senhor, no princípio fundaste a terra, e os céus são obra de tuas mãos;</p>
+            <p>11 Eles perecerão, mas tu permaneces; e todos eles envelhecerão como uma veste;</p>
+            <p>12 E como um manto os enrolarás, como roupa os mudarás; mas tu és o mesmo, e os teus anos nunca acabarão.</p>
+            <p>13 E a qual dos anjos disse jamais: Assenta-te à minha direita, até que eu ponha os teus inimigos por estrado de teus pés?</p>
+            <p>14 Não são todos eles espíritos ministradores, enviados para servir a favor daqueles que hão de herdar a salvação?</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/filemon1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

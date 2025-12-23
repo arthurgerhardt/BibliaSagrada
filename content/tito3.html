@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola a Tito 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola a Tito 3</h2>
+            <h3>Instruções finais e saudações (1–15)</h3>
+            <p>1 Lembra-lhes que se sujeitem aos governantes e às autoridades, que sejam obedientes, prontos para toda boa obra,</p>
+            <p>2 Que não falem mal de ninguém, que sejam pacíficos, cordatos, mostrando toda humildade para com todos os homens.</p>
+            <p>3 Porque também nós éramos no passado insensatos, desobedientes, extraviados, servos de concupiscências e prazeres diversos, vivendo em malícia e inveja, odiando-nos uns aos outros.</p>
+            <p>4 Mas quando se manifestou a bondade de Deus, nosso Salvador, e o seu amor para com os homens,</p>
+            <p>5 Ele nos salvou, não por obras de justiça que houvéssemos feito, mas segundo a sua misericórdia, pelo lavar regenerador e renovador do Espírito Santo,</p>
+            <p>6 O qual derramou abundantemente sobre nós por Jesus Cristo, nosso Salvador,</p>
+            <p>7 Para que, justificados pela sua graça, fôssemos feitos herdeiros segundo a esperança da vida eterna.</p>
+            <p>8 Esta palavra é fiel; e quero que a insistas estas coisas, para que os que creem em Deus sejam cuidadosos em praticar boas obras. Estas coisas são boas e proveitosas aos homens.</p>
+            <p>9 Mas evita as questões loucas, e genealogias, e contendas, e contendas sobre a lei; porque são coisas inúteis e vãs.</p>
+            <p>10 Aquele que é subversivo, depois de uma e outra admoestação, evita-o,</p>
+            <p>11 Sabendo que tal pessoa está pervertida, e peca, estando a si mesma condenada.</p>
+            <p>12 Quando eu te enviar a Artemas ou a Tíquico, esforça-te por vir ter comigo logo para Nicópolis; porque decidi passar o inverno ali.</p>
+            <p>13 Esforça-te por vir antes do inverno a mim, quando eu for a Dalmácia.</p>
+            <p>14 Procura também que Zenas, o advogado, e Apolo sejam providos de tudo ou necessitem.</p>
+            <p>15 Todos os que estão comigo te saúdam. Saúda os que nos amam na fé. A graça seja com todos vós. Amém.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/tito2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/filemon1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola a Timóteo 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola a Timóteo 3</h2>
+            <h3>Requisitos para bispos e diáconos (1–13)</h3>
+            <p>1 Esta é uma palavra fiel: se alguém deseja o episcopado, excelente obra deseja.</p>
+            <p>2 É necessário, pois, que o bispo seja irrepreensível, marido de uma mulher, vigilante, sóbrio, honesto, hospitaleiro, apto para ensinar;</p>
+            <p>3 Não dado ao vinho, não espancador, não cobiçoso de torpe ganância, mas moderado, não contencioso, não avarento;</p>
+            <p>4 Que governe bem a sua própria casa, tendo seus filhos em sujeição, com toda a modéstia</p>
+            <p>5 (Porque, se alguém não sabe governar a sua própria casa, como terá cuidado da igreja de Deus?);</p>
+            <p>6 Não neófito, para que, ensoberbecendo-se, não caia na condenação do diabo.</p>
+            <p>7 É necessário também que tenha bom testemunho dos que estão de fora, para que não caia em afronta, e no laço do diabo.</p>
+            <p>8 Da mesma sorte os diáconos sejam honestos, não de língua dobre, não dados a muito vinho, não cobiçosos de torpe ganância;</p>
+            <p>9 Guardando o mistério da fé numa consciência pura.</p>
+            <p>10 E também estes sejam primeiro provados, depois sirvam, se forem irrepreensíveis.</p>
+            <p>11 Da mesma sorte as esposas sejam honestas, não maldizentes, sóbrias e fiéis em tudo.</p>
+            <p>12 Os diáconos sejam maridos de uma só mulher, e governem bem a seus filhos e suas próprias casas.</p>
+            <p>13 Porque os que servirem bem como diáconos, adquirirão para si uma boa posição e muita confiança na fé que há em Cristo Jesus.</p>
+
+            <h3>Propósito de Paulo e o mistério da piedade (14–16)</h3>
+            <p>14 Escrevo-te estas coisas, esperando ir ver-te bem depressa;</p>
+            <p>15 Mas, se tardar, para que saibas como convém andar na casa de Deus, que é a igreja do Deus vivo, a coluna e firmeza da verdade.</p>
+            <p>16 E, sem dúvida alguma, grande é o mistério da piedade: Deus se manifestou em carne, foi justificado no Espírito, visto dos anjos, pregado aos gentios, crido no mundo, recebido acima na glória.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1timoteo2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1timoteo4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

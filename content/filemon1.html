@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola a Filemom 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola a Filemom 1</h2>
+            <h3>Apelo por Onésimo (1–25)</h3>
+            <p>1 Paulo, prisioneiro de Cristo Jesus, e Timóteo, irmão, a Filemom, amado e nosso cooperador,</p>
+            <p>2 E a Áfia, nossa irmã, e a Arquipo, nosso companheiro de luta, e à igreja que está em tua casa:</p>
+            <p>3 Graça a vós, e paz da parte de Deus nosso Pai, e do Senhor Jesus Cristo.</p>   
+            <p>4 Dou graças ao meu Deus, fazendo menção de ti nas minhas orações,</p>
+            <p>5 Ouvindo falar do teu amor e da fé que tens para com o Senhor Jesus, e para com todos os santos,</p>
+            <p>6 Para que a comunhão da tua fé se torne eficaz no pleno conhecimento de todo o bem que está em nós por Cristo Jesus.</p>
+            <p>7 Porque tive grande alegria e consolação do teu amor, porquanto os corações dos santos foram por ti consolados, irmão.</p>
+            <p>8 Pelo que, ainda que tenha muita liberdade em Cristo para te mandar o que convém,</p>
+            <p>9 Prefiro, porém, rogar-te por amor, sendo eu talvez também prisioneiro por causa de Cristo Jesus.</p>
+            <p>10 Rogo-te por meu filho Onésimo, que gerei nas minhas prisões,</p>
+            <p>11 O qual outrora te foi inútil, mas agora é útil tanto para ti como para mim.</p>
+            <p>12 A quem eu remeti a ti; tu, pois, o recebe como a mim mesmo.</p>
+            <p>13 Eu, que de ti devia receber alguma coisa, não o quis reter, para que não fosses tu obrigado, antes, por tua vontade o tens recebido,</p>
+            <p>14 Pelo que muito mais o recebereis, para além do que é justo,</p>
+            <p>15 Porque talvez por isto se apartou de ti por algum tempo, para que o recebesses para sempre,</p>
+            <p>16 Não já como servo, mas acima de servo, como irmão amado, especialmente para mim, mas quanto mais para ti, tanto na carne como no Senhor.</p>
+            <p>17 Se, pois, me tens por companheiro, recebe-o como a mim mesmo.</p>
+            <p>18 E, se em alguma coisa te ofendeu, ou te deve alguma coisa, lança isso sobre minha conta.</p>
+            <p>19 Eu, Paulo, o escrevi de meu punho; eu o pagarei, para não te dizer que também a ti mesmo me deves.</p>
+            <p>20 Sim, irmão, que eu tenha proveito em ti no Senhor; conforta o meu coração em Cristo.</p>
+            <p>21 Confio na tua obediência, sabendo que farás ainda mais do que digo.</p>
+            <p>22 E também prepara-me pousada, porque espero que, pelas vossas orações, vos heia de dar graças.</p>
+            <p>23 Saúdam-te Epafras, meu companheiro de prisão em Cristo Jesus,</p>
+            <p>24 Marcos, Aristarco, Demas e Lucas, meus cooperadores.</p>
+            <p>25 A graça de nosso Senhor Jesus Cristo seja com o vosso espírito. Amém.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/tito3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
