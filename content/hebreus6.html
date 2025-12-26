@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 6</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 6</h2>
+            <h3>Exortação à maturidade espiritual (1–8)</h3>
+            <p>1 Portanto, deixando os rudimentos da doutrina de Cristo, prossiguamos para a perfeição, não lançando de novo o fundamento do arrependimento de obras mortas, e da fé em Deus,</p>
+            <p>2 da doutrina dos batismos, e da imposição de mãos, e da ressurreição dos mortos, e do juízo eterno.</p>
+            <p>3 E faremos isto, se Deus permitir.</p>
+            <p>4 Porque é impossível que os que uma vez foram iluminados, e provaram o dom celestial, e se tornaram participantes do Espírito Santo,</p>    
+            <p>5 e provaram a boa palavra de Deus, e os poderes do século vindouro,</p>
+            <p>6 e caíram, sejam outra vez renovados para arrependimento, visto que para si mesmos crucificam de novo o Filho de Deus, e o expõem à vitupério.</p>
+            <p>7 Porque a terra que bebe a chuva que frequentemente cai sobre ela, e produz erva proveitosa para aqueles por quem é cultivada, recebe bênção de Deus;</p>
+            <p>8 mas a terra que produz espinhos e abrolhos é rejeitada, e perto dela está a maldição, cujo fim é ser queimada.</p>
+            <h3>A certeza da esperança (9–20)</h3>
+            <p>9 Mas, amados, estamos certos de coisas melhores a vosso respeito, e coisas que acompanham a salvação, ainda que assim falamos.</p>
+            <p>10 Porque Deus não é injusto para se esquecer do vosso trabalho e do amor que mostrastes para com o seu nome, servindo aos santos e servindo ainda.</p>
+            <p>11 E desejamos que cada um de vós mostre o mesmo diligência para a plena certeza da esperança até ao fim,</p>
+            <p>12 para que não vos torneis negligentes, mas imitadores daqueles que, pela fé e pela paciência, herdam as promessas.</p>
+            <p>13 Porque, quando Deus fez a promessa a Abraão, como não podia jurar por maior, jurou por si mesmo,</p>
+            <p>14 dizendo: Certamente te abençoarei, e multiplicarei grandemente.</p>
+            <p>15 E assim, esperando com paciência, Abraão alcançou a promessa.</p>
+            <p>16 Porque os homens juram por alguém maior do que eles mesmos, e o juramento para confirmação é a fim de ser firme para com todos os herdeiros a promessa.</p>
+            <p>17 Assim Deus, querendo mostrar com mais clareza aos herdeiros da promessa a imutabilidade do seu propósito, interveio com um juramento;</p>
+            <p>18 para que, por duas coisas imutáveis, nas quais é impossível que Deus minta, tenhamos forte consolação, nós, os que temos recorrido para nos apegar à esperança proposta;</p>
+            <p>19 a qual temos como âncora da alma, segura e firme, e que penetra até ao interior do véu,</p>
+            <p>20 onde Jesus, nosso precursor, entrou por nós, feito sumo sacerdote para sempre, segundo a ordem de Melquisedeque.</p>
+        
+        
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus7.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

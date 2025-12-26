@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 7</h2>
+            <h3>Melquisedeque, sumo sacerdote para sempre (1–28)</h3>
+            <p>1 Porque este Melquisedeque, rei de Salém, sacerdote do Deus Altíssimo, que saiu ao encontro de Abraão, quando este voltava da matança dos reis, e o abençoou,</p>
+            <p>2 a quem também Abraão deu o dízimo de tudo, primeiramente é, por tradução, rei de justiça, e depois também é rei de Salém, que é rei de paz;</p>
+            <p>3 sem pai, sem mãe, sem genealogia, não tendo princípio de dias nem fim de vida, mas feito semelhante ao Filho de Deus, permanece sacerdote para sempre.</p>
+            <p>4 Considerai, pois, quão grande este era, a quem até o patriarca Abraão deu o dízimo dos despojos.</p>
+            <p>5 E certamente os que dentre os filhos de Levi recebem o sacerdócio têm mandamento, segundo a lei, de tomar o dízimo do povo, isto é, dos seus irmãos, ainda que estes também tenham saído dos lombos de Abraão;</p>
+            <p>6 mas aquele cuja genealogia não é contada dentre eles, tomou dízimos de Abraão, e abençoou o que tinha as promessas.</p>
+            <p>7 E sem controvérsia, o menor é abençoado pelo maior.</p>
+            <p>8 E aqui certamente recebem dízimos homens que morrem; ali, porém, aquele de quem se testifica que vive.</p>
+            <p>9 E, por assim dizer, através de Abraão, até Levi, que recebe os dízimos, pagou dízimos;</p>
+            <p>10 porque ainda estava nos lombos de seu pai, quando Melquisedeque lhe saiu ao encontro.</p>
+            <p>11 Se, pois, a perfeição fosse por meio do sacerdócio levítico (porque sobre ele se fez a lei ao povo), que necessidade haveria ainda de que se levantasse outro sacerdote, segundo a ordem de Melquisedeque, e não fosse chamado segundo a ordem de Arão?</p>
+            <p>12 Porque, mudando-se o sacerdócio, necessariamente se faz também mudança da lei.</p>
+            <p>13 Porque aquele de quem estas coisas se dizem pertence a outra tribo, da qual ninguém serviu ao altar.</p>
+            <p>14 Porque é manifesto que nosso Senhor nasceu da tribo de Judá, da qual nada disse Moisés a respeito do sacerdócio.</p>
+            <p>15 E é ainda mais manifesto, se outro sacerdote se levanta, segundo a semelhança de Melquisedeque,</p>
+            <p>16 o qual não foi feito segundo a lei do mandamento carnal, mas segundo o poder da vida indissolúvel;</p>
+            <p>17 porque dele se testifica: Tu és sacerdote para sempre, segundo a ordem de Melquisedeque.</p>
+            <p>18 Porque, abolindo-se o mandamento anterior por causa da sua fraqueza e inutilidade,</p>
+            <p>19 pois a lei nada aperfeiçoou, introduziu-se uma melhor esperança, pela qual nos aproximamos de Deus.</p>
+            <p>20 E, na verdade, aquele de quem estas coisas se dizem, pertence a outro sacerdócio, ao qual foram feitas promessas melhores.</p>
+            <p>21 Porque, àquele de quem estas coisas se dizem, jurou Deus: O Senhor o jurou e não se arrependerá: Tu és sacerdote para sempre, segundo a ordem de Melquisedeque.</p>
+            <p>22 Pelo que Jesus é o fiador de um pacto melhor.</p>
+            <p>23 E os outros sacerdotes se fizeram muitos, porquanto a morte os impedia de continuar;</p>
+            <p>24 mas este, porque permanece para sempre, tem um sacerdócio imutável.</p>
+            <p>25 Pelo que pode também salvar perfeitamente os que por ele se chegam a Deus, vivendo sempre para interceder por eles.</p>
+            <p>26 Porque convinha que tivéssemos um sumo sacerdote assim, santo, inocente, imaculado, separado dos pecadores, e feito mais sublime do que os céus;</p>
+            <p>27 o qual não tem necessidade, como os outros sumos sacerdotes, de oferecer sacrifícios dia após dia, primeiro por seus próprios pecados, e depois pelos do povo; porque isto o fez uma vez por todas, oferecendo a si mesmo.</p>
+            <p>28 Porque a lei constitui sumo sacerdote aquele que tem imperfeições, mas a palavra do juramento, que veio depois da lei, constitui o Filho, perfeito para sempre.</p>
+        
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

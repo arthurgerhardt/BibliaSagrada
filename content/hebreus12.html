@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 12</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 12</h2>
+            <h3>A corrida da fé (1–3)</h3>
+            <p>1 Portanto, nós também, visto que estamos rodeados por tão grande numéro de testemunhas, deixemos todo peso e o pecado que tão de perto nos rodeia, e corramos com perseverança a carreira que nos está proposta,</p>
+            <p>2 olhando para Jesus, autor e consumador da fé, o qual, pelo gozo que lhe estava proposto, suportou a cruz, desprezando a afronta, e assentou-se à direita do trono de Deus.</p>
+            <p>3 Considerai aquele que suportou tal oposição dos pecadores contra si mesmo, para que não vos canseis nem desanimais.</p>
+            <h3>A disciplina do Senhor (4–11)</h3>
+            <p>4 Porque ainda não resististes até ao sangue, combatendo contra o pecado;</p>
+            <p>5 e já vos esquecestes da exortação que vos fala como a filhos: Filho meu, não desprezes a correção do Senhor, nem te enfades quando por ele fores repreendido;</p>
+            <p>6 porque o Senhor corrige aquele a quem ama, e açoita a todo filho a quem recebe.</p>
+            <p>7 Suportai, pois, a correção, para que Deus vos trate como filhos; porque qual é o filho a quem o pai não corrige?</p>
+            <p>8 Mas, se estais sem correção, da qual todos são feitos participantes, sois, então, bastardos e não filhos.</p>
+            <p>9 Além do mais, tivemos nossos pais segundo a carne, os quais nos corrigiam, e os venerávamos; por que não nos sujeitaremos muito mais ao Pai dos espíritos, para vivermos?</p>
+            <p>10 Porque aqueles, na verdade, por poucos dias nos corrigiam, segundo lhes parecia; mas este, para nosso proveito, para que participássemos da sua santidade.</p>
+            <p>11 Na verdade, nenhuma correção parece ser motivo de gozo no momento, mas de tristeza; depois, porém, produz um fruto pacífico de justiça nos exercitados por ela.</p>   
+            <h3>Exortação final (12–17)</h3>
+            <p>12 Portanto, levantai as mãos cansadas e os joelhos desconjuntados;</p>
+            <p>13 e fazei veredas direitas para os vossos pés, para que o manco não se desvie, antes seja curado.</p>
+            <p>14 Segui a paz com todos, e a santificação, sem a qual ninguém verá o Senhor;</p>
+            <p>15 olhando para que ninguém deixe de alcançar a graça de Deus, e que nenhuma raiz de amargura brote e vos perturbe, e por ela muitos sejam contaminados;</p>
+            <p>16 para que nenhum fornicador, ou profano, como Esaú, que por um prato de comida vendeu o seu direito de primogenitura.</p>
+            <p>17 Porque bem sabeis que, depois, querendo herdar a bênção, foi rejeitado; porque não achou lugar para o arrependimento, embora o buscasse com lágrimas.</p>
+            <h3>A aliança nova e superior (18–29)</h3>
+            <p>18 Porque não chegastes a um monte que se possa tocar, e que ardia em fogo, nem a trevas, e escuridão, e tempestade,</p>
+            <p>19 e ao som de trombeta, e à voz de palavras, as quais os que as ouviram rogaram que não lhes fossem mais faladas;</p>
+            <p>20 porque não puderam suportar o que se lhes ordenava: Se até mesmo um animal tocar o monte, certamente será apedrejado.</p>
+            <p>21 E tão terrível era a visão, que Moisés disse: Estou todo tremendo.</p>
+            <p>22 Mas chegastes ao monte Sião, à cidade do Deus vivo, à Jerusalém celestial, e a miríades de anjos,</p>
+            <p>23 à congregação dos primogênitos, que estão inscritos nos céus, e a Deus, o juiz de todos, e aos espíritos dos justos aperfeiçoados,</p>
+            <p>24 e a Jesus, o mediador do novo pacto, e ao sangue da aspersão, que fala melhor do que o de Abel.</p>
+            <p>25 Vede que não rejeiteis aquele que vos fala; porque, se aqueles não escaparam que rejeitaram o que os advertia na terra, muito menos nós, se nos desviarmos daquele que do céu nos adverte;</p>
+            <p>26 cuja voz então abalou a terra, mas agora ele nos prometeu, dizendo: Ainda uma vez abalo não só a terra, mas também o céu.</p>
+            <p>27 Ora, esta expressão: Ainda uma vez, indica a remoção das coisas que podem ser abaladas, como sendo feitas, para que fiquem as que não podem ser abaladas.</p>
+            <p>28 Portanto, recebendo nós um reino inabalável, retenhamos a graça, pela qual sirvamos a Deus agradavelmente, com reverência e temor;</p>
+            <p>29 porque o nosso Deus é fogo consumidor.</p>    
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus11.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus13.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

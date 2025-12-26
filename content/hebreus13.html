@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 13</h2>
+            <h3>Exortações finais (1–25)</h3>
+            <p>1 Permaneça o amor fraternal.</p>
+            <p>2 Não vos esqueçais da hospitalidade, porque por ela alguns, sem o saberem, hospedaram anjos.</p>
+            <p>3 Lembrai-vos dos presos, como se estivésseis presos com eles; e dos maltratados, como sendo também vós mesmos no corpo.</p>
+            <p>4 Venerado seja entre todos o matrimônio e o leito sem mácula; porque Deus julgará os impuros e adúlteros.</p>
+            <p>5 Seja a vossa vida sem avareza, contentando-vos com o que tendes; porque ele disse: De maneira alguma te deixarei, nunca jamais te abandonarei.</p>
+            <p>6 Assim, como podemos dizer com confiança: O Senhor é o meu ajudador, e não temerei o que me possa fazer o homem?</p>
+            <p>7 Lembrai-vos dos vossos pastores, que vos falaram a palavra de Deus; considerando atentamente o resultado da sua vida, imitai a sua fé.</p>
+            <p>8 Jesus Cristo é o mesmo ontem, e hoje, e eternamente.</p>
+            <p>9 Não vos deixeis levar por doutrinas diversas e estranhas; porque é bom que o coração seja fortalecido com a graça, e não com alimentos, que de nada aproveitaram aos que a eles se entregaram.</p>
+            <p>10 Temos um altar, do qual não têm direito de comer os que servem ao tabernáculo.</p>
+            <p>11 Porque os corpos dos animais, cujo sangue é trazido pelo sumo sacerdote ao santuário para expiação dos pecados, são queimados fora do acampamento.</p>
+            <p>12 Por isso também Jesus, para santificar o povo pelo seu próprio sangue, padeceu fora da porta.</p>
+            <p>13 Saiamos, pois, a ele fora do acampamento, levando o seu vitupério.</p>
+            <p>14 Porque não temos aqui cidade permanente, mas buscamos a futura.</p>
+            <p>15 Por meio dele, pois, ofereçamos continuamente a Deus sacrifício de louvor, isto é, o fruto dos lábios que confessam o seu nome.</p>
+            <p>16 E não vos esqueçais da beneficência e comunicação, porque com tais sacrifícios Deus se agrada.</p>
+            <p>17 Obedecei aos vossos pastores, e sujeitai-vos a eles; porque velam por vossas almas, como quem há de prestar contas; para que o façam com alegria, e não gemendo, porque isso não vos seria útil.</p>
+            <p>18 Orai por nós; porque estamos certos de que temos boa consciência, desejando em tudo viver honestamente.</p>
+            <p>19 Mas muito mais vos exorto a isso, para que eu seja restaurado a vós mais depressa.</p>
+            <p>20 Ora, o Deus de paz, que trouxe dentre os mortos a nosso Senhor Jesus, o grande pastor das ovelhas, pelo sangue do pacto eterno,</p>
+            <p>21 vos aperfeiçoe em toda boa obra, para fazerdes a sua vontade, operando em vós o que é agradável diante dele, por Jesus Cristo; ao qual seja glória para todo o sempre. Amém.</p>
+            <p>22 E vos exorto, irmãos, que aceitem esta palavra de exortação; porque por ela vos escrevi brevemente.</p>
+            <p>23 Sabei que o nosso irmão Timóteo foi libertado; com ele, se chegarr logo, verei-vos.</p>
+            <p>24 Saudai todos os vossos pastores e todos os santos. Os da Itália vos saúdam.</p>
+            <p>25 A graça seja com todos vós. Amém.</p>  
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/tiago1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

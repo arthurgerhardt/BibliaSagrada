@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 5</h2>
+            <h3>O sumo sacerdote segundo a ordem de Melquisedeque (1–10)</h3>
+            <p>1 Porque todo sumo sacerdote, tomado dentre os homens, é constituído em favor dos homens nas coisas que dizem respeito a Deus, para oferecer dons e sacrifícios pelos pecados;</p>
+            <p>2 podendo compadecer-se dos ignorantes e dos que se desviam, visto que ele mesmo também está rodeado de fraquezas;</p>
+            <p>3 e, por causa disso, deve oferecer sacrifícios pelos pecados, tanto por si mesmo como pelo povo.</p>
+            <p>4 E ninguém toma para si esta honra, senão o que é chamado por Deus, como Arão.</p>
+            <p>5 Assim também Cristo não se gloriou a si mesmo para se tornar sumo sacerdote, mas o que lhe disse: Tu és meu Filho, eu hoje te gerei;</p>
+            <p>6 como também em outro lugar diz: Tu és sacerdote para sempre, segundo a ordem de Melquisedeque.</p>
+            <p>7 O qual, nos dias da sua carne, oferecendo súplicas e orações com grande clamor e lágrimas ao que podia livrá-lo da morte, foi ouvido por causa da sua reverência.</p>
+            <p>8 Embora sendo Filho, aprendeu a obediência por meio do que padeceu;</p>
+            <p>9 e, sendo aperfeiçoado, tornou-se a causa da salvação eterna para todos os que lhe obedecem,</p>
+            <p>10 sendo por Deus designado sumo sacerdote segundo a ordem de Melquisedeque.</p> 
+            <h3>A imaturidade espiritual dos hebreus (11–14)</h3>
+            <p>11 Sobre isto temos muito que dizer, e difícil de explicar, visto que vos tornastes tardios para ouvir.</p>
+            <p>12 Porque, devendo já ser mestres, necessitais de alguém que vos ensine novamente os primeiros rudimentos das palavras de Deus; e vos tornastes tais que necessitais de leite, e não de alimento sólido.</p>
+            <p>13 Porque todo aquele que se alimenta de leite é inexperiente na palavra da justiça, porque é menino;</p>
+            <p>14 mas o alimento sólido é para os que são de idade avançada, para os quais a prática tornou aptos para discernir tanto o bem como o mal.</p>
+        
+        
+        
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus6.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

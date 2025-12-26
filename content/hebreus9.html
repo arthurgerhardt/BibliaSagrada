@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Epístola aos Hebreus 9</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Epístola aos Hebreus 9</h2>
+            <h3>O santuário terrestre e o celestial (1–14)</h3>
+            <p>1 Ora, o primeiro pacto tinha também ordenanças para o culto e um santuário terreno.</p>
+            <p>2 Porque havia o tabernáculo, o qual tinha o primeiro compartimento, chamado o Lugar Santo, e o segundo, chamado o Lugar Santíssimo,</p>
+            <p>3 o qual tinha um véu que o separava;</p>
+            <p>4 no qual havia o altar de ouro para o incenso, e o candelabro de ouro com as suas lâmpadas, e a mesa com os pães da proposição; o qual se chamava o Lugar Santo.</p>
+            <p>5 E por trás do segundo véu estava o tabernáculo chamado o Lugar Santíssimo,</p>
+            <p>6 o qual tinha um altar de ouro para os sacrifícios, e a arca do pacto coberta de ouro por todos os lados, na qual estava o maná, e a vara de Arão que floresceu, e as tábuas do pacto;</p>
+            <p>7 e sobre a arca estavam os querubins da glória, que cobriam o propiciatório; sobre o qual não entrarei agora para falar.</p>
+            <p>8 Estas coisas, assim dispostas, estavam sendo ministradas ao exemplo e sombra das coisas celestiais, como Moisés foi instruído por Deus, quando estava para fazer o tabernáculo. Ora, não entraremos agora em detalhes.</p>
+            <p>9 As quais são figuras dos bens futuros, mas o corpo mesmo é deleitoso.</p>
+            <p>10 Porque por estas coisas se oferecem continuamente dons e sacrifícios, que não podem aperfeiçoar a consciência daquele que faz o culto,</p>
+            <p>11 mas, vindo Cristo como sumo sacerdote dos bens futuros, por um maior e mais perfeito tabernáculo, não feito por mãos, isto é, não desta criação,</p>
+            <p>12 nem por meio de sangue de bodes e bezerros, mas por meio do seu próprio sangue, entrou uma vez por todas no Santo dos Santos, tendo obtido eterna redenção.</p>
+            <p>13 Porque, se o sangue de bodes e touros, e as cinzas de uma novilha aspergidas sobre os imundos, os santificam para a purificação da carne,</p>
+            <p>14 quanto mais o sangue de Cristo, que pelo Espírito eterno se ofereceu a si mesmo imaculado a Deus, purificará a nossa consciência das obras mortas, para servirmos ao Deus vivo?</p>
+            <h3>O sacrifício de Cristo e a nova aliança (15–28)</h3>
+            <p>15 Pelo que ele é mediador de um novo pacto, para que, intervindo a morte para remissão das transgressões que havia sob o primeiro pacto, os chamados recebam a promessa da herança eterna.</p>
+            <p>16 Porque onde há testamento, é necessário que intervenha a morte do testador.</p>
+            <p>17 Porque um testamento só é válido depois da morte; visto que nunca tem força enquanto o testador vive.</p>
+            <p>18 Por isso nem mesmo o primeiro pacto foi inaugurado sem sangue.</p>
+            <p>19 Porque, tendo Moisés proclamado todas as ordenanças da lei ao povo, tomou o sangue dos bezerros e dos bodes, com água, e lã tingida de escarlate, e hissopo, e aspergiu tanto o livro como todo o povo,</p>
+            <p>20 dizendo: Este é o sangue do pacto que Deus vos ordenou.</p>
+            <p>21 E da mesma maneira aspergiu com o sangue o tabernáculo e todos os utensílios do ministério.</p>
+            <p>22 E quase todas as coisas, segundo a lei, são purificadas com sangue; e sem derramamento de sangue não há remissão.</p>
+            <p>23 Portanto, era necessário que as figuras das coisas celestiais fossem purificadas com tais sacrifícios; mas as próprias coisas celestiais, com sacrifícios superiores a estes.</p>
+            <p>24 Porque Cristo não entrou em santuário feito por mãos, figura do verdadeiro, mas no próprio céu, para agora comparecer por nós perante a face de Deus.</p>
+            <p>25 E não para se oferecer muitas vezes, como o sumo sacerdote entra no Santo dos Santos, todo ano com sangue alheio;</p>
+            <p>26 pois então teria sido necessário que ele sofresse muitas vezes desde a fundação do mundo; mas agora, uma vez por todas, à consumação dos séculos, se manifestou para aniquilar o pecado pelo sacrifício de si mesmo.</p>
+            <p>27 E, como aos homens está ordenado morrerem uma só vez, e depois disso vem o juízo,</p>
+            <p>28 assim também Cristo, tendo sido oferecido uma vez para levar os pecados de muitos, aparecerá segunda vez, sem pecado, aos que o esperam para salvação.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/hebreus8.html">Capítulo Anterior</a>
+            <a class="button" href="../content/hebreus10.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
