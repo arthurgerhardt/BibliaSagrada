@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Epístola de Pedro 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola de Pedro 3</h2>
+            <h3>A certeza da vinda do Senhor (1–13)</h3>
+            <p>1 Amados, esta é já a segunda carta que vos escrevo,a qual contém alguns assuntos difíceis de entender, os quais os indoutos e inconstantes torcem, como também fazem com as outras Escrituras, para sua própria perdição.</p>
+            <p>2 Pelo que vos lembro, ainda que já saibais estas coisas, que o Senhor, na sua misericórdia, vos deu o ministério de anunciar a sua palavra;</p>
+            <p>3 Sabendo primeiramente isto: que nos últimos dias virão escarnecedores, andando segundo as suas próprias concupiscências,</p>
+            <p>4 E dizendo: Onde está a promessa da sua vinda? Porque desde que os pais dormiram, todas as coisas permanecem como desde o princípio da criação.</p>
+            <p>5 Porque eles voluntariamente se esquecem de que, desde a criação do mundo, os céus existiram pela palavra de Deus, e a terra, que foi formada da água e por meio da água,</p>
+            <p>6 Pela qual também o mundo de então foi destruído,, sendo inundado com água.</p>
+            <p>7 Mas os céus e a terra que agora existem, pela mesma palavra estão reservados para o fogo, para o dia do juízo e da perdição dos homens ímpios.</p>
+            <p>8 Mas vós, amados, não ignoreis uma coisa: que um dia para o Senhor é como mil anos, e mil anos como um dia.</p>
+            <p>9 O Senhor não retarda a sua promessa, como alguns a têm por tardança; mas é longânimo para convos, não querendo que alguns se percam, senão que todos venham a arrepender-se.</p>
+            <p>10 Mas o dia do Senhor virá como ladrão; no qual os céus passarão com grande estrondo, e os elementos, ardendo, se desfarão, e a terra e as obras que nela há serão queimadas.</p>
+            <p>11 Visto que todas estas coisas hão de ser assim desfeitas, que pessoas deveis ser vós em santo procedimento e piedade,</p>
+            <p>12 Aguardando e apressando-vos para a vinda do dia de Deus, em que os céus, em fogo, se desfarão, e os elementos, ardendo, se fundirão?</p>
+            <p>13 Mas nós, segundo a sua promessa, aguardamos novos céus e nova terra, nos quais habita a justiça.</p>
+            <h3>Exortação final (14–18)</h3>
+            <p>14 Portanto, amados, aguardando estas coisas, procurai ser achados por ele em paz, imaculados e irrepreensíveis.</p>
+            <p>15 E tende por salvação a longanimidade de nosso Senhor, como também o nosso amado irmão Paulo, segundo a sabedoria que lhe foi dada, vos escreveu,</p>
+            <p>16 Como também em todas as suas epístolas, falando nelas acerca destas coisas; nas quais há algumas coisas difíceis de entender, as quais os indoutos e inconstantes torcem, como também fazem com as outras Escrituras, para sua própria perdição.</p>
+            <p>17 Vós, pois,, amados, sabendo isto de antemão, guardai-vos para que não sejais levados pelo erro dos ímpios, e caiais da vossa firmeza.</p>
+            <p>18 Antes crescei na graça e conhecimento de nosso Senhor e Salvador Jesus Cristo. A ele seja a glória, assim agora, como no dia da eternidade. Amém.</p> 
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2pedro2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1joao1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

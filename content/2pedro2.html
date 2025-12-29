@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Epístola de Pedro 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola de Pedro 2</h2>
+            <h3>Falsos mestres e suas heresias (1–22)</h3>
+            <p>1 Mas houve também falsos profetas entre o povo, como entre vós haverá também falsos mestres, os quais introduzirão encobertamente heresias destruidoras, e negarão o Senhor que os resgatou, trazendo sobre si mesmos repentina perdição.</p>
+            <p>2 E muitos seguirão as suas dissoluções, pelos quais será blasfemado o caminho da verdade.</p>
+            <p>3 E, por avareza, farão de vós negócio com palavras fingidas; sobre os quais já de longo tempo a sentença não tarda, e a sua perdição não dormita.</p>   
+            <p>4 Porque, se Deus não poupou os anjos que pecaram, mas, havendo-os lançado no inferno, os entregou às cadeias da escuridão, para serem reservados ao juízo;</p>
+            <p>5 E não poupou o mundo antigo, mas guardou a Noé, pregador da justiça, com mais sete pessoas, quando trouxe o dilúvio sobre o mundo dos ímpios;</p>
+            <p>6 E condenou as cidades de Sodoma e Gomorra, reduzindo-as a cinzas, e as entregou como exemplo aos que depois haviam de viver impiamente;</p>
+            <p>7 E livrou o justo Ló, aflito pela dissolução daqueles homens lascivos</p>
+            <p>8 (pois aquele justo, que habitava entre eles, de dia afligia a sua alma justa, vendo e ouvindo as suas obras ímpias);</p>
+            <p>9 O Senhor sabe livrar da tentação os piedosos e reservar os injustos para o dia do juízo, para serem punidos;</p>
+            <p>10 Especialmente os que andam segundo a carne, na concupiscência da imundícia, e desprezam a autoridade. Atrevidos e arrogantes, não têm medo de blasfemar as dignidades;</p>
+            <p>11 Enquanto os anjos, que são maiores em força e poder, não trazem contra eles juízo blasfemo diante do Senhor.</p>
+            <p>12 Mas estes, como animais irracionais, feitos para serem apanhados e destruídos, blasfem do que não entendem, e perecerão na sua própria corrupção,</p>
+            <p>13 Recebendo o salário da injustiça, como homens que contam com prazer nas suas dissoluções, enquanto se banqueteiam convosco;</p>
+            <p>14 Tendo olhos cheios de adultério, e que nunca cessam de pecar; sedutores de almas inconstantes, tendo o coração exercitado na avareza, filhos da maldição;</p>
+            <p>15 Que deixaram o caminho reto, e se desviaram, seguindo o caminho de Balaão, filho de Beor, o qual amou o prêmio da injustiça;</p>
+            <p>16 Mas foi repreendido por sua própria loucura; a jumente falou com voz humana, e impediu a loucura do profeta.</p>
+            <p>17 Estes são fontes sem água, e nuvens levadas de vento, para os quais está reservada a escuridão das trevas para sempre.</p>
+            <p>18 Pois, falando arrogâncias de vaidade, seduzem com concupiscências carnais, aqueles que recentemente escaparam dos que vivem no erro;</p>
+            <p>19 Prometendo-lhes liberdade, sendo eles mesmos servos da corrupção; porque aquele a quem alguém vencer, esse é escravo de quem o venceu.</p>
+            <p>20 Porque, se, havendo escapado das contaminações do mundo, por meio do conhecimento do Senhor e Salvador Jesus Cristo, se deixarem de se apegar a elas, serão outra vez vencidos e dominados por elas.</p>
+            <p>21 Porque melhor lhes fora não terem conhecido o caminho da justiça, do que, depois de o conhecerem, desviarem-se do santo mandamento que lhes fora dado.</p>
+            <p>22 Deste modo lhes sobreveio o verdadeiro provérbio: O cão voltou ao seu próprio vômito, e a porca lavada, ao revolver-se no lamaçal.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2pedro1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2pedro3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

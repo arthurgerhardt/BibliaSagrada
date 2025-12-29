@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola de João 5</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola de João 5</h2>
+            <h3>A fé em Jesus Cristo (1–12)</h3>
+            <p>1 Todo aquele que crê que Jesus é o Cristo é nascido de Deus; e todo aquele que ama ao que o gerou também ama ao que dele é gerado.</p>
+            <p>2 Nisto conhecemos que amamos os filhos de Deus: quando amamos a Deus e guardamos os seus mandamentos.</p>
+            <p>3 Porque este é o amor de Deus: que guardemos os seus mandamentos; e os seus mandamentos não são pesados.</p>
+            <p>4 Porque todo o que é nascido de Deus vence o mundo; e esta é a vitória que vence o mundo: a nossa fé.</p>
+            <p>5 Quem é que vence o mundo, senão aquele que crê que Jesus é o Filho de Deus?</p>
+            <p>6 Este é o que veio  por água e sangue, Jesus Cristo; não somente por água, mas por água e sangue. E o Espírito é o que testifica, porque o Espírito é a verdade.</p>
+            <p>7 Porque três são os que testificam no céu: o Pai, a Palavra e o Espírito Santo; e estes três são um.</p>
+            <p>8 E três são os que testificam na terra: o Espírito, a água e o sangue; e estes três concordam.</p>
+            <p>9 Se recebemos o testemunho dos homens, maior é o testemunho de Deus; porque este é o testemunho de Deus, que testificou acerca do seu Filho.</p>
+            <p>10 Quem crê no Filho de Deus tem o testemunho em si mesmo; quem não crê em Deus o fez mentiroso, porque não crê no testemunho que Deus deu acerca de seu Filho.</p>
+            <p>11 E o testemunho é este: que Deus nos deu a vida eterna, e esta vida está em seu Filho.</p>
+            <p>12 Quem tem o Filho tem a vida; quem não tem o Filho de Deus não tem a vida.</p>
+            <h3>O amor de Deus e a obediência (13–21)</h3>  
+            <p>13 Estas coisas vos escrevi a vós que credes no nome do Filho de Deus, para que saibais que tendes a vida eterna.</p>
+            <p>14 E esta é a confiança que temos nele: que, se pedirmos alguma coisa segundo a sua vontade, ele nos ouve.</p>
+            <p>15 E, se sabemos que nos ouve em tudo o que pedimos, sabemos que alcançamos as petições que lhe fizemos.</p>
+            <p>16 Se alguém vir seu irmão cometer pecado que não é para morte, pedirá, e ele lhe dará vida, para aqueles que não pecam para morte. Há pecado para morte; não digo que se peça por este.</p>
+            <p>17 Toda injustiça é pecado; e há pecado que não é para morte.</p>
+            <p>18 Sabemos que todo aquele que é nascido de Deus não peca; mas o que é nascido de Deus se guarda a si mesmo, e o maligno não o toca.</p>
+            <p>19 Sabemos que somos de Deus, e que todo o mundo jaz no maligno.</p>
+            <p>20 E sabemos que o Filho de Deus é vindo e nos deu entendimento para conhecermos o que é verdadeiro; e nós somos verdadeiros, como ele é verdadeiro.</p>
+            <p>21 Filhinhos, guardai-vos dos ídolos. Amém.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1joao4.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2joao1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

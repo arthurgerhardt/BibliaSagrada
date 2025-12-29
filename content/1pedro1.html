@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola de Pedro 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola de Pedro 1</h2>
+            <h3>Saudações e bênçãos espirituais (1–12)</h3>
+            <p>1 Pedro, apóstolo de Jesus Cristo, aos eleitos que são peregrinos da Dispersão na Pontus, Galácia, Capadócia, Ásia e Bitínia,</p>
+            <p>2 Eleitos segundo a presciência de Deus Pai, em santificação do Espírito, para a obediência e aspersão do sangue de Jesus Cristo: Graça e paz vos sejam multiplicadas.</p>
+            <p>3 Bendito seja o Deus e Pai de nosso Senhor Jesus Cristo, que, segundo a sua grande misericórdia, nos gerou de novo para uma viva esperança, pela ressurreição de Jesus Cristo dentre os mortos,</p>
+            <p>4 Para uma herança incorruptível, incontaminada e imarcescível, reservada nos céus para vós,</p>
+            <p>5 Os quais sois guardados pelo poder de Deus, mediante a fé, para a salvação que está preparada para se revelar no último tempo.</p>
+            <p>6 Na qual vós exultais, ainda que agora, por um pouco de tempo, sejais contristados por várias provações,</p>
+            <p>7 Para que a prova da vossa fé, muito mais preciosa do que o ouro que perece, e que, embora provado pelo fogo, se acha como incorrupível, redunde em louvor, glória e honra, na revelação de Jesus Cristo;</p>
+            <p>8 Ao qual, não o tendo visto, amais; no qual, não o vendo agora, mas crendo, exultais com alegria inefável e gloriosa;</p>
+            <p>9 Obtendo o fim da vossa fé, que é a salvação das vossas almas.</p>
+            <p>10 Para a qual salvação também trabalhavam os profetas que profetizaram acerca da graça que vos estava destinada;</p>
+            <p>11 Investigando qual ou quão grande fosse o tempo da manifestação de Cristo, e que testemunho ou revelação lhe era dado do Espírito de Cristo, que estava neles, testificando previamente os sofrimentos de Cristo e as glórias que se seguiriam.</p>
+            <p>12 A estes foi revelado que não para si mesmos, mas para vós, ministravam as coisas que agora vos foram anunciadas, pelas quais são anunciados a vós os que pregam o evangelho pelo Espírito Santo enviado do céu; coisas que os anjos desejam olhar.</p>    
+            <h3>Chamados para a santidade (13–21)</h3>
+            <p>13 Pelo que, cingindo os lombos do vosso entendimento, sede sóbrios, e esperai inteiramente na graça que vos será trazida na revelação de Jesus Cristo.</p>
+            <p>14 Como filhos obedientes, não vos conformeis com as concupiscências que antes tinheis na vossa ignorância;</p>
+            <p>15 Mas, como é santo aquele que vos chamou, sede vós também santos em todo o vosso procedimento;</p>
+            <p>16 Porquanto está escrito: Sede santos, porque eu sou santo.</p>
+            <p>17 E, se invocais por Pai aquele que, sem acepção de pessoas, julga segundo a obra de cada um, portai-vos com temor durante o tempo da vossa peregrinação;</p>
+            <p>18 Sabendo que não foi com coisas corruptíveis, como prata ou ouro, que fostes resgatados da vossa vã maneira de viver, que por tradição recebestes dos vossos pais,</p>
+            <p>19 Mas com o precioso sangue de Cristo, como de um cordeiro imaculado e incontaminado;</p>
+            <p>20 Que foi, na verdade, antes da fundação do mundo, mas manifestado nos últimos tempos por amor de vós,</p>
+            <p>21 Que por ele credes em Deus, que o ressuscitou dentre os mortos e lhe deu glória, para que a vossa fé e esperança estejam em Deus.</p> 
+            <h3>O novo nascimento e a palavra viva (22–25)</h3>
+            <p>22 Tendo purificado as vossas almas, na obediência à verdade, para o amor fraternal não fingido, amai-vos ardentemente uns aos outros, de coração puro,</p>
+            <p>23 Sendo regenerados, não de semente corruptível, mas incorruptível, pela palavra de Deus, que vive e permanece para sempre.</p>
+            <p>24 Porque: Toda a carne é como a erva, e toda a sua glória como a flor da erva; a erva seca-se, e a flor cai;</p>
+            <p>25 Mas a palavra do Senhor permanece para sempre. E esta é a palavra que vos foi evangelizada.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/tiago5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1pedro2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

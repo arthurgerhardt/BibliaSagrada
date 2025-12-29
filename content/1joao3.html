@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola de João 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola de João 3</h2>
+            <h3>Filhos de Deus e filhos do diabo (1–10)</h3>
+            <p>1 Vede quão grande amor nos tem concedido o Pai, para que fôssemos chamados filhos de Deus; e nós o somos. Por isso o mundo não nos conhece, porque não o conheceu a ele.</p>
+            <p>2 Amados, agora somos filhos de Deus, e ainda não é manifesto o que havemos de ser. Sabemos que, quando ele se manifestar, seremos semelhantes a ele, porque o veremos como ele é.</p>
+            <p>3 E todo aquele que nele tem esta esperança purifica-se a a si mesmo, assim como ele é puro.</p>
+            <p>4 Todo aquele que pratica o pecado também pratica a iniquidade; e o pecado é iniquidade.</p>
+            <p>5 E vós sabeis que ele se manifestou para tirar os nossos pecados; e nele não há pecado.</p>
+            <p>6 Todo aquele que permanece nele não vive pecando; todo aquele que vive pecando não o viu nem o conheceu.</p>
+            <p>7 Filhinhos, ninguém vos engane; quem pratica a justiça é justo, assim como ele é justo.</p>
+            <p>8 Aquele que pratica o pecado é do diabo; porque o diabo peca desde o princípio. Para isto o Filho de Deus se manifestou: para desfazer as obras do diabo.</p>
+            <p>9 Todo aquele que é nascido de Deus não pratica o pecado; porque a sua semente permanece nele; e não pode pecar, porque é nascido de Deus.</p>
+            <p>10 Nisto são manifestos os filhos de Deus e os filhos do diabo: todo aquele que não pratica a justiça não é de Deus, nem aquele que não ama a seu irmão.</p>
+            <h3>O amor fraternal (11–24)</h3>
+            <p>11 Porque esta é a a mensagem que ouvistes desde o princípio: que nos amemos uns aos outros.</p>
+            <p>12 Não como Caim, que era do maligno e matou a seu irmão. E por que o matou? Porque as suas obras eram más, e as de seu irmão, justas.</p>
+            <p>13 Não vos maravilheis, irmãos, se o mundo vos odeia.</p>
+            <p>14 Nós sabemos que já passamos da morte para a vida, porque amamos os irmãos. Quem não ama permanece na morte.</p>   
+            <p>15 Todo aquele que odeia a seu irmão é homicida, e vós sabeis que nenhum homicida tem a vida eterna permanecendo nele.</p>
+            <p>16 Nisto conhecemos o amor: que ele deu a sua vida por nós; e nós devemos dar a vida pelos irmãos.</p>
+            <p>17 Mas aquele que tiver bens do mundo e vir seu irmão necessitado, e lhe fechar o seu coração, como permanece nele o amor de Deus?</p>
+            <p>18 Filhinhos, não amemos de palavra, nem de língua, mas por obra e em verdade.</p>
+            <p>19 Nisto conheceremos que somos da verdade, e diante dele tranquilizaremos o nosso coração;</p>
+            <p>20 Porque, se o nosso coração nos condena, Deus é maior do que o nosso coração, e conhece todas as coisas.</p>
+            <p>21 Amados, se o nosso coração não nos condena, temos confiança diante de Deus;</p>
+            <p>22 E qualquer coisa que pedirmos, segundo a sua vontade, ele nos ouve.</p>
+            <p>23 E esta é a sua vontade: que creiamos no nome de seu Filho Jesus Cristo, e nos amemos uns aos outros, como ele nos ordenou.</p>
+            <p>24 E quem guarda os seus mandamentos permanece em Deus, e Deus nele. E nisto sabemos que ele permanece em nós, por meio do Espírito que nos deu.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1joao2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1joao4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola de João 2</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola de João 2</h2>
+            <h3>Filhos de Deus e filhos do diabo (1–11)</h3>
+            <p>1 Meus filhinhos, estas coisas vos escrevo para que não pequeis; e, se alguém pecar, temos um Advogado para com o Pai, Jesus Cristo, o justo.</p>
+            <p>2 E ele é a propiciação pelos nossos pecados; e não somente pelos nossos, mas também pelos de todo o mundo.</p>  
+            <p>3 E nisto sabemos que o conhecemos: se guardamos os seus mandamentos.</p>
+            <p>4 Aquele que diz: Eu o conheço, e não guarda os seus mandamentos, é mentiroso, e nele não está a verdade.</p>
+            <p>5 Mas aquele que guarda a sua palavra, verdadeiramente nele o amor de Deus está aperfeiçoado. Nisto conhecemos que estamos nele.</p>
+            <p>6 Aquele que diz que permanece nele, esse deve também andar assim como ele andou.</p>
+            <p>7 Meus filhinhos, não vos escrevo um mandamento novo, mas o mandamento antigo, que tendes desde o princípio. O mandamento antigo é a palavra que ouvistes.</p>
+            <p>8 Novamente, um mandamento novo vos escrevo, que é verdadeiro nele e em vós; porque as trevas vão passando, e a verdadeira luz já resplandece.</p>
+            <p>9 Aquele que diz que está na luz, e odeia a seu irmão, até agora está em trevas.</p>
+            <p>10 Aquele que ama a seu irmão permanece na luz, e nele não há escândalo.</p>
+            <p>11 Mas aquele que odeia a seu irmão está em trevas, e anda em trevas, e não sabe para onde vai, porque as trevas lhe cegaram os olhos.</p>  
+            <h3>A nova ordem (12–17)</h3>
+            <p>12 Filhinhos, escrevo-vos, porque os vossos pecados vos são perdoados por causa do seu nome.</p>
+            <p>13 Pais, escrevo-vos, porque conhecestes aquele que é desde o princípio. Jovens, escrevo-vos, porque vencestes o maligno. Crianças, escrevo-vos, porque conhecestes o Pai.</p>
+            <p>14 Eu vos escrevi, pais, porque conhecestes aquele que é desde o princípio. Eu vos escrevi, jovens, porque sois fortes, e a palavra de Deus permanece em vós, e já vencestes o maligno.</p>
+            <p>15 Não ameis o mundo, nem o que no mundo há. Se alguém ama o mundo, o amor do Pai não está nele.</p>
+            <p>16 Porque tudo o que há no mundo, a concupiscência da carne, a concupiscência dos olhos e a soberba da vida, não é do Pai, mas do mundo.</p>
+            <p>17 E o mundo passa, e a sua concupiscência; mas aquele que faz a vontade de Deus permanece para sempre.</p>
+            <h3>A advertência contra os anticristos (18–27)</h3>
+            <p>18 Filhinhos, é já a última hora; e, como ouvistes que o anticristo vem, também agora muitos anticristos têm surgido; por isso conhecemos que é já a última hora.</p>
+            <p>19 Saíram de nós, mas não eram dos nossos; porque, se fossem dos nossos, teriam permanecido conosco; mas assim se manifestou que não eram todos dos nossos.</p>
+            <p>20 E vós tendes a unção que vem do Santo, e sabeis todas as coisas.</p>
+            <p>21 Não vos escrevi porque não saibais a verdade, mas porque a sabeis, e porque nenhuma mentira procede da verdade.</p>
+            <p>22 Quem é mentiroso, senão aquele que nega que Jesus é o Cristo? Este é o anticristo, que nega o Pai e o Filho.</p>
+            <p>23 Todo aquele que nega o Filho também não tem o Pai; aquele que confessa o Filho tem também o Pai.</p>
+            <p>24 Portanto, o que vós ouvistes desde o princípio permaneça em vós.</p>
+            <p>25 Se permanecer em vós o que ouvistes desde o princípio, também vós permanecereis no Filho e no Pai.</p>
+            <p>26 Estas coisas vos escrevi acerca dos que vos querem enganar.</p>
+            <p>27 Quanto a vós, a unção que recebestes dele permanece em vós, e não tendes necessidade de que alguém vos ensine; mas, como a sua unção vos ensina acerca de todas as coisas, e é verdadeira, e não é mentira, assim como vos ensinou, permanecereis nele.</p>
+            <h3>Filiação divina e vitória sobre o mundo (28–29)</h3>
+            <p>28 E agora, filhinhos, permanecei nele, para que, quando ele se manifestar, tenhamos confiança e não sejamos confundidos diante dele na sua vinda.</p>
+            <p>29 Se sabeis que ele é justo, sabei também que todo aquele que pratica a justiça é nascido dele.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1joao1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1joao3.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Primeira Epístola de Pedro 4</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Primeira Epístola de Pedro 4</h2>
+            <h3>Viver para a vontade de Deus (1–11)</h3>
+            <p>1 Portanto, já que Cristo padeceu por nós na carne, armatai-vos também vós com o mesmo pensamento; porque aquele que padeceu na carne cessou do pecado,</p>
+            <p>2 Para o resto do tempo de sua vida, não vivendo mais segundo as concupiscências dos homens, mas segundo a vontade de Deus.</p>
+            <p>3 Porque já é tempo de haverdes deixado o tempo passado, no qual vos entregastes à vontade dos gentios, andando em dissoluções, concupiscências, embriaguez, orgias, bebedeiras e abomináveis idolatrias.</p>
+            <p>4 Pelo que eles se espantam, quando vos não vos juntais a eles no mesmo desenfreamento de dissoluções, e vos difamam;</p>
+            <p>5 Os quais hão de prestar contas àquele que está pronto para julgar os vivos e os mortos.</p>
+            <p>6 Porque por isso também o evangelho lhes foi pregado aos mortos, para que, julgados segundo os homens na carne, vivam segundo Deus no espírito.</p>
+            <p>7 Mas o fim de todas as coisas está próximo; sede, pois, sóbrios e vigiai em oração.</p>
+            <p>8 Sobretudo, tende entre vós fervente amor, porque o amor cobre uma multidão de pecados.</p>
+            <p>9 Sede hospitaleiros uns para com os outros, sem murmurações.</p>
+            <p>10 Cada um administreo dom que recebeu, como bons despenseiros da multiforme graça de Deus.</p>
+            <p>11 Se alguém fala, fale segundo as palavras de Deus; se alguém ministra, ministre segundo a força que Deus lhe dá; para que em tudo seja Deus glorificado por Jesus Cristo, a quem pertence a glória e o domínio para todo o sempre. Amém.</p>
+            <h3>Sofrimento por ser cristão (12–19)</h3>
+            <p>12 Amados, não estranheis o fogo ardente que surge entre vós para vos provar, como se alguma coisa estranha vos acontecesse;</p>
+            <p>13 Mas alegrai-vos porquanto sois participantes das aflições de Cristo, para que também na revelação da sua glória vos alegreis e exulteis.</p>
+            <p>14 Se sois ultrajados por causa do nome de Cristo, bem-aventurados sois, porque o Espírito da glória e de Deus repousa sobre vós. Sobre eles, porém, ele é ultrajado.</p>
+            <p>15 Mas nenhum de vós sofra como homicida, ou ladrão, ou malfeitor, ou como intrometido nos negócios alheios;</p> 
+            <p>16 Mas, se alguém sofre como cristão, não se envergonhe; antes glorifique a Deus por esse nome.</p>
+            <p>17 Porque é chegado o tempo em que o juízo há de começar pela casa de Deus; e, se primeiro começa por nós, qual será o fim daqueles que não obedecem ao evangelho de Deus?</p>
+            <p>18 E, se é com dificuldade que o justo se salva, onde aparecerá o ímpio e o pecador?</p>
+            <p>19 Portanto, os que sofrem segundo a vontade de Deus, encomendem as suas almas ao fiel Criador, fazendo o bem.</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1pedro3.html">Capítulo Anterior</a>
+            <a class="button" href="../content/1pedro5.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

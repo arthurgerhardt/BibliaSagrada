@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Segunda Epístola de Pedro 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Segunda Epístola de Pedro 1</h2>
+            <h3>Exortação à vida piedosa (1–11)</h3>
+            <p>1 Simão Pedro, servo e apóstolo de Jesus Cristo, aos que alcançaram fé igualmente preciosa conosco, pela justiça do nosso Deus e Salvador Jesus Cristo:</p>
+            <p>2 Graça e paz vos sejam multiplicadas, pelo conhecimento de Deus e de Jesus nosso Senhor.</p>
+            <p>3 Como todas as coisas que pertencem à vida e à piedade nos foram dadas por seu divino poder, mediante o conhecimento daquele que nos chamou por sua glória e virtude,</p>
+            <p>4 Pelo que nos tem dado preciosas e grandíssimas promessas, para que por elas vos torneis participantes da natureza divina, havendo escapado da corrupção que há no mundo, pela concupiscência.</p>
+            <p>5 E por isso mesmo, aplicando todo o cuidado, acrescentai à vossa fé a virtude; e à virtude, o conhecimento;</p>
+            <p>6 E ao conhecimento, o domínio próprio; e ao domínio próprio, a perseverança; e à perseverança, a piedade;</p>
+            <p>7 E à piedade, o amor fraternal; e ao amor fraternal, o amor.</p>
+            <p>8 Porque, se estas coisas existem em vós e abundam, não vos deixarão ociosos nem sem fruto, no conhecimento de nosso Senhor Jesus Cristo.</p>    
+            <p>9 Porque quem não tem estas coisas é cego, sendo esquecido da purificação dos seus antigos pecados.</p>
+            <p>10 Pelo que, irmãos, procurai fazer cada vez mais firme a vossa vocação e eleição; porque, fazendo isto, nunca jamais tropeçareis.</p>
+            <p>11 Porque assim vos será ricamente concedida a entrada no eterno reino de nosso Senhor e Salvador Jesus Cristo.</p>
+            <h3>A certeza da vinda de Cristo (12–21)</h3>
+            <p>12 Por isso mesmo, estarei sempre pronto para vos recordar estas coisas, ainda que já as saibais e estejais confirmados na verdade presente.</p>
+            <p>13 E julgo justo, enquanto estou neste tabernáculo, despertar-vos pela lembrança,</p>
+            <p>14 Sabendo que brevemente deixarei este meu tabernáculo, como também nosso Senhor Jesus Cristo me tem declarado.</p>
+            <p>15 E farei o meu máximo para que, depois da minha partida, sempre possais ter estas coisas em mente.</p>
+            <p>16 Porque não seguimos fábulas engenhosas, quando vos fizemos conhecer o poder e a vinda de nosso Senhor Jesus Cristo, mas fomos testemunhas oculares da sua majestade.</p>
+            <p>17 Porque ele recebeu de Deus Pai honra e glória, quando da magnífica glória lhe veio a voz: Este é o meu Filho amado, em quem me comprazo.</p>
+            <p>18 E esta voz, que do céu ouviu, nós a ouvimos, estando com ele no monte santo.</p>
+            <p>19 E temos, mui firmemente, a palavra dos profetas, à qual fazeis bem em estar atentos, como a uma luz que brilha em lugar tenebroso, até que o dia amanheça e a estrela da manhã surja em vossos corações;</p>
+            <p>20 Sabendo primeiramente isto: que nenhuma profecia da Escritura é de particular interpretação.</p>
+            <p>21 Porque a profecia nunca foi produzida por vontade humana, mas os santos homens de Deus falaram inspirados pelo Espírito Santo.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/1pedro5.html">Capítulo Anterior</a>
+            <a class="button" href="../content/2pedro2.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
