@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Terceira Epístola de João 1</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Terceira Epístola de João 1</h2>
+            <h3>Saudações a Gaio; censura a Diótrefes; elogio a Demétrio</h3>
+            <p>1 O presbítero àquele amado Gaio, a quem eu amo na verdade.</p>
+            <p>2 Amado, desejo que te vá bem em todas as coisas, e que tenhas saúde, assim como bem vai a tua alma.</p>
+            <p>3 Muito me alegrei quando vieram irmãos e testificaram da tua verdade, como tu andas na verdade.</p>
+            <p>4 Não tenho maior alegria do que ouvir que os meus filhos andam na verdade.</p>
+            <p>5 Amado, procedes fielmente em tudo o que fazes para com os irmãos, e para com os estranhos,</p>
+            <p>6 os quais testificaram diante da igreja do teu amor; aos quais farás bem em conduzi-los como é digno de Deus;</p>
+            <p>7 porque por amor do nome saíram, nada tomando dos gentios.</p>
+            <p>8 Portanto, devemos receber tais, para que nos tornemos cooperadores da verdade.</p>
+            <p>9 Escrevi à igreja; mas Diótrefes, que ama ser o primeiro entre eles, não nos recebe.</p>
+            <p>10 Pelo que, se eu for, lembrarei as obras que ele faz, proferindo contra nós com palavras maliciosas; e, não se contentando com isso, nem ele aos irmãos recebe, e os que querem recebê-los impede, e os expulsa da igreja.</p>
+            <p>11 Amado, não imites o mal, mas o bem. Quem faz o bem é de Deus; mas quem faz o mal não viu a Deus.</p>
+            <p>12 Demétrio tem testemunho de todos, e da própria verdade; e também nós lhe damos testemunho, e tu sabes que o nosso testemunho é verdadeiro.</p>
+            <p>13 Tenho muitas coisas para te escrever, mas não quero fazê-lo com tinta e pena;</p>
+            <p>14 mas espero ver-te brevemente, e falaremos face a face.</p>
+            <p>15 Paz seja contigo. Os amigos te saúdam. Saúda os amigos, cada um por nome.</p> 
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/2joao1.html">Capítulo Anterior</a>
+            <a class="button" href="../content/judas1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
