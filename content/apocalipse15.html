@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 15</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 15</h2>
+            <h3>As sete taças da ira de Deus</h3>
+            <p>1 E vi outro sinal no céu, grande e admirável, sete anjos, que tinham as sete últimas pragas; porque com elas se cumpre a ira de Deus.</p>
+            <p>2 E vi como um mar de vidro misturado com fogo; e os que haviam alcançado a vitória sobre a besta, e sobre a sua imagem, e sobre o seu sinal, e sobre o número do seu nome, estavam em pé sobre o mar de vidro, tendo harpas de Deus.</p>
+            <p>3 E cantavam o cântico de Moisés, servo de Deus, e o cântico do Cordeiro, dizendo: Grandes e maravilhosas são as tuas obras, Senhor Deus Todo-Poderoso; justos e verdadeiros são os teus caminhos, ó Rei dos santos.</p>
+            <p>4 Quem não te temerá, ó Senhor, e glorificará o teu nome? Porque só tu és santo; por isso todas as nações virão e te adorarão, porque os teus juízos se manifestaram.</p>
+            <p>5 E, depois destas coisas, olhei, e o templo do tabernáculo do testemunho no céu foi aberto;</p>
+            <p>6 E os sete anjos que tinham as sete pragas saíram do templo, vestidos de linho puro, e cingidos com cintos de ouro sobre os seus peitos.</p>
+            <p>7 E uma das quatro criaturas deu aos sete anjos sete taças de ouro cheias da ira de Deus, que vive para todo o sempre.</p>
+            <p>8 E o templo encheu-se de fumaça, da glória de Deus, e do seu poder; e nenhum homem podia entrar no templo, até que se cumprissem as sete pragas dos sete anjos.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse14.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse16.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 16</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 16</h2>
+            <h3>As sete taças da ira de Deus</h3>
+            <p>¹ E ouvi, vinda do templo, uma grande voz, que dizia aos sete anjos: Ide, e derramai sobre a terra as sete taças da ira de Deus.</p>
+            <p>² E foi o primeiro, e derramou a sua taça sobre a terra, e fez-se uma chaga má e maligna nos homens que tinham o sinal da besta e que adoravam a sua imagem.</p>
+            <p>³ E o segundo anjo derramou a sua taça no mar, que se tornou em sangue como de um morto, e morreu no mar toda a alma vivente.</p>
+            <p>⁴ E o terceiro anjo derramou a sua taça nos rios e nas fontes das águas, e se tornaram em sangue.</p>
+            <p>⁵ E ouvi o anjo das águas, que dizia: Justo és tu, ó Senhor, que és, e que eras, e hás de ser, porque julgaste estas coisas.</p>
+            <p>⁶ Visto como derramaram o sangue dos santos e dos profetas, também tu lhes deste o sangue a beber; porque disto são merecedores.</p>
+            <p>⁷ E ouvi outro do altar, que dizia: Na verdade, ó Senhor Deus Todo-Poderoso, verdadeiros e justos são os teus juízos.</p>
+            <p>⁸ E o quarto anjo derramou a sua taça sobre o sol, e foi-lhe permitido que abrasasse os homens com fogo.</p>
+            <p>⁹ E os homens foram abrasados com grandes calores, e blasfemaram o nome de Deus, que tem poder sobre estas pragas; e não se arrependeram para lhe darem glória.</p>
+            <p>¹⁰ E o quinto anjo derramou a sua taça sobre o trono da besta, e o seu reino se fez tenebroso; e eles mordiam as suas línguas de dor.</p>
+            <p>¹¹ E por causa das suas dores, e por causa das suas chagas, blasfemaram do Deus do céu; e não se arrependeram das suas obras.</p>
+            <p>¹² E o sexto anjo derramou a sua taça sobre o grande rio Eufrates; e a sua água secou-se, para que se preparasse o caminho dos reis do oriente.</p>
+            <p>¹³ E da boca do dragão, e da boca da besta, e da boca do falso profeta vi sair três espíritos imundos, semelhantes a rãs.</p>
+            <p>¹⁴ Porque são espíritos de demônios, que fazendo milagres vão ao encontro dos reis da terra e de todo o mundo, para os congregar para a batalha, daquele grande dia do Deus Todo-Poderoso.</p>
+            <p>¹⁵ Eis que venho como ladrão. Bem-aventurado aquele que vigia, e guarda as suas roupas, para que não ande nu, e não se vejam as suas vergonhas.</p>
+            <p>¹⁶ E os congregaram no lugar que em hebreu se chama Armagedom.</p>
+            <p>¹⁷ E o sétimo anjo derramou a sua taça no ar, e saiu uma grande voz do templo do céu, do trono, dizendo: Está feito.</p>
+            <p>¹⁸ E houve vozes, e trovões, e relâmpagos, e houve um grande terremoto, como nunca houve desde que há homens sobre a terra; tal foi este tão grande terremoto.</p>
+            <p>¹⁹ E a grande cidade fendeu-se em três partes, e as cidades das nações caíram; e da grande Babilônia se lembrou Deus, para lhe dar o cálice do vinho da indignação da sua ira.</p>
+            <p>²⁰ E toda a ilha fugiu; e os montes não se acharam.</p>
+            <p>²¹ E sobre os homens caiu do céu uma grande saraiva, pedras aproximadamente do peso de um talento; e os homens blasfemaram de Deus por causa da praga da saraiva; porque a sua praga era mui grande.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse15.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse17.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

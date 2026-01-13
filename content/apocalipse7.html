@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 7</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 7</h2>
+            <h3>Os 144.000 selados e a grande multidão</h3>
+            <p>1 E depois destas coisas vi quatro anjos que estavam em pé nos quatro cantos da terra, retendo os quatro ventos da terra, para que nenhum vento soprasse sobre a terra, nem sobre o mar, nem contra árvore alguma.</p>
+            <p>2 E vi outro anjo que subia do nascente do sol, tendo o selo do Deus vivo; e clamou com grande voz aos quatro anjos, a quem fora dado o poder de danificar a terra e o mar,</p>
+            <p>3 Dizendo: Não danifiqueis a terra, nem o mar, nem as árvores, até que tenhamos selado na fronte os servos do nosso Deus.</p>
+            <p>4 E ouvi o número dos que foram selados: cento e quarenta e quatro mil, selados de todas as tribos dos filhos de Israel.</p>
+            <p>5 Da tribo de Judá, doze mil foram selados; da tribo de Rúben, doze mil; da tribo de Gade, doze mil;</p>
+            <p>6 Da tribo de Aser, doze mil; da tribo de Naftali, doze mil; da tribo de Manassés, doze mil;</p>
+            <p>7 Da tribo de Simeão, doze mil; da tribo de Levi, doze mil; da tribo de Issacar, doze mil;</p>
+            <p>8 Da tribo de Zebulom, doze mil; da tribo de José, doze mil; da tribo de Benjamim, doze mil foram selados.</p>
+            <p>9 Depois disto olhei, e eis uma grande multidão, que ninguém podia contar, de todas as nações, e tribos, e povos, e línguas, que estavam diante do trono e perante o Cordeiro, trajando vestes brancas, e com palmas nas suas mãos;</p>
+            <p>10 E clamavam com grande voz, dizendo: Salvação ao nosso Deus, que está assentado sobre o trono, e ao Cordeiro.</p>
+            <p>11 E todos os anjos estavam em pé ao redor do trono, e dos anciãos, e dos quatro animais; e prostraram-se sobre os seus rostos diante do trono, e adoraram a Deus,</p>
+            <p>12 Dizendo: Amém; a bênção, e a glória, e a sabedoria, e a ação de graças, e o poder, e a força, e a honra sejam ao nosso Deus para todo o sempre. Amém.</p>
+            <p>13 E um dos anciãos falou, dizendo-me: Estes que estão trajando vestes brancas, quem são, e de onde vieram?</p>
+            <p>14 E eu lhe disse: Senhor, tu o sabes. E ele me disse: Estes são os que vieram da grande tribulação, e lavaram as suas vestes, e as branquearam no sangue do Cordeiro.</p>
+            <p>15 Por isso estão diante do trono de Deus, e o servem dia e noite no seu templo; e aquele que está assentado sobre o trono estenderá sobre eles a sua tenda.</p>
+            <p>16 Já não terão fome, nem sede; nem os ferirá o sol, nem qualquer calor;</p>
+            <p>17 Porque o Cordeiro que está no meio do trono os apascentará, e os guiará às fontes das águas da vida; e Deus limpará de seus olhos toda lágrima.</p>
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse6.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse8.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

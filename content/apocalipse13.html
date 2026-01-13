@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 13</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 13</h2>
+            <h3>A besta que sobe do mar e a besta que sobe da terra</h3>
+            <p>1 E vi subir do mar uma besta, que tinha sete cabeças e dez chifres, e sobre os seus chifres dez diademas, e sobre as suas cabeças um nome de blasfêmia.</p>
+            <p>2 E a besta que vi era semelhante a um leopardo, e os seus pés como os de um urso, e a sua boca como a boca de um leão. E o dragão deu-lhe o seu poder, e o seu trono, e grande autoridade.</p>
+            <p>3 E vi uma das suas cabeças como ferida de morte, mas a sua chaga mortal foi curada; e toda a terra se maravilhou após a besta.</p>
+            <p>4 E adoraram o dragão que deu à besta o seu poder; e adoraram a besta, dizendo: Quem é semelhante à besta? quem pode batalhar contra ela?</p>
+            <p>5 E foi-lhe dada uma boca que proferia grandes coisas e blasfêmias; e foi-lhe dado poder para continuar quarenta e dois meses.</p>
+            <p>6 E abriu a sua boca em blasfêmias contra Deus, para blasfemar o seu nome, e o seu tabernáculo, e os que habitam no céu.</p>
+            <p>7 E foi-lhe permitido fazer guerra contra os santos, e vencê-los; e foi-lhe dado poder sobre toda tribo, e língua, e nação.</p>
+            <p>8 E todos os que habitam sobre a terra o adorarão, cujos nomes não estão escritos no livro da vida do Cordeiro que foi morto desde a fundação do mundo.</p>
+            <p>9 Se alguém tem ouvidos, ouça.</p>
+            <p>10 Se alguém leva em cativeiro, em cativeiro irá; se alguém matar à espada, importa que à espada seja morto. Aqui está a paciência e a fé dos santos.</p>
+            <p>11 E vi subir da terra outra besta, e tinha dois chifres semelhantes aos de um cordeiro, e falava como dragão.</p>
+            <p>12 E exerce todo o poder da primeira besta na sua presença, e faz que a terra e os que nela habitam adorem a primeira besta, cuja chaga mortal fora curada.</p>
+            <p>13 E faz grandes sinais, de maneira que até fogo faz descer do céu à terra, à vista dos homens.</p>
+            <p>14 E engana os que habitam sobre a terra, com aqueles sinais que lhe foi permitido fazer na presença da besta, dizendo aos que habitam sobre a terra que façam uma imagem à besta que tinha a chaga da espada, e vivia.</p>
+            <p>15 E foi-lhe concedido que desse espírito à imagem da besta, para que também a imagem da besta falasse, e fizesse que fossem mortos todos os que não adorassem a imagem da besta.</p>
+            <p>16 E faz que a todos, pequenos e grandes, ricos e pobres, livres e servos, lhes seja posto um sinal na mão direita, ou na testa;</p> 
+            <p>17 Para que ninguém possa comprar ou vender, senão aquele que tem o sinal, ou o nome da besta, ou o número do seu nome.</p>
+            <p>18 Aqui há sabedoria. Aquele que tem entendimento, calcule o número da besta, porque é número de homem; e o seu número é seiscentos e sess
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse12.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse14.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

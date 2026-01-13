@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 21</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 21</h2>
+            <h3>A nova Jerusalém e a nova criação</h3>
+            <p>¹ E vi um novo céu e uma nova terra; porque já o primeiro céu e a primeira terra passaram, e o mar já não existe.</p>
+            <p>² E eu, João, vi a santa cidade, a nova Jerusalém, que descia do céu, da parte de Deus, adornada como uma esposa ataviada para o seu marido.</p>
+            <p>³ E ouvi uma grande voz do céu, que dizia: Eis aqui o tabernáculo de Deus com os homens, pois com eles habitará, e eles serão o seu povo, e Deus mesmo estará com eles, e será o seu Deus.</p>
+            <p>⁴ E Deus limpará de seus olhos toda lágrima; e não haverá mais morte, nem pranto, nem clamor, nem dor; porque já as primeiras coisas são passadas.</p>
+            <p>⁵ E o que estava assentado sobre o trono disse: Eis que faço novas todas as coisas. E disse-me: Escreve, porque estas palavras são verdadeiras e fiéis.</p>
+            <p>⁶ E disse-me: Está feito! Eu sou o Alfa e o Ômega, o princípio e o fim. A quem tiver sede, de graça lhe darei da fonte da água da vida.</p>          
+            <p>⁷ O que vencer herdará estas coisas, e eu serei seu Deus, e ele será meu filho.</p>
+            <p>⁸ Mas, quanto aos tímidos, e aos incrédulos, e aos abomináveis, e aos homicidas, e aos fornicadores, e aos feiticeiros, e aos idólatras, e a todos os mentirosos, a sua parte será no lago que arde com fogo e enxofre, que é a segunda morte.</p>
+            <p>⁹ E veio a mim um dos sete anjos que tinham as sete taças cheias das sete últimas pragas, e falou comigo, dizendo: Vem, mostrar-te-ei a noiva, a esposa do Cordeiro.</p>
+            <p>¹⁰ E transportou-me em espírito a um grande e alto monte, e mostrou-me a cidade santa, Jerusalém, que descia do céu, da parte de Deus,</p>
+            <p>¹¹ Tendo a glória de Deus. O seu fulgor era semelhante a uma pedra preciosíssima, como pedra de jaspe cristalina.</p>
+            <p>¹² Tinha um muro grande e alto, com doze portas, e nas portas dos doze anjos, e nomes escritos, que são os nomes das doze tribos dos filhos de Israel.</p>
+            <p>¹³ Havia três portas para o oriente, e três portas para o norte, e três portas para o sul, e três portas para o ocidente.</p>
+            <p>¹⁴ E o muro da cidade tinha doze fundamentos, e neles os nomes dos doze apóstolos do Cordeiro.</p>
+            <p>¹⁵ E o que falava comigo tinha uma medida de ouro, para medir a cidade, e as suas portas, e o seu muro.</p>
+            <p>¹⁶ E a cidade era quadrada, e o seu comprimento era igual à sua largura; e mediu a cidade com a medida de cento e quarenta e quatro côvados, o que é o comprimento, e a largura, e a altura dela.</p>
+            <p>¹⁷ E mediu o seu muro, cento e quarenta e quatro côvados, segundo a medida humana, que é a de um anjo.</p>
+            <p>¹⁸ E o muro era de jaspe; e a cidade era de ouro puro, semelhante ao vidro limpo.</p>
+            <p>¹⁹ E os fundamentos do muro da cidade estavam adornados de toda pedra preciosa. O primeiro fundamento era de jaspe; o segundo, de safira; o terceiro, de calcedônia; o quarto, de esmeralda;</p>
+            <p>²⁰ O quinto, de sardônica; o sexto, de sardio; o sétimo, de crisólito; o oitavo, de berilo; o nono, de topázio; o décimo, de crisoprásio; o undécimo, de jacinto; o duodécimo, de ametista.</p>
+            <p>²¹ E as doze portas eram doze pérolas; cada porta era de uma só pérola. E a praça da cidade era de ouro puro, semelhante ao vidro transparente.</p>  
+            <p>²² E nela não vi templo; porque o Senhor Deus Todo-Poderoso é o templo dela, assim como o Cordeiro.</p>
+            <p>²³ E a cidade não necessita de sol nem de lua, para que nela resplandeçam; porque a glória de Deus a iluminou, e o Cordeiro é a sua lâmpada.</p>
+            <p>²⁴ E as nações andarão à sua luz, e os reis da terra trarão para ela a sua glória.</p>
+            <p>²⁵ E as suas portas nunca se fecharão deia, porque ali não haverá noite.</p>
+            <p>²⁶ E nela trarão a glória e a honra das nações.</p>
+            <p>²⁷ E nela não entrará coisa alguma contaminada, ou que pratica abominação e mentira, mas somente os que estão escritos no livro da vida do Cordeiro.</p> 
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse20.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse22.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

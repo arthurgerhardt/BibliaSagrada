@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 8</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 8</h2>
+            <h3>Os sete trombetas</h3>
+            <p>1 E quando abriu o sétimo selo, fez-se silêncio no céu por cerca de meia hora.</p>
+            <p>2 E vi os sete anjos que estavam diante de Deus; e foram-lhes dadas sete trombetas.</p>
+            <p>3 E veio outro anjo, e pôs-se ao altar, tendo um incensário de ouro; e foi-lhe dado muito incenso, para que o oferecesse com as orações de todos os santos sobre o altar de ouro, que estava diante do trono.</p>
+            <p>4 E da mão do anjo subiu ao céu o fumo do incenso, com as orações dos santos.</p>
+            <p>5 E o anjo tomou o incensário, e encheu-o do fogo do altar, e o lançou sobre a terra; e houve trovões, e vozes, e relâmpagos, e um terremoto.</p>
+            <p>6 E os sete anjos que tinham as sete trombetas prepararam-se para tocar.</p>
+            <p>7 O primeiro anjo tocou a trombeta; e houve saraiva e fogo, misturados com sangue, e foram lançados sobre a terra; e foi queimada a terça parte da terra, e foi queimada a terça parte das árvores, e foi queimada toda a erva verde.</p>
+            <p>8 E o segundo anjo tocou a trombeta; e algo como uma grande montanha ardente foi lançada no mar; e tornou-se a terça parte do mar em sangue;</p>
+            <p>9 E morreu a terça parte das criaturas que tinham vida no mar; e a terça parte das naus foi destruída.</p>
+            <p>10 E o terceiro anjo tocou a trombeta; e caiu do céu uma grande estrela, ardendo como uma tocha, e caiu sobre a terça parte dos rios, e sobre as fontes das águas;</p>
+            <p>11 E o nome da estrela é Absinto; e a terça parte das águas tornou-se em absinto; e muitos homens morreram das águas, porque se tornaram amargas.</p>
+            <p>12 E o quarto anjo tocou a trombeta; e foi ferida a terça parte do sol, e a terça parte da lua, e a terça parte das estrelas, para que a terça parte deles se escurecesse, e não houvesse luz por causa da terça parte do dia, e também da noite.</p>
+            <p>13 E vi, e ouvi um anjo voando pelo meio do céu, dizendo com grande voz: Ai, ai, ai dos que habitam sobre a terra, por causa das outras vozes das trombetas dos três anjos que ainda hão de tocar!</p>
+            
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse7.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse9.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

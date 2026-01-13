@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apêndice</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apêndice</h2>
+            <h3>Informações adicionais</h3>
+            <p>Este apêndice contém informações adicionais sobre a Bíblia Sagrada, incluindo referências históricas, contextos culturais e explicações de termos teológicos que podem ajudar na compreensão dos textos bíblicos.</p>
+            <p>¹ A Bíblia Sagrada é composta por dois testamentos: o Antigo Testamento, que narra a história do povo de Israel e suas leis, e o Novo Testamento, que relata a vida e os ensinamentos de Jesus Cristo e a formação da Igreja Cristã.</p>
+            <p>² Muitos dos livros da Bíblia foram escritos em diferentes períodos históricos e refletem as culturas e tradições da época em que foram compostos.</p>
+            <p>³ A interpretação dos textos bíblicos pode variar entre diferentes denominações cristãs, e é importante considerar o contexto histórico e cultural ao estudar as Escrituras.</p>
+            <p>⁴ Termos teológicos como "graça", "redenção" e "salvação" têm significados profundos que são explorados ao longo dos livros bíblicos e são fundamentais para a fé cristã.</p>
+            <p>⁵ Recomenda-se a leitura complementar de comentários bíblicos e estudos teológicos para uma compreensão mais aprofundada dos textos sagrados.</p>
+            <p>⁶ A Bíblia Sagrada tem sido uma fonte de inspiração e orientação espiritual para milhões de pessoas ao redor do mundo ao longo dos séculos.</p>
+            <p>⁷ Este apêndice serve como um recurso adicional para aqueles que desejam aprofundar seu conhecimento e compreensão da Bíblia Sagrada.</p>
+            <p>Versão da Bíblia Sagrada: Almeida Corrigida e Fiel (ACF)</p>
+            <p>Todos os direitos reservados. Sociedade Bíblica Trinitária do Brasil.</p>
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse21.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apendice.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

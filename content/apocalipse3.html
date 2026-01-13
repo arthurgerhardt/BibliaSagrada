@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 3</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 3</h2>
+            <h3>Cartas às igrejas de Sardes, Filadélfia e Laodiceia</h3>
+
+            <h4>Sardes</h4>
+            <p>1 E ao anjo da igreja que está em Sardes escreve: Isto diz o que tem os sete espíritos de Deus, e as sete estrelas: Conheço as tuas obras, que tens nome de que vives, e estás morto.</p>
+            <p>2 Sê vigilante, e confirma os restantes, que estão para morrer; porque não achei as tuas obras perfeitas diante de Deus.</p>
+            <p>3 Lembra-te, pois, do que tens recebido e ouvido, e guarda-o, e arrepende-te. E, se não vigiares, virei sobre ti como um ladrão, e não saberás a que hora sobre ti virei.</p>
+            <p>4 Mas também tens em Sardes algumas poucas pessoas que não contaminaram suas vestes, e comigo andarão vestidas de branco; porquanto são dignas disso.</p>
+            <p>5 O que vencer será vestido de vestes brancas, e de maneira nenhuma riscarei o seu nome do livro da vida; e confessarei o seu nome diante de meu Pai e diante dos seus anjos.</p>
+            <p>6 Quem tem ouvidos, ouça o que o Espírito diz às igrejas.</p>
+
+            <h4>Filadélfia</h4>
+            <p>7 E ao anjo da igreja que está em Filadélfia escreve: Isto diz o que é santo, o que é verdadeiro, o que tem a chave de Davi; o que abre, e ninguém fecha; e fecha, e ninguém abre:</p>
+            <p>8 Conheço as tuas obras; eis que diante de ti pus uma porta aberta, e ninguém a pode fechar; porque tendo pouca força, guardaste a minha palavra, e não negaste o meu nome.</p>
+            <p>9 Eis que eu farei aos da sinagoga de Satanás, aos que se dizem judeus, e não são, mas mentem: Eis que eu farei que venham, e adorem prostrados a teus pés, e saibam que eu te amo.</p>
+            <p>10 Como guardaste a palavra da minha paciência, também eu te guardarei da hora da tentação que há de vir sobre todo o mundo, para tentar os que habitam na terra.</p>
+            <p>11 Eis que venho sem demora; guarda o que tens, para que ninguém tome a tua coroa.</p>
+            <p>12 A quem vencer, eu o farei coluna no templo do meu Deus, e dele nunca sairá; e escreverei sobre ele o nome do meu Deus, e o nome da cidade do meu Deus, a nova Jerusalém, que desce do céu, do meu Deus, e também o meu novo nome.</p>
+            <p>13 Quem tem ouvidos, ouça o que o Espírito diz às igrejas.</p>
+
+            <h4>Laodiceia</h4>
+            <p>14 E ao anjo da igreja de Laodiceia escreve: Isto diz o Amém, a testemunha fiel e verdadeira, o princípio da criação de Deus:</p>
+            <p>15 Conheço as tuas obras, que nem és frio nem quente; quem dera foras frio ou quente!</p>
+            <p>16 Assim, porque és morno, e não és frio nem quente, vomitar-te-ei da minha boca.</p>
+            <p>17 Como dizes: Rico sou, e estou enriquecido, e de nada tenho falta; e não sabes que és um desgraçado, e miserável, e pobre, e cego, e nu;</p>
+            <p>18 Aconselho-te que de mim compres ouro provado no fogo, para que te enriqueças; e roupas brancas, para que te vistas, e não apareça a vergonha da tua nudez; e que unjas os teus olhos com colírio, para que vejas.</p>
+            <p>19 Eu repreendo e castigo a todos quantos amo; sê pois zeloso, e arrepende-te.</p>
+            <p>20 Eis que estou à porta, e bato; se alguém ouvir a minha voz, e abrir a porta, entrarei até ele, e com ele cearei, e ele comigo.</p>
+            <p>21 Ao que vencer lhe concederei que se assente comigo no meu trono; assim como eu venci, e me assentei com meu Pai no seu trono.</p>
+            <p>22 Quem tem ouvidos, ouça o que o Espírito diz às igrejas.</p>
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse2.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse4.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

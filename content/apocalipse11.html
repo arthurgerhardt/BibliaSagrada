@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 11</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 11</h2>
+            <h3>As duas testemunhas e o sétimo anjo</h3>
+            <p>1 E foi-me dada uma cana semelhante a uma vara, e o anjo pôs-se em pé, dizendo: Levanta-te, e mede o templo de Deus, e o altar, e os que adoram nele.</p>
+            <p>2 Mas o pátio que está fora do templo deixa-o de fora, e não o meças; porque foi dado aos gentios; e pisarão a cidade santa por quarenta e dois meses.</p>
+            <p>3 E darei poder às minhas duas testemunhas, e profetizarão por mil duzentos e sessenta dias, vestidas de sacos.</p>
+            <p>4 Estas são as duas oliveiras, e os dois candeeiros que estão diante do Deus da terra.</p>
+            <p>5 E se alguém quiser lhes fazer mal, fogo procede da sua boca, e devora os seus inimigos; e se alguém quiser lhes fazer mal, assim hará morrer.</p>
+            <p>6 Estas têm poder para fechar o céu, para que não chova nos dias da sua profecia; e têm poder sobre as águas, para torná-las em sangue, e para ferir a terra com toda sorte de pragas, quantas vezes quiserem.</p>
+            <p>7 E quando acabarem o seu testemunho, a besta que sobe do abismo lhes fará guerra, e as vencerá, e as matará.</p>
+            <p>8 E os seus corpos ficarão na praça da grande cidade, que espiritualmente se chama Sodoma e Egito, onde também o seu Senhor foi crucificado.</p>
+            <p>9 E homens de todas as tribos, e povos, e línguas, e nações verão os seus corpos por três dias e meio, e não permitirão que se ponham em sepultura os seus corpos.</p>
+            <p>10 E os que habitam sobre a terra se alegrarão sobre elas, e se regozijarão, e enviarão presentes uns aos outros; porque estes dois profetas atormentaram os que habitam sobre a terra.</p>
+            <p>11 E passados os três dias e meio, entrou em eles o espírito de vida, e puseram-se em pé sobre os seus pés; e grande temor caiu sobre os que os viram.</p>
+            <p>12 E ouviram uma grande voz do céu, que lhes dizia: Subi aqui. E subiram ao céu em uma nuvem, e os seus inimigos os viram.</p>
+            <p>13 E na mesma hora houve um grande terremoto, e uma décima parte da cidade caiu; e morreram no terremoto sete mil homens; e o resto ficou aterrorizado, e deu glória ao Deus do céu.</p>
+            <p>14 O segundo ai passou; eis que o terceiro ai vem  logo.</p>
+            <p>15 E o sétimo anjo tocou a sua trombeta; e houve no céu grandes vozes, que diziam: O reino do mundo veio a ser de nosso Senhor, e do seu Cristo; e ele reinará para todo o sempre.</p>
+            <p>16 E os vinte e quatro anciãos, que estão diante de Deus, prostraram-se sobre os seus rostos, e adoraram a Deus,</p>
+            <p>17 Dizendo: Graças te damos, Senhor Deus Todo-Poderoso, que és, e que eras, porque tomaste o teu grande poder, e reinas.</p>
+            <p>18 E as nações se iraram, e veio a tua ira, e o tempo dos mortos, para serem julgados, e para dares o galardão aos teus servos, os profetas, e aos santos, e aos que temem o teu nome, aos pequenos e aos grandes; e para destruíres os que destroem a terra.</p>
+            <p>19 E foi aberto o templo de Deus, que está no céu; e foi visto o seu templo na terra; e houve relâmpagos, e vozes, e trovões, e um terremoto, e grande saraiva.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse10.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse12.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>

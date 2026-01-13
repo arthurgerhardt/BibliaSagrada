@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Apocalipse 10</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Apocalipse 10</h2>
+            <h3>O anjo poderoso e o livrinho aberto</h3>
+            <p>1 E vi outro anjo forte, descendo do céu, vestido de uma nuvem; e o arco-íris estava sobre a sua cabeça, e o seu rosto era como o sol, e os seus pés como colunas de fogo;</p>
+            <p>2 E tinha na sua mão um livrinho aberto; e pôs o seu pé direito sobre o mar, e o esquerdo sobre a terra,</p>
+            <p>3 E clamou com grande voz, como ruge um leão; e quando clamou, sete trovões emitiram as suas vozes.</p>
+            <p>4 E, havendo clamado os sete trovões, eu estava para escrever; e ouvi uma voz do céu, que me dizia: Sela o que os sete trovões disseram, e não o escrevas.</p>
+            <p>5 E o anjo que eu vi estar sobre o mar e sobre a terra levantou a sua mão ao céu,</p>
+            <p>6 E jurou por aquele que vive para todo o sempre, que criou o céu, e as coisas que nele há, e a terra, e as coisas que nela há, e o mar, e as coisas que nele há, que o tempo não haveria mais;</p>
+            <p>7 Mas nos dias da voz do sétimo anjo, quando ele estiver para tocar a trombeta, então se cumprirá o mistério de Deus, como anunciou aos seus servos os profetas.</p>
+            <p>8 E a voz que eu tinha ouvido do céu falou-me outra vez,, dizendo: Vai, toma o livrinho aberto que está na mão do anjo que está sobre o mar e sobre a terra.</p>
+            <p>9 E fui ao anjo, dizendo-lhe que me desse o livrinho. E ele me disse: Toma-o, e come-o; e ele fará amargo o teu ventre, mas na tua boca será doce como mel.</p>
+            <p>10 E tomei o livrinho da mão do anjo, e o comi; e na minha boca foi doce como mel; e quando o comi, o meu ventre se fez amargo.</p>
+            <p>11 E disseram-me: Importa-te profetizar outra vez sobre muitos povos, e nações, e línguas, e reis.</p>
+            
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../content/apocalipse9.html">Capítulo Anterior</a>
+            <a class="button" href="../content/apocalipse11.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
