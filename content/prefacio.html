@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prefácio</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head> 
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <style>
+            .verse-number { font-size: 1em; vertical-align: baseline; font-weight: normal; margin-right: 0.25em; display: inline-block; width: auto; }
+            </style>
+
+            <h2>Prefácio</h2>
+            <h3>Introdução à Bíblia Sagrada</h3>
+            <p>A Bíblia Sagrada é uma coleção de textos religiosos que são considerados sagrados e inspirados por Deus por diversas tradições religiosas, incluindo o Cristianismo e o Judaísmo.</p>
+            <p>¹ A Bíblia é composta por dois testamentos principais: o Antigo Testamento, que contém textos sagrados do Judaísmo, e o Novo Testamento, que narra a vida e os ensinamentos de Jesus Cristo e a formação da Igreja Cristã.</p>
+            <p>² Os livros da Bíblia foram escritos ao longo de muitos séculos por diferentes autores, em diversos contextos históricos e culturais.</p>
+            <p>³ A Bíblia aborda temas como a criação do mundo, a história do povo de Israel, a vida e os ensinamentos de Jesus, bem como princípios morais e espirituais para a vida dos fiéis.</p>
+            <p>⁴ A interpretação dos textos bíblicos pode variar entre diferentes denominações religiosas, e é importante considerar o contexto histórico e cultural ao estudar as Escrituras.</p>  
+            <p>⁵ A Bíblia Sagrada tem sido uma fonte de inspiração, orientação espiritual e moral para milhões de pessoas ao redor do mundo ao longo dos séculos.</p>   
+            <p>⁶ Este prefácio serve como uma introdução para aqueles que desejam explorar e compreender melhor os textos sagrados da Bíblia Sagrada.</p>  
+            <br>
+            
+            <p>Versão da Bíblia Sagrada: Tradução Brasileira de 1917</p>
+            <p>Esta versão foi amplamente utilizada por comunidades cristãs no Brasil e é conhecida por sua linguagem clássica e fidelidade aos textos originais.</p>
+            <p>Esta tradução está totalmente em domínio público.</p>
+
+
+
+        </section>
+            <section class="narration-section">
+
+
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn" type="button">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="button-container">
+            <a class="button" href="../sumary_index.html">Capítulo Anterior</a>
+            <a class="button" href="../content/genesis1.html">Próximo Capítulo</a>
+            <a class="button" href="../sumary_index.html">Sumário</a>
+            <a class="button" href="../index.html">Início</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
