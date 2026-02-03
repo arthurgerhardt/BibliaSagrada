@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Salmos 80</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="theme-toggle">
+        <button id="theme-toggle-btn">Trocar Tema</button>
+    </div>
+    <header>
+        <h1>Bíblia Sagrada</h1>
+    </header>
+    <main>
+        <section class="bible-book">
+            <h2>Salmos 80</h2>
+            <h3>Ao mestre de canto. Sobre “Os lírios do Testemunho”. Salmo de Asafe.</h3>
+            <p>1. Dá ouvidos, ó Pastor de Israel, tu que guias a José como a um rebanho; tu que te assentas sobre os querubins, resplandece.</p>
+            <p>2. Perante Efraim, Benjamim e Manassés, desperta o teu poder, e vem salvar-nos.</p>
+            <p>3. Faze-nos voltar, ó Jeová; faze resplandecer o teu rosto, e seremos salvos.</p>
+            <p>4. Ó Jeová, Deus dos Exércitos, até quando estarás indignado contra a oração do teu povo?</p>
+            <p>5. Deste-lhes pão de lágrimas para comer, e lágrimas abundantes para beber.</p>
+            <p>6. Puseste-nos em contenda com os nossos vizinhos, e os nossos inimigos escarnecem de nós.</p>
+            <p>7. Faze-nos voltar, ó Deus dos Exércitos; faze resplandecer o teu rosto, e seremos salvos.</p>
+            <p>8. Trouxeste uma videira do Egito; lançaste fora as nações, e a plantaste.</p>
+            <p>9. Preparaste-lhe lugar, e ela lançou raízes, e encheu a terra.</p>
+            <p>10. Os montes cobriram-se com a sua sombra, e os cedros de Deus com os seus ramos.</p>
+            <p>11. Ela estendeu os seus ramos até ao mar, e os seus rebentos até ao rio.</p>
+            <p>12. Por que quebraste os seus valados, de modo que todos os que passam por ela a vindimam?</p>
+            <p>13. A besta feroz da selva a devasta, e as feras do campo a devoram.</p>
+            <p>14. Ó Deus dos Exércitos, volta-te, nós te rogamos; olha do céu, e vê, e visita esta videira,</p>
+            <p>15. E a videira que a tua destra plantou, e o rebento que fortificaste para ti.</p>
+            <p>16. Está queimada pelo fogo, está cortada; perecem pela repreensão do teu rosto.</p>
+            <p>17. Seja a tua mão sobre o homem da tua destra, sobre o filho do homem que fortificaste para ti.</p>
+            <p>18. Assim não nos desviaremos de ti; vivifica-nos, e invocaremos o teu nome.</p>
+            <p>19. Faze-nos voltar, ó Jeová, Deus dos Exércitos; faze resplandecer o teu rosto, e seremos salvos.</p>
+
+
+            <div class="narrator"></div>
+            <button id="narrate-btn">Ouvir Narração</button>
+        </section>
+        <script>
+            document.getElementById('narrate-btn').addEventListener('click', function () {
+                const text = document.querySelector('.bible-book').innerText;
+                const utterance = new SpeechSynthesisUtterance(text);
+                utterance.lang = 'pt-BR';
+                speechSynthesis.speak(utterance);
+            });
+        </script>
+        <div class="nav theme-toggle">
+            <a href="../index.html" class="nav-button">Início</a>
+            <a href="../sumary_index.html" class="nav-button">Sumário</a>
+            <a href="../content/salmos79.html" class="nav-button">Capítulo Anterior</a>
+            <a href="../content/salmos81.html" class="nav-button">Próximo Capítulo</a>
+        </div>
+    </main>
+    <script src="../scripts/script.js"></script>
+
+</html>
